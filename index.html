@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="חקר הגניזה הקהירית — אוסף המסמכים ההיסטורי הגדול ביותר מהעולם היהודי בימי הביניים">
-  <title>גניזת קהיר — חקר ועיון</title>
+  <meta name="description" content="גניזת קהיר — חלון אל החיים היהודיים בימי הביניים. 500 מסמכים מגניזת בן עזרא.">
+  <title>גניזת קהיר</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -16,41 +16,75 @@
     <div class="header-inner">
       <div class="header-ornament" aria-hidden="true">✦</div>
       <h1 class="site-title">גניזת קהיר</h1>
-      <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים — 500 מסמכים מגניזת בן עזרא</p>
-      <p class="site-source">נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a></p>
+      <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
+      <p class="site-intro">
+        גניזת בן עזרא בקהיר שמרה במשך מאות שנים על 500 מסמכים —
+        מכתבים, חוזים, שירה, רפואה ותפילה — שנכתבו בין המאה ה-10 למאה ה-13.
+        הם מגלים את חייהם של אנשים רגילים בעולם הים-תיכוני.
+      </p>
     </div>
   </header>
+
+  <section class="browse-section" aria-label="עיון מהיר">
+    <div class="browse-inner">
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי תקופה</h2>
+        <div class="browse-chips" id="era-chips">
+          <button class="chip" data-era="10">המאה ה-10</button>
+          <button class="chip" data-era="11">המאה ה-11</button>
+          <button class="chip" data-era="12">המאה ה-12</button>
+          <button class="chip" data-era="13">המאה ה-13</button>
+          <button class="chip" data-era="14">המאה ה-14+</button>
+        </div>
+      </div>
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי סוג</h2>
+        <div class="browse-chips" id="type-chips">
+          <button class="chip" data-type="מכתב">✉ מכתבים</button>
+          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
+          <button class="chip" data-type="טקסט דתי">✡ דתיים</button>
+          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
+          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
+        </div>
+      </div>
+
+      <div class="browse-group browse-group--single">
+        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
+          🎲 הפתע אותי
+        </button>
+      </div>
+
+    </div>
+  </section>
 
   <div class="search-bar-wrapper">
     <div class="search-bar-inner">
       <div class="search-input-wrap">
         <span class="search-icon" aria-hidden="true">🔍</span>
-        <input
-          type="search"
-          id="search-input"
-          class="search-input"
-          placeholder="חיפוש לפי שם, תיאור, מקום…"
-          autocomplete="off"
-          spellcheck="false"
-        >
+        <input type="search" id="search-input" class="search-input"
+          placeholder="חיפוש חופשי — שם, מקום, נושא…"
+          autocomplete="off" spellcheck="false">
         <button class="search-clear" id="search-clear" aria-label="נקה חיפוש" hidden>✕</button>
       </div>
       <div class="filters" id="filters">
-        <select id="filter-type" class="filter-select" aria-label="סינון לפי סוג">
+        <select id="filter-type" class="filter-select" aria-label="סוג מסמך">
           <option value="">כל הסוגים</option>
         </select>
-        <select id="filter-lang" class="filter-select" aria-label="סינון לפי שפה">
+        <select id="filter-lang" class="filter-select" aria-label="שפה">
           <option value="">כל השפות</option>
         </select>
-        <select id="filter-library" class="filter-select" aria-label="סינון לפי ספרייה">
+        <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
-        <select id="filter-has" class="filter-select" aria-label="סינון לפי נוכחות חומר">
+        <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
-          <option value="img">עם תמונה</option>
-          <option value="tr">עם תמלול</option>
-          <option value="tl">עם תרגום</option>
+          <option value="img">🖼 עם תמונה</option>
+          <option value="tr">📝 עם תמלול</option>
+          <option value="tl">🌐 עם תרגום</option>
         </select>
+        <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
     </div>
   </div>
@@ -61,22 +95,21 @@
     <div class="pagination" id="pagination" aria-label="דפים"></div>
     <div class="loading-state" id="loading-state">
       <div class="spinner"></div>
-      <p>טוען נתונים…</p>
+      <p>טוען מסמכים…</p>
     </div>
     <div class="empty-state" id="empty-state" hidden>
       <p class="empty-icon" aria-hidden="true">📜</p>
-      <p>לא נמצאו תוצאות. נסו לשנות את מונחי החיפוש.</p>
+      <p>לא נמצאו מסמכים. נסו לשנות את החיפוש.</p>
+      <button class="btn-reset-inline" id="btn-reset-empty">הצג את כל המסמכים</button>
     </div>
   </main>
 
   <footer class="site-footer">
     <p>
-      נתונים ממאגר
-      <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0.
-      נבנה בסביבת GitHub Pages.
+      נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
+      — רישיון CC BY-NC 4.0
     </p>
-    <p class="footer-build">נבנה: 25 April 2026</p>
+    <p class="footer-build">עודכן: 25 April 2026</p>
   </footer>
 
   <script>const TOTAL_DOCS = 500;</script>

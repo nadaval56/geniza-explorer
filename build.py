@@ -59,6 +59,21 @@ LANG_MAP = {
     "Unknown": "לא ידוע",
 }
 
+LIBRARY_MAP = {
+    "CUL":      "ספריית קיימברידג'",
+    "BL":       "הספרייה הבריטית",
+    "AIU":      "כיא פריז",
+    "JTS":      "בית המדרש לרבנים",
+    "Bodl.":    "בודליאן אוקספורד",
+    "NLR":      "הספרייה הלאומית רוסיה",
+    "BnF":      "הספרייה הלאומית צרפת",
+    "Mosseri":  "אוסף מוסרי",
+    "ENA":      "אוסף אדלר",
+    "Geneva":   "ז'נבה",
+    "Halper":   "אוסף הלפר",
+    "Firkovich":"אוסף פירקוביץ'",
+}
+
 
 # ── CSV helpers ────────────────────────────────────────────────────────────────
 def split_field(value):
@@ -87,12 +102,32 @@ def translate_langs(raw):
     return "؛ ".join(LANG_MAP.get(l.strip(), l.strip()) for l in split_field(raw))
 
 
+def translate_library(raw):
+    if not raw:
+        return ""
+    parts = split_field(raw)
+    translated = [LIBRARY_MAP.get(p.strip(), p.strip()) for p in parts]
+    return " · ".join(translated)
+
+
 def best_date(row):
     for key in ("doc_date_standard", "inferred_date_display", "doc_date_original"):
         v = row.get(key, "").strip()
         if v:
             return v
     return ""
+
+
+def century_from_date(date_str):
+    """Extract century number (e.g. 11) from a date string like '1025-08/1026-09'."""
+    if not date_str:
+        return None
+    import re
+    m = re.search(r'\b(9\d\d|1[0-4]\d\d)\b', date_str)
+    if m:
+        year = int(m.group(1))
+        return (year // 100) + 1  # century CE
+    return None
 
 
 def is_truthy(v):
@@ -134,7 +169,8 @@ def parse_doc(row):
         "date_standard": row.get("doc_date_standard", "").strip(),
         "date_inferred": row.get("inferred_date_display", "").strip(),
         "date_rationale": row.get("inferred_date_rationale", "").strip(),
-        "library": row.get("library", "").strip(),
+        "library": translate_library(row.get("library", "")),
+        "library_raw": row.get("library", "").strip(),
         "collection": row.get("collection", "").strip(),
         "description": row.get("description", "").strip(),
         "tags": split_field(row.get("tags", "")),
@@ -197,6 +233,8 @@ def build_search_index(docs):
         if doc["iiif_urls"]:        entry["img"] = 1
         if doc["has_transcription"]:entry["tr"]  = 1
         if doc["has_translation"]:  entry["tl"]  = 1
+        c = century_from_date(doc["date"])
+        if c:                       entry["c"]   = c
         index.append(entry)
     return index
 
@@ -208,8 +246,8 @@ INDEX_HTML = """\
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="חקר הגניזה הקהירית — אוסף המסמכים ההיסטורי הגדול ביותר מהעולם היהודי בימי הביניים">
-  <title>גניזת קהיר — חקר ועיון</title>
+  <meta name="description" content="גניזת קהיר — חלון אל החיים היהודיים בימי הביניים. {total_docs:,} מסמכים מגניזת בן עזרא.">
+  <title>גניזת קהיר</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -221,41 +259,75 @@ INDEX_HTML = """\
     <div class="header-inner">
       <div class="header-ornament" aria-hidden="true">✦</div>
       <h1 class="site-title">גניזת קהיר</h1>
-      <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים — {total_docs:,} מסמכים מגניזת בן עזרא</p>
-      <p class="site-source">נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a></p>
+      <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
+      <p class="site-intro">
+        גניזת בן עזרא בקהיר שמרה במשך מאות שנים על {total_docs:,} מסמכים —
+        מכתבים, חוזים, שירה, רפואה ותפילה — שנכתבו בין המאה ה-10 למאה ה-13.
+        הם מגלים את חייהם של אנשים רגילים בעולם הים-תיכוני.
+      </p>
     </div>
   </header>
+
+  <section class="browse-section" aria-label="עיון מהיר">
+    <div class="browse-inner">
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי תקופה</h2>
+        <div class="browse-chips" id="era-chips">
+          <button class="chip" data-era="10">המאה ה-10</button>
+          <button class="chip" data-era="11">המאה ה-11</button>
+          <button class="chip" data-era="12">המאה ה-12</button>
+          <button class="chip" data-era="13">המאה ה-13</button>
+          <button class="chip" data-era="14">המאה ה-14+</button>
+        </div>
+      </div>
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי סוג</h2>
+        <div class="browse-chips" id="type-chips">
+          <button class="chip" data-type="מכתב">✉ מכתבים</button>
+          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
+          <button class="chip" data-type="טקסט דתי">✡ דתיים</button>
+          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
+          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
+        </div>
+      </div>
+
+      <div class="browse-group browse-group--single">
+        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
+          🎲 הפתע אותי
+        </button>
+      </div>
+
+    </div>
+  </section>
 
   <div class="search-bar-wrapper">
     <div class="search-bar-inner">
       <div class="search-input-wrap">
         <span class="search-icon" aria-hidden="true">🔍</span>
-        <input
-          type="search"
-          id="search-input"
-          class="search-input"
-          placeholder="חיפוש לפי שם, תיאור, מקום…"
-          autocomplete="off"
-          spellcheck="false"
-        >
+        <input type="search" id="search-input" class="search-input"
+          placeholder="חיפוש חופשי — שם, מקום, נושא…"
+          autocomplete="off" spellcheck="false">
         <button class="search-clear" id="search-clear" aria-label="נקה חיפוש" hidden>✕</button>
       </div>
       <div class="filters" id="filters">
-        <select id="filter-type" class="filter-select" aria-label="סינון לפי סוג">
+        <select id="filter-type" class="filter-select" aria-label="סוג מסמך">
           <option value="">כל הסוגים</option>
         </select>
-        <select id="filter-lang" class="filter-select" aria-label="סינון לפי שפה">
+        <select id="filter-lang" class="filter-select" aria-label="שפה">
           <option value="">כל השפות</option>
         </select>
-        <select id="filter-library" class="filter-select" aria-label="סינון לפי ספרייה">
+        <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
-        <select id="filter-has" class="filter-select" aria-label="סינון לפי נוכחות חומר">
+        <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
-          <option value="img">עם תמונה</option>
-          <option value="tr">עם תמלול</option>
-          <option value="tl">עם תרגום</option>
+          <option value="img">🖼 עם תמונה</option>
+          <option value="tr">📝 עם תמלול</option>
+          <option value="tl">🌐 עם תרגום</option>
         </select>
+        <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
     </div>
   </div>
@@ -266,22 +338,21 @@ INDEX_HTML = """\
     <div class="pagination" id="pagination" aria-label="דפים"></div>
     <div class="loading-state" id="loading-state">
       <div class="spinner"></div>
-      <p>טוען נתונים…</p>
+      <p>טוען מסמכים…</p>
     </div>
     <div class="empty-state" id="empty-state" hidden>
       <p class="empty-icon" aria-hidden="true">📜</p>
-      <p>לא נמצאו תוצאות. נסו לשנות את מונחי החיפוש.</p>
+      <p>לא נמצאו מסמכים. נסו לשנות את החיפוש.</p>
+      <button class="btn-reset-inline" id="btn-reset-empty">הצג את כל המסמכים</button>
     </div>
   </main>
 
   <footer class="site-footer">
     <p>
-      נתונים ממאגר
-      <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0.
-      נבנה בסביבת GitHub Pages.
+      נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
+      — רישיון CC BY-NC 4.0
     </p>
-    <p class="footer-build">נבנה: {build_date}</p>
+    <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};</script>

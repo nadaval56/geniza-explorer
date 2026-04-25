@@ -1,20 +1,21 @@
-/* Geniza Explorer — Index page search + filter + pagination */
+/* Geniza Explorer — Index page: search, filter, era/type browse, pagination */
 (function () {
   'use strict';
 
   const PAGE_SIZE = 48;
 
-  // ── State ────────────────────────────────────────────────────────────────────
-  let allDocs = [];
-  let filtered = [];
-  let currentPage = 1;
-  let query = '';
-  let filterType = '';
-  let filterLang = '';
-  let filterLib = '';
-  let filterHas = '';
+  // ── State ─────────────────────────────────────────────────────────────────────
+  let allDocs   = [];
+  let filtered  = [];
+  let page      = 1;
+  let query     = '';
+  let fType     = '';
+  let fLang     = '';
+  let fLib      = '';
+  let fHas      = '';
+  let fEra      = 0;   // century number (10-14), 0 = all
 
-  // ── DOM refs ─────────────────────────────────────────────────────────────────
+  // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
   const pagination  = document.getElementById('pagination');
   const resultsBar  = document.getElementById('results-bar');
@@ -26,124 +27,123 @@
   const selLang     = document.getElementById('filter-lang');
   const selLib      = document.getElementById('filter-library');
   const selHas      = document.getElementById('filter-has');
-
-  // ── Badge class ───────────────────────────────────────────────────────────────
-  const TYPE_BADGE = {
-    'מכתב':             'badge-type-letter',
-    'Letter':           'badge-type-letter',
-    'מסמך משפטי':       'badge-type-legal',
-    'Legal document':   'badge-type-legal',
-    'טקסט ספרותי':      'badge-type-lit',
-    'Literary text':    'badge-type-lit',
-    'טקסט דתי':         'badge-type-rel',
-    'Religious text':   'badge-type-rel',
-    'טקסט פרא-ספרותי':  'badge-type-para',
-    'Paraliterary text':'badge-type-para',
-  };
-  function typeBadgeClass(type) {
-    return TYPE_BADGE[type] || 'badge-type-other';
-  }
+  const btnReset    = document.getElementById('btn-reset');
+  const btnResetEmpty = document.getElementById('btn-reset-empty');
+  const btnSurprise = document.getElementById('btn-surprise');
+  const eraChips    = document.querySelectorAll('[data-era]');
+  const typeChips   = document.querySelectorAll('[data-type]');
 
   // ── Helpers ───────────────────────────────────────────────────────────────────
-  function esc(str) {
-    if (!str) return '';
-    return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+  function esc(s) {
+    return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
+                    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function norm(s) {
+    return (s || '').toLowerCase().replace(/[־‐\-]/g,' ');
   }
 
-  function normalize(str) {
-    return (str || '').toLowerCase().replace(/[־‐\-]/g, ' ');
-  }
+  // ── Badge colours ─────────────────────────────────────────────────────────────
+  const TYPE_CLASS = {
+    'מכתב':            'badge-type-letter',
+    'מסמך משפטי':      'badge-type-legal',
+    'טקסט ספרותי':     'badge-type-lit',
+    'טקסט דתי':        'badge-type-rel',
+    'טקסט פרא-ספרותי': 'badge-type-para',
+  };
 
-  // ── Populate filter dropdowns ─────────────────────────────────────────────────
+  // ── Populate dropdowns ────────────────────────────────────────────────────────
   function populateFilters(docs) {
-    const types = new Set();
-    const langs = new Set();
-    const libs  = new Set();
-
+    const types = new Set(), langs = new Set(), libs = new Set();
     docs.forEach(d => {
       if (d.th)  types.add(d.th);
-      if (d.lh)  (d.lh.split('؛')).forEach(l => { const t = l.trim(); if (t) langs.add(t); });
-      if (d.lib) libs.add(d.lib);
+      if (d.lh)  d.lh.split('؛').forEach(l => { const t=l.trim(); if(t) langs.add(t); });
+      if (d.lib) d.lib.split('·').forEach(l => { const t=l.trim(); if(t) libs.add(t); });
     });
-
     const fill = (sel, items) => {
       const first = sel.options[0].outerHTML;
       sel.innerHTML = first;
       [...items].sort().forEach(v => {
         const o = document.createElement('option');
-        o.value = v; o.textContent = v;
-        sel.appendChild(o);
+        o.value = v; o.textContent = v; sel.appendChild(o);
       });
     };
-
     fill(selType, types);
     fill(selLang, langs);
-    fill(selLib, libs);
+    fill(selLib,  libs);
   }
 
-  // ── Filter + search ───────────────────────────────────────────────────────────
+  // ── Filter logic ──────────────────────────────────────────────────────────────
   function applyFilters() {
-    const q = normalize(query);
-
+    const q = norm(query);
     filtered = allDocs.filter(d => {
-      if (filterType && d.th !== filterType) return false;
-      if (filterLang && !d.lh.includes(filterLang)) return false;
-      if (filterLib  && d.lib !== filterLib) return false;
-      if (filterHas === 'img' && !d.img) return false;
-      if (filterHas === 'tr'  && !d.tr)  return false;
-      if (filterHas === 'tl'  && !d.tl)  return false;
-
+      if (fType && d.th !== fType) return false;
+      if (fLang && !(d.lh||'').includes(fLang)) return false;
+      if (fLib  && !(d.lib||'').includes(fLib))  return false;
+      if (fHas === 'img' && !d.img) return false;
+      if (fHas === 'tr'  && !d.tr)  return false;
+      if (fHas === 'tl'  && !d.tl)  return false;
+      if (fEra) {
+        if (!d.c) return false;
+        if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
+      }
       if (q) {
-        const haystack = normalize(
-          [d.s||'', d.th||'', d.lh||'', d.or||'', d.dt||'', d.lib||'', d.d||''].join(' ')
-        );
-        // All words must appear
-        const words = q.split(/\s+/).filter(Boolean);
-        return words.every(w => haystack.includes(w));
+        const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||''].join(' '));
+        return q.split(/\s+/).filter(Boolean).every(w => hay.includes(w));
       }
       return true;
     });
-
-    currentPage = 1;
+    page = 1;
+    updateResetVisibility();
     render();
+  }
+
+  function hasActiveFilter() {
+    return !!(query || fType || fLang || fLib || fHas || fEra);
+  }
+
+  function resetAll() {
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    searchInput.value = '';
+    clearBtn.hidden = true;
+    selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
+    eraChips.forEach(c => c.classList.remove('chip--active'));
+    typeChips.forEach(c => c.classList.remove('chip--active'));
+    applyFilters();
+  }
+
+  function updateResetVisibility() {
+    if (btnReset) btnReset.hidden = !hasActiveFilter();
   }
 
   // ── Card HTML ─────────────────────────────────────────────────────────────────
   function cardHTML(doc) {
-    const badgeClass = typeBadgeClass(doc.th || '');
+    const cls  = TYPE_CLASS[doc.th] || 'badge-type-other';
     const icons = [
-      doc.img ? '<span class="card-icon" title="תמונה זמינה">🖼</span>' : '',
-      doc.tr  ? '<span class="card-icon" title="תמלול זמין">📝</span>' : '',
-      doc.tl  ? '<span class="card-icon" title="תרגום זמין">🌐</span>' : '',
+      doc.img ? '<span class="card-icon" title="תמונה">🖼</span>' : '',
+      doc.tr  ? '<span class="card-icon" title="תמלול">📝</span>' : '',
+      doc.tl  ? '<span class="card-icon" title="תרגום">🌐</span>'  : '',
     ].join('');
 
     const langBadge = doc.lh
-      ? `<span class="badge badge-lang">${esc(doc.lh.split('؛')[0].trim())}</span>`
-      : '';
+      ? `<span class="badge badge-lang">${esc(doc.lh.split('؛')[0].trim())}</span>` : '';
 
-    const datePart   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
-    const originPart = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
-    const description = doc.d ? `<p class="card-description">${esc(doc.d)}</p>` : '';
+    const dateLine   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
+    const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
+    const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
 
     return `
       <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"
-         aria-label="${esc(doc.s)}">
+         aria-label="${esc(doc.s||'מסמך')}">
         <div class="card-top">
           <span class="card-shelfmark">${esc(doc.s) || 'PGPID ' + esc(doc.id)}</span>
           <span class="card-icons" aria-hidden="true">${icons}</span>
         </div>
         <div class="card-meta">
-          <span class="badge ${badgeClass}">${esc(doc.th)}</span>
+          <span class="badge ${cls}">${esc(doc.th||'לא מסווג')}</span>
           ${langBadge}
         </div>
-        ${datePart || originPart
-          ? `<div class="card-meta">${datePart}${originPart}</div>` : ''}
-        ${description}
-        <div class="card-footer">${esc(doc.lib || '')}</div>
+        ${dateLine||originLine ? `<div class="card-geo">${dateLine}${originLine}</div>` : ''}
+        ${libLine ? `<div class="card-footer">${libLine}</div>` : ''}
       </a>`;
   }
 
@@ -151,119 +151,130 @@
   function render() {
     const total = filtered.length;
     const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-    currentPage = Math.min(currentPage, pages);
+    page = Math.min(page, pages);
 
-    const start = (currentPage - 1) * PAGE_SIZE;
-    const slice = filtered.slice(start, start + PAGE_SIZE);
+    const slice = filtered.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
 
-    // Results bar
-    if (total === allDocs.length && !query && !filterType && !filterLang && !filterLib && !filterHas) {
-      resultsBar.innerHTML = `מציג <strong>${allDocs.length.toLocaleString('he')}</strong> מסמכים`;
+    if (!hasActiveFilter()) {
+      resultsBar.innerHTML = `<strong>${allDocs.length.toLocaleString('he-IL')}</strong> מסמכים באוסף`;
     } else {
-      resultsBar.innerHTML = `נמצאו <strong>${total.toLocaleString('he')}</strong> מסמכים`;
+      resultsBar.innerHTML = `נמצאו <strong>${total.toLocaleString('he-IL')}</strong> מסמכים`;
     }
 
-    // Cards
-    emptyEl.hidden = total > 0;
-    grid.hidden = total === 0;
+    emptyEl.hidden  = total > 0;
+    grid.hidden     = total === 0;
+    if (total > 0) grid.innerHTML = slice.map(cardHTML).join('');
 
-    if (total > 0) {
-      grid.innerHTML = slice.map(cardHTML).join('');
-    }
-
-    // Pagination
     renderPagination(pages);
   }
 
   function renderPagination(pages) {
     if (pages <= 1) { pagination.innerHTML = ''; return; }
-
-    const p = currentPage;
-    let html = '';
-
-    // Previous
-    html += `<button class="page-btn" ${p === 1 ? 'disabled' : ''} data-page="${p-1}" aria-label="עמוד קודם">→</button>`;
-
-    // Page numbers: always show first, last, and ±2 around current
+    const p = page;
+    let html = `<button class="page-btn" ${p===1?'disabled':''} data-page="${p-1}" aria-label="קודם">→</button>`;
     const shown = new Set();
-    [1, 2, p-2, p-1, p, p+1, p+2, pages-1, pages].forEach(n => {
-      if (n >= 1 && n <= pages) shown.add(n);
-    });
-    let prev = 0;
+    [1,2,p-2,p-1,p,p+1,p+2,pages-1,pages].forEach(n => { if(n>=1&&n<=pages) shown.add(n); });
+    let prev=0;
     [...shown].sort((a,b)=>a-b).forEach(n => {
-      if (prev && n > prev + 1) html += '<span class="page-btn" style="pointer-events:none;opacity:.3">…</span>';
-      html += `<button class="page-btn ${n === p ? 'active' : ''}" data-page="${n}">${n}</button>`;
-      prev = n;
+      if (prev && n>prev+1) html += '<span class="page-btn" style="pointer-events:none;opacity:.3">…</span>';
+      html += `<button class="page-btn${n===p?' active':''}" data-page="${n}">${n}</button>`;
+      prev=n;
     });
-
-    // Next
-    html += `<button class="page-btn" ${p === pages ? 'disabled' : ''} data-page="${p+1}" aria-label="עמוד הבא">←</button>`;
-
+    html += `<button class="page-btn" ${p===pages?'disabled':''} data-page="${p+1}" aria-label="הבא">←</button>`;
     pagination.innerHTML = html;
   }
 
-  // ── Event wiring ─────────────────────────────────────────────────────────────
-  function wireEvents() {
-    let debounceTimer;
+  // ── Events ────────────────────────────────────────────────────────────────────
+  function wire() {
+    let timer;
     searchInput.addEventListener('input', () => {
       query = searchInput.value;
       clearBtn.hidden = !query;
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(applyFilters, 220);
+      clearTimeout(timer);
+      timer = setTimeout(applyFilters, 220);
     });
-
     clearBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      query = '';
-      clearBtn.hidden = true;
-      applyFilters();
+      query = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
     });
 
-    selType.addEventListener('change', () => { filterType = selType.value; applyFilters(); });
-    selLang.addEventListener('change', () => { filterLang = selLang.value; applyFilters(); });
-    selLib.addEventListener('change',  () => { filterLib  = selLib.value;  applyFilters(); });
-    selHas.addEventListener('change',  () => { filterHas  = selHas.value;  applyFilters(); });
+    selType.addEventListener('change', () => { fType = selType.value; applyFilters(); });
+    selLang.addEventListener('change', () => { fLang = selLang.value; applyFilters(); });
+    selLib.addEventListener('change',  () => { fLib  = selLib.value;  applyFilters(); });
+    selHas.addEventListener('change',  () => { fHas  = selHas.value;  applyFilters(); });
+
+    if (btnReset)      btnReset.addEventListener('click', resetAll);
+    if (btnResetEmpty) btnResetEmpty.addEventListener('click', resetAll);
+
+    // Era chips
+    eraChips.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const era = +btn.dataset.era;
+        if (fEra === era) { fEra = 0; btn.classList.remove('chip--active'); }
+        else {
+          fEra = era;
+          eraChips.forEach(c => c.classList.remove('chip--active'));
+          btn.classList.add('chip--active');
+        }
+        applyFilters();
+      });
+    });
+
+    // Type chips
+    typeChips.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const t = btn.dataset.type;
+        if (fType === t) { fType = ''; btn.classList.remove('chip--active'); }
+        else {
+          fType = t;
+          selType.value = t;
+          typeChips.forEach(c => c.classList.remove('chip--active'));
+          btn.classList.add('chip--active');
+        }
+        applyFilters();
+      });
+    });
+
+    // Surprise button
+    if (btnSurprise) {
+      btnSurprise.addEventListener('click', () => {
+        if (!allDocs.length) return;
+        const doc = allDocs[Math.floor(Math.random() * allDocs.length)];
+        window.location.href = `fragment.html?id=${encodeURIComponent(doc.id)}`;
+      });
+    }
 
     pagination.addEventListener('click', e => {
       const btn = e.target.closest('[data-page]');
       if (!btn || btn.disabled) return;
-      currentPage = +btn.dataset.page;
+      page = +btn.dataset.page;
       render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // ── Bootstrap ─────────────────────────────────────────────────────────────────
+  // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
-    wireEvents();
+    wire();
     fetch('data/search.json')
-      .then(r => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
+      .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {
-        allDocs = data;
-        filtered = data;
+        allDocs = filtered = data;
         loadingEl.hidden = true;
         populateFilters(data);
         render();
       })
-      .catch(err => {
+      .catch(() => {
         loadingEl.hidden = true;
         grid.innerHTML = `
           <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--text-3)">
             <p style="font-size:2rem;margin-bottom:.5rem">⚠️</p>
-            <p>לא ניתן לטעון את הנתונים.</p>
-            <p style="font-size:.85rem;margin-top:.5rem">
-              הריצו תחילה: <code>python build.py</code>
-            </p>
+            <p>לא ניתן לטעון נתונים.</p>
+            <p style="font-size:.85rem;margin-top:.5rem">הריצו: <code>python build.py</code></p>
           </div>`;
       });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  document.readyState === 'loading'
+    ? document.addEventListener('DOMContentLoaded', init)
+    : init();
 })();

@@ -111,6 +111,130 @@ img { display: block; max-width: 100%; }
 .site-source a { color: var(--text-3); }
 .site-source a:hover { color: var(--gold); }
 
+/* ── Intro text ──────────────────────────────────────────────────────────────── */
+.site-intro {
+  font-size: clamp(.88rem, 2vw, 1rem);
+  color: var(--text-3);
+  font-weight: 300;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  line-height: 1.75;
+}
+
+/* ── Browse section ──────────────────────────────────────────────────────────── */
+.browse-section {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+}
+
+.browse-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.browse-group {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.browse-group--single { margin-right: auto; }
+
+.browse-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.browse-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.chip {
+  padding: .35rem .85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-2);
+  border-radius: 99px;
+  color: var(--text-2);
+  font-family: var(--font-ui);
+  font-size: .82rem;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+  white-space: nowrap;
+}
+.chip:hover {
+  background: var(--bg-card-h);
+  border-color: var(--gold-dark);
+  color: var(--gold-light);
+}
+.chip--active {
+  background: var(--gold-dark);
+  border-color: var(--gold);
+  color: #fff;
+  font-weight: 600;
+}
+.chip--surprise {
+  background: transparent;
+  border-color: var(--gold-dark);
+  color: var(--gold);
+  font-weight: 500;
+}
+.chip--surprise:hover {
+  background: var(--gold-dark);
+  color: #fff;
+}
+
+/* Reset button */
+.btn-reset {
+  padding: .45rem .85rem;
+  background: transparent;
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  color: var(--text-3);
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.btn-reset:hover { color: var(--text); border-color: var(--text-3); }
+
+.btn-reset-inline {
+  margin-top: 1rem;
+  padding: .55rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  color: var(--gold);
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btn-reset-inline:hover { background: var(--bg-card-h); }
+
+/* Card geo line */
+.card-geo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+}
+.card-lib {
+  font-size: .75rem;
+  color: var(--text-3);
+}
+
 /* ── Search Bar ──────────────────────────────────────────────────────────────── */
 .search-bar-wrapper {
   position: sticky;
