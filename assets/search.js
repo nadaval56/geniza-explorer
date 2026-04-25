@@ -130,6 +130,9 @@
     const dateLine   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
     const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
     const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
+    const descLine   = doc.d
+      ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d)}…</p>`
+      : '';
 
     return `
       <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"
@@ -143,6 +146,7 @@
           ${langBadge}
         </div>
         ${dateLine||originLine ? `<div class="card-geo">${dateLine}${originLine}</div>` : ''}
+        ${descLine}
         ${libLine ? `<div class="card-footer">${libLine}</div>` : ''}
       </a>`;
   }

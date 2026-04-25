@@ -474,6 +474,34 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
 }
 
+.card-description {
+  font-size: .82rem;
+  color: var(--text-2);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.card-desc-label {
+  font-size: .72rem;
+  color: var(--text-3);
+  font-weight: 600;
+  letter-spacing: .03em;
+}
+
+/* Fragment page description label */
+.desc-lang-note {
+  display: block;
+  font-size: .72rem;
+  color: var(--gold-dark);
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+}
+
 .card-footer {
   margin-top: auto;
   padding-top: .5rem;
