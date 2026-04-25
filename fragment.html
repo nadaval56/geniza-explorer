@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="page-title">מסמך גניזה — גניזת קהיר</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="fragment-body">
+
+  <nav class="top-nav" aria-label="ניווט">
+    <a href="index.html" class="nav-home">← חזרה לגלריה</a>
+    <span class="nav-breadcrumb" id="nav-breadcrumb" aria-current="page"></span>
+  </nav>
+
+  <div class="loading-state" id="loading-state">
+    <div class="spinner"></div>
+    <p>טוען מסמך…</p>
+  </div>
+
+  <article class="fragment-article" id="fragment-article" hidden>
+
+    <header class="fragment-header">
+      <div class="fragment-badges" id="fragment-badges"></div>
+      <h1 class="fragment-shelfmark" id="fragment-shelfmark"></h1>
+      <p class="fragment-library" id="fragment-library"></p>
+    </header>
+
+    <div class="fragment-layout">
+
+      <div class="fragment-image-col">
+        <div class="image-frame" id="image-frame">
+          <div class="image-placeholder" id="image-placeholder">
+            <span class="placeholder-glyph" aria-hidden="true">📜</span>
+            <span>אין תמונה זמינה</span>
+          </div>
+          <img
+            id="fragment-img"
+            class="fragment-img"
+            alt=""
+            hidden
+          >
+          <div class="image-caption" id="image-caption" hidden></div>
+        </div>
+        <div class="image-links" id="image-links"></div>
+      </div>
+
+      <div class="fragment-meta-col">
+        <dl class="meta-list" id="meta-list"></dl>
+
+        <div class="description-block" id="description-block" hidden>
+          <h2 class="section-label">תיאור</h2>
+          <p class="description-text" id="description-text"></p>
+        </div>
+
+        <div class="tags-block" id="tags-block" hidden>
+          <h2 class="section-label">תגיות</h2>
+          <div class="tags-list" id="tags-list"></div>
+        </div>
+
+        <div class="actions-block">
+          <a id="princeton-link" href="#" target="_blank" rel="noopener" class="btn-primary">
+            צפייה ב-Princeton Geniza Project ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="fragment-nav" id="fragment-nav" aria-label="ניווט בין מסמכים"></nav>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>
+      נתונים ממאגר
+      <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
+      — רישיון CC BY-NC 4.0
+    </p>
+  </footer>
+
+  <script src="assets/fragment.js"></script>
+</body>
+</html>
