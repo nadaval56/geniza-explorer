@@ -86,9 +86,9 @@ img { display: block; max-width: 100%; }
 }
 
 .site-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 7vw, 4.5rem);
-  font-weight: 900;
+  font-weight: 700;
   color: var(--text);
   letter-spacing: -.02em;
   line-height: 1.1;

@@ -327,10 +327,11 @@
     ].forEach(([id, n, p]) => {
       const el = document.getElementById(id);
       if (!el) return;
+      if (!n) { el.hidden = true; return; }
       const num = el.querySelector('.kpi-num');
-      if (num) num.textContent = (n || 0).toLocaleString('he-IL');
+      if (num) num.textContent = n.toLocaleString('he-IL');
       const lbl = el.querySelector('.kpi-label');
-      if (lbl && n) lbl.textContent = lbl.textContent + ' (' + p + ')';
+      if (lbl) lbl.textContent = lbl.textContent + ' (' + p + ')';
     });
   }
 
@@ -342,7 +343,7 @@
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t));
+    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t) && TAG_HE[t]);
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
     const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
