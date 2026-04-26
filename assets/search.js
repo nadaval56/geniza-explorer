@@ -42,6 +42,31 @@
     return (s || '').toLowerCase().replace(/[־‐\-]/g,' ');
   }
 
+  // ── Hebrew name → English equivalents (for cross-language search) ────────────
+  const HE_TO_EN = {
+    'אברהם': ['abraham','avraham'], 'משה': ['moses','moshe'],
+    'יצחק': ['isaac','yitzhak'],   'יעקב': ['jacob','yaakov'],
+    'יוסף': ['joseph','yosef'],    'שמואל': ['samuel','shmuel'],
+    'דוד': ['david'],              'שלמה': ['solomon','shlomo'],
+    'אליהו': ['elijah','eliyahu'], 'יהודה': ['judah','yehuda'],
+    'בנימין': ['benjamin'],        'אהרן': ['aaron','aharon'],
+    'אליעזר': ['eliezer'],         'מרדכי': ['mordecai','mordechai'],
+    'חנן': ['hanan'],              'יחיאל': ['yehiel'],
+    'פרחייה': ['perahya'],         'הלפון': ['halfon'],
+    'מיימון': ['maimon'],          'עובדיה': ['ovadia','obadiah'],
+    'נתנאל': ['nathanel','natanel'],'יוחנן': ['yohanan','johanan'],
+    'ירושלים': ['jerusalem'],      'מצרים': ['egypt','fustat'],
+    'פוסטאט': ['fustat'],          'קהיר': ['cairo'],
+    'אלכסנדריה': ['alexandria'],   'עדן': ['aden'],
+    'דמשק': ['damascus'],          'בגדד': ['baghdad'],
+  };
+
+  function matchTerm(term, hay) {
+    if (hay.includes(term)) return true;
+    const variants = HE_TO_EN[term];
+    return variants ? variants.some(v => hay.includes(v)) : false;
+  }
+
   // ── Badge colours ─────────────────────────────────────────────────────────────
   const TYPE_CLASS = {
     'מכתב':            'badge-type-letter',
@@ -87,8 +112,8 @@
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
       if (q) {
-        const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||''].join(' '));
-        return q.split(/\s+/).filter(Boolean).every(w => hay.includes(w));
+        const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
+        return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
       }
       return true;
     });
@@ -130,9 +155,10 @@
     const dateLine   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
     const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
     const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
-    const descLine   = doc.dh
-      ? `<p class="card-description">${esc(doc.dh)}</p>`
-      : (doc.d ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d)}…</p>` : '');
+    const descSnippet = (doc.d || '').split(' ').slice(0, 20).join(' ');
+    const descLine = descSnippet
+      ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(descSnippet)}…</p>`
+      : '';
 
     return `
       <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"

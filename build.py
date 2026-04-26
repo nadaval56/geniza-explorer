@@ -310,8 +310,13 @@ def build_search_index(docs):
         if doc["origin"]:           entry["or"]  = doc["origin"]
         if doc["date"]:             entry["dt"]  = doc["date"]
         if doc["library"]:          entry["lib"] = doc["library"]
-        desc = doc["description"][:160] if doc["description"] else ""
-        if desc:                    entry["d"]   = desc
+        # Rich English text for search + display (description + tags + mentioned)
+        rich_parts = []
+        if doc["description"]: rich_parts.append(doc["description"][:200])
+        if doc["tags"]:        rich_parts.append(" ".join(doc["tags"]))
+        if doc["mentioned"]:   rich_parts.append(doc["mentioned"])
+        rich = " ".join(rich_parts)[:400] if rich_parts else ""
+        if rich:                    entry["d"]   = rich
         if doc["description_he"]:   entry["dh"]  = doc["description_he"]
         if doc["iiif_urls"]:        entry["img"] = 1
         if doc["has_transcription"]:entry["tr"]  = 1
