@@ -283,6 +283,122 @@
     });
   }
 
+  // ── Dashboard ────────────────────────────────────────────────────────────────
+  const TAG_HE = {
+    'marriage':'נישואים','divorce':'גירושין','trade':'מסחר','medicine':'רפואה',
+    'legal':'משפטי','synagogue':'בית כנסת','court':'בית דין','debt':'חוב',
+    'debts':'חובות','loan':'הלוואה','women':'נשים','children':'ילדים',
+    'travel':'נסיעות','partnership':'שותפות','charity':'צדקה',
+    'captive':'שבויים','captives':'שבויים','family':'משפחה',
+    'inheritance':'ירושה','property':'נכסים','food':'מזון',
+    'clothing':'ביגוד','money':'כסף','silk':'משי','flax':'פשתן',
+    'spices':'תבלינים','india':'הודו','maghreb':'מגרב',
+    'community':'קהילה','nagid':'נגיד','gaon':'גאון','yeshiva':'ישיבה',
+    'responsa':'שו"ת','prayer':'תפילה','poetry':'שירה','liturgy':'ליטורגיה',
+    'ketubba':'כתובה','dowry':'נדוניה','estate':'עיזבון','rent':'שכר דירה',
+    'house':'בית','orphan':'יתום','widow':'אלמנה','heqdesh':'הקדש',
+    'waqf':'ווקף','business':'עסקים','merchant':'סוחר','ship':'ספינה',
+    'tax':'מס','pilgrimage':'עלייה לרגל','scholarship':'לימוד תורה',
+    'bible':'תנ"ך','letter':'מכתב','lists':'רשימות','account':'חשבון',
+    'accounts':'חשבונות','lease':'חכירה','sale':'מכירה','gift':'מתנה',
+  };
+
+  function loadStats() {
+    fetch('data/stats.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(s => {
+        if (!s) return;
+        renderKPI(s);
+        renderTagCloud(s.top_tags || []);
+        renderDist('dist-type', s.by_type || {});
+        renderDist('dist-lang', s.by_lang || {});
+        renderCentury(s.by_century || {});
+      })
+      .catch(() => {});
+  }
+
+  function renderKPI(s) {
+    const total = s.total || 1;
+    const pct = n => Math.round(n / total * 100) + '%';
+    [
+      ['kpi-img', s.has_img, pct(s.has_img)],
+      ['kpi-tr',  s.has_tr,  pct(s.has_tr)],
+      ['kpi-tl',  s.has_tl,  pct(s.has_tl)],
+    ].forEach(([id, n, p]) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const num = el.querySelector('.kpi-num');
+      if (num) num.textContent = (n || 0).toLocaleString('he-IL');
+      const lbl = el.querySelector('.kpi-label');
+      if (lbl && n) lbl.textContent = lbl.textContent + ' (' + p + ')';
+    });
+  }
+
+  const SKIP_TAGS = new Set([
+    'dimme','fgp stub','arabic','hebrew','judaeo-arabic','aramaic',
+    'latin','coptic','persian','syriac','greek','new','old',
+  ]);
+
+  function renderTagCloud(tags) {
+    const el = document.getElementById('tag-cloud');
+    if (!el || !tags.length) return;
+    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t));
+    const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
+    const range = maxC - minC || 1;
+    const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
+    el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
+      const label = TAG_HE[t] || t;
+      const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
+      const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
+      return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
+        data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
+        >${esc(label)}</button>`;
+    }).join('');
+    el.addEventListener('click', e => {
+      const btn = e.target.closest('.tag-pill-cloud');
+      if (!btn) return;
+      searchInput.value = btn.dataset.tag;
+      query = btn.dataset.tag;
+      clearBtn.hidden = false;
+      applyFilters();
+      document.querySelector('.search-bar-wrapper').scrollIntoView({behavior:'smooth'});
+    });
+  }
+
+  function renderDist(id, obj) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const entries = Object.entries(obj);
+    if (!entries.length) return;
+    const maxV = entries[0][1];
+    el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
+      const pct = Math.round(count / maxV * 100);
+      return `<div class="dist-row">
+        <span class="dist-label" title="${esc(label)}">${esc(label)}</span>
+        <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
+        <span class="dist-count">${count.toLocaleString('he-IL')}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function renderCentury(obj) {
+    const el = document.getElementById('dist-century');
+    if (!el) return;
+    const entries = Object.entries(obj).sort((a, b) => +a[0] - +b[0]);
+    if (!entries.length) return;
+    const maxV = Math.max(...entries.map(([, v]) => v));
+    el.innerHTML = entries.map(([c, count]) => {
+      const h = Math.round(count / maxV * 100);
+      const label = +c >= 14 ? '14+' : `${c}`;
+      const num = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
+      return `<div class="century-col">
+        <div class="century-bar" style="height:${h}%" title="${count.toLocaleString('he-IL')} מסמכים"></div>
+        <span class="century-label">מ-${label}</span>
+        <span class="century-count">${num}</span>
+      </div>`;
+    }).join('');
+  }
+
   // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
     wire();
@@ -293,6 +409,7 @@
         loadingEl.hidden = true;
         populateFilters(data);
         render();
+        loadStats();
       })
       .catch(() => {
         loadingEl.hidden = true;

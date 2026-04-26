@@ -330,6 +330,35 @@ def build_search_index(docs, translations_he=None):
     return index
 
 
+def build_stats(docs):
+    """Compute aggregate statistics for the dashboard."""
+    from collections import Counter
+    type_c, lang_c, cent_c, tag_c = Counter(), Counter(), Counter(), Counter()
+    has_img = has_tr = has_tl = 0
+    for doc in docs:
+        if doc["iiif_urls"]:         has_img += 1
+        if doc["has_transcription"]: has_tr  += 1
+        if doc["has_translation"]:   has_tl  += 1
+        if doc["type_he"]:           type_c[doc["type_he"]] += 1
+        lang = (doc["lang_he"] or "").split("؛")[0].strip()
+        if lang and lang != "לא ידוע": lang_c[lang] += 1
+        c = century_from_date(doc["date"])
+        if c: cent_c[c] += 1
+        for t in doc["tags"]:
+            t = t.strip().lower()
+            if t and len(t) > 2: tag_c[t] += 1
+    return {
+        "total":      len(docs),
+        "has_img":    has_img,
+        "has_tr":     has_tr,
+        "has_tl":     has_tl,
+        "by_type":    dict(type_c.most_common()),
+        "by_lang":    dict(lang_c.most_common(12)),
+        "by_century": {str(k): v for k, v in sorted(cent_c.items())},
+        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(80)],
+    }
+
+
 # ── HTML pages ────────────────────────────────────────────────────────────────
 INDEX_HTML = """\
 <!DOCTYPE html>
@@ -358,6 +387,62 @@ INDEX_HTML = """\
       </p>
     </div>
   </header>
+
+  <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
+    <div class="dash-inner">
+
+      <div class="dash-kpi-row">
+        <div class="kpi-card">
+          <span class="kpi-icon" aria-hidden="true">📜</span>
+          <span class="kpi-num">{total_docs:,}</span>
+          <span class="kpi-label">מסמכים באוסף</span>
+        </div>
+        <div class="kpi-card" id="kpi-img">
+          <span class="kpi-icon" aria-hidden="true">🖼</span>
+          <span class="kpi-num">…</span>
+          <span class="kpi-label">עם תמונה</span>
+        </div>
+        <div class="kpi-card" id="kpi-tr">
+          <span class="kpi-icon" aria-hidden="true">📝</span>
+          <span class="kpi-num">…</span>
+          <span class="kpi-label">עם תמלול</span>
+        </div>
+        <div class="kpi-card" id="kpi-tl">
+          <span class="kpi-icon" aria-hidden="true">🌐</span>
+          <span class="kpi-num">…</span>
+          <span class="kpi-label">עם תרגום</span>
+        </div>
+      </div>
+
+      <div class="dash-panels">
+
+        <div class="dash-panel dash-panel--wide">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">נושאים מרכזיים</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
+          <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
+        </div>
+
+        <div class="dash-panel">
+          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+          <div class="dist-list" id="dist-type"></div>
+        </div>
+
+        <div class="dash-panel">
+          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
+          <div class="dist-list" id="dist-lang"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--century">
+          <h2 class="dash-panel-title">לאורך הדורות</h2>
+          <div class="century-chart" id="dist-century"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <section class="browse-section" aria-label="עיון מהיר">
     <div class="browse-inner">
@@ -592,6 +677,11 @@ def main():
     write_json(DATA_DIR / "search.json", search_index)
     size_kb = (DATA_DIR / "search.json").stat().st_size // 1024
     print(f"  ✓  data/search.json  ({size_kb} KB, {len(search_index):,} entries)")
+
+    # stats
+    stats = build_stats(docs)
+    write_json(DATA_DIR / "stats.json", stats)
+    print(f"  ✓  data/stats.json")
 
     # per-document JSON (full detail)
     for i, doc in enumerate(docs):
