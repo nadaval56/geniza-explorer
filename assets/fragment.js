@@ -201,9 +201,17 @@
     });
     metaList.innerHTML = mHTML;
 
-    // Description (English — labelled)
+    // Description: Hebrew first, English as supplement
+    let descHTML = '';
+    if (doc.description_he) {
+      descHTML += esc(doc.description_he);
+    }
     if (doc.description) {
-      descText.innerHTML = `<span class="desc-lang-note">תיאור (באנגלית):</span> ${esc(doc.description)}`;
+      if (descHTML) descHTML += '<br><br>';
+      descHTML += `<span class="desc-lang-note">תיאור (באנגלית):</span> ${esc(doc.description)}`;
+    }
+    if (descHTML) {
+      descText.innerHTML = descHTML;
       descBlock.hidden = false;
     }
 

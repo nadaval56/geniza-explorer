@@ -87,7 +87,7 @@
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
       if (q) {
-        const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||''].join(' '));
+        const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => hay.includes(w));
       }
       return true;
@@ -130,9 +130,9 @@
     const dateLine   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
     const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
     const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
-    const descLine   = doc.d
-      ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d)}…</p>`
-      : '';
+    const descLine   = doc.dh
+      ? `<p class="card-description">${esc(doc.dh)}</p>`
+      : (doc.d ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d)}…</p>` : '');
 
     return `
       <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"

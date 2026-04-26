@@ -36,13 +36,18 @@ DOCS_DIR = DATA_DIR / "docs"
 
 # ── Hebrew translations ────────────────────────────────────────────────────────
 TYPE_MAP = {
-    "Legal document": "מסמך משפטי",
-    "Letter": "מכתב",
-    "Literary text": "טקסט ספרותי",
-    "Paraliterary text": "טקסט פרא-ספרותי",
-    "Religious text": "טקסט דתי",
-    "Unknown type": "סוג לא ידוע",
-    "Documentary": "מסמך",
+    "Legal document":                       "מסמך משפטי",
+    "Letter":                               "מכתב",
+    "Literary text":                        "טקסט ספרותי",
+    "Paraliterary text":                    "טקסט פרא-ספרותי",
+    "Religious text":                       "טקסט דתי",
+    "List or table":                        "רשימה או טבלה",
+    "State document":                       "מסמך ממלכתי",
+    "Credit instrument or private receipt": "שטר אשראי או קבלה",
+    "Legal query or responsum":             "שאלה משפטית",
+    "Inscription":                          "כתובת",
+    "Unknown type":                         "סוג לא ידוע",
+    "Documentary":                          "מסמך",
 }
 
 LANG_MAP = {
@@ -57,6 +62,44 @@ LANG_MAP = {
     "Persian": "פרסית",
     "Syriac": "סורית",
     "Unknown": "לא ידוע",
+}
+
+PLACE_MAP = {
+    "Alexandria":    "אלכסנדריה",
+    "Jerusalem":     "ירושלים",
+    "Fustat":        "פוסטאט",
+    "Aden":          "עדן",
+    "Damascus":      "דמשק",
+    "Cairo":         "קהיר",
+    "Tyre":          "צור",
+    "Acre":          "עכו",
+    "Ascalon":       "אשקלון",
+    "Jaffa":         "יפו",
+    "Hebron":        "חברון",
+    "Tiberias":      "טבריה",
+    "Ramle":         "רמלה",
+    "Ramla":         "רמלה",
+    "Qayrawān":      "קירואן",
+    "Baghdad":       "בגדד",
+    "Palermo":       "פלרמו",
+    "Sicily":        "סיציליה",
+    "Egypt":         "מצרים",
+    "Palestine":     "ארץ ישראל",
+    "Yemen":         "תימן",
+    "India":         "הודו",
+    "Tunisia":       "תוניסיה",
+    "Tripoli":       "טריפולי",
+    "Bilbays":       "בלבייס",
+    "Tinnis":        "תניס",
+    "al-Mahdiyya":   "אל-מהדיה",
+    "Tlemcen":       "תלמסאן",
+    "Sijilmasa":     "סיג'ילמאסה",
+    "Qūṣ":           "קוס",
+    "Sahrajt":       "סהרג'ת",
+    "Qalyub":        "קליוב",
+    "Sunbat":        "סנבאט",
+    "Minyat Zifta":  "מנית זפתה",
+    "Byzantium":     "ביזנטיון",
 }
 
 LIBRARY_MAP = {
@@ -130,6 +173,43 @@ def century_from_date(date_str):
     return None
 
 
+def place_he(name):
+    """Return Hebrew place name if known, else hyphen-prefixed for readability."""
+    return PLACE_MAP.get(name, f"-{name}")
+
+
+def generate_hebrew_desc(doc):
+    """Build a short Hebrew description sentence from structured metadata."""
+    type_he = doc.get("type_he", "") or ""
+    lang    = (doc.get("lang_he", "") or "").split("؛")[0].strip()
+    origin  = doc.get("origin", "") or ""
+    dest    = doc.get("destination", "") or ""
+    lib     = (doc.get("library", "") or "").split(" · ")[0].strip()
+    date    = doc.get("date", "") or ""
+
+    parts = []
+    if type_he and type_he not in ("לא מסווג", "סוג לא ידוע"):
+        parts.append(type_he)
+    if lang and lang != "לא ידוע":
+        parts.append(f"ב{lang}")
+    c = century_from_date(date)
+    if c:
+        parts.append(f"מהמאה ה-{c}")
+    if origin and dest:
+        parts.append(f"מ{place_he(origin)} ל{place_he(dest)}")
+    elif origin:
+        parts.append(f"מ{place_he(origin)}")
+    elif dest:
+        parts.append(f"ל{place_he(dest)}")
+
+    if not parts:
+        return ""
+    sentence = " ".join(parts)
+    if lib:
+        sentence += f". מוחזק ב{lib}"
+    return sentence + "."
+
+
 def is_truthy(v):
     return str(v).strip().lower() in ("true", "1", "yes", "t")
 
@@ -150,7 +230,7 @@ def parse_doc(row):
     if not princeton_url:
         princeton_url = f"https://geniza.princeton.edu/en/documents/{pgpid}/"
 
-    return {
+    doc = {
         "id": pgpid,
         "shelfmark": row.get("shelfmark", "").strip(),
         "multifragment": row.get("multifragment", "").strip(),
@@ -181,6 +261,8 @@ def parse_doc(row):
         "princeton_url": princeton_url,
         "mentioned": row.get("mentioned", "").strip(),
     }
+    doc["description_he"] = generate_hebrew_desc(doc)
+    return doc
 
 
 # ── Download ───────────────────────────────────────────────────────────────────
@@ -230,6 +312,7 @@ def build_search_index(docs):
         if doc["library"]:          entry["lib"] = doc["library"]
         desc = doc["description"][:160] if doc["description"] else ""
         if desc:                    entry["d"]   = desc
+        if doc["description_he"]:   entry["dh"]  = doc["description_he"]
         if doc["iiif_urls"]:        entry["img"] = 1
         if doc["has_transcription"]:entry["tr"]  = 1
         if doc["has_translation"]:  entry["tl"]  = 1
@@ -287,7 +370,8 @@ INDEX_HTML = """\
         <div class="browse-chips" id="type-chips">
           <button class="chip" data-type="מכתב">✉ מכתבים</button>
           <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="טקסט דתי">✡ דתיים</button>
+          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
+          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
           <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
           <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
         </div>
