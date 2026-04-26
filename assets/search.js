@@ -155,10 +155,11 @@
     const dateLine   = doc.dt ? `<span class="card-date">${esc(doc.dt)}</span>` : '';
     const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
     const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
-    const descSnippet = (doc.d || '').split(' ').slice(0, 20).join(' ');
-    const descLine = descSnippet
-      ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(descSnippet)}…</p>`
-      : '';
+    const descLine = doc.dh
+      ? `<p class="card-description">${esc(doc.dh)}</p>`
+      : (doc.d
+          ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d.split(' ').slice(0,20).join(' '))}…</p>`
+          : '');
 
     return `
       <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"

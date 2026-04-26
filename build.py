@@ -299,8 +299,9 @@ def write_json(path, obj):
         json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def build_search_index(docs):
+def build_search_index(docs, translations_he=None):
     """Compact per-doc record for the search index."""
+    translations_he = translations_he or {}
     index = []
     for doc in docs:
         entry = {"id": doc["id"]}
@@ -317,7 +318,9 @@ def build_search_index(docs):
         if doc["mentioned"]:   rich_parts.append(doc["mentioned"])
         rich = " ".join(rich_parts)[:400] if rich_parts else ""
         if rich:                    entry["d"]   = rich
-        if doc["description_he"]:   entry["dh"]  = doc["description_he"]
+        # Hebrew description: prefer real translation, fall back to auto-generated
+        desc_he = translations_he.get(doc["id"]) or doc["description_he"]
+        if desc_he:                 entry["dh"]  = desc_he
         if doc["iiif_urls"]:        entry["img"] = 1
         if doc["has_transcription"]:entry["tr"]  = 1
         if doc["has_translation"]:  entry["tl"]  = 1
@@ -554,6 +557,16 @@ def main():
 
     print("\n── Geniza Explorer Build ─────────────────────────────")
 
+    # 0. Load Hebrew translations cache (generated once by translate.py)
+    translations_path = DATA_DIR / "translations_he.json"
+    translations_he = {}
+    if translations_path.exists():
+        with open(translations_path, encoding="utf-8") as f:
+            translations_he = json.load(f)
+        print(f"\n[0/4] Translations: {len(translations_he):,} cached Hebrew descriptions loaded")
+    else:
+        print("\n[0/4] Translations: none yet (run translate.py to generate)")
+
     # 1. Download / load CSV
     print("\n[1/4] CSV")
     if args.no_download and not CACHE_FILE.exists():
@@ -575,7 +588,7 @@ def main():
     DOCS_DIR.mkdir(exist_ok=True)
 
     # search index
-    search_index = build_search_index(docs)
+    search_index = build_search_index(docs, translations_he)
     write_json(DATA_DIR / "search.json", search_index)
     size_kb = (DATA_DIR / "search.json").stat().st_size // 1024
     print(f"  ✓  data/search.json  ({size_kb} KB, {len(search_index):,} entries)")
@@ -585,6 +598,10 @@ def main():
         idx = id_to_idx[doc["id"]]
         prev_id = docs[idx - 1]["id"] if idx > 0 else None
         next_id = docs[idx + 1]["id"] if idx < len(docs) - 1 else None
+        # Prefer real translation over auto-generated metadata description
+        doc_he = translations_he.get(doc["id"])
+        if doc_he:
+            doc = {**doc, "description_he": doc_he}
         detail = {**doc, "prev": prev_id, "next": next_id, "pos": idx + 1, "total": len(docs)}
         write_json(DOCS_DIR / f"{doc['id']}.json", detail)
         if (i + 1) % 5000 == 0:
