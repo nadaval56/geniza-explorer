@@ -334,7 +334,7 @@ INDEX_HTML = """\
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v={build_ts}">
 </head>
 <body>
 
@@ -440,7 +440,7 @@ INDEX_HTML = """\
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};</script>
-  <script src="assets/search.js"></script>
+  <script src="assets/search.js?v={build_ts}"></script>
 </body>
 </html>
 """
@@ -455,7 +455,7 @@ FRAGMENT_HTML = """\
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v={build_ts}">
 </head>
 <body class="fragment-body">
 
@@ -530,7 +530,7 @@ FRAGMENT_HTML = """\
     </p>
   </footer>
 
-  <script src="assets/fragment.js"></script>
+  <script src="assets/fragment.js?v={build_ts}"></script>
 </body>
 </html>
 """
@@ -590,13 +590,14 @@ def main():
     # 4. Write HTML pages
     print("\n[4/4] Writing HTML")
     build_date = date.today().strftime("%-d %B %Y")
+    build_ts   = date.today().strftime("%Y%m%d")
 
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date))
+        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date, build_ts=build_ts))
     print("  ✓  index.html")
 
     with open("fragment.html", "w", encoding="utf-8") as f:
-        f.write(FRAGMENT_HTML)
+        f.write(FRAGMENT_HTML.format(build_ts=build_ts))
     print("  ✓  fragment.html")
 
     print("\n── Done ──────────────────────────────────────────────")
