@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const PAGE_SIZE = 48;
+  const PAGE_SIZE = 8;
 
   // ── State ─────────────────────────────────────────────────────────────────────
   let allDocs   = [];
@@ -367,19 +367,13 @@
   function renderKPI(s) {
     const total = s.total || 1;
     const pct = n => Math.round(n / total * 100) + '%';
-    [
-      ['kpi-img', s.has_img, pct(s.has_img)],
-      ['kpi-tr',  s.has_tr,  pct(s.has_tr)],
-      ['kpi-tl',  s.has_tl,  pct(s.has_tl)],
-    ].forEach(([id, n, p]) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      if (!n) { el.hidden = true; return; }
+    const el = document.getElementById('kpi-img');
+    if (el && s.has_img) {
       const num = el.querySelector('.kpi-num');
-      if (num) num.textContent = n.toLocaleString('he-IL');
+      if (num) num.textContent = s.has_img.toLocaleString('he-IL');
       const lbl = el.querySelector('.kpi-label');
-      if (lbl) lbl.textContent = lbl.textContent + ' (' + p + ')';
-    });
+      if (lbl) lbl.textContent = lbl.textContent + ' (' + pct(s.has_img) + ')';
+    }
   }
 
   const SKIP_TAGS = new Set([

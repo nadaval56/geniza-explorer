@@ -908,9 +908,38 @@ img { display: block; max-width: 100%; }
   color: var(--text);
 }
 
-/* ── Dashboard ───────────────────────────────────────────────────────────────── */
+/* ── About link in header ────────────────────────────────────────────────────── */
+.about-link {
+  display: inline-block;
+  margin-top: .75rem;
+  font-family: var(--font-ui);
+  font-size: .82rem;
+  color: var(--gold-light);
+  text-decoration: none;
+  opacity: .8;
+  transition: opacity .2s;
+}
+.about-link:hover { opacity: 1; }
+
+/* ── KPI section (2-card version) ────────────────────────────────────────────── */
+.dashboard-kpi {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+}
+.dash-kpi-row--two {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 200px));
+  gap: .75rem;
+  justify-content: center;
+}
+
+/* ── Dashboard (stats below cards) ──────────────────────────────────────────── */
 .dashboard {
   background: var(--bg-2);
+  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 2rem 1.5rem;
 }
@@ -923,7 +952,7 @@ img { display: block; max-width: 100%; }
   gap: 1rem;
 }
 
-/* KPI row */
+/* KPI row (legacy - unused) */
 .dash-kpi-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -387,100 +387,27 @@ INDEX_HTML = """\
         מכתבים, חוזים, שירה, רפואה ותפילה — שנכתבו בין המאה ה-10 למאה ה-13.
         הם מגלים את חייהם של אנשים רגילים בעולם הים-תיכוני.
       </p>
+      <a href="about.html" class="about-link">אודות הגניזה ←</a>
     </div>
   </header>
 
-  <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
-    <div class="dash-inner">
-
-      <div class="dash-kpi-row">
-        <div class="kpi-card">
-          <span class="kpi-icon" aria-hidden="true">📜</span>
-          <span class="kpi-num">{total_docs:,}</span>
-          <span class="kpi-label">מסמכים באוסף</span>
-        </div>
-        <div class="kpi-card" id="kpi-img">
-          <span class="kpi-icon" aria-hidden="true">🖼</span>
-          <span class="kpi-num">…</span>
-          <span class="kpi-label">עם תמונה</span>
-        </div>
-        <div class="kpi-card" id="kpi-tr">
-          <span class="kpi-icon" aria-hidden="true">📝</span>
-          <span class="kpi-num">…</span>
-          <span class="kpi-label">עם תמלול</span>
-        </div>
-        <div class="kpi-card" id="kpi-tl">
-          <span class="kpi-icon" aria-hidden="true">🌐</span>
-          <span class="kpi-num">…</span>
-          <span class="kpi-label">עם תרגום</span>
-        </div>
+  <!-- KPI row (2 cards only) -->
+  <section class="dashboard-kpi" aria-label="סטטיסטיקות">
+    <div class="dash-kpi-row dash-kpi-row--two">
+      <div class="kpi-card">
+        <span class="kpi-icon" aria-hidden="true">📜</span>
+        <span class="kpi-num">{total_docs:,}</span>
+        <span class="kpi-label">מסמכים באוסף</span>
       </div>
-
-      <div class="dash-panels">
-
-        <div class="dash-panel dash-panel--wide">
-          <div class="dash-panel-hd">
-            <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
-          </div>
-          <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
-        </div>
-
-        <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
-          <div class="dist-list" id="dist-type"></div>
-        </div>
-
-        <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
-          <div class="dist-list" id="dist-lang"></div>
-        </div>
-
-        <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
-          <div class="century-chart" id="dist-century"></div>
-        </div>
-
+      <div class="kpi-card" id="kpi-img">
+        <span class="kpi-icon" aria-hidden="true">🖼</span>
+        <span class="kpi-num">…</span>
+        <span class="kpi-label">עם תמונה</span>
       </div>
-
     </div>
   </section>
 
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-      <div class="browse-group browse-group--single">
-        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
-          🎲 הפתע אותי
-        </button>
-      </div>
-
-    </div>
-  </section>
-
+  <!-- Search + Cards (appear right after KPIs) -->
   <div class="search-bar-wrapper">
     <div class="search-bar-inner">
       <div class="search-input-wrap">
@@ -523,6 +450,75 @@ INDEX_HTML = """\
       <button class="btn-reset-inline" id="btn-reset-empty">הצג את כל המסמכים</button>
     </div>
   </main>
+
+  <!-- Statistics section (below cards) -->
+  <section class="browse-section" aria-label="עיון מהיר">
+    <div class="browse-inner">
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי תקופה</h2>
+        <div class="browse-chips" id="era-chips">
+          <button class="chip" data-era="10">המאה ה-10</button>
+          <button class="chip" data-era="11">המאה ה-11</button>
+          <button class="chip" data-era="12">המאה ה-12</button>
+          <button class="chip" data-era="13">המאה ה-13</button>
+          <button class="chip" data-era="14">המאה ה-14+</button>
+        </div>
+      </div>
+
+      <div class="browse-group">
+        <h2 class="browse-label">עיון לפי סוג</h2>
+        <div class="browse-chips" id="type-chips">
+          <button class="chip" data-type="מכתב">✉ מכתבים</button>
+          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
+          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
+          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
+          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
+          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
+        </div>
+      </div>
+
+      <div class="browse-group browse-group--single">
+        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
+          🎲 הפתע אותי
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
+    <div class="dash-inner">
+
+      <div class="dash-panels">
+
+        <div class="dash-panel dash-panel--wide">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">נושאים מרכזיים</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
+          <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
+        </div>
+
+        <div class="dash-panel">
+          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+          <div class="dist-list" id="dist-type"></div>
+        </div>
+
+        <div class="dash-panel">
+          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
+          <div class="dist-list" id="dist-lang"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--century">
+          <h2 class="dash-panel-title">לאורך הדורות</h2>
+          <div class="century-chart" id="dist-century"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <footer class="site-footer">
     <p>
