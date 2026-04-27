@@ -104,7 +104,7 @@
       if (fType && d.th !== fType) return false;
       if (fLang && !(d.lh||'').includes(fLang)) return false;
       if (fLib  && !(d.lib||'').includes(fLib))  return false;
-      if (fHas === 'tr' && !d.tr) return false;
+      if (fHas === 'img' && !d.img) return false;
       if (fEra) {
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
