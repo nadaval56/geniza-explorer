@@ -244,12 +244,13 @@ img { display: block; max-width: 100%; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: .85rem 1.5rem;
+  padding: .85rem 0;
 }
 
 .search-bar-inner {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: .6rem;
@@ -890,7 +891,9 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 600px) {
   .site-header { padding: 2.5rem 1rem 2rem; }
-  .search-bar-wrapper { padding: .6rem 1rem; }
+  .search-bar-wrapper { padding: .6rem 0; }
+  .search-bar-inner { padding: 0 1rem; }
+  .dash-kpi-row--two { padding: 0 1rem; }
   .search-input { font-size: .9rem; }
   .filters { grid-template-columns: 1fr 1fr; }
   .cards-grid { grid-template-columns: 1fr; }
@@ -925,11 +928,12 @@ img { display: block; max-width: 100%; }
 .dashboard-kpi {
   background: var(--bg-2);
   border-bottom: 1px solid var(--border);
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 0;
 }
 .dash-kpi-row--two {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .75rem;
