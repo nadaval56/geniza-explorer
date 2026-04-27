@@ -321,7 +321,9 @@ def build_search_index(docs, translations_he=None):
         # Hebrew description: prefer real translation, fall back to auto-generated
         desc_he = translations_he.get(doc["id"]) or doc["description_he"]
         if desc_he:                 entry["dh"]  = desc_he
-        if doc["iiif_urls"]:        entry["img"] = 1
+        if doc["iiif_urls"]:
+            entry["img"] = 1
+            entry["iu"]  = doc["iiif_urls"][0]
         if doc["has_transcription"]:entry["tr"]  = 1
         if doc["has_translation"]:  entry["tl"]  = 1
         c = century_from_date(doc["date"])
@@ -500,9 +502,7 @@ INDEX_HTML = """\
         </select>
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
-          <option value="img">🖼 עם תמונה</option>
           <option value="tr">📝 עם תמלול</option>
-          <option value="tl">🌐 עם תרגום</option>
         </select>
         <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
@@ -529,6 +529,7 @@ INDEX_HTML = """\
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
       — רישיון CC BY-NC 4.0
     </p>
+    <p><a href="about.html">אודות הגניזה</a></p>
     <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
@@ -621,6 +622,7 @@ FRAGMENT_HTML = """\
       <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
       — רישיון CC BY-NC 4.0
     </p>
+    <p><a href="about.html">אודות הגניזה</a></p>
   </footer>
 
   <script src="assets/fragment.js?v={build_ts}"></script>

@@ -104,9 +104,7 @@
       if (fType && d.th !== fType) return false;
       if (fLang && !(d.lh||'').includes(fLang)) return false;
       if (fLib  && !(d.lib||'').includes(fLib))  return false;
-      if (fHas === 'img' && !d.img) return false;
-      if (fHas === 'tr'  && !d.tr)  return false;
-      if (fHas === 'tl'  && !d.tl)  return false;
+      if (fHas === 'tr' && !d.tr) return false;
       if (fEra) {
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
@@ -140,11 +138,53 @@
     if (btnReset) btnReset.hidden = !hasActiveFilter();
   }
 
+  // ── IIIF thumbnail lazy loader ────────────────────────────────────────────────
+  let thumbObserver = null;
+
+  async function fetchIIIFThumb(manifestUrl) {
+    try {
+      const resp = await fetch(manifestUrl, { mode: 'cors', cache: 'force-cache' });
+      if (!resp.ok) return null;
+      const m = await resp.json();
+      const canvas = m?.sequences?.[0]?.canvases?.[0];
+      if (!canvas) return null;
+      const mThumb = m.thumbnail?.['@id'] || m.thumbnail;
+      if (typeof mThumb === 'string' && mThumb.startsWith('http')) return mThumb;
+      const cThumb = canvas.thumbnail?.['@id'] || canvas.thumbnail;
+      if (typeof cThumb === 'string' && cThumb.startsWith('http')) return cThumb;
+      const res = canvas.images?.[0]?.resource;
+      const svc = res?.service?.['@id'] || res?.service?.id;
+      if (svc) return `${svc}/full/300,/0/default.jpg`;
+      const rid = res?.['@id'];
+      if (rid) return rid.replace('/full/full/', '/full/300,/').replace('/full/max/', '/full/300,/');
+      return null;
+    } catch { return null; }
+  }
+
+  function initThumbObserver() {
+    if (!('IntersectionObserver' in window)) return;
+    thumbObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const img = entry.target;
+        const url = img.dataset.iu;
+        if (!url) return;
+        thumbObserver.unobserve(img);
+        fetchIIIFThumb(url).then(src => {
+          if (src) { img.src = src; img.hidden = false; }
+        });
+      });
+    }, { rootMargin: '200px' });
+  }
+
+  function observeThumb(el) {
+    if (thumbObserver) thumbObserver.observe(el);
+  }
+
   // ── Card HTML ─────────────────────────────────────────────────────────────────
   function cardHTML(doc) {
     const cls  = TYPE_CLASS[doc.th] || 'badge-type-other';
     const icons = [
-      doc.img ? '<span class="card-icon" title="תמונה">🖼</span>' : '',
       doc.tr  ? '<span class="card-icon" title="תמלול">📝</span>' : '',
       doc.tl  ? '<span class="card-icon" title="תרגום">🌐</span>'  : '',
     ].join('');
@@ -160,10 +200,14 @@
       : (doc.d
           ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d.split(' ').slice(0,20).join(' '))}…</p>`
           : '');
+    const thumbImg = doc.iu
+      ? `<img class="card-thumb" data-iu="${esc(doc.iu)}" alt="" hidden loading="lazy">`
+      : '';
 
     return `
-      <a href="fragment.html?id=${esc(doc.id)}" class="card" role="listitem"
+      <a href="fragment.html?id=${esc(doc.id)}" class="card${doc.iu?' card--has-thumb':''}" role="listitem"
          aria-label="${esc(doc.s||'מסמך')}">
+        ${thumbImg}
         <div class="card-top">
           <span class="card-shelfmark">${esc(doc.s) || 'PGPID ' + esc(doc.id)}</span>
           <span class="card-icons" aria-hidden="true">${icons}</span>
@@ -194,7 +238,10 @@
 
     emptyEl.hidden  = total > 0;
     grid.hidden     = total === 0;
-    if (total > 0) grid.innerHTML = slice.map(cardHTML).join('');
+    if (total > 0) {
+      grid.innerHTML = slice.map(cardHTML).join('');
+      grid.querySelectorAll('.card-thumb').forEach(observeThumb);
+    }
 
     renderPagination(pages);
   }
@@ -402,6 +449,7 @@
 
   // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
+    initThumbObserver();
     wire();
     fetch('data/search.json')
       .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
