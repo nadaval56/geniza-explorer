@@ -384,17 +384,17 @@
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t) && TAG_HE[t]);
+    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t));
+    if (!filtered_tags.length) return;
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
     const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
     el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
-      const label = TAG_HE[t] || t;
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
         data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
-        >${esc(label)}</button>`;
+        >${esc(t)}</button>`;
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
