@@ -400,17 +400,17 @@ INDEX_HTML = """\
         <span class="kpi-num">{total_docs:,}</span>
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
-      <div class="kpi-card" id="kpi-img">
-        <span class="kpi-icon" aria-hidden="true">🖼</span>
-        <span class="kpi-num">…</span>
-        <span class="kpi-label">עם תמונה</span>
-      </div>
       <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
         <span class="kpi-icon" aria-hidden="true">💡</span>
         <span class="kpi-dyk-label">הידעת?</span>
         <span class="kpi-dyk-text" id="dyk-text">…</span>
         <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
       </a>
+      <div class="kpi-card" id="kpi-img">
+        <span class="kpi-icon" aria-hidden="true">🖼</span>
+        <span class="kpi-num">…</span>
+        <span class="kpi-label">עם תמונה</span>
+      </div>
     </div>
   </section>
 
