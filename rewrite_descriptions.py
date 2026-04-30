@@ -1,43 +1,54 @@
 #!/usr/bin/env python3
 """
-Geniza Explorer — Hebrew Description Rewrite (Opus 4.7)
+Geniza Explorer — Hebrew Description Rewrite (Opus 4.7 via Claude Code Max)
 
 Re-writes the Hebrew description for documents that have the largest
 gap between the English `description` and the (Haiku-generated) Hebrew
-summary, using Claude Opus 4.7 via the Batch API.
+summary, using Claude Opus 4.7 through the Claude Code CLI (`claude
+--print`). This uses the local Claude Code Max-plan authentication —
+no ANTHROPIC_API_KEY required.
 
 Strategy:
     1. Scan data/docs/, score each doc by gap (same metric as
        find_translation_gaps.py: (en_len - he_len) * (1 - ratio)).
     2. Take the top N (default 5,000), skipping any IDs already
        rewritten in a previous run.
-    3. Submit to the Batch API in chunks of <10,000 requests.
-    4. As each batch completes, overwrite the entries in
-       data/translations_he.json and append the IDs to
+    3. Call `claude --print --model claude-opus-4-7 …` once per doc,
+       in a thread pool (configurable concurrency).
+    4. As results come in, overwrite entries in
+       data/translations_he.json and append IDs to
        .cache/rewrites_done.json so the next run resumes cleanly.
+       (Ctrl-C is honoured — partial progress is saved.)
     5. Run `python build.py` afterwards to propagate the new HE
        descriptions into data/docs/*.json and the search index.
 
 Usage:
-    python rewrite_descriptions.py                 # top 5,000
-    python rewrite_descriptions.py --top 1000      # smaller run
-    python rewrite_descriptions.py --dry-run       # show plan + cost only
-    python rewrite_descriptions.py --batch-id ...  # resume an in-flight batch
+    python rewrite_descriptions.py                 # top 5,000 (default)
+    python rewrite_descriptions.py --top 50        # smaller smoke test
+    python rewrite_descriptions.py --dry-run       # show plan only
+    python rewrite_descriptions.py --workers 5     # more concurrency
 """
 
 import argparse
 import json
-import os
+import subprocess
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 DOCS_DIR        = Path("data/docs")
 TRANSLATIONS    = Path("data/translations_he.json")
 REWRITES_DONE   = Path(".cache/rewrites_done.json")
-BATCH_CHUNK     = 9_000
+ERRORS_LOG      = Path(".cache/rewrites_errors.log")
+
 MODEL           = "claude-opus-4-7"
-MAX_TOKENS      = 4096
+DEFAULT_WORKERS = 3
+SAVE_EVERY      = 25      # flush progress to disk every N completions
+CALL_TIMEOUT    = 240     # seconds per Opus call
+MAX_RETRIES     = 3
+BACKOFF_BASE    = 4       # 4s, 8s, 16s
 
 SYSTEM_PROMPT = """אתה כותב תיאורים בעברית למסמכים מגניזת קהיר, על בסיס תיאור באנגלית מקטלוג Princeton Geniza Project.
 
@@ -75,7 +86,7 @@ def save_json(path, obj):
 
 
 def select_targets(top_n, min_en, already_done):
-    """Return list of {id, desc} for the top-N by gap score, skipping done IDs."""
+    """Return list of {id, desc, score} for the top-N by gap score."""
     candidates = []
     for path in DOCS_DIR.glob("*.json"):
         try:
@@ -99,82 +110,136 @@ def select_targets(top_n, min_en, already_done):
     return candidates[:top_n]
 
 
-# ── Cost estimate ──────────────────────────────────────────────────────────────
-# Opus 4.x pricing (list): $15/MTok input, $75/MTok output. Batch API: 50% off.
-PRICE_IN_BATCH  = 7.50  / 1_000_000
-PRICE_OUT_BATCH = 37.50 / 1_000_000
+# ── Single Claude Code call ────────────────────────────────────────────────────
+def call_claude_once(desc_en, model, timeout):
+    """Run `claude --print` once. Returns stdout text on success; raises on error."""
+    proc = subprocess.run(
+        [
+            "claude",
+            "--print",
+            "--model", model,
+            "--system-prompt", SYSTEM_PROMPT,
+            "--tools", "",                  # no tool use — pure generation
+            "--disable-slash-commands",
+            "--no-session-persistence",
+            "--output-format", "text",
+        ],
+        input=desc_en,
+        capture_output=True,
+        text=True,
+        timeout=timeout,
+    )
+    if proc.returncode != 0:
+        err = (proc.stderr or proc.stdout or "").strip()[:600]
+        raise RuntimeError(f"claude exit {proc.returncode}: {err}")
+    text = proc.stdout.strip()
+    if not text:
+        raise RuntimeError("claude returned empty output")
+    return text
 
 
-def estimate_cost(targets):
-    chars_in = sum(len(t["desc"]) + len(SYSTEM_PROMPT) for t in targets)
-    # Assume HE output ~ same length as EN input (we ask for similar scope).
-    chars_out = sum(len(t["desc"]) for t in targets)
-    tokens_in  = chars_in  / 4
-    tokens_out = chars_out / 4
-    return tokens_in * PRICE_IN_BATCH + tokens_out * PRICE_OUT_BATCH
+def call_claude_with_retry(target, model, timeout, max_retries):
+    """Wrapper that retries on transient failures (rate limit / overload / timeout)."""
+    last_err = None
+    for attempt in range(max_retries):
+        try:
+            return call_claude_once(target["desc"], model, timeout)
+        except subprocess.TimeoutExpired as e:
+            last_err = f"timeout after {timeout}s"
+        except RuntimeError as e:
+            last_err = str(e)
+            # Don't retry on auth errors — they're not transient.
+            low = last_err.lower()
+            if "auth" in low or "unauthorized" in low or "forbidden" in low:
+                raise
+        if attempt < max_retries - 1:
+            time.sleep(BACKOFF_BASE * (2 ** attempt))
+    raise RuntimeError(f"failed after {max_retries} attempts: {last_err}")
 
 
-# ── Batch API ──────────────────────────────────────────────────────────────────
-def submit_batch(client, targets):
-    requests = [
-        {
-            "custom_id": t["id"],
-            "params": {
-                "model": MODEL,
-                "max_tokens": MAX_TOKENS,
-                "system": SYSTEM_PROMPT,
-                "messages": [{"role": "user", "content": t["desc"]}],
-            },
-        }
-        for t in targets
-    ]
-    batch = client.messages.batches.create(requests=requests)
-    return batch.id
+# ── Orchestration ──────────────────────────────────────────────────────────────
+class Progress:
+    def __init__(self, translations, done_set):
+        self.translations = translations
+        self.done_set     = done_set
+        self.lock         = threading.Lock()
+        self.completed    = 0
+        self.errored      = 0
+        self.since_save   = 0
+
+    def record_success(self, doc_id, text):
+        with self.lock:
+            self.translations[doc_id] = text
+            self.done_set.add(doc_id)
+            self.completed  += 1
+            self.since_save += 1
+
+    def record_error(self, doc_id, err):
+        with self.lock:
+            self.errored += 1
+        with open(ERRORS_LOG, "a", encoding="utf-8") as f:
+            f.write(f"{doc_id}\t{err}\n")
+
+    def maybe_save(self, force=False):
+        with self.lock:
+            if force or self.since_save >= SAVE_EVERY:
+                save_json(TRANSLATIONS, self.translations)
+                save_json(REWRITES_DONE, sorted(self.done_set))
+                self.since_save = 0
 
 
-def poll_until_done(client, batch_id, poll_interval=30):
-    print(f"  Batch ID: {batch_id}")
-    while True:
-        batch = client.messages.batches.retrieve(batch_id)
-        c = batch.request_counts
-        done  = c.succeeded + c.errored + c.canceled
-        total = done + c.processing
-        print(f"  {batch.processing_status} — {done}/{total} done "
-              f"({c.errored} errors)", end="\r", flush=True)
-        if batch.processing_status == "ended":
-            print()
-            return batch
-        time.sleep(poll_interval)
+def run_rewrites(targets, model, workers, timeout, max_retries, progress, total):
+    start = time.time()
+    interrupted = False
 
+    def worker(target):
+        try:
+            text = call_claude_with_retry(target, model, timeout, max_retries)
+            progress.record_success(target["id"], text)
+        except Exception as e:
+            progress.record_error(target["id"], str(e))
 
-def collect_results(client, batch_id, translations, done_set):
-    new_count = 0
-    errors = 0
-    for result in client.messages.batches.results(batch_id):
-        if result.result.type == "succeeded":
-            text = result.result.message.content[0].text.strip()
-            translations[result.custom_id] = text
-            done_set.add(result.custom_id)
-            new_count += 1
-        else:
-            errors += 1
-    return new_count, errors
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(worker, t) for t in targets]
+        try:
+            for i, _ in enumerate(as_completed(futures), 1):
+                if i % 5 == 0 or i == len(futures):
+                    elapsed = time.time() - start
+                    rate = i / elapsed if elapsed else 0
+                    eta = (len(futures) - i) / rate if rate else 0
+                    print(f"  [{i}/{len(futures)}] "
+                          f"ok={progress.completed}  err={progress.errored}  "
+                          f"rate={rate:.2f}/s  ETA={eta/60:.1f}m",
+                          end="\r", flush=True)
+                progress.maybe_save()
+        except KeyboardInterrupt:
+            interrupted = True
+            print("\n\nInterrupted — cancelling pending work and saving progress…")
+            for f in futures:
+                f.cancel()
+    print()
+    progress.maybe_save(force=True)
+    return interrupted
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(
-        description="Rewrite Hebrew descriptions with Opus 4.7 for biggest gaps")
-    parser.add_argument("--top",      type=int, default=5000,
+        description="Rewrite Hebrew descriptions with Opus 4.7 via Claude Code")
+    parser.add_argument("--top",        type=int, default=5000,
                         help="How many of the worst-gap docs to rewrite (default 5000)")
-    parser.add_argument("--min-en",   type=int, default=200,
+    parser.add_argument("--min-en",     type=int, default=200,
                         help="Skip docs with EN shorter than this (default 200)")
-    parser.add_argument("--dry-run",  action="store_true",
-                        help="Show plan + cost estimate only; no API calls")
-    parser.add_argument("--batch-id", type=str, default=None,
-                        help="Resume an existing batch by ID")
-    parser.add_argument("--poll",     type=int, default=30,
-                        help="Poll interval in seconds (default 30)")
+    parser.add_argument("--workers",    type=int, default=DEFAULT_WORKERS,
+                        help=f"Parallel workers (default {DEFAULT_WORKERS})")
+    parser.add_argument("--timeout",    type=int, default=CALL_TIMEOUT,
+                        help=f"Per-call timeout in seconds (default {CALL_TIMEOUT})")
+    parser.add_argument("--retries",    type=int, default=MAX_RETRIES,
+                        help=f"Max retries on transient failure (default {MAX_RETRIES})")
+    parser.add_argument("--model",      default=MODEL,
+                        help=f"Model id (default {MODEL})")
+    parser.add_argument("--dry-run",    action="store_true",
+                        help="Show plan only; no claude calls")
     args = parser.parse_args()
 
     translations = load_json(TRANSLATIONS, {})
@@ -182,72 +247,40 @@ def main():
     print(f"Existing translations cached: {len(translations):,}")
     print(f"Already rewritten with Opus:  {len(done_set):,}")
 
-    # ── Resume mode ───────────────────────────────────────────────────────────
-    if args.batch_id:
-        try:
-            import anthropic
-        except ImportError:
-            sys.exit("ERROR: pip install anthropic")
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
-        if not api_key:
-            sys.exit("ERROR: Set ANTHROPIC_API_KEY")
-        client = anthropic.Anthropic(api_key=api_key)
-        print(f"Resuming batch {args.batch_id}…")
-        poll_until_done(client, args.batch_id, args.poll)
-        n, errs = collect_results(client, args.batch_id, translations, done_set)
-        save_json(TRANSLATIONS, translations)
-        save_json(REWRITES_DONE, sorted(done_set))
-        print(f"Saved {n:,} rewrites ({errs} errors). Total rewritten: {len(done_set):,}")
-        _next_steps()
-        return
-
-    # ── Plan ──────────────────────────────────────────────────────────────────
     print(f"\nSelecting top {args.top:,} by gap score (min EN ≥ {args.min_en} chars)…")
     targets = select_targets(args.top, args.min_en, done_set)
     if not targets:
         print("Nothing to do — all top-gap docs have already been rewritten.")
         return
-    print(f"  → {len(targets):,} docs queued for rewrite")
-    print(f"  EN length:  min={min(len(t['desc']) for t in targets):,}  "
-          f"max={max(len(t['desc']) for t in targets):,}  "
-          f"mean={sum(len(t['desc']) for t in targets)//len(targets):,}")
-    cost = estimate_cost(targets)
-    print(f"  Estimated cost (Opus 4.7 Batch API): ${cost:,.2f}")
-    print(f"    (rough estimate: HE output assumed similar length to EN input)")
+
+    en_lens = [len(t["desc"]) for t in targets]
+    print(f"  → {len(targets):,} docs queued")
+    print(f"  EN length:  min={min(en_lens):,}  max={max(en_lens):,}  "
+          f"mean={sum(en_lens)//len(en_lens):,}  total={sum(en_lens):,} chars")
+    print(f"  Model: {args.model}   Workers: {args.workers}   "
+          f"Timeout: {args.timeout}s")
 
     if args.dry_run:
-        print("\n[dry-run] no API calls made.")
-        sample = targets[:5]
-        print(f"\nSample of top {len(sample)}:")
-        for t in sample:
+        print("\n[dry-run] no claude calls made.")
+        for t in targets[:5]:
             print(f"  id={t['id']:>6}  en_len={len(t['desc']):>5}  "
                   f"score={t['score']:>7.0f}")
         return
 
-    # ── Real run ──────────────────────────────────────────────────────────────
-    try:
-        import anthropic
-    except ImportError:
-        sys.exit("ERROR: pip install anthropic")
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        sys.exit("ERROR: Set ANTHROPIC_API_KEY")
-    client = anthropic.Anthropic(api_key=api_key)
+    print()
+    progress = Progress(translations, done_set)
+    interrupted = run_rewrites(
+        targets, args.model, args.workers, args.timeout, args.retries,
+        progress, total=len(targets),
+    )
 
-    for chunk_start in range(0, len(targets), BATCH_CHUNK):
-        chunk = targets[chunk_start : chunk_start + BATCH_CHUNK]
-        chunk_num = chunk_start // BATCH_CHUNK + 1
-        total_chunks = (len(targets) - 1) // BATCH_CHUNK + 1
-        print(f"\nChunk {chunk_num}/{total_chunks}: submitting {len(chunk):,} requests…")
-        batch_id = submit_batch(client, chunk)
-        poll_until_done(client, batch_id, args.poll)
-        n, errs = collect_results(client, batch_id, translations, done_set)
-        save_json(TRANSLATIONS, translations)
-        save_json(REWRITES_DONE, sorted(done_set))
-        print(f"  Saved {n:,} rewrites ({errs} errors). "
-              f"Total rewritten: {len(done_set):,}")
-
-    print(f"\nDone. {len(done_set):,} documents rewritten in total.")
+    print(f"\nCompleted: {progress.completed:,}   "
+          f"Errors: {progress.errored:,}   "
+          f"Total rewritten so far: {len(done_set):,}")
+    if progress.errored:
+        print(f"  See {ERRORS_LOG} for failed IDs.")
+    if interrupted:
+        print("\nRun the same command again to resume from where you stopped.")
     _next_steps()
 
 
