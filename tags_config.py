@@ -112,3 +112,11 @@ LANG_MAP = {
     "פרסית":         "פרסית-יהודית",
     "ארמית":         "ארמית",
 }
+
+# ── Manual overrides: remove specific tags from specific documents ────────────
+# קוסנטינה (Constantine) and קוסדינה are cities, not Qūṣ
+TAG_REMOVE = {
+    "17899": {"קוס"},
+    "27571": {"קוס"},
+    "27586": {"קוס"},
+}

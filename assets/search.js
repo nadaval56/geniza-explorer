@@ -14,6 +14,7 @@
   let fLib      = '';
   let fHas      = '';
   let fEra      = 0;   // century number (10-14), 0 = all
+  let fTag      = '';  // exact Hebrew tag from tag cloud
 
   // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
@@ -109,6 +110,7 @@
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
+      if (fTag && !(d.tgh||[]).includes(fTag)) return false;
       if (q) {
         const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
@@ -121,11 +123,11 @@
   }
 
   function hasActiveFilter() {
-    return !!(query || fType || fLang || fLib || fHas || fEra);
+    return !!(query || fType || fLang || fLib || fHas || fEra || fTag);
   }
 
   function resetAll() {
-    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0; fTag = '';
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
@@ -272,7 +274,7 @@
       timer = setTimeout(applyFilters, 220);
     });
     clearBtn.addEventListener('click', () => {
-      query = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
+      query = ''; fTag = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
     });
 
     selType.addEventListener('change', () => { fType = selType.value; applyFilters(); });
@@ -403,11 +405,12 @@
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
       if (!btn) return;
+      fTag = btn.dataset.tag;
       searchInput.value = btn.dataset.tag;
-      query = btn.dataset.tag;
+      query = '';
       clearBtn.hidden = false;
       applyFilters();
-      document.querySelector('.search-bar-wrapper').scrollIntoView({behavior:'smooth'});
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
     });
   }
 

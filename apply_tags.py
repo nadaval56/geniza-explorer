@@ -12,7 +12,7 @@ import glob
 from pathlib import Path
 from collections import Counter
 
-from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP
+from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP, TAG_REMOVE
 
 DOCS_DIR     = Path("data/docs")
 TRANS_FILE   = Path("data/translations_he.json")
@@ -49,11 +49,14 @@ for doc_path in sorted(DOCS_DIR.glob("*.json")):
             if any(p in text for p in patterns):
                 tags.append(tag)
 
+    # Apply manual overrides
+    skip = TAG_REMOVE.get(pgpid, set())
+
     # Deduplicate while preserving order
     seen = set()
     deduped = []
     for t in tags:
-        if t not in seen:
+        if t not in seen and t not in skip:
             seen.add(t)
             deduped.append(t)
 
