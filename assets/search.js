@@ -381,15 +381,19 @@
     'latin','coptic','persian','syriac','greek','new','old',
   ]);
 
+  const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
+
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t));
+    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t) && !CLOUD_SKIP.has(t));
     if (!filtered_tags.length) return;
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
     const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
-    el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
+    const display = filtered_tags.slice(0, 65)
+      .sort((a, b) => a.t.localeCompare(b.t, 'he'));
+    el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
