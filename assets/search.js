@@ -14,6 +14,7 @@
   let fLib      = '';
   let fHas      = '';
   let fEra      = 0;   // century number (10-14), 0 = all
+  let fTag      = '';  // exact Hebrew tag from tag cloud
 
   // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
@@ -109,6 +110,7 @@
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
+      if (fTag && !(d.tgh||[]).includes(fTag)) return false;
       if (q) {
         const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
@@ -121,11 +123,11 @@
   }
 
   function hasActiveFilter() {
-    return !!(query || fType || fLang || fLib || fHas || fEra);
+    return !!(query || fType || fLang || fLib || fHas || fEra || fTag);
   }
 
   function resetAll() {
-    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0; fTag = '';
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
@@ -272,7 +274,7 @@
       timer = setTimeout(applyFilters, 220);
     });
     clearBtn.addEventListener('click', () => {
-      query = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
+      query = ''; fTag = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
     });
 
     selType.addEventListener('change', () => { fType = selType.value; applyFilters(); });
@@ -350,6 +352,23 @@
     'accounts':'חשבונות','lease':'חכירה','sale':'מכירה','gift':'מתנה',
   };
 
+  function loadDidYouKnow() {
+    fetch('data/did_you_know.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(facts => {
+        if (!facts || !facts.length) return;
+        const f = facts[Math.floor(Math.random() * facts.length)];
+        const card = document.getElementById('kpi-dyk');
+        if (!card) return;
+        const textEl = document.getElementById('dyk-text');
+        const markEl = document.getElementById('dyk-shelfmark');
+        if (textEl) textEl.textContent = f.text;
+        if (markEl) markEl.textContent = f.shelfmark;
+        card.href = 'fragment.html?id=' + f.pgpid;
+      })
+      .catch(() => {});
+  }
+
   function loadStats() {
     fetch('data/stats.json')
       .then(r => r.ok ? r.json() : null)
@@ -381,29 +400,34 @@
     'latin','coptic','persian','syriac','greek','new','old',
   ]);
 
+  const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
+
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t) && TAG_HE[t]);
+    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t) && !CLOUD_SKIP.has(t));
+    if (!filtered_tags.length) return;
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
     const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
-    el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
-      const label = TAG_HE[t] || t;
+    const display = filtered_tags.slice(0, 65)
+      .sort((a, b) => a.t.localeCompare(b.t, 'he'));
+    el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
         data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
-        >${esc(label)}</button>`;
+        >${esc(t)}</button>`;
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
       if (!btn) return;
+      fTag = btn.dataset.tag;
       searchInput.value = btn.dataset.tag;
-      query = btn.dataset.tag;
+      query = '';
       clearBtn.hidden = false;
       applyFilters();
-      document.querySelector('.search-bar-wrapper').scrollIntoView({behavior:'smooth'});
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
     });
   }
 
@@ -453,6 +477,7 @@
         populateFilters(data);
         render();
         loadStats();
+        loadDidYouKnow();
       })
       .catch(() => {
         loadingEl.hidden = true;
