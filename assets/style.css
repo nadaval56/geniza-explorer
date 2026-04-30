@@ -936,11 +936,12 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: auto auto 1fr;
-  gap: .75rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .kpi-card--dyk {
+  grid-column: span 2;
   align-items: flex-start;
   text-align: right;
   text-decoration: none;
