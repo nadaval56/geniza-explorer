@@ -352,6 +352,23 @@
     'accounts':'חשבונות','lease':'חכירה','sale':'מכירה','gift':'מתנה',
   };
 
+  function loadDidYouKnow() {
+    fetch('data/did_you_know.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(facts => {
+        if (!facts || !facts.length) return;
+        const f = facts[Math.floor(Math.random() * facts.length)];
+        const card = document.getElementById('kpi-dyk');
+        if (!card) return;
+        const textEl = document.getElementById('dyk-text');
+        const markEl = document.getElementById('dyk-shelfmark');
+        if (textEl) textEl.textContent = f.text;
+        if (markEl) markEl.textContent = f.shelfmark;
+        card.href = 'fragment.html?id=' + f.pgpid;
+      })
+      .catch(() => {});
+  }
+
   function loadStats() {
     fetch('data/stats.json')
       .then(r => r.ok ? r.json() : null)
@@ -460,6 +477,7 @@
         populateFilters(data);
         render();
         loadStats();
+        loadDidYouKnow();
       })
       .catch(() => {
         loadingEl.hidden = true;
