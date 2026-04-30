@@ -78,10 +78,12 @@ def load_json(path, default):
 
 
 def save_json(path, obj):
+    """Write pretty-printed JSON so git diffs stay reviewable (one key/line)."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(obj, f, ensure_ascii=False, indent=2, sort_keys=True)
+        f.write("\n")
     tmp.replace(path)
 
 
