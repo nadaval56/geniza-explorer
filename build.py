@@ -299,9 +299,10 @@ def write_json(path, obj):
         json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def build_search_index(docs, translations_he=None):
+def build_search_index(docs, translations_he=None, tags_he=None):
     """Compact per-doc record for the search index."""
     translations_he = translations_he or {}
+    tags_he = tags_he or {}
     index = []
     for doc in docs:
         entry = {"id": doc["id"]}
@@ -328,6 +329,8 @@ def build_search_index(docs, translations_he=None):
         if doc["has_translation"]:  entry["tl"]  = 1
         c = century_from_date(doc["date"])
         if c:                       entry["c"]   = c
+        doc_tags = tags_he.get(doc["id"], [])
+        if doc_tags:                entry["tgh"] = doc_tags
         index.append(entry)
     return index
 
@@ -676,7 +679,7 @@ def main():
     DOCS_DIR.mkdir(exist_ok=True)
 
     # search index
-    search_index = build_search_index(docs, translations_he)
+    search_index = build_search_index(docs, translations_he, tags_he)
     write_json(DATA_DIR / "search.json", search_index)
     size_kb = (DATA_DIR / "search.json").stat().st_size // 1024
     print(f"  ✓  data/search.json  ({size_kb} KB, {len(search_index):,} entries)")
