@@ -8,11 +8,33 @@ Sources:
   3. Hebrew translation text → TEXT_TAGS substring search
 """
 import json
+import re
 import glob
 from pathlib import Path
 from collections import Counter
 
 from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP, TAG_REMOVE
+
+# Pre-compile patterns: strings starting with "(?", "[", or "^" are regex; others are literals.
+_COMPILED: dict[str, list] = {}
+for _tag, _pats in TEXT_TAGS.items():
+    compiled_pats = []
+    for p in _pats:
+        if p and p[0] in ('(', '[', '^', '\\'):
+            compiled_pats.append(re.compile(p))
+        else:
+            compiled_pats.append(p)   # plain string → substring search
+    _COMPILED[_tag] = compiled_pats
+
+def _matches(text: str, patterns: list) -> bool:
+    for p in patterns:
+        if isinstance(p, str):
+            if p in text:
+                return True
+        else:
+            if p.search(text):
+                return True
+    return False
 
 DOCS_DIR     = Path("data/docs")
 TRANS_FILE   = Path("data/translations_he.json")
@@ -45,8 +67,8 @@ for doc_path in sorted(DOCS_DIR.glob("*.json")):
     # 3. Text-search tags from Hebrew translation
     text = translations.get(pgpid, "")
     if text:
-        for tag, patterns in TEXT_TAGS.items():
-            if any(p in text for p in patterns):
+        for tag, patterns in _COMPILED.items():
+            if _matches(text, patterns):
                 tags.append(tag)
 
     # Apply manual overrides
