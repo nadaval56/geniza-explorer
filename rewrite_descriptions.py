@@ -124,6 +124,11 @@ def call_claude_once(desc_en, model, timeout):
             "--tools", "",                  # no tool use — pure generation
             "--disable-slash-commands",
             "--no-session-persistence",
+            # Skip user-level settings (e.g. Stop hooks like a git-status check).
+            # Without this, hook output is fed back to the model as user input
+            # and the final stdout becomes the model's reply to the hook,
+            # not the rewritten description.
+            "--setting-sources", "project,local",
             "--output-format", "text",
         ],
         input=desc_en,
