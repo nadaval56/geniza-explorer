@@ -894,7 +894,7 @@ img { display: block; max-width: 100%; }
   .search-bar-wrapper { padding: .6rem 0; }
   .search-bar-inner { padding: 0 1rem; }
   .dash-kpi-row--two { padding: 0 1rem; grid-template-columns: 1fr 1fr; }
-  #kpi-dyk { grid-column: 1 / -1; }
+  #kpi-dyk { order: 3; grid-column: 1 / -1; }
   .search-input { font-size: .9rem; }
   .filters { grid-template-columns: 1fr 1fr; }
   .cards-grid { grid-template-columns: 1fr; }
@@ -936,11 +936,12 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   padding: 0 max(1.5rem, calc((100% - 1300px) / 2 + 1.5rem)) 0 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: .75rem;
 }
 
 .kpi-card--dyk {
+  grid-column: span 2;
   align-items: flex-start;
   text-align: right;
   text-decoration: none;
