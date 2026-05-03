@@ -397,8 +397,6 @@
 
   const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
 
-  const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
-
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
