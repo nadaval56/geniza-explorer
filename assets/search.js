@@ -395,10 +395,7 @@
     }
   }
 
-  const SKIP_TAGS = new Set([
-    'dimme','fgp stub','arabic','hebrew','judaeo-arabic','aramaic',
-    'latin','coptic','persian','syriac','greek','new','old',
-  ]);
+  const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
 
   const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
 
