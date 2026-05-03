@@ -389,7 +389,7 @@ INDEX_HTML = """\
     </div>
   </header>
 
-  <!-- KPI row (2 cards only) -->
+  <!-- KPI row -->
   <section class="dashboard-kpi" aria-label="סטטיסטיקות">
     <div class="dash-kpi-row dash-kpi-row--two">
       <div class="kpi-card">
@@ -402,6 +402,12 @@ INDEX_HTML = """\
         <span class="kpi-num">…</span>
         <span class="kpi-label">עם תמונה</span>
       </div>
+      <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
+        <span class="kpi-icon" aria-hidden="true">💡</span>
+        <span class="kpi-dyk-label">הידעת?</span>
+        <span class="kpi-dyk-text" id="dyk-text">…</span>
+        <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
+      </a>
     </div>
   </section>
 
