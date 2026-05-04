@@ -539,7 +539,11 @@
 
         updateResetVisibility();
         applyFilters();
-        document.getElementById('results-bar')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const el = document.getElementById('results-bar');
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        }
       });
     });
 
