@@ -14,6 +14,10 @@
   let fLib      = '';
   let fHas      = '';
   let fEra      = 0;   // century number (10-14), 0 = all
+  let fLocation = '';  // Hebrew location name, e.g. 'קהיר'
+
+  let locationDocIds  = {};  // { 'קהיר': Set([id, ...]), ... }
+  let _activeLocMarker = null;
 
   // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
@@ -109,6 +113,10 @@
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
+      if (fLocation) {
+        const locSet = locationDocIds[fLocation];
+        if (locSet && !locSet.has(d.id)) return false;
+      }
       if (q) {
         const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
@@ -121,16 +129,20 @@
   }
 
   function hasActiveFilter() {
-    return !!(query || fType || fLang || fLib || fHas || fEra);
+    return !!(query || fType || fLang || fLib || fHas || fEra || fLocation);
   }
 
   function resetAll() {
-    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0; fLocation = '';
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
     eraChips.forEach(c => c.classList.remove('chip--active'));
     typeChips.forEach(c => c.classList.remove('chip--active'));
+    if (_activeLocMarker) {
+      _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+      _activeLocMarker = null;
+    }
     applyFilters();
   }
 
@@ -441,10 +453,94 @@
     }).join('');
   }
 
+  // ── Location map ─────────────────────────────────────────────────────────────
+  const MAP_LOCATIONS = [
+    { name: 'קהיר',       lat: 30.044, lng: 31.236 },
+    { name: 'אלכסנדריה', lat: 31.200, lng: 29.919 },
+    { name: 'ירושלים',   lat: 31.768, lng: 35.214 },
+    { name: 'צור',        lat: 33.271, lng: 35.199 },
+    { name: 'דמשק',      lat: 33.510, lng: 36.291 },
+    { name: 'עדן',        lat: 12.786, lng: 45.019 },
+    { name: 'בגדד',      lat: 33.315, lng: 44.366 },
+    { name: 'טבריה',     lat: 32.792, lng: 35.531 },
+  ];
+
+  function initLocationMap(locCounts) {
+    const mapEl = document.getElementById('geniza-map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    const map = L.map('geniza-map', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://osm.org/copyright">OpenStreetMap</a>',
+      maxZoom: 13,
+    }).addTo(map);
+
+    const bounds = [];
+    MAP_LOCATIONS.forEach(loc => {
+      const count = locCounts[loc.name];
+      if (!count) return;
+      bounds.push([loc.lat, loc.lng]);
+
+      const icon = L.divIcon({
+        html: `<div class="gmap-pin"><span class="gmap-pin-name">${esc(loc.name)}</span><span class="gmap-pin-count">${count.toLocaleString('he-IL')}</span></div>`,
+        className: '',
+        iconSize: [90, 42],
+        iconAnchor: [45, 42],
+      });
+
+      const marker = L.marker([loc.lat, loc.lng], { icon }).addTo(map);
+      marker.on('click', () => {
+        const pinEl = marker.getElement()?.querySelector('.gmap-pin');
+        const isActive = fLocation === loc.name;
+
+        if (_activeLocMarker) {
+          _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+        }
+
+        if (isActive) {
+          fLocation = '';
+          _activeLocMarker = null;
+        } else {
+          fLocation = loc.name;
+          pinEl?.classList.add('gmap-pin--active');
+          _activeLocMarker = marker;
+        }
+
+        updateResetVisibility();
+        applyFilters();
+        document.querySelector('.search-bar-wrapper')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    if (bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+  }
+
+  function loadTagsAndMap() {
+    fetch('data/tags_he.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(tags => {
+        if (!tags) return;
+        const locNames = new Set(MAP_LOCATIONS.map(l => l.name));
+        const locCounts = {};
+        for (const [docId, docTags] of Object.entries(tags)) {
+          for (const tag of docTags) {
+            if (locNames.has(tag)) {
+              if (!locationDocIds[tag]) locationDocIds[tag] = new Set();
+              locationDocIds[tag].add(docId);
+              locCounts[tag] = (locCounts[tag] || 0) + 1;
+            }
+          }
+        }
+        initLocationMap(locCounts);
+      })
+      .catch(() => {});
+  }
+
   // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
     initThumbObserver();
     wire();
+    loadTagsAndMap();
     fetch('data/search.json')
       .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {

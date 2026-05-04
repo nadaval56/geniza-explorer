@@ -1120,3 +1120,84 @@ img { display: block; max-width: 100%; }
   .dash-panels  { grid-template-columns: 1fr; }
   .dash-panel--wide, .dash-panel--century { grid-column: 1; }
 }
+
+/* ── Location map panel ───────────────────────────────────────────────────────── */
+.dash-panel--map { padding-bottom: .75rem; }
+
+#geniza-map {
+  height: 340px;
+  border-radius: var(--radius);
+  margin-top: .7rem;
+  background: var(--bg-2);
+  z-index: 0;
+}
+
+/* Leaflet attribution override */
+.leaflet-container .leaflet-control-attribution {
+  font-size: .6rem;
+  background: rgba(250,248,243,.7);
+}
+
+/* Map location pins */
+.gmap-pin {
+  width: 90px;
+  height: 34px;
+  background: var(--text);
+  color: var(--bg);
+  border: 1.5px solid var(--gold-dark);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+  transition: background .15s, border-color .15s;
+  position: relative;
+}
+
+.gmap-pin::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--gold-dark);
+}
+
+.gmap-pin:hover,
+.gmap-pin--active {
+  background: var(--gold-dark);
+  border-color: var(--gold-light);
+}
+
+.gmap-pin:hover::after,
+.gmap-pin--active::after {
+  border-top-color: var(--gold-light);
+}
+
+.gmap-pin-name {
+  font-size: .74rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 84px;
+  display: block;
+  text-align: center;
+  direction: rtl;
+  font-family: var(--font-ui);
+  line-height: 1;
+}
+
+.gmap-pin-count {
+  font-size: .6rem;
+  opacity: .65;
+  font-family: var(--font-ui);
+  line-height: 1;
+}
