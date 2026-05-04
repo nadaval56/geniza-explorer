@@ -539,11 +539,12 @@
 
         updateResetVisibility();
         applyFilters();
-        const el = document.getElementById('results-bar');
-        if (el) {
+        setTimeout(() => {
+          const el = document.getElementById('results-bar');
+          if (!el) return;
           const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
           window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-        }
+        }, 50);
       });
     });
 
