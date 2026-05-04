@@ -934,14 +934,14 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   padding: 0 max(1.5rem, calc((100% - 1300px) / 2 + 1.5rem)) 0 1.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "docs dyk dyk img";
   gap: .75rem;
 }
 
-/* explicit column placement: docs→col4(right), DYK→cols2-3(center), img→col1(left) */
-.dash-kpi-row--two > :first-child { grid-column: 4; }
-#kpi-dyk                          { grid-column: 2 / 4; }
-#kpi-img                          { grid-column: 1; }
+.dash-kpi-row--two > :first-child { grid-area: docs; }
+#kpi-dyk                          { grid-area: dyk; }
+#kpi-img                          { grid-area: img; }
 
 .kpi-card--dyk {
   align-items: flex-start;
@@ -1139,8 +1139,9 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 600px) {
-  .dash-kpi-row--two { padding: 0 1rem; grid-template-columns: 1fr 1fr; }
-  .dash-kpi-row--two > :first-child { grid-column: auto; }
-  #kpi-img { grid-column: auto; }
-  #kpi-dyk { order: 3; grid-column: 1 / -1; }
+  .dash-kpi-row--two {
+    padding: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "docs img" "dyk dyk";
+  }
 }
