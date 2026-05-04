@@ -539,7 +539,7 @@
 
         updateResetVisibility();
         applyFilters();
-        document.querySelector('.search-bar-wrapper')?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('results-bar')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 
