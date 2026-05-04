@@ -377,6 +377,7 @@ INDEX_HTML = """\
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
 
@@ -507,6 +508,14 @@ INDEX_HTML = """\
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
         </div>
 
+        <div class="dash-panel dash-panel--wide dash-panel--map">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">מפת מקומות הגניזה</h2>
+            <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
+          </div>
+          <div id="geniza-map"></div>
+        </div>
+
         <div class="dash-panel">
           <h2 class="dash-panel-title">לפי סוג מסמך</h2>
           <div class="dist-list" id="dist-type"></div>
@@ -537,6 +546,7 @@ INDEX_HTML = """\
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
 </body>
 </html>
