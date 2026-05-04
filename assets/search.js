@@ -407,7 +407,12 @@
     }
   }
 
-  const CLOUD_SKIP = new Set(['יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה']);
+  const CLOUD_SKIP = new Set([
+    'יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה',
+    // location names — shown on the map instead
+    'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
+    'ספרד','סיציליה','הודו','פלרמו','עכו','רמלה','טריפולי','קירואן',
+  ]);
 
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
@@ -474,14 +479,18 @@
 
   // ── Location map ─────────────────────────────────────────────────────────────
   const MAP_LOCATIONS = [
-    { name: 'קהיר',       lat: 30.044, lng: 31.236 },
+    { name: 'פוסטאט',    lat: 30.008, lng: 31.233 },
+    { name: 'קהיר',      lat: 30.100, lng: 31.350 },
     { name: 'אלכסנדריה', lat: 31.200, lng: 29.919 },
     { name: 'ירושלים',   lat: 31.768, lng: 35.214 },
-    { name: 'צור',        lat: 33.271, lng: 35.199 },
+    { name: 'צור',       lat: 33.271, lng: 35.199 },
     { name: 'דמשק',      lat: 33.510, lng: 36.291 },
-    { name: 'עדן',        lat: 12.786, lng: 45.019 },
+    { name: 'עדן',       lat: 12.786, lng: 45.019 },
     { name: 'בגדד',      lat: 33.315, lng: 44.366 },
     { name: 'טבריה',     lat: 32.792, lng: 35.531 },
+    { name: 'ספרד',      lat: 37.384, lng: -5.976  },
+    { name: 'סיציליה',   lat: 37.600, lng: 14.015  },
+    { name: 'הודו',      lat: 11.000, lng: 76.000  },
   ];
 
   function initLocationMap(locCounts) {
@@ -531,7 +540,7 @@
       });
     });
 
-    if (bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+    map.setView([32, 35.5], 7);
   }
 
   function loadTagsAndMap() {
