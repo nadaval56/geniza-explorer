@@ -14,6 +14,11 @@
   let fLib      = '';
   let fHas      = '';
   let fEra      = 0;   // century number (10-14), 0 = all
+  let fTag      = '';  // exact Hebrew tag from tag cloud
+  let fLocation = '';  // Hebrew location name, e.g. 'קהיר'
+
+  let locationDocIds  = {};  // { 'קהיר': Set([id, ...]), ... }
+  let _activeLocMarker = null;
 
   // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
@@ -109,6 +114,11 @@
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
+      if (fTag && !(d.tgh||[]).includes(fTag)) return false;
+      if (fLocation) {
+        const locSet = locationDocIds[fLocation];
+        if (locSet && !locSet.has(d.id)) return false;
+      }
       if (q) {
         const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
@@ -121,16 +131,20 @@
   }
 
   function hasActiveFilter() {
-    return !!(query || fType || fLang || fLib || fHas || fEra);
+    return !!(query || fType || fLang || fLib || fHas || fEra || fTag || fLocation);
   }
 
   function resetAll() {
-    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0; fTag = ''; fLocation = '';
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
     eraChips.forEach(c => c.classList.remove('chip--active'));
     typeChips.forEach(c => c.classList.remove('chip--active'));
+    if (_activeLocMarker) {
+      _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+      _activeLocMarker = null;
+    }
     applyFilters();
   }
 
@@ -272,7 +286,7 @@
       timer = setTimeout(applyFilters, 220);
     });
     clearBtn.addEventListener('click', () => {
-      query = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
+      query = ''; fTag = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
     });
 
     selType.addEventListener('change', () => { fType = selType.value; applyFilters(); });
@@ -350,6 +364,23 @@
     'accounts':'חשבונות','lease':'חכירה','sale':'מכירה','gift':'מתנה',
   };
 
+  function loadDidYouKnow() {
+    fetch('data/did_you_know.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(facts => {
+        if (!facts || !facts.length) return;
+        const f = facts[Math.floor(Math.random() * facts.length)];
+        const card = document.getElementById('kpi-dyk');
+        if (!card) return;
+        const textEl = document.getElementById('dyk-text');
+        const markEl = document.getElementById('dyk-shelfmark');
+        if (textEl) textEl.textContent = f.text;
+        if (markEl) markEl.textContent = f.shelfmark;
+        card.href = 'fragment.html?id=' + f.pgpid;
+      })
+      .catch(() => {});
+  }
+
   function loadStats() {
     fetch('data/stats.json')
       .then(r => r.ok ? r.json() : null)
@@ -376,34 +407,39 @@
     }
   }
 
-  const SKIP_TAGS = new Set([
-    'dimme','fgp stub','arabic','hebrew','judaeo-arabic','aramaic',
-    'latin','coptic','persian','syriac','greek','new','old',
+  const CLOUD_SKIP = new Set([
+    'יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה',
+    // location names — shown on the map instead
+    'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
+    'ספרד','סיציליה','הודו','חלב','קוס','פרס','פלרמו','עכו','רמלה','טריפולי','קירואן',
   ]);
 
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t) && TAG_HE[t]);
+    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t) && !CLOUD_SKIP.has(t));
+    if (!filtered_tags.length) return;
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
     const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
-    el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
-      const label = TAG_HE[t] || t;
+    const display = filtered_tags.slice(0, 65)
+      .sort((a, b) => a.t.localeCompare(b.t, 'he'));
+    el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
         data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
-        >${esc(label)}</button>`;
+        >${esc(t)}</button>`;
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
       if (!btn) return;
+      fTag = btn.dataset.tag;
       searchInput.value = btn.dataset.tag;
-      query = btn.dataset.tag;
+      query = '';
       clearBtn.hidden = false;
       applyFilters();
-      document.querySelector('.search-bar-wrapper').scrollIntoView({behavior:'smooth'});
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
     });
   }
 
@@ -441,10 +477,107 @@
     }).join('');
   }
 
+  // ── Location map ─────────────────────────────────────────────────────────────
+  const MAP_LOCATIONS = [
+    { name: 'פוסטאט',    lat: 30.008, lng: 31.233 },
+    { name: 'קהיר',      lat: 30.100, lng: 31.350 },
+    { name: 'אלכסנדריה', lat: 31.200, lng: 29.919 },
+    { name: 'ירושלים',   lat: 31.768, lng: 35.214 },
+    { name: 'צור',       lat: 33.271, lng: 35.199 },
+    { name: 'דמשק',      lat: 33.510, lng: 36.291 },
+    { name: 'עדן',       lat: 12.786, lng: 45.019 },
+    { name: 'בגדד',      lat: 33.315, lng: 44.366 },
+    { name: 'טבריה',     lat: 32.792, lng: 35.531 },
+    { name: 'חלב',       lat: 36.202, lng: 37.161  },
+    { name: 'קוס',       lat: 25.907, lng: 32.753  },
+    { name: 'פרס',       lat: 32.661, lng: 51.680  },
+    { name: 'ספרד',      lat: 37.384, lng: -5.976  },
+    { name: 'סיציליה',   lat: 37.600, lng: 14.015  },
+    { name: 'הודו',      lat: 11.000, lng: 76.000  },
+  ];
+
+  function initLocationMap(locCounts) {
+    const mapEl = document.getElementById('geniza-map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    const map = L.map('geniza-map', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://osm.org/copyright">OpenStreetMap</a>',
+      maxZoom: 13,
+    }).addTo(map);
+
+    const bounds = [];
+    MAP_LOCATIONS.forEach(loc => {
+      const count = locCounts[loc.name];
+      if (!count) return;
+      bounds.push([loc.lat, loc.lng]);
+
+      const icon = L.divIcon({
+        html: `<div class="gmap-pin"><span class="gmap-pin-name">${esc(loc.name)}</span><span class="gmap-pin-count">${count.toLocaleString('he-IL')}</span></div>`,
+        className: '',
+        iconSize: [90, 42],
+        iconAnchor: [45, 42],
+      });
+
+      const marker = L.marker([loc.lat, loc.lng], { icon }).addTo(map);
+      marker.on('click', () => {
+        const pinEl = marker.getElement()?.querySelector('.gmap-pin');
+        const isActive = fLocation === loc.name;
+
+        if (_activeLocMarker) {
+          _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+        }
+
+        if (isActive) {
+          fLocation = '';
+          _activeLocMarker = null;
+        } else {
+          fLocation = loc.name;
+          pinEl?.classList.add('gmap-pin--active');
+          _activeLocMarker = marker;
+        }
+
+        updateResetVisibility();
+        applyFilters();
+        setTimeout(() => {
+          const el = document.getElementById('results-bar');
+          if (!el) return;
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        }, 50);
+      });
+    });
+
+    const isMobile = window.innerWidth < 700;
+    map.setView([32, 35.5], isMobile ? 6 : 7);
+  }
+
+  function loadTagsAndMap() {
+    fetch('data/tags_he.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(tags => {
+        if (!tags) return;
+        const locNames = new Set(MAP_LOCATIONS.map(l => l.name));
+        const locCounts = {};
+        for (const [docId, docTags] of Object.entries(tags)) {
+          for (const tag of docTags) {
+            if (locNames.has(tag)) {
+              if (!locationDocIds[tag]) locationDocIds[tag] = new Set();
+              locationDocIds[tag].add(docId);
+              locCounts[tag] = (locCounts[tag] || 0) + 1;
+            }
+          }
+        }
+        initLocationMap(locCounts);
+      })
+      .catch(() => {});
+  }
+
   // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
     initThumbObserver();
     wire();
+    loadTagsAndMap();
     fetch('data/search.json')
       .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {
@@ -453,6 +586,7 @@
         populateFilters(data);
         render();
         loadStats();
+        loadDidYouKnow();
       })
       .catch(() => {
         loadingEl.hidden = true;
