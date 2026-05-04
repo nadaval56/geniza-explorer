@@ -510,7 +510,7 @@ INDEX_HTML = """\
 
         <div class="dash-panel dash-panel--wide dash-panel--map">
           <div class="dash-panel-hd">
-            <h2 class="dash-panel-title">מפת מקומות הגניזה</h2>
+            <h2 class="dash-panel-title">מפת המקומות שמוזכרים בגניזה</h2>
             <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
           </div>
           <div id="geniza-map"></div>
