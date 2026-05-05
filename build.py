@@ -370,6 +370,7 @@ INDEX_HTML = """\
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="הגניזה הקהירית — {total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
   <title>הגניזה הקהירית</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -540,6 +541,7 @@ FRAGMENT_HTML = """\
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title id="page-title">מסמך גניזה — הגניזה הקהירית</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
