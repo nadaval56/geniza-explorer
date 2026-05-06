@@ -519,7 +519,7 @@ INDEX_HTML = """\
 
         <div class="dash-panel dash-panel--wide dash-panel--spices">
           <div class="spice-banner-wrap">
-            <img src="assets/spice-market.jpg" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+            <img src="assets/spice-market.png" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
           </div>
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
