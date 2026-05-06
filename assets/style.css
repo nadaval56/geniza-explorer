@@ -1282,7 +1282,15 @@ img { display: block; max-width: 100%; }
 }
 
 .spice-btn:hover .spice-btn-name,
+.spice-btn:hover .spice-btn-latin,
 .spice-btn:hover .spice-btn-count { color: #fff; }
+
+.spice-btn-latin {
+  font-size: .6rem;
+  color: var(--text-3);
+  font-style: italic;
+  letter-spacing: .01em;
+}
 
 .spice-btn-count {
   font-size: .68rem;

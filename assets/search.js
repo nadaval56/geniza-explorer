@@ -414,9 +414,25 @@
     'ספרד','סיציליה','הודו','חלב','קוס','פרס','פלרמו','עכו','רמלה','טריפולי','קירואן','דמיאט',
     // spices — shown in spice bar instead
     'פלפל','זעפרן','קינמון','זנגביל','כמון','כרכום','כוסברה','דבש','סוכר',
+    'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
   ]);
 
-  const SPICE_TAGS = ['פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כרכום','כוסברה'];
+  const SPICE_TAGS = [
+    'פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כרכום','כוסברה',
+    'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
+  ];
+
+  // Latin/English subtitle for less familiar spices
+  const SPICE_LATIN = {
+    'גלנגל':    'Galangal',
+    'נרד':      'Spikenard',
+    'לכה':      'Lac resin',
+    'עץ ברזיל': 'Brazilwood',
+    'סטוראקס':  'Storax',
+    'מסטיק':    'Mastic',
+    'לבונה':    'Frankincense',
+    'כמון שחור':'Black cumin',
+  };
 
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
@@ -455,6 +471,7 @@
       return `<button class="spice-btn" data-tag="${esc(tag)}"
         title="${esc(tag)} (${count.toLocaleString('he-IL')} מסמכים)">
         <span class="spice-btn-name">${esc(tag)}</span>
+        ${SPICE_LATIN[tag] ? `<span class="spice-btn-latin">${esc(SPICE_LATIN[tag])}</span>` : ''}
         <span class="spice-btn-count">${count.toLocaleString('he-IL')}</span>
       </button>`;
     }).join('');
