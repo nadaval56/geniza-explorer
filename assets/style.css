@@ -144,7 +144,6 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
 }
 
-.browse-group--single { margin-right: auto; }
 
 .browse-label {
   font-size: .72rem;
@@ -184,15 +183,83 @@ img { display: block; max-width: 100%; }
   color: #fff;
   font-weight: 600;
 }
-.chip--surprise {
-  background: transparent;
-  border-color: var(--gold-dark);
-  color: var(--gold);
-  font-weight: 500;
+/* Surprise cube */
+.surprise-wrap {
+  display: flex;
+  justify-content: center;
 }
-.chip--surprise:hover {
-  background: var(--gold-dark);
-  color: #fff;
+
+.surprise-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.3rem 2.2rem;
+  background: linear-gradient(145deg, var(--bg-card) 0%, #f5ede0 100%);
+  border: 2px solid var(--gold-dark);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  text-align: right;
+  direction: rtl;
+  transition: transform .22s, box-shadow .22s, border-color .22s, background .22s;
+  box-shadow: 0 4px 18px rgba(181,98,30,.18), 0 1px 4px rgba(181,98,30,.1);
+  min-width: 300px;
+  max-width: 440px;
+}
+
+.surprise-btn:hover {
+  transform: translateY(-4px) scale(1.025);
+  box-shadow: 0 10px 34px rgba(181,98,30,.28), 0 2px 8px rgba(181,98,30,.15);
+  border-color: var(--gold);
+  background: linear-gradient(145deg, #fff 0%, #faecd8 100%);
+}
+
+.surprise-btn:active {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 4px 14px rgba(181,98,30,.2);
+}
+
+.surprise-dice {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  transition: transform .4s cubic-bezier(.34,1.56,.64,1);
+  order: -1;
+}
+
+.surprise-btn:hover .surprise-dice {
+  transform: rotate(18deg) scale(1.12);
+}
+
+.surprise-title {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--gold-dark);
+  font-family: var(--font-serif);
+  line-height: 1.2;
+  letter-spacing: .01em;
+}
+
+.surprise-sub {
+  display: block;
+  font-size: .78rem;
+  color: var(--text-3);
+  margin-top: .35rem;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .surprise-btn {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 1.1rem 1.3rem;
+    gap: 1.1rem;
+  }
+  .surprise-dice { width: 70px; height: 70px; }
+  .surprise-title { font-size: 1.25rem; }
 }
 
 /* Reset button */
