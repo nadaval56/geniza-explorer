@@ -426,12 +426,12 @@
   const SPICE_LATIN = {
     'גלנגל':    'Galangal',
     'נרד':      'Spikenard',
-    'לכה':      'Lac resin',
+    'לכה':      'Lac',
     'עץ ברזיל': 'Brazilwood',
     'סטוראקס':  'Storax',
     'מסטיק':    'Mastic',
     'לבונה':    'Frankincense',
-    'כמון שחור':'Black cumin',
+    'כמון שחור':'Nigella',
   };
 
   function renderTagCloud(tags) {
