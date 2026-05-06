@@ -360,7 +360,7 @@ def build_stats(docs, tags_he=None):
         "by_type":    dict(type_c.most_common()),
         "by_lang":    dict(lang_c.most_common(12)),
         "by_century": {str(k): v for k, v in sorted(cent_c.items())},
-        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(80)],
+        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(200)],
     }
 
 
@@ -515,6 +515,17 @@ INDEX_HTML = """\
             <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
           </div>
           <div id="geniza-map"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--spices">
+          <div class="spice-banner-wrap">
+            <img src="assets/spice-market.jpg" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+          </div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
+          <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
         </div>
 
         <div class="dash-panel">
