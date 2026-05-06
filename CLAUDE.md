@@ -28,3 +28,25 @@
 - **הוספת מקום למפה**: הוסף רשומה ל-`MAP_LOCATIONS` ב-`assets/search.js`
 - **הסתרת תגית מענן התגיות**: הוסף לסט `CLOUD_SKIP` ב-`assets/search.js`
 - מקומות שנמצאים ב-`MAP_LOCATIONS` צריכים להיות גם ב-`CLOUD_SKIP` (כדי שלא יופיעו פעמיים)
+
+## פרויקט ארוך-טווח: שכתוב תיאורים בעברית עם Opus 4.7
+
+הקיימים ב-`data/translations_he.json` הם תקצירים קצרצרים שיוצרו על ידי Haiku בריצה הראשונית. אנחנו מחליפים אותם בהדרגה בתיאורים מלאים שנכתבים מחדש על ידי Opus 4.7 דרך Claude Code. נכון לכתיבת שורות אלה: כ-2,087 הוחלפו, כ-95 "מחפירים" עוד נשארו.
+
+**להמשיך את העבודה — השתמש בסקיל `/geniza-rewrite-batch`:**
+- מוגדר ב-`.claude/skills/geniza-rewrite-batch/SKILL.md` (חלק מהריפו, זמין מכל צ'אט)
+- שימוש: `/geniza-rewrite-batch [N]` — N batches × 40 ריבריטים ב-foreground, push ל-main בסוף כל batch
+- הסקיל מכיל את כל הזרימה הנכונה (commit, push לסניף + main, fallback ל-merge, בדיקות זיהומים)
+
+**קבצים רלוונטיים:**
+- `rewrite_descriptions.py` — הסקריפט שעושה את העבודה (Opus 4.7 דרך `claude --print`)
+- `find_translation_gaps.py` — מזהה את המסמכים עם הפער הגדול ביותר
+- `.cache/rewrites_done.json` — מעקב אחרי מה שכבר נעשה (gitignored, אבל מתמשך על המכונה)
+
+### חוק קשיח: פורמט `data/translations_he.json`
+
+**תמיד** לכתוב את הקובץ עם `indent=2, sort_keys=True`. **לעולם לא** עם `separators=(",", ":")`.
+
+הקובץ מכיל ~36K רשומות. בפורמט מצומצם הוא נכווץ לשורה אחת בגודל 9MB, וכל commit שמשנה רשומה אחת מציג ב-diff מחיקה של כל הקובץ + שורה חדשה אחת — בלתי ניתן לסקירה. הפורמט הקריא נותן שורה ל-ID, כך ששינוי של רשומה אחת = שורה אחת ב-diff.
+
+זה תקף גם ב-`rewrite_descriptions.py` וגם ב-`translate.py`.
