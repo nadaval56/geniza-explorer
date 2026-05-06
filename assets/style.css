@@ -1136,6 +1136,7 @@ img { display: block; max-width: 100%; }
   .dash-kpi-row { grid-template-columns: repeat(2, 1fr); }
   .dash-panels  { grid-template-columns: 1fr; }
   .dash-panel--wide, .dash-panel--century { grid-column: 1; }
+  .spice-buttons { grid-template-columns: repeat(5, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -1248,8 +1249,8 @@ img { display: block; max-width: 100%; }
 }
 
 .spice-buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   gap: .5rem;
 }
 
@@ -1265,8 +1266,6 @@ img { display: block; max-width: 100%; }
   cursor: pointer;
   transition: background .12s, border-color .12s, color .12s;
   font-family: var(--font-ui);
-  flex: 1 1 0;
-  min-width: 4.5rem;
 }
 
 .spice-btn:hover {
