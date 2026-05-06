@@ -495,6 +495,11 @@
     { name: 'סיציליה',   lat: 37.600, lng: 14.015  },
     { name: 'הודו',      lat: 11.000, lng: 76.000  },
     { name: 'דמיאט',    lat: 31.416, lng: 31.815  },
+    { name: 'עכו',      lat: 32.927, lng: 35.073  },
+    { name: 'פלרמו',    lat: 38.115, lng: 13.361  },
+    { name: 'טריפולי',  lat: 32.904, lng: 13.180  },
+    { name: 'רמלה',     lat: 31.928, lng: 34.872  },
+    { name: 'קירואן',   lat: 35.678, lng: 10.099  },
   ];
 
   function initLocationMap(locCounts) {
