@@ -426,7 +426,7 @@
   const SPICE_LATIN = {
     'גלנגל':    'Galangal',
     'נרד':      'Spikenard',
-    'לכה':      'Lac',
+    'לכה':      'Lac resin',
     'עץ ברזיל': 'Brazilwood',
     'סטוראקס':  'Storax',
     'מסטיק':    'Mastic',
