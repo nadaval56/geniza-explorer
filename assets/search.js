@@ -388,6 +388,8 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
+        const tagCounts = Object.fromEntries((s.top_tags || []).map(({t, c}) => [t, c]));
+        renderSpiceBar(tagCounts);
         renderDist('dist-type', s.by_type || {});
         renderDist('dist-lang', s.by_lang || {});
         renderCentury(s.by_century || {});
@@ -412,7 +414,11 @@
     // location names — shown on the map instead
     'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
     'ספרד','סיציליה','הודו','חלב','קוס','פרס','פלרמו','עכו','רמלה','טריפולי','קירואן','דמיאט',
+    // spices — shown in spice bar instead
+    'פלפל','זעפרן','קינמון','זנגביל','כמון','כרכום','כוסברה','דבש','סוכר',
   ]);
+
+  const SPICE_TAGS = ['פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כרכום','כוסברה'];
 
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
@@ -433,6 +439,29 @@
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
+      if (!btn) return;
+      fTag = btn.dataset.tag;
+      searchInput.value = btn.dataset.tag;
+      query = '';
+      clearBtn.hidden = false;
+      applyFilters();
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+
+  function renderSpiceBar(tagCounts) {
+    const el = document.getElementById('spice-buttons');
+    if (!el) return;
+    el.innerHTML = SPICE_TAGS.map(tag => {
+      const count = tagCounts[tag] || 0;
+      return `<button class="spice-btn" data-tag="${esc(tag)}"
+        title="${esc(tag)} (${count.toLocaleString('he-IL')} מסמכים)">
+        <span class="spice-btn-name">${esc(tag)}</span>
+        <span class="spice-btn-count">${count.toLocaleString('he-IL')}</span>
+      </button>`;
+    }).join('');
+    el.addEventListener('click', e => {
+      const btn = e.target.closest('.spice-btn');
       if (!btn) return;
       fTag = btn.dataset.tag;
       searchInput.value = btn.dataset.tag;
