@@ -1265,7 +1265,8 @@ img { display: block; max-width: 100%; }
   cursor: pointer;
   transition: background .12s, border-color .12s, color .12s;
   font-family: var(--font-ui);
-  min-width: 5rem;
+  flex: 1 1 0;
+  min-width: 4.5rem;
 }
 
 .spice-btn:hover {

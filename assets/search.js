@@ -388,8 +388,6 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
-        const tagCounts = Object.fromEntries((s.top_tags || []).map(({t, c}) => [t, c]));
-        renderSpiceBar(tagCounts);
         renderDist('dist-type', s.by_type || {});
         renderDist('dist-lang', s.by_lang || {});
         renderCentury(s.by_century || {});
@@ -592,8 +590,10 @@
       .then(r => r.ok ? r.json() : null)
       .then(tags => {
         if (!tags) return;
-        const locNames = new Set(MAP_LOCATIONS.map(l => l.name));
-        const locCounts = {};
+        const locNames  = new Set(MAP_LOCATIONS.map(l => l.name));
+        const spiceSet  = new Set(SPICE_TAGS);
+        const locCounts   = {};
+        const spiceCounts = {};
         for (const [docId, docTags] of Object.entries(tags)) {
           for (const tag of docTags) {
             if (locNames.has(tag)) {
@@ -601,9 +601,13 @@
               locationDocIds[tag].add(docId);
               locCounts[tag] = (locCounts[tag] || 0) + 1;
             }
+            if (spiceSet.has(tag)) {
+              spiceCounts[tag] = (spiceCounts[tag] || 0) + 1;
+            }
           }
         }
         initLocationMap(locCounts);
+        renderSpiceBar(spiceCounts);
       })
       .catch(() => {});
   }
