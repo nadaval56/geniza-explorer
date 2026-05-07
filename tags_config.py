@@ -136,6 +136,7 @@ TEXT_TAGS = {
     "אלמוג":    ["אלמוג", "אלמוגים"],
     "אינדיגו":  ["אינדיגו"],
     "ארגמן":    ["ארגמן"],
+    "עופרת":    ["עופרת"],
 
     # Occupations
     "סופר":   ["סופר", "סופרים"],
@@ -206,5 +207,8 @@ TAG_REMOVE = {
 # Searched against the doc's 'description' field (English). Useful when
 # the Hebrew translation is ambiguous (e.g. כסף = money OR silver).
 EN_TEXT_TAGS = {
-    "כסף": [r"\bsilver\b"],   # כסף in Hebrew means both money and silver
+    # Match "silver" only when NOT immediately followed by a currency unit.
+    # Excludes: "silver coins/coin", "silver dirhams", "silver dinars",
+    #           "silver medins", "silver akçes", "silver gurush", etc.
+    "כסף": [r"\bsilver\b(?!\s+(?:coin|coins|dirham|dirhams|dinar|dinars|medin|medins|ak[çc]e|ak[çc]es|gurush|gur[uū][şs]|groschen|zolota|currency|denomination))"],
 }
