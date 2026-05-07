@@ -330,12 +330,13 @@
       });
     }
 
-    // Surprise button
+    // Surprise button — random Hebrew fragment with an image
     if (btnSurprise) {
       btnSurprise.addEventListener('click', () => {
         if (!allDocs.length) return;
-        const doc = allDocs[Math.floor(Math.random() * allDocs.length)];
-        window.location.href = `fragment.html?id=${encodeURIComponent(doc.id)}`;
+        const pool = allDocs.filter(d => d.img && (d.lh || '').includes('עברית'));
+        const pick = (pool.length ? pool : allDocs)[Math.floor(Math.random() * (pool.length || allDocs.length))];
+        window.location.href = `fragment.html?id=${encodeURIComponent(pick.id)}`;
       });
     }
 
