@@ -284,7 +284,7 @@ img { display: block; max-width: 100%; }
   }
   .surprise-wrap .surprise-dice { width: 78px; height: 78px; }
   .surprise-wrap .surprise-title { font-size: 1rem; }
-  .surprise-wrap .surprise-sub { display: none; }
+  .surprise-wrap .surprise-sub { font-size: .72rem; }
 }
 
 /* Reset button */
