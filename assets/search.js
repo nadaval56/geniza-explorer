@@ -313,8 +313,7 @@
         fType = (fType === t) ? '' : t;
         selType.value = fType;
         applyFilters();
-        document.querySelector('.search-bar-wrapper')
-          .scrollIntoView({ behavior: 'smooth' });
+        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
 
@@ -327,8 +326,7 @@
         const era = +col.dataset.era;
         fEra = (fEra === era) ? 0 : era;
         applyFilters();
-        document.querySelector('.search-bar-wrapper')
-          .scrollIntoView({ behavior: 'smooth' });
+        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
 
