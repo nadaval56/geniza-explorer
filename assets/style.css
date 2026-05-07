@@ -1144,6 +1144,21 @@ img { display: block; max-width: 100%; }
   font-size: .8rem;
 }
 
+.dist-row--clickable {
+  cursor: pointer;
+  padding: .15rem .35rem;
+  margin: 0 -.35rem;
+  border-radius: 6px;
+  transition: background .15s;
+}
+.dist-row--clickable:hover { background: var(--bg-card-h); }
+.dist-row--clickable:hover .dist-label { color: var(--gold-light); }
+.dist-row--active {
+  background: var(--bg-card-h);
+}
+.dist-row--active .dist-label { color: var(--gold-light); font-weight: 700; }
+.dist-row--active .dist-bar { background: linear-gradient(90deg, var(--gold-light), var(--gold)); }
+
 .dist-label {
   color: var(--text-2);
   text-align: right;
@@ -1186,11 +1201,24 @@ img { display: block; max-width: 100%; }
   justify-content: flex-end;
 }
 
+.century-col--clickable { cursor: pointer; }
+.century-col--clickable:hover .century-bar {
+  background: linear-gradient(180deg, var(--gold), var(--gold-light));
+  filter: brightness(1.05);
+}
+.century-col--clickable:hover .century-label { color: var(--gold-light); }
+.century-col--active .century-bar {
+  background: linear-gradient(180deg, var(--gold-light), var(--gold));
+  box-shadow: 0 0 0 2px var(--gold-light);
+}
+.century-col--active .century-label { color: var(--gold-light); font-weight: 700; }
+
 .century-bar {
   width: 100%;
   background: linear-gradient(180deg, var(--gold-light), var(--gold-dark));
   border-radius: 3px 3px 0 0;
   min-height: 3px;
+  transition: background .15s, box-shadow .15s, filter .15s;
 }
 
 .century-label { font-size: .68rem; color: var(--text-3); text-align: center; }

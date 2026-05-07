@@ -92,37 +92,6 @@
     </div>
   </main>
 
-  <!-- Statistics section (below cards) -->
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
   <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
     <div class="dash-inner">
 
@@ -198,7 +167,10 @@
         </div>
 
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="dist-list" id="dist-type"></div>
         </div>
 
@@ -208,7 +180,10 @@
         </div>
 
         <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לאורך הדורות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="century-chart" id="dist-century"></div>
         </div>
 
