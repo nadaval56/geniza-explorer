@@ -326,12 +326,11 @@
       });
     });
 
-    // Surprise button — Hebrew docs with image only
+    // Surprise button
     if (btnSurprise) {
       btnSurprise.addEventListener('click', () => {
-        const pool = allDocs.filter(d => d.lh === 'עברית' && d.img);
-        if (!pool.length) return;
-        const doc = pool[Math.floor(Math.random() * pool.length)];
+        if (!allDocs.length) return;
+        const doc = allDocs[Math.floor(Math.random() * allDocs.length)];
         window.location.href = `fragment.html?id=${encodeURIComponent(doc.id)}`;
       });
     }
@@ -413,17 +412,21 @@
     // location names — shown on the map instead
     'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
     'ספרד','סיציליה','הודו','חלב','קוס','פרס','פלרמו','עכו','רמלה','טריפולי','קירואן','דמיאט',
-    // spices — shown in spice bar instead
-    'פלפל','זעפרן','קינמון','זנגביל','כמון','כרכום','כוסברה','דבש','סוכר',
+    // spices & luxury goods — shown in spice bar instead
+    'פלפל','זעפרן','קינמון','זנגביל','כמון','כוסברה','דבש','סוכר',
     'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
+    'נענע','פיגם',
+    'משי','זהב','כסף','פנינים','נחושת','אלמוג','אינדיגו','ארגמן',
   ]);
 
   const SPICE_TAGS = [
-    'פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כרכום','כוסברה',
+    'פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כוסברה',
     'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
+    'נענע','פיגם',
+    'משי','זהב','כסף','פנינים','נחושת','אלמוג','אינדיגו','ארגמן',
   ];
 
-  // Latin/English subtitle for less familiar spices
+  // Latin/English subtitle for less familiar spices/goods
   const SPICE_LATIN = {
     'גלנגל':    'Galangal',
     'נרד':      'Spikenard',
@@ -433,6 +436,10 @@
     'מסטיק':    'Mastic',
     'לבונה':    'Frankincense',
     'כמון שחור':'Nigella',
+    'פיגם':     'Rue',
+    'אינדיגו':  'Indigo',
+    'אלמוג':    'Coral',
+    'ארגמן':    'Purple dye',
   };
 
   function renderTagCloud(tags) {

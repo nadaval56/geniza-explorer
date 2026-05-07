@@ -107,11 +107,10 @@ TEXT_TAGS = {
 
     # Spices and trade goods (shown in spice bar, not tag cloud)
     "פלפל":    ["פלפל"],
-    "זעפרן":    ["זעפרן"],
+    "זעפרן":    ["זעפרן", "כרכום"],   # כרכום = saffron in many Geniza translations
     "קינמון":   ["קינמון"],
     "זנגביל":   ["זנגביל", "ג'ינג'ר"],
     "כמון":     ["כמון"],
-    "כרכום":    ["כרכום"],
     "כוסברה":   ["כוסברה"],
     "דבש":      ["דבש"],
     "סוכר":     ["סוכר", "קנה סוכר"],
@@ -126,6 +125,17 @@ TEXT_TAGS = {
     "לכה":      [r"(?<![א-תא-ת])לכה(?![א-ת])"],  # lac resin; avoids הלכה, מלכה etc.
     "עץ ברזיל": ["עץ ברזיל"],
     "סטוראקס":  ["סטוראקס"],
+    "נענע":     ["נענע"],
+    "פיגם":     ["פיגם"],
+
+    # Luxury goods and materials (shown in spice bar)
+    "משי":      ["משי"],
+    "זהב":      ["זהב"],
+    "פנינים":   ["פנינה", "פנינים"],
+    "נחושת":    ["נחושת"],
+    "אלמוג":    ["אלמוג", "אלמוגים"],
+    "אינדיגו":  ["אינדיגו"],
+    "ארגמן":    ["ארגמן"],
 
     # Occupations
     "סופר":   ["סופר", "סופרים"],
@@ -190,4 +200,11 @@ TAG_REMOVE = {
     "3523":  {"הודו"},
     # "להודיע לכה" = archaic Hebrew "to let you know", not lac resin
     "16985": {"לכה"},
+}
+
+# ── English description search: tag → list of English regex patterns ──────────
+# Searched against the doc's 'description' field (English). Useful when
+# the Hebrew translation is ambiguous (e.g. כסף = money OR silver).
+EN_TEXT_TAGS = {
+    "כסף": [r"\bsilver\b"],   # כסף in Hebrew means both money and silver
 }
