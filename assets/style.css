@@ -235,9 +235,9 @@ img { display: block; max-width: 100%; }
   font-size: 1.55rem;
   font-weight: 700;
   color: #6a20b0;
-  font-family: var(--font-serif);
+  font-family: var(--font-ui);
   line-height: 1.2;
-  letter-spacing: .01em;
+  letter-spacing: .02em;
 }
 
 .surprise-sub {
