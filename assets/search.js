@@ -35,8 +35,6 @@
   const btnReset    = document.getElementById('btn-reset');
   const btnResetEmpty = document.getElementById('btn-reset-empty');
   const btnSurprise = document.getElementById('btn-surprise');
-  const eraChips    = document.querySelectorAll('[data-era]');
-  const typeChips   = document.querySelectorAll('[data-type]');
 
   // ── Helpers ───────────────────────────────────────────────────────────────────
   function esc(s) {
@@ -128,6 +126,7 @@
     page = 1;
     updateResetVisibility();
     render();
+    updateDistActiveStates();
   }
 
   function hasActiveFilter() {
@@ -139,13 +138,20 @@
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
-    eraChips.forEach(c => c.classList.remove('chip--active'));
-    typeChips.forEach(c => c.classList.remove('chip--active'));
     if (_activeLocMarker) {
       _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
       _activeLocMarker = null;
     }
     applyFilters();
+  }
+
+  function updateDistActiveStates() {
+    document.querySelectorAll('#dist-type .dist-row').forEach(r => {
+      r.classList.toggle('dist-row--active', !!fType && r.dataset.type === fType);
+    });
+    document.querySelectorAll('#dist-century .century-col').forEach(c => {
+      c.classList.toggle('century-col--active', !!fEra && +c.dataset.era === fEra);
+    });
   }
 
   function updateResetVisibility() {
@@ -297,34 +303,34 @@
     if (btnReset)      btnReset.addEventListener('click', resetAll);
     if (btnResetEmpty) btnResetEmpty.addEventListener('click', resetAll);
 
-    // Era chips
-    eraChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const era = +btn.dataset.era;
-        if (fEra === era) { fEra = 0; btn.classList.remove('chip--active'); }
-        else {
-          fEra = era;
-          eraChips.forEach(c => c.classList.remove('chip--active'));
-          btn.classList.add('chip--active');
-        }
+    // Click-to-filter on document-type distribution
+    const distTypeEl = document.getElementById('dist-type');
+    if (distTypeEl) {
+      distTypeEl.addEventListener('click', e => {
+        const row = e.target.closest('.dist-row[data-type]');
+        if (!row) return;
+        const t = row.dataset.type;
+        fType = (fType === t) ? '' : t;
+        selType.value = fType;
         applyFilters();
+        document.querySelector('.search-bar-wrapper')
+          .scrollIntoView({ behavior: 'smooth' });
       });
-    });
+    }
 
-    // Type chips
-    typeChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const t = btn.dataset.type;
-        if (fType === t) { fType = ''; btn.classList.remove('chip--active'); }
-        else {
-          fType = t;
-          selType.value = t;
-          typeChips.forEach(c => c.classList.remove('chip--active'));
-          btn.classList.add('chip--active');
-        }
+    // Click-to-filter on century timeline
+    const distCenturyEl = document.getElementById('dist-century');
+    if (distCenturyEl) {
+      distCenturyEl.addEventListener('click', e => {
+        const col = e.target.closest('.century-col[data-era]');
+        if (!col) return;
+        const era = +col.dataset.era;
+        fEra = (fEra === era) ? 0 : era;
         applyFilters();
+        document.querySelector('.search-bar-wrapper')
+          .scrollIntoView({ behavior: 'smooth' });
       });
-    });
+    }
 
     // Surprise button
     if (btnSurprise) {
@@ -388,7 +394,7 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
-        renderDist('dist-type', s.by_type || {});
+        renderDist('dist-type', s.by_type || {}, { dataAttr: 'type' });
         renderDist('dist-lang', s.by_lang || {});
         renderCentury(s.by_century || {});
       })
@@ -495,20 +501,24 @@
     });
   }
 
-  function renderDist(id, obj) {
+  function renderDist(id, obj, opts) {
     const el = document.getElementById(id);
     if (!el) return;
     const entries = Object.entries(obj);
     if (!entries.length) return;
     const maxV = entries[0][1];
+    const attr = opts && opts.dataAttr;
     el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
       const pct = Math.round(count / maxV * 100);
-      return `<div class="dist-row">
+      const dataAttr = attr ? ` data-${attr}="${esc(label)}"` : '';
+      const extraCls = attr ? ' dist-row--clickable' : '';
+      return `<div class="dist-row${extraCls}"${dataAttr}>
         <span class="dist-label" title="${esc(label)}">${esc(label)}</span>
         <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
         <span class="dist-count">${count.toLocaleString('he-IL')}</span>
       </div>`;
     }).join('');
+    updateDistActiveStates();
   }
 
   function renderCentury(obj) {
@@ -521,12 +531,14 @@
       const h = Math.round(count / maxV * 100);
       const label = +c >= 14 ? '14+' : `${c}`;
       const num = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
-      return `<div class="century-col">
+      const era = +c >= 14 ? 14 : +c;
+      return `<div class="century-col century-col--clickable" data-era="${era}">
         <div class="century-bar" style="height:${h}%" title="${count.toLocaleString('he-IL')} מסמכים"></div>
         <span class="century-label">מ-${label}</span>
         <span class="century-count">${num}</span>
       </div>`;
     }).join('');
+    updateDistActiveStates();
   }
 
   // ── Location map ─────────────────────────────────────────────────────────────
