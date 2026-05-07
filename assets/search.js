@@ -326,11 +326,12 @@
       });
     });
 
-    // Surprise button
+    // Surprise button — Hebrew docs with image only
     if (btnSurprise) {
       btnSurprise.addEventListener('click', () => {
-        if (!allDocs.length) return;
-        const doc = allDocs[Math.floor(Math.random() * allDocs.length)];
+        const pool = allDocs.filter(d => d.lh === 'עברית' && d.img);
+        if (!pool.length) return;
+        const doc = pool[Math.floor(Math.random() * pool.length)];
         window.location.href = `fragment.html?id=${encodeURIComponent(doc.id)}`;
       });
     }
