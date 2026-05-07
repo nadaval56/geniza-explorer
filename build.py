@@ -495,46 +495,44 @@ INDEX_HTML = """\
     <div class="dash-inner">
 
       <div class="surprise-wrap">
-        <button class="surprise-btn" id="btn-surprise" aria-label="קפוץ למסמך גנוז בעברית עם תמונה">
+        <button class="surprise-btn" id="btn-surprise" aria-label="בחר קטע אקראי מהגניזה">
           <div class="surprise-dice">
             <svg viewBox="0 0 100 98" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <defs>
                 <linearGradient id="sg-top" x1="20%" y1="0%" x2="80%" y2="100%">
-                  <stop offset="0%" stop-color="#f7d570"/>
-                  <stop offset="100%" stop-color="#e8a840"/>
+                  <stop offset="0%" stop-color="#ffe066"/>
+                  <stop offset="100%" stop-color="#f5a623"/>
                 </linearGradient>
                 <linearGradient id="sg-left" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#c87820"/>
-                  <stop offset="100%" stop-color="#a86010"/>
+                  <stop offset="0%" stop-color="#e0455a"/>
+                  <stop offset="100%" stop-color="#9b1a30"/>
                 </linearGradient>
                 <linearGradient id="sg-right" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#8a4510"/>
-                  <stop offset="100%" stop-color="#6a2e06"/>
+                  <stop offset="0%" stop-color="#2a72c3"/>
+                  <stop offset="100%" stop-color="#163f7a"/>
                 </linearGradient>
                 <filter id="sg-sh" x="-20%" y="-20%" width="140%" height="160%">
-                  <feDropShadow dx="0" dy="4" stdDeviation="4.5" flood-color="#4a2000" flood-opacity="0.38"/>
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1a1040" flood-opacity="0.32"/>
                 </filter>
               </defs>
-              <ellipse cx="50" cy="92" rx="33" ry="4" fill="#3a1500" opacity="0.2"/>
-              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#5a2800" stroke-width="1.2" stroke-linejoin="round"/>
-              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#5a2800" stroke-width="1.2" stroke-linejoin="round"/>
-              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#5a2800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
-              <circle cx="34" cy="21" r="3.1" fill="#5a2800" opacity="0.82"/>
-              <circle cx="66" cy="21" r="3.1" fill="#5a2800" opacity="0.82"/>
-              <circle cx="50" cy="30" r="3.1" fill="#5a2800" opacity="0.82"/>
-              <circle cx="34" cy="39" r="3.1" fill="#5a2800" opacity="0.82"/>
-              <circle cx="66" cy="39" r="3.1" fill="#5a2800" opacity="0.82"/>
-              <circle cx="28" cy="43" r="2.4" fill="#5a2800" opacity="0.55"/>
-              <circle cx="38" cy="74" r="2.4" fill="#5a2800" opacity="0.55"/>
-              <circle cx="78" cy="41" r="2.4" fill="#f5d580" opacity="0.5"/>
-              <circle cx="68" cy="59" r="2.4" fill="#f5d580" opacity="0.5"/>
-              <circle cx="57" cy="77" r="2.4" fill="#f5d580" opacity="0.5"/>
+              <ellipse cx="50" cy="93" rx="34" ry="4.5" fill="#1a1040" opacity="0.18"/>
+              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#7a0820" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#0e2a5a" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#c07800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
+              <circle cx="34" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="50" cy="30" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="34" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="28" cy="43" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="38" cy="74" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="78" cy="41" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="68" cy="59" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="57" cy="77" r="2.4" fill="#a8d4ff" opacity="0.65"/>
             </svg>
           </div>
-          <div class="surprise-text">
-            <span class="surprise-title">הפתע אותי</span>
-            <span class="surprise-sub">מסמך גנוז בעברית, עם תמונה</span>
-          </div>
+          <span class="surprise-title">הפתע אותי</span>
+          <span class="surprise-sub">בחר קטע אקראי מהגניזה</span>
         </button>
       </div>
 
