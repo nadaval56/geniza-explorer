@@ -259,6 +259,34 @@ img { display: block; max-width: 100%; }
   .surprise-title { font-size: 1.35rem; }
 }
 
+/* Desktop: float the cube as a transparent corner accent above the hero */
+@media (min-width: 900px) {
+  .surprise-wrap {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.5rem;
+    z-index: 5;
+    margin: 0;
+  }
+  .surprise-wrap .surprise-btn,
+  .surprise-wrap .surprise-btn:hover,
+  .surprise-wrap .surprise-btn:active {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    padding: .35rem .6rem;
+    min-width: 0;
+    max-width: none;
+    gap: .25rem;
+  }
+  .surprise-wrap .surprise-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+  }
+  .surprise-wrap .surprise-dice { width: 78px; height: 78px; }
+  .surprise-wrap .surprise-title { font-size: 1rem; }
+  .surprise-wrap .surprise-sub { display: none; }
+}
+
 /* Reset button */
 .btn-reset {
   padding: .45rem .85rem;
