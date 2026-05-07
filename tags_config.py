@@ -128,6 +128,15 @@ TEXT_TAGS = {
     "נענע":     ["נענע"],
     "פיגם":     ["פיגם"],
 
+    # Luxury goods and materials (shown in spice bar)
+    "משי":      ["משי"],
+    "זהב":      ["זהב"],
+    "פנינים":   ["פנינה", "פנינים"],
+    "נחושת":    ["נחושת"],
+    "אלמוג":    ["אלמוג", "אלמוגים"],
+    "אינדיגו":  ["אינדיגו"],
+    "ארגמן":    ["ארגמן"],
+
     # Occupations
     "סופר":   ["סופר", "סופרים"],
     "חזן":    ["חזן"],
@@ -191,4 +200,11 @@ TAG_REMOVE = {
     "3523":  {"הודו"},
     # "להודיע לכה" = archaic Hebrew "to let you know", not lac resin
     "16985": {"לכה"},
+}
+
+# ── English description search: tag → list of English regex patterns ──────────
+# Searched against the doc's 'description' field (English). Useful when
+# the Hebrew translation is ambiguous (e.g. כסף = money OR silver).
+EN_TEXT_TAGS = {
+    "כסף": [r"\bsilver\b"],   # כסף in Hebrew means both money and silver
 }

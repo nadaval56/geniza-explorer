@@ -6,6 +6,7 @@ Sources:
   1. doc type_he field  → TYPE_MAP tags
   2. doc lang_he field  → LANG_MAP tags
   3. Hebrew translation text → TEXT_TAGS substring search
+  4. English description field → EN_TEXT_TAGS regex search
 """
 import json
 import re
@@ -13,9 +14,9 @@ import glob
 from pathlib import Path
 from collections import Counter
 
-from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP, TAG_REMOVE
+from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP, TAG_REMOVE, EN_TEXT_TAGS
 
-# Pre-compile patterns: strings starting with "(?", "[", or "^" are regex; others are literals.
+# Pre-compile Hebrew patterns: strings starting with "(?", "[", or "^" are regex; others literals.
 _COMPILED: dict[str, list] = {}
 for _tag, _pats in TEXT_TAGS.items():
     compiled_pats = []
@@ -25,6 +26,11 @@ for _tag, _pats in TEXT_TAGS.items():
         else:
             compiled_pats.append(p)   # plain string → substring search
     _COMPILED[_tag] = compiled_pats
+
+# Pre-compile English patterns (always regex, case-insensitive)
+_EN_COMPILED: dict[str, list] = {}
+for _tag, _pats in EN_TEXT_TAGS.items():
+    _EN_COMPILED[_tag] = [re.compile(p, re.IGNORECASE) for p in _pats]
 
 def _matches(text: str, patterns: list) -> bool:
     for p in patterns:
@@ -69,6 +75,13 @@ for doc_path in sorted(DOCS_DIR.glob("*.json")):
     if text:
         for tag, patterns in _COMPILED.items():
             if _matches(text, patterns):
+                tags.append(tag)
+
+    # 4. English description search
+    desc_en = (doc.get("description") or "").strip()
+    if desc_en:
+        for tag, patterns in _EN_COMPILED.items():
+            if tag not in tags and _matches(desc_en, patterns):
                 tags.append(tag)
 
     # Apply manual overrides
