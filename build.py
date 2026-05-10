@@ -360,7 +360,7 @@ def build_stats(docs, tags_he=None):
         "by_type":    dict(type_c.most_common()),
         "by_lang":    dict(lang_c.most_common(12)),
         "by_century": {str(k): v for k, v in sorted(cent_c.items())},
-        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(80)],
+        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(200)],
     }
 
 
@@ -460,44 +460,50 @@ INDEX_HTML = """\
     </div>
   </main>
 
-  <!-- Statistics section (below cards) -->
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-      <div class="browse-group browse-group--single">
-        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
-          🎲 הפתע אותי
-        </button>
-      </div>
-
-    </div>
-  </section>
-
   <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
     <div class="dash-inner">
+
+      <div class="surprise-wrap">
+        <button class="surprise-btn" id="btn-surprise" aria-label="בחר קטע אקראי מהגניזה">
+          <div class="surprise-dice">
+            <svg viewBox="0 0 100 98" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="sg-top" x1="20%" y1="0%" x2="80%" y2="100%">
+                  <stop offset="0%" stop-color="#ffe066"/>
+                  <stop offset="100%" stop-color="#f5a623"/>
+                </linearGradient>
+                <linearGradient id="sg-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e0455a"/>
+                  <stop offset="100%" stop-color="#9b1a30"/>
+                </linearGradient>
+                <linearGradient id="sg-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2a72c3"/>
+                  <stop offset="100%" stop-color="#163f7a"/>
+                </linearGradient>
+                <filter id="sg-sh" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1a1040" flood-opacity="0.32"/>
+                </filter>
+              </defs>
+              <ellipse cx="50" cy="93" rx="34" ry="4.5" fill="#1a1040" opacity="0.18"/>
+              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#7a0820" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#0e2a5a" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#c07800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
+              <circle cx="34" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="50" cy="30" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="34" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="28" cy="43" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="38" cy="74" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="78" cy="41" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="68" cy="59" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="57" cy="77" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+            </svg>
+          </div>
+          <span class="surprise-title">הפתע אותי</span>
+          <span class="surprise-sub">בחר קטע אקראי מהגניזה</span>
+        </button>
+      </div>
 
       <div class="dash-panels">
 
@@ -517,8 +523,22 @@ INDEX_HTML = """\
           <div id="geniza-map"></div>
         </div>
 
+        <div class="dash-panel dash-panel--wide dash-panel--spices">
+          <div class="spice-banner-wrap">
+            <img src="assets/spice-market.png" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+          </div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
+          <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
+        </div>
+
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="dist-list" id="dist-type"></div>
         </div>
 
@@ -528,7 +548,10 @@ INDEX_HTML = """\
         </div>
 
         <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לאורך הדורות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="century-chart" id="dist-century"></div>
         </div>
 
