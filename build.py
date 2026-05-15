@@ -373,7 +373,17 @@ INDEX_HTML = """\
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="הגניזה הקהירית — {total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
   <title>הגניזה הקהירית</title>
+  <link rel="canonical" href="https://nadaval56.github.io/geniza-explorer/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>📜</text></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="הגניזה הקהירית">
+  <meta property="og:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta property="og:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה: הלכה, מסחר, משפחה ויומיום.">
+  <meta property="og:url" content="https://nadaval56.github.io/geniza-explorer/">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
