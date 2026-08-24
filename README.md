@@ -93,7 +93,11 @@ python make_brand_assets.py
 
 ### קוד האתר
 
-נכתב עבור הפרויקט הזה. **טרם הוגדר לו רישיון** — עד שיוגדר, כל הזכויות שמורות.
+סקריפטי הבנייה, ה-CSS, ה-JavaScript ותבניות ה-HTML — תחת [רישיון MIT](LICENSE).
+
+**שימו לב להיקף:** רישיון ה-MIT חל על הקוד בלבד. הוא **אינו** חל על `data/` (שנשאר
+תחת CC BY-NC 4.0 של פרינסטון) ואינו חל על הגופנים (OFL). שימוש חוזר בקוד — חופשי;
+שימוש חוזר בנתונים — כפוף לתנאים שלמעלה.
 
 ---
 
@@ -133,6 +137,10 @@ Fonts are licensed under the SIL OFL 1.1.
 
 **Non-commercial use only,** per the NC clause. Reuse must credit the Princeton
 Geniza Project, link to the licence, and indicate what was changed.
+
+The interface **code** — build scripts, stylesheets, JavaScript, HTML templates —
+is separately licensed under [MIT](LICENSE). That licence covers the code only; it
+does not extend to `data/` or to the bundled fonts.
 
 Build with `python build.py` (Python 3.11+, no external dependencies). See
 [`CLAUDE.md`](CLAUDE.md) for the repository layout.
