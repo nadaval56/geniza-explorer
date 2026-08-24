@@ -39,8 +39,43 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Refreshes data/ from the Princeton Geniza Project CSV and rewrites the
+      # HTML templates. Allowed to fail: an upstream outage should not take the
+      # published site down with it, because data/docs/*.json is committed and
+      # the prerender step below can work from that alone.
       - name: Build site
+        id: build
+        continue-on-error: true
         run: python build.py
+
+      - name: Report degraded build
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "::warning::build.py failed — deploying from the committed data snapshot instead."
+
+      # Always runs. Generates the crawlable pages under d/, sitemap.xml and
+      # robots.txt. build.py calls this too; running it again is idempotent and
+      # covers the degraded path.
+      - name: Prerender for crawlers
+        run: python prerender.py
+
+      - name: Verify output
+        run: |
+          set -e
+          for f in index.html about.html fragment.html sitemap.xml robots.txt \
+                   d/index.html site.webmanifest favicon.ico favicon.svg \
+                   assets/og-image.png assets/style.css assets/fonts.css; do
+            [ -s "$f" ] || { echo "::error::missing or empty: $f"; exit 1; }
+          done
+          pages=$(find d -name '*.html' | wc -l)
+          urls=$(grep -c '<loc>' sitemap.xml)
+          echo "prerendered pages: $pages"
+          echo "sitemap URLs:      $urls"
+          [ "$pages" -gt 1000 ] || { echo "::error::only $pages prerendered pages"; exit 1; }
+          # A sitemap file may hold at most 50,000 URLs before it has to be split.
+          [ "$urls" -lt 50000 ] || { echo "::error::sitemap over the 50,000-URL limit"; exit 1; }
+          grep -q 'og:image' index.html || { echo "::error::index.html lost its Open Graph tags"; exit 1; }
+          echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

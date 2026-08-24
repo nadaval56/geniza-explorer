@@ -371,10 +371,10 @@ INDEX_HTML = """\
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הגניזה הקהירית — {total_docs:,} מסמכים מגניזת קהיר</title>
   <meta name="description" content="הגניזה הקהירית — {total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
-  <title>הגניזה הקהירית</title>
-  <link rel="canonical" href="https://nadaval56.github.io/geniza-explorer/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>📜</text></svg>">
+  <link rel="canonical" href="{base_url}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -382,15 +382,79 @@ INDEX_HTML = """\
   <meta property="og:site_name" content="הגניזה הקהירית">
   <meta property="og:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
   <meta property="og:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה: הלכה, מסחר, משפחה ויומיום.">
-  <meta property="og:url" content="https://nadaval56.github.io/geniza-explorer/">
+  <meta property="og:url" content="{base_url}">
+  <meta property="og:image" content="{base_url}assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה.">
+  <meta name="twitter:image" content="{base_url}assets/og-image.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Real favicon files. The previous emoji-in-SVG data URI relied on the
+       browser rendering <text> inside an SVG favicon, which Chrome and Safari
+       do not do — the tab fell back to a blank page icon. -->
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "WebSite",
+        "@id": "{base_url}#website",
+        "url": "{base_url}",
+        "name": "הגניזה הקהירית",
+        "alternateName": "Cairo Geniza — Hebrew Explorer",
+        "description": "חלון אל החיים היהודיים בימי הביניים — {total_docs:,} מסמכים מגניזת קהיר.",
+        "inLanguage": "he",
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "potentialAction": {{
+          "@type": "SearchAction",
+          "target": {{"@type": "EntryPoint", "urlTemplate": "{base_url}?q={{search_term_string}}"}},
+          "query-input": "required name=search_term_string"
+        }}
+      }},
+      {{
+        "@type": "DataCatalog",
+        "@id": "{base_url}#catalog",
+        "name": "הגניזה הקהירית",
+        "url": "{base_url}",
+        "inLanguage": ["he", "en"],
+        "isAccessibleForFree": true,
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "creditText": "Princeton Geniza Project (CC BY-NC 4.0)",
+        "isBasedOn": "https://github.com/princetongenizalab/pgp-metadata",
+        "provider": {{
+          "@type": "Organization",
+          "name": "Princeton Geniza Lab, Princeton University",
+          "url": "https://geniza.princeton.edu"
+        }},
+        "about": {{
+          "@type": "Thing",
+          "name": "Cairo Geniza",
+          "sameAs": "https://www.wikidata.org/wiki/Q1044504"
+        }}
+      }}
+    ]
+  }}
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
   <header class="site-header">
     <div class="header-inner">
@@ -455,7 +519,16 @@ INDEX_HTML = """\
     </div>
   </div>
 
-  <main class="main-content">
+  <main class="main-content" id="main-content">
+    <noscript>
+      <div class="noscript-note">
+        <p>
+          החיפוש והסינון בעמוד זה פועלים ב-JavaScript. אפשר לעיין בכל
+          {total_docs:,} המסמכים גם ללא JavaScript —
+          <a href="d/">מפתח המסמכים המלא</a> מכיל עמוד נפרד לכל מסמך.
+        </p>
+      </div>
+    </noscript>
     <div class="results-bar" id="results-bar" aria-live="polite"></div>
     <div class="cards-grid" id="cards-grid" role="list"></div>
     <div class="pagination" id="pagination" aria-label="דפים"></div>
@@ -573,9 +646,17 @@ INDEX_HTML = """\
   <footer class="site-footer">
     <p>
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+      — רישיון
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
     </p>
-    <p><a href="about.html">אודות הגניזה</a></p>
+    <p class="footer-note">
+      התיאורים בעברית הם תרגום ועיבוד של תיאורי המסמכים המקוריים באנגלית.
+      השימוש בחומרים מותר למטרות לא-מסחריות בלבד, בציון המקור.
+    </p>
+    <p>
+      <a href="about.html">אודות, קרדיטים ותנאי שימוש</a> ·
+      <a href="d/">מפתח כל המסמכים</a>
+    </p>
     <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
@@ -592,93 +673,82 @@ FRAGMENT_HTML = """\
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="page-title">מסמך גניזה — הגניזה הקהירית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>מסמך גניזה — הגניזה הקהירית</title>
+  <!-- Every document now has its own prerendered page under /d/, which carries
+       real HTML content plus per-document title, description, Open Graph and
+       schema.org data. This page is kept only so that links and bookmarks of
+       the form fragment.html?id=N — the URL shape the site used before — keep
+       working. It is Disallow-ed in robots.txt so it never competes with the
+       canonical page for indexing. -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
+  <script>
+    (function () {{
+      var id = new URLSearchParams(location.search).get('id');
+      location.replace(id ? 'd/' + encodeURIComponent(id) + '.html' : 'index.html');
+    }})();
+  </script>
 </head>
 <body class="fragment-body">
-
-  <nav class="top-nav" aria-label="ניווט">
-    <a href="index.html" class="nav-home">← חזרה לגלריה</a>
-    <span class="nav-breadcrumb" id="nav-breadcrumb" aria-current="page"></span>
-  </nav>
-
-  <div class="loading-state" id="loading-state">
+  <div class="loading-state">
     <div class="spinner"></div>
-    <p>טוען מסמך…</p>
+    <p>מעביר לעמוד המסמך…</p>
+    <p><a id="manual-link" href="index.html">המשך לגלריה</a></p>
   </div>
-
-  <article class="fragment-article" id="fragment-article" hidden>
-
-    <header class="fragment-header">
-      <div class="fragment-badges" id="fragment-badges"></div>
-      <h1 class="fragment-shelfmark" id="fragment-shelfmark"></h1>
-      <p class="fragment-library" id="fragment-library"></p>
-    </header>
-
-    <div class="fragment-layout">
-
-      <div class="fragment-image-col">
-        <div class="image-frame" id="image-frame">
-          <div class="image-placeholder" id="image-placeholder">
-            <span class="placeholder-glyph" aria-hidden="true">📜</span>
-            <span>אין תמונה זמינה</span>
-          </div>
-          <img
-            id="fragment-img"
-            class="fragment-img"
-            alt=""
-            hidden
-          >
-          <div class="image-caption" id="image-caption" hidden></div>
-        </div>
-        <div class="image-links" id="image-links"></div>
-      </div>
-
-      <div class="fragment-meta-col">
-        <dl class="meta-list" id="meta-list"></dl>
-
-        <div class="description-block" id="description-block" hidden>
-          <h2 class="section-label">תיאור</h2>
-          <p class="description-text" id="description-text"></p>
-        </div>
-
-        <div class="tags-block" id="tags-block" hidden>
-          <h2 class="section-label">תגיות</h2>
-          <div class="tags-list" id="tags-list"></div>
-        </div>
-
-        <div class="actions-block">
-          <a id="princeton-link" href="#" target="_blank" rel="noopener" class="btn-primary">
-            צפייה ב-Princeton Geniza Project ↗
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <nav class="fragment-nav" id="fragment-nav" aria-label="ניווט בין מסמכים"></nav>
-
-  </article>
-
-  <footer class="site-footer">
-    <p>
-      נתונים ממאגר
-      <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+  <noscript>
+    <p style="text-align:center;padding:2rem">
+      עמוד זה עבר. <a href="d/">עברו למפתח המסמכים</a> או
+      <a href="index.html">חזרו לגלריה</a>.
     </p>
-    <p><a href="about.html">אודות הגניזה</a></p>
-  </footer>
-
-  <script src="assets/fragment.js?v={build_ts}"></script>
+  </noscript>
+  <script>
+    (function () {{
+      var id = new URLSearchParams(location.search).get('id');
+      if (id) document.getElementById('manual-link').href = 'd/' + encodeURIComponent(id) + '.html';
+    }})();
+  </script>
 </body>
 </html>
 """
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
+def write_html_only(args):
+    """Regenerate the HTML pages (and d/, sitemap, robots) from committed data.
+
+    Useful when only the templates changed: it skips the CSV fetch and the
+    36k-file data rewrite, and it is the path CI falls back to when the
+    Princeton Geniza Project CSV is unreachable.
+    """
+    from datetime import date
+    import prerender
+
+    with open(DATA_DIR / "stats.json", encoding="utf-8") as f:
+        total = json.load(f)["total"]
+
+    site_url = args.base_url or prerender.base_url()
+    if not site_url.endswith("/"):
+        site_url += "/"
+
+    build_date = date.today().strftime("%-d %B %Y")
+    build_ts = date.today().strftime("%Y%m%d")
+
+    print("\n── Geniza Explorer: HTML only ────────────────────────")
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(INDEX_HTML.format(total_docs=total, build_date=build_date,
+                                  build_ts=build_ts, base_url=site_url))
+    print("  ✓  index.html")
+    with open("fragment.html", "w", encoding="utf-8") as f:
+        f.write(FRAGMENT_HTML.format(build_ts=build_ts))
+    print("  ✓  fragment.html (redirect shim → d/<id>.html)")
+
+    if not args.no_prerender:
+        prerender.run(base=site_url)
+    print("── Done ──────────────────────────────────────────────\n")
+
+
 def main():
     import argparse
     from datetime import date
@@ -687,7 +757,16 @@ def main():
     parser.add_argument("--no-download", action="store_true", help="Use cached CSV only")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of documents")
     parser.add_argument("--force-download", action="store_true", help="Re-download CSV even if cached")
+    parser.add_argument("--no-prerender", action="store_true",
+                        help="Skip generating the crawlable pages under d/")
+    parser.add_argument("--base-url", default=None,
+                        help="Canonical site root; defaults to CNAME, else GitHub Pages")
+    parser.add_argument("--html-only", action="store_true",
+                        help="Rewrite the HTML pages from the committed data, no CSV fetch")
     args = parser.parse_args()
+
+    if args.html_only:
+        return write_html_only(args)
 
     print("\n── Geniza Explorer Build ─────────────────────────────")
 
@@ -697,9 +776,9 @@ def main():
     if translations_path.exists():
         with open(translations_path, encoding="utf-8") as f:
             translations_he = json.load(f)
-        print(f"\n[0/4] Translations: {len(translations_he):,} cached Hebrew descriptions loaded")
+        print(f"\n[0/5] Translations: {len(translations_he):,} cached Hebrew descriptions loaded")
     else:
-        print("\n[0/4] Translations: none yet (run translate.py to generate)")
+        print("\n[0/5] Translations: none yet (run translate.py to generate)")
 
     tags_he_path = DATA_DIR / "tags_he.json"
     tags_he = {}
@@ -709,14 +788,14 @@ def main():
         print(f"       Hebrew tags:  {len(tags_he):,} documents tagged")
 
     # 1. Download / load CSV
-    print("\n[1/4] CSV")
+    print("\n[1/5] CSV")
     if args.no_download and not CACHE_FILE.exists():
         print("  ✗  No cached CSV found. Remove --no-download to fetch it.")
         sys.exit(1)
     csv_file = download_csv(force=args.force_download) if not args.no_download else CACHE_FILE
 
     # 2. Parse documents
-    print("\n[2/4] Parsing")
+    print("\n[2/5] Parsing")
     docs = load_docs(csv_file, limit=args.limit)
     print(f"  ✓  {len(docs):,} documents loaded")
 
@@ -724,7 +803,7 @@ def main():
     id_to_idx = {doc["id"]: i for i, doc in enumerate(docs)}
 
     # 3. Write JSON data files
-    print("\n[3/4] Writing data files")
+    print("\n[3/5] Writing data files")
     DATA_DIR.mkdir(exist_ok=True)
     DOCS_DIR.mkdir(exist_ok=True)
 
@@ -757,17 +836,34 @@ def main():
     print(f"  ✓  {len(docs):,} document JSON files written to data/docs/")
 
     # 4. Write HTML pages
-    print("\n[4/4] Writing HTML")
+    print("\n[4/5] Writing HTML")
     build_date = date.today().strftime("%-d %B %Y")
     build_ts   = date.today().strftime("%Y%m%d")
 
+    import prerender
+
+    site_url = args.base_url or prerender.base_url()
+    if not site_url.endswith("/"):
+        site_url += "/"
+
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date, build_ts=build_ts))
+        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date,
+                                  build_ts=build_ts, base_url=site_url))
     print("  ✓  index.html")
 
     with open("fragment.html", "w", encoding="utf-8") as f:
         f.write(FRAGMENT_HTML.format(build_ts=build_ts))
-    print("  ✓  fragment.html")
+    print("  ✓  fragment.html (redirect shim → d/<id>.html)")
+
+    # Prerender for crawlers. index.html and the viewer are client-side
+    # rendered, so without this step nothing that skips JavaScript — the AI
+    # crawlers, the WhatsApp/Telegram/Slack unfurlers, Googlebot's first pass
+    # — can see a single document.
+    if args.no_prerender:
+        print("\n[5/5] Prerender skipped (--no-prerender)")
+    else:
+        print("\n[5/5] Prerender")
+        prerender.run(base=site_url)
 
     print("\n── Done ──────────────────────────────────────────────")
     print(f"   {len(docs):,} documents • index.html • fragment.html")

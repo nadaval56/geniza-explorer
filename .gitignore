@@ -2,3 +2,10 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Generated at build time by prerender.py and published from CI. Kept out of
+# git because d/ is ~300 MB of derived HTML and sitemap.xml changes on every
+# build; both are reproducible with `python prerender.py`.
+/d/
+/sitemap.xml
+/robots.txt

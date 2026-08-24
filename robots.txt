@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nadaval56.github.io/geniza-explorer/sitemap.xml

@@ -225,7 +225,7 @@
       : '';
 
     return `
-      <a href="fragment.html?id=${esc(doc.id)}" class="card${doc.iu?' card--has-thumb':''}" role="listitem"
+      <a href="d/${esc(doc.id)}.html" class="card${doc.iu?' card--has-thumb':''}" role="listitem"
          aria-label="${esc(doc.s||'מסמך')}">
         ${thumbImg}
         <div class="card-top">
@@ -336,7 +336,7 @@
         if (!allDocs.length) return;
         const pool = allDocs.filter(d => d.img && (d.lh || '').includes('עברית'));
         const pick = (pool.length ? pool : allDocs)[Math.floor(Math.random() * (pool.length || allDocs.length))];
-        window.location.href = `fragment.html?id=${encodeURIComponent(pick.id)}`;
+        window.location.href = `d/${encodeURIComponent(pick.id)}.html`;
       });
     }
 
@@ -381,7 +381,7 @@
         const markEl = document.getElementById('dyk-shelfmark');
         if (textEl) textEl.textContent = f.text;
         if (markEl) markEl.textContent = f.shelfmark;
-        card.href = 'fragment.html?id=' + f.pgpid;
+        card.href = 'd/' + encodeURIComponent(f.pgpid) + '.html';
       })
       .catch(() => {});
   }
@@ -451,15 +451,16 @@
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
     const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t) && !CLOUD_SKIP.has(t));
-    if (!filtered_tags.length) return;
+    if (!filtered_tags.length) { el.innerHTML = ''; return; }
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
-    const MIN_SIZE = 0.72, MAX_SIZE = 1.85;
+    const MIN_SIZE = 0.82, MAX_SIZE = 1.85;
+    const MIN_ALPHA = 0.72;
     const display = filtered_tags.slice(0, 65)
       .sort((a, b) => a.t.localeCompare(b.t, 'he'));
     el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
-      const alpha = (0.5 + (c - minC) / range * 0.5).toFixed(2);
+      const alpha = (MIN_ALPHA + (c - minC) / range * (1 - MIN_ALPHA)).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
         data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
         >${esc(t)}</button>`;

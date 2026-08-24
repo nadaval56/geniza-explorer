@@ -3,11 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="אודות הגניזה הקהירית ופרויקט גניזה פרינסטון — הקשר ההיסטורי, סיפור הגילוי וקרדיטים">
   <title>אודות הגניזה — הגניזה הקהירית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="אודות הגניזה הקהירית ופרויקט גניזה פרינסטון — הקשר ההיסטורי, סיפור הגילוי, קרדיטים ותנאי שימוש.">
+  <link rel="canonical" href="https://nadaval56.github.io/geniza-explorer/about.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="הגניזה הקהירית">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="אודות הגניזה הקהירית">
+  <meta property="og:description" content="סיפור גילויה של גניזת קהיר, מה גנוז בה, פרויקט הגניזה של פרינסטון — וכל הקרדיטים ותנאי השימוש.">
+  <meta property="og:url" content="https://nadaval56.github.io/geniza-explorer/about.html">
+  <meta property="og:image" content="https://nadaval56.github.io/geniza-explorer/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="אודות הגניזה הקהירית">
+  <meta name="twitter:description" content="סיפור גילויה של גניזת קהיר, מה גנוז בה, וכל הקרדיטים ותנאי השימוש.">
+  <meta name="twitter:image" content="https://nadaval56.github.io/geniza-explorer/assets/og-image.png">
+
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
   <style>
     .about-article {
@@ -54,8 +75,25 @@
       margin-bottom: .9rem;
     }
     .about-section p:last-child { margin-bottom: 0; }
-    .about-section a { color: var(--gold); }
-    .about-section a:hover { color: var(--gold-dark); }
+    .about-section a { color: var(--link); }
+    .about-section a:hover { color: var(--link-hover); }
+    .about-section ul {
+      margin: .5rem 1.4rem .9rem 0;
+      font-size: .93rem;
+      line-height: 1.8;
+      color: var(--text-2);
+    }
+    .about-section li { margin-bottom: .35rem; }
+    .rights-note {
+      background: var(--bg-2);
+      border-right: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      font-size: .9rem;
+      line-height: 1.75;
+      color: var(--text-2);
+      margin-top: 1rem;
+    }
     .credit-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -88,11 +126,13 @@
 </head>
 <body>
 
+  <a href="#about-main" class="skip-link">דלג לתוכן</a>
+
   <nav class="top-nav" aria-label="ניווט">
     <a href="index.html" class="nav-home">← חזרה לגלריה</a>
   </nav>
 
-  <article class="about-article">
+  <article class="about-article" id="about-main">
 
     <h1>אודות הגניזה הקהירית</h1>
     <p class="intro-line">
@@ -132,26 +172,70 @@
       </p>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="credits">
       <h2><span class="sec-icon">🙏</span> קרדיט ותודות</h2>
       <div class="credit-grid">
         <div class="credit-item">
           <strong>מקור הנתונים</strong>
-          <span>Princeton Geniza Lab, אוניברסיטת פרינסטון<br>רישיון CC BY-NC 4.0</span>
+          <span>Princeton Geniza Lab, אוניברסיטת פרינסטון<br>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">רישיון CC BY-NC 4.0</a></span>
         </div>
         <div class="credit-item">
           <strong>תצלומים דיגיטליים</strong>
-          <span>ספריית קיימברידג' (אוסף טיילור-שכטר), ספריית בודלי, בית המדרש לרבנים (JTS) ועוד</span>
+          <span>ספריית קיימברידג' (אוסף טיילור-שכטר), ספריית בודלי, בית המדרש לרבנים (JTS) ועוד — כל תצלום תחת רישיון המוסד המחזיק</span>
         </div>
         <div class="credit-item">
           <strong>תרגומים לעברית</strong>
           <span>תרגום אוטומטי של תיאורי המסמכים, עם בדיקה והגהה אנושית של מדגמים נבחרים</span>
         </div>
         <div class="credit-item">
-          <strong>פיתוח האתר</strong>
-          <span>עיצוב ופיתוח ממשק חיפוש ועיון בעברית, מותאם לחקר עצמאי של המאגר</span>
+          <strong>גופנים</strong>
+          <span>Frank Ruhl Libre ו-Heebo, תחת
+            <a href="https://openfontlicense.org/" target="_blank" rel="noopener license">רישיון SIL OFL 1.1</a>.
+            מוגשים מהשרת של האתר — כתובות ה-IP של המבקרים אינן נשלחות לצד שלישי.</span>
         </div>
       </div>
+    </section>
+
+    <section class="about-section" id="rights">
+      <h2><span class="sec-icon">⚖️</span> זכויות ותנאי שימוש</h2>
+      <p>
+        האתר הזה הוא ממשק עיון בעברית מעל נתונים פתוחים. הוא אינו הבעלים של החומרים
+        שהוא מציג, ולכל שכבה בהם חלים תנאים משלה:
+      </p>
+      <ul>
+        <li>
+          <strong>המטא־נתונים והתיאורים</strong> — מאת
+          <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>,
+          זמינים ב-<a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">GitHub</a>
+          תחת <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">CC BY-NC 4.0</a>.
+        </li>
+        <li>
+          <strong>התיאורים בעברית</strong> — תרגום ועיבוד (adaptation) של התיאורים
+          המקוריים באנגלית. מתוקף תנאי הרישיון, השינוי מסומן ככזה בכל עמוד מסמך,
+          והתרגומים עצמם מופצים תחת אותם תנאים — CC BY-NC 4.0.
+        </li>
+        <li>
+          <strong>התצלומים</strong> — אינם מאוחסנים כאן. הם נטענים ישירות מהספריות
+          הדיגיטליות המחזיקות בכתבי היד, דרך תקן IIIF, וכפופים לרישיון של כל מוסד:
+          קיימברידג' (CC BY-NC 3.0), בודליאן (CC BY-NC 4.0), JTS (CC0 / נחלת הכלל)
+          ואחרים. הרישיון החל מצוין מתחת לכל תצלום.
+        </li>
+        <li>
+          <strong>קוד האתר, הגלריה והעיצוב</strong> — נכתבו עבור פרויקט זה.
+        </li>
+      </ul>
+      <p class="rights-note">
+        <strong>שימוש לא-מסחרי בלבד.</strong> רכיב ה-NC ברישיון CC BY-NC אוסר שימוש
+        מסחרי בחומרים — לרבות הצבת פרסומות סביבם, מכירתם או שילובם במוצר בתשלום.
+        בכל שימוש חוזר יש לתת קרדיט ל-Princeton Geniza Project, לקשר לרישיון,
+        ולציין אילו שינויים נעשו. האתר אינו אוסף נתוני מבקרים, אינו משתמש בעוגיות
+        ואינו מפעיל שירותי ניתוח או מעקב של צד שלישי.
+      </p>
+      <p>
+        מצאתם טעות בתרגום, בייחוס או בפרטי רישיון? נשמח לתיקון — הפנייה לתיקונים
+        מופיעה בעמוד הפרויקט.
+      </p>
     </section>
 
     <section class="about-section">
@@ -175,8 +259,9 @@
   <footer class="site-footer">
     <p>
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+      — <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">רישיון CC BY-NC 4.0</a>
     </p>
+    <p><a href="index.html">חזרה לגלריה</a> · <a href="d/">מפתח כל המסמכים</a></p>
   </footer>
 
 </body>
