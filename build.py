@@ -299,9 +299,10 @@ def write_json(path, obj):
         json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def build_search_index(docs, translations_he=None):
+def build_search_index(docs, translations_he=None, tags_he=None):
     """Compact per-doc record for the search index."""
     translations_he = translations_he or {}
+    tags_he = tags_he or {}
     index = []
     for doc in docs:
         entry = {"id": doc["id"]}
@@ -328,6 +329,8 @@ def build_search_index(docs, translations_he=None):
         if doc["has_translation"]:  entry["tl"]  = 1
         c = century_from_date(doc["date"])
         if c:                       entry["c"]   = c
+        doc_tags = tags_he.get(doc["id"], [])
+        if doc_tags:                entry["tgh"] = doc_tags
         index.append(entry)
     return index
 
@@ -357,7 +360,7 @@ def build_stats(docs, tags_he=None):
         "by_type":    dict(type_c.most_common()),
         "by_lang":    dict(lang_c.most_common(12)),
         "by_century": {str(k): v for k, v in sorted(cent_c.items())},
-        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(80)],
+        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(200)],
     }
 
 
@@ -373,11 +376,12 @@ INDEX_HTML = """\
   <link rel="canonical" href="{base_url}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="הגניזה הקהירית">
   <meta property="og:locale" content="he_IL">
-  <meta property="og:title" content="הגניזה הקהירית — {total_docs:,} מסמכים מגניזת קהיר">
-  <meta property="og:description" content="חלון אל החיים היהודיים בימי הביניים: {total_docs:,} מסמכים מבית הכנסת בן עזרא בקהיר העתיקה — הלכה, מסחר, משפחה ויומיום.">
+  <meta property="og:site_name" content="הגניזה הקהירית">
+  <meta property="og:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta property="og:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה: הלכה, מסחר, משפחה ויומיום.">
   <meta property="og:url" content="{base_url}">
   <meta property="og:image" content="{base_url}assets/og-image.png">
   <meta property="og:image:type" content="image/png">
@@ -385,10 +389,13 @@ INDEX_HTML = """\
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="הגניזה הקהירית — {total_docs:,} מסמכים מגניזת קהיר">
-  <meta name="twitter:description" content="חלון אל החיים היהודיים בימי הביניים: {total_docs:,} מסמכים מבית הכנסת בן עזרא בקהיר העתיקה.">
+  <meta name="twitter:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה.">
   <meta name="twitter:image" content="{base_url}assets/og-image.png">
 
+  <!-- Real favicon files. The previous emoji-in-SVG data URI relied on the
+       browser rendering <text> inside an SVG favicon, which Chrome and Safari
+       do not do — the tab fell back to a blank page icon. -->
   <meta name="theme-color" content="#b5621e">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -399,6 +406,7 @@ INDEX_HTML = """\
   <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
   <script type="application/ld+json">
   {{
@@ -454,13 +462,13 @@ INDEX_HTML = """\
       <h1 class="site-title">הגניזה הקהירית</h1>
       <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
       <p class="site-intro">
-        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, {total_docs:,} מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.
+        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, כ - 300,000 מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.  {total_docs:,} מהמסמכים האלה מוצגים לפניכם בפרויקט זה.
       </p>
       <a href="about.html" class="about-link">אודות הגניזה הקהירית ←</a>
     </div>
   </header>
 
-  <!-- KPI row (2 cards only) -->
+  <!-- KPI row -->
   <section class="dashboard-kpi" aria-label="סטטיסטיקות">
     <div class="dash-kpi-row dash-kpi-row--two">
       <div class="kpi-card">
@@ -468,6 +476,12 @@ INDEX_HTML = """\
         <span class="kpi-num">{total_docs:,}</span>
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
+      <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
+        <span class="kpi-icon" aria-hidden="true">💡</span>
+        <span class="kpi-dyk-label">הידעת?</span>
+        <span class="kpi-dyk-text" id="dyk-text">…</span>
+        <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
+      </a>
       <div class="kpi-card" id="kpi-img">
         <span class="kpi-icon" aria-hidden="true">🖼</span>
         <span class="kpi-num">…</span>
@@ -529,44 +543,50 @@ INDEX_HTML = """\
     </div>
   </main>
 
-  <!-- Statistics section (below cards) -->
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-      <div class="browse-group browse-group--single">
-        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
-          🎲 הפתע אותי
-        </button>
-      </div>
-
-    </div>
-  </section>
-
   <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
     <div class="dash-inner">
+
+      <div class="surprise-wrap">
+        <button class="surprise-btn" id="btn-surprise" aria-label="בחר קטע אקראי מהגניזה">
+          <div class="surprise-dice">
+            <svg viewBox="0 0 100 98" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="sg-top" x1="20%" y1="0%" x2="80%" y2="100%">
+                  <stop offset="0%" stop-color="#ffe066"/>
+                  <stop offset="100%" stop-color="#f5a623"/>
+                </linearGradient>
+                <linearGradient id="sg-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e0455a"/>
+                  <stop offset="100%" stop-color="#9b1a30"/>
+                </linearGradient>
+                <linearGradient id="sg-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2a72c3"/>
+                  <stop offset="100%" stop-color="#163f7a"/>
+                </linearGradient>
+                <filter id="sg-sh" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1a1040" flood-opacity="0.32"/>
+                </filter>
+              </defs>
+              <ellipse cx="50" cy="93" rx="34" ry="4.5" fill="#1a1040" opacity="0.18"/>
+              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#7a0820" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#0e2a5a" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#c07800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
+              <circle cx="34" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="50" cy="30" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="34" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="28" cy="43" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="38" cy="74" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="78" cy="41" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="68" cy="59" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="57" cy="77" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+            </svg>
+          </div>
+          <span class="surprise-title">הפתע אותי</span>
+          <span class="surprise-sub">בחר קטע אקראי מהגניזה</span>
+        </button>
+      </div>
 
       <div class="dash-panels">
 
@@ -578,8 +598,30 @@ INDEX_HTML = """\
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
         </div>
 
+        <div class="dash-panel dash-panel--wide dash-panel--map">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">מפת המקומות שמוזכרים בגניזה</h2>
+            <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
+          </div>
+          <div id="geniza-map"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--spices">
+          <div class="spice-banner-wrap">
+            <img src="assets/spice-market.png" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+          </div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
+          <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
+        </div>
+
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="dist-list" id="dist-type"></div>
         </div>
 
@@ -589,7 +631,10 @@ INDEX_HTML = """\
         </div>
 
         <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לאורך הדורות</h2>
+            <span class="dash-panel-hint">לחץ לסינון</span>
+          </div>
           <div class="century-chart" id="dist-century"></div>
         </div>
 
@@ -616,6 +661,7 @@ INDEX_HTML = """\
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
 </body>
 </html>
@@ -635,6 +681,7 @@ FRAGMENT_HTML = """\
        working. It is Disallow-ed in robots.txt so it never competes with the
        canonical page for indexing. -->
   <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
   <script>
@@ -761,7 +808,7 @@ def main():
     DOCS_DIR.mkdir(exist_ok=True)
 
     # search index
-    search_index = build_search_index(docs, translations_he)
+    search_index = build_search_index(docs, translations_he, tags_he)
     write_json(DATA_DIR / "search.json", search_index)
     size_kb = (DATA_DIR / "search.json").stat().st_size // 1024
     print(f"  ✓  data/search.json  ({size_kb} KB, {len(search_index):,} entries)")
@@ -808,10 +855,10 @@ def main():
         f.write(FRAGMENT_HTML.format(build_ts=build_ts))
     print("  ✓  fragment.html (redirect shim → d/<id>.html)")
 
-    # 5. Prerender for crawlers. index.html and the viewer are client-side
-    #    rendered, so without this step nothing that skips JavaScript — the AI
-    #    crawlers, the WhatsApp/Telegram/Slack unfurlers, Googlebot's first pass
-    #    — can see a single document.
+    # Prerender for crawlers. index.html and the viewer are client-side
+    # rendered, so without this step nothing that skips JavaScript — the AI
+    # crawlers, the WhatsApp/Telegram/Slack unfurlers, Googlebot's first pass
+    # — can see a single document.
     if args.no_prerender:
         print("\n[5/5] Prerender skipped (--no-prerender)")
     else:
@@ -819,7 +866,7 @@ def main():
         prerender.run(base=site_url)
 
     print("\n── Done ──────────────────────────────────────────────")
-    print(f"   {len(docs):,} documents • index.html • d/ • sitemap.xml • robots.txt")
+    print(f"   {len(docs):,} documents • index.html • fragment.html")
     print(f"   Open index.html in a browser to preview.\n")
 
 

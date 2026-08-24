@@ -14,6 +14,11 @@
   let fLib      = '';
   let fHas      = '';
   let fEra      = 0;   // century number (10-14), 0 = all
+  let fTag      = '';  // exact Hebrew tag from tag cloud
+  let fLocation = '';  // Hebrew location name, e.g. 'קהיר'
+
+  let locationDocIds  = {};  // { 'קהיר': Set([id, ...]), ... }
+  let _activeLocMarker = null;
 
   // ── DOM ───────────────────────────────────────────────────────────────────────
   const grid        = document.getElementById('cards-grid');
@@ -30,8 +35,6 @@
   const btnReset    = document.getElementById('btn-reset');
   const btnResetEmpty = document.getElementById('btn-reset-empty');
   const btnSurprise = document.getElementById('btn-surprise');
-  const eraChips    = document.querySelectorAll('[data-era]');
-  const typeChips   = document.querySelectorAll('[data-type]');
 
   // ── Helpers ───────────────────────────────────────────────────────────────────
   function esc(s) {
@@ -109,6 +112,11 @@
         if (!d.c) return false;
         if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
       }
+      if (fTag && !(d.tgh||[]).includes(fTag)) return false;
+      if (fLocation) {
+        const locSet = locationDocIds[fLocation];
+        if (locSet && !locSet.has(d.id)) return false;
+      }
       if (q) {
         const hay = norm([d.s||'',d.th||'',d.lh||'',d.or||'',d.dt||'',d.lib||'',d.dh||'',d.d||''].join(' '));
         return q.split(/\s+/).filter(Boolean).every(w => matchTerm(w, hay));
@@ -118,20 +126,32 @@
     page = 1;
     updateResetVisibility();
     render();
+    updateDistActiveStates();
   }
 
   function hasActiveFilter() {
-    return !!(query || fType || fLang || fLib || fHas || fEra);
+    return !!(query || fType || fLang || fLib || fHas || fEra || fTag || fLocation);
   }
 
   function resetAll() {
-    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0;
+    query = ''; fType = ''; fLang = ''; fLib = ''; fHas = ''; fEra = 0; fTag = ''; fLocation = '';
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
-    eraChips.forEach(c => c.classList.remove('chip--active'));
-    typeChips.forEach(c => c.classList.remove('chip--active'));
+    if (_activeLocMarker) {
+      _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+      _activeLocMarker = null;
+    }
     applyFilters();
+  }
+
+  function updateDistActiveStates() {
+    document.querySelectorAll('#dist-type .dist-row').forEach(r => {
+      r.classList.toggle('dist-row--active', !!fType && r.dataset.type === fType);
+    });
+    document.querySelectorAll('#dist-century .century-col').forEach(c => {
+      c.classList.toggle('century-col--active', !!fEra && +c.dataset.era === fEra);
+    });
   }
 
   function updateResetVisibility() {
@@ -272,7 +292,7 @@
       timer = setTimeout(applyFilters, 220);
     });
     clearBtn.addEventListener('click', () => {
-      query = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
+      query = ''; fTag = ''; searchInput.value = ''; clearBtn.hidden = true; applyFilters();
     });
 
     selType.addEventListener('change', () => { fType = selType.value; applyFilters(); });
@@ -283,41 +303,40 @@
     if (btnReset)      btnReset.addEventListener('click', resetAll);
     if (btnResetEmpty) btnResetEmpty.addEventListener('click', resetAll);
 
-    // Era chips
-    eraChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const era = +btn.dataset.era;
-        if (fEra === era) { fEra = 0; btn.classList.remove('chip--active'); }
-        else {
-          fEra = era;
-          eraChips.forEach(c => c.classList.remove('chip--active'));
-          btn.classList.add('chip--active');
-        }
+    // Click-to-filter on document-type distribution
+    const distTypeEl = document.getElementById('dist-type');
+    if (distTypeEl) {
+      distTypeEl.addEventListener('click', e => {
+        const row = e.target.closest('.dist-row[data-type]');
+        if (!row) return;
+        const t = row.dataset.type;
+        fType = (fType === t) ? '' : t;
+        selType.value = fType;
         applyFilters();
+        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
-    });
+    }
 
-    // Type chips
-    typeChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const t = btn.dataset.type;
-        if (fType === t) { fType = ''; btn.classList.remove('chip--active'); }
-        else {
-          fType = t;
-          selType.value = t;
-          typeChips.forEach(c => c.classList.remove('chip--active'));
-          btn.classList.add('chip--active');
-        }
+    // Click-to-filter on century timeline
+    const distCenturyEl = document.getElementById('dist-century');
+    if (distCenturyEl) {
+      distCenturyEl.addEventListener('click', e => {
+        const col = e.target.closest('.century-col[data-era]');
+        if (!col) return;
+        const era = +col.dataset.era;
+        fEra = (fEra === era) ? 0 : era;
         applyFilters();
+        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
-    });
+    }
 
-    // Surprise button
+    // Surprise button — random Hebrew fragment with an image
     if (btnSurprise) {
       btnSurprise.addEventListener('click', () => {
         if (!allDocs.length) return;
-        const doc = allDocs[Math.floor(Math.random() * allDocs.length)];
-        window.location.href = `d/${encodeURIComponent(doc.id)}.html`;
+        const pool = allDocs.filter(d => d.img && (d.lh || '').includes('עברית'));
+        const pick = (pool.length ? pool : allDocs)[Math.floor(Math.random() * (pool.length || allDocs.length))];
+        window.location.href = `d/${encodeURIComponent(pick.id)}.html`;
       });
     }
 
@@ -350,6 +369,23 @@
     'accounts':'חשבונות','lease':'חכירה','sale':'מכירה','gift':'מתנה',
   };
 
+  function loadDidYouKnow() {
+    fetch('data/did_you_know.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(facts => {
+        if (!facts || !facts.length) return;
+        const f = facts[Math.floor(Math.random() * facts.length)];
+        const card = document.getElementById('kpi-dyk');
+        if (!card) return;
+        const textEl = document.getElementById('dyk-text');
+        const markEl = document.getElementById('dyk-shelfmark');
+        if (textEl) textEl.textContent = f.text;
+        if (markEl) markEl.textContent = f.shelfmark;
+        card.href = 'd/' + encodeURIComponent(f.pgpid) + '.html';
+      })
+      .catch(() => {});
+  }
+
   function loadStats() {
     fetch('data/stats.json')
       .then(r => r.ok ? r.json() : null)
@@ -357,7 +393,7 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
-        renderDist('dist-type', s.by_type || {});
+        renderDist('dist-type', s.by_type || {}, { dataAttr: 'type' });
         renderDist('dist-lang', s.by_lang || {});
         renderCentury(s.by_century || {});
       })
@@ -376,56 +412,113 @@
     }
   }
 
-  const SKIP_TAGS = new Set([
-    'dimme','fgp stub','arabic','hebrew','judaeo-arabic','aramaic',
-    'latin','coptic','persian','syriac','greek','new','old',
+  const CLOUD_SKIP = new Set([
+    'יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה',
+    // location names — shown on the map instead
+    'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
+    'ספרד','סיציליה','הודו','חלב','קוס','פרס','פלרמו','עכו','רמלה','טריפולי','קירואן','דמיאט',
+    // spices & luxury goods — shown in spice bar instead
+    'פלפל','זעפרן','קינמון','זנגביל','כמון','כוסברה','דבש','סוכר',
+    'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
+    'נענע','פיגם',
+    'משי','זהב','כסף','פנינים','נחושת','אלמוג','אינדיגו','ארגמן','עופרת',
   ]);
+
+  const SPICE_TAGS = [
+    'פלפל','זעפרן','קינמון','סוכר','דבש','זנגביל','כמון','כוסברה',
+    'שומשום','ציפורן','אניס','מסטיק','לבונה','כמון שחור','גלנגל','נרד','לכה','עץ ברזיל','סטוראקס',
+    'נענע','פיגם',
+    'משי','זהב','כסף','פנינים','נחושת','אלמוג','אינדיגו','ארגמן','עופרת',
+  ];
+
+  // Latin/English subtitle for less familiar spices/goods
+  const SPICE_LATIN = {
+    'גלנגל':    'Galangal',
+    'נרד':      'Spikenard',
+    'לכה':      'Lac resin',
+    'עץ ברזיל': 'Brazilwood',
+    'סטוראקס':  'Storax',
+    'מסטיק':    'Mastic',
+    'לבונה':    'Frankincense',
+    'כמון שחור':'Nigella',
+    'פיגם':     'Rue',
+    'אינדיגו':  'Indigo',
+    'אלמוג':    'Coral',
+    'ארגמן':    'Purple dye',
+  };
 
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
-    const filtered_tags = tags.filter(({t}) => !SKIP_TAGS.has(t) && !/^\d/.test(t) && TAG_HE[t]);
+    const filtered_tags = tags.filter(({t}) => t && !/^\d/.test(t) && !CLOUD_SKIP.has(t));
     if (!filtered_tags.length) { el.innerHTML = ''; return; }
     const maxC = filtered_tags[0].c, minC = filtered_tags[filtered_tags.length - 1].c;
     const range = maxC - minC || 1;
-    // Floors, not zero: the smallest pills used to land at 0.72rem and 50%
-    // opacity, which drops them under the AA contrast threshold and below a
-    // comfortable reading size.
     const MIN_SIZE = 0.82, MAX_SIZE = 1.85;
     const MIN_ALPHA = 0.72;
-    el.innerHTML = filtered_tags.slice(0, 65).map(({t, c}) => {
-      const label = TAG_HE[t] || t;
+    const display = filtered_tags.slice(0, 65)
+      .sort((a, b) => a.t.localeCompare(b.t, 'he'));
+    el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (MIN_ALPHA + (c - minC) / range * (1 - MIN_ALPHA)).toFixed(2);
       return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
         data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
-        >${esc(label)}</button>`;
+        >${esc(t)}</button>`;
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
       if (!btn) return;
+      fTag = btn.dataset.tag;
       searchInput.value = btn.dataset.tag;
-      query = btn.dataset.tag;
+      query = '';
       clearBtn.hidden = false;
       applyFilters();
-      document.querySelector('.search-bar-wrapper').scrollIntoView({behavior:'smooth'});
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
     });
   }
 
-  function renderDist(id, obj) {
+  function renderSpiceBar(tagCounts) {
+    const el = document.getElementById('spice-buttons');
+    if (!el) return;
+    el.innerHTML = SPICE_TAGS.map(tag => {
+      const count = tagCounts[tag] || 0;
+      return `<button class="spice-btn" data-tag="${esc(tag)}"
+        title="${esc(tag)} (${count.toLocaleString('he-IL')} מסמכים)">
+        <span class="spice-btn-name">${esc(tag)}</span>
+        ${SPICE_LATIN[tag] ? `<span class="spice-btn-latin">${esc(SPICE_LATIN[tag])}</span>` : ''}
+        <span class="spice-btn-count">${count.toLocaleString('he-IL')}</span>
+      </button>`;
+    }).join('');
+    el.addEventListener('click', e => {
+      const btn = e.target.closest('.spice-btn');
+      if (!btn) return;
+      fTag = btn.dataset.tag;
+      searchInput.value = btn.dataset.tag;
+      query = '';
+      clearBtn.hidden = false;
+      applyFilters();
+      document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+
+  function renderDist(id, obj, opts) {
     const el = document.getElementById(id);
     if (!el) return;
     const entries = Object.entries(obj);
     if (!entries.length) return;
     const maxV = entries[0][1];
+    const attr = opts && opts.dataAttr;
     el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
       const pct = Math.round(count / maxV * 100);
-      return `<div class="dist-row">
+      const dataAttr = attr ? ` data-${attr}="${esc(label)}"` : '';
+      const extraCls = attr ? ' dist-row--clickable' : '';
+      return `<div class="dist-row${extraCls}"${dataAttr}>
         <span class="dist-label" title="${esc(label)}">${esc(label)}</span>
         <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
         <span class="dist-count">${count.toLocaleString('he-IL')}</span>
       </div>`;
     }).join('');
+    updateDistActiveStates();
   }
 
   function renderCentury(obj) {
@@ -438,18 +531,129 @@
       const h = Math.round(count / maxV * 100);
       const label = +c >= 14 ? '14+' : `${c}`;
       const num = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
-      return `<div class="century-col">
+      const era = +c >= 14 ? 14 : +c;
+      return `<div class="century-col century-col--clickable" data-era="${era}">
         <div class="century-bar" style="height:${h}%" title="${count.toLocaleString('he-IL')} מסמכים"></div>
         <span class="century-label">מ-${label}</span>
         <span class="century-count">${num}</span>
       </div>`;
     }).join('');
+    updateDistActiveStates();
+  }
+
+  // ── Location map ─────────────────────────────────────────────────────────────
+  const MAP_LOCATIONS = [
+    { name: 'פוסטאט',    lat: 30.008, lng: 31.233 },
+    { name: 'קהיר',      lat: 30.100, lng: 31.350 },
+    { name: 'אלכסנדריה', lat: 31.200, lng: 29.919 },
+    { name: 'ירושלים',   lat: 31.768, lng: 35.214 },
+    { name: 'צור',       lat: 33.271, lng: 35.199 },
+    { name: 'דמשק',      lat: 33.510, lng: 36.291 },
+    { name: 'עדן',       lat: 12.786, lng: 45.019 },
+    { name: 'בגדד',      lat: 33.315, lng: 44.366 },
+    { name: 'טבריה',     lat: 32.792, lng: 35.531 },
+    { name: 'חלב',       lat: 36.202, lng: 37.161  },
+    { name: 'קוס',       lat: 25.907, lng: 32.753  },
+    { name: 'פרס',       lat: 32.661, lng: 51.680  },
+    { name: 'ספרד',      lat: 37.384, lng: -5.976  },
+    { name: 'סיציליה',   lat: 37.600, lng: 14.015  },
+    { name: 'הודו',      lat: 11.000, lng: 76.000  },
+    { name: 'דמיאט',    lat: 31.416, lng: 31.815  },
+    { name: 'עכו',      lat: 32.927, lng: 35.073  },
+    { name: 'פלרמו',    lat: 38.115, lng: 13.361  },
+    { name: 'טריפולי',  lat: 32.904, lng: 13.180  },
+    { name: 'רמלה',     lat: 31.928, lng: 34.872  },
+    { name: 'קירואן',   lat: 35.678, lng: 10.099  },
+  ];
+
+  function initLocationMap(locCounts) {
+    const mapEl = document.getElementById('geniza-map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    const map = L.map('geniza-map', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://osm.org/copyright">OpenStreetMap</a>',
+      maxZoom: 13,
+    }).addTo(map);
+
+    const bounds = [];
+    MAP_LOCATIONS.forEach(loc => {
+      const count = locCounts[loc.name];
+      if (!count) return;
+      bounds.push([loc.lat, loc.lng]);
+
+      const icon = L.divIcon({
+        html: `<div class="gmap-pin"><span class="gmap-pin-name">${esc(loc.name)}</span><span class="gmap-pin-count">${count.toLocaleString('he-IL')}</span></div>`,
+        className: '',
+        iconSize: [90, 42],
+        iconAnchor: [45, 42],
+      });
+
+      const marker = L.marker([loc.lat, loc.lng], { icon }).addTo(map);
+      marker.on('click', () => {
+        const pinEl = marker.getElement()?.querySelector('.gmap-pin');
+        const isActive = fLocation === loc.name;
+
+        if (_activeLocMarker) {
+          _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+        }
+
+        if (isActive) {
+          fLocation = '';
+          _activeLocMarker = null;
+        } else {
+          fLocation = loc.name;
+          pinEl?.classList.add('gmap-pin--active');
+          _activeLocMarker = marker;
+        }
+
+        updateResetVisibility();
+        applyFilters();
+        setTimeout(() => {
+          const el = document.getElementById('results-bar');
+          if (!el) return;
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        }, 50);
+      });
+    });
+
+    const isMobile = window.innerWidth < 700;
+    map.setView([32, 35.5], isMobile ? 6 : 7);
+  }
+
+  function loadTagsAndMap() {
+    fetch('data/tags_he.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(tags => {
+        if (!tags) return;
+        const locNames  = new Set(MAP_LOCATIONS.map(l => l.name));
+        const spiceSet  = new Set(SPICE_TAGS);
+        const locCounts   = {};
+        const spiceCounts = {};
+        for (const [docId, docTags] of Object.entries(tags)) {
+          for (const tag of docTags) {
+            if (locNames.has(tag)) {
+              if (!locationDocIds[tag]) locationDocIds[tag] = new Set();
+              locationDocIds[tag].add(docId);
+              locCounts[tag] = (locCounts[tag] || 0) + 1;
+            }
+            if (spiceSet.has(tag)) {
+              spiceCounts[tag] = (spiceCounts[tag] || 0) + 1;
+            }
+          }
+        }
+        initLocationMap(locCounts);
+        renderSpiceBar(spiceCounts);
+      })
+      .catch(() => {});
   }
 
   // ── Boot ──────────────────────────────────────────────────────────────────────
   function init() {
     initThumbObserver();
     wire();
+    loadTagsAndMap();
     fetch('data/search.json')
       .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {
@@ -458,6 +662,7 @@
         populateFilters(data);
         render();
         loadStats();
+        loadDidYouKnow();
       })
       .catch(() => {
         loadingEl.hidden = true;
