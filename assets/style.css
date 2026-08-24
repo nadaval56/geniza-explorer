@@ -10,10 +10,18 @@
   --bg-input:     #ffffff;
   --text:         #1e1b17;
   --text-2:       #5c5044;
-  --text-3:       #9c887c;
+  /* --text-3 was #9c887c (3.2:1 on --bg) and --gold was used for links at
+     4.2:1 — both below the 4.5:1 WCAG AA floor for body text. Darkened just
+     enough to pass while keeping the warm papyrus cast. --gold itself is
+     unchanged: it is a fill colour for badges, bars and rules, where the 3:1
+     non-text threshold applies. */
+  --text-3:       #806d60;
+  --text-faint:   #9c887c;   /* decorative only — never for text */
   --gold:         #b5621e;
   --gold-light:   #d4883a;
   --gold-dark:    #7a3e0e;
+  --link:         #a05418;   /* 5.2:1 on --bg, 5.6:1 on white */
+  --link-hover:   #7a3e0e;   /* hover darkens, so contrast only improves */
   --border:       #e6ddd2;
   --border-2:     #d4c6b8;
   --divider:      rgba(181,98,30,.15);
@@ -50,8 +58,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--gold); text-decoration: none; }
-a:hover { color: var(--gold-light); text-decoration: underline; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
 
 img { display: block; max-width: 100%; }
 
@@ -871,9 +879,15 @@ img { display: block; max-width: 100%; }
   color: var(--text-3);
   line-height: 1.8;
 }
-.site-footer a { color: var(--text-3); }
-.site-footer a:hover { color: var(--gold); }
-.footer-build { margin-top: .3rem; opacity: .5; }
+.site-footer a { color: var(--link); text-decoration: underline; }
+.site-footer a:hover { color: var(--link-hover); }
+.footer-build { margin-top: .3rem; }
+.footer-note {
+  max-width: 46rem;
+  margin: .5rem auto 0;
+  font-size: .78rem;
+  color: var(--text-3);
+}
 
 /* ── Scrollbar ───────────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -1050,7 +1064,7 @@ img { display: block; max-width: 100%; }
   transition: background .12s, color .12s;
   line-height: 1.3;
 }
-.tag-pill-cloud:hover { background: var(--gold); color: #fff; }
+.tag-pill-cloud:hover { background: var(--gold-dark); color: #fff; }
 
 /* Distribution bars */
 .dist-list { display: flex; flex-direction: column; gap: .5rem; }
@@ -1119,4 +1133,118 @@ img { display: block; max-width: 100%; }
   .dash-kpi-row { grid-template-columns: repeat(2, 1fr); }
   .dash-panels  { grid-template-columns: 1fr; }
   .dash-panel--wide, .dash-panel--century { grid-column: 1; }
+}
+
+/* ── Accessibility ───────────────────────────────────────────────────────────── */
+
+/* Keyboard focus. .search-input and .filter-select set `outline: none` and
+   replace it with a border colour change, which is invisible to anyone who
+   cannot perceive that hue; everything else relied on the UA default outline,
+   which the papyrus palette washes out. One consistent, high-contrast ring for
+   every interactive element, shown only for keyboard use. */
+:focus-visible {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.search-input:focus-visible,
+.filter-select:focus-visible {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 1px;
+}
+
+/* Skip link — first tab stop, so keyboard and screen-reader users can jump
+   past the header, the search bar and the filter row. */
+.skip-link {
+  position: absolute;
+  right: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: .7rem 1.2rem;
+  background: var(--gold-dark);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-weight: 500;
+  border-radius: 0 0 var(--radius) var(--radius);
+  text-decoration: none;
+  transition: top .15s ease-out;
+}
+.skip-link:focus {
+  top: 0;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Respect the OS "reduce motion" setting: html has `scroll-behavior: smooth`,
+   several buttons scroll the page programmatically, and the loading spinner
+   animates continuously. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Honour a forced-colours / high-contrast mode. */
+@media (forced-colors: active) {
+  .badge, .chip, .tag-pill, .page-btn { border: 1px solid currentColor; }
+  :focus-visible { outline: 3px solid Highlight; }
+}
+
+.noscript-note {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  font-size: .9rem;
+  color: var(--text-2);
+}
+
+/* ── Static document directory (/d/) ─────────────────────────────────────────── */
+.doc-index {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+.doc-index-title {
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--gold-dark);
+  margin-bottom: .5rem;
+}
+.doc-index-sub {
+  color: var(--text-2);
+  font-size: .95rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+.doc-index-list {
+  margin: 0 1.4rem 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+.doc-index-list li {
+  padding-bottom: .55rem;
+  border-bottom: 1px solid var(--divider);
+  line-height: 1.5;
+}
+.doc-index-list a {
+  font-weight: 500;
+  font-size: .95rem;
+}
+.doc-index-meta {
+  display: block;
+  font-size: .8rem;
+  color: var(--text-3);
+}
+.doc-index .pagination a.page-btn {
+  text-decoration: none;
 }
