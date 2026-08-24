@@ -13,7 +13,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  # Renamed from "pages". Runs #2879 and #2880 both sat in `queued` with zero
+  # jobs ever created and could not be cancelled (the cancel API returned 500),
+  # which is the signature of a run blocked on a concurrency group that never
+  # released. A fresh group name sidesteps the wedged one.
+  group: pages-deploy
   cancel-in-progress: false
 
 jobs:
@@ -22,6 +26,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Scheduled runs execute on the repository's DEFAULT branch, whatever
+          # that happens to be. While the default branch was still an old
+          # feature branch, the monthly cron rebuilt that months-old snapshot
+          # and published it over the live site (2026-08-01). Pinning the ref
+          # keeps every trigger — push, schedule, manual — building main.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
