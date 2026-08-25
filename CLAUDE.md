@@ -21,6 +21,8 @@
 | `d/` | **נוצר אוטומטית, gitignored** — ~36K עמודי מסמך |
 | `sitemap.xml`, `robots.txt` | **נוצרים אוטומטית, gitignored** |
 | `about.html` | נכתב ביד — ניתן לעריכה |
+| `CNAME` | הדומיין המותאם. `prerender.py` גוזר ממנו את כל הכתובות המוחלטות — **אל תמחק** |
+| `googlef716f9558cc7d448.html` | אימות Google Search Console. תוכן מדויק שגוגל משווה — **אל תערוך ואל תמחק** |
 | `assets/style.css` | עיצוב — ניתן לעריכה |
 | `assets/search.js` | חיפוש, מפה, ענן תגיות — ניתן לעריכה |
 | `assets/doc-image.js` | טעינת תצלום IIIF בעמודי `d/` — ניתן לעריכה |
