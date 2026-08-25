@@ -64,7 +64,8 @@ jobs:
           set -e
           for f in index.html about.html fragment.html sitemap.xml robots.txt \
                    d/index.html site.webmanifest favicon.ico favicon.svg \
-                   assets/og-image.png assets/style.css assets/fonts.css; do
+                   assets/og-image.png assets/style.css assets/fonts.css \
+                   CNAME googlef716f9558cc7d448.html; do
             [ -s "$f" ] || { echo "::error::missing or empty: $f"; exit 1; }
           done
           pages=$(find d -name '*.html' | wc -l)
