@@ -4,7 +4,7 @@
 
 **חלון אל החיים היהודיים בימי הביניים** — ממשק עיון וחיפוש בעברית ל-35,937 מסמכים מגניזת קהיר.
 
-🔗 **[nadaval56.github.io/geniza-explorer](https://nadaval56.github.io/geniza-explorer/)**
+🔗 **[geniza.co.il](https://geniza.co.il/)**
 
 ---
 
