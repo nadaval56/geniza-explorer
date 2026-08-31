@@ -25,6 +25,8 @@ import urllib.request
 from pathlib import Path
 from html import escape
 
+import a11y_snippets
+
 # ── Configuration ─────────────────────────────────────────────────────────────
 CSV_URL = (
     "https://raw.githubusercontent.com/princetongenizalab/"
@@ -406,7 +408,12 @@ INDEX_HTML = """\
   <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <!-- Leaflet is served from this site, not from a CDN: a CDN <script> tag hands
+       every visitor's IP address to a third party on page load, which is exactly
+       what the privacy notice promises does not happen. Same reasoning as the
+       locally hosted fonts. Vendored copy: assets/vendor/leaflet/ (BSD-2-Clause). -->
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+{a11y_head}
 
   <script type="application/ld+json">
   {{
@@ -655,14 +662,17 @@ INDEX_HTML = """\
     </p>
     <p>
       <a href="about.html">אודות, קרדיטים ותנאי שימוש</a> ·
-      <a href="d/">מפתח כל המסמכים</a>
+      <a href="d/">מפתח כל המסמכים</a> ·
+      <a href="privacy/">מדיניות פרטיות</a> ·
+      <a href="accessibility/">הצהרת נגישות</a>
     </p>
     <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};</script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
+{a11y_foot}
 </body>
 </html>
 """
@@ -738,7 +748,9 @@ def write_html_only(args):
     print("\n── Geniza Explorer: HTML only ────────────────────────")
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(INDEX_HTML.format(total_docs=total, build_date=build_date,
-                                  build_ts=build_ts, base_url=site_url))
+                                  build_ts=build_ts, base_url=site_url,
+                                  a11y_head=a11y_snippets.head("", build_ts),
+                                  a11y_foot=a11y_snippets.foot("", build_ts)))
     print("  ✓  index.html")
     with open("fragment.html", "w", encoding="utf-8") as f:
         f.write(FRAGMENT_HTML.format(build_ts=build_ts))
@@ -848,7 +860,9 @@ def main():
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date,
-                                  build_ts=build_ts, base_url=site_url))
+                                  build_ts=build_ts, base_url=site_url,
+                                  a11y_head=a11y_snippets.head("", build_ts),
+                                  a11y_foot=a11y_snippets.foot("", build_ts)))
     print("  ✓  index.html")
 
     with open("fragment.html", "w", encoding="utf-8") as f:

@@ -147,10 +147,16 @@
 
   function updateDistActiveStates() {
     document.querySelectorAll('#dist-type .dist-row').forEach(r => {
-      r.classList.toggle('dist-row--active', !!fType && r.dataset.type === fType);
+      const on = !!fType && r.dataset.type === fType;
+      r.classList.toggle('dist-row--active', on);
+      /* המחלקה צובעת; aria-pressed הוא מה שקורא מסך מכריז. בלעדיו
+         המצב הפעיל מועבר בצבע בלבד (קריטריון 1.4.1). */
+      if (r.hasAttribute('aria-pressed')) r.setAttribute('aria-pressed', String(on));
     });
     document.querySelectorAll('#dist-century .century-col').forEach(c => {
-      c.classList.toggle('century-col--active', !!fEra && +c.dataset.era === fEra);
+      const on = !!fEra && +c.dataset.era === fEra;
+      c.classList.toggle('century-col--active', on);
+      if (c.hasAttribute('aria-pressed')) c.setAttribute('aria-pressed', String(on));
     });
   }
 
@@ -511,12 +517,15 @@
     el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
       const pct = Math.round(count / maxV * 100);
       const dataAttr = attr ? ` data-${attr}="${esc(label)}"` : '';
-      const extraCls = attr ? ' dist-row--clickable' : '';
-      return `<div class="dist-row${extraCls}"${dataAttr}>
-        <span class="dist-label" title="${esc(label)}">${esc(label)}</span>
+      const inner = `<span class="dist-label" title="${esc(label)}">${esc(label)}</span>
         <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
-        <span class="dist-count">${count.toLocaleString('he-IL')}</span>
-      </div>`;
+        <span class="dist-count">${count.toLocaleString('he-IL')}</span>`;
+      /* שורה שמסננת היא פקד, ולכן button ולא div: div עם מאזין לחיצה
+         אינו ניתן להפעלה במקלדת ואין לו תפקיד שקורא מסך יכול להכריז.
+         שורה שאינה מסננת נשארת div — היא באמת רק תצוגה. */
+      if (!attr) return `<div class="dist-row">${inner}</div>`;
+      return `<button type="button" class="dist-row dist-row--clickable"${dataAttr}
+        aria-pressed="false" aria-label="סינון לפי ${esc(label)} — ${count.toLocaleString('he-IL')} מסמכים">${inner}</button>`;
     }).join('');
     updateDistActiveStates();
   }
@@ -532,11 +541,13 @@
       const label = +c >= 14 ? '14+' : `${c}`;
       const num = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
       const era = +c >= 14 ? 14 : +c;
-      return `<div class="century-col century-col--clickable" data-era="${era}">
-        <div class="century-bar" style="height:${h}%" title="${count.toLocaleString('he-IL')} מסמכים"></div>
+      const full = +c >= 14 ? 'מהמאה ה-14 ואילך' : `מהמאה ה-${c}`;
+      return `<button type="button" class="century-col century-col--clickable" data-era="${era}"
+        aria-pressed="false" aria-label="סינון למסמכים ${full} — ${count.toLocaleString('he-IL')} מסמכים">
+        <span class="century-bar" style="height:${h}%" aria-hidden="true"></span>
         <span class="century-label">מ-${label}</span>
         <span class="century-count">${num}</span>
-      </div>`;
+      </button>`;
     }).join('');
     updateDistActiveStates();
   }
@@ -589,22 +600,35 @@
         iconAnchor: [45, 42],
       });
 
-      const marker = L.marker([loc.lat, loc.lng], { icon }).addTo(map);
+      const marker = L.marker([loc.lat, loc.lng], { icon, keyboard: true }).addTo(map);
+      /* Leaflet מוסיף לסיכה tabindex=0, ולכן היא נגישה במקלדת — אבל
+         בלי role ובלי שם היא מוכרזת כ"קבוצה" ריקה. */
+      const el = marker.getElement();
+      if (el) {
+        el.setAttribute('role', 'button');
+        el.setAttribute('aria-label',
+          `סינון לפי ${loc.name} — ${count.toLocaleString('he-IL')} מסמכים`);
+        el.setAttribute('aria-pressed', 'false');
+      }
       marker.on('click', () => {
         const pinEl = marker.getElement()?.querySelector('.gmap-pin');
         const isActive = fLocation === loc.name;
 
         if (_activeLocMarker) {
-          _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+          const prev = _activeLocMarker.getElement();
+          prev?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
+          prev?.setAttribute('aria-pressed', 'false');
         }
 
         if (isActive) {
           fLocation = '';
           _activeLocMarker = null;
+          el?.setAttribute('aria-pressed', 'false');
         } else {
           fLocation = loc.name;
           pinEl?.classList.add('gmap-pin--active');
           _activeLocMarker = marker;
+          el?.setAttribute('aria-pressed', 'true');
         }
 
         updateResetVisibility();

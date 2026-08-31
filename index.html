@@ -36,9 +36,29 @@
 
   <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/fonts.css?v=20260825">
-  <link rel="stylesheet" href="assets/style.css?v=20260825">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="assets/fonts.css?v=20260831">
+  <link rel="stylesheet" href="assets/style.css?v=20260831">
+  <!-- Leaflet is served from this site, not from a CDN: a CDN <script> tag hands
+       every visitor's IP address to a third party on page load, which is exactly
+       what the privacy notice promises does not happen. Same reasoning as the
+       locally hosted fonts. Vendored copy: assets/vendor/leaflet/ (BSD-2-Clause). -->
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/a11y.css?v=20260831">
+  <script>
+    try {
+      var _p = localStorage.getItem('privacy:v1');
+      if (!_p || JSON.parse(_p).local !== false) {
+        var _r = document.documentElement, _a = localStorage.getItem('a11y:v1');
+        if (_a) {
+          _a = JSON.parse(_a);
+          if (_a.fs) _r.setAttribute('data-fs', _a.fs);
+          if (_a.mode) _r.classList.add('a11y-' + _a.mode);
+          ['links', 'readable', 'spacing', 'still', 'cursor', 'focus']
+            .forEach(function (k) { if (_a[k]) _r.classList.add('a11y-' + k); });
+        }
+      }
+    } catch (e) { /* מצב פרטי, או אחסון חסום — הדף פשוט נטען כרגיל */ }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -287,13 +307,21 @@
     </p>
     <p>
       <a href="about.html">אודות, קרדיטים ותנאי שימוש</a> ·
-      <a href="d/">מפתח כל המסמכים</a>
+      <a href="d/">מפתח כל המסמכים</a> ·
+      <a href="privacy/">מדיניות פרטיות</a> ·
+      <a href="accessibility/">הצהרת נגישות</a>
     </p>
-    <p class="footer-build">עודכן: 25 August 2026</p>
+    <p class="footer-build">עודכן: 31 August 2026</p>
   </footer>
 
   <script>const TOTAL_DOCS = 35937;</script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="assets/search.js?v=20260825"></script>
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
+  <script src="assets/search.js?v=20260831"></script>
+  <script>
+    window.PRIVACY_CONFIG = { appPrefixes: ['a11y:'], privacyUrl: 'privacy/' };
+    window.A11Y_CONFIG = { privacyUrl: 'privacy/', accessibilityUrl: 'accessibility/' };
+  </script>
+  <script src="assets/privacy.js?v=20260831"></script>
+  <script src="assets/a11y.js?v=20260831"></script>
 </body>
 </html>

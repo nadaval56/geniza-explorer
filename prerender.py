@@ -35,6 +35,8 @@ import re
 import sys
 from datetime import date
 
+import a11y_snippets
+
 ROOT = pathlib.Path(__file__).parent
 DOCS_DIR = ROOT / "data" / "docs"
 OUT_DIR = ROOT / "d"
@@ -291,6 +293,7 @@ DOC_PAGE = """<!DOCTYPE html>
   <link rel="manifest" href="{root}site.webmanifest">
   <link rel="stylesheet" href="{root}assets/fonts.css">
   <link rel="stylesheet" href="{root}assets/style.css">
+{a11y_head}
   {jsonld}
 </head>
 <body class="fragment-body">
@@ -352,10 +355,16 @@ DOC_PAGE = """<!DOCTYPE html>
       התיאור בעברית הוא תרגום/עיבוד של תיאור המסמך המקורי באנגלית מאת
       Princeton Geniza Project. השימוש בחומרים מותר למטרות לא-מסחריות בלבד.
     </p>
-    <p><a href="{root}about.html">אודות הגניזה</a> · <a href="index.html">כל המסמכים</a></p>
+    <p>
+      <a href="{root}about.html">אודות הגניזה</a> ·
+      <a href="index.html">כל המסמכים</a> ·
+      <a href="{root}privacy/">מדיניות פרטיות</a> ·
+      <a href="{root}accessibility/">הצהרת נגישות</a>
+    </p>
   </footer>
 
   <script src="{root}assets/doc-image.js" defer></script>
+{a11y_foot}
 </body>
 </html>
 """
@@ -414,6 +423,8 @@ def render_doc(doc, base):
         nav.append(f'<a class="frag-nav-btn" rel="next" href="{doc["next"]}.html">המסמך הבא ←</a>')
 
     return DOC_PAGE.format(
+        a11y_head=a11y_snippets.head("../"),
+        a11y_foot=a11y_snippets.foot("../"),
         site=esc(SITE_NAME),
         tagline=esc(SITE_TAGLINE),
         title=esc(title),
@@ -467,6 +478,7 @@ INDEX_PAGE = """<!DOCTYPE html>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/fonts.css">
   <link rel="stylesheet" href="../assets/style.css">
+{a11y_head}
 </head>
 <body class="fragment-body">
 
@@ -494,9 +506,14 @@ INDEX_PAGE = """<!DOCTYPE html>
       נתונים: <a href="{pgp}" target="_blank" rel="noopener">Princeton Geniza Project</a>
       — <a href="{license}" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
     </p>
-    <p><a href="../about.html">אודות הגניזה</a></p>
+    <p>
+      <a href="../about.html">אודות הגניזה</a> ·
+      <a href="../privacy/">מדיניות פרטיות</a> ·
+      <a href="../accessibility/">הצהרת נגישות</a>
+    </p>
   </footer>
 
+{a11y_foot}
 </body>
 </html>
 """
@@ -534,6 +551,8 @@ def render_index_pages(docs, base, out_dir):
 
         (out_dir / name).write_text(
             INDEX_PAGE.format(
+                a11y_head=a11y_snippets.head("../"),
+                a11y_foot=a11y_snippets.foot("../"),
                 site=esc(SITE_NAME), page=n, pages=pages,
                 total=f"{len(docs):,}", url=esc(url), base=esc(base),
                 prevnext=prevnext, start=(n - 1) * PER_INDEX_PAGE + 1,
@@ -560,6 +579,8 @@ def write_sitemap(docs, base, index_pages):
 
     add(base, "1.0", "weekly")
     add(base + "about.html", "0.8", "yearly")
+    add(base + "privacy/", "0.4", "yearly")
+    add(base + "accessibility/", "0.4", "yearly")
     add(base + "d/", "0.9", "weekly")
     for n in range(2, index_pages + 1):
         add(f"{base}d/index-{n}.html", "0.5")
@@ -568,7 +589,7 @@ def write_sitemap(docs, base, index_pages):
 
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
-    return len(docs) + index_pages + 2
+    return len(docs) + index_pages + 4
 
 
 ROBOTS = """# הגניזה הקהירית — Geniza Explorer
