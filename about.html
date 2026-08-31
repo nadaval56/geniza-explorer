@@ -30,6 +30,22 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/a11y.css">
+  <script>
+    try {
+      var _p = localStorage.getItem('privacy:v1');
+      if (!_p || JSON.parse(_p).local !== false) {
+        var _r = document.documentElement, _a = localStorage.getItem('a11y:v1');
+        if (_a) {
+          _a = JSON.parse(_a);
+          if (_a.fs) _r.setAttribute('data-fs', _a.fs);
+          if (_a.mode) _r.classList.add('a11y-' + _a.mode);
+          ['links', 'readable', 'spacing', 'still', 'cursor', 'focus']
+            .forEach(function (k) { if (_a[k]) _r.classList.add('a11y-' + k); });
+        }
+      }
+    } catch (e) { /* מצב פרטי, או אחסון חסום — הדף פשוט נטען כרגיל */ }
+  </script>
   <style>
     .about-article {
       max-width: 780px;
@@ -263,8 +279,19 @@
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
       — <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">רישיון CC BY-NC 4.0</a>
     </p>
-    <p><a href="index.html">חזרה לגלריה</a> · <a href="d/">מפתח כל המסמכים</a></p>
+    <p>
+      <a href="index.html">חזרה לגלריה</a> ·
+      <a href="d/">מפתח כל המסמכים</a> ·
+      <a href="privacy/">מדיניות פרטיות</a> ·
+      <a href="accessibility/">הצהרת נגישות</a>
+    </p>
   </footer>
 
+  <script>
+    window.PRIVACY_CONFIG = { appPrefixes: ['a11y:'], privacyUrl: 'privacy/' };
+    window.A11Y_CONFIG = { privacyUrl: 'privacy/', accessibilityUrl: 'accessibility/' };
+  </script>
+  <script src="assets/privacy.js"></script>
+  <script src="assets/a11y.js"></script>
 </body>
 </html>

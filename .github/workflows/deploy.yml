@@ -65,6 +65,9 @@ jobs:
           for f in index.html about.html fragment.html sitemap.xml robots.txt \
                    d/index.html site.webmanifest favicon.ico favicon.svg \
                    assets/og-image.png assets/style.css assets/fonts.css \
+                   privacy/index.html accessibility/index.html \
+                   assets/a11y.css assets/a11y.js assets/privacy.js assets/legal.css \
+                   assets/vendor/leaflet/leaflet.js assets/vendor/leaflet/leaflet.css \
                    CNAME googlef716f9558cc7d448.html; do
             [ -s "$f" ] || { echo "::error::missing or empty: $f"; exit 1; }
           done
@@ -76,6 +79,18 @@ jobs:
           # A sitemap file may hold at most 50,000 URLs before it has to be split.
           [ "$urls" -lt 50000 ] || { echo "::error::sitemap over the 50,000-URL limit"; exit 1; }
           grep -q 'og:image' index.html || { echo "::error::index.html lost its Open Graph tags"; exit 1; }
+          # תפריט הנגישות והודעת הפרטיות נשתלים מ-a11y_snippets.py. אם התבנית
+          # תשתנה ותאבד אותם, האתר ייפרס בלי הצהרת הנגישות שהוא מבטיח.
+          for f in index.html about.html privacy/index.html accessibility/index.html; do
+            grep -q 'assets/a11y.js' "$f" || { echo "::error::$f lost the accessibility menu"; exit 1; }
+          done
+          sample=$(find d -name '*.html' ! -name 'index*' | head -1)
+          grep -q 'assets/a11y.js' "$sample" || { echo "::error::document pages lost the accessibility menu"; exit 1; }
+          # אף CDN חיצוני: הגופנים ו-Leaflet מוגשים מהאתר, וזו ההבטחה שבמדיניות הפרטיות.
+          if grep -rnE 'https?://(unpkg\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|fonts\.(googleapis|gstatic)\.com)' \
+               index.html about.html privacy/index.html accessibility/index.html assets/*.css assets/*.js; then
+            echo "::error::a third-party CDN reference is back — see privacy/index.html section 2"; exit 1
+          fi
           echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
 
       - name: Upload Pages artifact
