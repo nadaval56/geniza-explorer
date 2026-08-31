@@ -66,6 +66,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* פקדי טופס אינם יורשים גופן מהדף — הדפדפן נותן להם גודל קבוע משלו
+   (13.3333px בכרומיום). הגודל הזה אינו מגיב לפקד גודל הטקסט, ולכן טקסט
+   שיושב ישירות בכפתור נשאר קפוא בזמן שכל השאר גדל. הביקורת תפסה את זה
+   ב-.surprise-btn. הכלל יושב לפני כללי הרכיבים, וכל font-size מפורש
+   שלהם גובר עליו. */
+button, input, select, textarea { font: inherit; }
+
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); text-decoration: underline; }
 

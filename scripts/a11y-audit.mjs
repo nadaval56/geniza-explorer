@@ -172,8 +172,13 @@ for (const url of PAGES) {
       if (!e.textContent.trim() || e.closest('.a11y-panel,.consent')) return;
       /* סרגל בחירת הגודל עצמו אינו אמור לגדול — הוא העוגן שמולו
          משווים. אותו חריג כמו a11y-allow-px ב-CSS; אפשר לסמן כל
-         פקד אחר ב-data-a11y-allow-px. */
-      if (e.closest('[data-fs],[data-a11y-allow-px]')) return;
+         פקד אחר ב-data-a11y-allow-px.
+
+         :not(:root) הוא העיקר כאן. a11y.js קובע data-fs על <html>
+         עצמו — שם המדרגה נשמרת — ולכן closest('[data-fs]') מצא את
+         השורש והחזיר true לכל אלמנט בדף. הבדיקה דיווחה "0 אלמנטים,
+         כולם גדלים" על כל דף, כולל דף קפוא לחלוטין. */
+      if (e.closest('[data-fs]:not(:root),[data-a11y-allow-px]')) return;
       const key = e.tagName + '|' + (e.className || '');
       if (seen.has(key) || seen.size > 40) return;
       seen.add(key);
