@@ -623,10 +623,14 @@ Allow: /
 # document's real page lives under /d/.
 Disallow: /fragment.html
 
-# data/docs/ is 35,924 JSON files that duplicate the prerendered pages — pure
-# crawl budget with nothing to index. data/search.json and data/stats.json stay
-# crawlable on purpose: Googlebot has to fetch them to render the gallery, and
-# blocking them would make the home page look empty to it.
+# data/docs/ is one JSON file per document. Two reasons to keep it out:
+# most of it duplicates the prerendered page, and it also holds the original
+# English PGP description, which assets/doc-english.js fetches on click and
+# which is deliberately not in any page's HTML. Blocking it here means that even
+# if a crawler did trigger the fetch, it could not index the text.
+# data/search.json and data/stats.json stay crawlable on purpose: Googlebot has
+# to fetch them to render the gallery, and blocking them would make the home
+# page look empty to it.
 Disallow: /data/docs/
 
 Sitemap: {base}sitemap.xml
