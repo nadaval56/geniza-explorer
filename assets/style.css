@@ -545,6 +545,12 @@ img { display: block; max-width: 100%; }
   border-radius: calc(var(--radius-lg) - 2px) calc(var(--radius-lg) - 2px) 0 0;
   margin: -1.35rem -1.25rem 0;
   width: calc(100% + 2.5rem);
+  /* The global `img { max-width: 100% }` was clamping that calc back to the
+     content box, so the picture came out 42px narrower than the card. With
+     symmetric negative margins the leftover showed up as a gap on one side —
+     the left in RTL — and the image looked pushed to the right. This affects
+     the home page cards identically; they were always off-centre too. */
+  max-width: none;
   display: block;
   background: var(--bg-2);
   transition: opacity .3s;
