@@ -1,1 +1,52 @@
-{"id":"22874","shelfmark":"T-S AS 214.96","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"List of items belonging to Abū ʿAlī. Written in a rudimentary hand on a small bifolio. At one point there is a jotting in the shape of a fingerprint in the middle of the text. Mentions linseed oil (zayt ḥār); sugar; sesame oil (sīraj); saffron; olive oil (zayt ṭayyib); honey; qaṭāra; ṭaḥīna; soap (ṣābūn, ghāsūl).","tags":["list"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00214-00096"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00214-00096"],"princeton_url":"https://geniza.princeton.edu/documents/22874/","mentioned":"","description_he":"רשימת פריטים של אבו עלי: שמן, זעפרן וכיוצ״ב.","tags_he":["חשבונות","יהודית-ערבית","זעפרן"],"prev":"22870","next":"22887","pos":15008,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "List of items belonging to Abū ʿAlī. Written in a rudimentary hand on a small bifolio. At one point there is a jotting in the shape of a fingerprint in the middle of the text. Mentions linseed oil (zayt ḥār); sugar; sesame oil (sīraj); saffron; olive oil (zayt ṭayyib); honey; qaṭāra; ṭaḥīna; soap (ṣābūn, ghāsūl).",
+  "description_he": "רשימת פריטים של אבו עלי: שמן, זעפרן וכיוצ״ב.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00214-00096"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "22874",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00214-00096"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "22887",
+  "origin": "",
+  "pos": 15008,
+  "prev": "22870",
+  "princeton_url": "https://geniza.princeton.edu/documents/22874/",
+  "region": "",
+  "shelfmark": "T-S AS 214.96",
+  "tags": [
+    "list"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית",
+    "פשתן",
+    "זית",
+    "זעפרן",
+    "דבש",
+    "סוכר",
+    "שומשום"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

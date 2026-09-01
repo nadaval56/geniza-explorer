@@ -1,1 +1,43 @@
-{"id":"19912","shelfmark":"T-S 12.170","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic, Hebrew","lang_he":"Aramaic, Hebrew","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal document. In Hebrew and Aramaic. Dating: 966–1011 CE, because the qiyyum is signed by Shemarya b. Elḥanan. Involves Yiṣḥaq b. Sha'ul and his wife Ramla(?). Signed: Avraham ha-Kohen b. Seʿadya; Tamīm ha-Kohen b. Shemuel; Ḥusayn b. Yiṣḥaq; [...] b. Seʿad'el; and Yehoshuaʿ b. Khalfa (a payyeṭan and the subject of Shulamit Elizur's 1994 book: פייטן בעידן של מפנה ר' יהושע בר כלפה ופיוטיו). The qiyyum (validation) is signed by Shemarya b. Elḥanan.","tags":["unedited 11th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19912/","mentioned":"","description_he":"מסמך משפטי בעברית ובארמית; תיארוך: 966-1011 לספירה (חתום על ידי שמריה בן אלחנן); כרוך ביצחק בן שאול ואשתו; חתום על ידי יהושע בן כלפה הפייטן","tags_he":["מסמך משפטי"],"prev":"19911","next":"19913","pos":22447,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Legal document. In Hebrew and Aramaic. Dating: 966–1011 CE, because the qiyyum is signed by Shemarya b. Elḥanan. Involves Yiṣḥaq b. Sha'ul and his wife Ramla(?). Signed: Avraham ha-Kohen b. Seʿadya; Tamīm ha-Kohen b. Shemuel; Ḥusayn b. Yiṣḥaq; [...] b. Seʿad'el; and Yehoshuaʿ b. Khalfa (a payyeṭan and the subject of Shulamit Elizur's 1994 book: פייטן בעידן של מפנה ר' יהושע בר כלפה ופיוטיו). The qiyyum (validation) is signed by Shemarya b. Elḥanan.",
+  "description_he": "מסמך משפטי בעברית ובארמית; תיארוך: 966-1011 לספירה (חתום על ידי שמריה בן אלחנן); כרוך ביצחק בן שאול ואשתו; חתום על ידי יהושע בן כלפה הפייטן",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19912",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Hebrew",
+  "lang_he": "Aramaic, Hebrew",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19913",
+  "origin": "",
+  "pos": 22447,
+  "prev": "19911",
+  "princeton_url": "https://geniza.princeton.edu/documents/19912/",
+  "region": "",
+  "shelfmark": "T-S 12.170",
+  "tags": [
+    "unedited 11th c"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "פיוט",
+    "רמלה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

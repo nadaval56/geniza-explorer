@@ -1,1 +1,53 @@
-{"id":"5273","shelfmark":"T-S 8J21.7","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"India Book (IB) IV,79 (*83ח). Letter from Faraḥ b. Yosef b. Faraḥ, Alexandria, to Abū Saʿd Khalaf b. Sahl in Fustat. Dating: mid-eleventh century. \n\nIn which the writer asks the recipient to help a third merchant, Abū l-Ḥassan b. Sasson with the sale of textiles from Sicily. Mentions the recipient's brother Abū l-Faḍl. Goitein identified this document as the last page of a letter written by Abū Naṣr b. Avraham to Halfon b. Netanʾel, and identified the recipient's brother as Abū l-Faḍl b. Abū al-Faraj al-Dimyāṭī; Gil and Fleischer and then Miriam Frankel followed this attribution. But Friedman rejected the paleographic and stylistic identification of the author as Abū Naṣr b. Avraham and finds no evidence that Halfon is the recipient, supporting instead an earlier attribution of Gil's to Faraḥ b. Yosef b. Faraḥ. Despite being included in the India Book corpus, then, the letter deals with Mediterranean trade and its protagonists have nothing to do (as far as anyone knows) with the Indian Ocean trade. (Information from Goitein and Friedman, India Book IV)","tags":["ib-partial translation-heb, IB4, ib-untranslated-eng, India"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00021-00007"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00021-00007"],"princeton_url":"https://geniza.princeton.edu/documents/5273/","mentioned":"Alexandria","description_he":"מכתב מאת פרח בן יוסף בן פרח באלכסנדריה אל אבו סעד ח'לף בן סהל בפוסטאט. התיארוך: אמצע המאה האחת-עשרה.\n\nבמכתב הכותב מבקש מהנמען לסייע לסוחר שלישי, אבו אל-חסן בן ססון, במכירת אריגים מסיציליה. מוזכר אחיו של הנמען, אבו אל-פצ'ל. גויטיין זיהה את המסמך כעמוד האחרון של מכתב שכתב אבו נצר בן אברהם אל חלפון בן נתנאל, וזיהה את אחי הנמען כאבו אל-פצ'ל בן אבו אל-פרג' אל-דמיאטי; גיל ופליישר, ולאחריהם מרים פרנקל, אימצו את הזיהוי הזה. אולם פרידמן דחה את הזיהוי הפלאוגרפי והסגנוני של הכותב כאבו נצר בן אברהם, ואינו מוצא ראיה לכך שחלפון הוא הנמען; תחת זאת הוא תומך בזיהוי מוקדם יותר של גיל, לפיו הכותב הוא פרח בן יוסף בן פרח. לפיכך, אף שהמכתב נכלל בקורפוס \"ספר הודו\", הוא עוסק בסחר הים-תיכוני, וגיבוריו אינם קשורים — ככל הידוע — לסחר באוקיינוס ההודי.","tags_he":["מכתב","יהודית-ערבית","מסחר","ספר הודו","פוסטאט","אלכסנדריה","סיציליה","דמיאט"],"prev":"5272","next":"5274","pos":3503,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "India Book (IB) IV,79 (*83ח). Letter from Faraḥ b. Yosef b. Faraḥ, Alexandria, to Abū Saʿd Khalaf b. Sahl in Fustat. Dating: mid-eleventh century. \n\nIn which the writer asks the recipient to help a third merchant, Abū l-Ḥassan b. Sasson with the sale of textiles from Sicily. Mentions the recipient's brother Abū l-Faḍl. Goitein identified this document as the last page of a letter written by Abū Naṣr b. Avraham to Halfon b. Netanʾel, and identified the recipient's brother as Abū l-Faḍl b. Abū al-Faraj al-Dimyāṭī; Gil and Fleischer and then Miriam Frankel followed this attribution. But Friedman rejected the paleographic and stylistic identification of the author as Abū Naṣr b. Avraham and finds no evidence that Halfon is the recipient, supporting instead an earlier attribution of Gil's to Faraḥ b. Yosef b. Faraḥ. Despite being included in the India Book corpus, then, the letter deals with Mediterranean trade and its protagonists have nothing to do (as far as anyone knows) with the Indian Ocean trade. (Information from Goitein and Friedman, India Book IV)",
+  "description_he": "מכתב מאת פרח בן יוסף בן פרח באלכסנדריה אל אבו סעד ח'לף בן סהל בפוסטאט. התיארוך: אמצע המאה האחת-עשרה.\n\nבמכתב הכותב מבקש מהנמען לסייע לסוחר שלישי, אבו אל-חסן בן ססון, במכירת אריגים מסיציליה. מוזכר אחיו של הנמען, אבו אל-פצ'ל. גויטיין זיהה את המסמך כעמוד האחרון של מכתב שכתב אבו נצר בן אברהם אל חלפון בן נתנאל, וזיהה את אחי הנמען כאבו אל-פצ'ל בן אבו אל-פרג' אל-דמיאטי; גיל ופליישר, ולאחריהם מרים פרנקל, אימצו את הזיהוי הזה. אולם פרידמן דחה את הזיהוי הפלאוגרפי והסגנוני של הכותב כאבו נצר בן אברהם, ואינו מוצא ראיה לכך שחלפון הוא הנמען; תחת זאת הוא תומך בזיהוי מוקדם יותר של גיל, לפיו הכותב הוא פרח בן יוסף בן פרח. לפיכך, אף שהמכתב נכלל בקורפוס \"ספר הודו\", הוא עוסק בסחר הים-תיכוני, וגיבוריו אינם קשורים — ככל הידוע — לסחר באוקיינוס ההודי.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00021-00007"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5273",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00021-00007"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Alexandria",
+  "multifragment": "",
+  "next": "5274",
+  "origin": "",
+  "pos": 3503,
+  "prev": "5272",
+  "princeton_url": "https://geniza.princeton.edu/documents/5273/",
+  "region": "",
+  "shelfmark": "T-S 8J21.7",
+  "tags": [
+    "ib-partial translation-heb, IB4, ib-untranslated-eng, India"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "ספר הודו",
+    "פוסטאט",
+    "אלכסנדריה",
+    "הודו",
+    "סיציליה",
+    "דמיאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -1,1 +1,49 @@
-{"id":"16846","shelfmark":"Moss. II,109.1","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1168–1201","date_original":"","date_standard":"","date_inferred":"1168–1201","date_rationale":"Person mentioned","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter fragment in Judaeo-Arabic, in an elegant hand with tall, flamingo-like lameds. The sender appears to be a well-connected physician or medical student. Dating: Probably 1170s–90s, based on the mention of Qarāqūsh. Some excerpts: \"... I have not found a stable position... in Cairo until that thing is fulfilled... in Fustat... I sat... our Rabbi... the head of the physicians (muqaddam al-ṭibb)... a physician and said to me... Cairo, and sometimes with Abū l-Riḍā, and I stay with him two nights a week and learn from him... your excellence, for 30 dinars' brokerage... entered to Qarāqūsh (likely Bahāʾ al-Dīn Qarāqūsh, active in Egypt 1169–1201) and told him the situation, and he fired him. Your excellence should be reassured, because everything is going well for you. Your excellence should kindly send a letter to 'our master' (Sayyidnā) thanking him for his advocacy for you... does not open his door to a Jew... your slave Abū Isḥāq (=the sender?)... and Abū l-Riḍā and his mother kiss your feet... and Abū l-Ṭāhir sends his regards.\" (Information in part from CUDL.) ASE","tags":["physicians, education, medicine"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-II-00109-00001"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-II-00109-00001"],"princeton_url":"https://geniza.princeton.edu/documents/16846/","mentioned":"Cairo, Fustat","description_he":"קטע ממכתב בערבית-יהודית, בכתב יד אלגנטי עם אותיות למ\"ד גבוהות ודמויות פלמינגו. השולח נראה כרופא או תלמיד לרפואה בעל קשרים טובים. תיארוך: ככל הנראה שנות ה-70 עד ה-90 של המאה ה-12, על סמך אזכורו של קראקוש.\n\nמתוך הקטעים: \"...לא מצאתי משרה יציבה... בקהיר עד שיתממש אותו דבר... בפוסטאט... ישבתי... רבנו... ראש הרופאים (מֻקַדַּם אלטִ'בּ)... רופא ואמר לי... קהיר, ולעיתים אצל אבו אלרצ'א, ואני שוהה אצלו שני לילות בשבוע ולומד ממנו... מעלתך, עבור 30 דינר דמי תיווך... נכנס אל קראקוש (קרוב לוודאי בהאא' אלדין קראקוש, שפעל במצרים בין 1169 ל-1201) וסיפר לו את המצב, והוא פיטר אותו. מעלתך יכול להיות רגוע, כי הכול מתנהל היטב מבחינתך. מעלתך יואיל בטובו לשלוח מכתב ל'אדוננו' (סַיִּדְנַא) ולהודות לו על השתדלותו עבורך... אינו פותח את דלתו ליהודי... עבדך אבו אסחאק (=השולח?)... ואבו אלרצ'א ואמו מנשקים את רגליך... ואבו אלטאהר שולח את ברכותיו\".","tags_he":["מכתב","יהודית-ערבית","רפואה","פוסטאט","קהיר","הודו"],"prev":"16845","next":"16847","pos":12292,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "1168–1201",
+  "date_inferred": "1168–1201",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Letter fragment in Judaeo-Arabic, in an elegant hand with tall, flamingo-like lameds. The sender appears to be a well-connected physician or medical student. Dating: Probably 1170s–90s, based on the mention of Qarāqūsh. Some excerpts: \"... I have not found a stable position... in Cairo until that thing is fulfilled... in Fustat... I sat... our Rabbi... the head of the physicians (muqaddam al-ṭibb)... a physician and said to me... Cairo, and sometimes with Abū l-Riḍā, and I stay with him two nights a week and learn from him... your excellence, for 30 dinars' brokerage... entered to Qarāqūsh (likely Bahāʾ al-Dīn Qarāqūsh, active in Egypt 1169–1201) and told him the situation, and he fired him. Your excellence should be reassured, because everything is going well for you. Your excellence should kindly send a letter to 'our master' (Sayyidnā) thanking him for his advocacy for you... does not open his door to a Jew... your slave Abū Isḥāq (=the sender?)... and Abū l-Riḍā and his mother kiss your feet... and Abū l-Ṭāhir sends his regards.\" (Information in part from CUDL.) ASE",
+  "description_he": "קטע ממכתב בערבית-יהודית, בכתב יד אלגנטי עם אותיות למ\"ד גבוהות ודמויות פלמינגו. השולח נראה כרופא או תלמיד לרפואה בעל קשרים טובים. תיארוך: ככל הנראה שנות ה-70 עד ה-90 של המאה ה-12, על סמך אזכורו של קראקוש.\n\nמתוך הקטעים: \"...לא מצאתי משרה יציבה... בקהיר עד שיתממש אותו דבר... בפוסטאט... ישבתי... רבנו... ראש הרופאים (מֻקַדַּם אלטִ'בּ)... רופא ואמר לי... קהיר, ולעיתים אצל אבו אלרצ'א, ואני שוהה אצלו שני לילות בשבוע ולומד ממנו... מעלתך, עבור 30 דינר דמי תיווך... נכנס אל קראקוש (קרוב לוודאי בהאא' אלדין קראקוש, שפעל במצרים בין 1169 ל-1201) וסיפר לו את המצב, והוא פיטר אותו. מעלתך יכול להיות רגוע, כי הכול מתנהל היטב מבחינתך. מעלתך יואיל בטובו לשלוח מכתב ל'אדוננו' (סַיִּדְנַא) ולהודות לו על השתדלותו עבורך... אינו פותח את דלתו ליהודי... עבדך אבו אסחאק (=השולח?)... ואבו אלרצ'א ואמו מנשקים את רגליך... ואבו אלטאהר שולח את ברכותיו\".",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-II-00109-00001"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "16846",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-II-00109-00001"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "Cairo, Fustat",
+  "multifragment": "",
+  "next": "16847",
+  "origin": "",
+  "pos": 12292,
+  "prev": "16845",
+  "princeton_url": "https://geniza.princeton.edu/documents/16846/",
+  "region": "",
+  "shelfmark": "Moss. II,109.1",
+  "tags": [
+    "physicians, education, medicine"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "רפואה",
+    "פוסטאט",
+    "קהיר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

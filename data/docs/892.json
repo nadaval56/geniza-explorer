@@ -1,1 +1,46 @@
-{"id":"892","shelfmark":"Moss. V,352","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"Jerusalem","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Fragment of a letter from Yisrael b. Natan, Jerusalem, probably to Nahray b. Nissim, Fustat. The letter deals with trades, especially of fabrics. Nahray is asked to urgently provide parchment in order for Israel to do his job. The last part is about Avraham b. ha-Gaon Shelomo b. Yehuda. (Information from Gil, Palestine, vol. 3, pp. 145-148, #472) VMR","tags":["trade, skins, Nahray B. Nissim, parchment"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/892/","mentioned":"","description_he":"שבר מכתב מישראל בן נתן, ירושלים, כנראה לנהריי בן נסים, פוסטאט. עסקים בבדים ובקשה לקלף.","tags_he":["מכתב","יהודית-ערבית","פוסטאט","ירושלים"],"prev":"891","next":"893","pos":20588,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a letter from Yisrael b. Natan, Jerusalem, probably to Nahray b. Nissim, Fustat. The letter deals with trades, especially of fabrics. Nahray is asked to urgently provide parchment in order for Israel to do his job. The last part is about Avraham b. ha-Gaon Shelomo b. Yehuda. (Information from Gil, Palestine, vol. 3, pp. 145-148, #472) VMR",
+  "description_he": "שבר מכתב מישראל בן נתן, ירושלים, כנראה לנהריי בן נסים, פוסטאט. עסקים בבדים ובקשה לקלף.",
+  "destination": "Fustat",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "892",
+  "iiif_urls": [],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "893",
+  "origin": "Jerusalem",
+  "pos": 20588,
+  "prev": "891",
+  "princeton_url": "https://geniza.princeton.edu/documents/892/",
+  "region": "",
+  "shelfmark": "Moss. V,352",
+  "tags": [
+    "trade, skins, Nahray B. Nissim, parchment"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "ירושלים"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

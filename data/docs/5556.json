@@ -1,1 +1,44 @@
-{"id":"5556","shelfmark":"L-G Lit.III.85","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"CUL & Bodl.","library_raw":"CUL & Bodl.","collection":"CUL & Bodl., L-G","description":"Letter from Abū l-Ḥasan b. ʿAṭiyya to his 'brother and father' Wāfī b. Ḥasan and Avraham b. Ṣedaqa. In Judaeo-Arabic. Dating: Likely Mamluk-era. Dealing in part with an Islamic ruling/fatwā that stipulated the levying of 500 dinars from the Jews in Egypt, and sending greetings to relatives. Needs further examination. (Information in part from Goitein's hand list.)","tags":["to edit"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5556/","mentioned":"","description_he":"מכתב מאבו אל-חסן בן עטייה לוואפי בן חסן ואברהם בן צדקה, על פסיקה אסלאמית להטיל 500 דינר על יהודי מצרים","tags_he":["מכתב","יהודית-ערבית","צדקה"],"prev":"5546","next":"5557","pos":20936,"total":35937}
+{
+  "collection": "CUL & Bodl., L-G",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Abū l-Ḥasan b. ʿAṭiyya to his 'brother and father' Wāfī b. Ḥasan and Avraham b. Ṣedaqa. In Judaeo-Arabic. Dating: Likely Mamluk-era. Dealing in part with an Islamic ruling/fatwā that stipulated the levying of 500 dinars from the Jews in Egypt, and sending greetings to relatives. Needs further examination. (Information in part from Goitein's hand list.)",
+  "description_he": "מכתב מאבו אל-חסן בן עטייה לוואפי בן חסן ואברהם בן צדקה, על פסיקה אסלאמית להטיל 500 דינר על יהודי מצרים",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5556",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "CUL & Bodl.",
+  "library_raw": "CUL & Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "5557",
+  "origin": "",
+  "pos": 20936,
+  "prev": "5546",
+  "princeton_url": "https://geniza.princeton.edu/documents/5556/",
+  "region": "",
+  "shelfmark": "L-G Lit.III.85",
+  "tags": [
+    "to edit"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "צדקה",
+    "ממלוכי"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

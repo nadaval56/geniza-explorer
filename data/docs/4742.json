@@ -1,1 +1,44 @@
-{"id":"4742","shelfmark":"IOM D 55.10","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Aden","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"Other (please specify)","library":"SPIOS","library_raw":"SPIOS","collection":"SPIOS","description":"India Book II, 40. Three poems by Avraham Ibn Yiju in honor of Madmun b. Ḥasan, Aden, ca. 1140, who was expecting his third son.","tags":["ib-untranslated-eng, IB2, poem, literary with documentary value, India"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/4742/","mentioned":"","description_he":"ספר הודו II,40: שלושה שירים מאת אברהם אבן יג'ו לכבוד מדמון בן חסן, עדן, כ-1140","tags_he":["עברית","ספר הודו"],"prev":"4686","next":"4744","pos":20889,"total":35937}
+{
+  "collection": "SPIOS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "Other (please specify)",
+  "date_standard": "",
+  "description": "India Book II, 40. Three poems by Avraham Ibn Yiju in honor of Madmun b. Ḥasan, Aden, ca. 1140, who was expecting his third son.",
+  "description_he": "ספר הודו II,40: שלושה שירים מאת אברהם אבן יג'ו לכבוד מדמון בן חסן, עדן, כ-1140",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4742",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "SPIOS",
+  "library_raw": "SPIOS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "4744",
+  "origin": "Aden",
+  "pos": 20889,
+  "prev": "4686",
+  "princeton_url": "https://geniza.princeton.edu/documents/4742/",
+  "region": "",
+  "shelfmark": "IOM D 55.10",
+  "tags": [
+    "ib-untranslated-eng, IB2, poem, literary with documentary value, India"
+  ],
+  "tags_he": [
+    "עברית",
+    "שירה",
+    "ספר הודו",
+    "הודו"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

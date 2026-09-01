@@ -1,1 +1,44 @@
-{"id":"5404","shelfmark":"AIU VII.E.35","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"Other (please specify)","library":"כיא פריז","library_raw":"AIU","collection":"AIU","description":"India Book (IB) II, 12: Letter from Bundar II b. Ḥasan to ʿAllān b. Ḥassān. Aden, circa 1100. (Information from Goitein and Friedman)","tags":["ib-partial translation-eng, India, IB2"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5404/","mentioned":"","description_he":"ספר הודו II,12: מכתב מבונדאר השני בן חסן לעלאן בן חסאן, עדן, כ-1100","tags_he":["מכתב","יהודית-ערבית","ספר הודו"],"prev":"5398","next":"5422","pos":20925,"total":35937}
+{
+  "collection": "AIU",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "Other (please specify)",
+  "date_standard": "",
+  "description": "India Book (IB) II, 12: Letter from Bundar II b. Ḥasan to ʿAllān b. Ḥassān. Aden, circa 1100. (Information from Goitein and Friedman)",
+  "description_he": "ספר הודו II,12: מכתב מבונדאר השני בן חסן לעלאן בן חסאן, עדן, כ-1100",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5404",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "כיא פריז",
+  "library_raw": "AIU",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "5422",
+  "origin": "",
+  "pos": 20925,
+  "prev": "5398",
+  "princeton_url": "https://geniza.princeton.edu/documents/5404/",
+  "region": "",
+  "shelfmark": "AIU VII.E.35",
+  "tags": [
+    "ib-partial translation-eng, India, IB2"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ספר הודו",
+    "הודו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

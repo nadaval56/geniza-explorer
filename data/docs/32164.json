@@ -1,1 +1,44 @@
-{"id":"32164","shelfmark":"BL OR 5544.23","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Ladino","lang_he":"Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"Constantinople","destination":"Cairo","region":"","date":"1806-02-14","date_original":"26 Shevat 5566","date_standard":"1806-02-14","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Business letter from Yiṣḥaq [...], in Istanbul, to Efrayim ʿAdda (עדה) and Eliyyahu Aylion (אאיליון), in Fustat/Cairo. In Ladino. There is an \"AI\" in Latin script on verso, along with sums/accounts. Dated: 26 Shevat 5566 AM, Which is 14 February 1806 CE. Mentions (line 8) having written something in Turkish (escribí detrás de la carta en turquesco). Mentions Izmir in the next line, and then what the writer has sent in the ship of the captain Ibrahim. He has sent a very fine [...] \"that is called çiçek, which is to say, flower\"; and some ginger. Later, the letter mentions leather (cuero). Needs further examination.","tags":["wax seal, Ladino"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/32164/","mentioned":"","description_he":"מכתב עסקי מיצחק [...], באיסטנבול, לאפרים עדה ואליהו אייליון, בפסטאט/קהיר. בלדינו. מתוארך: כ'ו בשבט ה'תקס'ו (14 בפברואר 1806 לספירה). מזכיר כתיבה בטורקית ואת איזמיר. תאר סחורות שנשלחו באנייה של הקברניט אברהים: בד עדין הנקרא 'צ'יצ'ק' (פרח בטורקית), זנגביל ועור.","tags_he":["מכתב","קהיר","זנגביל"],"prev":"32163","next":"32165","pos":29904,"total":35937}
+{
+  "collection": "BL",
+  "date": "1806-02-14",
+  "date_inferred": "",
+  "date_original": "26 Shevat 5566",
+  "date_rationale": "",
+  "date_standard": "1806-02-14",
+  "description": "Business letter from Yiṣḥaq [...], in Istanbul, to Efrayim ʿAdda (עדה) and Eliyyahu Aylion (אאיליון), in Fustat/Cairo. In Ladino. There is an \"AI\" in Latin script on verso, along with sums/accounts. Dated: 26 Shevat 5566 AM, Which is 14 February 1806 CE. Mentions (line 8) having written something in Turkish (escribí detrás de la carta en turquesco). Mentions Izmir in the next line, and then what the writer has sent in the ship of the captain Ibrahim. He has sent a very fine [...] \"that is called çiçek, which is to say, flower\"; and some ginger. Later, the letter mentions leather (cuero). Needs further examination.",
+  "description_he": "מכתב עסקי מיצחק [...], באיסטנבול, לאפרים עדה ואליהו אייליון, בפסטאט/קהיר. בלדינו. מתוארך: כ'ו בשבט ה'תקס'ו (14 בפברואר 1806 לספירה). מזכיר כתיבה בטורקית ואת איזמיר. תאר סחורות שנשלחו באנייה של הקברניט אברהים: בד עדין הנקרא 'צ'יצ'ק' (פרח בטורקית), זנגביל ועור.",
+  "destination": "Cairo",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "32164",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Ladino",
+  "lang_he": "Ladino",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "32165",
+  "origin": "Constantinople",
+  "pos": 29904,
+  "prev": "32163",
+  "princeton_url": "https://geniza.princeton.edu/documents/32164/",
+  "region": "",
+  "shelfmark": "BL OR 5544.23",
+  "tags": [
+    "wax seal, Ladino"
+  ],
+  "tags_he": [
+    "מכתב",
+    "פוסטאט",
+    "קהיר",
+    "זנגביל"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

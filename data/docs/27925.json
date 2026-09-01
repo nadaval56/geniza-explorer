@@ -1,1 +1,45 @@
-{"id":"27925","shelfmark":"Yevr.-Arab. II 1380","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1439-09-10/1439-12-07","date_original":"Tishrei-Kislev 1751","date_standard":"1439-09-10/1439-12-07","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Court notebook, probably. Bifolium. Entries in Judaeo-Arabic. Probably pertaining to the Qaraite court that convened in the Dar Simḥa synagogue (here called Dār Ibn Sameaḥ). Dated: Tishrei through Kislev 1751 Seleucid, which corresponds to the last months of 1439 CE. Includes entries on divorces, marriages, deaths. Also an curious entry documenting that there were rumors about the daughter of ʿAbd al-Laṭīf b. Bashīr(?), somehow connected to the bathhouse of Ibn al-Ashqar, and indeed the rumors were proven true by her pregnancy. \"They did to him what was necessary upon the טפטיס (? = taftīsh?). Then, when the קצין told her \"go to your father,\" she said, \"No! I don't want to [go to] the religion of the Muslims.\" The entry is cryptic and these readings are tentative. Another entry mentions the ḥakīm ʿAbd al-Karīm, the head of the court (Av Beit Din). Needs further examination.","tags":["hammam, adultery, Court notebook, Dar Simha, conversion"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27925/","mentioned":"","description_he":"ככל הנראה פנקס בית דין. דף כפול. הרישומים כתובים בערבית-יהודית. כנראה קשור לבית הדין הקראי שהתכנס בבית הכנסת דאר סמחה (כאן מכונה \"דאר אבן סמיע\"). מתוארך מתשרי עד כסלו 1751 לשטרות, התואם את החודשים האחרונים של שנת 1439 לסה\"נ. כולל רישומים על גירושין, נישואין ומקרי מוות. נכלל בו גם רישום מסקרן המתעד שהיו שמועות על בתו של עבד אללטיף בן בשיר(?), שהיו קשורות איכשהו לבית המרחץ של אבן אלאשקר, ואכן השמועות התאמתו עקב הריונה. \"עשו לו את מה שנדרש על ה-טפטיס (?‏ = תפתיש?). אחר כך, כאשר אמר לה הקצין 'לכי אל אביך', היא ענתה, 'לא! איני רוצה [ללכת אל] דת המוסלמים'.\" הרישום סתום והקריאות הן בגדר השערה. רישום נוסף מזכיר את החכים עבד אלכרים, ראש בית הדין (אב בית דין). דרוש עיון נוסף.","tags_he":["מסמך משפטי","יהודית-ערבית","נישואין","גירושין"],"prev":"27924","next":"27926","pos":28230,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1439-09-10/1439-12-07",
+  "date_inferred": "",
+  "date_original": "Tishrei-Kislev 1751",
+  "date_rationale": "",
+  "date_standard": "1439-09-10/1439-12-07",
+  "description": "Court notebook, probably. Bifolium. Entries in Judaeo-Arabic. Probably pertaining to the Qaraite court that convened in the Dar Simḥa synagogue (here called Dār Ibn Sameaḥ). Dated: Tishrei through Kislev 1751 Seleucid, which corresponds to the last months of 1439 CE. Includes entries on divorces, marriages, deaths. Also an curious entry documenting that there were rumors about the daughter of ʿAbd al-Laṭīf b. Bashīr(?), somehow connected to the bathhouse of Ibn al-Ashqar, and indeed the rumors were proven true by her pregnancy. \"They did to him what was necessary upon the טפטיס (? = taftīsh?). Then, when the קצין told her \"go to your father,\" she said, \"No! I don't want to [go to] the religion of the Muslims.\" The entry is cryptic and these readings are tentative. Another entry mentions the ḥakīm ʿAbd al-Karīm, the head of the court (Av Beit Din). Needs further examination.",
+  "description_he": "ככל הנראה פנקס בית דין. דף כפול. הרישומים כתובים בערבית-יהודית. כנראה קשור לבית הדין הקראי שהתכנס בבית הכנסת דאר סמחה (כאן מכונה \"דאר אבן סמיע\"). מתוארך מתשרי עד כסלו 1751 לשטרות, התואם את החודשים האחרונים של שנת 1439 לסה\"נ. כולל רישומים על גירושין, נישואין ומקרי מוות. נכלל בו גם רישום מסקרן המתעד שהיו שמועות על בתו של עבד אללטיף בן בשיר(?), שהיו קשורות איכשהו לבית המרחץ של אבן אלאשקר, ואכן השמועות התאמתו עקב הריונה. \"עשו לו את מה שנדרש על ה-טפטיס (?‏ = תפתיש?). אחר כך, כאשר אמר לה הקצין 'לכי אל אביך', היא ענתה, 'לא! איני רוצה [ללכת אל] דת המוסלמים'.\" הרישום סתום והקריאות הן בגדר השערה. רישום נוסף מזכיר את החכים עבד אלכרים, ראש בית הדין (אב בית דין). דרוש עיון נוסף.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27925",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27926",
+  "origin": "",
+  "pos": 28230,
+  "prev": "27924",
+  "princeton_url": "https://geniza.princeton.edu/documents/27925/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1380",
+  "tags": [
+    "hammam, adultery, Court notebook, Dar Simha, conversion"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "שירה",
+    "נישואין",
+    "גירושין"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

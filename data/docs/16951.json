@@ -1,1 +1,45 @@
-{"id":"16951","shelfmark":"Moss. V,337.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Part of a letter. Small fragment from the lower right corner. Mentions a letter sent to Alexandria. (Information in part from CUDL)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-V-00337-00002"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-V-00337-00002"],"princeton_url":"https://geniza.princeton.edu/documents/16951/","mentioned":"","description_he":"חלק ממכתב. שבר קטן מהפינה התחתונה הימנית. מזכיר מכתב שנשלח לאלכסנדריה. (מידע חלקית מתוך CUDL)","tags_he":["מכתב","יהודית-ערבית","נישואין","אלכסנדריה"],"prev":"16950","next":"16953","pos":12368,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Part of a letter. Small fragment from the lower right corner. Mentions a letter sent to Alexandria. (Information in part from CUDL)",
+  "description_he": "חלק ממכתב. שבר קטן מהפינה התחתונה הימנית. מזכיר מכתב שנשלח לאלכסנדריה. (מידע חלקית מתוך CUDL)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-V-00337-00002"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "16951",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-V-00337-00002"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "16953",
+  "origin": "",
+  "pos": 12368,
+  "prev": "16950",
+  "princeton_url": "https://geniza.princeton.edu/documents/16951/",
+  "region": "",
+  "shelfmark": "Moss. V,337.2",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "אלכסנדריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

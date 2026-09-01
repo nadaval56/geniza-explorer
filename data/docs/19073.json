@@ -1,1 +1,46 @@
-{"id":"19073","shelfmark":"BL OR 10578Q.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Recto: page 7 of a literary composition on parashot petuḥot and setumot. Verso: Letter in Judaeo-Arabic. Draft? The recipient's son Efrayim is living with the writer, who seems to be responsible for his education. The writer describes how greatly they miss the recipient and then provides a detailed, interesting update of their prayer and study schedule on Shabbat. On Friday night they read the parashah (qera ve-targum) and the haftarah, then study some of the Guide for the Perplexed ('the Dallāla), then sleep until midnight. From midnight until dawn, Efrayim reads psalms. In the morning, they recite the 'shir', the mizmors, the amida, the parasha (kera ve-targum), the prophets, and the psalms. Then they read some of \"the Ḥibur\" or the Halakhot, then pray Minḥa, then they study Kitab al-Amānāt by Saadya Gaon. The rest is cut off.","tags":["Guide for the Perplexed, education"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19073/","mentioned":"","description_he":"רקטו: עמוד 7 מתוך חיבור ספרותי על פרשיות פתוחות וסתומות. ורסו: מכתב בערבית-יהודית. אולי טיוטה. אפרים, בנו של הנמען, מתגורר אצל הכותב, שאחראי כפי הנראה גם על חינוכו. הכותב מתאר עד כמה הם מתגעגעים לנמען, ולאחר מכן מוסר עדכון מפורט ומעניין על סדר התפילה והלימוד שלהם בשבת. בליל שישי הם קוראים את הפרשה (קרא ותרגום) ואת ההפטרה, אחר כך לומדים מעט מ\"מורה הנבוכים\" (אלדלאלה), ואז ישנים עד חצות. מחצות הלילה ועד עלות השחר אפרים קורא תהלים. בבוקר הם אומרים את \"השיר\", את המזמורים, את העמידה, את הפרשה (קרא ותרגום), את הנביאים ואת התהלים. לאחר מכן הם קוראים מעט מ\"החיבור\" או מ\"ההלכות\", מתפללים מנחה, ואז לומדים את \"כתאב אלאמאנאת\" של רב סעדיה גאון. שאר המכתב חתוך.","tags_he":["מכתב","טיוטה","ישיבה וגאונות","תפילה וליטורגיה","סעדיה גאון"],"prev":"19072","next":"19074","pos":22091,"total":35937}
+{
+  "collection": "BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: page 7 of a literary composition on parashot petuḥot and setumot. Verso: Letter in Judaeo-Arabic. Draft? The recipient's son Efrayim is living with the writer, who seems to be responsible for his education. The writer describes how greatly they miss the recipient and then provides a detailed, interesting update of their prayer and study schedule on Shabbat. On Friday night they read the parashah (qera ve-targum) and the haftarah, then study some of the Guide for the Perplexed ('the Dallāla), then sleep until midnight. From midnight until dawn, Efrayim reads psalms. In the morning, they recite the 'shir', the mizmors, the amida, the parasha (kera ve-targum), the prophets, and the psalms. Then they read some of \"the Ḥibur\" or the Halakhot, then pray Minḥa, then they study Kitab al-Amānāt by Saadya Gaon. The rest is cut off.",
+  "description_he": "רקטו: עמוד 7 מתוך חיבור ספרותי על פרשיות פתוחות וסתומות. ורסו: מכתב בערבית-יהודית. אולי טיוטה. אפרים, בנו של הנמען, מתגורר אצל הכותב, שאחראי כפי הנראה גם על חינוכו. הכותב מתאר עד כמה הם מתגעגעים לנמען, ולאחר מכן מוסר עדכון מפורט ומעניין על סדר התפילה והלימוד שלהם בשבת. בליל שישי הם קוראים את הפרשה (קרא ותרגום) ואת ההפטרה, אחר כך לומדים מעט מ\"מורה הנבוכים\" (אלדלאלה), ואז ישנים עד חצות. מחצות הלילה ועד עלות השחר אפרים קורא תהלים. בבוקר הם אומרים את \"השיר\", את המזמורים, את העמידה, את הפרשה (קרא ותרגום), את הנביאים ואת התהלים. לאחר מכן הם קוראים מעט מ\"החיבור\" או מ\"ההלכות\", מתפללים מנחה, ואז לומדים את \"כתאב אלאמאנאת\" של רב סעדיה גאון. שאר המכתב חתוך.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19073",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19074",
+  "origin": "",
+  "pos": 22091,
+  "prev": "19072",
+  "princeton_url": "https://geniza.princeton.edu/documents/19073/",
+  "region": "",
+  "shelfmark": "BL OR 10578Q.2",
+  "tags": [
+    "Guide for the Perplexed, education"
+  ],
+  "tags_he": [
+    "מכתב",
+    "שירה",
+    "טיוטה",
+    "ישיבה וגאונות",
+    "תפילה וליטורגיה",
+    "סעדיה גאון"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

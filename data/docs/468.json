@@ -1,1 +1,42 @@
-{"id":"468","shelfmark":"BL OR 5542.14","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Letter from the teacher Abū Saʿīd to al-Shaykh al-Raṣuy, in which he asks in the most humble terms to be paid the fees due to him by the community for children sent to his school. People mentioned include three children of the wife of the Persian (אמראה אלעגמי) who is in the funduq, and Yosef al-Maghribī. (The same sender, there called Saʿīd, wrote T-S NS 324.35 to Avraham Maimonides. AA) NB: Goitein sometimes referred to this fragment as BL OR 5542.23. (See Med Soc II, App. B, doc. 98.)","tags":["teacher, school"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/468/","mentioned":"","description_he":"מכתב מהמורה אבו סעיד לאל-שייח' אל-ראצוי, שבו הוא מבקש בנימוסים רבים לקבל את שכרו מהקהילה עבור הילדים שנשלחו לבית ספרו. מוזכרים שלושה ילדי אשת הפרסי השוהה בפונדוק, ויוסף אל-מגרבי.","tags_he":["מכתב","יהודית-ערבית","מגרב"],"prev":"467","next":"469","pos":20524,"total":35937}
+{
+  "collection": "BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from the teacher Abū Saʿīd to al-Shaykh al-Raṣuy, in which he asks in the most humble terms to be paid the fees due to him by the community for children sent to his school. People mentioned include three children of the wife of the Persian (אמראה אלעגמי) who is in the funduq, and Yosef al-Maghribī. (The same sender, there called Saʿīd, wrote T-S NS 324.35 to Avraham Maimonides. AA) NB: Goitein sometimes referred to this fragment as BL OR 5542.23. (See Med Soc II, App. B, doc. 98.)",
+  "description_he": "מכתב מהמורה אבו סעיד לאל-שייח' אל-ראצוי, שבו הוא מבקש בנימוסים רבים לקבל את שכרו מהקהילה עבור הילדים שנשלחו לבית ספרו. מוזכרים שלושה ילדי אשת הפרסי השוהה בפונדוק, ויוסף אל-מגרבי.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "468",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "469",
+  "origin": "",
+  "pos": 20524,
+  "prev": "467",
+  "princeton_url": "https://geniza.princeton.edu/documents/468/",
+  "region": "",
+  "shelfmark": "BL OR 5542.14",
+  "tags": [
+    "teacher, school"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

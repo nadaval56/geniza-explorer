@@ -1,1 +1,49 @@
-{"id":"5449","shelfmark":"Moss. IV,7","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Aden","destination":"","region":"","date":"August","date_original":"","date_standard":"","date_inferred":"August","date_rationale":"Person mentioned","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"India Book (IB) II, 66. Aden, August 1199. Sender and recipient are unknown, as only the lower part of this letter has been identified. The letter makes reference to the forced conversion of Yemenite Jews, and is connected to the affair mentioned in II, 67a (PGPID 5459). It also contains a discussion of Indian commodities; trade seems to have continued during this period of political and religious turmoil.\n\nThe letter relates the forced conversion of the Jews of Aden during the reign of al-Malik al-Muʿizz Ismāʿīl, self-styled caliph and nephew of Saladin. The letter's sender writes that the Jews of the Yemeni highlands had already apostatized, but most recently, Maḍmūn (identified with Maḍmūn b. David, head of the Jewish community of Yemen) had accepted Islam.\n\n(Information from Goitein and Friedman, India Traders, 506–512).\nDescription from PGPID 867:\nLetter of Madmun b. David, Aden, to Yiṣḥaq b. Sassun, Cairo, about the coercion of Aden jews to convert to Islam. Aden 1198.","tags":["IB2, India"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-IV-00007"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IV-00007"],"princeton_url":"https://geniza.princeton.edu/documents/5449/","mentioned":"Aden","description_he":"מכתב שנשלח מעדן באוגוסט 1199. שולח המכתב ונמענו אינם ידועים, שכן רק החלק התחתון של המכתב זוהה. המכתב מתייחס לכפיית ההמרה לאסלאם של יהודי תימן, וקשור לפרשה הנזכרת במסמך נוסף מאותה תקופה. כן מופיע בו דיון בסחורות הודיות, ונראה כי המסחר המשיך להתנהל גם בתקופה זו של תהפוכות פוליטיות ודתיות.\n\nהמכתב מתאר את ההמרה הכפויה של יהודי עדן בימי שלטונו של אלמלכ אלמעז אסמאעיל, אשר הכריז על עצמו ככליף, ואשר היה אחיינו של צלאח אלדין (סלאדין). שולח המכתב כותב שיהודי הרמה התימנית כבר המירו את דתם, ולאחרונה גם מצמון (המזוהה עם מצמון בן דוד, ראש הקהילה היהודית בתימן) קיבל עליו את האסלאם.\n\nתיאור נוסף הקשור למסמך: מכתבו של מצמון בן דוד מעדן אל יצחק בן ססון בקהיר, בעניין כפיית יהודי עדן להמיר את דתם לאסלאם. עדן, 1198.","tags_he":["מכתב","יהודית-ערבית","מסחר","קהיר","עדן","משי"],"prev":"5448","next":"5451","pos":3609,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "August",
+  "date_inferred": "August",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "India Book (IB) II, 66. Aden, August 1199. Sender and recipient are unknown, as only the lower part of this letter has been identified. The letter makes reference to the forced conversion of Yemenite Jews, and is connected to the affair mentioned in II, 67a (PGPID 5459). It also contains a discussion of Indian commodities; trade seems to have continued during this period of political and religious turmoil.\n\nThe letter relates the forced conversion of the Jews of Aden during the reign of al-Malik al-Muʿizz Ismāʿīl, self-styled caliph and nephew of Saladin. The letter's sender writes that the Jews of the Yemeni highlands had already apostatized, but most recently, Maḍmūn (identified with Maḍmūn b. David, head of the Jewish community of Yemen) had accepted Islam.\n\n(Information from Goitein and Friedman, India Traders, 506–512).\nDescription from PGPID 867:\nLetter of Madmun b. David, Aden, to Yiṣḥaq b. Sassun, Cairo, about the coercion of Aden jews to convert to Islam. Aden 1198.",
+  "description_he": "מכתב שנשלח מעדן באוגוסט 1199. שולח המכתב ונמענו אינם ידועים, שכן רק החלק התחתון של המכתב זוהה. המכתב מתייחס לכפיית ההמרה לאסלאם של יהודי תימן, וקשור לפרשה הנזכרת במסמך נוסף מאותה תקופה. כן מופיע בו דיון בסחורות הודיות, ונראה כי המסחר המשיך להתנהל גם בתקופה זו של תהפוכות פוליטיות ודתיות.\n\nהמכתב מתאר את ההמרה הכפויה של יהודי עדן בימי שלטונו של אלמלכ אלמעז אסמאעיל, אשר הכריז על עצמו ככליף, ואשר היה אחיינו של צלאח אלדין (סלאדין). שולח המכתב כותב שיהודי הרמה התימנית כבר המירו את דתם, ולאחרונה גם מצמון (המזוהה עם מצמון בן דוד, ראש הקהילה היהודית בתימן) קיבל עליו את האסלאם.\n\nתיאור נוסף הקשור למסמך: מכתבו של מצמון בן דוד מעדן אל יצחק בן ססון בקהיר, בעניין כפיית יהודי עדן להמיר את דתם לאסלאם. עדן, 1198.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IV-00007"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5449",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-IV-00007"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "Aden",
+  "multifragment": "",
+  "next": "5451",
+  "origin": "Aden",
+  "pos": 3609,
+  "prev": "5448",
+  "princeton_url": "https://geniza.princeton.edu/documents/5449/",
+  "region": "",
+  "shelfmark": "Moss. IV,7",
+  "tags": [
+    "IB2, India"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "קהיר",
+    "עדן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

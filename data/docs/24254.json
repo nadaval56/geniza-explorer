@@ -1,1 +1,42 @@
-{"id":"24254","shelfmark":"T-S NS 226.116 + T-S NS 226.114","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL","collection":"CUL, T-S ; CUL, T-S","description":"Two small fragments from a business letter. Worth noticing the term [tashtarī] bi-mā qasama Alāhu wa-razaqa , literally ‘purchase for whatever price God apportions and grants as a livelihood (and send it). On this term see India Traders, p. 63-64. AA","tags":["ib-addenda"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/24254/","mentioned":"","description_he":"שני שברים קטנים ממכתב עסקי. ראוי לציון הביטוי 'רכישה בכל מחיר שאלוהים מקציב ומעניק כפרנסה.'","tags_he":["מכתב","יהודית-ערבית","פרנס"],"prev":"24245","next":"24257","pos":25468,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Two small fragments from a business letter. Worth noticing the term [tashtarī] bi-mā qasama Alāhu wa-razaqa , literally ‘purchase for whatever price God apportions and grants as a livelihood (and send it). On this term see India Traders, p. 63-64. AA",
+  "description_he": "שני שברים קטנים ממכתב עסקי. ראוי לציון הביטוי 'רכישה בכל מחיר שאלוהים מקציב ומעניק כפרנסה.'",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "24254",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "24257",
+  "origin": "",
+  "pos": 25468,
+  "prev": "24245",
+  "princeton_url": "https://geniza.princeton.edu/documents/24254/",
+  "region": "",
+  "shelfmark": "T-S NS 226.116 + T-S NS 226.114",
+  "tags": [
+    "ib-addenda"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

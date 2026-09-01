@@ -1,1 +1,50 @@
-{"id":"6499","shelfmark":"Bodl. MS heb. e 94/26","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"Aṭfīḥ","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter from an unidentified man, in Fustat, to his brother al-Musāfir al-Kattānī ('the traveling flax-merchant'), in Aṭfīḥ. The writer urges the addressee to come back soon. He reports that the ṣāḥib al-ʿasl (owner of the honey) arrived but the writer managed to get rid of him by making a vow and saying something about his brother. Regards from Ṣadaq b. al-Ṭāqī, Abū Naṣr, Faḍā'il, and Ḥasūn.","tags":["honey"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/e/ms-heb-e-94-26.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_158#MS_Heb_e_94-part18"],"princeton_url":"https://geniza.princeton.edu/documents/6499/","mentioned":"","description_he":"מכתב מגבר בפוסטאט לאחיו המסאפר אל-כתאני באטפיח; מדרבן לחזור; מדווח על פטירת בעל הדבש בשבועה","tags_he":["מכתב","יהודית-ערבית","פוסטאט","דבש"],"prev":"6498","next":"6500","pos":4218,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from an unidentified man, in Fustat, to his brother al-Musāfir al-Kattānī ('the traveling flax-merchant'), in Aṭfīḥ. The writer urges the addressee to come back soon. He reports that the ṣāḥib al-ʿasl (owner of the honey) arrived but the writer managed to get rid of him by making a vow and saying something about his brother. Regards from Ṣadaq b. al-Ṭāqī, Abū Naṣr, Faḍā'il, and Ḥasūn.",
+  "description_he": "מכתב מגבר בפוסטאט לאחיו המסאפר אל-כתאני באטפיח; מדרבן לחזור; מדווח על פטירת בעל הדבש בשבועה",
+  "destination": "Aṭfīḥ",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_158#MS_Heb_e_94-part18"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6499",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/e/ms-heb-e-94-26.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "6500",
+  "origin": "Fustat",
+  "pos": 4218,
+  "prev": "6498",
+  "princeton_url": "https://geniza.princeton.edu/documents/6499/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. e 94/26",
+  "tags": [
+    "honey"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "פוסטאט",
+    "פשתן",
+    "דבש"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

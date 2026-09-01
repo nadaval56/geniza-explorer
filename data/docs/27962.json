@@ -1,1 +1,47 @@
-{"id":"27962","shelfmark":"Yevr.-Arab. II 1423","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1655-01-24","date_original":"Sunday 16 Shevat 5415","date_standard":"1655-01-24","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Karaite debt acknowledgment and goldsmithing partnership agreement. Dated Sunday 16 Shevat 5415 AM (1655 CE.) Sulaymān b. Shemuʾel Levi Darwīsh acknowledges a debt of 200 niṣf fiḍḍa to Ṣemaḥ b. Efrayīm Berakha. The pair also establish a \"partnership contract between them in the goldsmith market selling silver, silver/gold thread, etc.\" (חצל בינהם עקד שרך פי סוק אלצאג'ה פי תסויק אלפצ'ה ואלקצב וג'יר דלך). The goldsmith market in Cairo was known locally by the same name. MCD.","tags":["Karaite"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27962/","mentioned":"","description_he":"אישור חוב קראי והסכם שותפות בצורפות. תאריך: א', ט\"ז שבט 5415 = 1655 לספירה. סולימאן ב' שמואל לוי דרוויש מאשר חוב של 200 נצף פידה לצמח ב' אפרים ברכה. בנוסף מקימים שותפות בשוק הצורפים.","tags_he":["מסמך משפטי","יהודית-ערבית","שותפות","כסף"],"prev":"27961","next":"27963","pos":28264,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1655-01-24",
+  "date_inferred": "",
+  "date_original": "Sunday 16 Shevat 5415",
+  "date_rationale": "",
+  "date_standard": "1655-01-24",
+  "description": "Karaite debt acknowledgment and goldsmithing partnership agreement. Dated Sunday 16 Shevat 5415 AM (1655 CE.) Sulaymān b. Shemuʾel Levi Darwīsh acknowledges a debt of 200 niṣf fiḍḍa to Ṣemaḥ b. Efrayīm Berakha. The pair also establish a \"partnership contract between them in the goldsmith market selling silver, silver/gold thread, etc.\" (חצל בינהם עקד שרך פי סוק אלצאג'ה פי תסויק אלפצ'ה ואלקצב וג'יר דלך). The goldsmith market in Cairo was known locally by the same name. MCD.",
+  "description_he": "אישור חוב קראי והסכם שותפות בצורפות. תאריך: א', ט\"ז שבט 5415 = 1655 לספירה. סולימאן ב' שמואל לוי דרוויש מאשר חוב של 200 נצף פידה לצמח ב' אפרים ברכה. בנוסף מקימים שותפות בשוק הצורפים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27962",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27963",
+  "origin": "",
+  "pos": 28264,
+  "prev": "27961",
+  "princeton_url": "https://geniza.princeton.edu/documents/27962/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1423",
+  "tags": [
+    "Karaite"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "שותפות",
+    "קהיר",
+    "זהב",
+    "קצב",
+    "כסף"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

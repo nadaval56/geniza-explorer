@@ -1,1 +1,46 @@
-{"id":"5353","shelfmark":"Moss. V,374","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1099-06-09","date_original":"17 Sivan 1410","date_standard":"1099-06-09","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"IB I, 20. Verso: The testimony of ʿArūs b. Yosef about Yosef al-Lebdi's partnership with his brother Shelomo al-Lebdi. Dated: 17 Sivan 1410 Sel. After Shelomo al-Lebdi drowned in the spring of 1099 on his way from Tunis to Spain, his son David had to secure his rights as heir. The first step was the testimony of Arus b. Yosef, a travel companion of Lebdi, who testified in the court of Fustat on the nature of partnership between the two Lebdi brothers. Signed by Yiṣḥaq b. Shemu'el, Avraham b. Shemaya'a, and Hillel b. Eli.","tags":["IB1, Partnership, India"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-MOSSERI-V-00374"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5353/","mentioned":"al-Andalus, al-Mahdiyya","description_he":"ספר הודו I,20: עדות ערוס בן יוסף על שותפות הלבדי אחים לאחר טביעת שלמה לבדי, 1099","tags_he":["מסמך משפטי","יהודית-ערבית","ספר הודו"],"prev":"5352","next":"5354","pos":3546,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "1099-06-09",
+  "date_inferred": "",
+  "date_original": "17 Sivan 1410",
+  "date_rationale": "",
+  "date_standard": "1099-06-09",
+  "description": "IB I, 20. Verso: The testimony of ʿArūs b. Yosef about Yosef al-Lebdi's partnership with his brother Shelomo al-Lebdi. Dated: 17 Sivan 1410 Sel. After Shelomo al-Lebdi drowned in the spring of 1099 on his way from Tunis to Spain, his son David had to secure his rights as heir. The first step was the testimony of Arus b. Yosef, a travel companion of Lebdi, who testified in the court of Fustat on the nature of partnership between the two Lebdi brothers. Signed by Yiṣḥaq b. Shemu'el, Avraham b. Shemaya'a, and Hillel b. Eli.",
+  "description_he": "ספר הודו I,20: עדות ערוס בן יוסף על שותפות הלבדי אחים לאחר טביעת שלמה לבדי, 1099",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5353",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-MOSSERI-V-00374"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "al-Andalus, al-Mahdiyya",
+  "multifragment": "",
+  "next": "5354",
+  "origin": "",
+  "pos": 3546,
+  "prev": "5352",
+  "princeton_url": "https://geniza.princeton.edu/documents/5353/",
+  "region": "",
+  "shelfmark": "Moss. V,374",
+  "tags": [
+    "IB1, Partnership, India"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "ספרד"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

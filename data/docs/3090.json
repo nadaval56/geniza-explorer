@@ -1,1 +1,49 @@
-{"id":"3090","shelfmark":"T-S 12.1","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: Testimony by Nissim b. Shemarya that Sason b. Natan had deposited with him seventeen counterfeit nizārī dinars. The counterfeiter was the mutawallī al-sikka, or the ṣāḥib dār al-ḍarb. When Nissim tried to exchange the dinars, the deceit was discovered and he was in mortal danger. The judge Yaʾir b. Avraham quelled the matter but the money was lost. Dating: ca. 1090 CE. (Information from Gil and from Goitein's index cards.) Verso contains drafts/formularies of multiple different Judaeo-Arabic legal documents (including one dated Tishrei 1393 Seleucid = 1081 CE concerning a marriage or divorce case between Avraham b. Yeshuʿa ha-Kohen and Rayyisa bt. Yefet) as well as an earlier Arabic state document (see separate record). Also a letter or legal document resembling a letter with the name Shelomo b. Kalev, Yosef ha-Kohen, and terms of address for a dignitary of the yeshiva (Mevasser?).","tags":["deposit, counterfeit coins, mint"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-00012-00001"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/3090/","mentioned":"Alexandria","description_he":"recto: עדות מאת נסים בן שמריה ולפיה ססון בן נתן הפקיד אצלו שבעה־עשר דינרים נזאריים מזויפים. המזייף היה המֻתַוַלִי אלסִכַּה (הממונה על המטבעה) או צאחב דאר אלצ'רב (בעל בית המטבעה). כאשר ניסה נסים להחליף את הדינרים נחשפה התרמית, וחייו עמדו בסכנה ממשית. הדיין יאיר בן אברהם השקיט את העניין, אך הכסף אבד. תיארוך: בערך 1090 לספירה. (המידע על פי גיל וכרטיסיות גויטיין.)\n\nverso: כולל טיוטות ונוסחאות של מספר מסמכים משפטיים שונים בערבית־יהודית, ובהם אחד המתוארך לתשרי שנת 1393 למניין השטרות (1081 לספירה) הנוגע לעניין נישואין או גירושין בין אברהם בן ישועה הכהן לבין רַיִיסַה בת יפת. כמו כן מופיע במסמך תעודה מדינית קדומה יותר בערבית (ראו רישום נפרד), ובנוסף מכתב או מסמך משפטי הנראה כמכתב, ובו השמות שלמה בן כלב ויוסף הכהן וכן ביטויי פנייה אל אחד מנכבדי הישיבה (מבשר?).","tags_he":["מסמך משפטי","יהודית-ערבית","נישואין","גירושין","ישיבה וגאונות","כלב","משי","דיין"],"prev":"3089","next":"3091","pos":2139,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: Testimony by Nissim b. Shemarya that Sason b. Natan had deposited with him seventeen counterfeit nizārī dinars. The counterfeiter was the mutawallī al-sikka, or the ṣāḥib dār al-ḍarb. When Nissim tried to exchange the dinars, the deceit was discovered and he was in mortal danger. The judge Yaʾir b. Avraham quelled the matter but the money was lost. Dating: ca. 1090 CE. (Information from Gil and from Goitein's index cards.) Verso contains drafts/formularies of multiple different Judaeo-Arabic legal documents (including one dated Tishrei 1393 Seleucid = 1081 CE concerning a marriage or divorce case between Avraham b. Yeshuʿa ha-Kohen and Rayyisa bt. Yefet) as well as an earlier Arabic state document (see separate record). Also a letter or legal document resembling a letter with the name Shelomo b. Kalev, Yosef ha-Kohen, and terms of address for a dignitary of the yeshiva (Mevasser?).",
+  "description_he": "recto: עדות מאת נסים בן שמריה ולפיה ססון בן נתן הפקיד אצלו שבעה־עשר דינרים נזאריים מזויפים. המזייף היה המֻתַוַלִי אלסִכַּה (הממונה על המטבעה) או צאחב דאר אלצ'רב (בעל בית המטבעה). כאשר ניסה נסים להחליף את הדינרים נחשפה התרמית, וחייו עמדו בסכנה ממשית. הדיין יאיר בן אברהם השקיט את העניין, אך הכסף אבד. תיארוך: בערך 1090 לספירה. (המידע על פי גיל וכרטיסיות גויטיין.)\n\nverso: כולל טיוטות ונוסחאות של מספר מסמכים משפטיים שונים בערבית־יהודית, ובהם אחד המתוארך לתשרי שנת 1393 למניין השטרות (1081 לספירה) הנוגע לעניין נישואין או גירושין בין אברהם בן ישועה הכהן לבין רַיִיסַה בת יפת. כמו כן מופיע במסמך תעודה מדינית קדומה יותר בערבית (ראו רישום נפרד), ובנוסף מכתב או מסמך משפטי הנראה כמכתב, ובו השמות שלמה בן כלב ויוסף הכהן וכן ביטויי פנייה אל אחד מנכבדי הישיבה (מבשר?).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "3090",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-00012-00001"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Alexandria",
+  "multifragment": "",
+  "next": "3091",
+  "origin": "",
+  "pos": 2139,
+  "prev": "3089",
+  "princeton_url": "https://geniza.princeton.edu/documents/3090/",
+  "region": "",
+  "shelfmark": "T-S 12.1",
+  "tags": [
+    "deposit, counterfeit coins, mint"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "נישואין",
+    "גירושין",
+    "ישיבה וגאונות",
+    "כלב",
+    "דיין"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

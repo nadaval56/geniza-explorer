@@ -1,1 +1,49 @@
-{"id":"9186","shelfmark":"T-S NS J44","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Aden","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Abū Zikrī Kohen, in Aden, probably to Ibn Yijū, in India. Fragment, preserving the margins only. Mentions the customs tax (maks), various items that are being sent, and the news of Aden (peaceful now, but there was recent military activity). Information from Goitein's transcription and notes, see attachments.","tags":["India, IB5"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00044"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00044"],"princeton_url":"https://geniza.princeton.edu/documents/9186/","mentioned":"","description_he":"מכתב מאבו זכרי כהן, עדן, כנראה לאבן יג'ו בהודו; שבר, שמורים רק השוליים; מזכיר מכס, פריטים שנשלחו וחדשות עדן","tags_he":["מכתב","יהודית-ערבית","מכס","הודו"],"prev":"9185","next":"9187","pos":5996,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Abū Zikrī Kohen, in Aden, probably to Ibn Yijū, in India. Fragment, preserving the margins only. Mentions the customs tax (maks), various items that are being sent, and the news of Aden (peaceful now, but there was recent military activity). Information from Goitein's transcription and notes, see attachments.",
+  "description_he": "מכתב מאבו זכרי כהן, עדן, כנראה לאבן יג'ו בהודו; שבר, שמורים רק השוליים; מזכיר מכס, פריטים שנשלחו וחדשות עדן",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00044"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9186",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00044"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9187",
+  "origin": "Aden",
+  "pos": 5996,
+  "prev": "9185",
+  "princeton_url": "https://geniza.princeton.edu/documents/9186/",
+  "region": "",
+  "shelfmark": "T-S NS J44",
+  "tags": [
+    "India, IB5"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מכס",
+    "עדן",
+    "הודו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

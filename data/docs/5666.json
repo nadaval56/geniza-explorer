@@ -1,1 +1,44 @@
-{"id":"5666","shelfmark":"DK 184","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Baghdād","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"MTA","library_raw":"MTA","collection":"MTA","description":"DK 184a: Copy of a letter from Sharira b. Hananya, while he was a judge (Av Beit Din) in the yeshiva of Pumbedita, to the communities in Spain and North Africa. Dating of the original letter: ca. 962. The writer asks for their support, while in the Yeshiva there are disagreements about their Gaon – Nehemya b. Kohen Sedek. (Gil, Kingdom, vol. 2, Doc. #19) VMR","tags":["10th c, communal"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5666/","mentioned":"al-Andalus","description_he":"העתק מכתב משרירא בן חנניה, שהיה דיין בישיבת פומבדיתא, לקהילות בספרד ובצפון אפריקה, כ-962, על מחלוקת בישיבה","tags_he":["מכתב","עברית","ישיבה וגאונות","ספרד","דיין"],"prev":"5665","next":"5668","pos":20965,"total":35937}
+{
+  "collection": "MTA",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "DK 184a: Copy of a letter from Sharira b. Hananya, while he was a judge (Av Beit Din) in the yeshiva of Pumbedita, to the communities in Spain and North Africa. Dating of the original letter: ca. 962. The writer asks for their support, while in the Yeshiva there are disagreements about their Gaon – Nehemya b. Kohen Sedek. (Gil, Kingdom, vol. 2, Doc. #19) VMR",
+  "description_he": "העתק מכתב משרירא בן חנניה, שהיה דיין בישיבת פומבדיתא, לקהילות בספרד ובצפון אפריקה, כ-962, על מחלוקת בישיבה",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5666",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "MTA",
+  "library_raw": "MTA",
+  "mentioned": "al-Andalus",
+  "multifragment": "",
+  "next": "5668",
+  "origin": "Baghdād",
+  "pos": 20965,
+  "prev": "5665",
+  "princeton_url": "https://geniza.princeton.edu/documents/5666/",
+  "region": "",
+  "shelfmark": "DK 184",
+  "tags": [
+    "10th c, communal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ישיבה וגאונות",
+    "ספרד"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

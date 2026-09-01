@@ -1,1 +1,51 @@
-{"id":"9443","shelfmark":"T-S AS 156.237 + T-S AS 156.238","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL","collection":"CUL, T-S ; CUL, T-S","description":"IB VII, 70. Letter from ʿAllān b. Ḥassūn, Aden, after his return from a difficult voyage to the southern coast of India, to ʿArūs b. Yosef. Before its second arrival at Kūlam, the ship evidently had two nākhudās on board, 'Alī Nāwak, who disembarked at Fāknūr, and a second nākhudā who subsequently died at sea, and who had evidently been the one responsible for navigation. After his death, the ship remained without a \"head\" and without charts (as well as something else, which cannot be deciphered due to a lacuna). The plan was to go back via Aden, but some kind of social unrest meant that everyone in the town where they were fled, and 'Alī Nāwak wanted to flee as well, presumably without taking them along. But the writer prevented this from happening by telling someone in a position to prevent it (details obscured by a lacuna) and they secretly loaded the ship in the middle of the night (this assumes that ʿAlī Nāwak was sleeping on the ship) and all fled together to Fāknūr. 'Alī Nāwak disembarked and remained there and everyone else wanted to continue on to Kūlam — but then the captain had a stroke and died. They threw his body overboard (as one does at sea — he had been ill while in town) and then somehow made it to Kulām with neither charts nor a captain. Then a captain (kārdār) arrived and took matters into hand and put 'Alī Nāwak in his place. Interestingly, this new captain and ʿAlī Nāwak sign documents that Goitein interprets as \"confirming their obligations\" but might merely be proper bills of lading, a feature of these voyages known from other documents. (Information from Goitein and Friedman, India Traders, pp. 127–28) Full translation in Goitein, \"Portrait of a Medieval India Trader: Three Letters from the Cairo Geniza,\" BSOAS 1987, 455–56, 459–63. MR","tags":["IB7, India"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00156-00237","https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00156-00238"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00156-00237","https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00156-00238"],"princeton_url":"https://geniza.princeton.edu/documents/9443/","mentioned":"Aden, Fāknūr, Kūlam, Sindābūr","description_he":"מכתב מאת עלאן בן חסון, שנשלח מעדן לאחר חזרתו ממסע קשה לחוף הדרומי של הודו, ונמען לערוס בן יוסף. לפני הגעתה השנייה של הספינה לכולם, היו על סיפונה ככל הנראה שני נאח'ודאות (קברניטים): עלי נאוּכּ, שירד בפאכּנור, וקברניט שני שמת לאחר מכן בלב ים, והוא זה שהיה אחראי על הניווט. לאחר מותו נותרה הספינה ללא \"ראש\" וללא מפות ניווט (וכן ללא דבר נוסף שלא ניתן לפענחו בשל פגם בכתב היד). התכנית הייתה לחזור דרך עדן, אך מהומה חברתית כלשהי גרמה לכך שכל תושבי העיר שבה שהו ברחו, וגם עלי נאוּכּ ביקש להימלט — ככל הנראה מבלי לקחת אותם עמו. הכותב מנע זאת בכך שדיווח על העניין למישהו בעל סמכות לעצור את הדבר (הפרטים מטושטשים בשל פגם בכתב היד), ובאישון לילה העמיסו את הספינה בחשאי (ההנחה היא שעלי נאוּכּ ישן בספינה באותה שעה), וכולם נמלטו יחד לפאכּנור. שם ירד עלי נאוּכּ ונשאר במקום, וכל היתר רצו להמשיך לכולם — אך אז לקה הקברניט בשבץ ומת. גופתו הושלכה לים (כפי שנהוג לעשות בלב ים — הוא חלה כבר בעודו בעיר), ואיכשהו הצליחו להגיע לכולם ללא מפות וללא קברניט. לאחר מכן הגיע קברניט (כּארדאר) שנטל את המושכות לידיו והציב את עלי נאוּכּ במקום הקברניט הקודם. מעניין לציין שהקברניט החדש ועלי נאוּכּ חתמו על מסמכים שגויטיין פירש כ\"אישור התחייבויותיהם\", אך ייתכן שמדובר פשוט בשטרי מטען תקינים — תופעה המוכרת ממסמכים נוספים הקשורים למסעות מסוג זה.","tags_he":["מכתב","יהודית-ערבית","ספינה","עדן","משי"],"prev":"9436","next":"9446","pos":6093,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "IB VII, 70. Letter from ʿAllān b. Ḥassūn, Aden, after his return from a difficult voyage to the southern coast of India, to ʿArūs b. Yosef. Before its second arrival at Kūlam, the ship evidently had two nākhudās on board, 'Alī Nāwak, who disembarked at Fāknūr, and a second nākhudā who subsequently died at sea, and who had evidently been the one responsible for navigation. After his death, the ship remained without a \"head\" and without charts (as well as something else, which cannot be deciphered due to a lacuna). The plan was to go back via Aden, but some kind of social unrest meant that everyone in the town where they were fled, and 'Alī Nāwak wanted to flee as well, presumably without taking them along. But the writer prevented this from happening by telling someone in a position to prevent it (details obscured by a lacuna) and they secretly loaded the ship in the middle of the night (this assumes that ʿAlī Nāwak was sleeping on the ship) and all fled together to Fāknūr. 'Alī Nāwak disembarked and remained there and everyone else wanted to continue on to Kūlam — but then the captain had a stroke and died. They threw his body overboard (as one does at sea — he had been ill while in town) and then somehow made it to Kulām with neither charts nor a captain. Then a captain (kārdār) arrived and took matters into hand and put 'Alī Nāwak in his place. Interestingly, this new captain and ʿAlī Nāwak sign documents that Goitein interprets as \"confirming their obligations\" but might merely be proper bills of lading, a feature of these voyages known from other documents. (Information from Goitein and Friedman, India Traders, pp. 127–28) Full translation in Goitein, \"Portrait of a Medieval India Trader: Three Letters from the Cairo Geniza,\" BSOAS 1987, 455–56, 459–63. MR",
+  "description_he": "מכתב מאת עלאן בן חסון, שנשלח מעדן לאחר חזרתו ממסע קשה לחוף הדרומי של הודו, ונמען לערוס בן יוסף. לפני הגעתה השנייה של הספינה לכולם, היו על סיפונה ככל הנראה שני נאח'ודאות (קברניטים): עלי נאוּכּ, שירד בפאכּנור, וקברניט שני שמת לאחר מכן בלב ים, והוא זה שהיה אחראי על הניווט. לאחר מותו נותרה הספינה ללא \"ראש\" וללא מפות ניווט (וכן ללא דבר נוסף שלא ניתן לפענחו בשל פגם בכתב היד). התכנית הייתה לחזור דרך עדן, אך מהומה חברתית כלשהי גרמה לכך שכל תושבי העיר שבה שהו ברחו, וגם עלי נאוּכּ ביקש להימלט — ככל הנראה מבלי לקחת אותם עמו. הכותב מנע זאת בכך שדיווח על העניין למישהו בעל סמכות לעצור את הדבר (הפרטים מטושטשים בשל פגם בכתב היד), ובאישון לילה העמיסו את הספינה בחשאי (ההנחה היא שעלי נאוּכּ ישן בספינה באותה שעה), וכולם נמלטו יחד לפאכּנור. שם ירד עלי נאוּכּ ונשאר במקום, וכל היתר רצו להמשיך לכולם — אך אז לקה הקברניט בשבץ ומת. גופתו הושלכה לים (כפי שנהוג לעשות בלב ים — הוא חלה כבר בעודו בעיר), ואיכשהו הצליחו להגיע לכולם ללא מפות וללא קברניט. לאחר מכן הגיע קברניט (כּארדאר) שנטל את המושכות לידיו והציב את עלי נאוּכּ במקום הקברניט הקודם. מעניין לציין שהקברניט החדש ועלי נאוּכּ חתמו על מסמכים שגויטיין פירש כ\"אישור התחייבויותיהם\", אך ייתכן שמדובר פשוט בשטרי מטען תקינים — תופעה המוכרת ממסמכים נוספים הקשורים למסעות מסוג זה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00156-00237",
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00156-00238"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9443",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00156-00237",
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00156-00238"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL",
+  "mentioned": "Aden, Fāknūr, Kūlam, Sindābūr",
+  "multifragment": "",
+  "next": "9446",
+  "origin": "",
+  "pos": 6093,
+  "prev": "9436",
+  "princeton_url": "https://geniza.princeton.edu/documents/9443/",
+  "region": "",
+  "shelfmark": "T-S AS 156.237 + T-S AS 156.238",
+  "tags": [
+    "IB7, India"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ספינה",
+    "עדן",
+    "הודו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

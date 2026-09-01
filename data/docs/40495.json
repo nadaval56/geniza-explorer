@@ -1,1 +1,44 @@
-{"id":"40495","shelfmark":"ENA 3191.12","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Fragment of a Fatimid fiscal report in Arabic script (اطلق سلامة فخر ال… وال… على ال…. السلطانية...). At the top there is an endorsement with instructions for the reported payment to be registered in the Dīwān al-Nafaqāt (يثبت في ديوان النفقات بعد موافقته ان شا الله). Requires further examination.","tags":["cmp"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/88208d07-bf43-4294-b285-897242713bea/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/40495/","mentioned":"","description_he":"קטע מדוח פיסקלי פאטמי בכתב ערבי; בראש אישור עם הוראות לרשם את התשלום ב'דיוון אל-נפקאת'","tags_he":["מסמך מדינה","ערבית","פאטמי"],"prev":"40494","next":"40496","pos":20235,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a Fatimid fiscal report in Arabic script (اطلق سلامة فخر ال… وال… على ال…. السلطانية...). At the top there is an endorsement with instructions for the reported payment to be registered in the Dīwān al-Nafaqāt (يثبت في ديوان النفقات بعد موافقته ان شا الله). Requires further examination.",
+  "description_he": "קטע מדוח פיסקלי פאטמי בכתב ערבי; בראש אישור עם הוראות לרשם את התשלום ב'דיוון אל-נפקאת'",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "40495",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/88208d07-bf43-4294-b285-897242713bea/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "40496",
+  "origin": "",
+  "pos": 20235,
+  "prev": "40494",
+  "princeton_url": "https://geniza.princeton.edu/documents/40495/",
+  "region": "",
+  "shelfmark": "ENA 3191.12",
+  "tags": [
+    "cmp"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

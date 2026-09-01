@@ -1,1 +1,47 @@
-{"id":"9209","shelfmark":"T-S 8Ja1","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Qūṣ","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from an unknown writer in Qūṣ to an unknown addressee in Fustat. In Judaeo-Arabic. Dating: 12th century. The writer reports that the children and their mother arrived safely in Qūṣ after a terrible Nile voyage that lasted 45 days. The writer sends various instructions to be executed in Fustat. He mentions numerous people including Abū Naṣr, Abū Surūr b. al-Amʿaṭ, Abū l-Makārim Ibn Nufayʿ (whose son also arrived safely in Qūṣ), Abū l-Munajjā, and Abū ʿAlī. Information from Goitein's attached transcription.\n\nSame sender as ENA NS I.33 (PGPID 12398).","tags":["India, IB6"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-00008-JA-00001"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-JA-00001/1"],"princeton_url":"https://geniza.princeton.edu/documents/9209/","mentioned":"","description_he":"מכתב מכותב לא ידוע בקוס לנמען לא ידוע בפוסטאט; ביהודית-ערבית; המאה ה-12; הילדים ואמם הגיעו לקוס לאחר מסע נילי נורא שנמשך 45 יום; הוראות שונות לביצוע בפוסטאט","tags_he":["מכתב","יהודית-ערבית","פוסטאט","קוס"],"prev":"9206","next":"9211","pos":6010,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from an unknown writer in Qūṣ to an unknown addressee in Fustat. In Judaeo-Arabic. Dating: 12th century. The writer reports that the children and their mother arrived safely in Qūṣ after a terrible Nile voyage that lasted 45 days. The writer sends various instructions to be executed in Fustat. He mentions numerous people including Abū Naṣr, Abū Surūr b. al-Amʿaṭ, Abū l-Makārim Ibn Nufayʿ (whose son also arrived safely in Qūṣ), Abū l-Munajjā, and Abū ʿAlī. Information from Goitein's attached transcription.\n\nSame sender as ENA NS I.33 (PGPID 12398).",
+  "description_he": "מכתב מכותב לא ידוע בקוס לנמען לא ידוע בפוסטאט; ביהודית-ערבית; המאה ה-12; הילדים ואמם הגיעו לקוס לאחר מסע נילי נורא שנמשך 45 יום; הוראות שונות לביצוע בפוסטאט",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-JA-00001/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9209",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-00008-JA-00001"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9211",
+  "origin": "Qūṣ",
+  "pos": 6010,
+  "prev": "9206",
+  "princeton_url": "https://geniza.princeton.edu/documents/9209/",
+  "region": "",
+  "shelfmark": "T-S 8Ja1",
+  "tags": [
+    "India, IB6"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

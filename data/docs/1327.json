@@ -1,1 +1,46 @@
-{"id":"1327","shelfmark":"T-S K15.100","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"b","date":"1199","date_original":"","date_standard":"1199","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Account of building operations ca. 1199. An accounting of repairs in the tabaqa of the compound called shirkat al-Dayyan R. Menashshe. The accounting, as prederved, covers a period of four days, Thursday, Friday, Monday, Tuesday, and refers mainly to the preparation of mortar, and carpentry work. It is written on a leaf of a notebook, of which two fragments are preserved, this one being the smaller one. (Information from Gil, Documents, pp.376 #100)","tags":["12th c, waqf, communal, account, qodesh"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00015-00100"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-K-00015-00100"],"princeton_url":"https://geniza.princeton.edu/documents/1327/","mentioned":"","description_he":"חשבון עבודות בנייה, כ-1199, במתחם 'שרכת הדיין ר' מנשה'. מכסה ארבעה ימים: הכנת טיח ועבודות נגרות.","tags_he":["חשבונות","יהודית-ערבית","מכס","דיין"],"prev":"1326","next":"1328","pos":688,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1199",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "1199",
+  "description": "Account of building operations ca. 1199. An accounting of repairs in the tabaqa of the compound called shirkat al-Dayyan R. Menashshe. The accounting, as prederved, covers a period of four days, Thursday, Friday, Monday, Tuesday, and refers mainly to the preparation of mortar, and carpentry work. It is written on a leaf of a notebook, of which two fragments are preserved, this one being the smaller one. (Information from Gil, Documents, pp.376 #100)",
+  "description_he": "חשבון עבודות בנייה, כ-1199, במתחם 'שרכת הדיין ר' מנשה'. מכסה ארבעה ימים: הכנת טיח ועבודות נגרות.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00015-00100"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1327",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00015-00100"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1328",
+  "origin": "",
+  "pos": 688,
+  "prev": "1326",
+  "princeton_url": "https://geniza.princeton.edu/documents/1327/",
+  "region": "b",
+  "shelfmark": "T-S K15.100",
+  "tags": [
+    "12th c, waqf, communal, account, qodesh"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

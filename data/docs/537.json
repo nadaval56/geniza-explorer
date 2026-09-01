@@ -1,1 +1,52 @@
-{"id":"537","shelfmark":"Bodl. MS heb. c 28/16","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"Judaeo-Arabic","lang2_he":"יהודית-ערבית","lang_note":"","origin":"","destination":"","region":"","date":"1141-10-04/1141-11-01","date_original":"Ḥeshvan 1453","date_standard":"1141-10-04/1141-11-01","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter from Natan b. Shemuel he-Ḥaver, in Fustat, to Petahya b. ʿOvadya ha-Kohen, in Damascus. Almost entirely in rhymed Hebrew with one sentence in Judaeo-Arabic in the margin of verso. Dated: Ḥeshvan 1453 Seleucid, which is October/November 1141 CE. Natan complains that his junior school friend has not written to him for a long time. He also conveys his greetings to Petahya's family. Natan's sons Mevorakh, Seʿadya, and Yehosef send their greetings. Natan concludes with a request for pens.\n\nGoitein summarizes this document as follows (Med Soc V, p. 294): \"Judge Natan b. Shemuel he-ḥaver (Med. Soc, II, 513, sec. 18) served as secretary of the Damascus branch of the Jerusalem yeshiva, but accompanied Maṣliaḥ Gaon, when he opened a Cairene branch in 1127. In a letter from Fustat, dated October/November 1141, Natan complained bitterly about the addressee, Petahyahu ha-Kohen, a close companion of his youth, and two other friends in Damascus, from whom he had not received letters for years. True, in 1141 the Crusaders' kingdom separated Damascus from Egypt. But we know that Jews and Muslims were permitted to travel through the Christian territory, and our letter reports the arrival of a dignitary from Damascus carrying an eloquent epistle to the Egyptian Nagid written by Natan's friend Petahyahu. Natan does not complain about the Crusaders. He accuses Time: 'I complain about Time, the perfidious, the faithless, which disregards the claims of brotherhood and impedes its growing; it weakens and emaciates the love of friends. This is its character from its very beginning, incessantly urging separation, the treacherous robber! . . . It changed your relationship with me, you, my friend and beloved, whom I have reared on my knees, until I made you my equal.'\"","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/c/ms-heb-c-28-16.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part16"],"princeton_url":"https://geniza.princeton.edu/documents/537/","mentioned":"","description_he":"מכתב מנתן בן שמואל החבר בפוסטאט אל פתחיה בן עובדיה הכהן בדמשק. הטקסט כתוב כמעט כולו בעברית מחורזת, למעט משפט אחד בערבית-יהודית בשולי צד ורסו. המכתב מתוארך לחשוון ד'תנ\"ג למניין השטרות, הוא אוקטובר/נובמבר 1141 לספירה. נתן מתלונן על כך שחברו מימי הנעורים לא כתב אליו זה זמן רב. הוא גם מוסר את ברכותיו למשפחתו של פתחיה, ובניו של נתן — מבורך, סעדיה ויהוסף — שולחים אף הם את דרישות שלומם. בסיום המכתב מבקש נתן עטים.\n\nלפי סיכומו של גויטיין, הדיין נתן בן שמואל החבר שימש כמזכיר הסניף הדמשקאי של ישיבת ירושלים, אך נלווה אל מצליח גאון כשפתח את הסניף הקהירי ב-1127. במכתבו מפוסטאט, מאוקטובר/נובמבר 1141, התלונן נתן במרירות על הנמען, פתחיהו הכהן, חבר קרוב מימי נעוריו, וכן על שני חברים נוספים בדמשק, שמהם לא קיבל מכתבים שנים רבות. אמנם בשנת 1141 הפרידה ממלכת הצלבנים בין דמשק למצרים, אך ידוע שיהודים ומוסלמים הורשו לעבור דרך הטריטוריה הנוצרית, והמכתב שלפנינו אף מדווח על הגעתו של אישיוּת נכבדה מדמשק שנשאה איגרת רהוטה לנגיד המצרי שכתב חברו של נתן, פתחיהו. נתן אינו מתלונן על הצלבנים, אלא מאשים את הזמן: \"אקבל על הזמן הבוגד, החסר נאמנות, המתעלם מתביעות האחווה ומעכב את צמיחתה; מחליש ומדלל את אהבת הרֵעים. כך טבעו מראשיתו, מסית בלי הרף לפירוד, השודד הבוגדני!... שינה את יחסך אלי, אתה ידידי ואהובי, אשר גידלתיך על ברכיי, עד שעשיתיך שווה לי.\"","tags_he":["מכתב","עברית","ישיבה וגאונות","מאגיה","פוסטאט","קהיר","ירושלים","דמשק","צלבני","דיין","נתן בן שמואל החבר"],"prev":"536","next":"543","pos":38,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "1141-10-04/1141-11-01",
+  "date_inferred": "",
+  "date_original": "Ḥeshvan 1453",
+  "date_rationale": "",
+  "date_standard": "1141-10-04/1141-11-01",
+  "description": "Letter from Natan b. Shemuel he-Ḥaver, in Fustat, to Petahya b. ʿOvadya ha-Kohen, in Damascus. Almost entirely in rhymed Hebrew with one sentence in Judaeo-Arabic in the margin of verso. Dated: Ḥeshvan 1453 Seleucid, which is October/November 1141 CE. Natan complains that his junior school friend has not written to him for a long time. He also conveys his greetings to Petahya's family. Natan's sons Mevorakh, Seʿadya, and Yehosef send their greetings. Natan concludes with a request for pens.\n\nGoitein summarizes this document as follows (Med Soc V, p. 294): \"Judge Natan b. Shemuel he-ḥaver (Med. Soc, II, 513, sec. 18) served as secretary of the Damascus branch of the Jerusalem yeshiva, but accompanied Maṣliaḥ Gaon, when he opened a Cairene branch in 1127. In a letter from Fustat, dated October/November 1141, Natan complained bitterly about the addressee, Petahyahu ha-Kohen, a close companion of his youth, and two other friends in Damascus, from whom he had not received letters for years. True, in 1141 the Crusaders' kingdom separated Damascus from Egypt. But we know that Jews and Muslims were permitted to travel through the Christian territory, and our letter reports the arrival of a dignitary from Damascus carrying an eloquent epistle to the Egyptian Nagid written by Natan's friend Petahyahu. Natan does not complain about the Crusaders. He accuses Time: 'I complain about Time, the perfidious, the faithless, which disregards the claims of brotherhood and impedes its growing; it weakens and emaciates the love of friends. This is its character from its very beginning, incessantly urging separation, the treacherous robber! . . . It changed your relationship with me, you, my friend and beloved, whom I have reared on my knees, until I made you my equal.'\"",
+  "description_he": "מכתב מנתן בן שמואל החבר בפוסטאט אל פתחיה בן עובדיה הכהן בדמשק. הטקסט כתוב כמעט כולו בעברית מחורזת, למעט משפט אחד בערבית-יהודית בשולי צד ורסו. המכתב מתוארך לחשוון ד'תנ\"ג למניין השטרות, הוא אוקטובר/נובמבר 1141 לספירה. נתן מתלונן על כך שחברו מימי הנעורים לא כתב אליו זה זמן רב. הוא גם מוסר את ברכותיו למשפחתו של פתחיה, ובניו של נתן — מבורך, סעדיה ויהוסף — שולחים אף הם את דרישות שלומם. בסיום המכתב מבקש נתן עטים.\n\nלפי סיכומו של גויטיין, הדיין נתן בן שמואל החבר שימש כמזכיר הסניף הדמשקאי של ישיבת ירושלים, אך נלווה אל מצליח גאון כשפתח את הסניף הקהירי ב-1127. במכתבו מפוסטאט, מאוקטובר/נובמבר 1141, התלונן נתן במרירות על הנמען, פתחיהו הכהן, חבר קרוב מימי נעוריו, וכן על שני חברים נוספים בדמשק, שמהם לא קיבל מכתבים שנים רבות. אמנם בשנת 1141 הפרידה ממלכת הצלבנים בין דמשק למצרים, אך ידוע שיהודים ומוסלמים הורשו לעבור דרך הטריטוריה הנוצרית, והמכתב שלפנינו אף מדווח על הגעתו של אישיוּת נכבדה מדמשק שנשאה איגרת רהוטה לנגיד המצרי שכתב חברו של נתן, פתחיהו. נתן אינו מתלונן על הצלבנים, אלא מאשים את הזמן: \"אקבל על הזמן הבוגד, החסר נאמנות, המתעלם מתביעות האחווה ומעכב את צמיחתה; מחליש ומדלל את אהבת הרֵעים. כך טבעו מראשיתו, מסית בלי הרף לפירוד, השודד הבוגדני!... שינה את יחסך אלי, אתה ידידי ואהובי, אשר גידלתיך על ברכיי, עד שעשיתיך שווה לי.\"",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part16"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "537",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/c/ms-heb-c-28-16.json"
+  ],
+  "lang2_en": "Judaeo-Arabic",
+  "lang2_he": "יהודית-ערבית",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "543",
+  "origin": "",
+  "pos": 38,
+  "prev": "536",
+  "princeton_url": "https://geniza.princeton.edu/documents/537/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. c 28/16",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "קהיר",
+    "ירושלים",
+    "דמשק",
+    "צלבני",
+    "דיין",
+    "נתן בן שמואל החבר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

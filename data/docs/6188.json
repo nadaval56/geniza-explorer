@@ -1,1 +1,43 @@
-{"id":"6188","shelfmark":"BL OR 5524.5","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic","lang_he":"ארמית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1162-08-02","date_original":"Thursday, 20 Av 1473","date_standard":"1162-08-02","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Geṭ (bill of divorce). Location: Fustat. Dated: Thursday, 20 Av 1473 Seleucid = 2 August 1162 CE. Husband: Thābit b. Abū l-Faraj. Wife: Sitt al-Nās bt. Abū l-Ḥusayn. Written and signed by Mevorakh b. Natan he-Ḥaver (who repeated the date -- חדש אב אתעג -- in tiny letters around his name). Also signed by Yaʿaqov b. Yosef ha-Kohen. Verso: attestation that the get was delivered, same witnesses. (Information in part from Goitein's note card.)","tags":["divorce"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/6188/","mentioned":"","description_he":"גט גירושין, פוסטאט, 2 באוגוסט 1162, בעל: ת'אבת בן אבו אל-פרג', אישה: סת אל-נאס בת אבו אל-חוסיין","tags_he":["מסמך משפטי","ארמית","גירושין","פוסטאט"],"prev":"6187","next":"6189","pos":21054,"total":35937}
+{
+  "collection": "BL",
+  "date": "1162-08-02",
+  "date_inferred": "",
+  "date_original": "Thursday, 20 Av 1473",
+  "date_rationale": "",
+  "date_standard": "1162-08-02",
+  "description": "Geṭ (bill of divorce). Location: Fustat. Dated: Thursday, 20 Av 1473 Seleucid = 2 August 1162 CE. Husband: Thābit b. Abū l-Faraj. Wife: Sitt al-Nās bt. Abū l-Ḥusayn. Written and signed by Mevorakh b. Natan he-Ḥaver (who repeated the date -- חדש אב אתעג -- in tiny letters around his name). Also signed by Yaʿaqov b. Yosef ha-Kohen. Verso: attestation that the get was delivered, same witnesses. (Information in part from Goitein's note card.)",
+  "description_he": "גט גירושין, פוסטאט, 2 באוגוסט 1162, בעל: ת'אבת בן אבו אל-פרג', אישה: סת אל-נאס בת אבו אל-חוסיין",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6188",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic",
+  "lang_he": "ארמית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "6189",
+  "origin": "",
+  "pos": 21054,
+  "prev": "6187",
+  "princeton_url": "https://geniza.princeton.edu/documents/6188/",
+  "region": "",
+  "shelfmark": "BL OR 5524.5",
+  "tags": [
+    "divorce"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ארמית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

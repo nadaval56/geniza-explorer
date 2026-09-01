@@ -1,1 +1,42 @@
-{"id":"12352","shelfmark":"ENA 2808.5a","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter in Judaeo-Arabic. Instructing the addressee to send a ream (dast) of 25 pieces of paper, and also to sell some quires (dafātir) on behalf of the sender. The document concludes with the motto yeshuʿa (\"salvation\") at lower left.","tags":["dast, paper"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12352/","mentioned":"","description_he":"מכתב ביהודית-ערבית. מורה לנמען לשלוח ריזמה (דסת) של 25 דפי נייר, וגם למכור כמה דפתרים עבור השולח. המסמך מסתיים במוטו 'ישועה' בפינה הימנית התחתונה.","tags_he":["מכתב","יהודית-ערבית","נישואין"],"prev":"12345","next":"12373","pos":21809,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter in Judaeo-Arabic. Instructing the addressee to send a ream (dast) of 25 pieces of paper, and also to sell some quires (dafātir) on behalf of the sender. The document concludes with the motto yeshuʿa (\"salvation\") at lower left.",
+  "description_he": "מכתב ביהודית-ערבית. מורה לנמען לשלוח ריזמה (דסת) של 25 דפי נייר, וגם למכור כמה דפתרים עבור השולח. המסמך מסתיים במוטו 'ישועה' בפינה הימנית התחתונה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12352",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12373",
+  "origin": "",
+  "pos": 21809,
+  "prev": "12345",
+  "princeton_url": "https://geniza.princeton.edu/documents/12352/",
+  "region": "",
+  "shelfmark": "ENA 2808.5a",
+  "tags": [
+    "dast, paper"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

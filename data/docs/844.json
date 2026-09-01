@@ -1,1 +1,43 @@
-{"id":"844","shelfmark":"HUC 1003","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"HUC","library_raw":"HUC","collection":"HUC","description":"Recto: memorial list for the family of the Nagid Shemuʾel b. Hananya ha-Nagid: \n- Shemarya ha-Shishi\n- Shemarya's three sons: Ṣedaqa, Seʿadʾel, and Ḥananya\n- Ḥananya's two sons: Avraham and Shemuʾel (the Nagid)\n- Shemuʾel's two sons: Yaḥyā who died young, and Ḥananya\n- Ḥananya's son Shemuʾel (known as \"grandson of Nagids\")\n\nVerso continues with other memorial lists, including for the family (ʿitra) of al-Rashīd Shemuʾel (ʿEli --> Ṣemaḥ --> Yefet), of Ibn ʿAmmār (ʿAmram --> Berakhot --> Yeshuʿa (and his son Elʿazar), ʿAmram, ʿEli, and Netanʾel); then a list of names including Shemuʾel, Yehoshuaʿ, and Ḥananya, and finally an invocation of the current Nagid Avraham Maimonides (הרב המבהוק(!)). NB: This was previously listed on PGP under the shelfmark HUC Geniza 3. AA/ASE","tags":["memorial list"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/844/","mentioned":"","description_he":"רקטו: רשימת הזכרה לבני משפחתו של הנגיד שמואל בן חנניה הנגיד:\n- שמריה הששי\n- שלושת בניו של שמריה: צדקה, סעדאל וחנניה\n- שני בניו של חנניה: אברהם ושמואל (הנגיד)\n- שני בניו של שמואל: יחיא שמת בצעירותו, וחנניה\n- בנו של חנניה, שמואל (המכונה \"נכד הנגידים\")\n\nורסו ממשיך ברשימות הזכרה נוספות, ובהן רשימה למשפחתו (עתרה) של אלרשיד שמואל (עלי ← צמח ← יפת), ולמשפחת אבן עמאר (עמרם ← ברכות ← ישועה (ובנו אלעזר), עמרם, עלי ונתנאל); לאחר מכן רשימת שמות הכוללת את שמואל, יהושע וחנניה, ולבסוף קריאת ברכה לנגיד הנוכחי אברהם מימוני (הרב המבהוק(!)).","tags_he":["חשבונות","עברית","צדקה","משי"],"prev":"843","next":"845","pos":20570,"total":35937}
+{
+  "collection": "HUC",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: memorial list for the family of the Nagid Shemuʾel b. Hananya ha-Nagid: \n- Shemarya ha-Shishi\n- Shemarya's three sons: Ṣedaqa, Seʿadʾel, and Ḥananya\n- Ḥananya's two sons: Avraham and Shemuʾel (the Nagid)\n- Shemuʾel's two sons: Yaḥyā who died young, and Ḥananya\n- Ḥananya's son Shemuʾel (known as \"grandson of Nagids\")\n\nVerso continues with other memorial lists, including for the family (ʿitra) of al-Rashīd Shemuʾel (ʿEli --> Ṣemaḥ --> Yefet), of Ibn ʿAmmār (ʿAmram --> Berakhot --> Yeshuʿa (and his son Elʿazar), ʿAmram, ʿEli, and Netanʾel); then a list of names including Shemuʾel, Yehoshuaʿ, and Ḥananya, and finally an invocation of the current Nagid Avraham Maimonides (הרב המבהוק(!)). NB: This was previously listed on PGP under the shelfmark HUC Geniza 3. AA/ASE",
+  "description_he": "רקטו: רשימת הזכרה לבני משפחתו של הנגיד שמואל בן חנניה הנגיד:\n- שמריה הששי\n- שלושת בניו של שמריה: צדקה, סעדאל וחנניה\n- שני בניו של חנניה: אברהם ושמואל (הנגיד)\n- שני בניו של שמואל: יחיא שמת בצעירותו, וחנניה\n- בנו של חנניה, שמואל (המכונה \"נכד הנגידים\")\n\nורסו ממשיך ברשימות הזכרה נוספות, ובהן רשימה למשפחתו (עתרה) של אלרשיד שמואל (עלי ← צמח ← יפת), ולמשפחת אבן עמאר (עמרם ← ברכות ← ישועה (ובנו אלעזר), עמרם, עלי ונתנאל); לאחר מכן רשימת שמות הכוללת את שמואל, יהושע וחנניה, ולבסוף קריאת ברכה לנגיד הנוכחי אברהם מימוני (הרב המבהוק(!)).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "844",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "HUC",
+  "library_raw": "HUC",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "845",
+  "origin": "",
+  "pos": 20570,
+  "prev": "843",
+  "princeton_url": "https://geniza.princeton.edu/documents/844/",
+  "region": "",
+  "shelfmark": "HUC 1003",
+  "tags": [
+    "memorial list"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "עברית",
+    "צדקה"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

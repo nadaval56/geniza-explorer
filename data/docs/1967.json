@@ -1,1 +1,48 @@
-{"id":"1967","shelfmark":"T-S 8J16.27","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Natan b. Shelomo ha-Kohen, Fustat, to his cousin Toviyya b. Eli ha-Kohen, in a smaller town, in which the writer refers to the health of the recipient’s brother’s eyes, stating “I received a note from your brother in which he complained that his eyes were in a very bad state and asked for medicaments. I went to the oculists [in the plural], informed them about his complaints, and they prescribed ointments and powders which I sent to him. However, the doctors said to me that the medicines would be of no avail, as long as he continued to work in sunlight, which his profession forces him to do.” The letter also references a ‘maker of razors’ (mawwas) and mentions Ibn al-Minqar Abu al-Ma’ali. Twelfth century. (S. D. Goitein, Mediterranean Society, 1:421; 2:255, 579; and S. D. Goitein and Mordechai Friedman, India Book, 642) EMS","tags":["illness: eye, Illness: treatment, mail-order medicine, ib-addenda, illness: etiology, illness letter 969-1517, Illness: physician, Illness"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00016-00027"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00016-00027/1"],"princeton_url":"https://geniza.princeton.edu/documents/1967/","mentioned":"al-Shām","description_he":"מכתב מאת נתן בן שלמה הכהן בפוסטאט אל בן דודו טוביה בן עלי הכהן, השוהה בעיירה קטנה יותר. הכותב מתייחס למצב בריאותן של עיני אחיו של הנמען, ומספר: \"קיבלתי פתק מאחיך ובו התלונן שעיניו במצב רע מאוד וביקש תרופות. הלכתי אל רופאי העיניים [בלשון רבים], הודעתי להם על תלונותיו, והם רשמו משחות ואבקות אשר שלחתי אליו. אולם הרופאים אמרו לי כי התרופות לא יועילו כל עוד הוא ממשיך לעבוד באור השמש, דבר שמקצועו מאלץ אותו לעשות.\" במכתב מוזכר גם \"עושה תערים\" (מַוָּאס), ונזכר אבן אלמנקאר אבו אלמעאלי. מן המאה השתים-עשרה.","tags_he":["מכתב","יהודית-ערבית","רפואה","פוסטאט","משי"],"prev":"1966","next":"1968","pos":1211,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Natan b. Shelomo ha-Kohen, Fustat, to his cousin Toviyya b. Eli ha-Kohen, in a smaller town, in which the writer refers to the health of the recipient’s brother’s eyes, stating “I received a note from your brother in which he complained that his eyes were in a very bad state and asked for medicaments. I went to the oculists [in the plural], informed them about his complaints, and they prescribed ointments and powders which I sent to him. However, the doctors said to me that the medicines would be of no avail, as long as he continued to work in sunlight, which his profession forces him to do.” The letter also references a ‘maker of razors’ (mawwas) and mentions Ibn al-Minqar Abu al-Ma’ali. Twelfth century. (S. D. Goitein, Mediterranean Society, 1:421; 2:255, 579; and S. D. Goitein and Mordechai Friedman, India Book, 642) EMS",
+  "description_he": "מכתב מאת נתן בן שלמה הכהן בפוסטאט אל בן דודו טוביה בן עלי הכהן, השוהה בעיירה קטנה יותר. הכותב מתייחס למצב בריאותן של עיני אחיו של הנמען, ומספר: \"קיבלתי פתק מאחיך ובו התלונן שעיניו במצב רע מאוד וביקש תרופות. הלכתי אל רופאי העיניים [בלשון רבים], הודעתי להם על תלונותיו, והם רשמו משחות ואבקות אשר שלחתי אליו. אולם הרופאים אמרו לי כי התרופות לא יועילו כל עוד הוא ממשיך לעבוד באור השמש, דבר שמקצועו מאלץ אותו לעשות.\" במכתב מוזכר גם \"עושה תערים\" (מַוָּאס), ונזכר אבן אלמנקאר אבו אלמעאלי. מן המאה השתים-עשרה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00016-00027/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1967",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00016-00027"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "al-Shām",
+  "multifragment": "",
+  "next": "1968",
+  "origin": "Fustat",
+  "pos": 1211,
+  "prev": "1966",
+  "princeton_url": "https://geniza.princeton.edu/documents/1967/",
+  "region": "",
+  "shelfmark": "T-S 8J16.27",
+  "tags": [
+    "illness: eye, Illness: treatment, mail-order medicine, ib-addenda, illness: etiology, illness letter 969-1517, Illness: physician, Illness"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "רפואה",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -1,1 +1,50 @@
-{"id":"1477","shelfmark":"T-S NS 321.93","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Jalāl al-Dawla (or at least a person from the family of Shelomo b. Yishai the Nasi), written during an epidemic, and mentioning the Nagid [Avraham Maimonides] as being ill and also mentioning his (father?)-in-law the judge R. Hananel, who says, \"These days are like the Day of Judgment: everyone is preoccupied (mashghul) with himself.\" He goes on, \"We are doing our utmost to escape from this terrible epidemic. There is not a house in Fustat or Cairo among the important Jews—or anyone else—that does not have at least one sick person. The people are in terrible distress, too preoccupied to care for each other--let alone for a stranger.\" Jalāl al-Dawla also provides an update on his own diarrhea (v7–8): it is intermixed with white phlegm, coiled/twisted (multaff), and it burns when it comes out (yaldhaʿu waqta majī’ihi). ASE.","tags":["illness letter 969-1517, illness: gastrointestinal, illness: rich description, Illness, epidemic: waba', epidemic, Mosul Nasis, illness: ghurba"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-00321-00093"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-NS-00321-00093/1"],"princeton_url":"https://geniza.princeton.edu/documents/1477/","mentioned":"Bilbays, Cairo, Fustat, al-Shām","description_he":"מכתב מאת ג'לאל אלדולה (או למצער מאדם מבני משפחתו של שלמה בן ישי הנשיא), שנכתב בעת מגפה. במכתב מוזכר הנגיד [אברהם בן הרמב\"ם] ככזה השוכב חולה, וכן מוזכר חמיו (?) של הכותב, הדיין ר' חננאל, שאמר: \"הימים הללו דומים ליום הדין — כל אחד טרוד (משׁג'ול) בעצמו\". הכותב ממשיך ומתאר: \"אנו עושים כל שביכולתנו כדי להימלט מן המגפה הנוראה הזאת. אין בית בפוסטאט או בקהיר, בקרב נכבדי היהודים — או כל אדם אחר — שאין בו לפחות חולה אחד. העם שרוי במצוקה איומה, וכל אחד טרוד מכדי לדאוג לזולתו, לא כל שכן לאיש זר\". בנוסף, ג'לאל אלדולה מוסר עדכון על מצב השלשול שלו (שורות 7–8): הוא מעורב בליחה לבנה, מפותל ומלופף (מלתפّ), ושורף בעת היציאה (ילד'ע וקת מג'יאה).","tags_he":["מכתב","יהודית-ערבית","פוסטאט","קהיר","משי","דיין","מיימוניד"],"prev":"1472","next":"1478","pos":797,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Jalāl al-Dawla (or at least a person from the family of Shelomo b. Yishai the Nasi), written during an epidemic, and mentioning the Nagid [Avraham Maimonides] as being ill and also mentioning his (father?)-in-law the judge R. Hananel, who says, \"These days are like the Day of Judgment: everyone is preoccupied (mashghul) with himself.\" He goes on, \"We are doing our utmost to escape from this terrible epidemic. There is not a house in Fustat or Cairo among the important Jews—or anyone else—that does not have at least one sick person. The people are in terrible distress, too preoccupied to care for each other--let alone for a stranger.\" Jalāl al-Dawla also provides an update on his own diarrhea (v7–8): it is intermixed with white phlegm, coiled/twisted (multaff), and it burns when it comes out (yaldhaʿu waqta majī’ihi). ASE.",
+  "description_he": "מכתב מאת ג'לאל אלדולה (או למצער מאדם מבני משפחתו של שלמה בן ישי הנשיא), שנכתב בעת מגפה. במכתב מוזכר הנגיד [אברהם בן הרמב\"ם] ככזה השוכב חולה, וכן מוזכר חמיו (?) של הכותב, הדיין ר' חננאל, שאמר: \"הימים הללו דומים ליום הדין — כל אחד טרוד (משׁג'ול) בעצמו\". הכותב ממשיך ומתאר: \"אנו עושים כל שביכולתנו כדי להימלט מן המגפה הנוראה הזאת. אין בית בפוסטאט או בקהיר, בקרב נכבדי היהודים — או כל אדם אחר — שאין בו לפחות חולה אחד. העם שרוי במצוקה איומה, וכל אחד טרוד מכדי לדאוג לזולתו, לא כל שכן לאיש זר\". בנוסף, ג'לאל אלדולה מוסר עדכון על מצב השלשול שלו (שורות 7–8): הוא מעורב בליחה לבנה, מפותל ומלופף (מלתפّ), ושורף בעת היציאה (ילד'ע וקת מג'יאה).",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-00321-00093/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1477",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-00321-00093"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Bilbays, Cairo, Fustat, al-Shām",
+  "multifragment": "",
+  "next": "1478",
+  "origin": "",
+  "pos": 797,
+  "prev": "1472",
+  "princeton_url": "https://geniza.princeton.edu/documents/1477/",
+  "region": "",
+  "shelfmark": "T-S NS 321.93",
+  "tags": [
+    "illness letter 969-1517, illness: gastrointestinal, illness: rich description, Illness, epidemic: waba', epidemic, Mosul Nasis, illness: ghurba"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "קהיר",
+    "דיין",
+    "מיימוניד"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}
