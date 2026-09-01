@@ -51,6 +51,22 @@ git push -u origin claude/detect-translation-gaps-NL6Cb 2>&1 | tail -1 && \
 git push origin claude/detect-translation-gaps-NL6Cb:main 2>&1 | tail -1
 ```
 
+### `data/lastmod.json` — לרענן מדי כמה batches
+
+ה-`lastmod` ב-`sitemap.xml` נגזר מגיבוב תוכן שנשמר ב-`data/lastmod.json`.
+מסמך שקיבל תיאור חדש ידווח על תאריך היום בכל בנייה **עד שהמניפסט יחויב מחדש**,
+כי CI בונה אותו ולא דוחף בחזרה. זה מדויק ברגע הפריסה שאחרי הריבריט, ומתחיל
+לסטות רק אם חולפים שבועות בלי לרענן.
+
+הרענון דורש בנייה מלאה, כי רק היא מעבירה את התרגומים אל `data/docs/`:
+
+```bash
+python3 build.py && git add data/lastmod.json data/docs && \
+git commit -m "Refresh lastmod manifest" && git push origin HEAD:main
+```
+
+אין צורך לעשות זאת בכל batch. אחת לכמה עשרות ריבריטים מספיקה.
+
 If the final `push origin <branch>:main` fails because main has new commits (rejected: not fast-forward), recover with:
 ```bash
 git merge origin/main --no-edit

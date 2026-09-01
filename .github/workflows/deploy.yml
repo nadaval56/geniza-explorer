@@ -43,6 +43,12 @@ jobs:
       # HTML templates. Allowed to fail: an upstream outage should not take the
       # published site down with it, because data/docs/*.json is committed and
       # the prerender step below can work from that alone.
+      # רץ לפני הבנייה ולא אחריה: אם תגית עם 3+ מסמכים איבדה את דף הנושא
+      # שלה, או ש-data/docs נסחף מ-data/tags_he.json, עדיף לעצור מאשר לפרוס
+      # אתר שנראה תקין. זה בדיוק הכשל השקט שהסתיר את משי, זהב וכסף.
+      - name: Check tag pages
+        run: python3 scripts/check_tag_pages.py
+
       - name: Build site
         id: build
         continue-on-error: true
@@ -98,6 +104,12 @@ jobs:
                index.html about.html privacy/index.html accessibility/index.html assets/*.css assets/*.js; then
             echo "::error::a third-party CDN reference is back — see privacy/index.html section 2"; exit 1
           fi
+          # lastmod אמיתי תלוי בכך ש-data/lastmod.json מחויב לגיט. CI בונה
+          # אותו מחדש ולא דוחף בחזרה, ולכן מניפסט חסר פירושו שכל 36,000
+          # הכתובות מדווחות על תאריך היום — בדיוק האות שגוגל לומד להתעלם ממנו.
+          [ -s data/lastmod.json ] || echo "::warning::data/lastmod.json חסר — כל ה-lastmod יהיה של היום"
+          stale=$(grep -c "<lastmod>$(date -u +%Y-%m-%d)</lastmod>" sitemap.xml || true)
+          echo "lastmod of today:  $stale of $urls URLs"
           echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
 
       - name: Upload Pages artifact

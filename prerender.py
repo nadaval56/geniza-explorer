@@ -28,6 +28,7 @@ here). Output paths are gitignored and generated in CI at deploy time.
 """
 
 import argparse
+import hashlib
 import html
 import json
 import pathlib
@@ -995,35 +996,124 @@ def render_tag_pages(docs, base, out_dir):
 
 
 # ── sitemap.xml / robots.txt ──────────────────────────────────────────────────
-def write_sitemap(docs, base, index_pages, tag_slugs=()):
+LASTMOD_FILE = DOCS_DIR.parent / "lastmod.json"
+
+
+def page_fingerprint(payload):
+    """Short hash of everything that ends up visible on a page."""
+    blob = json.dumps(payload, ensure_ascii=False, sort_keys=True, default=str)
+    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
+
+
+def resolve_lastmod(docs, tag_slugs, buckets):
+    """Real <lastmod> dates, by remembering when each page's content last changed.
+
+    The sitemap used to stamp today's date on all 36,000 URLs on every build,
+    which told Google that the entire Cairo Geniza changed this morning. An
+    obviously automatic lastmod is one Google learns to ignore, and then the
+    signal is worth nothing on the pages where it would actually have helped.
+
+    So: hash what the page is made of, keep the hash and a date in
+    data/lastmod.json, and only move the date when the hash moves. A document
+    whose Hebrew description gets rewritten reports the day it was rewritten;
+    one that has not changed since keeps its old date, which is the truth.
+
+    The manifest has to be COMMITTED for the dates to survive — CI rebuilds it
+    but never pushes it back. An uncommitted manifest degrades safely: pages
+    look new rather than reporting a wrong old date, and the file self-corrects
+    the next time it is committed. The rewrite workflow should include it.
+    """
+    stored = {}
+    if LASTMOD_FILE.exists():
+        try:
+            stored = json.loads(LASTMOD_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print("  !  data/lastmod.json unreadable — every page dates from today")
+
+    today = date.today().isoformat()
+    fresh, moved = {}, 0
+
+    def stamp(key, payload):
+        nonlocal moved
+        sha = page_fingerprint(payload)
+        was = stored.get(key)
+        if was and was.get("sha") == sha:
+            fresh[key] = was
+        else:
+            fresh[key] = {"sha": sha, "date": today}
+            if was:
+                moved += 1
+        return fresh[key]["date"]
+
+    dates = {}
+    for doc in docs:
+        # Only what a reader sees. prev/next/pos shift whenever a neighbouring
+        # document is added, and that is not a change to this page's content.
+        dates[f"d/{doc['id']}.html"] = stamp(f"d/{doc['id']}", {
+            "shelfmark": doc.get("shelfmark"), "type": doc.get("type_he"),
+            "lang": doc.get("lang_he"), "date": doc.get("date"),
+            "origin": doc.get("origin"), "library": doc.get("library"),
+            "he": doc.get("description_he"), "tags": sorted(doc.get("tags_he") or []),
+            "iiif": (doc.get("iiif_urls") or [None])[0],
+        })
+
+    for tag in buckets:
+        page = tag_pages.TAG_PAGES[tag]
+        dates[f"t/{page['slug']}/"] = stamp(f"t/{page['slug']}", {
+            "h1": page["h1"], "intro": page["intro"], "group": page["group"],
+            # The listing changes when its top documents change, so the hub's
+            # own date follows the documents it actually shows.
+            "docs": [d["id"] for d in buckets[tag][:PER_TAG_PAGE]],
+        })
+
+    # Index and static pages: whatever they list, or the file itself.
+    dates["t/"] = stamp("t/", sorted(
+        (t, len(d)) for t, d in buckets.items()))
+    dates["d/"] = stamp("d/", [d["id"] for d in docs])
+    for name in ("about.html", "privacy/", "accessibility/"):
+        path = ROOT / (name if name.endswith(".html") else name + "index.html")
+        dates[name] = stamp(name, path.read_text(encoding="utf-8") if path.exists() else "")
+    dates[""] = stamp("", {"docs": len(docs), "tags": len(buckets)})
+
+    LASTMOD_FILE.write_text(
+        json.dumps(fresh, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8")
+    return dates, moved
+
+
+def write_sitemap(docs, base, index_pages, tag_slugs=(), dates=None):
+    dates = dates or {}
     today = date.today().isoformat()
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 
-    def add(loc, priority, changefreq="monthly"):
+    def add(path, priority, changefreq="monthly"):
+        loc = base + path
+        lastmod = dates.get(path, today)
         parts.append(
-            f"  <url><loc>{html.escape(loc)}</loc><lastmod>{today}</lastmod>"
+            f"  <url><loc>{html.escape(loc)}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>{changefreq}</changefreq>"
             f"<priority>{priority}</priority></url>"
         )
 
-    add(base, "1.0", "weekly")
-    add(base + "about.html", "0.8", "yearly")
-    add(base + "privacy/", "0.4", "yearly")
-    add(base + "accessibility/", "0.4", "yearly")
-    add(base + "d/", "0.9", "weekly")
+    add("", "1.0", "weekly")
+    add("about.html", "0.8", "yearly")
+    add("privacy/", "0.4", "yearly")
+    add("accessibility/", "0.4", "yearly")
+    add("d/", "0.9", "weekly")
     for n in range(2, index_pages + 1):
-        add(f"{base}d/index-{n}.html", "0.5")
+        # A paginated index page changes whenever the index it slices does.
+        add(f"d/index-{n}.html", "0.5")
 
     # Tag hubs rank above individual documents: each one is a real page about a
     # subject, and each is the entry point for a query no shelfmark can answer.
     # Only page 1 goes in — the overflow pages are noindex by design.
     if tag_slugs:
-        add(base + "t/", "0.9", "monthly")
+        add("t/", "0.9", "monthly")
     for slug in tag_slugs:
-        add(f"{base}t/{slug}/", "0.8", "monthly")
+        add(f"t/{slug}/", "0.8", "monthly")
     for doc in docs:
-        add(f"{base}d/{doc['id']}.html", "0.6", "yearly")
+        add(f"d/{doc['id']}.html", "0.6", "yearly")
 
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
@@ -1108,8 +1198,9 @@ def run(base=None, limit=None, docs=None, verbose=True):
     tag_slugs = [tag_pages.TAG_PAGES[t]["slug"]
                  for t, _ in sorted(buckets.items(), key=lambda kv: -len(kv[1]))]
 
-    urls = write_sitemap(docs, base, index_pages, tag_slugs)
-    print(f"  ✓  sitemap.xml  ({urls:,} URLs)")
+    dates, moved = resolve_lastmod(docs, tag_slugs, buckets)
+    urls = write_sitemap(docs, base, index_pages, tag_slugs, dates)
+    print(f"  ✓  sitemap.xml  ({urls:,} URLs, {moved:,} with a new lastmod)")
 
     write_robots(base)
     print("  ✓  robots.txt")
