@@ -107,6 +107,8 @@ TEXT_TAGS = {
 
     # Spices and trade goods (shown in spice bar, not tag cloud)
     "פלפל":    ["פלפל"],
+    # כרכום הוא דפוס חיפוש של זעפרן, לא תגית בפני עצמה. אל תיתן לו ערך
+    # ב-tag_pages.py — אף מסמך לא נושא אותו, ו-check_tag_pages.py יתריע.
     "זעפרן":    ["זעפרן", "כרכום"],   # כרכום = saffron in many Geniza translations
     "קינמון":   ["קינמון"],
     "זנגביל":   ["זנגביל", "ג'ינג'ר"],
