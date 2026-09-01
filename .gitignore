@@ -9,3 +9,9 @@ __pycache__/
 /d/
 /sitemap.xml
 /robots.txt
+
+# CLAUDE.md מורה להריץ `npm i -D playwright` לפני כל push שנוגע בתבניות או
+# ב-CSS, וההתקנה הזאת מייצרת את שלושת אלה בשורש. אין להם מה לחפש בהיסטוריה.
+/node_modules/
+/package.json
+/package-lock.json
