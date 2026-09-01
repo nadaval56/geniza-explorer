@@ -364,6 +364,7 @@ DOC_PAGE = """<!DOCTYPE html>
   </footer>
 
   <script src="{root}assets/doc-image.js" defer></script>
+  <script src="{root}assets/doc-english.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -386,18 +387,35 @@ def render_doc(doc, base):
     if is_true(doc.get("has_translation")):
         badges += '<span class="badge badge-type-letter">🌐 תרגום</span>'
 
-    # Both languages go into the page. The Hebrew reads first for people; the
-    # English original is what most researchers actually search for, and it is
-    # the text the CC BY-NC attribution refers to.
+    # Only the Hebrew is prerendered. The English original from PGP is a verbatim
+    # copy of geniza.princeton.edu, and with a median Hebrew description of 108
+    # characters it was the bulk of the text on most pages — a near-duplicate of a
+    # far more authoritative source, which is a plausible cause of the
+    # "crawled, currently not indexed" status. It now loads from
+    # data/docs/<id>.json only when the reader asks for it; assets/doc-english.js
+    # explains why a click rather than an automatic fetch. Attribution is
+    # unaffected: the CC BY-NC credit and the link to PGP are both still on the page.
+    #
+    # The exception is a document with no Hebrew description at all (6 of 35,940).
+    # There the English is all the prose there is, so it stays in the HTML.
     paragraphs = []
-    if clean(doc.get("description_he")):
+    has_he = bool(clean(doc.get("description_he")))
+    if has_he:
         paragraphs.append(f'<p class="description-text">{esc(clean(doc["description_he"]))}</p>')
     if clean(doc.get("description")):
-        paragraphs.append(
-            '<p class="description-text" lang="en" dir="ltr">'
-            '<span class="desc-lang-note">Princeton Geniza Project description: </span>'
-            f'{esc(clean(doc["description"]))}</p>'
-        )
+        if has_he:
+            paragraphs.append(
+                f'<button type="button" class="english-toggle" data-doc="{esc(doc_id)}"'
+                ' aria-expanded="false" aria-controls="english-desc">'
+                'הצג את התיאור המקורי באנגלית</button>'
+                '<div class="english-desc" id="english-desc" hidden></div>'
+            )
+        else:
+            paragraphs.append(
+                '<p class="description-text" lang="en" dir="ltr">'
+                '<span class="desc-lang-note">Princeton Geniza Project description: </span>'
+                f'{esc(clean(doc["description"]))}</p>'
+            )
     description_block = ""
     if paragraphs:
         description_block = ('\n        <div class="description-block">\n'
@@ -605,10 +623,14 @@ Allow: /
 # document's real page lives under /d/.
 Disallow: /fragment.html
 
-# data/docs/ is 35,924 JSON files that duplicate the prerendered pages — pure
-# crawl budget with nothing to index. data/search.json and data/stats.json stay
-# crawlable on purpose: Googlebot has to fetch them to render the gallery, and
-# blocking them would make the home page look empty to it.
+# data/docs/ is one JSON file per document. Two reasons to keep it out:
+# most of it duplicates the prerendered page, and it also holds the original
+# English PGP description, which assets/doc-english.js fetches on click and
+# which is deliberately not in any page's HTML. Blocking it here means that even
+# if a crawler did trigger the fetch, it could not index the text.
+# data/search.json and data/stats.json stay crawlable on purpose: Googlebot has
+# to fetch them to render the gallery, and blocking them would make the home
+# page look empty to it.
 Disallow: /data/docs/
 
 Sitemap: {base}sitemap.xml

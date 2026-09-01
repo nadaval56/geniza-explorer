@@ -1,8 +1,9 @@
 /* Geniza Explorer — progressive image hydration for prerendered document pages.
  *
- * The pages under /d/ are complete without JavaScript: every fact, the
+ * The pages under /d/ are complete without JavaScript: every fact, the Hebrew
  * description, the tags and the link out to the holding library are already in
- * the HTML. The one thing that cannot be prerendered is the manuscript
+ * the HTML. (The English original is the one deliberate exception — see
+ * doc-english.js.) The one thing that cannot be prerendered is the manuscript
  * thumbnail, because its URL only exists inside the institution's IIIF
  * manifest. This fetches that manifest and swaps the image in when it resolves;
  * if it fails, or if JS is off, the page keeps the static placeholder and the

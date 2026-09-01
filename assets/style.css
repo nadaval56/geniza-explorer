@@ -900,6 +900,35 @@ img { display: block; max-width: 100%; }
   line-height: 1.7;
 }
 
+/* התיאור המקורי באנגלית — נטען לפי בקשה, ראו assets/doc-english.js */
+.english-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-top: .9rem;
+  padding: .4rem .85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  color: var(--text-2);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.english-toggle:hover {
+  background: var(--bg-card-h);
+  border-color: var(--gold-dark);
+  color: var(--gold-light);
+}
+
+.english-desc { margin-top: .9rem; }
+
+.english-note {
+  font-size: .85rem;
+  color: var(--text-2);
+  line-height: 1.7;
+}
+
 .tags-block { margin-bottom: 1.5rem; }
 
 .tags-list {

@@ -29,6 +29,7 @@
 | `assets/style.css` | עיצוב — ניתן לעריכה |
 | `assets/search.js` | חיפוש, מפה, ענן תגיות — ניתן לעריכה |
 | `assets/doc-image.js` | טעינת תצלום IIIF בעמודי `d/` — ניתן לעריכה |
+| `assets/doc-english.js` | טוען את התיאור המקורי באנגלית מ-`data/docs/<id>.json` בלחיצה. הוא **לא** בתוך ה-HTML בכוונה — ראו ההערה בראש הקובץ |
 | `assets/fonts.css` + `assets/fonts/` | גופנים מקומיים (SIL OFL). האתר לא פונה ל-Google Fonts |
 | `assets/fragment.js` | **קוד מת.** הצופה הישן, לא נטען יותר על ידי אף עמוד |
 | `assets/a11y.css` + `assets/a11y.js` | תפריט הנגישות ומצבי התצוגה — ניתן לעריכה |
