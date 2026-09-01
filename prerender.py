@@ -602,6 +602,61 @@ def render_index_pages(docs, base, out_dir):
     return pages
 
 
+def render_doc_card(doc, root="../../"):
+    """A document card, matching the one the home page builds in search.js.
+
+    Deliberately duplicated rather than shared: the home page renders cards in
+    the browser from data/search.json, and a tag hub renders them at build time
+    from data/docs/. Same markup, same CSS, two producers. If cardHTML() in
+    assets/search.js changes shape, change this too — the classes are the
+    contract between them.
+    """
+    kind = clean(doc.get("type_he"))
+    badge = f'<span class="badge {TYPE_BADGE.get(kind, "badge-type-other")}">{esc(kind or "לא מסווג")}</span>'
+
+    lang = clean(doc.get("lang_he")).split("؛")[0].strip()
+    lang_badge = f'<span class="badge badge-lang">{esc(lang)}</span>' if lang else ""
+
+    icons = ""
+    if is_true(doc.get("has_transcription")):
+        icons += '<span class="card-icon" title="תמלול">📝</span>'
+    if is_true(doc.get("has_translation")):
+        icons += '<span class="card-icon" title="תרגום">🌐</span>'
+
+    date = clean(doc.get("date"))
+    origin = clean(doc.get("origin"))
+    geo = ""
+    if date or origin:
+        geo = ('<div class="card-geo">'
+               + (f'<span class="card-date">{esc(date)}</span>' if date else "")
+               + (f'<span class="card-origin">{esc(origin)}</span>' if origin else "")
+               + "</div>")
+
+    desc = clean(doc.get("description_he"))
+    desc_html = f'<p class="card-description">{esc(desc)}</p>' if desc else ""
+
+    library = clean(doc.get("library"))
+    footer = f'<div class="card-footer"><span class="card-lib">{esc(library)}</span></div>' if library else ""
+
+    iiif = (doc.get("iiif_urls") or [None])[0]
+    thumb = f'<img class="card-thumb" data-iu="{esc(iiif)}" alt="" hidden loading="lazy">' if iiif else ""
+    shelfmark = clean(doc.get("shelfmark")) or f'PGPID {doc["id"]}'
+
+    return (
+        f'      <a href="{root}d/{esc(doc["id"])}.html" '
+        f'class="card{" card--has-thumb" if iiif else ""}" role="listitem" '
+        f'aria-label="{esc(shelfmark)}">\n'
+        f'        {thumb}\n'
+        f'        <div class="card-top">\n'
+        f'          <span class="card-shelfmark">{esc(shelfmark)}</span>\n'
+        f'          <span class="card-icons" aria-hidden="true">{icons}</span>\n'
+        f'        </div>\n'
+        f'        <div class="card-meta">{badge}{lang_badge}</div>\n'
+        f'        {geo}{desc_html}{footer}\n'
+        f'      </a>'
+    )
+
+
 # ── Tag hub pages ─────────────────────────────────────────────────────────────
 TAG_PAGE = """<!DOCTYPE html>
 <html lang="he" dir="rtl">
@@ -611,7 +666,7 @@ TAG_PAGE = """<!DOCTYPE html>
   <title>{title} — {site}</title>
   <meta name="description" content="{description}">
   <link rel="canonical" href="{url}">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{prevnext}  <meta name="robots" content="{robots}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{site}">
   <meta property="og:locale" content="he_IL">
@@ -648,11 +703,11 @@ TAG_PAGE = """<!DOCTYPE html>
       <p class="tag-count">{count} מסמכים באוסף נושאים את התגית הזו.</p>
     </header>
 {intro}
-    <h2 class="section-label tag-list-label">המסמכים</h2>
-    <ol class="doc-index-list">
+    <h2 class="section-label tag-list-label">{list_label}</h2>
+    <div class="cards-grid" role="list">
 {items}
-    </ol>
-{more}{related}
+    </div>
+{pager}{related}
   </main>
 
   <footer class="site-footer">
@@ -731,6 +786,7 @@ TAG_DIRECTORY = """<!DOCTYPE html>
     </p>
   </footer>
 
+  <script src="../../assets/card-thumbs.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -831,30 +887,24 @@ def render_tag_directory(buckets, base, out_dir):
 
 
 def render_tag_pages(docs, base, out_dir):
-    """One page per tag under /t/<slug>/. No pagination, deliberately.
+    """One hub per tag under /t/<slug>/, paginated so every document is listed.
 
-    A tag hub lists its 100 best-described documents and stops. The obvious
-    alternative — paginating all 12,413 Judaeo-Arabic documents into 125 pages —
-    was built first and then removed: it produced 627 extra pages for 18 tags,
-    on track for roughly 1,500 across all of them. Every one of those would have
-    been a list of links with no prose of its own, added to a site whose
-    diagnosed problem is that Google already crawls 36,000 pages and indexes
-    none of them.
-
-    Nothing is orphaned by the cut. Every document is still reachable from the
-    144 paginated pages under /d/, which is the index built for exactly that,
-    and still links out to each of its own tags.
+    Page 1 is the page that has to earn a place in the index: it carries the
+    intro, the JSON-LD and the sitemap entry. Pages 2+ carry noindex,follow —
+    they exist so a reader who lands on "פוסטאט" can browse all 2,386 documents,
+    not so that ~700 lists of card links compete for a slot in an index the site
+    is already struggling to enter. follow keeps them in the link graph.
     """
     buckets = tag_index(docs)
     out_dir.mkdir(exist_ok=True)
+    hubs = overflow = 0
 
     for tag, items in buckets.items():
         page = tag_pages.TAG_PAGES[tag]
         slug = page["slug"]
         tag_dir = out_dir / slug
         tag_dir.mkdir(exist_ok=True)
-        chunk = items[:PER_TAG_PAGE]
-        url = f"{base}t/{slug}/"
+        pages = max(1, -(-len(items) // PER_TAG_PAGE))
 
         siblings = related_tags(tag, buckets)
         related = ""
@@ -869,40 +919,68 @@ def render_tag_pages(docs, base, out_dir):
                        f'      <div class="tags-list">{links}</div>\n'
                        '    </section>\n')
 
-        more = ""
-        if len(items) > PER_TAG_PAGE:
-            more = ('\n    <p class="tag-more">מוצגים כאן '
-                    f'{PER_TAG_PAGE} המסמכים בעלי התיאור המפורט ביותר, מתוך {len(items):,}. '
-                    'את השאר אפשר לסרוק ב<a href="../../d/">מפתח המלא</a>.</p>\n')
+        for n in range(1, pages + 1):
+            first = n == 1
+            chunk = items[(n - 1) * PER_TAG_PAGE: n * PER_TAG_PAGE]
+            name = "index.html" if first else f"page-{n}.html"
+            url = f"{base}t/{slug}/" if first else f"{base}t/{slug}/page-{n}.html"
 
-        items_html = "\n".join(
-            f'      <li><a href="../../d/{esc(d["id"])}.html">{esc(doc_title(d))}</a>'
-            f'<span class="doc-index-meta">{esc(truncate(doc_description(d), 150) or summary_line(d))}</span></li>'
-            for d in chunk
-        )
+            prevnext = ""
+            if n > 1:
+                prev = "" if n == 2 else f"page-{n - 1}.html"
+                prevnext += f'  <link rel="prev" href="{base}t/{slug}/{prev}">\n'
+            if n < pages:
+                prevnext += f'  <link rel="next" href="{base}t/{slug}/page-{n + 1}.html">\n'
 
-        (tag_dir / "index.html").write_text(TAG_PAGE.format(
-            a11y_head=a11y_snippets.head("../../"),
-            a11y_foot=a11y_snippets.foot("../../"),
-            site=esc(SITE_NAME),
-            title=esc(page["h1"]),
-            description=esc(truncate(page["intro"], 155)),
-            url=esc(url),
-            base=esc(base),
-            jsonld=render_tag_json_ld(tag, page, url, base, chunk),
-            crumb=esc(page["h1"]),
-            group_label=esc(tag_pages.GROUPS[page["group"]]),
-            h1=esc(page["h1"]),
-            count=f"{len(items):,}",
-            intro=f'\n    <div class="tag-intro">\n      <p>{esc(page["intro"])}</p>\n    </div>\n',
-            items=items_html,
-            more=more,
-            related=related,
-            pgp=PGP_URL,
-            license=LICENSE_URL,
-        ), encoding="utf-8")
+            pager = ""
+            if pages > 1:
+                links = []
+                if n > 1:
+                    links.append(f'<a class="page-btn" href="{"./" if n == 2 else f"page-{n-1}.html"}">→ הקודם</a>')
+                # First, last, a window around the current page, and jumps of ten
+                # the whole way, so no page is more than a few clicks from any other.
+                window = {1, 2, n - 1, n, n + 1, pages - 1, pages}
+                window |= set(range(10, pages + 1, 10))
+                for m in sorted(window & set(range(1, pages + 1))):
+                    target = "./" if m == 1 else f"page-{m}.html"
+                    active = " active" if m == n else ""
+                    links.append(f'<a class="page-btn{active}" href="{target}">{m}</a>')
+                if n < pages:
+                    links.append(f'<a class="page-btn" href="page-{n + 1}.html">הבא ←</a>')
+                pager = f'\n    <nav class="pagination" aria-label="דפים">{"".join(links)}</nav>\n'
 
-    return len(buckets)
+            (tag_dir / name).write_text(TAG_PAGE.format(
+                a11y_head=a11y_snippets.head("../../"),
+                a11y_foot=a11y_snippets.foot("../../"),
+                site=esc(SITE_NAME),
+                title=esc(page["h1"] if first else f'{page["h1"]} — עמוד {n} מתוך {pages}'),
+                description=esc(truncate(page["intro"], 155) if first
+                                else f'{page["h1"]} — עמוד {n} מתוך {pages}.'),
+                url=esc(url),
+                base=esc(base),
+                robots=("index, follow, max-image-preview:large, max-snippet:-1"
+                        if first else "noindex, follow"),
+                prevnext=prevnext,
+                jsonld=render_tag_json_ld(tag, page, url, base, chunk) if first else "",
+                crumb=esc(page["h1"] if first else f'{page["h1"]} · עמוד {n}'),
+                group_label=esc(tag_pages.GROUPS[page["group"]]),
+                h1=esc(page["h1"] if first else f'{page["h1"]} — עמוד {n}'),
+                count=f"{len(items):,}",
+                intro=(f'\n    <div class="tag-intro">\n      <p>{esc(page["intro"])}</p>\n    </div>\n'
+                       if first else ""),
+                list_label=("המסמכים" if pages == 1 else
+                            f"המסמכים — עמוד {n} מתוך {pages}"),
+                items="\n".join(render_doc_card(d) for d in chunk),
+                pager=pager,
+                related=related if first else "",
+                pgp=PGP_URL,
+                license=LICENSE_URL,
+            ), encoding="utf-8")
+
+            hubs += first
+            overflow += not first
+
+    return hubs, overflow
 
 
 # ── sitemap.xml / robots.txt ──────────────────────────────────────────────────
@@ -1013,9 +1091,9 @@ def run(base=None, limit=None, docs=None, verbose=True):
     print(f"  ✓  d/index.html  ({index_pages} directory pages)")
 
     buckets = tag_index(docs)
-    hubs = render_tag_pages(docs, base, TAG_DIR)
+    hubs, overflow = render_tag_pages(docs, base, TAG_DIR)
     render_tag_directory(buckets, base, TAG_DIR)
-    print(f"  ✓  t/*/  ({hubs} tag hubs)")
+    print(f"  ✓  t/*/  ({hubs} tag hubs + {overflow:,} paginated pages, noindex)")
     tag_slugs = [tag_pages.TAG_PAGES[t]["slug"]
                  for t, _ in sorted(buckets.items(), key=lambda kv: -len(kv[1]))]
 
@@ -1024,6 +1102,16 @@ def run(base=None, limit=None, docs=None, verbose=True):
 
     write_robots(base)
     print("  ✓  robots.txt")
+
+    # tag → hub slug, for the chips on the home page. Written here and not in
+    # build.py because build.py is continue-on-error in CI: if the Princeton CSV
+    # is unreachable it stops early, and the home page would then link chips to
+    # a stale map. prerender.py always runs.
+    slugs = {tag: page["slug"] for tag, page in tag_pages.TAG_PAGES.items()}
+    (DOCS_DIR.parent / "tag_slugs.json").write_text(
+        json.dumps(slugs, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8")
+    print(f"  ✓  data/tag_slugs.json  ({len(slugs)} tags)")
 
     total = sum(p.stat().st_size for p in OUT_DIR.glob("*.html"))
     if verbose:
