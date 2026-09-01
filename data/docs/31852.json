@@ -1,1 +1,45 @@
-{"id":"31852","shelfmark":"JRL C 2","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1836-09-12/1837-09-29","date_original":"5597","date_standard":"1836-09-12/1837-09-29","date_inferred":"","date_rationale":"","library":"JRL","library_raw":"JRL","collection":"JRL","description":"List of payments in the name of S[eñor] Yeshuʿa related to ownership or a lease for a house that is dated in the years [55]97AM–[5]600AM which encompasses 1836-1840CE. In line 11r the fragment clearly switches hands to a less orderly style yet the same form/content of recordkeeping continues. The verso is blank except for staining. MCD.","tags":["real estate, 19th c"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/jrl/c/c-2.json"],"fragment_urls":["https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22C+2%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"],"princeton_url":"https://geniza.princeton.edu/documents/31852/","mentioned":"","description_he":"רשימת תשלומים בשם ס[ניור] ישועה הקשורה לבעלות או שכירות על בית, מתוארכת לשנים [55]97 עד [5]600 לבריאה (1836-1840 לספירה). MCD.","tags_he":["חשבונות","שכירות"],"prev":"31851","next":"31853","pos":17211,"total":35937}
+{
+  "collection": "JRL",
+  "date": "1836-09-12/1837-09-29",
+  "date_inferred": "",
+  "date_original": "5597",
+  "date_rationale": "",
+  "date_standard": "1836-09-12/1837-09-29",
+  "description": "List of payments in the name of S[eñor] Yeshuʿa related to ownership or a lease for a house that is dated in the years [55]97AM–[5]600AM which encompasses 1836-1840CE. In line 11r the fragment clearly switches hands to a less orderly style yet the same form/content of recordkeeping continues. The verso is blank except for staining. MCD.",
+  "description_he": "רשימת תשלומים בשם ס[ניור] ישועה הקשורה לבעלות או שכירות על בית, מתוארכת לשנים [55]97 עד [5]600 לבריאה (1836-1840 לספירה). MCD.",
+  "destination": "",
+  "fragment_urls": [
+    "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22C+2%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "31852",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/jrl/c/c-2.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "JRL",
+  "library_raw": "JRL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "31853",
+  "origin": "",
+  "pos": 17211,
+  "prev": "31851",
+  "princeton_url": "https://geniza.princeton.edu/documents/31852/",
+  "region": "",
+  "shelfmark": "JRL C 2",
+  "tags": [
+    "real estate, 19th c"
+  ],
+  "tags_he": [
+    "חשבונות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

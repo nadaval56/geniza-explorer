@@ -107,9 +107,41 @@ def is_true(value):
 
 
 def doc_title(doc):
+    """Catalogue-style label. Used in listings, where a shelfmark column scans."""
     shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
     kind = clean(doc.get("type_he"))
     return f"{shelfmark} — {kind}" if kind else shelfmark
+
+
+# A description too short to hold a real clause; below this the shelfmark is
+# still the most useful thing a search result can show.
+TITLE_MIN_SOURCE = 60
+TITLE_LIMIT = 62
+
+
+def search_title(doc):
+    """What a search result should say — for <title>, og:title and JSON-LD.
+
+    The catalogue label is what a researcher types when they already know the
+    document: T-S 13J35.3. Nobody else types it, and it was occupying the one
+    line a search result gives you. The Hebrew description opens with the words
+    people actually search — "טיוטת מכתב על הטלת חרם בקהילת פוסטאט" — so that
+    goes first and the shelfmark follows it, still findable by exact match.
+
+    Documents whose Hebrew description is too short to yield a clause keep the
+    catalogue label: half a sentence cut mid-word is worse than a shelfmark.
+    """
+    shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
+    text = clean(doc.get("description_he"))
+    if len(text) < TITLE_MIN_SOURCE:
+        return doc_title(doc)
+
+    # First sentence when there is one, otherwise the opening of the paragraph.
+    first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0]
+    snippet = truncate(first, TITLE_LIMIT).rstrip("…").rstrip(" .,;:־-")
+    if len(snippet) < 25:
+        return doc_title(doc)
+    return f"{snippet} · {shelfmark}"
 
 
 def doc_description(doc):
@@ -125,11 +157,17 @@ def summary_line(doc):
 
 
 def meta_description(doc):
-    text = doc_description(doc)
-    if not text:
-        text = summary_line(doc)
+    """The snippet under the title. The Hebrew description leads.
+
+    It used to open with the shelfmark, which spent the first twenty-odd
+    characters — the ones a reader actually reads — on a catalogue number.
+    """
+    text = clean(doc.get("description_he"))
+    if text:
+        return truncate(text)
     shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
-    return truncate(f"{shelfmark} — {text}" if text else shelfmark)
+    fallback = doc_description(doc) or summary_line(doc)
+    return truncate(f"{shelfmark} — {fallback}" if fallback else shelfmark)
 
 
 # ── Per-institution image rights ──────────────────────────────────────────────
@@ -239,7 +277,7 @@ def render_json_ld(doc, url, base):
         "@type": "CreativeWork",
         "@id": url,
         "url": url,
-        "name": doc_title(doc),
+        "name": search_title(doc),
         "inLanguage": "he",
         "isPartOf": {
             "@type": "Collection",
@@ -362,6 +400,7 @@ DOC_PAGE = """<!DOCTYPE html>
 
     </div>
 
+{related}
     <nav class="fragment-nav" aria-label="ניווט בין מסמכים">{docnav}</nav>
 
   </article>
@@ -392,10 +431,10 @@ DOC_PAGE = """<!DOCTYPE html>
 """
 
 
-def render_doc(doc, base):
+def render_doc(doc, base, related_index=None):
     doc_id = doc["id"]
     url = f"{base}d/{doc_id}.html"
-    title = doc_title(doc)
+    title = search_title(doc)
     shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc_id}"
 
     kind = clean(doc.get("type_he"))
@@ -486,6 +525,7 @@ def render_doc(doc, base):
         description_block=description_block,
         tags=render_tags(doc),
         princeton=esc(doc.get("princeton_url") or PGP_URL),
+        related=render_related(doc, related_index) if related_index else "",
         docnav="".join(nav),
         pos=f'{doc["pos"]:,}' if isinstance(doc.get("pos"), int) else "",
         total=f'{doc["total"]:,}' if isinstance(doc.get("total"), int) else "",
@@ -581,7 +621,13 @@ def render_index_pages(docs, base, out_dir):
         links = []
         if n > 1:
             links.append(f'<a class="page-btn" href="{"./" if n == 2 else f"index-{n-1}.html"}">→ הקודם</a>')
-        for m in sorted({1, 2, n - 1, n, n + 1, pages - 1, pages} & set(range(1, pages + 1))):
+        # First, last, a window around the current page, and jumps of ten the
+        # whole way. Without the jumps, reaching page 70 of 144 meant clicking
+        # "next" sixty-nine times, and a crawler measuring click depth from the
+        # home page put every document on that page dozens of levels down.
+        window = {1, 2, n - 1, n, n + 1, pages - 1, pages}
+        window |= set(range(10, pages + 1, 10))
+        for m in sorted(window & set(range(1, pages + 1))):
             target = "./" if m == 1 else f"index-{m}.html"
             active = " active" if m == n else ""
             links.append(f'<a class="page-btn{active}" href="{target}">{m}</a>')
@@ -601,6 +647,114 @@ def render_index_pages(docs, base, out_dir):
             encoding="utf-8",
         )
     return pages
+
+
+# How many candidates to keep per bucket. Without a cap, a document tagged
+# יהודית-ערבית scans all 12,413 of its neighbours, once per document — the
+# build never finished. Keeping the best few dozen per bucket is also better
+# on the merits: a reader wants the strongest neighbours, not the nearest.
+RELATED_BUCKET = 40
+
+
+def _quality(doc):
+    """Sort key: a photograph first, then the fuller description.
+
+    Computed once per document in build_related_index and cached by id. Calling
+    clean() here for every candidate of every document meant eight hundred
+    thousand regex substitutions and a six-minute build.
+    """
+    return (0 if (doc.get("iiif_urls") or []) else 1,
+            -len(clean(doc.get("description_he"))),
+            doc.get("pos") or 0)
+
+
+def build_related_index(docs):
+    """Everything needed to find a document's neighbours, built once.
+
+    Before this, the only link from one document to another was "המסמך הבא ←" —
+    a single chain 35,940 links long. To get from a letter about Fustat to
+    another letter about Fustat you had to walk the whole way, and so did a
+    crawler. Every page was a link in a chain instead of a node in a graph.
+    """
+    buckets = {"tag": {}, "origin": {}, "library": {}}
+    sizes = {}
+    for doc in docs:
+        for raw in (doc.get("tags_he") or []):
+            tag = clean(raw)
+            if tag:
+                buckets["tag"].setdefault(tag, []).append(doc)
+        for key in ("origin", "library"):
+            value = clean(doc.get(key))
+            if value:
+                buckets[key].setdefault(value, []).append(doc)
+
+    quality = {doc["id"]: _quality(doc) for doc in docs}
+    for kind, groups in buckets.items():
+        for value, members in groups.items():
+            sizes[(kind, value)] = len(members)
+            groups[value] = sorted(members, key=lambda d: quality[d["id"]])[:RELATED_BUCKET]
+
+    return {**buckets, "sizes": sizes, "quality": quality,
+            "by_id": {doc["id"]: doc for doc in docs}}
+
+
+def _tag_weight(size):
+    """A tag shared by twelve thousand documents says almost nothing; one shared
+    by forty says these two are about the same thing. Weight accordingly."""
+    if size <= 200:
+        return 6
+    if size <= 1000:
+        return 4
+    if size <= 4000:
+        return 2
+    return 1
+
+
+def related_docs(doc, index, limit=8):
+    """Documents worth reading next, scored by how much they share.
+
+    A shared tag is the strongest signal, scaled by how rare that tag is. Same
+    place of origin comes next, same holding library last: a library says where
+    the fragment sits today, not what it says.
+    """
+    scores = {}
+    for raw in (doc.get("tags_he") or []):
+        tag = clean(raw)
+        weight = _tag_weight(index["sizes"].get(("tag", tag), 0))
+        for other in index["tag"].get(tag, ()):
+            if other["id"] != doc["id"]:
+                scores[other["id"]] = scores.get(other["id"], 0) + weight
+    for kind, weight in (("origin", 2), ("library", 1)):
+        value = clean(doc.get(kind))
+        for other in index[kind].get(value, ()):
+            if other["id"] != doc["id"]:
+                scores[other["id"]] = scores.get(other["id"], 0) + weight
+
+    if not scores:
+        return []
+
+    lookup, quality = index["by_id"], index["quality"]
+    ranked = sorted(scores.items(),
+                    key=lambda pair: (-pair[1], quality[pair[0]]))
+    return [lookup[doc_id] for doc_id, _ in ranked[:limit]]
+
+
+def render_related(doc, index):
+    neighbours = related_docs(doc, index)
+    if not neighbours:
+        return ""
+    items = "".join(
+        f'<a class="related-card" href="{esc(other["id"])}.html">'
+        f'<span class="related-shelfmark">{esc(clean(other.get("shelfmark")) or "PGPID " + str(other["id"]))}</span>'
+        f'<span class="related-meta">{esc(summary_line(other))}</span>'
+        f'<span class="related-desc">{esc(truncate(doc_description(other), 110))}</span>'
+        "</a>"
+        for other in neighbours
+    )
+    return ('\n    <section class="related-block" aria-labelledby="related-hd">\n'
+            '      <h2 class="section-label" id="related-hd">מסמכים קשורים</h2>\n'
+            f'      <div class="related-grid">{items}</div>\n'
+            '    </section>\n')
 
 
 def render_doc_card(doc, root="../../"):
@@ -1182,8 +1336,10 @@ def run(base=None, limit=None, docs=None, verbose=True):
         print(f"  {len(docs):,} documents loaded")
 
     OUT_DIR.mkdir(exist_ok=True)
+    related_index = build_related_index(docs)
     for i, doc in enumerate(docs):
-        (OUT_DIR / f"{doc['id']}.html").write_text(render_doc(doc, base), encoding="utf-8")
+        (OUT_DIR / f"{doc['id']}.html").write_text(
+            render_doc(doc, base, related_index), encoding="utf-8")
         if (i + 1) % 5000 == 0:
             print(f"  …  {i + 1:,}/{len(docs):,}")
     print(f"  ✓  d/*.html  ({len(docs):,} pages)")

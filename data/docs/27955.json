@@ -1,1 +1,46 @@
-{"id":"27955","shelfmark":"Yevr.-Arab. II 1414","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1738-01-22","date_original":"1 Shevat 5498","date_standard":"1738-01-22","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Karaite bills of debt on a bifolium. Dated 1 Shevat 5498 AM (1738 CE). Both documents deal with a qāʿa residence on Darb al-Furn, a street in the Jewish quarter of Cairo. Both documents state that the property is in the qodesh of the Karaite community, but document two specifies that it had previously been passed to Shelomo Levi aka Qudsī through \"the inheritance of his mother... Farj bt. Avraham b. Moshe Levi aka Qayīm\" (f. 1v, ll. 18-20). The transaction in each document centers on payments by Yiṣḥaq b. Shelomo Levi aka Qayīm for the qāʿa. MCD.","tags":["18th c, Karaite, qodesh, female inheritance"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27955/","mentioned":"","description_he":"שטרות חוב קראיים על ביפוליה. תאריך: א' שבט 5498 = 1738 לספירה. שני המסמכים עוסקים בקאעה למגורים בדרב אל-פורן בשכונה היהודית בקהיר. התשלומים הם על ידי יצחק ב' שלמה לוי הידוע כקייים.","tags_he":["מסמך משפטי","יהודית-ערבית","קהיר"],"prev":"27954","next":"27956","pos":28257,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1738-01-22",
+  "date_inferred": "",
+  "date_original": "1 Shevat 5498",
+  "date_rationale": "",
+  "date_standard": "1738-01-22",
+  "description": "Karaite bills of debt on a bifolium. Dated 1 Shevat 5498 AM (1738 CE). Both documents deal with a qāʿa residence on Darb al-Furn, a street in the Jewish quarter of Cairo. Both documents state that the property is in the qodesh of the Karaite community, but document two specifies that it had previously been passed to Shelomo Levi aka Qudsī through \"the inheritance of his mother... Farj bt. Avraham b. Moshe Levi aka Qayīm\" (f. 1v, ll. 18-20). The transaction in each document centers on payments by Yiṣḥaq b. Shelomo Levi aka Qayīm for the qāʿa. MCD.",
+  "description_he": "שטרות חוב קראיים על ביפוליה. תאריך: א' שבט 5498 = 1738 לספירה. שני המסמכים עוסקים בקאעה למגורים בדרב אל-פורן בשכונה היהודית בקהיר. התשלומים הם על ידי יצחק ב' שלמה לוי הידוע כקייים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27955",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27956",
+  "origin": "",
+  "pos": 28257,
+  "prev": "27954",
+  "princeton_url": "https://geniza.princeton.edu/documents/27955/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1414",
+  "tags": [
+    "18th c, Karaite, qodesh, female inheritance"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "הקדש",
+    "ירושה",
+    "קהיר",
+    "אברהם מיימוניד"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

@@ -1,1 +1,49 @@
-{"id":"8907","shelfmark":"CUL Or.1080 J171","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"IB V, 9. Letter from Yosef b. Avraham b. Bundār to Abū Zikrī Yehuda ha-Kohen b. Yosef. Written in Judaeo-Arabic. The first few lines of the letter, the margins, and the address (in both Judaeo-Arabic and Arabic script) are preserved. The letter reports that Maḍmūn was engaged in the building or outfitting of jāshujiyāt (military transport ships). Specifically, he outfitted four of them for an attack on Zabīd. Yosef also reports on a military venture of Bilāl and the sultan by land 'in the area of the mountain' in which they took over many villages and excellent fortresses of their enemies, praise be to God. Al-Fawfalī (ʿAlī b. Manṣūr?) is mentioned. See also T-S 8J20.19 (same writer, same addressee). Information from Goitein's attached edition; Margariti, Aden, p. 159 and 285, n. 89; and India Book II (Maḍmūn), p. 42, n. 101.","tags":["IB5, India"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00171"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00171"],"princeton_url":"https://geniza.princeton.edu/documents/8907/","mentioned":"Zabīd","description_he":"מכתב מיוסף בן אברהם בן בונדאר אל אבו זכרי יהודה הכהן בן יוסף. כתוב בערבית-יהודית. נשתמרו השורות הראשונות של המכתב, השוליים, וכתובת הנמען (בערבית-יהודית ובכתב ערבי). במכתב מדווח כי מצ'מון עסק בבנייתן או בציודן של ספינות \"ג'אשוג'יאת\" (ספינות תובלה צבאיות). באופן ספציפי, הוא ציידן של ארבע ספינות מסוג זה לקראת התקפה על זביד. יוסף מדווח גם על מבצע צבאי של בלאל והסולטאן שנערך ביבשה \"באזור ההר\", שבמהלכו השתלטו על כפרים רבים ועל מבצרים מצוינים של אויביהם, השבח לאל. מוזכר במכתב גם אלפופלי (אולי עלי בן מנצור?). ראו גם מכתב נוסף מאותו כותב לאותו נמען. המידע מבוסס על מהדורתו של גויטיין המצורפת, על מרגריטי וספר הודו ב' (מצ'מון).","tags_he":["מכתב","יהודית-ערבית","ספר הודו","ספינה"],"prev":"8904","next":"8908","pos":5850,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "IB V, 9. Letter from Yosef b. Avraham b. Bundār to Abū Zikrī Yehuda ha-Kohen b. Yosef. Written in Judaeo-Arabic. The first few lines of the letter, the margins, and the address (in both Judaeo-Arabic and Arabic script) are preserved. The letter reports that Maḍmūn was engaged in the building or outfitting of jāshujiyāt (military transport ships). Specifically, he outfitted four of them for an attack on Zabīd. Yosef also reports on a military venture of Bilāl and the sultan by land 'in the area of the mountain' in which they took over many villages and excellent fortresses of their enemies, praise be to God. Al-Fawfalī (ʿAlī b. Manṣūr?) is mentioned. See also T-S 8J20.19 (same writer, same addressee). Information from Goitein's attached edition; Margariti, Aden, p. 159 and 285, n. 89; and India Book II (Maḍmūn), p. 42, n. 101.",
+  "description_he": "מכתב מיוסף בן אברהם בן בונדאר אל אבו זכרי יהודה הכהן בן יוסף. כתוב בערבית-יהודית. נשתמרו השורות הראשונות של המכתב, השוליים, וכתובת הנמען (בערבית-יהודית ובכתב ערבי). במכתב מדווח כי מצ'מון עסק בבנייתן או בציודן של ספינות \"ג'אשוג'יאת\" (ספינות תובלה צבאיות). באופן ספציפי, הוא ציידן של ארבע ספינות מסוג זה לקראת התקפה על זביד. יוסף מדווח גם על מבצע צבאי של בלאל והסולטאן שנערך ביבשה \"באזור ההר\", שבמהלכו השתלטו על כפרים רבים ועל מבצרים מצוינים של אויביהם, השבח לאל. מוזכר במכתב גם אלפופלי (אולי עלי בן מנצור?). ראו גם מכתב נוסף מאותו כותב לאותו נמען. המידע מבוסס על מהדורתו של גויטיין המצורפת, על מרגריטי וספר הודו ב' (מצ'מון).",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00171"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8907",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00171"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Zabīd",
+  "multifragment": "",
+  "next": "8908",
+  "origin": "",
+  "pos": 5850,
+  "prev": "8904",
+  "princeton_url": "https://geniza.princeton.edu/documents/8907/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J171",
+  "tags": [
+    "IB5, India"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ספר הודו",
+    "ספינה",
+    "הודו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

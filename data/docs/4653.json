@@ -1,1 +1,47 @@
-{"id":"4653","shelfmark":"T-S NS J105","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Account of payments to officials and to the families of deceased officials during the sixteenth week of the liturgical year. R. Menashshe, so frequently mentioned in previous lists, as well as his colleague R. Daniel, are mentioned here as dead. The collector 'Shemuel b. Shelomo, the partner of R. Ḥalfon' is identical with Bū Manṣūr b. Shelomo of T-S K15.93, but his description as the partner of another man shows that he must have been comparatively inconspicuous. Shelomo b. Eliyyahu, the writer of the account, paid out the total of 44 1/2 dirhams he had received from the collector. When no money was left for one of the beadles, he had to 'transfer' him to another social officer, the Kohen al-Naḥḥāl (Mr.'Beekeeper,' often mentioned as a donor). Only 16 dirhams were spent for bread, presumably for only one of the two weekly distributions.' (Information from Mediterranean Society, II, p. 453, App. B 49 [dated 1210-1225])","tags":["salary, communal, account"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00105"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00105/1"],"princeton_url":"https://geniza.princeton.edu/documents/4653/","mentioned":"","description_he":"חשבון תשלומים לפקידי הציבור ולמשפחותיהם של פקידים שנפטרו, במהלך השבוע השישה-עשר של שנת הליטורגיה. ר' מנשה, הנזכר תכופות ברשימות קודמות, וכן עמיתו ר' דניאל, מוזכרים כאן כמתים. הגבאי 'שמואל בן שלמה, שותפו של ר' חלפון' זהה לבו מנצור בן שלמה, אך עצם תיאורו כשותפו של אדם אחר מעיד כי היה דמות חסרת בולטות יחסית. שלמה בן אליהו, שכתב את החשבון, הוציא את הסכום המלא של 44.5 דרהם שקיבל מן הגבאי. כאשר לא נותר כסף עבור אחד השמשים, נאלץ \"להעביר\" אותו לפקיד ציבור אחר, הכהן אלנחאל (\"מר 'דבוראי'\", המוזכר לעיתים קרובות כתורם). רק 16 דרהם הוצאו עבור לחם, ככל הנראה רק עבור אחת משתי החלוקות השבועיות. התעודה מתוארכת לשנים 1210–1225.","tags_he":["חשבונות","תפילה וליטורגיה","משי","שלמה בן אליהו"],"prev":"4652","next":"4654","pos":3386,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Account of payments to officials and to the families of deceased officials during the sixteenth week of the liturgical year. R. Menashshe, so frequently mentioned in previous lists, as well as his colleague R. Daniel, are mentioned here as dead. The collector 'Shemuel b. Shelomo, the partner of R. Ḥalfon' is identical with Bū Manṣūr b. Shelomo of T-S K15.93, but his description as the partner of another man shows that he must have been comparatively inconspicuous. Shelomo b. Eliyyahu, the writer of the account, paid out the total of 44 1/2 dirhams he had received from the collector. When no money was left for one of the beadles, he had to 'transfer' him to another social officer, the Kohen al-Naḥḥāl (Mr.'Beekeeper,' often mentioned as a donor). Only 16 dirhams were spent for bread, presumably for only one of the two weekly distributions.' (Information from Mediterranean Society, II, p. 453, App. B 49 [dated 1210-1225])",
+  "description_he": "חשבון תשלומים לפקידי הציבור ולמשפחותיהם של פקידים שנפטרו, במהלך השבוע השישה-עשר של שנת הליטורגיה. ר' מנשה, הנזכר תכופות ברשימות קודמות, וכן עמיתו ר' דניאל, מוזכרים כאן כמתים. הגבאי 'שמואל בן שלמה, שותפו של ר' חלפון' זהה לבו מנצור בן שלמה, אך עצם תיאורו כשותפו של אדם אחר מעיד כי היה דמות חסרת בולטות יחסית. שלמה בן אליהו, שכתב את החשבון, הוציא את הסכום המלא של 44.5 דרהם שקיבל מן הגבאי. כאשר לא נותר כסף עבור אחד השמשים, נאלץ \"להעביר\" אותו לפקיד ציבור אחר, הכהן אלנחאל (\"מר 'דבוראי'\", המוזכר לעיתים קרובות כתורם). רק 16 דרהם הוצאו עבור לחם, ככל הנראה רק עבור אחת משתי החלוקות השבועיות. התעודה מתוארכת לשנים 1210–1225.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00105/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4653",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00105"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "4654",
+  "origin": "",
+  "pos": 3386,
+  "prev": "4652",
+  "princeton_url": "https://geniza.princeton.edu/documents/4653/",
+  "region": "",
+  "shelfmark": "T-S NS J105",
+  "tags": [
+    "salary, communal, account"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "תפילה וליטורגיה",
+    "שלמה בן אליהו"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

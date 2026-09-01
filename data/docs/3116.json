@@ -1,1 +1,52 @@
-{"id":"3116","shelfmark":"T-S 12.275","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Farah b. Yosef, in Alexandria, to Abū Saʿd Khalaf b. Sahl, in Fustat. Dating: October 1056 CE. The letter has another fragment (T-S 8J21.7). Regarding purchases and sales of several goods: pepper, fabrics, bonnets, and rice. Mentions that the army’s entrance to the city (it is not clear which city) improves trade. Also mentions that a ship arrived from Tyre, and the writer’s nephew who came from there in a different way. (Information from Gil, Kingdom, Vol. 3, #518) VMR","tags":["material culture, trade"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00275"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00275"],"princeton_url":"https://geniza.princeton.edu/documents/3116/","mentioned":"Fustat","description_he":"מכתב מפרח ב' יוסף באלכסנדריה לאבו סעד חלף ב' סהל בפוסטאט. מתוארך אוקטובר 1056. עוסק בקניות ומכירות של פלפל, בדים, כובעים ואורז. מזכיר ספינה שהגיעה מצור.","tags_he":["מכתב","יהודית-ערבית","ספינה","פוסטאט","אלכסנדריה","אורז","פלפל"],"prev":"3115","next":"3117","pos":2160,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Farah b. Yosef, in Alexandria, to Abū Saʿd Khalaf b. Sahl, in Fustat. Dating: October 1056 CE. The letter has another fragment (T-S 8J21.7). Regarding purchases and sales of several goods: pepper, fabrics, bonnets, and rice. Mentions that the army’s entrance to the city (it is not clear which city) improves trade. Also mentions that a ship arrived from Tyre, and the writer’s nephew who came from there in a different way. (Information from Gil, Kingdom, Vol. 3, #518) VMR",
+  "description_he": "מכתב מפרח ב' יוסף באלכסנדריה לאבו סעד חלף ב' סהל בפוסטאט. מתוארך אוקטובר 1056. עוסק בקניות ומכירות של פלפל, בדים, כובעים ואורז. מזכיר ספינה שהגיעה מצור.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00275"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "3116",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00275"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Fustat",
+  "multifragment": "",
+  "next": "3117",
+  "origin": "",
+  "pos": 2160,
+  "prev": "3115",
+  "princeton_url": "https://geniza.princeton.edu/documents/3116/",
+  "region": "",
+  "shelfmark": "T-S 12.275",
+  "tags": [
+    "material culture, trade"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "ספינה",
+    "פוסטאט",
+    "אלכסנדריה",
+    "אורז",
+    "פלפל"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

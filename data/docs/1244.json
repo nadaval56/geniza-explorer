@@ -1,1 +1,54 @@
-{"id":"1244","shelfmark":"T-S 13J16.20 + CUL Or.1080 3.41 + T-S 13J8.14","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1007–1055","date_original":"","date_standard":"","date_inferred":"1007–1055","date_rationale":"Person mentioned","library":"ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL ; CUL","collection":"CUL, T-S ; CUL, Or. ; CUL, T-S","description":"Letter: draft(s) in the hand of Efrayim b. Shemarya (fl. 1007–1055 CE), in Fusṭāṭ, probably to the Gaʾon Shelomo b. Yehuda, in Jerusalem (r. 1025–1051 CE). One draft contains a report, in Hebrew, on a joint Karaite-Rabbanite collection made in the capital of Egypt on behalf of the Jews of Jerusalem to assist them with their taxes. Ezra b. Yishmael b. Ezra is mentioned, and the document refers to Yusuf ibn ‘Awkal with his honorific title ‘Rosh Kalla’ (‘head of the assembly’ of students at the biannual scholarly convention in Baghdad). (Marina Rustow, Heresy and the Politics of Community, 196, 278; From a Sacred Source, 309-10; S. D. Goitein, Mediterranean Society, 2:472) Another draft explains that, contrary to the malicious and false accusations made against him to the gaʾon by some members of the Jewish community in Fusṭāṭ, he will indeed be sending a generous donation for the Jerusalem academy in response to a fundraising mission by the gaʾon’s son Avraham. Efrayim also mentions that he retains the support of an influential Fatimid official, the Qaraite David ha-Levi b. Yiṣḥaq, who will also be sending a donation. Written on the verso of an Arabic -script letter discussing philosophical theology and mentioning the raʾs al-mathība (see PGPID 33676).","tags":["communal, tax, Shelomo b. Yehuda, Karaite, Yosef b. Awkal, Efrayim b. Shemarya"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00016-00020","https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00008-00014"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00016-00020","https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00008-00014/1"],"princeton_url":"https://geniza.princeton.edu/documents/1244/","mentioned":"","description_he":"מכתב: טיוטה (או טיוטות) בכתב ידו של אפרים בן שמריה (פעיל 1007–1055), שנכתבה בפוסטאט וכנראה מיועדת לגאון שלמה בן יהודה בירושלים (כיהן 1025–1051). אחת הטיוטות כוללת דיווח בעברית על מגבית משותפת של קראים ורבנים שנערכה בבירת מצרים למען יהודי ירושלים, כדי לסייע להם בתשלום מסיהם. בטיוטה זו מוזכר עזרא בן ישמעאל בן עזרא, וכן יוסף אבן עוכל בתואר הכבוד שלו 'ראש כלה' — תואר המורה על עמידה בראש קהל התלמידים בכנסי הלימוד שנערכו פעמיים בשנה בבגדאד. טיוטה אחרת מבהירה שבניגוד להאשמות הזדוניות וחסרות השחר שהפנו כלפיו לגאון מצד אחדים מבני הקהילה היהודית בפוסטאט, הוא אכן עומד לשלוח תרומה נדיבה לישיבת ירושלים בתגובה למסע התרמה שניהל בנו של הגאון, אברהם. אפרים מציין גם שהוא ממשיך ליהנות מתמיכתו של פקיד פאטמי רב־השפעה, הקראי דוד הלוי בן יצחק, שאף הוא ישלח תרומה. הטיוטות נכתבו על גבו של מכתב בכתב ערבי הדן בתיאולוגיה פילוסופית ומזכיר את ראס אלמת'יבה.","tags_he":["מכתב","עברית","טיוטה","ישיבה וגאונות","פוסטאט","ירושלים","פאטמי","משי","אפרים בן שמריה"],"prev":"1243","next":"1245","pos":618,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, Or. ; CUL, T-S",
+  "date": "1007–1055",
+  "date_inferred": "1007–1055",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Letter: draft(s) in the hand of Efrayim b. Shemarya (fl. 1007–1055 CE), in Fusṭāṭ, probably to the Gaʾon Shelomo b. Yehuda, in Jerusalem (r. 1025–1051 CE). One draft contains a report, in Hebrew, on a joint Karaite-Rabbanite collection made in the capital of Egypt on behalf of the Jews of Jerusalem to assist them with their taxes. Ezra b. Yishmael b. Ezra is mentioned, and the document refers to Yusuf ibn ‘Awkal with his honorific title ‘Rosh Kalla’ (‘head of the assembly’ of students at the biannual scholarly convention in Baghdad). (Marina Rustow, Heresy and the Politics of Community, 196, 278; From a Sacred Source, 309-10; S. D. Goitein, Mediterranean Society, 2:472) Another draft explains that, contrary to the malicious and false accusations made against him to the gaʾon by some members of the Jewish community in Fusṭāṭ, he will indeed be sending a generous donation for the Jerusalem academy in response to a fundraising mission by the gaʾon’s son Avraham. Efrayim also mentions that he retains the support of an influential Fatimid official, the Qaraite David ha-Levi b. Yiṣḥaq, who will also be sending a donation. Written on the verso of an Arabic -script letter discussing philosophical theology and mentioning the raʾs al-mathība (see PGPID 33676).",
+  "description_he": "מכתב: טיוטה (או טיוטות) בכתב ידו של אפרים בן שמריה (פעיל 1007–1055), שנכתבה בפוסטאט וכנראה מיועדת לגאון שלמה בן יהודה בירושלים (כיהן 1025–1051). אחת הטיוטות כוללת דיווח בעברית על מגבית משותפת של קראים ורבנים שנערכה בבירת מצרים למען יהודי ירושלים, כדי לסייע להם בתשלום מסיהם. בטיוטה זו מוזכר עזרא בן ישמעאל בן עזרא, וכן יוסף אבן עוכל בתואר הכבוד שלו 'ראש כלה' — תואר המורה על עמידה בראש קהל התלמידים בכנסי הלימוד שנערכו פעמיים בשנה בבגדאד. טיוטה אחרת מבהירה שבניגוד להאשמות הזדוניות וחסרות השחר שהפנו כלפיו לגאון מצד אחדים מבני הקהילה היהודית בפוסטאט, הוא אכן עומד לשלוח תרומה נדיבה לישיבת ירושלים בתגובה למסע התרמה שניהל בנו של הגאון, אברהם. אפרים מציין גם שהוא ממשיך ליהנות מתמיכתו של פקיד פאטמי רב־השפעה, הקראי דוד הלוי בן יצחק, שאף הוא ישלח תרומה. הטיוטות נכתבו על גבו של מכתב בכתב ערבי הדן בתיאולוגיה פילוסופית ומזכיר את ראס אלמת'יבה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00016-00020",
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00008-00014/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1244",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00016-00020",
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00008-00014"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL ; CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1245",
+  "origin": "",
+  "pos": 618,
+  "prev": "1243",
+  "princeton_url": "https://geniza.princeton.edu/documents/1244/",
+  "region": "",
+  "shelfmark": "T-S 13J16.20 + CUL Or.1080 3.41 + T-S 13J8.14",
+  "tags": [
+    "communal, tax, Shelomo b. Yehuda, Karaite, Yosef b. Awkal, Efrayim b. Shemarya"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "טיוטה",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "ירושלים",
+    "פאטמי",
+    "אפרים בן שמריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

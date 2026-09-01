@@ -1,1 +1,43 @@
-{"id":"23409","shelfmark":"T-S Misc.28.191","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"al-Fayyūm","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Final page of a letter from a scholar and government employee in the Fayyūm to R. ʿOvadya and R. Ḥananel. In Hebrew and Judaeo-Arabic. Dating: No earlier than the late 12th century. The writer hopes to be able to get out of (collecting the tax?) debt of the city of Fayyūm before Yom Kippur, but is not optimistic, because the official order on the decree (al-amr ʿalā l-marsūm al-karīm) is unchanged. (The scenario may be similar to that of T-S K2.96 (PGPID 18940), a tax farmer's petition for an exemption from government service which was denied, from the same period.) The blessing for the sultan \"may his glory be strengthened\" (ʿazza naṣruhū) is metonymically applied to either his decree (al-marsūm) or his order/rescript (al-amr). The sender also reports that he has sent a copy of the introduction to the commentary on Avot (probably of Maimonides), and asks the addressees to 'complete it' through the eighth chapter and send it back to him along with the copy of Sefer ha-Madaʿ (the first section of the Mishneh Torah) that they had promised. ASE","tags":["Fayyum, book trade"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/23409/","mentioned":"","description_he":"העמוד האחרון של מכתב ממלומד ופקיד ממשלתי בפיוּם אל ר' עובדיה ור' חננאל. בעברית ובערבית-יהודית. תיארוך: לא לפני סוף המאה השתים-עשרה. הכותב מקווה להצליח להשתחרר מ(גביית?) חוב המס של העיר פיוּם לפני יום הכיפורים, אך אינו אופטימי, משום שהצו הרשמי על הגזרה (אלאמר עלא אלמרסום אלכרים) נותר ללא שינוי. (התרחיש עשוי להיות דומה לזה המתואר בעצומה של חוכר מסים המבקש פטור משירות ממשלתי שנדחה, מאותה תקופה.) הברכה לסולטאן \"עזה נצרה\" (\"יחוזק נצחונו\") מיוחסת בדרך של מטונימיה אל הצו (אלמרסום) או אל הפקודה/הרסקריפט (אלאמר). השולח מדווח גם ששלח עותק של ההקדמה לפירוש מסכת אבות (כנראה של הרמב\"ם), ומבקש מהנמענים 'להשלימו' עד הפרק השמיני ולשלוח אותו אליו בחזרה יחד עם עותק ספר המדע (החלק הראשון של משנה תורה) שהבטיחו לו.","tags_he":["מכתב","עצומה","משי","מיימוניד"],"prev":"23408","next":"23410","pos":24945,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Final page of a letter from a scholar and government employee in the Fayyūm to R. ʿOvadya and R. Ḥananel. In Hebrew and Judaeo-Arabic. Dating: No earlier than the late 12th century. The writer hopes to be able to get out of (collecting the tax?) debt of the city of Fayyūm before Yom Kippur, but is not optimistic, because the official order on the decree (al-amr ʿalā l-marsūm al-karīm) is unchanged. (The scenario may be similar to that of T-S K2.96 (PGPID 18940), a tax farmer's petition for an exemption from government service which was denied, from the same period.) The blessing for the sultan \"may his glory be strengthened\" (ʿazza naṣruhū) is metonymically applied to either his decree (al-marsūm) or his order/rescript (al-amr). The sender also reports that he has sent a copy of the introduction to the commentary on Avot (probably of Maimonides), and asks the addressees to 'complete it' through the eighth chapter and send it back to him along with the copy of Sefer ha-Madaʿ (the first section of the Mishneh Torah) that they had promised. ASE",
+  "description_he": "העמוד האחרון של מכתב ממלומד ופקיד ממשלתי בפיוּם אל ר' עובדיה ור' חננאל. בעברית ובערבית-יהודית. תיארוך: לא לפני סוף המאה השתים-עשרה. הכותב מקווה להצליח להשתחרר מ(גביית?) חוב המס של העיר פיוּם לפני יום הכיפורים, אך אינו אופטימי, משום שהצו הרשמי על הגזרה (אלאמר עלא אלמרסום אלכרים) נותר ללא שינוי. (התרחיש עשוי להיות דומה לזה המתואר בעצומה של חוכר מסים המבקש פטור משירות ממשלתי שנדחה, מאותה תקופה.) הברכה לסולטאן \"עזה נצרה\" (\"יחוזק נצחונו\") מיוחסת בדרך של מטונימיה אל הצו (אלמרסום) או אל הפקודה/הרסקריפט (אלאמר). השולח מדווח גם ששלח עותק של ההקדמה לפירוש מסכת אבות (כנראה של הרמב\"ם), ומבקש מהנמענים 'להשלימו' עד הפרק השמיני ולשלוח אותו אליו בחזרה יחד עם עותק ספר המדע (החלק הראשון של משנה תורה) שהבטיחו לו.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "23409",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "23410",
+  "origin": "al-Fayyūm",
+  "pos": 24945,
+  "prev": "23408",
+  "princeton_url": "https://geniza.princeton.edu/documents/23409/",
+  "region": "",
+  "shelfmark": "T-S Misc.28.191",
+  "tags": [
+    "Fayyum, book trade"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עצומה",
+    "מיימוניד"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

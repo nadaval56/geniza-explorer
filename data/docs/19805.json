@@ -1,1 +1,43 @@
-{"id":"19805","shelfmark":"CUL Or.1080 J220","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Letter in Judaeo-Arabic from a father to a son (\"who is in my heart like Abu l-Faraj\"). He asks his son to collect a debt of 11 dinars that is owed to him by Abu l-Ḥasan al-'Attar. A half-dinar and a (mother?-)in-law (ḥamātī) are also mentioned but their place in the story is not entirely clear. He blandishes Abu l-Ḥasan to give him the money immediately because he is in financial straits, and then threatens to take him to court if he fails to pay up. In the last few lines he reverts to speaking to his son, \"This is distressing to me. Go out and take it. He knows that I cannot go out to him.... Whatever you send to me, send it with Musa.\" The handwriting and colloquial spellings resemble those of Abu Sahl (Levi) the cantor, the father of Moshe b. Levi ha-Levi, (cf. T-S 13J27.21, T-S 8J10.16, T-S 8J24.1); this is supported by the mention of Musa at the end but still conjectural. ASE.","tags":["Abu Sahl Levi"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19805/","mentioned":"Fustat","description_he":"מכתב בערבית-יהודית מאב לבנו (שהוא \"בלבי כמו אבו אלפרג'\"). האב מבקש מבנו לגבות עבורו חוב של 11 דינרים שחייב לו אבו אלחסן אלעטאר. מוזכרים גם חצי דינר וחמותו (חמאתי), אך מקומם בסיפור אינו ברור עד תום. הוא מחניף לאבו אלחסן ומתחנן בפניו שיתן לו את הכסף מיד מאחר שהוא נתון במצוקה כלכלית, ואז מאיים שאם לא ישלם — יביאו לבית הדין. בשורות האחרונות הוא חוזר לפנות אל בנו: \"זה מצער אותי. צא וקח אותו. הוא יודע שאני לא יכול לצאת אליו... וכל מה שתשלח אלי, שלח עם מוסא\". כתב היד והכתיב המדובר דומים לאלה של אבו סהל (לוי) החזן, אביו של משה בן לוי הלוי; ההשערה הזו נתמכת באזכור של מוסא בסוף המכתב, אך עדיין נותרת בגדר השערה.","tags_he":["מכתב","יהודית-ערבית","חזן","דיין"],"prev":"19804","next":"19806","pos":22370,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter in Judaeo-Arabic from a father to a son (\"who is in my heart like Abu l-Faraj\"). He asks his son to collect a debt of 11 dinars that is owed to him by Abu l-Ḥasan al-'Attar. A half-dinar and a (mother?-)in-law (ḥamātī) are also mentioned but their place in the story is not entirely clear. He blandishes Abu l-Ḥasan to give him the money immediately because he is in financial straits, and then threatens to take him to court if he fails to pay up. In the last few lines he reverts to speaking to his son, \"This is distressing to me. Go out and take it. He knows that I cannot go out to him.... Whatever you send to me, send it with Musa.\" The handwriting and colloquial spellings resemble those of Abu Sahl (Levi) the cantor, the father of Moshe b. Levi ha-Levi, (cf. T-S 13J27.21, T-S 8J10.16, T-S 8J24.1); this is supported by the mention of Musa at the end but still conjectural. ASE.",
+  "description_he": "מכתב בערבית-יהודית מאב לבנו (שהוא \"בלבי כמו אבו אלפרג'\"). האב מבקש מבנו לגבות עבורו חוב של 11 דינרים שחייב לו אבו אלחסן אלעטאר. מוזכרים גם חצי דינר וחמותו (חמאתי), אך מקומם בסיפור אינו ברור עד תום. הוא מחניף לאבו אלחסן ומתחנן בפניו שיתן לו את הכסף מיד מאחר שהוא נתון במצוקה כלכלית, ואז מאיים שאם לא ישלם — יביאו לבית הדין. בשורות האחרונות הוא חוזר לפנות אל בנו: \"זה מצער אותי. צא וקח אותו. הוא יודע שאני לא יכול לצאת אליו... וכל מה שתשלח אלי, שלח עם מוסא\". כתב היד והכתיב המדובר דומים לאלה של אבו סהל (לוי) החזן, אביו של משה בן לוי הלוי; ההשערה הזו נתמכת באזכור של מוסא בסוף המכתב, אך עדיין נותרת בגדר השערה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19805",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Fustat",
+  "multifragment": "",
+  "next": "19806",
+  "origin": "",
+  "pos": 22370,
+  "prev": "19804",
+  "princeton_url": "https://geniza.princeton.edu/documents/19805/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J220",
+  "tags": [
+    "Abu Sahl Levi"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "חזן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

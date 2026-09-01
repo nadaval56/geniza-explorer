@@ -1,1 +1,46 @@
-{"id":"6354","shelfmark":"Bodl. MS heb. b 12/4","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1102-03-27","date_original":"6th of Nisan 1413","date_standard":"1102-03-27","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Copy of three court records concerning a dispute over a wall between two houses. The latest one is dated to Nisan 1413 Sel. (March 1102 CE). Details about the wall are given in lines 9, 11, 16, and 25–31. The records are bracketed by an introduction and a conclusion explaining the purpose of making these copies: [...] al-Lawwāz came to the court with these in hand and asked for them to be copied \"lest they be lost.\" (Information in part from Goitein’s index card.)\nRecord #1: Names mentioned: Yefet; the parnas ʿUlla b. Shemarya ha-Kohen; [...] b. Naḥum; Abū Manṣūr b. al-[...]; Sason. Witnesses (judges): [...] b. Moshe; Avraham b. Aharon he-Ḥaver; [...]. \nRecord #2: Names mentioned: Binyamin b. [Avraham]; Yefet; Abū Manṣūr al-Zayyāt; Ibn al-Layth. Witnesses (judges): Yiṣḥaq b. Shemuel (ha-Sefaradi); the ḥaver Yeḥezqel b. ʿEli ha-Kohen he-Ḥaver; Sason b. Natan. \nRecord #3: Names mentioned: Yefet; Netanel; Binyamin b. Avraham; Shela b. Eliyya. Witnesses (judges): Yiṣḥaq b. Shemuel; Avraham b. Shemaʿya he-Ḥaver; Sason b. Natan; Avraham b. Aharon he-Ḥaver.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/b/ms-heb-b-12-4.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_10#MS_Heb_b_12-part4"],"princeton_url":"https://geniza.princeton.edu/documents/6354/","mentioned":"","description_he":"העתק של שלושה פרוטוקולים מבית הדין העוסקים בסכסוך על קיר משותף בין שני בתים. המאוחר שבהם מתוארך לניסן א'תי\"ג למניין השטרות (מארס 1102). פרטים על הקיר מופיעים בשורות 9, 11, 16, ו-25–31. הפרוטוקולים ממוסגרים בפתיחה ובסיכום המסבירים את מטרת הכנת ההעתקים: [...] אללוּאז הופיע בבית הדין כשהמסמכים בידיו וביקש להעתיקם \"שמא יאבדו\". (חלק מהמידע מבוסס על כרטיסיית גויטיין.)\n\nפרוטוקול מס' 1: השמות הנזכרים: יפת; הפרנס עֻלא בן שמריה הכהן; [...] בן נחום; אבו מנצור בן אל-[...]; ססון. עדים (דיינים): [...] בן משה; אברהם בן אהרן החבר; [...].\n\nפרוטוקול מס' 2: השמות הנזכרים: בנימין בן [אברהם]; יפת; אבו מנצור אלזיאת; אבן אלליית'. עדים (דיינים): יצחק בן שמואל (הספרדי); החבר יחזקאל בן עלי הכהן החבר; ססון בן נתן.\n\nפרוטוקול מס' 3: השמות הנזכרים: יפת; נתנאל; בנימין בן אברהם; שלה בן אליה. עדים (דיינים): יצחק בן שמואל; אברהם בן שמעיה החבר; ססון בן נתן; אברהם בן אהרן החבר.","tags_he":["מסמך משפטי","יהודית-ערבית","ספרד","דיין","פרנס"],"prev":"6353","next":"6355","pos":4103,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "1102-03-27",
+  "date_inferred": "",
+  "date_original": "6th of Nisan 1413",
+  "date_rationale": "",
+  "date_standard": "1102-03-27",
+  "description": "Copy of three court records concerning a dispute over a wall between two houses. The latest one is dated to Nisan 1413 Sel. (March 1102 CE). Details about the wall are given in lines 9, 11, 16, and 25–31. The records are bracketed by an introduction and a conclusion explaining the purpose of making these copies: [...] al-Lawwāz came to the court with these in hand and asked for them to be copied \"lest they be lost.\" (Information in part from Goitein’s index card.)\nRecord #1: Names mentioned: Yefet; the parnas ʿUlla b. Shemarya ha-Kohen; [...] b. Naḥum; Abū Manṣūr b. al-[...]; Sason. Witnesses (judges): [...] b. Moshe; Avraham b. Aharon he-Ḥaver; [...]. \nRecord #2: Names mentioned: Binyamin b. [Avraham]; Yefet; Abū Manṣūr al-Zayyāt; Ibn al-Layth. Witnesses (judges): Yiṣḥaq b. Shemuel (ha-Sefaradi); the ḥaver Yeḥezqel b. ʿEli ha-Kohen he-Ḥaver; Sason b. Natan. \nRecord #3: Names mentioned: Yefet; Netanel; Binyamin b. Avraham; Shela b. Eliyya. Witnesses (judges): Yiṣḥaq b. Shemuel; Avraham b. Shemaʿya he-Ḥaver; Sason b. Natan; Avraham b. Aharon he-Ḥaver.",
+  "description_he": "העתק של שלושה פרוטוקולים מבית הדין העוסקים בסכסוך על קיר משותף בין שני בתים. המאוחר שבהם מתוארך לניסן א'תי\"ג למניין השטרות (מארס 1102). פרטים על הקיר מופיעים בשורות 9, 11, 16, ו-25–31. הפרוטוקולים ממוסגרים בפתיחה ובסיכום המסבירים את מטרת הכנת ההעתקים: [...] אללוּאז הופיע בבית הדין כשהמסמכים בידיו וביקש להעתיקם \"שמא יאבדו\". (חלק מהמידע מבוסס על כרטיסיית גויטיין.)\n\nפרוטוקול מס' 1: השמות הנזכרים: יפת; הפרנס עֻלא בן שמריה הכהן; [...] בן נחום; אבו מנצור בן אל-[...]; ססון. עדים (דיינים): [...] בן משה; אברהם בן אהרן החבר; [...].\n\nפרוטוקול מס' 2: השמות הנזכרים: בנימין בן [אברהם]; יפת; אבו מנצור אלזיאת; אבן אלליית'. עדים (דיינים): יצחק בן שמואל (הספרדי); החבר יחזקאל בן עלי הכהן החבר; ססון בן נתן.\n\nפרוטוקול מס' 3: השמות הנזכרים: יפת; נתנאל; בנימין בן אברהם; שלה בן אליה. עדים (דיינים): יצחק בן שמואל; אברהם בן שמעיה החבר; ססון בן נתן; אברהם בן אהרן החבר.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_10#MS_Heb_b_12-part4"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6354",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/b/ms-heb-b-12-4.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "6355",
+  "origin": "",
+  "pos": 4103,
+  "prev": "6353",
+  "princeton_url": "https://geniza.princeton.edu/documents/6354/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. b 12/4",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "ספרד",
+    "פרנס"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

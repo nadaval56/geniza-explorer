@@ -1,1 +1,48 @@
-{"id":"29072","shelfmark":"T-S AS 146.164","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Small fragment of a certificate or possibly a letter concerning the licensing of an ophthalmologist: \"[X and Av?]raham testify in his favor that he is qualified for prac[tice and] for the treatment of diseases of the eye, and the document/signature of the revered qāḍī Fatḥ al-Dīn the [[former]] supervisor of the physicians and his colleagues. . . . before the pious sulṭān. . . and may [God] make his reputation mighty.\" \n\nThe authority mentioned here, Fatḥ al-Dīn, is probably identical with Fatḥ al-Dīn b. Jamāl al-Dīn ʿUthmān b. Hibatallāh Ibn Abī l-Ḥawāfir also known simply as Fatḥ al-Dīn al-Qaysī (d. 1240s or 1250s), who served al-Malik al-Kāmil (r. 1218–38) and al-Malik al-Ṣāliḥ (r. 1240–49). The Judaeo-Arabic hand is consistent with this dating. See Ibn Abī Uṣaybiʿa (https://doi.org/10.1163/37704_0668IbnAbiUsaibia.Tabaqatalatibba.lhom-tr-eng1), section 14.45, and see Brockelmann, Supplement, vol. 1, pp. 897–98. This Fatḥ al-Dīn wrote an ophthalmology treatise called \"Natījat al-fikar fī ʿilāj amrāḍ al-baṣar.\" IAU does not mention that he was a qāḍī or that he was the supervisor of the physicians (mushārif al-aṭibbāʾ), though he does state that both Fatḥ al-Dīn's father Jamāl al-Dīn and his son Shihāb al-Dīn held the position chief physician (raʾīs al-aṭibbāʿ). (Information in part from CUDL.)\n\nSee also ENA NS 36.26 (PGPID 40616).","tags":["ophthalmology, musharif, licensing, physicians"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00146-00164"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00146-00164"],"princeton_url":"https://geniza.princeton.edu/documents/29072/","mentioned":"","description_he":"קטע קטן מתעודה, או אולי ממכתב, הנוגע להסמכת רופא עיניים. בטקסט נאמר: \"[פלוני ואב?]רהם מעידים לטובתו שהוא ראוי לעסוק בריפוי [ו]בטיפול במחלות העין, והמסמך/החתימה של הקאדי הנכבד פתח אלדין ה[[לשעבר]] מפקח על הרופאים ועמיתיו... לפני הסולטאן החסיד... וה' [יגדיל] את שמו\".\n\nבעל הסמכות המוזכר כאן, פתח אלדין, הוא ככל הנראה פתח אלדין בן ג'מאל אלדין עת'מאן בן הבת אללה אבן אבי אלחואפר, הידוע גם בכינוי פתח אלדין אלקיסי (נפטר בשנות ה-1240 או ה-1250), אשר שירת את אלמלך אלכאמל (שלט 1218–1238) ואת אלמלך אלצאלח (שלט 1240–1249). כתב היד הערבי-יהודי תואם תיארוך זה. פתח אלדין זה חיבר חיבור על רפואת עיניים בשם \"נתיג'ת אלפכר פי עלאג' אמראץ' אלבצר\". אבן אבי אצ'יבעה אינו מציין שהיה קאדי או שמילא תפקיד של מפקח על הרופאים (משארף אלאטבאא'), אם כי הוא מציין ששני קרוביו — אביו ג'מאל אלדין ובנו שהאב אלדין — מילאו את התפקיד של ראש הרופאים (ראיס אלאטבאא').","tags_he":["מכתב","יהודית-ערבית","רפואה"],"prev":"29071","next":"29073","pos":16555,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Small fragment of a certificate or possibly a letter concerning the licensing of an ophthalmologist: \"[X and Av?]raham testify in his favor that he is qualified for prac[tice and] for the treatment of diseases of the eye, and the document/signature of the revered qāḍī Fatḥ al-Dīn the [[former]] supervisor of the physicians and his colleagues. . . . before the pious sulṭān. . . and may [God] make his reputation mighty.\" \n\nThe authority mentioned here, Fatḥ al-Dīn, is probably identical with Fatḥ al-Dīn b. Jamāl al-Dīn ʿUthmān b. Hibatallāh Ibn Abī l-Ḥawāfir also known simply as Fatḥ al-Dīn al-Qaysī (d. 1240s or 1250s), who served al-Malik al-Kāmil (r. 1218–38) and al-Malik al-Ṣāliḥ (r. 1240–49). The Judaeo-Arabic hand is consistent with this dating. See Ibn Abī Uṣaybiʿa (https://doi.org/10.1163/37704_0668IbnAbiUsaibia.Tabaqatalatibba.lhom-tr-eng1), section 14.45, and see Brockelmann, Supplement, vol. 1, pp. 897–98. This Fatḥ al-Dīn wrote an ophthalmology treatise called \"Natījat al-fikar fī ʿilāj amrāḍ al-baṣar.\" IAU does not mention that he was a qāḍī or that he was the supervisor of the physicians (mushārif al-aṭibbāʾ), though he does state that both Fatḥ al-Dīn's father Jamāl al-Dīn and his son Shihāb al-Dīn held the position chief physician (raʾīs al-aṭibbāʿ). (Information in part from CUDL.)\n\nSee also ENA NS 36.26 (PGPID 40616).",
+  "description_he": "קטע קטן מתעודה, או אולי ממכתב, הנוגע להסמכת רופא עיניים. בטקסט נאמר: \"[פלוני ואב?]רהם מעידים לטובתו שהוא ראוי לעסוק בריפוי [ו]בטיפול במחלות העין, והמסמך/החתימה של הקאדי הנכבד פתח אלדין ה[[לשעבר]] מפקח על הרופאים ועמיתיו... לפני הסולטאן החסיד... וה' [יגדיל] את שמו\".\n\nבעל הסמכות המוזכר כאן, פתח אלדין, הוא ככל הנראה פתח אלדין בן ג'מאל אלדין עת'מאן בן הבת אללה אבן אבי אלחואפר, הידוע גם בכינוי פתח אלדין אלקיסי (נפטר בשנות ה-1240 או ה-1250), אשר שירת את אלמלך אלכאמל (שלט 1218–1238) ואת אלמלך אלצאלח (שלט 1240–1249). כתב היד הערבי-יהודי תואם תיארוך זה. פתח אלדין זה חיבר חיבור על רפואת עיניים בשם \"נתיג'ת אלפכר פי עלאג' אמראץ' אלבצר\". אבן אבי אצ'יבעה אינו מציין שהיה קאדי או שמילא תפקיד של מפקח על הרופאים (משארף אלאטבאא'), אם כי הוא מציין ששני קרוביו — אביו ג'מאל אלדין ובנו שהאב אלדין — מילאו את התפקיד של ראש הרופאים (ראיס אלאטבאא').",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00146-00164"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "29072",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00146-00164"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "29073",
+  "origin": "",
+  "pos": 16555,
+  "prev": "29071",
+  "princeton_url": "https://geniza.princeton.edu/documents/29072/",
+  "region": "",
+  "shelfmark": "T-S AS 146.164",
+  "tags": [
+    "ophthalmology, musharif, licensing, physicians"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "שירה",
+    "רפואה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

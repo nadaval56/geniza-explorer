@@ -1,1 +1,42 @@
-{"id":"36626","shelfmark":"Moss. IXa,2.29","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Love poetry. Bifolio.","tags":["DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/36626/","mentioned":"","description_he":"שירת אהבה. דיפלומה.","tags_he":["ערבית"],"prev":"36625","next":"36627","pos":32204,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Love poetry. Bifolio.",
+  "description_he": "שירת אהבה. דיפלומה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "36626",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "36627",
+  "origin": "",
+  "pos": 32204,
+  "prev": "36625",
+  "princeton_url": "https://geniza.princeton.edu/documents/36626/",
+  "region": "",
+  "shelfmark": "Moss. IXa,2.29",
+  "tags": [
+    "DIMME"
+  ],
+  "tags_he": [
+    "ערבית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

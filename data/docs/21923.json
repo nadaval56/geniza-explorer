@@ -1,1 +1,44 @@
-{"id":"21923","shelfmark":"T-S AS 150.40","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Unidentified literary text in Judaeo-Arabic, mentioning Jonah and the whale and words like \"praise\" and \"the merciful.\" (Information in part from CUDL.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00150-00040"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00150-00040"],"princeton_url":"https://geniza.princeton.edu/documents/21923/","mentioned":"","description_he":"טקסט ספרותי בלתי מזוהה ביהודית-ערבית, המזכיר את יונה והדג ומילים כגון 'שבח' ו'הרחמן'.","tags_he":["יהודית-ערבית"],"prev":"21919","next":"21925","pos":14857,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Unidentified literary text in Judaeo-Arabic, mentioning Jonah and the whale and words like \"praise\" and \"the merciful.\" (Information in part from CUDL.)",
+  "description_he": "טקסט ספרותי בלתי מזוהה ביהודית-ערבית, המזכיר את יונה והדג ומילים כגון 'שבח' ו'הרחמן'.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00150-00040"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "21923",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00150-00040"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "21925",
+  "origin": "",
+  "pos": 14857,
+  "prev": "21919",
+  "princeton_url": "https://geniza.princeton.edu/documents/21923/",
+  "region": "",
+  "shelfmark": "T-S AS 150.40",
+  "tags": [],
+  "tags_he": [
+    "יהודית-ערבית",
+    "דג"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

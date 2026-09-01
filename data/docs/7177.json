@@ -1,1 +1,43 @@
-{"id":"7177","shelfmark":"T-S 12.221","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Large letter in Judaeo-Arabic about communal strife and denunciations. Abū l-[...] Ibn al-Dayyān told 'sayyidnā al-faqīh al-ḥāfiẓ' that the sender had said something derogatory about the Muslim jurisprudents (al-fuqahāʾ) in Hebrew, a phrase meaning \"al-ẓalma al-athama(?).\" (Information in part from Goitein's index card.) Should be edited. Same hand as T-S 10J6.4?","tags":["to edit"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/7177/","mentioned":"","description_he":"מכתב גדול ביהודית-ערבית על מחלוקות קהילתיות והלשנות. אבו אל-[...] אבן אל-דיאן אמר ל'סיידנא אל-פקיה אל-חאפז' שהשולח אמר דבר גנאי על הפוקהא המוסלמים בעברית","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"7176","next":"7179","pos":21245,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Large letter in Judaeo-Arabic about communal strife and denunciations. Abū l-[...] Ibn al-Dayyān told 'sayyidnā al-faqīh al-ḥāfiẓ' that the sender had said something derogatory about the Muslim jurisprudents (al-fuqahāʾ) in Hebrew, a phrase meaning \"al-ẓalma al-athama(?).\" (Information in part from Goitein's index card.) Should be edited. Same hand as T-S 10J6.4?",
+  "description_he": "מכתב גדול ביהודית-ערבית על מחלוקות קהילתיות והלשנות. אבו אל-[...] אבן אל-דיאן אמר ל'סיידנא אל-פקיה אל-חאפז' שהשולח אמר דבר גנאי על הפוקהא המוסלמים בעברית",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7177",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7179",
+  "origin": "",
+  "pos": 21245,
+  "prev": "7176",
+  "princeton_url": "https://geniza.princeton.edu/documents/7177/",
+  "region": "",
+  "shelfmark": "T-S 12.221",
+  "tags": [
+    "to edit"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

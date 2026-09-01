@@ -1,1 +1,44 @@
-{"id":"25825","shelfmark":"T-S NS 327.3","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Folio from a ninth-century geography text written by the Persian geographer Ibn Khordadbeh (d. 912), entitled \"Kitāb al-Masālik wa l-Mamālik\" (The Books of Roads and Kingdoms). The work maps and describes different trade routes of the Islamicate world at that time, including long-distance trade with China, Japan, and Korea. The present folio is a summary of the kharāj tax collected in Khorasan and the annexed territories. This folio is cited only in Hopkins, Studies in the grammar of early Arabic (1984), p. 199. The edition of this folio closely matches, although with some slight variations, the published version of this manuscript published by Leiden in 1889.","tags":["to edit"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00327-00003"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/25825/","mentioned":"Khorasan","description_he":"העתק של חשבונות מס על מס הח'ראג' שנגבה בח'וראסאן ובשטחים הסמוכים לה. העתק פאטימי של פנקס מס עבאסי? לכאורה מוזכר רק אצל הופקינס, מחקרים בדקדוק הערבית המוקדמת (1984), עמ' 199. דרוש בדיקה.","tags_he":["ערבית"],"prev":"25821","next":"25837","pos":15438,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Folio from a ninth-century geography text written by the Persian geographer Ibn Khordadbeh (d. 912), entitled \"Kitāb al-Masālik wa l-Mamālik\" (The Books of Roads and Kingdoms). The work maps and describes different trade routes of the Islamicate world at that time, including long-distance trade with China, Japan, and Korea. The present folio is a summary of the kharāj tax collected in Khorasan and the annexed territories. This folio is cited only in Hopkins, Studies in the grammar of early Arabic (1984), p. 199. The edition of this folio closely matches, although with some slight variations, the published version of this manuscript published by Leiden in 1889.",
+  "description_he": "העתק של חשבונות מס על מס הח'ראג' שנגבה בח'וראסאן ובשטחים הסמוכים לה. העתק פאטימי של פנקס מס עבאסי? לכאורה מוזכר רק אצל הופקינס, מחקרים בדקדוק הערבית המוקדמת (1984), עמ' 199. דרוש בדיקה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "25825",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00327-00003"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Khorasan",
+  "multifragment": "",
+  "next": "25837",
+  "origin": "",
+  "pos": 15438,
+  "prev": "25821",
+  "princeton_url": "https://geniza.princeton.edu/documents/25825/",
+  "region": "",
+  "shelfmark": "T-S NS 327.3",
+  "tags": [
+    "to edit"
+  ],
+  "tags_he": [
+    "ערבית",
+    "מסחר"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

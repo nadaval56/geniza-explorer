@@ -1,1 +1,45 @@
-{"id":"26661","shelfmark":"Moss. Ia,22.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Interesting, late letter in Judaeo-Arabic from \"the land of the Christians\" to al-Muʿallim Yūsuf, the shammas of the synagogue, Cairo. The writer narrates in brief how he left Cairo with spices to sell overseas, was detained in Alexandria for a time due to an illness, spent 6 months (!?) at sea, getting lost and nearly getting drowned, first stopping in Turkey and then continuing the land of the Christians. At some point they also stopped in Tripoli (Lebanon?) and purchased more goods. \"When we entered the city, the representative of the Amir was deposed (?) and the elders אתפרת (?).\" (This sentence is not at all clear. The word נאיבו in fact looks more like נציבו and could even be the name of the city. What the elders did is also not clear.) The writer then describes his difficulties selling the goods from Cairo and Tripoli, mentioning the currencies dinar and muayyadi. He sends regards to Muʿallima Sara. He tells Yūsuf to expect the arrival of ʿAmmī Zikrī al-Quṣamṭīnī and his wife, who are poor. He asks Yūsuf to help them with the capitation tax and to help them get settled. He sends regards to the family (dār) of Rashīd; and the family (bayt) of Ḥakīm Shams Ḥanūna (?); and the cousins of the Muʿallima; and R. Avraham; and Khalaf; and the family of the syrup-maker (? ṭābikh al-sharāb spelled טבך אשרב) and his wife (ahlihi). The writer's wife and children send regards, as does the addressee's brother Barakāt (at the beginning of the letter). He concludes with greetings to Hārūn Jamal and his wife and children and reports that Hārūn's mother and brothers and sisters and maternal aunt are all well. Someone else added underneath the letter, \"Greetings to ʿAyyād!\" ASE.","tags":["Shipwreck, LOR, travel narrative, Turkey, 16th c or later, muayyadis, Late JA, late illness, jaliya"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/26661/","mentioned":"","description_he":"מכתב מאוחר ומעניין בערבית-יהודית, נשלח מ\"ארץ הנוצרים\" אל אלמעלם יוסף, שמש בית הכנסת בקהיר. הכותב מספר בקצרה כיצד יצא מקהיר ובידיו תבלינים למכירה מעבר לים, נעצר באלכסנדריה למשך זמן בשל מחלה, ובילה שישה חודשים (!?) בים, תעה בדרכו וכמעט טבע. הוא עגן תחילה בתורכיה ואחר כך המשיך אל ארץ הנוצרים. באחת התחנות עצרו גם בטריפולי (לבנון?) ורכשו שם סחורות נוספות. \"כאשר נכנסנו לעיר, נציבו של האמיר הודח (?) והזקנים אתפרת (?).\" (המשפט אינו ברור כלל. המילה נאיבו נראית למעשה יותר כ-נציבו, וייתכן אפילו ששם זה הוא שם העיר. גם פעולת הזקנים אינה ברורה.) הכותב מתאר אחר כך את הקשיים שהיו לו במכירת הסחורות מקהיר ומטריפולי, ומזכיר את המטבעות דינר ומועיידי. הוא מוסר דרישת שלום למעלמה שרה. הוא מבקש מיוסף לצפות לבואם של עמי זכרי אלקצמטיני ואשתו, שהם עניים, ומבקש ממנו לעזור להם בתשלום מס הגולגולת ובהשתקעותם. הוא מוסר דרישות שלום לבית (דאר) רשיד; לבית (בית) חכים שמש חנונה (?); לבני דודי המעלמה; לר' אברהם; לח'לף; ולבית טבך אלשרב (טבך אשרב, ייתכן יצרן הסירופ?) ואשתו (אהלה). אשתו וילדיו של הכותב שולחים דרישות שלום, וכן ברכאת אחיו של הנמען (בתחילת המכתב). הוא מסיים בברכות להארון ג'מל ואשתו וילדיו, ומדווח שאמו של הארון, אחיו ואחיותיו ודודתו מצד אמו כולם בקו הבריאות. מישהו אחר הוסיף מתחת למכתב: \"דרישת שלום לעיאד!\"","tags_he":["מכתב","יהודית-ערבית","קהיר","אלכסנדריה","טריפולי","משי"],"prev":"26647","next":"26668","pos":27248,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Interesting, late letter in Judaeo-Arabic from \"the land of the Christians\" to al-Muʿallim Yūsuf, the shammas of the synagogue, Cairo. The writer narrates in brief how he left Cairo with spices to sell overseas, was detained in Alexandria for a time due to an illness, spent 6 months (!?) at sea, getting lost and nearly getting drowned, first stopping in Turkey and then continuing the land of the Christians. At some point they also stopped in Tripoli (Lebanon?) and purchased more goods. \"When we entered the city, the representative of the Amir was deposed (?) and the elders אתפרת (?).\" (This sentence is not at all clear. The word נאיבו in fact looks more like נציבו and could even be the name of the city. What the elders did is also not clear.) The writer then describes his difficulties selling the goods from Cairo and Tripoli, mentioning the currencies dinar and muayyadi. He sends regards to Muʿallima Sara. He tells Yūsuf to expect the arrival of ʿAmmī Zikrī al-Quṣamṭīnī and his wife, who are poor. He asks Yūsuf to help them with the capitation tax and to help them get settled. He sends regards to the family (dār) of Rashīd; and the family (bayt) of Ḥakīm Shams Ḥanūna (?); and the cousins of the Muʿallima; and R. Avraham; and Khalaf; and the family of the syrup-maker (? ṭābikh al-sharāb spelled טבך אשרב) and his wife (ahlihi). The writer's wife and children send regards, as does the addressee's brother Barakāt (at the beginning of the letter). He concludes with greetings to Hārūn Jamal and his wife and children and reports that Hārūn's mother and brothers and sisters and maternal aunt are all well. Someone else added underneath the letter, \"Greetings to ʿAyyād!\" ASE.",
+  "description_he": "מכתב מאוחר ומעניין בערבית-יהודית, נשלח מ\"ארץ הנוצרים\" אל אלמעלם יוסף, שמש בית הכנסת בקהיר. הכותב מספר בקצרה כיצד יצא מקהיר ובידיו תבלינים למכירה מעבר לים, נעצר באלכסנדריה למשך זמן בשל מחלה, ובילה שישה חודשים (!?) בים, תעה בדרכו וכמעט טבע. הוא עגן תחילה בתורכיה ואחר כך המשיך אל ארץ הנוצרים. באחת התחנות עצרו גם בטריפולי (לבנון?) ורכשו שם סחורות נוספות. \"כאשר נכנסנו לעיר, נציבו של האמיר הודח (?) והזקנים אתפרת (?).\" (המשפט אינו ברור כלל. המילה נאיבו נראית למעשה יותר כ-נציבו, וייתכן אפילו ששם זה הוא שם העיר. גם פעולת הזקנים אינה ברורה.) הכותב מתאר אחר כך את הקשיים שהיו לו במכירת הסחורות מקהיר ומטריפולי, ומזכיר את המטבעות דינר ומועיידי. הוא מוסר דרישת שלום למעלמה שרה. הוא מבקש מיוסף לצפות לבואם של עמי זכרי אלקצמטיני ואשתו, שהם עניים, ומבקש ממנו לעזור להם בתשלום מס הגולגולת ובהשתקעותם. הוא מוסר דרישות שלום לבית (דאר) רשיד; לבית (בית) חכים שמש חנונה (?); לבני דודי המעלמה; לר' אברהם; לח'לף; ולבית טבך אלשרב (טבך אשרב, ייתכן יצרן הסירופ?) ואשתו (אהלה). אשתו וילדיו של הכותב שולחים דרישות שלום, וכן ברכאת אחיו של הנמען (בתחילת המכתב). הוא מסיים בברכות להארון ג'מל ואשתו וילדיו, ומדווח שאמו של הארון, אחיו ואחיותיו ודודתו מצד אמו כולם בקו הבריאות. מישהו אחר הוסיף מתחת למכתב: \"דרישת שלום לעיאד!\"",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "26661",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "26668",
+  "origin": "",
+  "pos": 27248,
+  "prev": "26647",
+  "princeton_url": "https://geniza.princeton.edu/documents/26661/",
+  "region": "",
+  "shelfmark": "Moss. Ia,22.2",
+  "tags": [
+    "Shipwreck, LOR, travel narrative, Turkey, 16th c or later, muayyadis, Late JA, late illness, jaliya"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "קהיר",
+    "אלכסנדריה",
+    "טריפולי"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

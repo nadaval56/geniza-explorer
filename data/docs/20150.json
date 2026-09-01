@@ -1,1 +1,48 @@
-{"id":"20150","shelfmark":"T-S 8J33.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter that purports to be from the followers of the King Joseph b. Solomon, near Ancona (Italy), addressed to a certain Avraham. In Hebrew. King Joseph has crossed the Sambatyon river and amassed a mighty army of all the tribes of Israel. The tribes have drawn lots to determine who will march on whom. One part is \"camped in the desert\" a 4-day march from Rome, and they will soon attack it and conquer it. A second part will conquer Mecca and Jeddda, a third part will gather the dispersed Israelites from the West, while the fourth part will gather the Israelites from 'beyond Eden' (though Mann understands this as Aden) and come back with Elijah the Prophet. This letter is likely related to the messianic activities of David Reuveni in Italy in the years following 1524 CE. See Miriam Eliav-Feldon, \"Invented Identities: Credulity in the Age of Prophecy and Exploration,\" JEMH 3,3 (1999), p. 209f.","tags":["messianism, David Reuveni, Ancona"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00033-00002"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00033-00002"],"princeton_url":"https://geniza.princeton.edu/documents/20150/","mentioned":"Ancona","description_he":"איגרת המתיימרת להיות מטעם חסידיו של המלך יוסף בן שלמה, בקרבת אנקונה (איטליה), המופנית לאדם בשם אברהם. כתובה בעברית. לפי האיגרת, המלך יוסף חצה את נהר הסמבטיון וקיבץ צבא אדיר מכל שבטי ישראל. השבטים הפילו גורלות כדי לקבוע מי יצא לקרב נגד מי. חלק אחד מהם \"חונה במדבר\" במרחק של ארבעה ימי מסע מרומא, ובכוונתו לתקוף את העיר ולכבוש אותה בקרוב. חלק שני יכבוש את מכה וג'דה, חלק שלישי יקבץ את פזורי ישראל מן המערב, ואילו חלק רביעי יקבץ את ישראל מ\"מעבר לעדן\" (אם כי מאן מבין זאת כעדן עצמה) וישוב יחד עם אליהו הנביא. סביר להניח שהאיגרת קשורה לפעילותו המשיחית של דוד הראובני באיטליה בשנים שלאחר 1524 לסה\"נ. ראו: מרים אליאב-פלדון, \"Invented Identities: Credulity in the Age of Prophecy and Exploration\", JEMH 3,3 (1999), עמ' 209 ואילך.","tags_he":["מכתב","עברית","כתובה","עדן","משי"],"prev":"20148","next":"20175","pos":14676,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter that purports to be from the followers of the King Joseph b. Solomon, near Ancona (Italy), addressed to a certain Avraham. In Hebrew. King Joseph has crossed the Sambatyon river and amassed a mighty army of all the tribes of Israel. The tribes have drawn lots to determine who will march on whom. One part is \"camped in the desert\" a 4-day march from Rome, and they will soon attack it and conquer it. A second part will conquer Mecca and Jeddda, a third part will gather the dispersed Israelites from the West, while the fourth part will gather the Israelites from 'beyond Eden' (though Mann understands this as Aden) and come back with Elijah the Prophet. This letter is likely related to the messianic activities of David Reuveni in Italy in the years following 1524 CE. See Miriam Eliav-Feldon, \"Invented Identities: Credulity in the Age of Prophecy and Exploration,\" JEMH 3,3 (1999), p. 209f.",
+  "description_he": "איגרת המתיימרת להיות מטעם חסידיו של המלך יוסף בן שלמה, בקרבת אנקונה (איטליה), המופנית לאדם בשם אברהם. כתובה בעברית. לפי האיגרת, המלך יוסף חצה את נהר הסמבטיון וקיבץ צבא אדיר מכל שבטי ישראל. השבטים הפילו גורלות כדי לקבוע מי יצא לקרב נגד מי. חלק אחד מהם \"חונה במדבר\" במרחק של ארבעה ימי מסע מרומא, ובכוונתו לתקוף את העיר ולכבוש אותה בקרוב. חלק שני יכבוש את מכה וג'דה, חלק שלישי יקבץ את פזורי ישראל מן המערב, ואילו חלק רביעי יקבץ את ישראל מ\"מעבר לעדן\" (אם כי מאן מבין זאת כעדן עצמה) וישוב יחד עם אליהו הנביא. סביר להניח שהאיגרת קשורה לפעילותו המשיחית של דוד הראובני באיטליה בשנים שלאחר 1524 לסה\"נ. ראו: מרים אליאב-פלדון, \"Invented Identities: Credulity in the Age of Prophecy and Exploration\", JEMH 3,3 (1999), עמ' 209 ואילך.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00033-00002"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "20150",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00033-00002"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Ancona",
+  "multifragment": "",
+  "next": "20175",
+  "origin": "",
+  "pos": 14676,
+  "prev": "20148",
+  "princeton_url": "https://geniza.princeton.edu/documents/20150/",
+  "region": "",
+  "shelfmark": "T-S 8J33.2",
+  "tags": [
+    "messianism, David Reuveni, Ancona"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "כתובה",
+    "עדן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

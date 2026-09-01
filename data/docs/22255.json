@@ -1,1 +1,43 @@
-{"id":"22255","shelfmark":"T-S AS 153.371","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Much damaged late poetic Hebrew fragment, might be from a letter of appeal.","tags":["Heb, Late"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/22255/","mentioned":"","description_he":"שבר שירי עברי מאוחר ופגום מאוד, אולי מתוך מכתב פנייה.","tags_he":["מכתב","עברית"],"prev":"22254","next":"22256","pos":24128,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Much damaged late poetic Hebrew fragment, might be from a letter of appeal.",
+  "description_he": "שבר שירי עברי מאוחר ופגום מאוד, אולי מתוך מכתב פנייה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "22255",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "22256",
+  "origin": "",
+  "pos": 24128,
+  "prev": "22254",
+  "princeton_url": "https://geniza.princeton.edu/documents/22255/",
+  "region": "",
+  "shelfmark": "T-S AS 153.371",
+  "tags": [
+    "Heb, Late"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

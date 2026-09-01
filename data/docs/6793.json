@@ -1,1 +1,44 @@
-{"id":"6793","shelfmark":"ENA 4010.19","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1088-09-19/1089-09-07","date_original":"4849","date_standard":"1088-09-19/1089-09-07","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Legal deed. Location: Alexandria. Dated: 4849 AM = 1088/89 CE. In which a woman, whose identity is established in court by ʿEli ha-Kohen, appoints an agent (wakīl) to demand support from her husband, for her children were without food and clothing. Signed by Shela b. Mevasser and Merayot b. Yosef ha-Kohen Av ha-Yeshiva. (Information in part from Goitein's index card.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/baa04675-3b6f-4df1-9265-e77efb6c798b/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/6793/","mentioned":"","description_he":"שטר משפטי; אלכסנדריה; 4849 לבריאה (1088/89 לספירה); אישה שמידותיה הוכרו על ידי עלי הכהן ממנה שליח לדרוש מזונות מבעלה שהילדים ללא אוכל ובגדים","tags_he":["מסמך משפטי","יהודית-ערבית","אלכסנדריה"],"prev":"6792","next":"6794","pos":4447,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1088-09-19/1089-09-07",
+  "date_inferred": "",
+  "date_original": "4849",
+  "date_rationale": "",
+  "date_standard": "1088-09-19/1089-09-07",
+  "description": "Legal deed. Location: Alexandria. Dated: 4849 AM = 1088/89 CE. In which a woman, whose identity is established in court by ʿEli ha-Kohen, appoints an agent (wakīl) to demand support from her husband, for her children were without food and clothing. Signed by Shela b. Mevasser and Merayot b. Yosef ha-Kohen Av ha-Yeshiva. (Information in part from Goitein's index card.)",
+  "description_he": "שטר משפטי; אלכסנדריה; 4849 לבריאה (1088/89 לספירה); אישה שמידותיה הוכרו על ידי עלי הכהן ממנה שליח לדרוש מזונות מבעלה שהילדים ללא אוכל ובגדים",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6793",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/baa04675-3b6f-4df1-9265-e77efb6c798b/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "6794",
+  "origin": "",
+  "pos": 4447,
+  "prev": "6792",
+  "princeton_url": "https://geniza.princeton.edu/documents/6793/",
+  "region": "",
+  "shelfmark": "ENA 4010.19",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "ישיבה וגאונות",
+    "אלכסנדריה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

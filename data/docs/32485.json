@@ -1,1 +1,49 @@
-{"id":"32485","shelfmark":"Halper 159","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"CAJS","library_raw":"CAJS","collection":"CAJS","description":"Legal query with Avraham Maimonides' autograph responsum and signature (r. 1205–1237 CE). Description from Penn Catalog: \"The recto contains three related inquiries, in three separate paragraphs. Each of the inquiries is signed with the common salutation ושכרו כפול מן השמים; In the remaining exterior edge of the lower two thirds, written lengthwise to fit the open space, is R. Abraham's six-lines of reply, probably in his own hand. The reply starts with the headline אלגואב and is signed אברהם ברבי משה זצ״ל; The inquiry deals with the debt of an unnamed widow. Published from this source in the edition edited by Goitein and Freimann: Teshuvot / Avraham ben ha-Rambam ; Abraham Freimann and S. D. Goitein [editors]. Jersualem : Meḳitse nirdamin, 1937, p 202-204, item no. 118; The folio has been folded lengthwise into two halves, after the primary inscriptions. The verso bears a secondary inscription that fits this fold. It contains two columns of Hebrew poetry; The right column is filled by a poem in honor of a prince named Joshua, that starts מה תצרי מה תרחבי. Published from this source by Israel Davidson: Ginze Shekhṭer. New York : Jewish Theological Seminary of America, 1928-1929, v. 3, p. 307-308; The left column, ll. 1-5 is a short poem that starts צורי חסדיך, published, from a different source, by S. Wertheimer: Sefer Zikhron le-rishonim ṿele-aḥaronim / Solomon Aaron Werthaimer. Yerushalayim : Bi-defus ha-Aḥim Solomon, 1909, part 3, p. 6a; Followed by Judah ha-Levi's יפה נוף (in H. Brody's: Diṿan / Yehudah ha-Leṿi (Judah, ha-Levi) ; Heinrich Brody [ed.] Berlin : Ḥevrat Meḳits nirdamim, 1910-, v. 2, p. 167 and also in Harkavy's edition: Yehudah ha-Leṿi / Albert Harakvy [ed.]. Ṿarsha : Aḥiasaf, 1893-1895, v. 1, p. 7); Under the heading אחר מאברם בן אזרא ז\"ל, Abraham ibn Ezra's לאלהים כלתה נפשי (in the Diwan of Abraham Ibn Ezra: Diṿan le-Rabi Avraham ben Ezra / Aḳiva ben Yosef Eger [ed.]. Berlin, 1886, p. 187).\"","tags":["Avraham Maimonides autograph, Responsum"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://colenda.library.upenn.edu/items/ark:/81431/p3959cs37/manifest"],"fragment_urls":["https://colenda.library.upenn.edu/catalog/81431-p3959cs37"],"princeton_url":"https://geniza.princeton.edu/documents/32485/","mentioned":"","description_he":"שאילתה הלכתית עם תשובה בכתב ידו וחתימתו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237). בצד הרקטו שלוש שאלות קשורות זו לזו, כל אחת בפסקה נפרדת. כל אחת מן השאלות חתומה בנוסח הברכה המקובל \"ושכרו כפול מן השמים\". בשולי הצד שנותרו פנויים, בשני השלישים התחתונים, נכתבה לאורך השטח הריק תשובתו של ר' אברהם בשש שורות, ככל הנראה בכתב ידו שלו. התשובה נפתחת בכותרת \"אלגואב\" וחתומה \"אברהם ברבי משה זצ״ל\". השאלה עוסקת בחובה של אלמנה ששמה לא נזכר. התשובה פורסמה ממקור זה במהדורת גויטיין ופריימן של תשובות ר' אברהם בן הרמב\"ם (ירושלים, מקיצי נרדמים, 1937, סימן קי\"ח).\n\nהדף קופל לאורכו לשניים לאחר הכתיבה הראשונית, וצד הוורסו נושא כתיבה משנית המתאימה לקיפול זה. בוורסו שני טורים של שירה עברית. הטור הימני מלא בשיר לכבוד נשיא בשם יהושע, הפותח במילים \"מה תצרי מה תרחבי\". השיר פורסם ממקור זה על ידי ישראל דוידסון בכרך השלישי של \"גנזי שכטר\" (ניו-יורק, 1928–1929). בטור השמאלי, בשורות 1–5, מופיע שיר קצר הפותח \"צורי חסדיך\" (שפורסם ממקור אחר על ידי ש' ורטהיימר). אחריו בא שירו של ר' יהודה הלוי \"יפה נוף\" (המוכר ממהדורות בְּרוֹדִי והרכבי לדיוואן יהודה הלוי). תחת הכותרת \"אחר מאברם בן אזרא ז\"ל\" מובא שירו של ר' אברהם אבן עזרא \"לאלהים כלתה נפשי\" (המוכר מן הדיוואן שלו).","tags_he":["מסמך משפטי","יהודית-ערבית","שירה","ירושלים","נרד","מיימוניד"],"prev":"32484","next":"32486","pos":17441,"total":35937}
+{
+  "collection": "CAJS",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Legal query with Avraham Maimonides' autograph responsum and signature (r. 1205–1237 CE). Description from Penn Catalog: \"The recto contains three related inquiries, in three separate paragraphs. Each of the inquiries is signed with the common salutation ושכרו כפול מן השמים; In the remaining exterior edge of the lower two thirds, written lengthwise to fit the open space, is R. Abraham's six-lines of reply, probably in his own hand. The reply starts with the headline אלגואב and is signed אברהם ברבי משה זצ״ל; The inquiry deals with the debt of an unnamed widow. Published from this source in the edition edited by Goitein and Freimann: Teshuvot / Avraham ben ha-Rambam ; Abraham Freimann and S. D. Goitein [editors]. Jersualem : Meḳitse nirdamin, 1937, p 202-204, item no. 118; The folio has been folded lengthwise into two halves, after the primary inscriptions. The verso bears a secondary inscription that fits this fold. It contains two columns of Hebrew poetry; The right column is filled by a poem in honor of a prince named Joshua, that starts מה תצרי מה תרחבי. Published from this source by Israel Davidson: Ginze Shekhṭer. New York : Jewish Theological Seminary of America, 1928-1929, v. 3, p. 307-308; The left column, ll. 1-5 is a short poem that starts צורי חסדיך, published, from a different source, by S. Wertheimer: Sefer Zikhron le-rishonim ṿele-aḥaronim / Solomon Aaron Werthaimer. Yerushalayim : Bi-defus ha-Aḥim Solomon, 1909, part 3, p. 6a; Followed by Judah ha-Levi's יפה נוף (in H. Brody's: Diṿan / Yehudah ha-Leṿi (Judah, ha-Levi) ; Heinrich Brody [ed.] Berlin : Ḥevrat Meḳits nirdamim, 1910-, v. 2, p. 167 and also in Harkavy's edition: Yehudah ha-Leṿi / Albert Harakvy [ed.]. Ṿarsha : Aḥiasaf, 1893-1895, v. 1, p. 7); Under the heading אחר מאברם בן אזרא ז\"ל, Abraham ibn Ezra's לאלהים כלתה נפשי (in the Diwan of Abraham Ibn Ezra: Diṿan le-Rabi Avraham ben Ezra / Aḳiva ben Yosef Eger [ed.]. Berlin, 1886, p. 187).\"",
+  "description_he": "שאילתה הלכתית עם תשובה בכתב ידו וחתימתו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237). בצד הרקטו שלוש שאלות קשורות זו לזו, כל אחת בפסקה נפרדת. כל אחת מן השאלות חתומה בנוסח הברכה המקובל \"ושכרו כפול מן השמים\". בשולי הצד שנותרו פנויים, בשני השלישים התחתונים, נכתבה לאורך השטח הריק תשובתו של ר' אברהם בשש שורות, ככל הנראה בכתב ידו שלו. התשובה נפתחת בכותרת \"אלגואב\" וחתומה \"אברהם ברבי משה זצ״ל\". השאלה עוסקת בחובה של אלמנה ששמה לא נזכר. התשובה פורסמה ממקור זה במהדורת גויטיין ופריימן של תשובות ר' אברהם בן הרמב\"ם (ירושלים, מקיצי נרדמים, 1937, סימן קי\"ח).\n\nהדף קופל לאורכו לשניים לאחר הכתיבה הראשונית, וצד הוורסו נושא כתיבה משנית המתאימה לקיפול זה. בוורסו שני טורים של שירה עברית. הטור הימני מלא בשיר לכבוד נשיא בשם יהושע, הפותח במילים \"מה תצרי מה תרחבי\". השיר פורסם ממקור זה על ידי ישראל דוידסון בכרך השלישי של \"גנזי שכטר\" (ניו-יורק, 1928–1929). בטור השמאלי, בשורות 1–5, מופיע שיר קצר הפותח \"צורי חסדיך\" (שפורסם ממקור אחר על ידי ש' ורטהיימר). אחריו בא שירו של ר' יהודה הלוי \"יפה נוף\" (המוכר ממהדורות בְּרוֹדִי והרכבי לדיוואן יהודה הלוי). תחת הכותרת \"אחר מאברם בן אזרא ז\"ל\" מובא שירו של ר' אברהם אבן עזרא \"לאלהים כלתה נפשי\" (המוכר מן הדיוואן שלו).",
+  "destination": "",
+  "fragment_urls": [
+    "https://colenda.library.upenn.edu/catalog/81431-p3959cs37"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "32485",
+  "iiif_urls": [
+    "https://colenda.library.upenn.edu/items/ark:/81431/p3959cs37/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "CAJS",
+  "library_raw": "CAJS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "32486",
+  "origin": "",
+  "pos": 17441,
+  "prev": "32484",
+  "princeton_url": "https://geniza.princeton.edu/documents/32485/",
+  "region": "",
+  "shelfmark": "Halper 159",
+  "tags": [
+    "Avraham Maimonides autograph, Responsum"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "שירה",
+    "ירושלים",
+    "מיימוניד"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

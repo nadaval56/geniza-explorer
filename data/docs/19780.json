@@ -1,1 +1,44 @@
-{"id":"19780","shelfmark":"CUL Or.1080 J102","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Mercantile letter in Judaeo-Arabic. Dating: Likely first half of the 12th century based on handwriting and the names mentioned, but this is tentative. Mentions dealings with the amīrs Shibl al-Dawla (see F 1908.44i (PGPID 5270)) and Nāhiḍ al-Dawla (see T-S AS 118.190 (PGPID 18733) and T-S NS 306.171 (PGPID 25172)). The sender was informed by al-Peʾer that the farmer/peasant (fallāḥ) with whom the sender had deposited his merchandise is 'coveting' it, i.e., seeking to appropriate it for himself. The sender complains that he is persecuted in this way more than anyone else, and the previous year he also had great trouble getting reimbursed for merchandise that was stolen from him. In the margin, he mentions poor-quality wheat. On verso, he asks the addressee to speak to the wālī (ḥaḍrat al-wilāya) on his behalf.","tags":["Amir, fallah"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19780/","mentioned":"","description_he":"מכתב מסחרי בערבית-יהודית. תיארוך: ככל הנראה מן המחצית הראשונה של המאה ה-12, על פי כתב היד והשמות הנזכרים, אך זוהי השערה בלבד. במכתב מוזכרים קשרים עם האמירים שִׁבְּל אלדולה ונאהִץ' אלדולה. השולח מספר שאלפֵּאֵר הודיע לו כי הפלאח (fallāḥ) שאצלו הפקיד את סחורתו \"חומד\" אותה — כלומר מבקש לנכס אותה לעצמו. השולח מתלונן שהוא נרדף בדרך זו יותר מכל אדם אחר, ומציין שגם בשנה הקודמת נגרמו לו טרדות מרובות עד שהצליח לקבל פיצוי על סחורה שנגנבה ממנו. בשוליים הוא מזכיר חיטה באיכות ירודה. בצד האחורי הוא מבקש מהנמען לדבר עליו בפני הוואלי (ḥaḍrat al-wilāya).","tags_he":["מכתב","יהודית-ערבית","מסחר","חיטה","נרד"],"prev":"19779","next":"19781","pos":22346,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Mercantile letter in Judaeo-Arabic. Dating: Likely first half of the 12th century based on handwriting and the names mentioned, but this is tentative. Mentions dealings with the amīrs Shibl al-Dawla (see F 1908.44i (PGPID 5270)) and Nāhiḍ al-Dawla (see T-S AS 118.190 (PGPID 18733) and T-S NS 306.171 (PGPID 25172)). The sender was informed by al-Peʾer that the farmer/peasant (fallāḥ) with whom the sender had deposited his merchandise is 'coveting' it, i.e., seeking to appropriate it for himself. The sender complains that he is persecuted in this way more than anyone else, and the previous year he also had great trouble getting reimbursed for merchandise that was stolen from him. In the margin, he mentions poor-quality wheat. On verso, he asks the addressee to speak to the wālī (ḥaḍrat al-wilāya) on his behalf.",
+  "description_he": "מכתב מסחרי בערבית-יהודית. תיארוך: ככל הנראה מן המחצית הראשונה של המאה ה-12, על פי כתב היד והשמות הנזכרים, אך זוהי השערה בלבד. במכתב מוזכרים קשרים עם האמירים שִׁבְּל אלדולה ונאהִץ' אלדולה. השולח מספר שאלפֵּאֵר הודיע לו כי הפלאח (fallāḥ) שאצלו הפקיד את סחורתו \"חומד\" אותה — כלומר מבקש לנכס אותה לעצמו. השולח מתלונן שהוא נרדף בדרך זו יותר מכל אדם אחר, ומציין שגם בשנה הקודמת נגרמו לו טרדות מרובות עד שהצליח לקבל פיצוי על סחורה שנגנבה ממנו. בשוליים הוא מזכיר חיטה באיכות ירודה. בצד האחורי הוא מבקש מהנמען לדבר עליו בפני הוואלי (ḥaḍrat al-wilāya).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19780",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19781",
+  "origin": "",
+  "pos": 22346,
+  "prev": "19779",
+  "princeton_url": "https://geniza.princeton.edu/documents/19780/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J102",
+  "tags": [
+    "Amir, fallah"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "חיטה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

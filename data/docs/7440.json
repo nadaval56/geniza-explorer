@@ -1,1 +1,49 @@
-{"id":"7440","shelfmark":"T-S 16.187","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-03-22/1205-04-20","date_original":"Nisan 1516","date_standard":"1205-03-22/1205-04-20","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Communal enactment. In the hand of Yosef b. Shemuel b. Saʿadya ha-Levi. Location: Fustat. Dated: Nisan 1516 Seleucid = March/April 1205 CE. Supporting the authority of Avraham Maimonides (referred to as ‘Raʾīs’). After his father’s death, the young Avraham faced resistance from many quarters and people rejecting his reshut avoided attending synagogue services and set up private assemblies. As the community was in danger of fragmenting, a 30-year moratorium was enacted to abolish the custom of reshut and prohibit—under pain of excommunication—the setting up of a private place of prayer. At least seven men signed at the bottom and in the right margin: Moshe b. Mordekhay ha-Kohen, Sar Shalom b. Yaʿaqov ha-Kohen, Shemuel b. Yefet b. […], [...] b. Shemuel ha-Dayyan; Shemuel b. Avraham, Yefet b. Efrayim, and Yosef b. Adoniyya. Reuse: the document was cut into three equal-size pieces and used to write poetry celebrating the birth of a son. The scribe’s hand is rather shaky. (Information from CUDL.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00187"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00187"],"princeton_url":"https://geniza.princeton.edu/documents/7440/","mentioned":"","description_he":"תקנה קהילתית בכתב ידו של יוסף בן שמואל בן סעדיה הלוי. נכתבה בפוסטאט ומתוארכת לחודש ניסן בשנת 1516 למניין השטרות (= מרץ/אפריל 1205). התקנה באה לתמוך בסמכותו של אברהם בן הרמב\"ם (המכונה \"ראיס\"). לאחר מות אביו, ניצב אברהם הצעיר בפני התנגדות מצדדים רבים, ואנשים שדחו את רשותו נמנעו מלהשתתף בתפילות בבית הכנסת והקימו מנייני תפילה פרטיים. מאחר שהקהילה הייתה בסכנת התפלגות, נחקקה תקנה למשך שלושים שנה שנועדה לבטל את מנהג ה\"רשות\" ולאסור — תחת איום של חרם — על הקמתם של מקומות תפילה פרטיים. לפחות שבעה אנשים חתמו בתחתית המסמך ובשוליים הימניים: משה בן מרדכי הכהן, שר שלום בן יעקב הכהן, שמואל בן יפת בן [...], [...] בן שמואל הדיין; שמואל בן אברהם, יפת בן אפרים, ויוסף בן אדוניה. שימוש משני: המסמך נחתך לשלושה חלקים שווים בגודלם, ועליהם נכתבו שירים לכבוד לידת בן. כתב ידו של הסופר רעוד למדי.","tags_he":["מסמך משפטי","תפילה וליטורגיה","פוסטאט","סופר","דיין","מיימוניד"],"prev":"7439","next":"7441","pos":4877,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1205-03-22/1205-04-20",
+  "date_inferred": "",
+  "date_original": "Nisan 1516",
+  "date_rationale": "",
+  "date_standard": "1205-03-22/1205-04-20",
+  "description": "Communal enactment. In the hand of Yosef b. Shemuel b. Saʿadya ha-Levi. Location: Fustat. Dated: Nisan 1516 Seleucid = March/April 1205 CE. Supporting the authority of Avraham Maimonides (referred to as ‘Raʾīs’). After his father’s death, the young Avraham faced resistance from many quarters and people rejecting his reshut avoided attending synagogue services and set up private assemblies. As the community was in danger of fragmenting, a 30-year moratorium was enacted to abolish the custom of reshut and prohibit—under pain of excommunication—the setting up of a private place of prayer. At least seven men signed at the bottom and in the right margin: Moshe b. Mordekhay ha-Kohen, Sar Shalom b. Yaʿaqov ha-Kohen, Shemuel b. Yefet b. […], [...] b. Shemuel ha-Dayyan; Shemuel b. Avraham, Yefet b. Efrayim, and Yosef b. Adoniyya. Reuse: the document was cut into three equal-size pieces and used to write poetry celebrating the birth of a son. The scribe’s hand is rather shaky. (Information from CUDL.)",
+  "description_he": "תקנה קהילתית בכתב ידו של יוסף בן שמואל בן סעדיה הלוי. נכתבה בפוסטאט ומתוארכת לחודש ניסן בשנת 1516 למניין השטרות (= מרץ/אפריל 1205). התקנה באה לתמוך בסמכותו של אברהם בן הרמב\"ם (המכונה \"ראיס\"). לאחר מות אביו, ניצב אברהם הצעיר בפני התנגדות מצדדים רבים, ואנשים שדחו את רשותו נמנעו מלהשתתף בתפילות בבית הכנסת והקימו מנייני תפילה פרטיים. מאחר שהקהילה הייתה בסכנת התפלגות, נחקקה תקנה למשך שלושים שנה שנועדה לבטל את מנהג ה\"רשות\" ולאסור — תחת איום של חרם — על הקמתם של מקומות תפילה פרטיים. לפחות שבעה אנשים חתמו בתחתית המסמך ובשוליים הימניים: משה בן מרדכי הכהן, שר שלום בן יעקב הכהן, שמואל בן יפת בן [...], [...] בן שמואל הדיין; שמואל בן אברהם, יפת בן אפרים, ויוסף בן אדוניה. שימוש משני: המסמך נחתך לשלושה חלקים שווים בגודלם, ועליהם נכתבו שירים לכבוד לידת בן. כתב ידו של הסופר רעוד למדי.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00187"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7440",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00187"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7441",
+  "origin": "",
+  "pos": 4877,
+  "prev": "7439",
+  "princeton_url": "https://geniza.princeton.edu/documents/7440/",
+  "region": "",
+  "shelfmark": "T-S 16.187",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "שירה",
+    "תפילה וליטורגיה",
+    "פוסטאט",
+    "סופר",
+    "דיין",
+    "מיימוניד"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

@@ -1,1 +1,45 @@
-{"id":"26698","shelfmark":"Moss. II,130","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Jerusalem","destination":"Aleppo","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Either a poetic introduction to a letter from the Yeshiva of Jerusalem to the community of Aleppo, or a letter that is in its entirety a poem. Recto contains the poem, in which not only is there an acrostic (אנשי צב. . . probably \"the people of Aleppo\"), but also each verse is composed entirely of words starting with the same letter. Verso contains the address","tags":["Jerusalem, Aleppo"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/26698/","mentioned":"","description_he":"מבוא פיוטי למכתב מישיבת ירושלים אל קהילת ארם-צובא, או מכתב שהוא כולו שיר. הפנים מכילים את השיר, הכולל אקרוסטיכון (אנשי צב... כנראה 'אנשי ארם-צובא'), וכל בית מורכב כולו ממילים המתחילות באותה אות. הגב מכיל את הכתובת.","tags_he":["מכתב","עברית","פיוט","ירושלים"],"prev":"26697","next":"26699","pos":27268,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Either a poetic introduction to a letter from the Yeshiva of Jerusalem to the community of Aleppo, or a letter that is in its entirety a poem. Recto contains the poem, in which not only is there an acrostic (אנשי צב. . . probably \"the people of Aleppo\"), but also each verse is composed entirely of words starting with the same letter. Verso contains the address",
+  "description_he": "מבוא פיוטי למכתב מישיבת ירושלים אל קהילת ארם-צובא, או מכתב שהוא כולו שיר. הפנים מכילים את השיר, הכולל אקרוסטיכון (אנשי צב... כנראה 'אנשי ארם-צובא'), וכל בית מורכב כולו ממילים המתחילות באותה אות. הגב מכיל את הכתובת.",
+  "destination": "Aleppo",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "26698",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "26699",
+  "origin": "Jerusalem",
+  "pos": 27268,
+  "prev": "26697",
+  "princeton_url": "https://geniza.princeton.edu/documents/26698/",
+  "region": "",
+  "shelfmark": "Moss. II,130",
+  "tags": [
+    "Jerusalem, Aleppo"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "פיוט",
+    "שירה",
+    "ירושלים"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

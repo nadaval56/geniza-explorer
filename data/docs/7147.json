@@ -1,1 +1,48 @@
-{"id":"7147","shelfmark":"T-S 12.88","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1129-12-25/1130-01-03","date_original":"Middle decade of Ṭevet 1441","date_standard":"1129-12-25/1130-01-03","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Will, nearly complete. Written on a small piece of parchment. Testator: Abū al-Faraj b. Maʿrūf the perfumer. (His son Faḍāʾil appears in Yevr.-Arab. I 1700.29 (PGPID 9417) several decades later.) Location: Fustat. Dated: middle decade of Ṭevet 1441 Seleucid = 1129/30 CE. Abū l-Faraj gives to his wife her ketubba, trust, and control of the household goods (specifically mentioning the house in Zuqāq al-Turmus) and her children's inheritance. Written and signed by Natan b. Shelomo ha-Kohen; no other signature. RR. ASE.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-00012-00088"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00088/1"],"princeton_url":"https://geniza.princeton.edu/documents/7147/","mentioned":"","description_he":"צוואה, כמעט שלמה, על פיסת קלף קטנה. המצווה: אבו אל-פרג' ב. מעאוף הבשמאי. מיקום: פוסטאט. תאריך: אמצע טבת 1441 סלאוקי (1129/30 לספירה). אבו אל-פרג' מעניק לאשתו כתובתה, נאמנות ושליטה בנכסי הבית","tags_he":["מסמך משפטי","יהודית-ערבית","צוואה","פוסטאט"],"prev":"7146","next":"7149","pos":4679,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1129-12-25/1130-01-03",
+  "date_inferred": "",
+  "date_original": "Middle decade of Ṭevet 1441",
+  "date_rationale": "",
+  "date_standard": "1129-12-25/1130-01-03",
+  "description": "Will, nearly complete. Written on a small piece of parchment. Testator: Abū al-Faraj b. Maʿrūf the perfumer. (His son Faḍāʾil appears in Yevr.-Arab. I 1700.29 (PGPID 9417) several decades later.) Location: Fustat. Dated: middle decade of Ṭevet 1441 Seleucid = 1129/30 CE. Abū l-Faraj gives to his wife her ketubba, trust, and control of the household goods (specifically mentioning the house in Zuqāq al-Turmus) and her children's inheritance. Written and signed by Natan b. Shelomo ha-Kohen; no other signature. RR. ASE.",
+  "description_he": "צוואה, כמעט שלמה, על פיסת קלף קטנה. המצווה: אבו אל-פרג' ב. מעאוף הבשמאי. מיקום: פוסטאט. תאריך: אמצע טבת 1441 סלאוקי (1129/30 לספירה). אבו אל-פרג' מעניק לאשתו כתובתה, נאמנות ושליטה בנכסי הבית",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00088/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7147",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-00012-00088"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7149",
+  "origin": "",
+  "pos": 4679,
+  "prev": "7146",
+  "princeton_url": "https://geniza.princeton.edu/documents/7147/",
+  "region": "",
+  "shelfmark": "T-S 12.88",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "כתובה",
+    "צוואה",
+    "ירושה",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

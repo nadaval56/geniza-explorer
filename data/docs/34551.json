@@ -1,1 +1,48 @@
-{"id":"34551","shelfmark":"T-S 13K2 + Bodl. MS Heb. d 74/29","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"","region":"upper ; lower","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג' · בודליאן אוקספורד","library_raw":"CUL ; Bodl.","collection":"CUL, T-S ; Bodl.","description":"Letter 2 of 4 of Letters Miscellany, a collection of letters representing both sides of the calendar controversy. Letter 2, of which only one folio is preserved, is a pro-Babylonian response to a Palestinian polemic on the calendar of 921/2 and on the Four Gates. \n\nThe folio begins with the end of the end of the refutation of the Palestinians’ second argument. The Palestinians were arguing that the Four Gates are incomplete because they only account for four days of the week (the days on which the New Year is allowed to fall). Our letter responds that the Four Gates actually covers the full week because every period of time ends where the next one begins (fol.4r:1-5).\n\nThe third argument concerns the rule of 641-642 parts. Our author misinterprets the rule as applying equally to Nisan and to Tishri, which enables him to refute it easily (fol.4r:5-14). Interjected here is a misplaced element of text that actually belongs to before the beginning of our folio. After the end of the misplaced text, the text resumes with the third argument (fol.4v:19-21).","tags":["controversy, calendar"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-00013-K-00002","https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-74-29.json"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-K-00002/1","https://genizah.bodleian.ox.ac.uk/catalog/volume_93#MS_Heb_d_74-part21"],"princeton_url":"https://geniza.princeton.edu/documents/34551/","mentioned":"","description_he":"מכתב 2 מתוך 4 באוסף איגרות מגוון המייצג את שני צידי המחלוקת על לוח השנה. ממכתב 2 השתמר עלה אחד בלבד, והוא תשובה פרו־בבלית לפולמוס ארץ־ישראלי על לוח השנה של שנת 921/2 ועל \"ארבעה שערים\".\n\nהעלה נפתח בסיומו של הסתירה לטיעון השני של הארץ־ישראלים. הארץ־ישראלים טענו ששיטת ארבעה שערים לוקה בחסר, מאחר שהיא מתייחסת רק לארבעה ימים בשבוע (הימים שבהם רשאי ראש השנה לחול). מכתבנו משיב שארבעה שערים מקיפים למעשה את כל ימות השבוע, שכן כל פרק זמן מסתיים במקום שבו מתחיל הפרק הבא אחריו (דף 4 א, שורות 1–5).\n\nהטיעון השלישי עוסק בכלל של 641–642 חלקים. מחבר חיבורנו מפרש את הכלל בטעות כאילו הוא חל באופן שווה על ניסן ועל תשרי, ובכך מאפשר לעצמו להפריכו בנקל (דף 4 א, שורות 5–14). באמצע הדיון משובץ קטע טקסט שמקומו אינו כאן, וראוי היה שיופיע לפני תחילת העלה. לאחר סיום הקטע המוטעה במיקומו, חוזר הטקסט לדון בטיעון השלישי (דף 4 ב, שורות 19–21).","tags_he":["מכתב","עברית","משי"],"prev":"34549","next":"34552","pos":18771,"total":35937}
+{
+  "collection": "CUL, T-S ; Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter 2 of 4 of Letters Miscellany, a collection of letters representing both sides of the calendar controversy. Letter 2, of which only one folio is preserved, is a pro-Babylonian response to a Palestinian polemic on the calendar of 921/2 and on the Four Gates. \n\nThe folio begins with the end of the end of the refutation of the Palestinians’ second argument. The Palestinians were arguing that the Four Gates are incomplete because they only account for four days of the week (the days on which the New Year is allowed to fall). Our letter responds that the Four Gates actually covers the full week because every period of time ends where the next one begins (fol.4r:1-5).\n\nThe third argument concerns the rule of 641-642 parts. Our author misinterprets the rule as applying equally to Nisan and to Tishri, which enables him to refute it easily (fol.4r:5-14). Interjected here is a misplaced element of text that actually belongs to before the beginning of our folio. After the end of the misplaced text, the text resumes with the third argument (fol.4v:19-21).",
+  "description_he": "מכתב 2 מתוך 4 באוסף איגרות מגוון המייצג את שני צידי המחלוקת על לוח השנה. ממכתב 2 השתמר עלה אחד בלבד, והוא תשובה פרו־בבלית לפולמוס ארץ־ישראלי על לוח השנה של שנת 921/2 ועל \"ארבעה שערים\".\n\nהעלה נפתח בסיומו של הסתירה לטיעון השני של הארץ־ישראלים. הארץ־ישראלים טענו ששיטת ארבעה שערים לוקה בחסר, מאחר שהיא מתייחסת רק לארבעה ימים בשבוע (הימים שבהם רשאי ראש השנה לחול). מכתבנו משיב שארבעה שערים מקיפים למעשה את כל ימות השבוע, שכן כל פרק זמן מסתיים במקום שבו מתחיל הפרק הבא אחריו (דף 4 א, שורות 1–5).\n\nהטיעון השלישי עוסק בכלל של 641–642 חלקים. מחבר חיבורנו מפרש את הכלל בטעות כאילו הוא חל באופן שווה על ניסן ועל תשרי, ובכך מאפשר לעצמו להפריכו בנקל (דף 4 א, שורות 5–14). באמצע הדיון משובץ קטע טקסט שמקומו אינו כאן, וראוי היה שיופיע לפני תחילת העלה. לאחר סיום הקטע המוטעה במיקומו, חוזר הטקסט לדון בטיעון השלישי (דף 4 ב, שורות 19–21).",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-K-00002/1",
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_93#MS_Heb_d_74-part21"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34551",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-00013-K-00002",
+    "https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-74-29.json"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · בודליאן אוקספורד",
+  "library_raw": "CUL ; Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34552",
+  "origin": "",
+  "pos": 18771,
+  "prev": "34549",
+  "princeton_url": "https://geniza.princeton.edu/documents/34551/",
+  "region": "upper ; lower",
+  "shelfmark": "T-S 13K2 + Bodl. MS Heb. d 74/29",
+  "tags": [
+    "controversy, calendar"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

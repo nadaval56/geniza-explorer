@@ -1,1 +1,44 @@
-{"id":"19895","shelfmark":"T-S 10K15.9","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: Letter fragment in Judaeo-Arabic addressed to Abū l-Faraj. Only the opening remains. \n\nVerso: Letter from Shelomo (likely Shelomo b. Eliyyahu) to his father. In Judaeo-Arabic. He writes (possibly in frustration), \"I met with Ibn al-ʿAmīd, and he prescribed me herb water (? mā' baql) and chicory syrup. Every doctor prescribes herb water for me.\" The rest is quite faded.","tags":["illness: physicians, illness letter 969-1517, Illness: treatment, syrup, Illness, prescription"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19895/","mentioned":"","description_he":"צד א': קטע מכתב ביהודית-ערבית לאבו אל-פרג'; צד ב': מכתב משלמה (ככל הנראה שלמה בן אליהו) לאביו ביהודית-ערבית: 'נפגשתי עם בן אל-עמיד שרשם לי מי ירק ושרבט ציקוריה'","tags_he":["מכתב","יהודית-ערבית","שלמה בן אליהו"],"prev":"19894","next":"19896","pos":22433,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: Letter fragment in Judaeo-Arabic addressed to Abū l-Faraj. Only the opening remains. \n\nVerso: Letter from Shelomo (likely Shelomo b. Eliyyahu) to his father. In Judaeo-Arabic. He writes (possibly in frustration), \"I met with Ibn al-ʿAmīd, and he prescribed me herb water (? mā' baql) and chicory syrup. Every doctor prescribes herb water for me.\" The rest is quite faded.",
+  "description_he": "צד א': קטע מכתב ביהודית-ערבית לאבו אל-פרג'; צד ב': מכתב משלמה (ככל הנראה שלמה בן אליהו) לאביו ביהודית-ערבית: 'נפגשתי עם בן אל-עמיד שרשם לי מי ירק ושרבט ציקוריה'",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19895",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19896",
+  "origin": "",
+  "pos": 22433,
+  "prev": "19894",
+  "princeton_url": "https://geniza.princeton.edu/documents/19895/",
+  "region": "",
+  "shelfmark": "T-S 10K15.9",
+  "tags": [
+    "illness: physicians, illness letter 969-1517, Illness: treatment, syrup, Illness, prescription"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "רפואה",
+    "שלמה בן אליהו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

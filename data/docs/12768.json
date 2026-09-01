@@ -1,1 +1,45 @@
-{"id":"12768","shelfmark":"ENA NS 45.8","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"16th-19th centuries","date_original":"","date_standard":"","date_inferred":"16th-19th centuries","date_rationale":"Paleography","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Accounts in Judaeo-Arabic in a unique hand. The heading includes a date with the months Shaʿbān and Tūt, but its exact meaning is unclear (it may be related to the Ottoman fiscal calendar). Below the heading the unit of volume \"ardab\" or \"irdab\" appears and the first entry is entitled \"אלמביע\" indicating a sale of the accompanying items (whose quantity, weight, or prices are indicated in alphanumerical figures). For more information on this unit of volume, see Goitein's brief explanation (Goitein, Mediterranean Society I, 361) though it is crucial to note that this unit persisted beyond the medieval period and in Ottoman-era sources is often transliterated as \"ardab\" yet it indicates a significantly higher volume of liters per ardab (White, Climate of Rebellion, xv). The same accounting format appears on the document's verso. MCD.","tags":["Late JA, list"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/17d24b44-8b5e-4e1e-a14f-28838c1d848a/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12768/","mentioned":"","description_he":"חשבונות בערבית-יהודית בכתב ייחודי. בכותרת מופיע תאריך הכולל את החודשים שעבאן ותות, אך משמעותו המדויקת אינה ברורה (ייתכן שהוא קשור ללוח השנה הפיסקלי העות'מאני). מתחת לכותרת מופיעה יחידת הנפח \"ארדב\" או \"אִרדַב\", והרישום הראשון נושא את הכותרת \"אלמביע\", המציינת מכירה של הפריטים הנלווים (שכמותם, משקלם או מחיריהם מצוינים בספרות אלפאנומריות). למידע נוסף על יחידת נפח זו ניתן לעיין בהסברו הקצר של גויטיין, אך חשוב לציין כי יחידה זו המשיכה להתקיים מעבר לתקופת ימי הביניים, ובמקורות מהתקופה העות'מאנית היא מתועתקת לעיתים קרובות כ\"ardab\", אך מציינת נפח גבוה משמעותית של ליטרים לארדב. אותה מתכונת חשבונאית חוזרת ומופיעה גם בצדו האחורי של המסמך.","tags_he":["חשבונות","יהודית-ערבית","עות'מאני","משי"],"prev":"12767","next":"12770","pos":8698,"total":35937}
+{
+  "collection": "JTS",
+  "date": "16th-19th centuries",
+  "date_inferred": "16th-19th centuries",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Accounts in Judaeo-Arabic in a unique hand. The heading includes a date with the months Shaʿbān and Tūt, but its exact meaning is unclear (it may be related to the Ottoman fiscal calendar). Below the heading the unit of volume \"ardab\" or \"irdab\" appears and the first entry is entitled \"אלמביע\" indicating a sale of the accompanying items (whose quantity, weight, or prices are indicated in alphanumerical figures). For more information on this unit of volume, see Goitein's brief explanation (Goitein, Mediterranean Society I, 361) though it is crucial to note that this unit persisted beyond the medieval period and in Ottoman-era sources is often transliterated as \"ardab\" yet it indicates a significantly higher volume of liters per ardab (White, Climate of Rebellion, xv). The same accounting format appears on the document's verso. MCD.",
+  "description_he": "חשבונות בערבית-יהודית בכתב ייחודי. בכותרת מופיע תאריך הכולל את החודשים שעבאן ותות, אך משמעותו המדויקת אינה ברורה (ייתכן שהוא קשור ללוח השנה הפיסקלי העות'מאני). מתחת לכותרת מופיעה יחידת הנפח \"ארדב\" או \"אִרדַב\", והרישום הראשון נושא את הכותרת \"אלמביע\", המציינת מכירה של הפריטים הנלווים (שכמותם, משקלם או מחיריהם מצוינים בספרות אלפאנומריות). למידע נוסף על יחידת נפח זו ניתן לעיין בהסברו הקצר של גויטיין, אך חשוב לציין כי יחידה זו המשיכה להתקיים מעבר לתקופת ימי הביניים, ובמקורות מהתקופה העות'מאנית היא מתועתקת לעיתים קרובות כ\"ardab\", אך מציינת נפח גבוה משמעותית של ליטרים לארדב. אותה מתכונת חשבונאית חוזרת ומופיעה גם בצדו האחורי של המסמך.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12768",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/17d24b44-8b5e-4e1e-a14f-28838c1d848a/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12770",
+  "origin": "",
+  "pos": 8698,
+  "prev": "12767",
+  "princeton_url": "https://geniza.princeton.edu/documents/12768/",
+  "region": "",
+  "shelfmark": "ENA NS 45.8",
+  "tags": [
+    "Late JA, list"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית",
+    "עות'מאני"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

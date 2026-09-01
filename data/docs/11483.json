@@ -1,1 +1,43 @@
-{"id":"11483","shelfmark":"ENA NS 38.4","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1047-06-28/1048-06-15","date_original":"439","date_standard":"1047-06-28/1048-06-15","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso, with the address on recto: Top of a letter in Arabic script. Mercantile? Dated: 439 AH = 1047/48 CE. Reused for Judaeo-Arabic accounts (see separate record).","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/0c921fdc-6150-4f9e-82e6-1a7f713360b1/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/11483/","mentioned":"","description_he":"גב (עם הכתובת בפנים): ראש מכתב בכתב ערבי. מסחרי? תאריך: 439 לאה = 1047/48 לספירה. שימוש חוזר לחשבונות ביהודית-ערבית.","tags_he":["מכתב","ערבית","מסחר","מאגיה"],"prev":"11482","next":"11484","pos":7585,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1047-06-28/1048-06-15",
+  "date_inferred": "",
+  "date_original": "439",
+  "date_rationale": "",
+  "date_standard": "1047-06-28/1048-06-15",
+  "description": "Verso, with the address on recto: Top of a letter in Arabic script. Mercantile? Dated: 439 AH = 1047/48 CE. Reused for Judaeo-Arabic accounts (see separate record).",
+  "description_he": "גב (עם הכתובת בפנים): ראש מכתב בכתב ערבי. מסחרי? תאריך: 439 לאה = 1047/48 לספירה. שימוש חוזר לחשבונות ביהודית-ערבית.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "11483",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/0c921fdc-6150-4f9e-82e6-1a7f713360b1/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "11484",
+  "origin": "",
+  "pos": 7585,
+  "prev": "11482",
+  "princeton_url": "https://geniza.princeton.edu/documents/11483/",
+  "region": "",
+  "shelfmark": "ENA NS 38.4",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "מסחר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

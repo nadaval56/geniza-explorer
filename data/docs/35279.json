@@ -1,1 +1,47 @@
-{"id":"35279","shelfmark":"T-S Ar.22.140 + T-S K25.221","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL","collection":"CUL, T-S ; CUL, T-S","description":"Report to a Fatimid vizier. Dating: fifth/eleventh century. Khan published T-S K25.221 as the end of petition. Marina Rustow later found the join to the upper part of the document, T-S Ar.22.140, and if join is correct, it's not a petition but a report. About the join: the two fragments have the same size, format, layout and titulature. The hand on the two fragments differ slightly, possibly because the text on T-S K25.221 is the end of the document and formulaic, so less carefully written. T-S Ar.22140 was reused for a Judaeo-Arabic commentary on Isaiah 54:1 and 1 Samuel 1:11, while T-S K25.221 was reused for Hebrew poetry headed with the name of the meter, כפיף, and for Arabic accounts. Join: Marina Rustow. On the bottom fragment, there are traces of ink below lines 2 and 3 that demonstrate that the paper was folded when the ink was still wet. (Information from Khan, from CUDL and from Marina Rustow.)","tags":["Arabic script, DIMME, lost archive, Petition"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00025-00221"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/35279/","mentioned":"","description_he":"דו״ח לווזיר פאטמי. תיאור הזמן: המאה החמישית להיג'רה / האחת-עשרה לספירה. ח'אן פרסם את אחד הקטעים כסופה של עצומה (פטיציה). מאוחר יותר זיהתה מרינה רוסטו את החיבור לחלקו העליון של המסמך, ואם החיבור נכון, אין מדובר בעצומה אלא בדו״ח. באשר לחיבור בין הקטעים: שני הקטעים זהים בגודלם, בפורמט, בפריסה ובתארים (טיטולטורה). כתב היד בשני הקטעים שונה במקצת, וייתכן שהדבר נובע מכך שהטקסט בקטע התחתון הוא סופו של המסמך וכולל נוסחאות קבועות, ולכן נכתב בפחות הקפדה. הקטע העליון נעשה בו שימוש חוזר לפירוש בערבית-יהודית על ישעיהו נ״ד:א' ועל שמואל א' א':י״א, ואילו הקטע התחתון נעשה בו שימוש חוזר לשירה עברית שכותרתה כוללת את שם המשקל, כפיף, וכן לחשבונות בערבית. החיבור בין הקטעים נעשה בידי מרינה רוסטו. בקטע התחתון ניכרים שרידי דיו מתחת לשורות 2 ו-3 המעידים על כך שהנייר קופל בעוד הדיו לח. (המידע מבוסס על ח'אן, על קטלוג ספריית קיימברידג' ועל מרינה רוסטו.)","tags_he":["מסמך מדינה","ערבית","שירה","עצומה","מאגיה","פאטמי"],"prev":"35278","next":"35280","pos":19035,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Report to a Fatimid vizier. Dating: fifth/eleventh century. Khan published T-S K25.221 as the end of petition. Marina Rustow later found the join to the upper part of the document, T-S Ar.22.140, and if join is correct, it's not a petition but a report. About the join: the two fragments have the same size, format, layout and titulature. The hand on the two fragments differ slightly, possibly because the text on T-S K25.221 is the end of the document and formulaic, so less carefully written. T-S Ar.22140 was reused for a Judaeo-Arabic commentary on Isaiah 54:1 and 1 Samuel 1:11, while T-S K25.221 was reused for Hebrew poetry headed with the name of the meter, כפיף, and for Arabic accounts. Join: Marina Rustow. On the bottom fragment, there are traces of ink below lines 2 and 3 that demonstrate that the paper was folded when the ink was still wet. (Information from Khan, from CUDL and from Marina Rustow.)",
+  "description_he": "דו״ח לווזיר פאטמי. תיאור הזמן: המאה החמישית להיג'רה / האחת-עשרה לספירה. ח'אן פרסם את אחד הקטעים כסופה של עצומה (פטיציה). מאוחר יותר זיהתה מרינה רוסטו את החיבור לחלקו העליון של המסמך, ואם החיבור נכון, אין מדובר בעצומה אלא בדו״ח. באשר לחיבור בין הקטעים: שני הקטעים זהים בגודלם, בפורמט, בפריסה ובתארים (טיטולטורה). כתב היד בשני הקטעים שונה במקצת, וייתכן שהדבר נובע מכך שהטקסט בקטע התחתון הוא סופו של המסמך וכולל נוסחאות קבועות, ולכן נכתב בפחות הקפדה. הקטע העליון נעשה בו שימוש חוזר לפירוש בערבית-יהודית על ישעיהו נ״ד:א' ועל שמואל א' א':י״א, ואילו הקטע התחתון נעשה בו שימוש חוזר לשירה עברית שכותרתה כוללת את שם המשקל, כפיף, וכן לחשבונות בערבית. החיבור בין הקטעים נעשה בידי מרינה רוסטו. בקטע התחתון ניכרים שרידי דיו מתחת לשורות 2 ו-3 המעידים על כך שהנייר קופל בעוד הדיו לח. (המידע מבוסס על ח'אן, על קטלוג ספריית קיימברידג' ועל מרינה רוסטו.)",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35279",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00025-00221"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35280",
+  "origin": "",
+  "pos": 19035,
+  "prev": "35278",
+  "princeton_url": "https://geniza.princeton.edu/documents/35279/",
+  "region": "",
+  "shelfmark": "T-S Ar.22.140 + T-S K25.221",
+  "tags": [
+    "Arabic script, DIMME, lost archive, Petition"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "שירה",
+    "עצומה",
+    "פאטמי"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

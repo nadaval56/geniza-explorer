@@ -1,1 +1,45 @@
-{"id":"9142","shelfmark":"T-S NS 216.37","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"Aramaic","lang2_he":"ארמית","lang_note":"","origin":"","destination":"","region":"","date":"Tammuz or Av 1138","date_original":"","date_standard":"","date_inferred":"Tammuz or Av 1138","date_rationale":"Other (please specify)","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Ḥalfon b. Netanʾel, al-Andalus, to Yosef ha-Levi b. Meʾir Ibn Migash. Dating: probably Tammuz or Av 1138. Written on the fragment of a Fatimid decree. It's unclear whether at the time of writing Ḥalfon and Ibn Migash had already met face-to-face, but they had already corresponded. Written in rhymed, very eloquent prose, which Friedman interprets as evidence of Ḥalfon's adaptation to the values of Andalusī culture. Provides information about Ibn Migash unknown from Avraham Ibn Dawud's Sefer ha-Qabbala, which portrays Ibn Dawud as a Torah scholar, in contrast to his grandfather the courtier (who was forced to flee from Granada to Seville in the first half of the eleventh century); the grandson, born in Seville on 1 Adar 4837 [28 January 1077], studied with Yiṣḥaq al-Fāsī when the latter came to Lucena when Ibn Migash was around 12 years old until he was around 26 years old and was devoted to Torah study. But Friedman notes that the panegyrics that Yehuda ha-Levi wrote for Ibn Migash seem to allude to the grandson's secular pursuits and standing as well. In the final part of this letter, Ḥalfon asks Ibn Migash to accept him as his student, despite the fact that Ḥalfon was at the time around fifty years old. If he doesn't, Ḥalfon explains, he will revert to his plan to return to Egypt. According to Friedman this is a rare or possibly unique example of a medieval letter to a rosh yeshiva asking to be accepted as a student. (Information from Goitein and Friedman, India Book IV) IB 99ח","tags":["IB4, India"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/9142/","mentioned":"","description_he":"מכתב מחלפון בן נתנאל מאל-אנדלוס אל יוסף הלוי בן מאיר אבן מיגאש. תיארוך משוער: כנראה תמוז או אב 1138. המכתב נכתב על גבי שריד של צו (דקרט) פאטמי. אין זה ברור אם בעת כתיבת המכתב כבר נפגשו חלפון ואבן מיגאש פנים אל פנים, אך הם כבר עמדו בקשרי התכתבות. הכתיבה היא בפרוזה מחורזת ורהוטה במיוחד, שפרידמן רואה בה עדות להסתגלותו של חלפון לערכי התרבות האנדלוסית. המכתב מספק מידע על אבן מיגאש שאינו מוכר מ\"ספר הקבלה\" של אברהם אבן דאוד, שמצייר את אבן מיגאש כתלמיד חכם בלבד, בניגוד לסבו איש החצר (שנאלץ לברוח מגרנדה לסביליה במחצית הראשונה של המאה האחת-עשרה); הנכד, שנולד בסביליה ב-א' אדר ד'תתל\"ז [28 בינואר 1077], למד אצל יצחק אלפאסי כאשר זה הגיע ללוסנה, מגיל 12 לערך ועד גיל 26 לערך, והקדיש עצמו ללימוד תורה. עם זאת, פרידמן מציין כי שירי השבח שכתב יהודה הלוי לאבן מיגאש נראים כרומזים גם לעיסוקיו החילוניים של הנכד ולמעמדו הציבורי. בחלקו האחרון של המכתב מבקש חלפון מאבן מיגאש לקבלו כתלמידו, אף שחלפון היה באותה עת כבן חמישים. אם לא ייענה, מסביר חלפון, יחזור לתכניתו לשוב למצרים. לפי פרידמן, זוהי דוגמה נדירה ואולי יחידה מימי הביניים של מכתב לראש ישיבה שבו מבקש הכותב להתקבל כתלמיד.","tags_he":["מכתב","עברית","ישיבה וגאונות","תפילה וליטורגיה","פאטמי"],"prev":"9139","next":"9144","pos":21589,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "Tammuz or Av 1138",
+  "date_inferred": "Tammuz or Av 1138",
+  "date_original": "",
+  "date_rationale": "Other (please specify)",
+  "date_standard": "",
+  "description": "Letter from Ḥalfon b. Netanʾel, al-Andalus, to Yosef ha-Levi b. Meʾir Ibn Migash. Dating: probably Tammuz or Av 1138. Written on the fragment of a Fatimid decree. It's unclear whether at the time of writing Ḥalfon and Ibn Migash had already met face-to-face, but they had already corresponded. Written in rhymed, very eloquent prose, which Friedman interprets as evidence of Ḥalfon's adaptation to the values of Andalusī culture. Provides information about Ibn Migash unknown from Avraham Ibn Dawud's Sefer ha-Qabbala, which portrays Ibn Dawud as a Torah scholar, in contrast to his grandfather the courtier (who was forced to flee from Granada to Seville in the first half of the eleventh century); the grandson, born in Seville on 1 Adar 4837 [28 January 1077], studied with Yiṣḥaq al-Fāsī when the latter came to Lucena when Ibn Migash was around 12 years old until he was around 26 years old and was devoted to Torah study. But Friedman notes that the panegyrics that Yehuda ha-Levi wrote for Ibn Migash seem to allude to the grandson's secular pursuits and standing as well. In the final part of this letter, Ḥalfon asks Ibn Migash to accept him as his student, despite the fact that Ḥalfon was at the time around fifty years old. If he doesn't, Ḥalfon explains, he will revert to his plan to return to Egypt. According to Friedman this is a rare or possibly unique example of a medieval letter to a rosh yeshiva asking to be accepted as a student. (Information from Goitein and Friedman, India Book IV) IB 99ח",
+  "description_he": "מכתב מחלפון בן נתנאל מאל-אנדלוס אל יוסף הלוי בן מאיר אבן מיגאש. תיארוך משוער: כנראה תמוז או אב 1138. המכתב נכתב על גבי שריד של צו (דקרט) פאטמי. אין זה ברור אם בעת כתיבת המכתב כבר נפגשו חלפון ואבן מיגאש פנים אל פנים, אך הם כבר עמדו בקשרי התכתבות. הכתיבה היא בפרוזה מחורזת ורהוטה במיוחד, שפרידמן רואה בה עדות להסתגלותו של חלפון לערכי התרבות האנדלוסית. המכתב מספק מידע על אבן מיגאש שאינו מוכר מ\"ספר הקבלה\" של אברהם אבן דאוד, שמצייר את אבן מיגאש כתלמיד חכם בלבד, בניגוד לסבו איש החצר (שנאלץ לברוח מגרנדה לסביליה במחצית הראשונה של המאה האחת-עשרה); הנכד, שנולד בסביליה ב-א' אדר ד'תתל\"ז [28 בינואר 1077], למד אצל יצחק אלפאסי כאשר זה הגיע ללוסנה, מגיל 12 לערך ועד גיל 26 לערך, והקדיש עצמו ללימוד תורה. עם זאת, פרידמן מציין כי שירי השבח שכתב יהודה הלוי לאבן מיגאש נראים כרומזים גם לעיסוקיו החילוניים של הנכד ולמעמדו הציבורי. בחלקו האחרון של המכתב מבקש חלפון מאבן מיגאש לקבלו כתלמידו, אף שחלפון היה באותה עת כבן חמישים. אם לא ייענה, מסביר חלפון, יחזור לתכניתו לשוב למצרים. לפי פרידמן, זוהי דוגמה נדירה ואולי יחידה מימי הביניים של מכתב לראש ישיבה שבו מבקש הכותב להתקבל כתלמיד.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9142",
+  "iiif_urls": [],
+  "lang2_en": "Aramaic",
+  "lang2_he": "ארמית",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9144",
+  "origin": "",
+  "pos": 21589,
+  "prev": "9139",
+  "princeton_url": "https://geniza.princeton.edu/documents/9142/",
+  "region": "",
+  "shelfmark": "T-S NS 216.37",
+  "tags": [
+    "IB4, India"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "שירה",
+    "ישיבה וגאונות",
+    "פאטמי"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

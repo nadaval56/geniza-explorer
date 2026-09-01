@@ -1,1 +1,48 @@
-{"id":"19668","shelfmark":"Halper 408","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Ladino","lang_he":"Hebrew, Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"CAJS","library_raw":"CAJS","collection":"CAJS","description":"Letter from Yehuda Rozanes(?), unknown location, to Yosef Amarillio, in Salonica. In Hebrew (first two lines) and Ladino (remainder). Dating: Probably prior to 1485 CE. The content deals with business matters. NB: Not from the Geniza. Judge Mayer Sulzberger found this letter in the binding of the first edition of the Mahzor Roma (1485). Information from FGP.","tags":["Salonica, Ladino"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://colenda.library.upenn.edu/items/ark:/81431/p39z90w9v/manifest"],"fragment_urls":["https://colenda.library.upenn.edu/catalog/81431-p39z90w9v"],"princeton_url":"https://geniza.princeton.edu/documents/19668/","mentioned":"","description_he":"מכתב מאת יהודה רוזאנס אל יוסף אמריליו בסלוניקי (לאדינו), לפני 1485, עניינים עסקיים","tags_he":["מכתב"],"prev":"19667","next":"19669","pos":14535,"total":35937}
+{
+  "collection": "CAJS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yehuda Rozanes(?), unknown location, to Yosef Amarillio, in Salonica. In Hebrew (first two lines) and Ladino (remainder). Dating: Probably prior to 1485 CE. The content deals with business matters. NB: Not from the Geniza. Judge Mayer Sulzberger found this letter in the binding of the first edition of the Mahzor Roma (1485). Information from FGP.",
+  "description_he": "מכתב מאת יהודה רוזאנס אל יוסף אמריליו בסלוניקי (לאדינו), לפני 1485, עניינים עסקיים",
+  "destination": "",
+  "fragment_urls": [
+    "https://colenda.library.upenn.edu/catalog/81431-p39z90w9v"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19668",
+  "iiif_urls": [
+    "https://colenda.library.upenn.edu/items/ark:/81431/p39z90w9v/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Ladino",
+  "lang_he": "Hebrew, Ladino",
+  "lang_note": "",
+  "library": "CAJS",
+  "library_raw": "CAJS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19669",
+  "origin": "",
+  "pos": 14535,
+  "prev": "19667",
+  "princeton_url": "https://geniza.princeton.edu/documents/19668/",
+  "region": "",
+  "shelfmark": "Halper 408",
+  "tags": [
+    "Salonica, Ladino"
+  ],
+  "tags_he": [
+    "מכתב",
+    "תפילה וליטורגיה",
+    "קהיר",
+    "דיין"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

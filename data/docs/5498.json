@@ -1,1 +1,43 @@
-{"id":"5498","shelfmark":"Yevr.-Arab. I 1700.28","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"India Book III, 54: Legal record (#64). Trousseau list (taqwīm). Groom: Peraḥya b. Yosef Yiju. Bride: Sitt al-Dār ('Mistress of the House'), the daughter of Peraḥya's paternal uncle, Avraham Yiju. NB: Goitein referred to this document as folio 27 (Firk. II NS 1700.27) in accordance with the foliation written in pen; but the correct folio is 28, as written in pencil (the librarian with the pen gave two folios the number 8).","tags":["India, Marriage, register, Ibn Yiju, IB3"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5498/","mentioned":"","description_he":"ספר הודו III,54: רשומת בית דין, רשימת נדוניה של סית אל-דאר, בת אברהם אבן יג'ו, כלה לפרחיה בן יוסף","tags_he":["מסמך משפטי","יהודית-ערבית","נדוניה","פרוטוקול בית דין","ספר הודו"],"prev":"5491","next":"5499","pos":20932,"total":35937}
+{
+  "collection": "NLR",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "India Book III, 54: Legal record (#64). Trousseau list (taqwīm). Groom: Peraḥya b. Yosef Yiju. Bride: Sitt al-Dār ('Mistress of the House'), the daughter of Peraḥya's paternal uncle, Avraham Yiju. NB: Goitein referred to this document as folio 27 (Firk. II NS 1700.27) in accordance with the foliation written in pen; but the correct folio is 28, as written in pencil (the librarian with the pen gave two folios the number 8).",
+  "description_he": "ספר הודו III,54: רשומת בית דין, רשימת נדוניה של סית אל-דאר, בת אברהם אבן יג'ו, כלה לפרחיה בן יוסף",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5498",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "5499",
+  "origin": "",
+  "pos": 20932,
+  "prev": "5491",
+  "princeton_url": "https://geniza.princeton.edu/documents/5498/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. I 1700.28",
+  "tags": [
+    "India, Marriage, register, Ibn Yiju, IB3"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "נדוניה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

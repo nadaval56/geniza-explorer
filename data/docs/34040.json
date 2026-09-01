@@ -1,1 +1,42 @@
-{"id":"34040","shelfmark":"ENA NS I.26","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Love poetry in Judaeo-Arabic.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/9a452fab-6509-450a-a9da-e57b66b67c92/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34040/","mentioned":"","description_he":"שירת אהבה בערבית-יהודית.","tags_he":["יהודית-ערבית"],"prev":"34039","next":"34041","pos":18519,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Love poetry in Judaeo-Arabic.",
+  "description_he": "שירת אהבה בערבית-יהודית.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34040",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/9a452fab-6509-450a-a9da-e57b66b67c92/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34041",
+  "origin": "",
+  "pos": 18519,
+  "prev": "34039",
+  "princeton_url": "https://geniza.princeton.edu/documents/34040/",
+  "region": "",
+  "shelfmark": "ENA NS I.26",
+  "tags": [],
+  "tags_he": [
+    "יהודית-ערבית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

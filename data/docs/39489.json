@@ -1,1 +1,42 @@
-{"id":"39489","shelfmark":"T-S NS 297.177","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Poetry in Arabic script. Recto is all one poem rhymed on -bī. There is an intriguing verse in which a speaker \"swears by the Torah.... and Moses, and Isaac, and Jacob\" (قفال اقسم بالتوراة مجتهدا . . . موسى واسحق ويعقوب). Verso contains verse from several different poems on different themes.","tags":["Arabic poetry, DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/39489/","mentioned":"","description_he":"שירה בכתב ערבי. הרקטו הוא שיר אחד שלם מחורז על -בי. יש פסוק מרתק שבו דובר 'נשבע בתורה... ובמשה, ויצחק, ויעקב'. הורסו מכיל שורות משירים שונים על נושאים שונים.","tags_he":["ערבית","שירה","משי"],"prev":"39484","next":"39498","pos":34390,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Poetry in Arabic script. Recto is all one poem rhymed on -bī. There is an intriguing verse in which a speaker \"swears by the Torah.... and Moses, and Isaac, and Jacob\" (قفال اقسم بالتوراة مجتهدا . . . موسى واسحق ويعقوب). Verso contains verse from several different poems on different themes.",
+  "description_he": "שירה בכתב ערבי. הרקטו הוא שיר אחד שלם מחורז על -בי. יש פסוק מרתק שבו דובר 'נשבע בתורה... ובמשה, ויצחק, ויעקב'. הורסו מכיל שורות משירים שונים על נושאים שונים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "39489",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "39498",
+  "origin": "",
+  "pos": 34390,
+  "prev": "39484",
+  "princeton_url": "https://geniza.princeton.edu/documents/39489/",
+  "region": "",
+  "shelfmark": "T-S NS 297.177",
+  "tags": [
+    "Arabic poetry, DIMME"
+  ],
+  "tags_he": [
+    "ערבית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

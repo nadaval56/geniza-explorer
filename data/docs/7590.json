@@ -1,1 +1,47 @@
-{"id":"7590","shelfmark":"T-S 28.8","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Two petitions to a Fatimid judge. The first concerns the incarceration of the family breadwinner, a certain Ḥabīb. An endorsement fixed to the end of the petition orders his release. The second petition is incomplete (c. 12th century). These seem to be unrelated documents glued together to create a large enough piece of paper for verso (for which see separate record). (Information from Khan and CUDL.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00028-00008"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00028-00008"],"princeton_url":"https://geniza.princeton.edu/documents/7590/","mentioned":"","description_he":"שתי עצומות לשופט פאטימי. הראשונה עוסקת במאסר פרנס המשפחה חביב, ובסופה אישור לשחרורו. השנייה לא שלמה (כ-המאה ה-12). נראה שמדובר במסמכים לא קשורים שנדבקו יחד","tags_he":["מסמך מדינה","ערבית","פרנס"],"prev":"7589","next":"7591","pos":5002,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Two petitions to a Fatimid judge. The first concerns the incarceration of the family breadwinner, a certain Ḥabīb. An endorsement fixed to the end of the petition orders his release. The second petition is incomplete (c. 12th century). These seem to be unrelated documents glued together to create a large enough piece of paper for verso (for which see separate record). (Information from Khan and CUDL.)",
+  "description_he": "שתי עצומות לשופט פאטימי. הראשונה עוסקת במאסר פרנס המשפחה חביב, ובסופה אישור לשחרורו. השנייה לא שלמה (כ-המאה ה-12). נראה שמדובר במסמכים לא קשורים שנדבקו יחד",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00028-00008"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7590",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00028-00008"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7591",
+  "origin": "",
+  "pos": 5002,
+  "prev": "7589",
+  "princeton_url": "https://geniza.princeton.edu/documents/7590/",
+  "region": "",
+  "shelfmark": "T-S 28.8",
+  "tags": [],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה",
+    "פאטמי",
+    "פרנס"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

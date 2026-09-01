@@ -1,1 +1,48 @@
-{"id":"935","shelfmark":"T-S 13J10.5","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"Ṣahrajt","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Yoshiyyahu b. Hārūn (apparently the grandson of Yoshiyyahu Gaon) in Ṣahrajt,, to Ibrāhīm b. Ḥujayj b. Yūsuf (aka Avraham b. Ḥaggay), in Fustat. Dating: approximately 1030. Yoshiyyahu is a scribe and copyist, apparently assisted by another (a Byzantine). Here he writes about expecting a shipment of empty quires, and he also requests ink.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00010-00005"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00010-00005/1"],"princeton_url":"https://geniza.princeton.edu/documents/935/","mentioned":"Tinnīs, al-Ramla","description_he":"מכתב מיאשיהו בן הרון, צהרג'ת, לאיברהים בן חוג'יג', פוסטאט, בערך 1030. סופר ומעתיק המצפה למשלוח של חוברות ריקות.","tags_he":["מכתב","יהודית-ערבית","פוסטאט","סופר"],"prev":"934","next":"936","pos":324,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yoshiyyahu b. Hārūn (apparently the grandson of Yoshiyyahu Gaon) in Ṣahrajt,, to Ibrāhīm b. Ḥujayj b. Yūsuf (aka Avraham b. Ḥaggay), in Fustat. Dating: approximately 1030. Yoshiyyahu is a scribe and copyist, apparently assisted by another (a Byzantine). Here he writes about expecting a shipment of empty quires, and he also requests ink.",
+  "description_he": "מכתב מיאשיהו בן הרון, צהרג'ת, לאיברהים בן חוג'יג', פוסטאט, בערך 1030. סופר ומעתיק המצפה למשלוח של חוברות ריקות.",
+  "destination": "Fustat",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00010-00005/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "935",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00010-00005"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Tinnīs, al-Ramla",
+  "multifragment": "",
+  "next": "936",
+  "origin": "Ṣahrajt",
+  "pos": 324,
+  "prev": "934",
+  "princeton_url": "https://geniza.princeton.edu/documents/935/",
+  "region": "",
+  "shelfmark": "T-S 13J10.5",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "ביזנטי",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

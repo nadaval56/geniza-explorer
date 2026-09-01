@@ -1,1 +1,45 @@
-{"id":"19977","shelfmark":"T-S 12.446","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic, Hebrew","lang_he":"Aramaic, Hebrew","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1770-1825","date_original":"","date_standard":"","date_inferred":"1770-1825","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Ketubba on vellum, badly damaged. Location: Cairo ([...] ha-semukhah le-Fustat Miṣrayim in opening lines), and פה מצרים in the penultimate line. Dating: 13 Av 55[..] AM. The signature from Yeḥezqel Ḥefeṣ, a prolific early modern scribe, supports a dating estimate of 1770–1825 (his witnessed/scribed documents are c. 1776–1819). The bride's name is only legible as Buena, but her legal status as a \"widow\" is still visible. The groom's name is Avraham b. [...] Roṣano. The total ketubba valuation is 150 reales abū ṭāqa. ASE/MCD.","tags":["Late, 18th or 19th c, ketubba"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19977/","mentioned":"","description_he":"כתובה על קלף, פגומה קשות; מקום: קהיר; תיארוך: י'ג אב 55[..] = 1770-1825 לספירה; כלה: בואנה (אלמנה); חתן: אברהם בן [...] רוסנו; שווי כולל 150 ריאלים","tags_he":["מסמך משפטי","כתובה","קהיר"],"prev":"19976","next":"19978","pos":22500,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1770-1825",
+  "date_inferred": "1770-1825",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Ketubba on vellum, badly damaged. Location: Cairo ([...] ha-semukhah le-Fustat Miṣrayim in opening lines), and פה מצרים in the penultimate line. Dating: 13 Av 55[..] AM. The signature from Yeḥezqel Ḥefeṣ, a prolific early modern scribe, supports a dating estimate of 1770–1825 (his witnessed/scribed documents are c. 1776–1819). The bride's name is only legible as Buena, but her legal status as a \"widow\" is still visible. The groom's name is Avraham b. [...] Roṣano. The total ketubba valuation is 150 reales abū ṭāqa. ASE/MCD.",
+  "description_he": "כתובה על קלף, פגומה קשות; מקום: קהיר; תיארוך: י'ג אב 55[..] = 1770-1825 לספירה; כלה: בואנה (אלמנה); חתן: אברהם בן [...] רוסנו; שווי כולל 150 ריאלים",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19977",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Hebrew",
+  "lang_he": "Aramaic, Hebrew",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19978",
+  "origin": "",
+  "pos": 22500,
+  "prev": "19976",
+  "princeton_url": "https://geniza.princeton.edu/documents/19977/",
+  "region": "",
+  "shelfmark": "T-S 12.446",
+  "tags": [
+    "Late, 18th or 19th c, ketubba"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "כתובה",
+    "פוסטאט",
+    "קהיר",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

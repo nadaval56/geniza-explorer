@@ -1,1 +1,51 @@
-{"id":"613","shelfmark":"Bodl. MS heb. f 56/59 + Bodl. MS heb. f 56/60 + Bodl. MS heb. f 56/61","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1183/1184","date_original":"Tishrei–Ṭevet 1495","date_standard":"1183/1184","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד · בודליאן אוקספורד · בודליאן אוקספורד","library_raw":"Bodl. ; Bodl. ; Bodl.","collection":"Bodl. ; Bodl. ; Bodl.","description":"Account of revenue and expenditure for Tishrei, Ḥeshvan, and Ṭevet. Dated: 1495 Seleucid, which is 1183–84 CE. This extensive accounting is written on two and a half leaves of the notebook of Shemuel b. Seʿadya. It lists the last expenditures for Tishri, and then the account of revenues for Heshvan, Kislev, and Tevet. It contains details of the rent from 22 apartments and compounds, which totals 715 dirhams. Several payments do not cover the whole period of three months, and refer to shorter periods. Then comes a very large list of expenditures reflecting large-scale reconstruction and repair operations. Involves Abū l-Bayān the collector. (Information from Gil, Documents, pp. 350 #89.)","tags":["waqf, qodesh, account, Shemuel b. Saadya, communal"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-59.json","https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-60.json","https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-61.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16","https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16","https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16"],"princeton_url":"https://geniza.princeton.edu/documents/613/","mentioned":"","description_he":"חשבון הכנסות והוצאות עבור החודשים תשרי, חשון וטבת. מתוארך לשנת 1495 למניין השטרות, שהיא 1183–84 לספירה. החשבון המקיף הזה כתוב על שני דפים וחצי מתוך פנקסו של שמואל בן סעדיה. הוא מפרט את ההוצאות האחרונות עבור חודש תשרי, ולאחר מכן את חשבון ההכנסות עבור החודשים חשון, כסלו וטבת. המסמך כולל פרטים על דמי השכירות מ-22 דירות ומתחמים, שסך הכל מסתכם ב-715 דרהם. כמה מן התשלומים אינם מכסים את כל תקופת שלושת החודשים, ומתייחסים לתקופות קצרות יותר. בהמשך מופיעה רשימה ארוכה ביותר של הוצאות, המשקפת פעולות שיפוץ ותיקון בקנה מידה גדול. במסמך מעורב אבו אלביאן הגבאי. המידע מבוסס על גיל.","tags_he":["חשבונות","יהודית-ערבית","מכס","שכירות"],"prev":"612","next":"614","pos":106,"total":35937}
+{
+  "collection": "Bodl. ; Bodl. ; Bodl.",
+  "date": "1183/1184",
+  "date_inferred": "",
+  "date_original": "Tishrei–Ṭevet 1495",
+  "date_rationale": "",
+  "date_standard": "1183/1184",
+  "description": "Account of revenue and expenditure for Tishrei, Ḥeshvan, and Ṭevet. Dated: 1495 Seleucid, which is 1183–84 CE. This extensive accounting is written on two and a half leaves of the notebook of Shemuel b. Seʿadya. It lists the last expenditures for Tishri, and then the account of revenues for Heshvan, Kislev, and Tevet. It contains details of the rent from 22 apartments and compounds, which totals 715 dirhams. Several payments do not cover the whole period of three months, and refer to shorter periods. Then comes a very large list of expenditures reflecting large-scale reconstruction and repair operations. Involves Abū l-Bayān the collector. (Information from Gil, Documents, pp. 350 #89.)",
+  "description_he": "חשבון הכנסות והוצאות עבור החודשים תשרי, חשון וטבת. מתוארך לשנת 1495 למניין השטרות, שהיא 1183–84 לספירה. החשבון המקיף הזה כתוב על שני דפים וחצי מתוך פנקסו של שמואל בן סעדיה. הוא מפרט את ההוצאות האחרונות עבור חודש תשרי, ולאחר מכן את חשבון ההכנסות עבור החודשים חשון, כסלו וטבת. המסמך כולל פרטים על דמי השכירות מ-22 דירות ומתחמים, שסך הכל מסתכם ב-715 דרהם. כמה מן התשלומים אינם מכסים את כל תקופת שלושת החודשים, ומתייחסים לתקופות קצרות יותר. בהמשך מופיעה רשימה ארוכה ביותר של הוצאות, המשקפת פעולות שיפוץ ותיקון בקנה מידה גדול. במסמך מעורב אבו אלביאן הגבאי. המידע מבוסס על גיל.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16",
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16",
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part16"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "613",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-59.json",
+    "https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-60.json",
+    "https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-61.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד · בודליאן אוקספורד · בודליאן אוקספורד",
+  "library_raw": "Bodl. ; Bodl. ; Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "614",
+  "origin": "",
+  "pos": 106,
+  "prev": "612",
+  "princeton_url": "https://geniza.princeton.edu/documents/613/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. f 56/59 + Bodl. MS heb. f 56/60 + Bodl. MS heb. f 56/61",
+  "tags": [
+    "waqf, qodesh, account, Shemuel b. Saadya, communal"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית",
+    "שכירות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

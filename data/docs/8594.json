@@ -1,1 +1,47 @@
-{"id":"8594","shelfmark":"T-S K25.251","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"A notary's draft concerning three houses and two ruins forming the object of a settlement. Among the most detailed description of houses in Cairo. Description of a mansion. Dating: ca. 1190 CE, per Goitein. Partial translation in Med. Soc. 4:79. Complete transcription (into Arabic script) with translation in Goitein, \"A Mansion in Fustat\" (1977).","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00025-00251"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-K-00025-00251"],"princeton_url":"https://geniza.princeton.edu/documents/8594/","mentioned":"Fustat","description_he":"טיוטת נוטריון לגבי שלושה בתים ושני חרבות; תיאור מפורט ביותר של בתים בקהיר; כ-1190 לספירה; תיאור ביתן","tags_he":["מסמך משפטי","יהודית-ערבית","טיוטה","קהיר"],"prev":"8540","next":"8596","pos":5666,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "A notary's draft concerning three houses and two ruins forming the object of a settlement. Among the most detailed description of houses in Cairo. Description of a mansion. Dating: ca. 1190 CE, per Goitein. Partial translation in Med. Soc. 4:79. Complete transcription (into Arabic script) with translation in Goitein, \"A Mansion in Fustat\" (1977).",
+  "description_he": "טיוטת נוטריון לגבי שלושה בתים ושני חרבות; תיאור מפורט ביותר של בתים בקהיר; כ-1190 לספירה; תיאור ביתן",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00025-00251"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8594",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00025-00251"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Fustat",
+  "multifragment": "",
+  "next": "8596",
+  "origin": "",
+  "pos": 5666,
+  "prev": "8540",
+  "princeton_url": "https://geniza.princeton.edu/documents/8594/",
+  "region": "",
+  "shelfmark": "T-S K25.251",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "טיוטה",
+    "פוסטאט",
+    "קהיר"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

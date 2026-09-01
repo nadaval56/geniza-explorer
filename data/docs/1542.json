@@ -1,1 +1,50 @@
-{"id":"1542","shelfmark":"T-S 10J27.7","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Tyre","destination":"","region":"","date":"1007–1055","date_original":"","date_standard":"","date_inferred":"1007–1055","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter fragment from Yosef Ha-Kohen Ha-Ḥaver b. Yaʿaqov, the head of the Jewish community in Tyre, to Efrayim b. Shemarya, in Fustat. Dating: approximately 1040 CE (per Gil) and ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. Concerning two sisters from the Tyre Jewish community, who are trying to claim their inheritance after their father, Ḥalfon b. Taʿlab, died in Fusṭaṭ in 1040 CE. Most of the details, such as the names of the sisters, are not preserved, but the name of the husband of one of the sisters, Ṣedaqa b. Ezra, is preserved, linking this letter with T-S 10J12.25 and T-S 13J18.1, which is five years later, dealing with the same case, and preserving more details including the names of the sisters. (Information from CUDL)","tags":["Tyre, 11th c, Efrayim b. Shemarya"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00027-00007"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00027-00007/1"],"princeton_url":"https://geniza.princeton.edu/documents/1542/","mentioned":"","description_he":"קטע ממכתב ששלח יוסף הכהן החבר בן יעקב, ראש הקהילה היהודית בצור, אל אפרים בן שמריה בפוסטאט. תיארוך: בקירוב 1040 לסה\"נ (לפי גיל), ובאופן רחב יותר בערך 1007–1055 לסה\"נ, על פי השנים שבהן פעל אפרים בן שמריה. המכתב עוסק בשתי אחיות מקהילת יהודי צור המנסות לתבוע את ירושתן לאחר מות אביהן, חלפון בן תעלב, שנפטר בפוסטאט בשנת 1040 לסה\"נ. רוב הפרטים, ובכלל זה שמותיהן של האחיות, אינם משתמרים, אך שמו של בעלה של אחת מהן, צדקה בן עזרא, נשמר במכתב — ופרט זה קושר את הקטע הנוכחי לשני מסמכים נוספים העוסקים באותו עניין: האחד, ומסמך נוסף מחמש שנים לאחר מכן, שבו נשמרים פרטים רבים יותר, ובכלל זה שמות האחיות.","tags_he":["מכתב","עברית","צדקה","ירושה","פוסטאט","צור","תמר","אפרים בן שמריה"],"prev":"1541","next":"1543","pos":857,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1007–1055",
+  "date_inferred": "1007–1055",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Letter fragment from Yosef Ha-Kohen Ha-Ḥaver b. Yaʿaqov, the head of the Jewish community in Tyre, to Efrayim b. Shemarya, in Fustat. Dating: approximately 1040 CE (per Gil) and ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. Concerning two sisters from the Tyre Jewish community, who are trying to claim their inheritance after their father, Ḥalfon b. Taʿlab, died in Fusṭaṭ in 1040 CE. Most of the details, such as the names of the sisters, are not preserved, but the name of the husband of one of the sisters, Ṣedaqa b. Ezra, is preserved, linking this letter with T-S 10J12.25 and T-S 13J18.1, which is five years later, dealing with the same case, and preserving more details including the names of the sisters. (Information from CUDL)",
+  "description_he": "קטע ממכתב ששלח יוסף הכהן החבר בן יעקב, ראש הקהילה היהודית בצור, אל אפרים בן שמריה בפוסטאט. תיארוך: בקירוב 1040 לסה\"נ (לפי גיל), ובאופן רחב יותר בערך 1007–1055 לסה\"נ, על פי השנים שבהן פעל אפרים בן שמריה. המכתב עוסק בשתי אחיות מקהילת יהודי צור המנסות לתבוע את ירושתן לאחר מות אביהן, חלפון בן תעלב, שנפטר בפוסטאט בשנת 1040 לסה\"נ. רוב הפרטים, ובכלל זה שמותיהן של האחיות, אינם משתמרים, אך שמו של בעלה של אחת מהן, צדקה בן עזרא, נשמר במכתב — ופרט זה קושר את הקטע הנוכחי לשני מסמכים נוספים העוסקים באותו עניין: האחד, ומסמך נוסף מחמש שנים לאחר מכן, שבו נשמרים פרטים רבים יותר, ובכלל זה שמות האחיות.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00027-00007/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1542",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00027-00007"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1543",
+  "origin": "Tyre",
+  "pos": 857,
+  "prev": "1541",
+  "princeton_url": "https://geniza.princeton.edu/documents/1542/",
+  "region": "",
+  "shelfmark": "T-S 10J27.7",
+  "tags": [
+    "Tyre, 11th c, Efrayim b. Shemarya"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "צדקה",
+    "פוסטאט",
+    "צור",
+    "אפרים בן שמריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

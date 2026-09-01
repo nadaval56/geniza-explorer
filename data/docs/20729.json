@@ -1,1 +1,44 @@
-{"id":"20729","shelfmark":"T-S Ar.38.19","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal document, in Arabic script. Mentions the execution of something with \"riḍā\"(agreement). Dating: Possibly Ayyubid or Mamluk-era, but this should be checked. 11 fragmentary lines are preserved from the bottom of the document. Mentions al-Rayyis al-Kāmil Amīn al-Ḥukm (at least in Mamluk times, the Amin al-Ḥukm was a qāḍī who supervised the estates of orphans). Also mentions \"that day in Cairo.\" The name ʿImrān al-Ṣinhājī appears in the last line. Needs further examination.","tags":["DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/20729/","mentioned":"Cairo","description_he":"מסמך משפטי, בכתב ערבי. מוזכרת הסכמה. תיארוך: אולי תקופת האייובים או הממלוכים. מוזכרים אל-ראיס אל-כאמל אמין אל-חוכם ו'יום ההוא בקהיר'. דורש בדיקה נוספת.","tags_he":["מסמך משפטי","ערבית","קהיר","ממלוכי","אייובי"],"prev":"20728","next":"20730","pos":23063,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Legal document, in Arabic script. Mentions the execution of something with \"riḍā\"(agreement). Dating: Possibly Ayyubid or Mamluk-era, but this should be checked. 11 fragmentary lines are preserved from the bottom of the document. Mentions al-Rayyis al-Kāmil Amīn al-Ḥukm (at least in Mamluk times, the Amin al-Ḥukm was a qāḍī who supervised the estates of orphans). Also mentions \"that day in Cairo.\" The name ʿImrān al-Ṣinhājī appears in the last line. Needs further examination.",
+  "description_he": "מסמך משפטי, בכתב ערבי. מוזכרת הסכמה. תיארוך: אולי תקופת האייובים או הממלוכים. מוזכרים אל-ראיס אל-כאמל אמין אל-חוכם ו'יום ההוא בקהיר'. דורש בדיקה נוספת.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "20729",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Cairo",
+  "multifragment": "",
+  "next": "20730",
+  "origin": "",
+  "pos": 23063,
+  "prev": "20728",
+  "princeton_url": "https://geniza.princeton.edu/documents/20729/",
+  "region": "",
+  "shelfmark": "T-S Ar.38.19",
+  "tags": [
+    "DIMME"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ערבית",
+    "קהיר",
+    "ממלוכי"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

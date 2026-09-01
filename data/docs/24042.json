@@ -1,1 +1,46 @@
-{"id":"24042","shelfmark":"T-S NS 224.36","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic, Judaeo-Arabic","lang_he":"Aramaic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1127–1138","date_original":"","date_standard":"","date_inferred":"1127–1138","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Fragment from the left part of a bill of release written by Halfon b. Menashshe Halevi from 1127–1138, based on his years of scribal activity (fl. 1100-1138 CE) and the remnant of a reshut clause in the closing lines for Maṣliaḥ Gaon (r. 1127–1139). The parties are Abū l-Faḍl Yosef and Elʿazar ha-Levi. The nature of the dispute is specified in l. 4, but it is tricky to read (אלרפאת?).","tags":["Halfon b. Menashshe, Masliah Gaon"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00224-00036"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/24042/","mentioned":"","description_he":"קטע מצדו השמאלי של שטר שחרור שנכתב על ידי חלפון בן מנשה הלוי בין השנים 1127–1138. הצדדים הם אבו אל-פצ'ל יוסף ואלעזר הלוי.","tags_he":["מסמך משפטי","שטר שחרור","חלפון בן מנשה הלוי"],"prev":"24041","next":"24043","pos":15186,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1127–1138",
+  "date_inferred": "1127–1138",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Fragment from the left part of a bill of release written by Halfon b. Menashshe Halevi from 1127–1138, based on his years of scribal activity (fl. 1100-1138 CE) and the remnant of a reshut clause in the closing lines for Maṣliaḥ Gaon (r. 1127–1139). The parties are Abū l-Faḍl Yosef and Elʿazar ha-Levi. The nature of the dispute is specified in l. 4, but it is tricky to read (אלרפאת?).",
+  "description_he": "קטע מצדו השמאלי של שטר שחרור שנכתב על ידי חלפון בן מנשה הלוי בין השנים 1127–1138. הצדדים הם אבו אל-פצ'ל יוסף ואלעזר הלוי.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "24042",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00224-00036"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Judaeo-Arabic",
+  "lang_he": "Aramaic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "24043",
+  "origin": "",
+  "pos": 15186,
+  "prev": "24041",
+  "princeton_url": "https://geniza.princeton.edu/documents/24042/",
+  "region": "",
+  "shelfmark": "T-S NS 224.36",
+  "tags": [
+    "Halfon b. Menashshe, Masliah Gaon"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ישיבה וגאונות",
+    "סופר",
+    "חלפון בן מנשה הלוי"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}
