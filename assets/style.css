@@ -1643,10 +1643,23 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── Tag hub pages (/t/) ─────────────────────────────────────────────────────── */
+/* The grid needs the same room the home page gives it — .main-content is
+   1300px, and at 900px only two cards fit per row. The prose does not: a
+   1250px line is far past a comfortable measure, so the heading, the
+   introduction and the related-tags block stay narrow and centred while the
+   cards span the full width. */
 .tag-hub {
-  max-width: 900px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
+}
+.tag-header,
+.tag-intro,
+.tag-more,
+.tag-related,
+.tag-list-label {
+  max-width: 900px;
+  margin-inline: auto;
 }
 .tag-header {
   margin-bottom: 1.6rem;
@@ -1687,12 +1700,14 @@ img { display: block; max-width: 100%; }
   line-height: 1.8;
 }
 
-.tag-list-label { margin-bottom: 1rem; }
+.tag-list-label { margin-bottom: 1rem; max-width: 900px; margin-inline: auto; }
 
 .tag-related {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
+  max-width: 900px;
+  margin-inline: auto;
 }
 
 .tag-group { margin-bottom: 2rem; }
@@ -1735,3 +1750,10 @@ a.spice-btn:hover { text-decoration: none; }
   white-space: nowrap;
 }
 .dash-panel-link:hover { text-decoration: underline; }
+
+.tag-more {
+  margin-top: 1.5rem;
+  font-size: .9rem;
+  color: var(--text-2);
+  line-height: 1.7;
+}
