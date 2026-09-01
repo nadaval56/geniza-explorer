@@ -1638,3 +1638,84 @@ img { display: block; max-width: 100%; }
 .doc-index .pagination a.page-btn {
   text-decoration: none;
 }
+
+/* ── Tag hub pages (/t/) ─────────────────────────────────────────────────────── */
+.tag-hub {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+.tag-header {
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+.tag-kicker {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--gold-dark);
+  margin-bottom: .5rem;
+}
+.tag-title {
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--gold-dark);
+  margin-bottom: .5rem;
+}
+.tag-count {
+  color: var(--text-2);
+  font-size: .95rem;
+}
+
+.tag-intro {
+  margin-bottom: 2rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-right: 3px solid var(--gold-dark);
+}
+.tag-intro p {
+  font-size: .95rem;
+  color: var(--text-2);
+  line-height: 1.8;
+}
+
+.tag-list-label { margin-bottom: 1rem; }
+
+.tag-related {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.tag-group { margin-bottom: 2rem; }
+.tag-group-list {
+  margin: 0 1.4rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.tag-group-list li {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--divider);
+  line-height: 1.5;
+}
+.tag-group-list a {
+  font-weight: 500;
+  font-size: .95rem;
+}
+
+.tag-hub .pagination a.page-btn { text-decoration: none; }
+
+/* A tag that has a hub page is a link; one that does not stays plain text. */
+a.tag-pill-link { text-decoration: none; }
+a.tag-pill-link:hover {
+  color: var(--gold-light);
+  border-color: var(--gold-dark);
+  text-decoration: none;
+}

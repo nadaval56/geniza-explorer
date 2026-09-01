@@ -14,11 +14,13 @@
 | קובץ | תפקיד |
 |------|--------|
 | `build.py` | בונה את `index.html`, `fragment.html`, `data/search.json` ו-`data/docs/*.json` מ-CSV של Princeton Geniza Project. בסוף קורא ל-`prerender.py` |
-| `prerender.py` | בונה עמוד HTML סטטי לכל מסמך תחת `d/`, מפתח סטטי, `sitemap.xml` ו-`robots.txt` |
+| `prerender.py` | בונה עמוד HTML סטטי לכל מסמך תחת `d/`, מפתח סטטי, דפי הנושא תחת `t/`, `sitemap.xml` ו-`robots.txt` |
 | `make_brand_assets.py` | מייצר את ה-favicon ואת `assets/og-image.png` מהגופנים והפלטה של האתר. הרץ רק אם משנים לוגו/צבעים |
 | `index.html` | **נוצר אוטומטית** — אל תערוך |
 | `fragment.html` | **נוצר אוטומטית** — דף הפניה בלבד (ראו למטה) |
 | `d/` | **נוצר אוטומטית, gitignored** — ~36K עמודי מסמך |
+| `t/` | **נוצר אוטומטית, gitignored** — 131 דפי נושא + מפתח הנושאים |
+| `tag_pages.py` | התוכן של דפי הנושא: סלאג, כותרת, קבוצה ופסקת מבוא לכל תגית. `prerender.py` בונה דף **רק** לתגית שמופיעה כאן |
 | `sitemap.xml`, `robots.txt` | **נוצרים אוטומטית, gitignored** |
 | `about.html` | נכתב ביד — ניתן לעריכה |
 | `privacy/index.html` | מדיניות פרטיות — נכתב ביד, ניתן לעריכה |
@@ -95,6 +97,7 @@ Open Graph ו-JSON-LD משלו בתוך ה-HTML. זה מה שמאפשר לזחל
 
 - **הוספת מקום למפה**: הוסף רשומה ל-`MAP_LOCATIONS` ב-`assets/search.js`
 - **הסתרת תגית מענן התגיות**: הוסף לסט `CLOUD_SKIP` ב-`assets/search.js`
+- **הוספת דף נושא**: הוסף ערך ל-`TAG_PAGES` ב-`tag_pages.py`. פסקת המבוא חייבת להיות ייחודית ובאורך 80–200 מילים — תגית בלי מבוא לא מקבלת דף, וזה מכוון
 - מקומות שנמצאים ב-`MAP_LOCATIONS` צריכים להיות גם ב-`CLOUD_SKIP` (כדי שלא יופיעו פעמיים)
 
 ## פרויקט ארוך-טווח: שכתוב תיאורים בעברית עם Opus 4.7
