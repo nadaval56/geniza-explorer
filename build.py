@@ -601,7 +601,7 @@ INDEX_HTML = """\
         <div class="dash-panel dash-panel--wide">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל 131 הנושאים ←</a>
           </div>
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
         </div>
@@ -620,7 +620,7 @@ INDEX_HTML = """\
           </div>
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
           </div>
           <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
         </div>

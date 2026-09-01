@@ -453,6 +453,20 @@
     'ארגמן':    'Purple dye',
   };
 
+  // tag → /t/<slug>/. Populated from data/tag_slugs.json before the cloud and the
+  // spice bar render. A tag that has a hub page becomes a link to it: the hub
+  // carries an introduction and lists every document, which is strictly more
+  // than the in-place filter did. A tag with no page keeps the old behaviour.
+  let TAG_SLUGS = {};
+
+  function tagChip(tag, inner, cls, extraAttr) {
+    const slug = TAG_SLUGS[tag];
+    if (slug) {
+      return `<a class="${cls}" href="t/${esc(slug)}/" ${extraAttr}>${inner}</a>`;
+    }
+    return `<button class="${cls}" data-tag="${esc(tag)}" ${extraAttr}>${inner}</button>`;
+  }
+
   function renderTagCloud(tags) {
     const el = document.getElementById('tag-cloud');
     if (!el || !tags.length) return;
@@ -467,9 +481,9 @@
     el.innerHTML = display.map(({t, c}) => {
       const size  = (MIN_SIZE + (c - minC) / range * (MAX_SIZE - MIN_SIZE)).toFixed(2);
       const alpha = (MIN_ALPHA + (c - minC) / range * (1 - MIN_ALPHA)).toFixed(2);
-      return `<button class="tag-pill-cloud" style="font-size:${size}rem;opacity:${alpha}"
-        data-tag="${esc(t)}" title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"
-        >${esc(t)}</button>`;
+      const attrs = `style="font-size:${size}rem;opacity:${alpha}" `
+                  + `title="${esc(t)} (${c.toLocaleString('he-IL')} מסמכים)"`;
+      return tagChip(t, esc(t), 'tag-pill-cloud', attrs);
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.tag-pill-cloud');
@@ -488,12 +502,11 @@
     if (!el) return;
     el.innerHTML = SPICE_TAGS.map(tag => {
       const count = tagCounts[tag] || 0;
-      return `<button class="spice-btn" data-tag="${esc(tag)}"
-        title="${esc(tag)} (${count.toLocaleString('he-IL')} מסמכים)">
-        <span class="spice-btn-name">${esc(tag)}</span>
-        ${SPICE_LATIN[tag] ? `<span class="spice-btn-latin">${esc(SPICE_LATIN[tag])}</span>` : ''}
-        <span class="spice-btn-count">${count.toLocaleString('he-IL')}</span>
-      </button>`;
+      const inner = `<span class="spice-btn-name">${esc(tag)}</span>`
+        + (SPICE_LATIN[tag] ? `<span class="spice-btn-latin">${esc(SPICE_LATIN[tag])}</span>` : '')
+        + `<span class="spice-btn-count">${count.toLocaleString('he-IL')}</span>`;
+      return tagChip(tag, inner, 'spice-btn',
+        `title="${esc(tag)} (${count.toLocaleString('he-IL')} מסמכים)"`);
     }).join('');
     el.addEventListener('click', e => {
       const btn = e.target.closest('.spice-btn');
@@ -647,7 +660,14 @@
   }
 
   function loadTagsAndMap() {
-    fetch('data/tags_he.json')
+    // The slug map has to arrive before the chips render, or they fall back to
+    // filtering in place and the hub pages become unreachable from here.
+    const slugs = fetch('data/tag_slugs.json')
+      .then(r => r.ok ? r.json() : {})
+      .then(map => { TAG_SLUGS = map || {}; })
+      .catch(() => { TAG_SLUGS = {}; });
+
+    slugs.then(() => fetch('data/tags_he.json')
       .then(r => r.ok ? r.json() : null)
       .then(tags => {
         if (!tags) return;
@@ -670,7 +690,7 @@
         initLocationMap(locCounts);
         renderSpiceBar(spiceCounts);
       })
-      .catch(() => {});
+      .catch(() => {}));
   }
 
   // ── Boot ──────────────────────────────────────────────────────────────────────

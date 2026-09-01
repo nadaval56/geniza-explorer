@@ -568,7 +568,10 @@ img { display: block; max-width: 100%; }
 .badge-type-lit       { background: var(--badge-lit);    color: #8b3030; }
 .badge-type-rel       { background: var(--badge-rel);    color: #4a7a20; }
 .badge-type-para      { background: var(--badge-para);   color: #2a507a; }
-.badge-type-other     { background: var(--badge-other);  color: #7a6a5a; }
+/* היה #7a6a5a על --badge-other: 4.46:1, מתחת לסף 4.5. הכשל היה קיים גם
+   בכרטיסי דף הבית ורק לא נתפס, כי הביקורת רואה שמונה כרטיסים בכל רגע
+   ודף נושא מציג מאה. #776757 נותן 4.66 באותו גוון. */
+.badge-type-other     { background: var(--badge-other);  color: #776757; }
 
 .badge-lang {
   /* היה --text-3 על --border: 3.66:1 במצב הרגיל ו-4.16:1 בניגודיות הפוכה.
@@ -1719,3 +1722,16 @@ a.tag-pill-link:hover {
   border-color: var(--gold-dark);
   text-decoration: none;
 }
+
+/* A tag chip that leads to its hub page. Same look as the button it replaced —
+   only the element changed, from <button> to <a>. */
+a.tag-pill-cloud,
+a.spice-btn { text-decoration: none; }
+a.tag-pill-cloud:hover,
+a.spice-btn:hover { text-decoration: none; }
+
+.dash-panel-link {
+  text-decoration: none;
+  white-space: nowrap;
+}
+.dash-panel-link:hover { text-decoration: underline; }
