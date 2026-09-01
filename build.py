@@ -705,12 +705,12 @@ FRAGMENT_HTML = """\
   <div class="loading-state">
     <div class="spinner"></div>
     <p>מעביר לעמוד המסמך…</p>
-    <p><a id="manual-link" href="index.html">המשך לגלריה</a></p>
+    <p><a id="manual-link" href="./">המשך לגלריה</a></p>
   </div>
   <noscript>
     <p style="text-align:center;padding:2rem">
       עמוד זה עבר. <a href="d/">עברו למפתח המסמכים</a> או
-      <a href="index.html">חזרו לגלריה</a>.
+      <a href="./">חזרו לגלריה</a>.
     </p>
   </noscript>
   <script>

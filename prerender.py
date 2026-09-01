@@ -301,7 +301,7 @@ DOC_PAGE = """<!DOCTYPE html>
   <a href="#doc-main" class="skip-link">דלג לתוכן המסמך</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="{root}index.html" class="nav-home">← חזרה לגלריה</a>
+    <a href="{root}" class="nav-home">← חזרה לגלריה</a>
     <span class="nav-breadcrumb" aria-current="page">{breadcrumb}</span>
   </nav>
 
@@ -357,7 +357,7 @@ DOC_PAGE = """<!DOCTYPE html>
     </p>
     <p>
       <a href="{root}about.html">אודות הגניזה</a> ·
-      <a href="index.html">כל המסמכים</a> ·
+      <a href="./">כל המסמכים</a> ·
       <a href="{root}privacy/">מדיניות פרטיות</a> ·
       <a href="{root}accessibility/">הצהרת נגישות</a>
     </p>
@@ -485,7 +485,7 @@ INDEX_PAGE = """<!DOCTYPE html>
   <a href="#doc-index" class="skip-link">דלג לרשימת המסמכים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../index.html" class="nav-home">← חזרה לגלריה</a>
+    <a href="../" class="nav-home">← חזרה לגלריה</a>
     <span class="nav-breadcrumb" aria-current="page">כל המסמכים · עמוד {page}</span>
   </nav>
 
@@ -493,7 +493,7 @@ INDEX_PAGE = """<!DOCTYPE html>
     <h1 class="doc-index-title">כל המסמכים</h1>
     <p class="doc-index-sub">
       מפתח מלא של {total} המסמכים באוסף, לעיון ולסריקה. לחיפוש חופשי וסינון
-      השתמשו ב<a href="../index.html">גלריה הראשית</a>.
+      השתמשו ב<a href="../">גלריה הראשית</a>.
     </p>
     <ol class="doc-index-list" start="{start}">
 {items}
@@ -534,16 +534,16 @@ def render_index_pages(docs, base, out_dir):
 
         prevnext = ""
         if n > 1:
-            prev = "index.html" if n == 2 else f"index-{n - 1}.html"
+            prev = "" if n == 2 else f"index-{n - 1}.html"
             prevnext += f'  <link rel="prev" href="{base}d/{prev}">\n'
         if n < pages:
             prevnext += f'  <link rel="next" href="{base}d/index-{n + 1}.html">\n'
 
         links = []
         if n > 1:
-            links.append(f'<a class="page-btn" href="{"index.html" if n == 2 else f"index-{n-1}.html"}">→ הקודם</a>')
+            links.append(f'<a class="page-btn" href="{"./" if n == 2 else f"index-{n-1}.html"}">→ הקודם</a>')
         for m in sorted({1, 2, n - 1, n, n + 1, pages - 1, pages} & set(range(1, pages + 1))):
-            target = "index.html" if m == 1 else f"index-{m}.html"
+            target = "./" if m == 1 else f"index-{m}.html"
             active = " active" if m == n else ""
             links.append(f'<a class="page-btn{active}" href="{target}">{m}</a>')
         if n < pages:
