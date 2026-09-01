@@ -649,6 +649,25 @@ def render_index_pages(docs, base, out_dir):
     return pages
 
 
+# How many candidates to keep per bucket. Without a cap, a document tagged
+# יהודית-ערבית scans all 12,413 of its neighbours, once per document — the
+# build never finished. Keeping the best few dozen per bucket is also better
+# on the merits: a reader wants the strongest neighbours, not the nearest.
+RELATED_BUCKET = 40
+
+
+def _quality(doc):
+    """Sort key: a photograph first, then the fuller description.
+
+    Computed once per document in build_related_index and cached by id. Calling
+    clean() here for every candidate of every document meant eight hundred
+    thousand regex substitutions and a six-minute build.
+    """
+    return (0 if (doc.get("iiif_urls") or []) else 1,
+            -len(clean(doc.get("description_he"))),
+            doc.get("pos") or 0)
+
+
 def build_related_index(docs):
     """Everything needed to find a document's neighbours, built once.
 
@@ -657,55 +676,66 @@ def build_related_index(docs):
     another letter about Fustat you had to walk the whole way, and so did a
     crawler. Every page was a link in a chain instead of a node in a graph.
     """
-    by_tag, by_origin, by_library = {}, {}, {}
+    buckets = {"tag": {}, "origin": {}, "library": {}}
+    sizes = {}
     for doc in docs:
         for raw in (doc.get("tags_he") or []):
             tag = clean(raw)
             if tag:
-                by_tag.setdefault(tag, []).append(doc)
-        origin = clean(doc.get("origin"))
-        if origin:
-            by_origin.setdefault(origin, []).append(doc)
-        library = clean(doc.get("library"))
-        if library:
-            by_library.setdefault(library, []).append(doc)
-    return {"tag": by_tag, "origin": by_origin, "library": by_library,
+                buckets["tag"].setdefault(tag, []).append(doc)
+        for key in ("origin", "library"):
+            value = clean(doc.get(key))
+            if value:
+                buckets[key].setdefault(value, []).append(doc)
+
+    quality = {doc["id"]: _quality(doc) for doc in docs}
+    for kind, groups in buckets.items():
+        for value, members in groups.items():
+            sizes[(kind, value)] = len(members)
+            groups[value] = sorted(members, key=lambda d: quality[d["id"]])[:RELATED_BUCKET]
+
+    return {**buckets, "sizes": sizes, "quality": quality,
             "by_id": {doc["id"]: doc for doc in docs}}
+
+
+def _tag_weight(size):
+    """A tag shared by twelve thousand documents says almost nothing; one shared
+    by forty says these two are about the same thing. Weight accordingly."""
+    if size <= 200:
+        return 6
+    if size <= 1000:
+        return 4
+    if size <= 4000:
+        return 2
+    return 1
 
 
 def related_docs(doc, index, limit=8):
     """Documents worth reading next, scored by how much they share.
 
-    A shared tag is the strongest signal — it means the two documents are about
-    the same thing. Same place of origin is next, same holding library last: a
-    library says where the fragment sits today, not what it says. Documents with
-    a photograph and a fuller description win ties, because those are the ones a
-    reader is glad to land on.
+    A shared tag is the strongest signal, scaled by how rare that tag is. Same
+    place of origin comes next, same holding library last: a library says where
+    the fragment sits today, not what it says.
     """
     scores = {}
-    for tag in (clean(t) for t in (doc.get("tags_he") or [])):
+    for raw in (doc.get("tags_he") or []):
+        tag = clean(raw)
+        weight = _tag_weight(index["sizes"].get(("tag", tag), 0))
         for other in index["tag"].get(tag, ()):
             if other["id"] != doc["id"]:
-                scores[other["id"]] = scores.get(other["id"], 0) + 3
-    for key, weight in (("origin", 2), ("library", 1)):  # by_id is not scanned
-        value = clean(doc.get(key))
-        for other in index[key].get(value, ()):
+                scores[other["id"]] = scores.get(other["id"], 0) + weight
+    for kind, weight in (("origin", 2), ("library", 1)):
+        value = clean(doc.get(kind))
+        for other in index[kind].get(value, ()):
             if other["id"] != doc["id"]:
                 scores[other["id"]] = scores.get(other["id"], 0) + weight
 
     if not scores:
         return []
 
-    lookup = index["by_id"]
-    ranked = sorted(
-        scores.items(),
-        key=lambda pair: (
-            -pair[1],
-            0 if (lookup[pair[0]].get("iiif_urls") or []) else 1,
-            -len(clean(lookup[pair[0]].get("description_he"))),
-            lookup[pair[0]].get("pos") or 0,
-        ),
-    )
+    lookup, quality = index["by_id"], index["quality"]
+    ranked = sorted(scores.items(),
+                    key=lambda pair: (-pair[1], quality[pair[0]]))
     return [lookup[doc_id] for doc_id, _ in ranked[:limit]]
 
 
