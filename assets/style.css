@@ -1763,3 +1763,51 @@ a.spice-btn:hover { text-decoration: none; }
   color: var(--text-2);
   line-height: 1.7;
 }
+
+/* ── Related documents, at the foot of every document page ──────────────────── */
+.related-block {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: .7rem;
+  margin-top: .9rem;
+}
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding: .8rem .9rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background .15s, border-color .15s;
+}
+.related-card:hover {
+  background: var(--bg-card-h);
+  border-color: var(--gold-dark);
+  text-decoration: none;
+}
+.related-shelfmark {
+  font-weight: 600;
+  font-size: .85rem;
+  color: var(--link);
+}
+.related-meta {
+  font-size: .72rem;
+  color: var(--text-3);
+}
+.related-desc {
+  font-size: .78rem;
+  color: var(--text-2);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
