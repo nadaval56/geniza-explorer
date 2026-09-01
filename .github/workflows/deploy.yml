@@ -86,6 +86,13 @@ jobs:
           done
           sample=$(find d -name '*.html' ! -name 'index*' | head -1)
           grep -q 'assets/a11y.js' "$sample" || { echo "::error::document pages lost the accessibility menu"; exit 1; }
+          # דפי הנושא הם עמודי הכניסה לשאילתות שאין להן סימן קטלוג. אם prerender.py
+          # יפסיק לבנות אותם, האתר ייפרס בלי גרף הקישורים הפנימי שהם יוצרים.
+          hubs=$(find t -mindepth 2 -name 'index.html' | wc -l)
+          echo "tag hubs:          $hubs"
+          [ "$hubs" -gt 100 ] || { echo "::error::only $hubs tag hub pages"; exit 1; }
+          grep -q 'assets/a11y.js' t/index.html || { echo "::error::t/ lost the accessibility menu"; exit 1; }
+          grep -q 'tag-pill-link' "$sample" || { echo "::error::document pages lost their tag links"; exit 1; }
           # אף CDN חיצוני: הגופנים ו-Leaflet מוגשים מהאתר, וזו ההבטחה שבמדיניות הפרטיות.
           if grep -rnE 'https?://(unpkg\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|fonts\.(googleapis|gstatic)\.com)' \
                index.html about.html privacy/index.html accessibility/index.html assets/*.css assets/*.js; then

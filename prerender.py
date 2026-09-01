@@ -36,16 +36,21 @@ import sys
 from datetime import date
 
 import a11y_snippets
+import tag_pages
 
 ROOT = pathlib.Path(__file__).parent
 DOCS_DIR = ROOT / "data" / "docs"
 OUT_DIR = ROOT / "d"
+TAG_DIR = ROOT / "t"
 
 DEFAULT_BASE_URL = "https://nadaval56.github.io/geniza-explorer/"
 
 SITE_NAME = "הגניזה הקהירית"
 SITE_TAGLINE = "חלון אל החיים היהודיים בימי הביניים"
 PER_INDEX_PAGE = 250
+# Documents listed on one tag hub page. Page 1 is the indexable page and
+# carries the intro; the overflow pages exist to keep every document linked.
+PER_TAG_PAGE = 100
 
 LICENSE_URL = "https://creativecommons.org/licenses/by-nc/4.0/deed.he"
 PGP_URL = "https://geniza.princeton.edu"
@@ -180,11 +185,26 @@ def render_meta_rows(doc):
     return "\n".join(rows)
 
 
-def render_tags(doc):
+def render_tags(doc, root="../"):
+    """Tag pills. A tag with a hub page under /t/ becomes a link to it.
+
+    This is what builds the internal link graph: without it every document is a
+    leaf that only the paginated index reaches. Tags with no hub page — and the
+    raw English tags shown for documents that were never tagged in Hebrew — stay
+    plain text, because there is nowhere to send the reader.
+    """
     tags = [clean(t) for t in (doc.get("tags_he") or doc.get("tags") or []) if clean(t)]
     if not tags:
         return ""
-    pills = "".join(f'<span class="tag-pill">{esc(t)}</span>' for t in tags)
+
+    def pill(tag):
+        page = tag_pages.TAG_PAGES.get(tag)
+        if not page:
+            return f'<span class="tag-pill">{esc(tag)}</span>'
+        return (f'<a class="tag-pill tag-pill-link" href="{root}t/{esc(page["slug"])}/">'
+                f'{esc(tag)}</a>')
+
+    pills = "".join(pill(t) for t in tags)
     return f"""
         <div class="tags-block">
           <h2 class="section-label">תגיות</h2>
@@ -582,8 +602,311 @@ def render_index_pages(docs, base, out_dir):
     return pages
 
 
+# ── Tag hub pages ─────────────────────────────────────────────────────────────
+TAG_PAGE = """<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title} — {site}</title>
+  <meta name="description" content="{description}">
+  <link rel="canonical" href="{url}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{site}">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:url" content="{url}">
+  <meta property="og:image" content="{base}assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="../../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="stylesheet" href="../../assets/fonts.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+{a11y_head}
+  {jsonld}
+</head>
+<body class="fragment-body">
+
+  <a href="#tag-main" class="skip-link">דלג לרשימת המסמכים</a>
+
+  <nav class="top-nav" aria-label="ניווט">
+    <a href="../../" class="nav-home">← חזרה לגלריה</a>
+    <span class="nav-breadcrumb" aria-current="page">{crumb}</span>
+  </nav>
+
+  <main class="tag-hub" id="tag-main">
+
+    <header class="tag-header">
+      <p class="tag-kicker">{group_label}</p>
+      <h1 class="tag-title">{h1}</h1>
+      <p class="tag-count">{count} מסמכים באוסף נושאים את התגית הזו.</p>
+    </header>
+{intro}
+    <h2 class="section-label tag-list-label">המסמכים</h2>
+    <ol class="doc-index-list">
+{items}
+    </ol>
+{more}{related}
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      נתונים: <a href="{pgp}" target="_blank" rel="noopener">Princeton Geniza Project</a>
+      — <a href="{license}" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
+    </p>
+    <p>
+      <a href="../../about.html">אודות הגניזה</a> ·
+      <a href="../../d/">כל המסמכים</a> ·
+      <a href="../../privacy/">מדיניות פרטיות</a> ·
+      <a href="../../accessibility/">הצהרת נגישות</a>
+    </p>
+  </footer>
+
+{a11y_foot}
+</body>
+</html>
+"""
+
+
+TAG_DIRECTORY = """<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>נושאים — {count} תגיות במסמכי הגניזה — {site}</title>
+  <meta name="description" content="כל הנושאים במסמכי הגניזה הקהירית: סוגי מסמכים, מקומות, תקופות, שפות, בעלי מלאכה, צמחים, תבלינים ואישים — {count} נושאים, כל אחד עם דף משלו.">
+  <link rel="canonical" href="{url}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{site}">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="נושאים במסמכי הגניזה הקהירית">
+  <meta property="og:description" content="{count} נושאים — סוגי מסמכים, מקומות, תקופות, שפות, בעלי מלאכה, צמחים, תבלינים ואישים.">
+  <meta property="og:url" content="{url}">
+  <meta property="og:image" content="{base}assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/fonts.css">
+  <link rel="stylesheet" href="../assets/style.css">
+{a11y_head}
+</head>
+<body class="fragment-body">
+
+  <a href="#tag-dir" class="skip-link">דלג לרשימת הנושאים</a>
+
+  <nav class="top-nav" aria-label="ניווט">
+    <a href="../" class="nav-home">← חזרה לגלריה</a>
+    <span class="nav-breadcrumb" aria-current="page">נושאים</span>
+  </nav>
+
+  <main class="tag-hub" id="tag-dir">
+
+    <header class="tag-header">
+      <h1 class="tag-title">נושאים במסמכי הגניזה</h1>
+      <p class="tag-count">{count} נושאים, כל אחד עם דף משלו.</p>
+    </header>
+
+{sections}
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      נתונים: <a href="{pgp}" target="_blank" rel="noopener">Princeton Geniza Project</a>
+      — <a href="{license}" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
+    </p>
+    <p>
+      <a href="../about.html">אודות הגניזה</a> ·
+      <a href="../d/">כל המסמכים</a> ·
+      <a href="../privacy/">מדיניות פרטיות</a> ·
+      <a href="../accessibility/">הצהרת נגישות</a>
+    </p>
+  </footer>
+
+{a11y_foot}
+</body>
+</html>
+"""
+
+
+def tag_index(docs):
+    """tag → its documents, richest Hebrew description first.
+
+    Ordering matters: page 1 of a hub is the page that has to earn its place in
+    the index, so it shows the documents with the most to say. It also means the
+    hubs improve on their own as the Hebrew rewrite project fills descriptions in.
+    """
+    buckets = {}
+    for doc in docs:
+        for raw in (doc.get("tags_he") or []):
+            tag = clean(raw)
+            if tag in tag_pages.TAG_PAGES:
+                buckets.setdefault(tag, []).append(doc)
+    for items in buckets.values():
+        items.sort(key=lambda d: (-len(clean(d.get("description_he"))), d.get("pos") or 0))
+    return buckets
+
+
+def related_tags(tag, buckets, limit=8):
+    """Other tags in the same group, biggest first. This is what links the hubs
+    to each other instead of leaving 131 dead ends."""
+    group = tag_pages.TAG_PAGES[tag]["group"]
+    siblings = [(t, len(d)) for t, d in buckets.items()
+                if t != tag and tag_pages.TAG_PAGES[t]["group"] == group]
+    siblings.sort(key=lambda pair: -pair[1])
+    return [t for t, _ in siblings[:limit]]
+
+
+def render_tag_json_ld(tag, page, url, base, chunk):
+    node = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": url,
+        "url": url,
+        "name": page["h1"],
+        "description": truncate(page["intro"], 500),
+        "inLanguage": "he",
+        "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": base},
+        "license": LICENSE_URL,
+        "hasPart": [
+            {"@type": "CreativeWork", "name": doc_title(d), "url": f"{base}d/{d['id']}.html"}
+            for d in chunk
+        ],
+    }
+    crumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": base},
+            {"@type": "ListItem", "position": 2, "name": "נושאים",
+             "item": base + "t/"},
+            {"@type": "ListItem", "position": 3, "name": page["h1"], "item": url},
+        ],
+    }
+    dumps = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    return (f'<script type="application/ld+json">{dumps(node)}</script>\n'
+            f'  <script type="application/ld+json">{dumps(crumbs)}</script>')
+
+
+def render_tag_directory(buckets, base, out_dir):
+    """/t/ — the hub of hubs. The breadcrumb on every tag page points here, and
+    it gives the 131 hubs a single parent that the home page can link to."""
+    sections = []
+    for key, label in tag_pages.GROUPS.items():
+        members = sorted(((t, len(d)) for t, d in buckets.items()
+                          if tag_pages.TAG_PAGES[t]["group"] == key),
+                         key=lambda pair: -pair[1])
+        if not members:
+            continue
+        links = "".join(
+            f'<li><a href="{esc(tag_pages.TAG_PAGES[t]["slug"])}/">{esc(t)}</a>'
+            f'<span class="doc-index-meta">{n:,} מסמכים</span></li>'
+            for t, n in members
+        )
+        sections.append(f'      <section class="tag-group">\n'
+                        f'        <h2 class="section-label">{esc(label)}</h2>\n'
+                        f'        <ul class="tag-group-list">{links}</ul>\n'
+                        f'      </section>')
+
+    out_dir.mkdir(exist_ok=True)
+    (out_dir / "index.html").write_text(TAG_DIRECTORY.format(
+        a11y_head=a11y_snippets.head("../"),
+        a11y_foot=a11y_snippets.foot("../"),
+        site=esc(SITE_NAME),
+        url=esc(base + "t/"),
+        base=esc(base),
+        count=len(buckets),
+        sections="\n".join(sections),
+        pgp=PGP_URL,
+        license=LICENSE_URL,
+    ), encoding="utf-8")
+
+
+def render_tag_pages(docs, base, out_dir):
+    """One page per tag under /t/<slug>/. No pagination, deliberately.
+
+    A tag hub lists its 100 best-described documents and stops. The obvious
+    alternative — paginating all 12,413 Judaeo-Arabic documents into 125 pages —
+    was built first and then removed: it produced 627 extra pages for 18 tags,
+    on track for roughly 1,500 across all of them. Every one of those would have
+    been a list of links with no prose of its own, added to a site whose
+    diagnosed problem is that Google already crawls 36,000 pages and indexes
+    none of them.
+
+    Nothing is orphaned by the cut. Every document is still reachable from the
+    144 paginated pages under /d/, which is the index built for exactly that,
+    and still links out to each of its own tags.
+    """
+    buckets = tag_index(docs)
+    out_dir.mkdir(exist_ok=True)
+
+    for tag, items in buckets.items():
+        page = tag_pages.TAG_PAGES[tag]
+        slug = page["slug"]
+        tag_dir = out_dir / slug
+        tag_dir.mkdir(exist_ok=True)
+        chunk = items[:PER_TAG_PAGE]
+        url = f"{base}t/{slug}/"
+
+        siblings = related_tags(tag, buckets)
+        related = ""
+        if siblings:
+            links = "".join(
+                f'<a class="tag-pill tag-pill-link" '
+                f'href="../{esc(tag_pages.TAG_PAGES[s]["slug"])}/">{esc(s)}</a>'
+                for s in siblings
+            )
+            related = ('\n    <section class="tag-related">\n'
+                       f'      <h2 class="section-label">{esc(tag_pages.GROUPS[page["group"]])} נוספים</h2>\n'
+                       f'      <div class="tags-list">{links}</div>\n'
+                       '    </section>\n')
+
+        more = ""
+        if len(items) > PER_TAG_PAGE:
+            more = ('\n    <p class="tag-more">מוצגים כאן '
+                    f'{PER_TAG_PAGE} המסמכים בעלי התיאור המפורט ביותר, מתוך {len(items):,}. '
+                    'את השאר אפשר לסרוק ב<a href="../../d/">מפתח המלא</a>.</p>\n')
+
+        items_html = "\n".join(
+            f'      <li><a href="../../d/{esc(d["id"])}.html">{esc(doc_title(d))}</a>'
+            f'<span class="doc-index-meta">{esc(truncate(doc_description(d), 150) or summary_line(d))}</span></li>'
+            for d in chunk
+        )
+
+        (tag_dir / "index.html").write_text(TAG_PAGE.format(
+            a11y_head=a11y_snippets.head("../../"),
+            a11y_foot=a11y_snippets.foot("../../"),
+            site=esc(SITE_NAME),
+            title=esc(page["h1"]),
+            description=esc(truncate(page["intro"], 155)),
+            url=esc(url),
+            base=esc(base),
+            jsonld=render_tag_json_ld(tag, page, url, base, chunk),
+            crumb=esc(page["h1"]),
+            group_label=esc(tag_pages.GROUPS[page["group"]]),
+            h1=esc(page["h1"]),
+            count=f"{len(items):,}",
+            intro=f'\n    <div class="tag-intro">\n      <p>{esc(page["intro"])}</p>\n    </div>\n',
+            items=items_html,
+            more=more,
+            related=related,
+            pgp=PGP_URL,
+            license=LICENSE_URL,
+        ), encoding="utf-8")
+
+    return len(buckets)
+
+
 # ── sitemap.xml / robots.txt ──────────────────────────────────────────────────
-def write_sitemap(docs, base, index_pages):
+def write_sitemap(docs, base, index_pages, tag_slugs=()):
     today = date.today().isoformat()
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -602,12 +925,20 @@ def write_sitemap(docs, base, index_pages):
     add(base + "d/", "0.9", "weekly")
     for n in range(2, index_pages + 1):
         add(f"{base}d/index-{n}.html", "0.5")
+
+    # Tag hubs rank above individual documents: each one is a real page about a
+    # subject, and each is the entry point for a query no shelfmark can answer.
+    # Only page 1 goes in — the overflow pages are noindex by design.
+    if tag_slugs:
+        add(base + "t/", "0.9", "monthly")
+    for slug in tag_slugs:
+        add(f"{base}t/{slug}/", "0.8", "monthly")
     for doc in docs:
         add(f"{base}d/{doc['id']}.html", "0.6", "yearly")
 
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
-    return len(docs) + index_pages + 4
+    return len(docs) + index_pages + 4 + (len(tag_slugs) + 1 if tag_slugs else 0)
 
 
 ROBOTS = """# הגניזה הקהירית — Geniza Explorer
@@ -681,7 +1012,14 @@ def run(base=None, limit=None, docs=None, verbose=True):
     index_pages = render_index_pages(docs, base, OUT_DIR)
     print(f"  ✓  d/index.html  ({index_pages} directory pages)")
 
-    urls = write_sitemap(docs, base, index_pages)
+    buckets = tag_index(docs)
+    hubs = render_tag_pages(docs, base, TAG_DIR)
+    render_tag_directory(buckets, base, TAG_DIR)
+    print(f"  ✓  t/*/  ({hubs} tag hubs)")
+    tag_slugs = [tag_pages.TAG_PAGES[t]["slug"]
+                 for t, _ in sorted(buckets.items(), key=lambda kv: -len(kv[1]))]
+
+    urls = write_sitemap(docs, base, index_pages, tag_slugs)
     print(f"  ✓  sitemap.xml  ({urls:,} URLs)")
 
     write_robots(base)
