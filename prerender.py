@@ -723,6 +723,7 @@ TAG_PAGE = """<!DOCTYPE html>
     </p>
   </footer>
 
+  <script src="../../assets/card-thumbs.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -786,7 +787,6 @@ TAG_DIRECTORY = """<!DOCTYPE html>
     </p>
   </footer>
 
-  <script src="../../assets/card-thumbs.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -794,11 +794,18 @@ TAG_DIRECTORY = """<!DOCTYPE html>
 
 
 def tag_index(docs):
-    """tag → its documents, richest Hebrew description first.
+    """tag → its documents, the ones worth looking at first.
 
-    Ordering matters: page 1 of a hub is the page that has to earn its place in
-    the index, so it shows the documents with the most to say. It also means the
-    hubs improve on their own as the Hebrew rewrite project fills descriptions in.
+    Order is photo, then length of the Hebrew description, then position. Only
+    57% of documents have a photograph, and mixing them in at random left every
+    grid row half empty. Sorting them forward also tidies the layout for free:
+    the picture cards sit together and the text-only cards sit together, instead
+    of alternating down the page.
+
+    Within each group the fullest descriptions come first, so page 1 of a hub —
+    the page that has to earn its place in the index — shows the documents with
+    the most to say. It also means the hubs improve on their own as the Hebrew
+    rewrite project fills descriptions in.
     """
     buckets = {}
     for doc in docs:
@@ -807,7 +814,11 @@ def tag_index(docs):
             if tag in tag_pages.TAG_PAGES:
                 buckets.setdefault(tag, []).append(doc)
     for items in buckets.values():
-        items.sort(key=lambda d: (-len(clean(d.get("description_he"))), d.get("pos") or 0))
+        items.sort(key=lambda d: (
+            0 if (d.get("iiif_urls") or []) else 1,          # a photo first
+            -len(clean(d.get("description_he"))),            # then the fullest description
+            d.get("pos") or 0,                               # then stable by position
+        ))
     return buckets
 
 
