@@ -856,9 +856,12 @@ def main():
     if args.limit is None:
         live = {doc["id"] for doc in docs}
         stale = [p for p in DOCS_DIR.glob("*.json") if p.stem not in live]
-        # רשת ביטחון: CSV קטוע לא ימחק את האוסף. 1% הוא כמה עשרות מסמכים,
-        # הרבה מעל קצב המחיקות בפועל בפרויקט של פרינסטון.
-        if len(stale) > max(50, len(docs) // 100):
+        # רשת ביטחון: CSV קטוע לא ימחק את האוסף. הסף היה 1%, וזה היה צר מדי:
+        # בין הסנאפשוט של מאי 2026 ל-CSV של ספטמבר פרינסטון הסירה 268 מסמכים
+        # והוסיפה 570 — כלומר מחיקות אמיתיות הגיעו ל-0.74%, במרחק נגיעה מסף
+        # שהיה עוצר את הגיזום ומחזיר בשקט את הפער בין המספרים. 5% עדיין תופס
+        # את המקרה שהסף נועד לו: הורדה שנקטעה מותירה עשרות אחוזים של "מתים".
+        if len(stale) > max(50, len(docs) // 20):
             print(f"  !  {len(stale):,} stale files — too many to be real deletions, "
                   f"keeping them. Check the CSV.")
         else:

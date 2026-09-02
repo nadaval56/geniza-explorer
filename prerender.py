@@ -1467,6 +1467,18 @@ def run(base=None, limit=None, docs=None, verbose=True):
             print(f"  …  {i + 1:,}/{len(docs):,}")
     print(f"  ✓  d/*.html  ({len(docs):,} pages)")
 
+    # ב-CI התיקייה נבנית מאפס ואין מה לגזום, אבל בבנייה מקומית חוזרת עמוד של
+    # מסמך שפרינסטון מחקה שורד את המחיקה: הוא נעדר מה-sitemap ומן המפתח, ועדיין
+    # נפתח בדפדפן. גוזמים רק d/<ספרות>.html, כך שדפי המפתח אינם בסכנה.
+    if limit is None:
+        live = {doc["id"] for doc in docs}
+        gone = [p for p in OUT_DIR.glob("*.html")
+                if p.stem.isdigit() and p.stem not in live]
+        for p in gone:
+            p.unlink()
+        if gone:
+            print(f"  ✓  {len(gone)} stale document page(s) removed from d/")
+
     index_pages = render_index_pages(docs, base, OUT_DIR)
     print(f"  ✓  d/index.html  ({index_pages} directory pages)")
 
