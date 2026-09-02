@@ -2,7 +2,7 @@
 
 # הגניזה הקהירית
 
-**חלון אל החיים היהודיים בימי הביניים** — ממשק עיון וחיפוש בעברית ללמעלה מ-36,000 מסמכים מגניזת קהיר.
+**חלון אל החיים היהודיים בימי הביניים** — ממשק עיון וחיפוש בעברית לכ-36,000 מסמכים מגניזת קהיר.
 
 🔗 **[geniza.co.il](https://www.geniza.co.il/)**
 
@@ -22,7 +22,7 @@
 
 ## מה יש בו
 
-- **למעלה מ-36,000 מסמכים**, כשני שלישים מהם עם תצלום דיגיטלי
+- **כ-36,000 מסמכים**, כשני שלישים מהם עם תצלום דיגיטלי
 - **תיאור בעברית לכל מסמך** — תרגום ועיבוד של התיאור המקורי באנגלית
 - **חיפוש חופשי** בעברית ובאנגלית, כולל התאמת שמות בין השפות
 - **סינון** לפי סוג מסמך, שפה, ספרייה, מאה ותקופה
@@ -120,7 +120,7 @@ python make_brand_assets.py
 ## In English
 
 **Geniza Explorer** is a Hebrew-language search and browsing interface for the
-36,000-plus documents of the Cairo Geniza, built on the open metadata of the
+some 36,000 documents of the Cairo Geniza, built on the open metadata of the
 [Princeton Geniza Project](https://geniza.princeton.edu).
 
 It adds no new scholarship. It provides a Hebrew reading layer over the existing
