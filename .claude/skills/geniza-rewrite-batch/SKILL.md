@@ -88,7 +88,8 @@ done = json.load(open('.cache/rewrites_done.json'))
 def is_corrupted(text):
     low = text.lower()
     if any(kw in low for kw in [' git', 'git ', 'git-', '-git', 'commit', 'push',
-                                 'repository', 'hook', 'untracked', 'uncommitted']): return True
+                                 'repository', 'hook', 'untracked', 'uncommitted',
+                                 'thinking', '<think', 'reasoning']): return True
     if 'מאגר ה-' in text or 'מאגר git' in text or 'הודעת ה' in text: return True
     starts = ('I understand', 'I notice', 'I cannot', 'I am ', "I'm ",
               'הודעה זו', 'ההודעה', 'הודעת', 'השלמתי', 'איני יכול', 'אינני', 'לא אוכל')
