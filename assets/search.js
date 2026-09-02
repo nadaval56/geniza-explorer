@@ -278,6 +278,18 @@
     let html = `<button class="page-btn" ${p===1?'disabled':''} data-page="${p-1}" aria-label="קודם">→</button>`;
     const shown = new Set();
     [1,2,p-2,p-1,p,p+1,p+2,pages-1,pages].forEach(n => { if(n>=1&&n<=pages) shown.add(n); });
+
+    /* Without jumps this bar reads "1 2 … 69 70 71 … 4492 4493", and page 200
+       costs a hundred and thirty clicks on "next". Eight documents a page over
+       the whole collection is about 4,500 pages, so a fixed step of ten would
+       print four hundred buttons; the step scales instead, to a round 1/2/5
+       ×10^k that keeps roughly ten of them whatever the filters leave. */
+    if (pages > 12) {
+      const raw = pages / 10;
+      const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+      const step = (raw / mag <= 1 ? 1 : raw / mag <= 2 ? 2 : raw / mag <= 5 ? 5 : 10) * mag;
+      for (let n = step; n < pages; n += step) shown.add(Math.round(n));
+    }
     let prev=0;
     [...shown].sort((a,b)=>a-b).forEach(n => {
       if (prev && n>prev+1) html += '<span class="page-btn" style="pointer-events:none;opacity:.3">…</span>';
