@@ -1,1 +1,48 @@
-{"id":"31788","shelfmark":"JRL Genizah Ar. 268","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"JRL","library_raw":"JRL","collection":"JRL","description":"Fragment of a literary narrative in Arabic script. Mentions: a jāriya (meaning either girl or female slave) who nursed or was nursed; someone who \"brought her up with the ghulām (meaning either boy or male slave)\"; archery (al-ramy bi-l-qaws); a wrestling match (ṣirāʿ) in which the ghulām was victorious, and his fame spread throughout the land; a qāḍī who forbade someone from wrestling; the arrival of a new wrestler (muṣāriʿ) in Baṣra (apparently the setting of the action), a non-Arab (ʿajamī) from Daylam; someone who publicly addresses the Dayl[amīs?] (yā maʿāshir al-Dayl[amiyyīn]!); the speaker declares that \"I wrestled him with my own hands\"; the time of judgment \"between the two\"; possibly their horses (khuyūl)—so perhaps there is also horseback wrestling here; and how the Daylamī slapped or struck (laṭama) Abū l-Ḥasan. For artistic representations of wrestling in the Fatimid era, see Ernst J. Grube, \"A Drawing of Wrestler in the Cairo Museum of Islamic Art,\" Quaderni di Studi Arabic 3 (1985), 89–106, and for an overview of literary representations of wrestling in Persian literature (note the connection to Daylam in this fragment), see H. E. Chehabi, \"Wrestling in the Shahnameh and Later Persian Epics\" in The Layered Heart: Essays on Persian Poetry, ed. A. A. Seyed-Ghorab (2018).","tags":["ghulam, nursing, Basra, wrestling, athlete, Jariya, Qadi"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/jrl/ar/ar-268.json"],"fragment_urls":["https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22Ar.+268%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"],"princeton_url":"https://geniza.princeton.edu/documents/31788/","mentioned":"Baṣra, Daylam","description_he":"קטע מתוך סיפור ספרותי בכתב ערבי. מוזכרים בו: ג'אריה (במשמעות נערה או שפחה) שהייתה מינקת או יונקת; דמות ש\"גידלה אותה יחד עם הע'ולאם\" (נער או עבד); קליעה בקשת (אלרמי באלקוס); תחרות היאבקות (צראע) שבה ניצח הע'ולאם, ושמעו התפשט בכל הארץ; קאדי שאסר על מישהו להיאבק; הגעתו של מתאבק חדש לבצרה (שלכאורה היא מקום ההתרחשות), זר שאינו ערבי (עג'מי) מדילם; דמות הפונה בפומבי אל בני דילם (יא מעאשר אלדיל[מיין]!); הדובר מצהיר \"נאבקתי בו במו ידיי\"; שעת המשפט או ההכרעה \"בין השניים\"; ייתכן שמוזכרים סוסיהם (ח'יול) — ולכן אולי מדובר גם בהיאבקות על גבי סוסים; וכיצד הדילמי סטר או היכה (לטמה) את אבו אלחסן. על ייצוגים אמנותיים של היאבקות בתקופה הפאטמית ראו את מאמרו של ארנסט י' גרובה על שרטוט מתאבק במוזיאון לאמנות איסלאמית בקהיר; ולסקירה על ייצוגים ספרותיים של היאבקות בספרות הפרסית (יש לשים לב לקשר אל דילם המופיע בקטע זה) ראו את מאמרו של ה' א' צ'הבי על היאבקות ב\"שאהנאמה\" ובאפוסים הפרסיים המאוחרים.","tags_he":["ערבית","קהיר","פאטמי"],"prev":"31787","next":"31789","pos":17178,"total":35937}
+{
+  "collection": "JRL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a literary narrative in Arabic script. Mentions: a jāriya (meaning either girl or female slave) who nursed or was nursed; someone who \"brought her up with the ghulām (meaning either boy or male slave)\"; archery (al-ramy bi-l-qaws); a wrestling match (ṣirāʿ) in which the ghulām was victorious, and his fame spread throughout the land; a qāḍī who forbade someone from wrestling; the arrival of a new wrestler (muṣāriʿ) in Baṣra (apparently the setting of the action), a non-Arab (ʿajamī) from Daylam; someone who publicly addresses the Dayl[amīs?] (yā maʿāshir al-Dayl[amiyyīn]!); the speaker declares that \"I wrestled him with my own hands\"; the time of judgment \"between the two\"; possibly their horses (khuyūl)—so perhaps there is also horseback wrestling here; and how the Daylamī slapped or struck (laṭama) Abū l-Ḥasan. For artistic representations of wrestling in the Fatimid era, see Ernst J. Grube, \"A Drawing of Wrestler in the Cairo Museum of Islamic Art,\" Quaderni di Studi Arabic 3 (1985), 89–106, and for an overview of literary representations of wrestling in Persian literature (note the connection to Daylam in this fragment), see H. E. Chehabi, \"Wrestling in the Shahnameh and Later Persian Epics\" in The Layered Heart: Essays on Persian Poetry, ed. A. A. Seyed-Ghorab (2018).",
+  "description_he": "קטע מסיפור ספרותי בכתב ערבי. מוזכרים בו: ג'אריה (מונח שיכול להתייחס לנערה או לשפחה) שהניקה או שהוינקה; מישהו ש\"גידל אותה יחד עם הע'ולאם\" (נער או עבד); קשתות (אלרמי בלקוס); התאבקות (צראע) שבה ניצח הע'ולאם, ותהילתו התפשטה בכל הארץ; קאדי שאסר על מישהו להיאבק; הגעתו של מתאבק חדש (מצארע) לבצרה (ככל הנראה זירת ההתרחשות), לא-ערבי (עג'מי) מדילם; אדם הפונה בפומבי אל בני דיל[ם?] בקריאה \"יא מעאשר אלדיל[מיין]!\"; הדובר מכריז כי \"נאבקתי בו במו ידיי\"; מועד ההכרעה \"בין השניים\"; אולי סוסיהם (ח'יול) — כך שייתכן שמדובר גם בהתאבקות על גבי סוסים; וכיצד הדילמי סטר או הכה (לטמה) את אבו אלחסן. לייצוגים אמנותיים של התאבקות בתקופה הפאטמית ראו את מאמרו של ארנסט י' גרובה על ציור מתאבק במוזיאון לאמנות האסלאם בקהיר, ולסקירה של ייצוגי ההתאבקות בספרות הפרסית (יש לשים לב לקשר לדילם בקטע זה) ראו את מאמרו של ח' א' צ'האבי על ההתאבקות בשאה-נאמה ובאפוסים פרסיים מאוחרים יותר.",
+  "destination": "",
+  "fragment_urls": [
+    "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22Ar.+268%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "31788",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/jrl/ar/ar-268.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "JRL",
+  "library_raw": "JRL",
+  "mentioned": "Baṣra, Daylam",
+  "multifragment": "",
+  "next": "31789",
+  "origin": "",
+  "pos": 17178,
+  "prev": "31787",
+  "princeton_url": "https://geniza.princeton.edu/documents/31788/",
+  "region": "",
+  "shelfmark": "JRL Genizah Ar. 268",
+  "tags": [
+    "ghulam, nursing, Basra, wrestling, athlete, Jariya, Qadi"
+  ],
+  "tags_he": [
+    "ערבית",
+    "קהיר",
+    "קוס",
+    "פאטמי"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

@@ -1,1 +1,45 @@
-{"id":"4770","shelfmark":"Yevr.-Arab. I 1700.18","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1156-06-04","date_original":"14 Sivan 1467","date_standard":"1156-06-04","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Legal record (#43 and #44). Engagement contract, outline. Dated: Thursday, 14 Sivan 1467 Seleucid. In the hand of Meovrakh b. Natan (like the rest of the notebook). Engagement agreement between a Qaraite man (Abū Saʿīd) and a Rabbanite woman (Sitt al-Naṣr bt. Netan'el ha-Kohen). Goitein suggests that it is an agreement between a husband and wife that was composed after a quarrel (Med. Soc. 3:152–53). But Ashur judges the document to be an engagement agreement because the early marriage payment (muqaddam) is mentioned and there is a condition that the muqaddam will be considered 'a gift', alongside many other conditions common in agreements before the marriage. These conditions include: not to bring into the house anything forbidden by the Rabbanites (ṭā'ifat al-rabbānīn), that the early marriage payment is a gift, that he will not marry a second wife nor take a concubine if she disapproves, on pain of having to pay the delayed marriage payment and giving her a divorce, etc. NB: Goitein and Ashur referred to this document as folio 17 (Firk. II NS 1700.17) in accordance with the foliation written in pen; but the correct folio is 18, as written in pencil (the librarian with the pen gave two folios the number 8). ASE.","tags":["prenuptial, contract, engagement, register"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/4770/","mentioned":"","description_he":"רישום משפטי (#43 ו-#44). חוזה אירוסין, טיוטה. מתוארך ליום חמישי, י\"ד בסיוון א'תס\"ז לשטרות. בכתב ידו של מבורך בן נתן (כמו שאר המחברת). הסכם אירוסין בין גבר קראי (אבו סעיד) לאישה רבנית (סת אלנצר בת נתנאל הכהן). גויטיין הציע כי מדובר בהסכם בין בעל לאשתו שנערך בעקבות מריבה. אולם אשור קובע כי המסמך הוא הסכם אירוסין, משום שהמוקדם (התשלום המוקדם של הכתובה) נזכר בו, ויש בו תנאי שהמוקדם ייחשב כ'מתנה', לצד תנאים רבים נוספים המקובלים בהסכמים שנערכים לפני הנישואין. בין התנאים: שלא להכניס לבית דבר האסור על פי הרבנים (טאיפת אלרבאנין), שהמוקדם ייחשב כמתנה, שלא יישא אישה שנייה ולא ייקח פילגש אם תתנגד, ואם יעבור על כך יחויב בתשלום המאוחר של הכתובה וייתן לה גט, ועוד. יש לציין: גויטיין ואשור התייחסו למסמך זה כאל דף 17 בהתאם לסימון שנכתב בעט; אך הדף הנכון הוא 18, כפי שנכתב בעיפרון (הספרן שסימן בעט נתן את המספר 8 לשני דפים שונים).","tags_he":["מסמך משפטי","יהודית-ערבית","כתובה","טיוטה","נישואין"],"prev":"4769","next":"5262","pos":20896,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1156-06-04",
+  "date_inferred": "",
+  "date_original": "14 Sivan 1467",
+  "date_rationale": "",
+  "date_standard": "1156-06-04",
+  "description": "Legal record (#43 and #44). Engagement contract, outline. Dated: Thursday, 14 Sivan 1467 Seleucid. In the hand of Meovrakh b. Natan (like the rest of the notebook). Engagement agreement between a Qaraite man (Abū Saʿīd) and a Rabbanite woman (Sitt al-Naṣr bt. Netan'el ha-Kohen). Goitein suggests that it is an agreement between a husband and wife that was composed after a quarrel (Med. Soc. 3:152–53). But Ashur judges the document to be an engagement agreement because the early marriage payment (muqaddam) is mentioned and there is a condition that the muqaddam will be considered 'a gift', alongside many other conditions common in agreements before the marriage. These conditions include: not to bring into the house anything forbidden by the Rabbanites (ṭā'ifat al-rabbānīn), that the early marriage payment is a gift, that he will not marry a second wife nor take a concubine if she disapproves, on pain of having to pay the delayed marriage payment and giving her a divorce, etc. NB: Goitein and Ashur referred to this document as folio 17 (Firk. II NS 1700.17) in accordance with the foliation written in pen; but the correct folio is 18, as written in pencil (the librarian with the pen gave two folios the number 8). ASE.",
+  "description_he": "מסמך משפטי (#43 ו-#44). חוזה אירוסין, טיוטה. מתוארך ליום חמישי, י״ד בסיוון א׳תסמ״ז לשטרות. בכתב ידו של מבורך בן נתן (כמו שאר המחברת). הסכם אירוסין בין גבר קראי (אבו סעיד) לאישה רבנית (סת אלנצר בת נתנאל הכהן). גויטיין הציע שמדובר בהסכם בין בעל לאישה שנערך לאחר מריבה, אך אשור שופט שהמסמך הוא הסכם אירוסין, משום שמוזכר בו המוקדם (מֻקַדַּם — תשלום הכתובה המוקדם), ויש בו תנאי שהמוקדם ייחשב כ״מתנה״, לצד תנאים רבים אחרים המקובלים בהסכמים שלפני הנישואין. בין התנאים: שלא להכניס לבית דבר האסור על פי הרבנים (טַאאִפַת אלרבאנין), שהמוקדם ייחשב מתנה, שלא יישא אישה שנייה ולא ייקח פילגש אם היא תתנגד — ואם יעבור על כך יהיה חייב לשלם את המאוחר ולתת לה גט, ועוד. הערה: גויטיין ואשור הפנו למסמך זה כאל דף 17 בהתאם למספור שנכתב בעט; אך מספר הדף הנכון הוא 18, כפי שנרשם בעיפרון (הספרן שכתב בעט העניק לשני דפים את המספר 8).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4770",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "5262",
+  "origin": "",
+  "pos": 20896,
+  "prev": "4769",
+  "princeton_url": "https://geniza.princeton.edu/documents/4770/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. I 1700.18",
+  "tags": [
+    "prenuptial, contract, engagement, register"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "כתובה",
+    "טיוטה",
+    "נישואין"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

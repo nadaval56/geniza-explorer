@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Query and response in the hand of Efrayim b. Shemarya, who was the leader of the Jerusalem congregation in Fustat between 1007 and 1050. Bareket notes that there are fragments of his legal writings in the Geniza and suggests that these were collections of responsa (Bareket, Jewish Leadership, 120). The many amendments in the manuscript suggests that this is an answer he has composed himself, thus providing further confirmation to Bareket's suggestion that he used to compose responsa literature. It is hard to understand the nature of the responsum at hand due to its state, but it seems like it deals with a woman who appointed her sister's husband as a representative for the marriage. It appears that she sought to re-marry her previous husband while her brother-in-law agreed to a marriage with another man. The woman claimed that she did not intend to appoint him as her representative and that there were no witnesses to such an appointment. The Rabbi decided that the marriage to the other man were invalid and the woman may marry her previous husband. If the marriage to the other man had been conducted she would have been forbidden by Jewish Law to her previous husband This manuscript should be added to the corpus of manuscripts of Efrayim b. Shemarya published by Bareket, Jews of Egypt 1007-1055.",
-  "description_he": "שאלה ותשובה בכתב ידו של רבי אפרים בן שמריה, ראש קהילת הירושלמים בפוסטאט בין השנים 1007–1050. ברקת מציין כי בגניזה נמצאו שרידים מכתביו ההלכתיים, ומשער שמדובר באוספים של ספרות שאלות ותשובות. ריבוי התיקונים וההגהות במסמך מעיד כי לפנינו תשובה שחיבר אפרים בעצמו, ובכך יש חיזוק נוסף להשערתו של ברקת שאפרים נהג לחבר ספרות שו\"ת.\n\nקשה לעמוד במלואו על טיבה של התשובה הנדונה בשל מצב המסמך, אך נראה כי היא עוסקת באישה שמינתה את בעל אחותה כשליח לעניין נישואיה. עולה מן המסמך כי האישה ביקשה לחזור ולהינשא לבעלה הקודם, בעוד שגיסה הסכים בשמה לנישואיה לאדם אחר. האישה טענה כי לא היה בכוונתה למנות אותו כשליחה, וכי לא היו עדים למינוי כזה. הרב פסק כי הנישואין לאיש האחר בטלים, וכי מותר לאישה לשוב ולהינשא לבעלה הקודם. אילו היו הנישואין לאיש האחר יוצאים אל הפועל, היתה האישה נאסרת על פי ההלכה על בעלה הקודם.\n\nיש להוסיף כתב יד זה לקורפוס כתבי היד של רבי אפרים בן שמריה שפרסם ברקת.",
+  "description_he": "שאלה ותשובה בכתב ידו של אפרים בן שמריה, שעמד בראש קהילת הירושלמים בפוסטאט בין השנים 1007–1050. לפי ברקת, ישנם בגניזה שרידים של כתביו ההלכתיים, והיא משערת שמדובר בקבצי שו\"ת. ריבוי התיקונים בכתב היד מלמד שזוהי תשובה שחיבר בעצמו, ובכך יש חיזוק נוסף להשערתה של ברקת שאפרים בן שמריה נהג לחבר ספרות שו\"ת. קשה לעמוד על טיבה של התשובה בשל מצב כתב היד, אך נראה שהיא עוסקת באישה שמינתה את בעל אחותה לשליח לצורך קידושיה. ככל הנראה היא ביקשה לשוב ולהינשא לבעלה הקודם, בעוד גיסה הסכים לקידושין עם אדם אחר. האישה טענה שלא התכוונה למנותו כשליחה ושלא היו עדים למינוי כזה. הרב פסק שהקידושין עם האיש האחר בטלים, ושהאישה רשאית לשוב ולהינשא לבעלה הקודם — שכן אילו היו הקידושין עם האיש האחר תקפים, הייתה נאסרת על בעלה הראשון על פי ההלכה. יש לצרף את כתב היד הזה לקורפוס כתבי היד של אפרים בן שמריה שפרסמה ברקת בספרה על יהודי מצרים בשנים 1007–1055.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,9 +35,8 @@
     "Responsum"
   ],
   "tags_he": [
-    "תשובה הלכתית",
-    "נישואין",
     "פוסטאט",
+    "מלמד",
     "רבי אפרים בן שמריה"
   ],
   "total": 35937,

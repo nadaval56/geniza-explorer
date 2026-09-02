@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Autograph order in the hand of Avraham Maimonides. Abū l-Majd is to pay the bearer, the judge, 10 dirhams out of the rent of the compound. \n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
-  "description_he": "הוראת תשלום בכתב ידו של אברהם מימוני. אבו אלמג'ד מתבקש לשלם לנושא ההוראה, הדיין, עשרה דרהמים מתוך דמי השכירות של החצר.\n\nהמסמך הוא חלק מאוסף של פתקי הוראות תשלום קצרים, חלקם בכתב עברי וחלקם בכתב ערבי, המורים על תשלומים חודשיים מתוך הכנסות השכירות של ההקדש (וקף) \"חצר העניים\", או מתוך ההקדש שייסד הרופא אלמהד'ב. כל ההוראות הנושאות תאריך הן מאביב וקיץ שנת 1218.",
+  "description_he": "הוראת תשלום בכתב ידו של אברהם מימוני. אבו אלמג'ד מתבקש לשלם למוסר הכתב, הדיין, עשרה דרהם מתוך דמי השכירות של המתחם. הוראה זו נמנית עם אוסף של פתקים קצרים ובהם הוראות תשלום, חלקם בכתב עברי וחלקם בכתב ערבי, לתשלומים חודשיים המשולמים מהכנסות השכירות של ההקדש (וקף) המכונה \"חצר העניים\", או מן ההקדש שהקדיש הרופא אלמֻהד'ב. כל ההוראות שנושאות תאריך הן מאביב וקיץ שנת 1218. לפי גויטיין, מדובר בקבוצת פתקים המתוארכת לשנים 1210–1225 בקירוב, וכהן דן בהן בהקשר של מערכת הצדקה בקהילה היהודית במצרים בימי הביניים.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,6 +34,7 @@
   ],
   "tags_he": [
     "יהודית-ערבית",
+    "צדקה",
     "רפואה",
     "הקדש",
     "שכירות",

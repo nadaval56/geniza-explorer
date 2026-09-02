@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). Mainly in Arabic script with some Hebrew script. Al-Ḥazzan al-Makīn (=Abū l-Majd?) is to give the bearer something for the holiday. There's a word that looks like ḥammām, which might be a cipher for 5 dirhams or 10 dirhams. On recto there is a small piece of a letter in Arabic script from Bū l-Faḍl (torn up and reused for this order). \n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
-  "description_he": "פקודה בכתב ידו של רבי אברהם בן הרמב\"ם (כיהן 1205–1237). רובה בכתב ערבי ובחלקה בכתב עברי. אלחזאן אלמכין (=אבו אלמג'ד?) מתבקש למסור למוסר הפקודה דבר־מה לרגל החג. מופיעה מילה שנראית כמו \"חמאם\", שאולי משמשת כצופן ל־5 דרהמים או 10 דרהמים. בצד הרקטו מצוי קטע קטן ממכתב בכתב ערבי מאת בו אלפצ'ל (שנקרע ושימש מחדש לכתיבת הפקודה).\n\nמסמך זה הוא חלק מאוסף פקודות תשלום קצרות, חלקן בעברית וחלקן בכתב ערבי, המורות על תשלומים חודשיים מתוך הכנסות שכר הדירה של ההקדש (וקף) \"חצר העניים\", או מתוך ההקדש שייסד הרופא אלמהד'ב. כל הפקודות הנושאות תאריך מקורן באביב ובקיץ של שנת 1218.",
+  "description_he": "הוראת תשלום בכתב ידו של אברהם בן הרמב\"ם (כיהן כנגיד בין 1205 ל-1237). הכתב הוא בעיקר ערבי-יהודי עם מעט אותיות עבריות. אל-ח'זאן אל-מכין (אולי אבו אל-מג'ד?) מתבקש לתת לנושא ההוראה משהו לרגל החג. במסמך מופיעה מילה שנראית כ\"חמאם\", וייתכן שזהו קוד ל-5 דרהם או ל-10 דרהם. בצד הרקטו מופיעה פיסה קטנה ממכתב בכתב ערבי מאת בו אל-פצ'ל (המכתב נקרע ונעשה בו שימוש חוזר לצורך רישום הוראת התשלום הזו).\n\nהשמורה כוללת אוסף של הוראות תשלום קצרות, חלקן בכתב עברי וחלקן בכתב ערבי, לתשלומים חודשיים ששולמו מהכנסות דמי השכירות של הקדש \"חצר העניים\" (מוקף אל-מסאכין) או מן ההקדש שהקדיש הרופא אל-מהד'ב. כל ההוראות הנושאות תאריך הן מאביב ומקיץ שנת 1218. לפי גויטיין, ההוראות מתוארכות לשנים 1210–1225 בקירוב, ומרק כהן דן בהן בהרחבה במחקרו על העוני והצדקה בקהילה היהודית במצרים בימי הביניים.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,8 +34,10 @@
   ],
   "tags_he": [
     "מסמך משפטי",
+    "צדקה",
     "רפואה",
     "הקדש",
+    "שכירות",
     "רמב\"ם",
     "רבי אברהם בן הרמב\"ם"
   ],

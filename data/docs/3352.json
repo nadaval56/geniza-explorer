@@ -6,7 +6,7 @@
   "date_rationale": "Other (please specify)",
   "date_standard": "",
   "description": "Letter from Yūsuf b. Mūsā al-Tāhartī, to Yeshuaʿ b. Ismāʿīl al-Makhmūrī. Mentions Abū Ibrāhīm (Isḥāq) b. Khalaf, who had written to tell al-Tāhartī that he had sent a pouch containing 500 rubāʿiyya (quarter-dinars) in Ibn al-Baʿbāʿ's ship (r, II. 10–11); also mentions details of maritime transport to and from the Maghreb, a ship accident, and the security and government situation in Sicily, whereas by contrast al-Mahdiyya under Tamīm b. Muʿizz is safe. Dated end of Shevaṭ; Gil notes that the same events are discussed in T-S 16.163, which is dated 8 Elul and mentions the year 453H, and so dates this letter to February 2, 1063. T-S 13J23.18 is the lower part; the upper part (lines 1-4) is T-S AS 145.81. (Information from Gil and Ben-Sasson)\nDescription from PGPID 6014:\nLetter from Yosef b. Musa al-Tāhartī, from Mahdiyya, to Yeshua b. Isma’il al-Makhmuri, Fustat. February 2, 1063. Mentions a disaster in the sea, and that the ships of b. al-Awad and b. Shiblun were involved in it. The writer does not have any details about what happened and about the losses. Also mentions details about a shipment in the sea from and to the Maghreb. The letter contains details about the political and security situation in Sicily even though the trades with Sicily are still going on. Mentions that Mahdiyya is secure. (Information from Gil, Kingdom, Vol. 3, #372) VMR",
-  "description_he": "מכתב מיוסף בן מוסא אלתאהרתי, ששוגר ממהדיה, אל ישועה בן אסמאעיל אלמח'מורי בפסטאט. המכתב מזכיר את אבו אבראהים (יצחק) בן ח'לף, שכתב לאלתאהרתי כדי להודיעו שהוא שלח שקיק ובו 500 רבאעיה (רבעי דינר) בספינתו של אבן אלבעבאע (בצד הפנים, שורות 10–11). כמו כן נזכרים בו פרטים על הובלה ימית מן המגרב ואליו, על תאונת ספינות, ועל מצב הביטחון והשלטון בסיציליה — אסון ימי שבו היו מעורבות ספינותיהם של אבן אלעואד ואבן שבלון, אם כי הכותב מציין שאין בידיו פרטים על מה שאירע ועל היקף האבדות. המכתב כולל פרטים על המצב המדיני והביטחוני בסיציליה, אף שהמסחר עם סיציליה ממשיך להתקיים, ומציין כי מהדיה תחת שלטונו של תמים בן מועז בטוחה. המכתב נושא תאריך של סוף חודש שבט; לפי גיל, אותם אירועים נידונים גם במכתב אחר הנושא תאריך של ח' באלול ומזכיר את שנת 453 להג'רה, ולפיכך מתוארך מכתבנו ל-2 בפברואר 1063. החלק התחתון של המכתב והחלק העליון (שורות 1–4) שמורים בנפרד.",
+  "description_he": "מכתב מיוסף בן מוסא אלתאהרתי, השוהה במהדיה, אל ישועה בן אסמאעיל אלמח'מורי בפוסטאט. המכתב מתוארך לסוף חודש שבט; גיל מציין כי אותם אירועים נידונים גם במכתב מ-8 באלול המזכיר את שנת 453 להג'רה, ולפיכך מתארך את המכתב הזה ל-2 בפברואר 1063. הכותב מזכיר את אבו אבראהים (אסחאק) בן ח'לף, שכתב לאלתאהרתי כי שלח ארנק ובו 500 רבאעיה (רבעי דינרים) באוניית אבן אלבעבאע (שורות 10–11 בצד רקטו). המכתב כולל פרטים על ההובלה הימית מן המגרב ואליו, ובכללם דיווח על אסון בים שבו היו מעורבות אוניותיהם של בן אלעואץ' ובן שבלון — לכותב אין עדיין פרטים על מה שהתרחש ועל היקף האבדות. בנוסף מפרט הכותב את המצב הפוליטי והבטחוני בסיציליה, ומצד שני מדגיש כי מהדיה תחת שלטונו של תמים בן מעז יציבה ובטוחה, וכי הסחר עם סיציליה נמשך על אף המצב. החלק העליון של המכתב (שורות 1–4) שמור בקטע נפרד, והחלק התחתון בקטע נוסף (על פי גיל ובן-ששון).",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00081",
@@ -41,8 +41,7 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מסחר",
-    "ספינה",
+    "פוסטאט",
     "סיציליה",
     "מגרב"
   ],

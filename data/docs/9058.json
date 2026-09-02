@@ -1,1 +1,51 @@
-{"id":"9058","shelfmark":"Bodl. MS heb. c 28/22","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1134","date_original":"Adar I 1448","date_standard":"1134","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter from Abu Zikri Kohen, representative of the Merchants in Fustat, to Ḥalfon b. Netanel ha-Levi, in Aden. Dated: Adar I 1448 Seleucid = January/February 1134 CE. He writes that after Ḥalfon traveled to India and returned to Aden, the people in Egypt expected him to return home. But then merchants arrived in Egypt from Aden and reported that he was staying there. Previously Ḥalfon had deposited a quantity of pepper in Aden, which he had purchased for Abū Zikrī. He had already written to Maḥrūz b. Yaʿaqov concerning the prices of oriental goods in Egypt, and there was a similar list in the hands of the Egyptian merchant Abū Naṣr b. Avraham, who was then working in Aden. Abu Zikri urges Ḥalfon to buy goods in Aden and return to Egypt. However, if Ḥalfon wishes to return to India, Abu Zikri asks him to leave the pepper in the hands of Yosef b. Avraham, because this is already the third year that Abu Zikri cannot travel to Yemen. According to Abu Zikri, Ḥalfon's previous trip to India was unnecessary. Had he bought goods in Yemen and returned to Egypt in that year he would have made a good profit, for even the young and inexperienced merchants at that time in Egypt made immense profits from the goods they bought in Yemen. At the end of the letter, there are greetings to Ḥalfon from his family and the writer and a request to greet the important people of Aden and to help Abu Nasr b. Avraham. (Information from Goitein and Friedman, India Book IV; Hebrew description below.) IB ח17 (ה2).","tags":["India, IB4"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/c/ms-heb-c-28-22.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part22"],"princeton_url":"https://geniza.princeton.edu/documents/9058/","mentioned":"Aden, India","description_he":"מכתב מאבו זכרי הכהן, נציג הסוחרים בפסטאט, אל חלפון בן נתנאל הלוי באדן. מתוארך לאדר א' בשנת 1448 לשטרות = ינואר/פברואר 1134 לסה\"נ. הכותב מציין שלאחר שחלפון נסע להודו וחזר לאדן, ציפו האנשים במצרים שיחזור הביתה. אך אז הגיעו למצרים סוחרים מאדן ודיווחו שהוא מתעכב שם. בעבר הפקיד חלפון באדן כמות פלפל שרכש עבור אבו זכרי. הכותב כבר שלח אל מחרוז בן יעקב פירוט על מחירי סחורות המזרח במצרים, ורשימה דומה הייתה בידיו של הסוחר המצרי אבו נצר בן אברהם, ששהה אז ופעל באדן. אבו זכרי קורא לחלפון לקנות סחורות באדן ולשוב למצרים. ואולם, אם חלפון מבקש לחזור להודו, מבקש ממנו אבו זכרי להותיר את הפלפל בידיו של יוסף בן אברהם, משום שזו לו השנה השלישית שאינו יכול לנסוע לתימן. לדעת אבו זכרי, נסיעתו הקודמת של חלפון להודו הייתה מיותרת. אילו היה קונה סחורות בתימן וחוזר למצרים באותה שנה, היה מרוויח רווח נאה, שכן אפילו הסוחרים הצעירים וחסרי הניסיון שהיו אז במצרים הפיקו רווחים עצומים מן הסחורות שקנו בתימן. בסוף המכתב באות דרישות שלום לחלפון מבני משפחתו ומהכותב, וכן בקשה למסור דרישת שלום לאנשי המעלה באדן ולסייע לאבו נצר בן אברהם.","tags_he":["מכתב","יהודית-ערבית","מסחר","הודו","פלפל"],"prev":"9057","next":"9059","pos":5921,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "1134",
+  "date_inferred": "",
+  "date_original": "Adar I 1448",
+  "date_rationale": "",
+  "date_standard": "1134",
+  "description": "Letter from Abu Zikri Kohen, representative of the Merchants in Fustat, to Ḥalfon b. Netanel ha-Levi, in Aden. Dated: Adar I 1448 Seleucid = January/February 1134 CE. He writes that after Ḥalfon traveled to India and returned to Aden, the people in Egypt expected him to return home. But then merchants arrived in Egypt from Aden and reported that he was staying there. Previously Ḥalfon had deposited a quantity of pepper in Aden, which he had purchased for Abū Zikrī. He had already written to Maḥrūz b. Yaʿaqov concerning the prices of oriental goods in Egypt, and there was a similar list in the hands of the Egyptian merchant Abū Naṣr b. Avraham, who was then working in Aden. Abu Zikri urges Ḥalfon to buy goods in Aden and return to Egypt. However, if Ḥalfon wishes to return to India, Abu Zikri asks him to leave the pepper in the hands of Yosef b. Avraham, because this is already the third year that Abu Zikri cannot travel to Yemen. According to Abu Zikri, Ḥalfon's previous trip to India was unnecessary. Had he bought goods in Yemen and returned to Egypt in that year he would have made a good profit, for even the young and inexperienced merchants at that time in Egypt made immense profits from the goods they bought in Yemen. At the end of the letter, there are greetings to Ḥalfon from his family and the writer and a request to greet the important people of Aden and to help Abu Nasr b. Avraham. (Information from Goitein and Friedman, India Book IV; Hebrew description below.) IB ח17 (ה2).",
+  "description_he": "מכתב מאבו זכרי הכהן, נציג הסוחרים בפוסטאט, אל חלפון בן נתנאל הלוי בעדן. מתוארך: אדר א' 1448 למניין השטרות = ינואר/פברואר 1134 לספירה. הכותב מספר שלאחר שחלפון נסע להודו וחזר לעדן, ציפו האנשים במצרים לשובו הביתה. אולם אז הגיעו למצרים סוחרים מעדן ודיווחו כי הוא ממשיך לשהות שם. קודם לכן הפקיד חלפון בעדן כמות של פלפל שרכש עבור אבו זכרי. אבו זכרי כבר כתב למחרוז בן יעקב על מחירי הסחורות המזרחיות במצרים, ורשימה דומה נמצאה בידי הסוחר המצרי אבו נצר בן אברהם, ששהה אז בעדן ופעל שם. אבו זכרי מפציר בחלפון לרכוש סחורות בעדן ולשוב למצרים. עם זאת, אם חלפון מבקש לחזור להודו, מבקש ממנו אבו זכרי להשאיר את הפלפל בידי יוסף בן אברהם, שכן זו כבר השנה השלישית שאבו זכרי אינו יכול לנסוע לתימן. לדעת אבו זכרי, נסיעתו הקודמת של חלפון להודו הייתה מיותרת. אילו קנה סחורות בתימן וחזר למצרים באותה שנה, היה מרוויח יפה, שהרי אפילו הסוחרים הצעירים וחסרי הניסיון שהיו אז במצרים גרפו רווחים עצומים מהסחורות שקנו בתימן. בסוף המכתב מובאות דרישות שלום לחלפון ממשפחתו ומהכותב, ובקשה למסור דרישת שלום לאנשי המעלה שבעדן ולסייע לאבו נצר בן אברהם.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part22"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9058",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/c/ms-heb-c-28-22.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "Aden, India",
+  "multifragment": "",
+  "next": "9059",
+  "origin": "",
+  "pos": 5921,
+  "prev": "9057",
+  "princeton_url": "https://geniza.princeton.edu/documents/9058/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. c 28/22",
+  "tags": [
+    "India, IB4"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "פוסטאט",
+    "עדן",
+    "הודו",
+    "פלפל"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -1,1 +1,49 @@
-{"id":"2257","shelfmark":"CUL Or.1080 J146","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Letter from a Qaraite probably of Persian origin. His location is unknown (perhaps Ramla or Fustat), as are the identity of the addressee and his location (perhaps Jerusalem). In Hebrew. Dating: First half of the 11th century. The letter opens with extensive good wishes for the addressee, including for his recovery from an illness. The sender is writing on Tuesday the 20th of Sivan \"according to the observation of the new moon.\" Several months earlier, the addressee had asked him to go up to Jerusalem and meet with the (now deceased) Nasi.The sender had excused himself at that time by citing his difficult circumstances. He is writing the present letter to report on recent developments: Abū Naṣr David b. Yiṣḥaq ha-Levi (active ca. 1020–55) arrived; Mikhaʾel went to greet him, but the two of them quarreled. Someone said something about the sender being in Egypt (or Fustat), and someone said something about Abū Sulaymān David b. Bapshād. The continuation of the letter is missing. On verso there are seliḥot. (Information in part from Rustow, Heresy and the Politics of Community, p. 154.)","tags":["Qaraites"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00146"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00146"],"princeton_url":"https://geniza.princeton.edu/documents/2257/","mentioned":"","description_he":"מכתב מאת קראי, ככל הנראה ממוצא פרסי. מיקומו אינו ידוע (אולי רמלה או פוסטאט), וכך גם זהותו ומיקומו של הנמען (אולי ירושלים). בעברית. תיארוך: המחצית הראשונה של המאה ה-11. המכתב נפתח באיחולים נרחבים לנמען, ובכלל זה איחולי החלמה ממחלה. השולח כותב ביום שלישי, כ' בסיון, \"לפי ראיית הירח\". מספר חודשים קודם לכן ביקש ממנו הנמען לעלות לירושלים ולהיפגש עם הנשיא (שמת בינתיים). באותה עת התנצל השולח והתחמק מהבקשה בשל מצבו הקשה. במכתב הנוכחי הוא מדווח על התפתחויות אחרונות: אבו נצר דאוד בן יצחק הלוי (פעיל בשנים 1020–1055 לערך) הגיע; מיכאל הלך לקבל את פניו, אך השניים הסתכסכו. מישהו אמר דבר־מה על כך שהשולח שוהה במצרים (או בפוסטאט), ומישהו אמר דבר־מה על אבו סלימאן דאוד בן בפשאד. המשך המכתב חסר. בצד השני (verso) ישנן סליחות.","tags_he":["מכתב","עברית","פוסטאט","ירושלים","רמלה"],"prev":"2256","next":"2259","pos":1479,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from a Qaraite probably of Persian origin. His location is unknown (perhaps Ramla or Fustat), as are the identity of the addressee and his location (perhaps Jerusalem). In Hebrew. Dating: First half of the 11th century. The letter opens with extensive good wishes for the addressee, including for his recovery from an illness. The sender is writing on Tuesday the 20th of Sivan \"according to the observation of the new moon.\" Several months earlier, the addressee had asked him to go up to Jerusalem and meet with the (now deceased) Nasi.The sender had excused himself at that time by citing his difficult circumstances. He is writing the present letter to report on recent developments: Abū Naṣr David b. Yiṣḥaq ha-Levi (active ca. 1020–55) arrived; Mikhaʾel went to greet him, but the two of them quarreled. Someone said something about the sender being in Egypt (or Fustat), and someone said something about Abū Sulaymān David b. Bapshād. The continuation of the letter is missing. On verso there are seliḥot. (Information in part from Rustow, Heresy and the Politics of Community, p. 154.)",
+  "description_he": "מכתב מאת קראי, ככל הנראה ממוצא פרסי. מקום שהותו של הכותב אינו ידוע (אולי רמלה או פוסטאט), וכך גם זהות הנמען ומקומו (אולי ירושלים). בעברית. תיארוך: המחצית הראשונה של המאה ה-11. המכתב נפתח בברכות מפורטות ונרחבות לנמען, ובכללן איחולים להחלמתו ממחלה. הכותב שולח את המכתב ביום שלישי, כ' בסיוון, \"על פי ראיית הירח\". כמה חודשים קודם לכן ביקש ממנו הנמען לעלות לירושלים ולהיפגש עם הנשיא (שכבר אינו בין החיים). באותה עת התנצל השולח בשל נסיבותיו הקשות. המכתב הנוכחי מדווח על התפתחויות אחרונות: אבו נצר דוד בן יצחק הלוי (פעיל בערך 1020–1055) הגיע, ומיכאל יצא לקבל את פניו, אך השניים הסתכסכו. מישהו אמר משהו על כך שהשולח נמצא במצרים (או בפוסטאט), ומישהו אמר משהו על אבו סלימאן דוד בן בפשאד. המשך המכתב חסר. בצד השני של הדף מופיעות סליחות. (חלק מן המידע מבוסס על מרינה רוסטוב.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00146"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2257",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00146"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2259",
+  "origin": "",
+  "pos": 1479,
+  "prev": "2256",
+  "princeton_url": "https://geniza.princeton.edu/documents/2257/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J146",
+  "tags": [
+    "Qaraites"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "פוסטאט",
+    "ירושלים",
+    "רמלה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

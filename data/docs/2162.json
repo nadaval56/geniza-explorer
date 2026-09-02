@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1215-12-24/1216-01-22",
   "description": "Legal deed. Location: Qūṣ. Dated: Shevaṭ 1527 Seleucid, which is 1216 CE, under the authority of Avraham Maimonides. In which the physician Abū l-Manṣūr Elʿazar b. Yeshuʿa ha-Levi gifts the entire contents of his late wife’s dowry, “consisting of gold, silver, copper, and other items worth 200 Egyptian dinars,” to his two minor daughters, Nasab and Kufūʾ (or Kufāʾ?). The declaration was made in the house of Abū Saʿd Seʿadya, in the presence of his son Abū l-Mufaḍḍal Yehuda ha-Talmid (\"the scholar\"). (Information from Eve Krakowski, “Female adolescence in the Cairo Geniza documents,” PhD diss., The University of Chicago, 2012, 34; and S. D. Goitein, Mediterranean Society, 3:278–79, 489) EMS",
-  "description_he": "שטר משפטי. המקום: קוץ. התאריך: שבט א'תקכ\"ז למניין השטרות, היינו 1216 לספירה, תחת סמכותו של אברהם מימוני. בשטר זה הרופא אבו אלמנצור אלעזר בן ישועה הלוי מעניק במתנה לשתי בנותיו הקטינות, נסב וכפוא (או כפאא?), את כל תכולת נדונייתה של אשתו המנוחה, \"הכוללת זהב, כסף, נחושת ופריטים נוספים בשווי 200 דינרים מצריים\". ההצהרה נמסרה בביתו של אבו סעד סעדיה, בנוכחות בנו אבו אלמפצ'ל יהודה התלמיד (\"המלומד\").",
+  "description_he": "שטר משפטי מקוץ, מתוארך לחודש שבט של שנת 1527 למניין השטרות (1216 לספירה), תחת סמכותו של אברהם מימוני. במסמך מצהיר הרופא אבו אלמנצור אלעזר בן ישועה הלוי כי הוא מעניק את מלוא תכולת הנדוניה של אשתו המנוחה — \"המורכבת מזהב, כסף, נחושת ופריטים נוספים בשווי 200 דינרים מצריים\" — לשתי בנותיו הקטינות, נסב וכפוא (או כפאא?). ההצהרה נמסרה בביתו של אבו סעד סעדיה, בנוכחות בנו אבו אלמפצ'ל יהודה ה\"תלמיד\" (החכם). המידע מבוסס על עבודת הדוקטורט של איב קרקובסקי על גיל ההתבגרות הנשי במסמכי גניזת קהיר (2012), וכן על ש\"ד גויטיין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00012"
@@ -39,7 +39,9 @@
   "tags_he": [
     "מסמך משפטי",
     "יהודית-ערבית",
+    "נדוניה",
     "רפואה",
+    "קהיר",
     "זהב",
     "נחושת",
     "רבי אברהם בן הרמב\"ם",
