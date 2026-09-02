@@ -849,6 +849,25 @@ def main():
 
     print(f"  ✓  {len(docs):,} document JSON files written to data/docs/")
 
+    # מסמך שפרינסטון מחקה או מיזגה נעלם מן ה-CSV, אבל הקובץ שלו נשאר כאן —
+    # prerender בונה לו עמוד, ה-sitemap מכריז עליו, ומספר העמודים בפועל גדל
+    # מעל המספר ש-index.html מצהיר עליו. שלושה כאלה הצטברו עד ספטמבר 2026.
+    # הגיזום מדלג על --limit, שבו הקיצור עצמו הוא שמותיר את השאר "יתומים".
+    if args.limit is None:
+        live = {doc["id"] for doc in docs}
+        stale = [p for p in DOCS_DIR.glob("*.json") if p.stem not in live]
+        # רשת ביטחון: CSV קטוע לא ימחק את האוסף. 1% הוא כמה עשרות מסמכים,
+        # הרבה מעל קצב המחיקות בפועל בפרויקט של פרינסטון.
+        if len(stale) > max(50, len(docs) // 100):
+            print(f"  !  {len(stale):,} stale files — too many to be real deletions, "
+                  f"keeping them. Check the CSV.")
+        else:
+            for p in stale:
+                p.unlink()
+            if stale:
+                print(f"  ✓  {len(stale)} stale document file(s) removed: "
+                      f"{', '.join(sorted(p.stem for p in stale))}")
+
     # 4. Write HTML pages
     print("\n[4/5] Writing HTML")
     build_date = date.today().strftime("%-d %B %Y")
