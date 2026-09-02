@@ -31,6 +31,7 @@ Usage:
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import threading
@@ -113,6 +114,18 @@ def select_targets(top_n, min_en, already_done):
 
 
 # ── Single Claude Code call ────────────────────────────────────────────────────
+# בלוק חשיבה שדלף מציב טיוטה שלמה לפני התשובה האמיתית, ואז השדה מכיל את
+# התיאור פעמיים. זה קרה למסמך אחד מתוך 36,239 — PGPID 7209 — שבו הופיע
+# </thinking> ואחריו אותו תיאור בניסוח מלוטש יותר. חותכים עד סוף התג האחרון
+# ומוחקים תגים בודדים ששרדו.
+REASONING_END = re.compile(r"(?is)\A.*</\s*(?:thinking|think|antthinking|reasoning)\s*>")
+REASONING_TAG = re.compile(r"(?is)<\s*/?\s*(?:thinking|think|antthinking|reasoning)\s*>")
+
+
+def strip_reasoning(text):
+    return REASONING_TAG.sub("", REASONING_END.sub("", text)).strip()
+
+
 def call_claude_once(desc_en, model, timeout):
     """Run `claude --print` once. Returns stdout text on success; raises on error."""
     proc = subprocess.run(
@@ -139,7 +152,7 @@ def call_claude_once(desc_en, model, timeout):
     if proc.returncode != 0:
         err = (proc.stderr or proc.stdout or "").strip()[:600]
         raise RuntimeError(f"claude exit {proc.returncode}: {err}")
-    text = proc.stdout.strip()
+    text = strip_reasoning(proc.stdout.strip())
     if not text:
         raise RuntimeError("claude returned empty output")
     return text

@@ -208,6 +208,15 @@
   }
 
   // ── Card HTML ─────────────────────────────────────────────────────────────────
+  // התיאור המלא נשאר ב-search.json כי החיפוש סורק אותו (ראו שורת ה-hay),
+  // אבל הכרטיס מדפיס רק את מה ש-CSS מראה ממנו — שלוש שורות. בלי זה גלריה של
+  // 8 כרטיסים נשאה אלפי תווים מיותרים ב-DOM, ורכזת נושא נשאה עשרות אלפים.
+  // התקרה זהה ל-CARD_DESC ב-prerender.py, כדי ששני מחוללי הכרטיס יסכימו.
+  const CARD_DESC = 140;
+  const trunc = (s, n) => s.length <= n
+    ? s
+    : s.slice(0, n).replace(/\s+\S*$/, '').replace(/[ ,.;:\u05BE-]+$/, '') + '\u2026';
+
   function cardHTML(doc) {
     const cls  = TYPE_CLASS[doc.th] || 'badge-type-other';
     const icons = [
@@ -222,7 +231,7 @@
     const originLine = doc.or ? `<span class="card-origin">${esc(doc.or)}</span>` : '';
     const libLine    = doc.lib ? `<span class="card-lib">${esc(doc.lib)}</span>` : '';
     const descLine = doc.dh
-      ? `<p class="card-description">${esc(doc.dh)}</p>`
+      ? `<p class="card-description">${esc(trunc(doc.dh, CARD_DESC))}</p>`
       : (doc.d
           ? `<p class="card-description"><span class="card-desc-label">תיאור: </span>${esc(doc.d.split(' ').slice(0,20).join(' '))}…</p>`
           : '');

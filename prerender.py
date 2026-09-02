@@ -743,6 +743,10 @@ def render_index_pages(docs, base, out_dir):
 # on the merits: a reader wants the strongest neighbours, not the nearest.
 RELATED_BUCKET = 40
 RELATED_DESC = 110
+# רכזת נושא מדפיסה מאה כרטיסים בעמוד. בלי תקרה, עמוד פוסטאט לבדו נשא 46,750
+# תווי תיאור — טקסט שכבר קיים במלואו בעמוד המסמך עצמו, ו-CSS ממילא קוצץ אותו
+# לשלוש שורות. התקרה שומרת בדיוק את מה שנראה.
+CARD_DESC = 140
 
 # Cut to four when the site looked like it was at 1,010 MB against a 1 GB
 # ceiling. That figure came from du, which counts filesystem blocks: 35,940
@@ -1231,7 +1235,7 @@ def render_tag_pages(docs, base, out_dir):
                        if first else ""),
                 list_label=("המסמכים" if pages == 1 else
                             f"המסמכים — עמוד {n} מתוך {pages}"),
-                items="\n".join(render_doc_card(d) for d in chunk),
+                items="\n".join(render_doc_card(d, desc_limit=CARD_DESC) for d in chunk),
                 pager=pager,
                 related=related if first else "",
                 pgp=PGP_URL,
