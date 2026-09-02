@@ -1,1 +1,47 @@
-{"id":"656","shelfmark":"ENA 2556.2b","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Qayrawān","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso: Letter from Moshe b. Barhūn al-Tāhartī, in Qayrawān, to Yosef b. Yaʿaqov Ibn ʿAwkal, in Fustat. Dating: ca. 1010 according to Gil. Mentions consignments of lac and possibly other goods as well (the letter is damaged). The sender describes how he induced Avraham b. ʿAtāʾ and Abū Zikrī Yehuda b. Yosef to contribute to a collection for the yeshiva of Hayya Gaon. (Information from Goitein's index card and Gil, Kingdom, Vol. 2, p. 581.) NB: This shelfmark has been cited numerous different ways; prior shelfmarks include but are not limited to ENA 2556.2b and ENA 2557.1. VMR.","tags":["Qayrawan, lac, hinge, Ibn Awkal, babylonian academies"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/ad0204cf-cda0-4430-99d7-34cab62b06ac/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/656/","mentioned":"","description_he":"מכתב ממשה בן ברהון התהרתי מקירואן ליוסף בן יעקב אבן עוקאל בפוסטאט, בערך 1010. עסקים בלכה ותרומות לישיבת הגאון האיי.","tags_he":["מכתב","יהודית-ערבית","ישיבה וגאונות","פוסטאט","קירואן"],"prev":"655","next":"657","pos":125,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: Letter from Moshe b. Barhūn al-Tāhartī, in Qayrawān, to Yosef b. Yaʿaqov Ibn ʿAwkal, in Fustat. Dating: ca. 1010 according to Gil. Mentions consignments of lac and possibly other goods as well (the letter is damaged). The sender describes how he induced Avraham b. ʿAtāʾ and Abū Zikrī Yehuda b. Yosef to contribute to a collection for the yeshiva of Hayya Gaon. (Information from Goitein's index card and Gil, Kingdom, Vol. 2, p. 581.) NB: This shelfmark has been cited numerous different ways; prior shelfmarks include but are not limited to ENA 2556.2b and ENA 2557.1. VMR.",
+  "description_he": "ורסו: מכתב מאת משה בן ברהון אלתאהרתי, בקירואן, אל יוסף בן יעקב אבן עוכל, בפוסטאט. התיארוך: בערך 1010 לפי גיל. המכתב מזכיר משלוחים של לכּ (חומר צבע אדום) וייתכן שגם סחורות נוספות (המכתב פגום). השולח מתאר כיצד שכנע את אברהם בן עטא ואת אבו זכרי יהודה בן יוסף לתרום לאיסוף כספים עבור הישיבה של רב האי גאון.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "656",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/ad0204cf-cda0-4430-99d7-34cab62b06ac/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "657",
+  "origin": "Qayrawān",
+  "pos": 125,
+  "prev": "655",
+  "princeton_url": "https://geniza.princeton.edu/documents/656/",
+  "region": "",
+  "shelfmark": "ENA 2556.2b",
+  "tags": [
+    "Qayrawan, lac, hinge, Ibn Awkal, babylonian academies"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "קירואן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

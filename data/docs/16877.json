@@ -1,1 +1,47 @@
-{"id":"16877","shelfmark":"Moss. II,193","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Verso: Letter in Arabic script. Missing only the first couple lines. The writer mentions exchanges of goods (ll.2–3); he has sent a dinar for someone's children to pay three months of rent (l. 3); the sad news of the boy's illness (ḍuʿf al-ṣaghīr, ll.4–5); and that he paid a visit (aftaqid) to the addressee's family in Būṣīr and they are in good health. It's not immediately clear whether the address on recto is for the Arabic letter or for the Judaeo-Arabic letter. Needs further examination. ASE.","tags":["illness letter 969-1517, Illness"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-II-00193"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-II-00193"],"princeton_url":"https://geniza.princeton.edu/documents/16877/","mentioned":"Būṣīr","description_he":"גב: מכתב בכתב ערבי. חסרות רק שתי השורות הראשונות. הכותב מזכיר חילופי סחורות; שלח דינר עבור ילדיו של מישהו לשלם שלושה חודשי שכירות; ידיעה עצובה על מחלת הנער; ביקר (אפתקיד) את משפחת הנמען בבוציר ומצא אותם בריאים. (מידע חלקית מתוך CUDL)","tags_he":["מכתב","ערבית","שכירות"],"prev":"16876","next":"16878","pos":12316,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: Letter in Arabic script. Missing only the first couple lines. The writer mentions exchanges of goods (ll.2–3); he has sent a dinar for someone's children to pay three months of rent (l. 3); the sad news of the boy's illness (ḍuʿf al-ṣaghīr, ll.4–5); and that he paid a visit (aftaqid) to the addressee's family in Būṣīr and they are in good health. It's not immediately clear whether the address on recto is for the Arabic letter or for the Judaeo-Arabic letter. Needs further examination. ASE.",
+  "description_he": "בצד ב': מכתב בכתב ערבי. חסרות רק השורות הראשונות בלבד. הכותב מזכיר חילופי סחורות (שורות 2–3); הוא שלח דינר עבור ילדיו של מישהו כדי לשלם שלושה חודשי שכר דירה (שורה 3); את הבשורה העצובה על מחלת הילד (ḍuʿf al-ṣaghīr, שורות 4–5); ושהוא ערך ביקור (aftaqid) אצל בני משפחתו של הנמען בבוציר, והם בקו הבריאות. לא ברור באופן מיידי האם הכתובת שעל צד א' מתייחסת למכתב הערבי או למכתב היהודי-ערבי. נדרשת בדיקה נוספת.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-II-00193"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "16877",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-II-00193"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "Būṣīr",
+  "multifragment": "",
+  "next": "16878",
+  "origin": "",
+  "pos": 12316,
+  "prev": "16876",
+  "princeton_url": "https://geniza.princeton.edu/documents/16877/",
+  "region": "",
+  "shelfmark": "Moss. II,193",
+  "tags": [
+    "illness letter 969-1517, Illness"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "שכירות"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

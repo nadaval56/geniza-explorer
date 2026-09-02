@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Incomplete letter to Moses Maimonides congratulating him on becoming the Head of the Jews of Egypt. Maimonides held this post briefly in the early 1170s CE and was reappointed in the late 1190s, by 1198 or 1199 (Goodman & Lieberman, trans., The Guide to the Perplexed, Chapter 2.) The name of the sender is not preserved; Friedländer conjectured that the letter was written by Yosef Ibn ʿAqnīn. The sender is concerned that the new duties will keep Maimonides from writing books. (Information from Friedländer, Ein Gratulationsbrief an Maimonides, in Cohen, & Cohen, Hermann. (1912). Judaica : Festschrift zu Hermann Cohens siebzigstem geburtstage. Berlin: Verlag von Bruno Cassirer, p. 257-261.)",
-  "description_he": "מכתב חלקי למשה מיימוניד המברך אותו על היותו ראש יהודי מצרים (תחילת שנות ה-70 של המאה ה-12 ולקראת 1198). שם השולח לא נשמר; פרידלנדר שיער שהכותב הוא יוסף אבן עקנין. השולח חושש שהתפקיד החדש ימנע ממיימוניד לכתוב ספרים.",
+  "description_he": "מכתב שלא נשתמר במלואו, המופנה אל רבי משה בן מימון ומברך אותו על מינויו לראש יהודי מצרים. הרמב\"ם כיהן בתפקיד זה לזמן קצר בתחילת שנות ה-1170, ומונה אליו שוב בשלהי שנות ה-1190, עד שנת 1198 או 1199 לספירה (לפי Goodman & Lieberman במבואם לתרגום \"מורה הנבוכים\", פרק 2). שמו של שולח המכתב לא נשתמר; פרידלנדר שיער שהמכתב נכתב בידי יוסף אבן עקנין. הכותב מביע דאגה מכך שחובות התפקיד החדש ימנעו מהרמב\"ם להמשיך ולכתוב את ספריו. (המידע מבוסס על מאמרו של פרידלנדר \"מכתב ברכה לרמב\"ם\", שראה אור בקובץ לכבוד יום הולדתו השבעים של הרמן כהן, ברלין 1912, עמ' 257–261.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00822"
@@ -39,7 +39,7 @@
   "tags_he": [
     "מכתב",
     "עברית",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

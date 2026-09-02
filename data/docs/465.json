@@ -1,1 +1,43 @@
-{"id":"465","shelfmark":"BL OR 5541.1","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"Jerusalem","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Letter from Moshe b. Yiṣḥaq, the Karaite, Jerusalem, to one of the Karaite notables in Fustat, around 1040. He reports having received one dinar that Abu Sa'id Ya'qub b. Ibrahim had sent with Abu Sa'id b. al-Sha''ab (another Ibn al-Sha''ab is mentioned in T-S 16.134, v23-24). Information from Goitein's note card (attached to PGPID 6204) and Gil.","tags":["courtier, Qaraite"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/465/","mentioned":"Cairo","description_he":"מכתב ממשה בן יצחק הקראי, ירושלים, לאחד מבכירי הקראים בפוסטאט, בערך 1040. מדווח על קבלת דינר אחד ששלח אבו סעיד יעקב בן אברהים.","tags_he":["מכתב","פוסטאט","ירושלים"],"prev":"464","next":"467","pos":20522,"total":35937}
+{
+  "collection": "BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Moshe b. Yiṣḥaq, the Karaite, Jerusalem, to one of the Karaite notables in Fustat, around 1040. He reports having received one dinar that Abu Sa'id Ya'qub b. Ibrahim had sent with Abu Sa'id b. al-Sha''ab (another Ibn al-Sha''ab is mentioned in T-S 16.134, v23-24). Information from Goitein's note card (attached to PGPID 6204) and Gil.",
+  "description_he": "מכתב ממשה בן יצחק הקראי בירושלים אל אחד מנכבדי הקהילה הקראית בפוסטאט, סביב שנת 1040. הכותב מדווח כי קיבל דינר אחד שאבו סעיד יעקוב בן אבראהים שלח באמצעות אבו סעיד בן אלשעאב (אבן אלשעאב נוסף מוזכר במקור אחר). המידע מבוסס על כרטיסיית הערות של גויטיין ועל גיל.",
+  "destination": "Fustat",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "465",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "Cairo",
+  "multifragment": "",
+  "next": "467",
+  "origin": "Jerusalem",
+  "pos": 20522,
+  "prev": "464",
+  "princeton_url": "https://geniza.princeton.edu/documents/465/",
+  "region": "",
+  "shelfmark": "BL OR 5541.1",
+  "tags": [
+    "courtier, Qaraite"
+  ],
+  "tags_he": [
+    "מכתב",
+    "פוסטאט",
+    "ירושלים"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

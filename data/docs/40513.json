@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "State document, Fatimid. Mentions \"al-khidma\" and \"al-muṭāʿ\" or maybe \"iqṭāʿ\" (but less likely). Just a few words preserved in each line and difficult to glean the context. Needs examination.\n\nReused for Judaeo-Arabic prayers (\"subḥān. . . .\") in an Andalusī hand, with some similarities to that of Maimonides, but not in his hand (AA/MAF).",
-  "description_he": "מסמך ממלכתי פאטמי, מזכיר 'אל-ח'דמה' ו'אל-מוטאע' או 'איקטאע'; שומש לתפילות ביהודית-ערבית בכתב אנדלוסי",
+  "description_he": "מסמך מנהלי מהתקופה הפאטמית. מוזכרים בו \"אלח'דמה\" ו\"אלמטאע\" (או אולי \"אקטאע\", אם כי פחות סביר). רק מספר מילים בודדות שרדו בכל שורה, ולכן קשה להבין את ההקשר. דורש בדיקה נוספת.\n\nהקלף נעשה בו שימוש חוזר לתפילות ביהודית-ערבית (\"סבחאן...\"), בכתב יד אנדלוסי שיש לו דמיון מסוים לכתב ידו של הרמב\"ם, אך אינו כתב ידו שלו.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -38,7 +38,7 @@
     "מסמך מדינה",
     "ערבית",
     "פאטמי",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "State document",

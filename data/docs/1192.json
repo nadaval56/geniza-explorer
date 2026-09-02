@@ -1,1 +1,46 @@
-{"id":"1192","shelfmark":"T-S 13J7.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from a certain Yaʿqūb to Abū l-Faḍāʾil b. Abū Saʿīd known as al-Yatīm. In Judaeo-Arabic. The addressee's mother has been sick. The addressee has been trying to sell her (or his wife's?) house, but he can't find a Jewish buyer and he does not have the proper documentation (tathbīt) to sell it to Muslims (cf. T-S 13J20.27). The sender gives him advice about this. EMS. ASE.","tags":["illness letter 969-1517, Illness, trade"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00007-00002"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00007-00002/1"],"princeton_url":"https://geniza.princeton.edu/documents/1192/","mentioned":"","description_he":"מכתב מיעקוב לאבו אל-פד'אאיל בן אבו סעיד, ביהודית-ערבית. אם הנמען חולה. הוא מנסה למכור בית אך אינו מוצא קונה יהודי ואין לו תיעוד למכירה למוסלמים.","tags_he":["מכתב","יהודית-ערבית"],"prev":"1191","next":"1193","pos":569,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from a certain Yaʿqūb to Abū l-Faḍāʾil b. Abū Saʿīd known as al-Yatīm. In Judaeo-Arabic. The addressee's mother has been sick. The addressee has been trying to sell her (or his wife's?) house, but he can't find a Jewish buyer and he does not have the proper documentation (tathbīt) to sell it to Muslims (cf. T-S 13J20.27). The sender gives him advice about this. EMS. ASE.",
+  "description_he": "מכתב מאדם בשם יעקוב אל אבו אלפצ'איל בן אבו סעיד הידוע בכינוי אלית'ים. כתוב בערבית-יהודית. אמו של הנמען חלתה. הנמען מנסה למכור את ביתה (או אולי את בית אשתו?), אך אינו מצליח למצוא קונה יהודי, ובד בבד אין ברשותו את המסמכים המתאימים (תת'ביר) הנדרשים כדי למכור אותו למוסלמים (השווה למסמך אחר בנושא דומה). השולח מעניק לו עצות בעניין זה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00007-00002/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1192",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00007-00002"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1193",
+  "origin": "",
+  "pos": 569,
+  "prev": "1191",
+  "princeton_url": "https://geniza.princeton.edu/documents/1192/",
+  "region": "",
+  "shelfmark": "T-S 13J7.2",
+  "tags": [
+    "illness letter 969-1517, Illness, trade"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

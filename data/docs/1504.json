@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Elʿazar b. Avner to Abū l-Rabīʿ Sulaymān b. ʿImrān. In Judaeo-Arabic. Dating: No later than 1237 CE (the year of Avraham Maimonides' death). The sender chastises the addressee for his inappropriate behavior and speech, somehow concerning Avraham Maimonides (al-Rayyis, ll. 16-21) and the pietist movement. Verso contains the address and, inverted in relation to recto, a list of names. (Information in part from CUDL.)",
-  "description_he": "מכתב מאלעזר בן אבנר לסולימאן בן עמראן ביהודית-ערבית, לפני 1237. הכותב מוכיח את הנמען על התנהגות פסולה הקשורה לאברהם מיימוני ולתנועת החסידים.",
+  "description_he": "מכתב מאלעזר בן אבנר אל אבו אל-רביע סלימאן בן עמראן. בערבית-יהודית. התיארוך: לא יאוחר משנת 1237 לספירה (שנת פטירתו של רבי אברהם בן הרמב\"ם). השולח נוזף בנמען על התנהגותו ועל דבריו הבלתי הולמים, בעניין הקשור באופן כלשהו לרבי אברהם בן הרמב\"ם (המכונה אל-ראיִּס, בשורות 16–21) ולתנועת החסידות. בצד האחורי מופיעה כתובת הנמען, ובכיוון הפוך ביחס לצד הקדמי — רשימת שמות. (חלק מן המידע מבוסס על קטלוג CUDL.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-II-00162-00001/1",
@@ -41,7 +41,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

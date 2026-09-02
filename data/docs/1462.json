@@ -1,1 +1,43 @@
-{"id":"1462","shelfmark":"T-S NS 320.131","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Fragment of a letter from Daniel b. ʿAzarya to ʿEli b. Amram, in Fustat. Daniel is expressing his support of ʿEli b. ʿAmram against people who disagree with him. Also words of condolences for a person who passed away. On verso there is Hebrew literary text. (Information from Gil, Palestine, vol. 2 pp. 683–84, #369). VMR","tags":["condolence, communal, Daniel b. Azarya, Eli b. Amram"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/1462/","mentioned":"","description_he":"שבר מכתב מדניאל בן עזריה לעלי בן עמרם, פוסטאט. מביע תמיכה בעלי נגד מתנגדיו. כולל גם דברי ניחומים על נפטר.","tags_he":["מכתב","עברית","פוסטאט"],"prev":"1457","next":"1469","pos":20643,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a letter from Daniel b. ʿAzarya to ʿEli b. Amram, in Fustat. Daniel is expressing his support of ʿEli b. ʿAmram against people who disagree with him. Also words of condolences for a person who passed away. On verso there is Hebrew literary text. (Information from Gil, Palestine, vol. 2 pp. 683–84, #369). VMR",
+  "description_he": "שריד ממכתב ששלח רב דניאל בן עזריה אל עלי בן עמרם בפוסטאט. דניאל מביע במכתב את תמיכתו בעלי בן עמרם מול אנשים החולקים עליו. כמו כן כלולים במכתב דברי תנחומים על מותו של אדם. בצדו השני של הדף מופיע טקסט ספרותי בעברית.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1462",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1469",
+  "origin": "",
+  "pos": 20643,
+  "prev": "1457",
+  "princeton_url": "https://geniza.princeton.edu/documents/1462/",
+  "region": "",
+  "shelfmark": "T-S NS 320.131",
+  "tags": [
+    "condolence, communal, Daniel b. Azarya, Eli b. Amram"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

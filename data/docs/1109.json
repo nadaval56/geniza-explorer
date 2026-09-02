@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1215-04",
   "description": "Power of attorney. Location: Fustat. Dated: first decade of Iyyar 1526 Seleucid, which is April 1215 CE, under the reshut of Avraham Maimonides. Moshe b. Berakhot (aka Mūsā b. Abū l-Barakāt) Ibn al-Maqdisi grants his attorney Sulaymān b. Maḥāsin a long list of rights to act as his substitute in his claim over the estate of Dalāl bt. Abū ʿImrān, the daughter of a paternal cousin who died in Alexandria. Witnesses: Ḥalfon b. Elʿazar ha-Kohen; Meir b. Yakhin.",
-  "description_he": "ייפוי כוח, פוסטאט, אפריל 1215. משה בן ברכות ממנה סולימאן בן מחאסן לטפל בעזבון בת דודו שנפטרה באלכסנדריה.",
+  "description_he": "ייפוי כוח שנערך בפוסטאט בעשרת הימים הראשונים של חודש אייר שנת 1526 למניין השטרות (אפריל 1215 לסה\"נ), תחת רשותו של רבי אברהם בן הרמב\"ם. משה בן ברכות (הוא מוסא בן אבו אל-ברכאת) אבן אל-מקדסי מעניק לבא-כוחו סלימאן בן מחאסן רשימה ארוכה של סמכויות לשמש כממלא מקומו בתביעתו על עיזבונה של דלאל בת אבו עמראן, בתו של בן-דוד מצד האב שנפטרה באלכסנדריה. החתומים כעדים על השטר: חלפון בן אלעזר הכהן ומאיר בן יכין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00003-00025/1"
@@ -42,7 +42,8 @@
     "ייפוי כוח",
     "פוסטאט",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

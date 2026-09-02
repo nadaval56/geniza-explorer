@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Document or documents in Arabic script on verso of a page from Maimonides' Mishne Torah. There are some accounts (مما بلغ في الشهر دينارين ونصف). And there are verses by al-Mutanabbī on the east wind, copied by someone who was not a fan (lā raḍiya Allāh ʿanhu): الجزوا (الجزء) الاول من ديوان ابي الطيب المتنبي البصري(؟) لا رضي الله عنه من قوله في الصبا: أَبلى الهَوى أَسَفاً يَومَ النَوى بَدَني وَفَرَّقَ الهَجرُ بَينَ الجَفنِ وَالوَسَنِ. Needs further examination.",
-  "description_he": "מסמך או מסמכים בכתב ערבי בגב עמוד ממשנה תורה של הרמב'ם. יש חשבונות ובתי שיר של אלמתנבי על הרוח המזרחית שהועתקו על ידי מישהו שלא הוקיר אותו ('לא ירצה אלוהים עליו'). דרוש בדיקה נוספת.",
+  "description_he": "מסמך או מסמכים בכתב ערבי על גב דף מתוך משנה תורה לרמב\"ם. ישנם חשבונות מסוימים (مما بلغ في الشهر دينارين ونصف). כמו כן מופיעים שירים של אלמֻתַנַבִּי על רוח הקדים, שהועתקו בידי מישהו שלא היה מאוהדיו (lā raḍiya Allāh ʿanhu): الجزوا (الجزء) الاول من ديوان ابي الطيب المتنبي البصري(؟) لا رضي الله عنه من قوله في الصبا: أَبلى الهَوى أَسَفاً يَومَ النَوى بَدَني وَفَرَّقَ الهَجرُ بَينَ الجَفنِ وَالوَسَنِ. דרוש עיון נוסף.",
   "destination": "",
   "fragment_urls": [
     "https://colenda.library.upenn.edu/catalog/81431-p3d50gg3z"
@@ -40,7 +40,7 @@
     "חשבונות",
     "ערבית",
     "שירה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

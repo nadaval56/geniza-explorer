@@ -1,1 +1,43 @@
-{"id":"8602","shelfmark":"T-S AS 145.4","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Yosef b. Yaʿaqov ha-Bavli Rosh ha-Seder. In Hebrew and Judaeo-Arabic. The sender asks the addressees to help him pay his debts. Greetings and good wishes for the holidays to Simḥa, Avraham, Yaʿaqov, and Elʿazar, the sons of Yosef. (Information from CUDL and Goitein’s index card.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00004"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00004"],"princeton_url":"https://geniza.princeton.edu/documents/8602/","mentioned":"","description_he":"מכתב מיוסף בן יעקב הבבלי ראש הסדר; בעברית ויהודית-ערבית; מבקש מהנמענים לסייע בפרעון חובותיו; ברכות לחג","tags_he":["מכתב"],"prev":"8601","next":"8604","pos":5671,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yosef b. Yaʿaqov ha-Bavli Rosh ha-Seder. In Hebrew and Judaeo-Arabic. The sender asks the addressees to help him pay his debts. Greetings and good wishes for the holidays to Simḥa, Avraham, Yaʿaqov, and Elʿazar, the sons of Yosef. (Information from CUDL and Goitein’s index card.)",
+  "description_he": "מכתב מאת יוסף בן יעקב הבבלי ראש הסדר. בעברית ובערבית-יהודית. השולח מבקש מהנמענים לסייע לו לפרוע את חובותיו. בסוף המכתב מועברות ברכות ואיחולים טובים לרגל החגים לשמחה, אברהם, יעקב ואלעזר, בניו של יוסף.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00004"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8602",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00004"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8604",
+  "origin": "",
+  "pos": 5671,
+  "prev": "8601",
+  "princeton_url": "https://geniza.princeton.edu/documents/8602/",
+  "region": "",
+  "shelfmark": "T-S AS 145.4",
+  "tags": [],
+  "tags_he": [
+    "מכתב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

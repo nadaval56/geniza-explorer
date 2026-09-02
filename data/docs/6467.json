@@ -1,1 +1,47 @@
-{"id":"6467","shelfmark":"Bodl. MS heb. d 66/63","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter from Shelomo b. Eliyyahu to Dāwūd b. Yehuda ha-Kohen asking him to read out a letter of condolence—enclosed with the present letter—to Moshe ha-Kohen and his son Salāma (the tax-farmer of Manūf) in Malīj. He excuses himself from traveling due to his illnesses. Shelomo sends his regards to his sister Sitt al-Riyāsa and her siblings and her mother.","tags":["damin, illness letter 969-1517, Illness, illness: excuse"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-66-63.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_89#MS_Heb_d_66-part63"],"princeton_url":"https://geniza.princeton.edu/documents/6467/","mentioned":"Malīj, Manūf","description_he":"מכתב משלמה בן אליהו לדאוד בן יהודה הכהן; מבקש ממנו לקרוא מכתב תנחומים למשה הכהן ובנו סלאמה במליג'; מתנצל על כך שאינו יכול לנסוע בשל מחלתו","tags_he":["מכתב","יהודית-ערבית","שלמה בן אליהו"],"prev":"6466","next":"6468","pos":4193,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Shelomo b. Eliyyahu to Dāwūd b. Yehuda ha-Kohen asking him to read out a letter of condolence—enclosed with the present letter—to Moshe ha-Kohen and his son Salāma (the tax-farmer of Manūf) in Malīj. He excuses himself from traveling due to his illnesses. Shelomo sends his regards to his sister Sitt al-Riyāsa and her siblings and her mother.",
+  "description_he": "מכתב מאת שלמה בן אליהו אל דאוּד בן יהודה הכהן, ובו הוא מבקש ממנו להקריא לפני משה הכהן ובנו סלאמה (חוכר המסים של מנוּף) במליג' מכתב תנחומים המצורף למכתב הנוכחי. שלמה מתנצל על שאינו יכול לבוא בעצמו בשל מחלותיו. בסיום הוא שולח את ברכותיו לאחותו סת אלריאסה ולאחיה ולאמה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_89#MS_Heb_d_66-part63"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6467",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-66-63.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "Malīj, Manūf",
+  "multifragment": "",
+  "next": "6468",
+  "origin": "",
+  "pos": 4193,
+  "prev": "6466",
+  "princeton_url": "https://geniza.princeton.edu/documents/6467/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. d 66/63",
+  "tags": [
+    "damin, illness letter 969-1517, Illness, illness: excuse"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "שלמה בן אליהו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

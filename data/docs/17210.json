@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from the wife of Baṣīr (or rather Nuṣayr) the bell-maker (al-jalājilī) to the Nagid David II Maimonides, asking him to help return her husband, who was living in a Sufi community, to his family and to the Jewish faith. She also asks for medicine for her child. \"Our Lord has promised the little one a medicine for the ear, for he suffers from it. There is no harm in trying it out, seeing that even the barber is playing with it without experience. May God have mercy!\" Goitein suggests that the last line in Arabic script may be a notation from the addressee reading ليلتها (\"this very night\"), however this is unlikely; what is expected after ורחמה is the phrase الله وبركاته, which also fits the rasm better [ASE]. Goitein identifies the addressee as David II rather than David I based on the reference to the Sufi master \"al-Kūrānī,\" who he says is no doubt identical with Yūsuf al-ʿAjamī al-Kūrānī, who died in Cairo in January 1367. As David II became Nagid in 1355 following the death of his father Yehoshuaʿ, this letter dates to the years 1355–67. (Information mainly from CUDL and Goitein's article on this document.)",
-  "description_he": "מכתב מאשת בציר (או ליתר דיוק נוצייר) יצרן הפעמונים (אל-ג'לאג'ילי) לנגיד דוד השני מימוניד, המבקשת ממנו לעזור להחזיר את בעלה, שחי בקהילה סופית, לביתו ולאמונה היהודית. היא גם מבקשת תרופה לילדה. 'אדוננו הבטיח לקטן תרופה לאוזן, כי הוא סובל ממנה. אין רע בניסיון, שהרי גם הספר משחק בה ללא ניסיון. ירחם עליו האל!' גויטיין מזהה את הנמען כדוד השני ולא דוד הראשון על פי ההתייחסות למורה הסופי 'אל-כוראני', שלדבריו זהה ללא ספק ליוסף אל-עג'מי אל-כוראני, שנפטר בקהיר בינואר 1367. כיוון שדוד השני הפך לנגיד בשנת 1355 לאחר מות אביו יהושע, מכתב זה מתוארך לשנים 1355-1367.",
+  "description_he": "מכתב מאשתו של בציר (או ליתר דיוק נציר) יצרן הפעמונים (אלג'לאג'לי) אל הנגיד דוד השני בן אברהם מימוני, ובו היא מבקשת את עזרתו בהשבת בעלה — החי בקהילה סופית — אל משפחתו ואל האמונה היהודית. בנוסף, היא מבקשת תרופה עבור בנה הקטן. בלשונה: \"אדוננו הבטיח לקטן תרופה לאוזן, שכן הוא סובל ממנה. אין כל נזק בניסיון, שהרי אפילו הגלב משחק בה ללא ניסיון. ירחם האל!\"\n\nלפי גויטיין, השורה האחרונה הכתובה בכתב ערבי עשויה להיות הערה של הנמען שתוכנה ליל'תהא (\"בלילה זו עצמה\"), אך הדבר אינו סביר: לאחר הביטוי \"ורחמה\" מצופה צירוף הסיום \"אללה וברכאתה\", הצירוף המתאים גם יותר לרסם של הכתב.\n\nגויטיין מזהה את הנמען כדוד השני ולא כדוד הראשון, על סמך אזכורו של המורה הסופי \"אלכוראני\", שלדבריו אין ספק שזהה ליוסף אלעג'מי אלכוראני, שמת בקהיר בינואר 1367. מאחר שדוד השני נעשה נגיד בשנת 1355 לאחר מות אביו יהושע, יש לתארך את המכתב לשנים 1355–1367.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00026-00019"
@@ -40,7 +40,8 @@
     "מכתב",
     "כתובה",
     "רפואה",
-    "קהיר"
+    "קהיר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Petition addressed to a dignitary titled Sayyidnā, perhaps Avraham Maimonides. In Judaeo-Arabic. Only the bottom 7 lines are preserved. It may have to do with a group of people who are being persecuted by a tax collector (...al-jābī yudawwir ʿalayhim dawra...). The remainder consists of expressions of deference (two versions of a raʾy clause, blessings for the addressee, and apologies for being long-winded). On verso there is the beginning of a draft of a legal query addressed to the Nagid Avraham Maimonides, which was then crossed out. This text on verso was written no earlier than 1213 CE, when Avraham assumed the title Nagid. Underneath there are accounts in Arabic script and Greek/Coptic numerals listing fruits and produce, e.g., biṭṭīkh aṣfar, khawkh, ḥummuṣ. The last line includes the phrase \"until Rosh ha-Shana (raʾs al-sana).\"",
-  "description_he": "עצומה המופנית לאיש כבוד הנושא את התואר סיידנא, אולי אברהם מיימוניד. ביהודית-ערבית. נשתמרו רק 7 השורות התחתונות. ייתכן שהיא עוסקת בקבוצת אנשים הנרדפת על ידי גובה מסים. שארית הטקסט כוללת ביטויי הכנעה (שתי גרסאות של פסוקית הראי, ברכות לנמען). בגב מופיעה תחילת טיוטה של שאלה משפטית המופנית לנגיד אברהם מיימוניד, שלאחר מכן נמחקה. טקסט זה בגב נכתב לא לפני 1213 לספירה, אז קיבל אברהם את התואר נגיד. מתחתיו מופיעים חשבונות בכתב ערבי המפרטים פירות וירקות, כגון: ביטיח אצפר, ח'וח', חומוס. השורה האחרונה כוללת את הביטוי 'עד ראש השנה (ראס אל-סנה)'.",
+  "description_he": "עצומה המופנית לאיש כבוד הנושא את התואר סיידנא, אולי רבי אברהם בן הרמב\"ם. ביהודית-ערבית. נשתמרו רק 7 השורות התחתונות. ייתכן שהיא עוסקת בקבוצת אנשים הנרדפת על ידי גובה מסים. שארית הטקסט כוללת ביטויי הכנעה (שתי גרסאות של פסוקית הראי, ברכות לנמען). בגב מופיעה תחילת טיוטה של שאלה משפטית המופנית לנגיד רבי אברהם בן הרמב\"ם, שלאחר מכן נמחקה. טקסט זה בגב נכתב לא לפני 1213 לספירה, אז קיבל אברהם את התואר נגיד. מתחתיו מופיעים חשבונות בכתב ערבי המפרטים פירות וירקות, כגון: ביטיח אצפר, ח'וח', חומוס. השורה האחרונה כוללת את הביטוי 'עד ראש השנה (ראס אל-סנה)'.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,9 @@
     "מכתב",
     "יהודית-ערבית",
     "עצומה",
-    "טיוטה"
+    "טיוטה",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

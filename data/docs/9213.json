@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Court register, fragment. Upper left corner of a legal record. In the hand of Ḥalfon b. Menashshe (fl. 1100-138 CE). Dating: 1127-38, based on Ḥalfon's active dates and reference to the reshut of Maṣliaḥ Gaon (r. 1127-39). Naḥman ha-Kohen sues his paternal uncle Yosef b. Moshe ha-Kohen (see T-S Misc.28.87 (PGPID 23446)) concerning the estate of Yosef's brother Avraham b. Moshe ha-Kohen, who died in Yemen and had assets in both Yemen and Egypt. (Information mainly from Goitein notes linked below.)",
-  "description_he": "פנקס בית דין, שבר; בכתב יד חלפון בן מנשה; 1127-38 לספירה; נחמן הכהן תובע את דודו יוסף בן משה הכהן בגין ירושת אחיו אברהם בן משה הכהן שמת בתימן ועזב נכסים בתימן ובמצרים",
+  "description_he": "קטע מפנקס בית דין, פיסת הפינה השמאלית-עליונה של רישום משפטי. הכתב הוא של חלפון בן מנשה (פעיל בין השנים 1100–1138 לספירה). תיארוך: 1127–1138, על סמך שנות פעילותו של חלפון וההתייחסות לרשותו של מצליח גאון (כיהן 1127–1139). נחמן הכהן תובע את דודו מצד אביו, יוסף בן משה הכהן (ראו מסמך נוסף הקשור לפרשה), בנוגע לעיזבונו של אחיו של יוסף — אברהם בן משה הכהן — שנפטר בתימן והותיר נכסים הן בתימן והן במצרים. (המידע מבוסס בעיקר על הערותיו של גויטיין.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -38,7 +38,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "ישיבה וגאונות",
-    "אברהם מיימוניד"
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

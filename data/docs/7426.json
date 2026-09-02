@@ -1,1 +1,50 @@
-{"id":"7426","shelfmark":"T-S 16.159","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1214-11-19","date_original":"Tuesday, 15 Kislev 1526","date_standard":"1214-11-19","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Deed of release. Location: Fustat. Dated: Tuesday, 15 Kislev 1526 Seleucid = 19 November 1214 CE, under the authority of Avraham Maimonides. This partnership release describes itself using the Aramaic term \"tavra\", referring to the \"breaking\" of the partnership relationship and a renunciation of further claims. Abū l-Bahāʾ b. Abū l-Ḥasan al-Dalātī Ibn al-Naḥḥāl (the beekeeper) releases his nephew Moshe ha-Kohen from all obligations resulting from \"all of the joint enterprises (muʿāmalāt) which were between us from the beginning of time until now\", as well as any concomitant oaths. Any further details of this family partnership are not included in the release. Goitein identifies three other financial documents between Abū l-Bahāʾ and Moshe, all of which concern loans from Moshe to his uncle. That the present document is dated between the dates of two of these documents suggests that despite this document ending a partnership, their mutual financial dealings continued. As the other documents are all concerned with the repayment of loans from Moshe to his uncle, it seems likely that Moshe was the source of capital for this partnership, and one of their \"mutual dealings\" was an investment partnership. Presumably Moshe would have released his uncle from any further claims in a separate document. (Information in part from Lieberman, \"A Partnership Culture,\" 135.)\n\nSee T-S 16.89 (PGPID 7389) for the cluster of related docuemnts.","tags":["release, Partnership"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00159"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00159/1"],"princeton_url":"https://geniza.princeton.edu/documents/7426/","mentioned":"","description_he":"שטר שחרור (אבראא). מקום: פוסטאט. תאריך: יום שלישי, ט\"ו בכסלו א'תקכ\"ו לשטרות = 19 בנובמבר 1214, תחת סמכותו של אברהם מימוני. שטר שחרור זה של שותפות מתאר את עצמו במונח הארמי \"תברא\", המתייחס ל\"שבירת\" יחסי השותפות וויתור על תביעות נוספות. אבו אלבהאא בן אבו אלחסן אלדלאתי אבן אלנחאל (כוורן הדבורים) משחרר את אחיינו משה הכהן מכל ההתחייבויות הנובעות מ\"כל העסקים המשותפים (מעאמלאת) שהיו בינינו מתחילת הזמן ועד עתה\", וכן מכל שבועות נלוות. פרטים נוספים על שותפות משפחתית זו אינם נכללים בשטר השחרור. גויטיין מזהה שלושה מסמכים פיננסיים נוספים בין אבו אלבהאא ובין משה, וכולם עוסקים בהלוואות שנתן משה לדודו. העובדה שהמסמך הנוכחי מתוארך בין מועדיהם של שניים מהמסמכים הללו מעידה כי על אף ששטר זה מסיים את השותפות, יחסיהם הכספיים ההדדיים נמשכו. מאחר שהמסמכים האחרים עוסקים כולם בהחזר הלוואות שנתן משה לדודו, נראה כי משה היה מקור ההון של שותפות זו, ואחד מ\"עסקיהם המשותפים\" היה שותפות השקעה. ככל הנראה, משה שחרר את דודו מתביעות נוספות במסמך נפרד.","tags_he":["מסמך משפטי","יהודית-ערבית","שטר שחרור","הלוואה","פוסטאט"],"prev":"7424","next":"7427","pos":4865,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1214-11-19",
+  "date_inferred": "",
+  "date_original": "Tuesday, 15 Kislev 1526",
+  "date_rationale": "",
+  "date_standard": "1214-11-19",
+  "description": "Deed of release. Location: Fustat. Dated: Tuesday, 15 Kislev 1526 Seleucid = 19 November 1214 CE, under the authority of Avraham Maimonides. This partnership release describes itself using the Aramaic term \"tavra\", referring to the \"breaking\" of the partnership relationship and a renunciation of further claims. Abū l-Bahāʾ b. Abū l-Ḥasan al-Dalātī Ibn al-Naḥḥāl (the beekeeper) releases his nephew Moshe ha-Kohen from all obligations resulting from \"all of the joint enterprises (muʿāmalāt) which were between us from the beginning of time until now\", as well as any concomitant oaths. Any further details of this family partnership are not included in the release. Goitein identifies three other financial documents between Abū l-Bahāʾ and Moshe, all of which concern loans from Moshe to his uncle. That the present document is dated between the dates of two of these documents suggests that despite this document ending a partnership, their mutual financial dealings continued. As the other documents are all concerned with the repayment of loans from Moshe to his uncle, it seems likely that Moshe was the source of capital for this partnership, and one of their \"mutual dealings\" was an investment partnership. Presumably Moshe would have released his uncle from any further claims in a separate document. (Information in part from Lieberman, \"A Partnership Culture,\" 135.)\n\nSee T-S 16.89 (PGPID 7389) for the cluster of related docuemnts.",
+  "description_he": "שטר שחרור (אבראא). מקום: פוסטאט. תאריך: יום שלישי, ט\"ו בכסלו א'תקכ\"ו לשטרות = 19 בנובמבר 1214, תחת סמכותו של אברהם מימוני. שטר שחרור זה של שותפות מתאר את עצמו במונח הארמי \"תברא\", המתייחס ל\"שבירת\" יחסי השותפות וויתור על תביעות נוספות. אבו אלבהאא בן אבו אלחסן אלדלאתי אבן אלנחאל (כוורן הדבורים) משחרר את אחיינו משה הכהן מכל ההתחייבויות הנובעות מ\"כל העסקים המשותפים (מעאמלאת) שהיו בינינו מתחילת הזמן ועד עתה\", וכן מכל שבועות נלוות. פרטים נוספים על שותפות משפחתית זו אינם נכללים בשטר השחרור. גויטיין מזהה שלושה מסמכים פיננסיים נוספים בין אבו אלבהאא ובין משה, וכולם עוסקים בהלוואות שנתן משה לדודו. העובדה שהמסמך הנוכחי מתוארך בין מועדיהם של שניים מהמסמכים הללו מעידה כי על אף ששטר זה מסיים את השותפות, יחסיהם הכספיים ההדדיים נמשכו. מאחר שהמסמכים האחרים עוסקים כולם בהחזר הלוואות שנתן משה לדודו, נראה כי משה היה מקור ההון של שותפות זו, ואחד מ\"עסקיהם המשותפים\" היה שותפות השקעה. ככל הנראה, משה שחרר את דודו מתביעות נוספות במסמך נפרד.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00159/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7426",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00159"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7427",
+  "origin": "",
+  "pos": 4865,
+  "prev": "7424",
+  "princeton_url": "https://geniza.princeton.edu/documents/7426/",
+  "region": "",
+  "shelfmark": "T-S 16.159",
+  "tags": [
+    "release, Partnership"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "שטר שחרור",
+    "הלוואה",
+    "פוסטאט",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

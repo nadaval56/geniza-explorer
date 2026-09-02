@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Manuscript, well-preserved, of Taqwīm al-Adyān by Daniel ibn al-Māshiṭa, of the generation of Avraham Maimonides. Pertaining to the 'Maimonidean controversy.' See FGP for detailed identifications and bibliography.",
-  "description_he": "כתב יד משומר היטב של 'תקוים אל-אדיאן' מאת דניאל אבן אל-משיטא, מדורו של אברהם מימוניד. נוגע ל'מחלוקת המימונידית'. ראו FGP לזיהויים מפורטים וביבליוגרפיה.",
+  "description_he": "כתב יד משומר היטב של 'תקוים אל-אדיאן' מאת דניאל אבן אל-משיטא, מדורו של רבי אברהם בן הרמב\"ם. נוגע ל'מחלוקת המיימונית'. ראו FGP לזיהויים מפורטים וביבליוגרפיה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -31,7 +31,9 @@
   "shelfmark": "ENA 2379.1–8",
   "tags": [],
   "tags_he": [
-    "יהודית-ערבית"
+    "יהודית-ערבית",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Literary text",

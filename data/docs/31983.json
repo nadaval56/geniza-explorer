@@ -6,7 +6,7 @@
   "date_rationale": "Coinage",
   "date_standard": "",
   "description": "Accounts in Judaeo-Arabic on a large bifolio with a few lines in Arabic. Dating is 18th- or 19th-century based on the Ottoman kurush reference in Arabic and perhaps post-1707 if the word \"גנזרילי\" on the verso was intended as a reference to the gold cinzirli (the spelling is somewhat unclear for this to be certain). Some of the account entries mention names, such as: Abdaraḥman al-Maghribī and Raḥamīm Gershon. MCD.",
-  "description_he": "חשבונות ביהודית-ערבית על ביפוליו גדול עם מספר שורות בערבית. תאריך: המאה ה-18 או ה-19 על פי אזכור הקורוש. בין שמות הערכים: עבד אל-רחמן אל-מגרבי ורחמים גרשון. MCD.",
+  "description_he": "חשבונות בערבית-יהודית על דף כפול גדול, עם מספר שורות בערבית. התיארוך הוא למאה ה-18 או ה-19 על סמך אזכור הקירוש העות'מאני בערבית, וייתכן שמדובר בתקופה שלאחר 1707 אם המילה \"גנזרילי\" שמופיעה בצד האחורי נועדה להתייחס לזהב הצ'ינזירלי (אם כי האיות אינו ברור דיו כדי לקבוע זאת בוודאות). חלק מהרישומים בחשבון מזכירים שמות, ובהם: עבד אלרחמן אלמע'רבי ורחמים גרשון.",
   "destination": "",
   "fragment_urls": [
     "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22C+133%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"

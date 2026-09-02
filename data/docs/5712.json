@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from Ḥayyim b. 'Ammār, Palermo, to Abu al-Surur, a merchant from Fustat (might be Ishaq b. Barhun al-Tāhartī). September 2, 1056. Mentions the events in Sicily and the Maghreb. Regarding shipment of goods, mainly lead from Sicily. Also mentions “Kitab Alamanat” by Se’adya Gaon. (Information from Gil, Kingdom, Vol. 4, #650) VMR",
-  "description_he": "מכתב מחיים בן עמאר, פלרמו, לאבו אל-סרור, סוחר מפוסטאט, 2 בספטמבר 1056, על אירועים בסיציליה ועל משלוח עופרת",
+  "description_he": "מכתב מאת חיים בן עמאר מפלרמו אל אבו אל-סרור, סוחר מפוסטאט (ייתכן שמדובר באסחאק בן ברהון אל-תאהרתי). המכתב נכתב ב-2 בספטמבר 1056. הכותב מזכיר את האירועים שהתחוללו בסיציליה ובמגרב, ועוסק בעיקר במשלוח סחורות — בראש ובראשונה עופרת מסיציליה. בנוסף מוזכר במכתב \"כתאב אלאמאנאת\" (ספר האמונות והדעות) של רב סעדיה גאון. המידע מבוסס על גיל, במלכות ישמעאל, כרך ד', מס' 650.",
   "destination": "Fustat",
   "fragment_urls": [],
   "has_transcription": false,
@@ -43,7 +43,7 @@
     "פלרמו",
     "מגרב",
     "עופרת",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "Letter",

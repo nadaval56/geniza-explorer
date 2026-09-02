@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Literary. Medical recipes in Judaeo-Arabic and Hebrew, including one for how to fatten onself. Dating: Late, based on the hand. \"Fol. 1r, under the heading פזמון, is Abraham ben Samuel Abulafia's kabbalic poem for Shavuotאשתעשע במש(א)ל קדמון, which ends in praise for Maimonides. See Steinschneider, Koṿets ʹal yad, sidrah 1, kerehh 1 (1885), p. 4, 15. Followed by Hebrew instructions for preparing a prescription for sorts of leprosy. Together they are 17 lines, the remainder of the page is empty; Fol. 1v contains various remedies in Judeo-Arabic; Fol. 2v contains a potion in Hebrew for a thin man or woman who wishes to be fat; remainder of the page is empty.\" Information from Penn catalog.",
-  "description_he": "ספרותי; מתכונים רפואיים ביהודית-ערבית ובעברית, כולל מתכון להשמנה; כולל שיר קבלי לשבועות של אברהם בן שמואל אבולעפיה ומתכוני עברית לריפוי צרעת",
+  "description_he": "טקסט ספרותי. מרשמים רפואיים בערבית-יהודית ובעברית, ובהם מרשם להשמנה. התיארוך מאוחר, על פי כתב היד. בדף 1r, תחת הכותרת \"פזמון\", מופיע שירו הקבלי של אברהם בן שמואל אבולעפיה לחג השבועות, \"אשתעשע במש(א)ל קדמון\", המסתיים בדברי שבח לרמב\"ם (ראו שטיינשניידר, קובץ על יד, סדרה א, כרך א [1885], עמ' 4, 15). אחריו באות הוראות בעברית להכנת מרשם לסוגי צרעת. שני הקטעים יחד תופסים 17 שורות, ושאר העמוד ריק. בדף 1v מופיעים מרשמי רפואות שונים בערבית-יהודית. בדף 2v מופיע משקה בעברית המיועד לאיש או לאישה רזים המבקשים להשמין, ושאר העמוד ריק. המידע מבוסס על קטלוג פן.",
   "destination": "",
   "fragment_urls": [
     "https://colenda.library.upenn.edu/catalog/81431-p3rv0dj9x"
@@ -37,7 +37,7 @@
     "recipes, fat"
   ],
   "tags_he": [
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Literary text",

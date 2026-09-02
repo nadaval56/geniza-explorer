@@ -1,1 +1,45 @@
-{"id":"27940","shelfmark":"Yevr.-Arab. II 1398","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1657-07-10","date_original":"29 Tammuz 5417","date_standard":"1657-07-10","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Acknowledgment of payment for a residential qāʿa. Dated Thursday, 29th Tammuz 5417 AM (1657 CE) Venue: Dar Simha Synagogue (Cairo). Ṣadaqa b. Ya'aqov Qayyim and his son Shelomo receive payment from Moshe Levi b. Yiṣḥaq Qudsi for the residential building where they had been living on Darb al-Mudawwar. The payment is 28 guruş abū kalb (aka esedi guruş and Dutch lion thalers). The document is torn along the bottom, so only the first line of the signatures section is visible. MCD.","tags":["17th c, Karaite, Dar Simha"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27940/","mentioned":"","description_he":"אישור תשלום עבור קאעה למגורים. תאריך: חמישי, כ\"ט תמוז 5417 = 1657 לספירה. מקום: דאר שמחה, קהיר. צדקה ב' יעקב קייים ובנו שלמה מקבלים 28 גרוש אבו כלב ממשה לוי ב' יצחק קודסי.","tags_he":["מסמך משפטי","יהודית-ערבית","צדקה","קהיר","כלב"],"prev":"27939","next":"27941","pos":28244,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1657-07-10",
+  "date_inferred": "",
+  "date_original": "29 Tammuz 5417",
+  "date_rationale": "",
+  "date_standard": "1657-07-10",
+  "description": "Acknowledgment of payment for a residential qāʿa. Dated Thursday, 29th Tammuz 5417 AM (1657 CE) Venue: Dar Simha Synagogue (Cairo). Ṣadaqa b. Ya'aqov Qayyim and his son Shelomo receive payment from Moshe Levi b. Yiṣḥaq Qudsi for the residential building where they had been living on Darb al-Mudawwar. The payment is 28 guruş abū kalb (aka esedi guruş and Dutch lion thalers). The document is torn along the bottom, so only the first line of the signatures section is visible. MCD.",
+  "description_he": "אישור על קבלת תשלום עבור קאעה (אולם/דירת מגורים). מתוארך ליום חמישי, כ\"ט בתמוז ה'תי\"ז (1657). מקום עריכת המסמך: בית הכנסת דאר סמחה בקהיר. צדקה בן יעקב קיים ובנו שלמה מקבלים תשלום ממשה לוי בן יצחק קודסי עבור בניין המגורים שבו התגוררו עד כה ברחוב דרב אל-מדוור. סכום התשלום עומד על 28 גרוש אבו כלב (המכונה גם אסדי גרוש או טאלר אריה הולנדי). המסמך קרוע בחלקו התחתון, ולכן נראית רק השורה הראשונה של מדור החתימות.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27940",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27941",
+  "origin": "",
+  "pos": 28244,
+  "prev": "27939",
+  "princeton_url": "https://geniza.princeton.edu/documents/27940/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1398",
+  "tags": [
+    "17th c, Karaite, Dar Simha"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "צדקה",
+    "קהיר",
+    "כלב"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

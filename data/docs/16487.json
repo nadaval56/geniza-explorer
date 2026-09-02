@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1381-01-16/1381-01-25",
   "description": "Legal document headed \"memorandum of testimony\" (tadhkirat shahāda). The court convened in the synagogue; present were Bū l-ʿAlāʾ b. al-Wathīq and Sulaymān al-Ṣāʾigh, who negotiated at length concerning a quarter of a house; someone's daughter; and small sums of dirhams. Dated: Last decade of Shevaṭ [5]141 AM = January 1381 CE, though this is quite difficult to read and interpret. For instance, if the scribe wrote ק and corrected it to ה (which it looks a little more like, despite the presence of a descender), then this would date to January 1281 CE. The hand is reminiscent of Maimonides but isn't him. (Information in part from CUDL.)",
-  "description_he": "מסמך משפטי בכותרת 'תזכיר שהאדה'. בית הדין התכנס בבית הכנסת; נכחו אל-עלאא בן אל-ות'יק וסולימאן אל-צאאג', שניהלו משא-ומתן ממושך בנוגע לרבע בית, בתו של מישהו וסכומים קטנים של דרהמים. מתוארך: 10 הימים האחרונים של שבט [5]141 לבריאת העולם = ינואר 1381 לספירה (קשה לקריאה). כתב היד מזכיר את הרמב\"ם אך אינו שלו. (מידע חלקית מתוך CUDL)",
+  "description_he": "מסמך משפטי שכותרתו \"תזכיר עדות\" (תד'כרת שהאדה). בית הדין התכנס בבית הכנסת, ובין הנוכחים היו בו אלעלאא בן אלות'יק וסולימאן אלצאיג', אשר ניהלו משא ומתן ממושך בעניין רבע מבית; בתו של מאן דהוא; וסכומים קטנים של דרהמים. תאריך המסמך: העשור האחרון של חודש שבט [ה']קמ\"א = ינואר 1381 לסה\"נ, אם כי הקריאה וההבנה של התאריך קשות למדי. למשל, אם הסופר כתב ק' ותיקן לה' (וכך זה אכן נראה במידת מה, חרף קיומו של תג יורד), הרי שיש לתארך את המסמך לינואר 1281 לסה\"נ. כתב היד מזכיר את כתב ידו של הרמב\"ם, אך אינו שלו. (חלק מן המידע מבוסס על קטלוג CUDL.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00151-00019"
@@ -37,7 +37,7 @@
   "tags_he": [
     "מסמך משפטי",
     "סופר",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

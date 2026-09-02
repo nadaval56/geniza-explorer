@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from the office of the Nagid David II b. Yehoshuaʿ II Maimonides (in office ca. 1355–1410) addressed to the congregation of Fustat. The Nagid's full genealogy is given. This is not a “farewell letter” (apparently it has been published as such) but rather a note of congratulation. Still, the occasion of the letter is not exactly clear. (Information in part from Goitein’s index card)",
-  "description_he": "מכתב מלשכת הנגיד דוד השני בן יהושע השני מימוניד (בתפקיד כ-1355–1410) אל קהילת פוסטאט; מכתב ברכה עם פירוט מלא של ייחוסו של הנגיד",
+  "description_he": "מכתב שיצא מלשכתו של הנגיד דוד השני בן יהושע השני בן הרמב\"ם (כיהן בערך בין 1355 ל-1410), הממוען לקהל פוסטאט. במכתב מובא ייחוסו המלא של הנגיד. בניגוד לפרסום הקיים שבו הוצג המכתב כ\"מכתב פרידה\", אין זה מכתב פרידה כלל אלא דווקא איגרת ברכה ואיחולים. עם זאת, נסיבות כתיבת המכתב והאירוע שלרגלו נשלח אינם ברורים לחלוטין. (חלק מהמידע מבוסס על כרטיסייתו של גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_11#MS_Heb_b_13-part25"
@@ -37,7 +37,7 @@
   "tags_he": [
     "מכתב",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

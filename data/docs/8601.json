@@ -1,1 +1,46 @@
-{"id":"8601","shelfmark":"T-S AS 145.3","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"","region":"","date":"1066-1138","date_original":"","date_standard":"","date_inferred":"1066-1138","date_rationale":"Paleography","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal fragment. In the late hand of Hillel b. ʿEli (fl. 1066-1108) or the early hand of Ḥalfon b. Menashshe (fl. 1100-1138 CE). [...] b. Abū l-Faḍl Ibn al-Dhahabī asks to hand over the document to Karīma known as al-Wuḥsha al-Dallāla, described in l. 5 as the divorcee of Arye b. Yehuda. See Med Soc III, ch. IX, C, 1, no. 85. (Information from Goitein's index card and CUDL.)","tags":["Wuhsha"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00003"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00003"],"princeton_url":"https://geniza.princeton.edu/documents/8601/","mentioned":"","description_he":"שבר משפטי; בכתב יד הלל בן עלי המאוחר או חלפון בן מנשה המוקדם; בנוגע לכרימה הנודעת כאל-וחשה אל-דלאלה, גרושת אריה בן יהודה","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"8598","next":"8602","pos":5670,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1066-1138",
+  "date_inferred": "1066-1138",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Legal fragment. In the late hand of Hillel b. ʿEli (fl. 1066-1108) or the early hand of Ḥalfon b. Menashshe (fl. 1100-1138 CE). [...] b. Abū l-Faḍl Ibn al-Dhahabī asks to hand over the document to Karīma known as al-Wuḥsha al-Dallāla, described in l. 5 as the divorcee of Arye b. Yehuda. See Med Soc III, ch. IX, C, 1, no. 85. (Information from Goitein's index card and CUDL.)",
+  "description_he": "קטע מסמך משפטי, בכתב ידו המאוחר של הלל בן עלי (פעיל 1066–1108) או בכתב ידו המוקדם של חלפון בן מנשה (פעיל 1100–1138). [...] בן אבו אלפצ'ל אבן אלד'הבי מבקש למסור את המסמך לכרימה הידועה בכינויה אלוחשה אלדלאלה (הסרסורית), המתוארת בשורה 5 כגרושתו של אריה בן יהודה. המידע מבוסס על כרטיס המפתח של גויטיין ועל קטלוג CUDL.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00003"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8601",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00003"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8602",
+  "origin": "Fustat",
+  "pos": 5670,
+  "prev": "8598",
+  "princeton_url": "https://geniza.princeton.edu/documents/8601/",
+  "region": "",
+  "shelfmark": "T-S AS 145.3",
+  "tags": [
+    "Wuhsha"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

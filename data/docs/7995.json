@@ -1,1 +1,46 @@
-{"id":"7995","shelfmark":"T-S 13J15.13","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Yaʿaqov b. Shemuel b. Avraham (perhaps a Qaraite), to Abū Saʿd (i.e. Abū Saʿd b. Sahl al-Tustarī, also known as Avraham b. Yashar), expressing thanks to the recipient for food received, and sending good wishes to his son, Yefet. With allusions to Exodus 35:22, Psalms 34:11, Ecclesiastes 7:8, Esther 10:3 and Psalms 121:8, and with quotes from Psalms 119:165, Jeremiah 33:6, Isaiah 33:16, Psalms 128:6, 125:4, Jonah 4:6, Psalms 31:20 and Proverbs 8:21. There is a space in which the recipient’s Hebrew name was to be inserted. (Information from CUDL.)","tags":["al-Tustari"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00015-00013"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00015-00013"],"princeton_url":"https://geniza.princeton.edu/documents/7995/","mentioned":"","description_he":"מכתב מיעקב ב. שמואל ב. אברהם (אולי קראי) לאבו סעד (אל-תוסטרי), המביע תודה על מזון שקיבל ושולח ברכות לבנו יפת. מכיל אזכורים ממקרא","tags_he":["מכתב","עברית"],"prev":"7993","next":"7996","pos":5281,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yaʿaqov b. Shemuel b. Avraham (perhaps a Qaraite), to Abū Saʿd (i.e. Abū Saʿd b. Sahl al-Tustarī, also known as Avraham b. Yashar), expressing thanks to the recipient for food received, and sending good wishes to his son, Yefet. With allusions to Exodus 35:22, Psalms 34:11, Ecclesiastes 7:8, Esther 10:3 and Psalms 121:8, and with quotes from Psalms 119:165, Jeremiah 33:6, Isaiah 33:16, Psalms 128:6, 125:4, Jonah 4:6, Psalms 31:20 and Proverbs 8:21. There is a space in which the recipient’s Hebrew name was to be inserted. (Information from CUDL.)",
+  "description_he": "מכתב מיעקב בן שמואל בן אברהם (אולי קראי) אל אבו סעד — כלומר אבו סעד בן סהל אלתסתרי, הידוע גם בשם אברהם בן ישר — שבו הכותב מביע את תודתו לנמען על מזון שקיבל, ושולח ברכות טובות לבנו יפת. המכתב כולל רמיזות לפסוקים מספר שמות לה, כב, תהלים לד, יא, קהלת ז, ח, אסתר י, ג ותהלים קכא, ח, וכן ציטוטים מתהלים קיט, קסה, ירמיהו לג, ו, ישעיהו לג, טז, תהלים קכח, ו ותהלים קכה, ד, יונה ד, ו, תהלים לא, כ ומשלי ח, כא. במכתב נותר רווח שבו היה אמור להיכתב שמו העברי של הנמען.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00015-00013"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7995",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00015-00013"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7996",
+  "origin": "",
+  "pos": 5281,
+  "prev": "7993",
+  "princeton_url": "https://geniza.princeton.edu/documents/7995/",
+  "region": "",
+  "shelfmark": "T-S 13J15.13",
+  "tags": [
+    "al-Tustari"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

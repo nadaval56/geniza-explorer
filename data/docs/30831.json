@@ -1,1 +1,45 @@
-{"id":"30831","shelfmark":"BL OR 5557B.17","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1017-03-20","date_original":"18 Shawwāl 407","date_standard":"1017-03-20","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Contract of lease for an irrigation channel on the jazīra of Fustat (the Nile island later known as Rawḍa). Dated: 18 (or maybe 28?) Shawwāl 407 AH (March 1017 CE). The lessees are Maḥāṣin b. Sayyidihim b. ʿAbdallāh; Muḥammad b. Abdallāh; Abū l-Faraj b. Sayyidihm; Khalīl al-Naṣrānī; Sulaymān b. Maḥāsin b. Naṣr al-Naṣrānī. The lease is for a period of 5 months, beginning on 23 Shawwāl 407. The lessees are to pay 600 dirhams paid in 5 monthly installments (munajjama) of 120 dirhams. The property borders that of the town (Fustat) and contains an orchard of date palms, strawberries, sycamore. No signatures are preserved. Reused for Hebrew poetry.","tags":["land, labor, State, DIMME, island, irrigation, lost archive"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/30831/","mentioned":"","description_he":"חוזה חכירה לתעלת השקיה בג'זירת פוסטאט (האי שנודע מאוחר יותר כרוצ'ה). מתוארך שוואל 407 היג'רי (מרץ 1017 לספירה). חוכרים חמישה; תקופה 5 חודשים; 600 דרהם ב-5 תשלומים. הנחלה כוללת פרדס תמרים, תותים ושקמים. נוצל מחדש לשירה עברית.","tags_he":["מסמך מדינה","ערבית","שירה","פוסטאט","תמר"],"prev":"30829","next":"30832","pos":29069,"total":35937}
+{
+  "collection": "BL",
+  "date": "1017-03-20",
+  "date_inferred": "",
+  "date_original": "18 Shawwāl 407",
+  "date_rationale": "",
+  "date_standard": "1017-03-20",
+  "description": "Contract of lease for an irrigation channel on the jazīra of Fustat (the Nile island later known as Rawḍa). Dated: 18 (or maybe 28?) Shawwāl 407 AH (March 1017 CE). The lessees are Maḥāṣin b. Sayyidihim b. ʿAbdallāh; Muḥammad b. Abdallāh; Abū l-Faraj b. Sayyidihm; Khalīl al-Naṣrānī; Sulaymān b. Maḥāsin b. Naṣr al-Naṣrānī. The lease is for a period of 5 months, beginning on 23 Shawwāl 407. The lessees are to pay 600 dirhams paid in 5 monthly installments (munajjama) of 120 dirhams. The property borders that of the town (Fustat) and contains an orchard of date palms, strawberries, sycamore. No signatures are preserved. Reused for Hebrew poetry.",
+  "description_he": "חוזה חכירה של תעלת השקיה בג'זירה של פוסטאט (האי בנילוס שלימים נודע בשם אלרַוְצָ'ה). מתוארך ל-18 (או אולי 28?) בשַׁוָּאל 407 להג'רה (מארס 1017). החוכרים הם מַחָאסִן בן סַיִּדִהִם בן עבדאללה; מחמד בן עבדאללה; אבו אלפרג' בן סידהם; ח'ליל אלנצראני; וסלימאן בן מחאסן בן נצר אלנצראני. תקופת החכירה היא חמישה חודשים, החל מ-23 בשואל 407. החוכרים מתחייבים לשלם 600 דרהם בחמישה תשלומים חודשיים (מֻנַגַּ'מַה) של 120 דרהם כל אחד. הנכס גובל בשטח העיר (פוסטאט) וכולל פרדס של עצי תמר, תותים ושקמים. לא נשתמרו חתימות. הקלף נעשה בו שימוש משני לשירה עברית.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "30831",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "30832",
+  "origin": "",
+  "pos": 29069,
+  "prev": "30829",
+  "princeton_url": "https://geniza.princeton.edu/documents/30831/",
+  "region": "",
+  "shelfmark": "BL OR 5557B.17",
+  "tags": [
+    "land, labor, State, DIMME, island, irrigation, lost archive"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "שירה",
+    "פוסטאט",
+    "תמר"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

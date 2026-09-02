@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from the Nagid David I Maimonides (d. 1300) to the community of Ashmūm. In Hebrew and Judaeo-Arabic. Concerning someone named Yosef who was in a dispute with Abū [...]. Connected with T-S 16.343 (PGPID 7489).\n\nReused on verso for medical or alchemical (one uses lead) recipes in Arabic script.",
-  "description_he": "מכתב מהנגיד דוד מיימוניד הראשון (נ' 1300) לקהילת אשמום. בעברית וביהודית-ערבית. על יוסף שבסכסוך.",
+  "description_he": "מכתב מאת הנגיד דוד הראשון בן אברהם מימוני (נפטר 1300) אל הקהילה באשמום. כתוב בעברית ובערבית-יהודית. עוסק באדם בשם יוסף שהיה מעורב בסכסוך עם אבו [...]. קשור למסמך נוסף (PGPID 7489).\n\nבצד השני נעשה שימוש חוזר בדף לרישום מתכונים רפואיים או אלכימיים (אחד מהם משתמש בעופרת), בכתב ערבי.",
   "destination": "Ashmūn",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00027-00001/1"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "עופרת"
+    "עופרת",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

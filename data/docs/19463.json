@@ -1,1 +1,45 @@
-{"id":"19463","shelfmark":"Bodl. MS heb. d 76/64","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Medical prescriptions in Judaeo-Arabic, or perhaps drafts for a medical treatise. The text on recto contains many words crossed out and many corrections. The main text on verso is in the same hand. The text oriented at 90 degrees may also be in the same hand, but it is difficult to tell as it was written with a wider calamus.","tags":["prescription"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-76-64.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_95#MS_Heb_d_76-part43"],"princeton_url":"https://geniza.princeton.edu/documents/19463/","mentioned":"","description_he":"מרשמים רפואיים ביהודית-ערבית, או ייתכן טיוטות לחיבור רפואי. צד א: טקסט עם מחיקות רבות. אותו כתב יד בצד ב.","tags_he":["יהודית-ערבית"],"prev":"19462","next":"19464","pos":14408,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Medical prescriptions in Judaeo-Arabic, or perhaps drafts for a medical treatise. The text on recto contains many words crossed out and many corrections. The main text on verso is in the same hand. The text oriented at 90 degrees may also be in the same hand, but it is difficult to tell as it was written with a wider calamus.",
+  "description_he": "מרשמים רפואיים בערבית-יהודית, או שמא טיוטות לחיבור רפואי. הטקסט בצד הרקטו מכיל מילים רבות שנמחקו ותיקונים רבים. הטקסט המרכזי בצד הוורסו כתוב באותה יד. הטקסט הכתוב בזווית של 90 מעלות אף הוא ייתכן שנכתב באותה יד, אך קשה לקבוע זאת בוודאות שכן הוא נכתב בקולמוס רחב יותר.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_95#MS_Heb_d_76-part43"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19463",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-76-64.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19464",
+  "origin": "",
+  "pos": 14408,
+  "prev": "19462",
+  "princeton_url": "https://geniza.princeton.edu/documents/19463/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. d 76/64",
+  "tags": [
+    "prescription"
+  ],
+  "tags_he": [
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

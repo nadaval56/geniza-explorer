@@ -1,1 +1,42 @@
-{"id":"19765","shelfmark":"CUL Or.1080 4.60","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Ladino","lang_he":"Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"Cairo","region":"","date":"1787-04-19/1787-05-17","date_original":"Iyyar 5547","date_standard":"1787-04-19/1787-05-17","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Letter in Ladino from Reʾuven Miris or Mires and addressed to Avraham Krispin (Crespin) who on the address section is listed as being in \"Mitzraim\" (Cairo). In the heading this letter is dated 1787 CE (Iyyar [5]547). A wide array of numerical figures are expressed in silver medin coinage, which appears here though the abbreviation \" מאיי \". The author also mentions having received a letter from Shmuel Hanan (\"חנן\" l. 14r) via Izmir. The Mediterranean sea itself is also mentioned in the phrase \"אי סוברי לה מאר\" (l. 12r). The verso appears to have been reused for numerical calculations. MCD.","tags":["18th c, Ladino, Izmir, Krispin"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19765/","mentioned":"Izmir","description_he":"מכתב בלאדינו מאת ראובן מיריס אל אברהם קריספין בקהיר; מתוארך לאייר תקמ'ז = 1787 לספירה; מזכיר קבלת מכתב מאת שמואל חנן דרך אזמיר","tags_he":["מכתב","קהיר"],"prev":"19764","next":"19769","pos":22337,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "1787-04-19/1787-05-17",
+  "date_inferred": "",
+  "date_original": "Iyyar 5547",
+  "date_rationale": "",
+  "date_standard": "1787-04-19/1787-05-17",
+  "description": "Letter in Ladino from Reʾuven Miris or Mires and addressed to Avraham Krispin (Crespin) who on the address section is listed as being in \"Mitzraim\" (Cairo). In the heading this letter is dated 1787 CE (Iyyar [5]547). A wide array of numerical figures are expressed in silver medin coinage, which appears here though the abbreviation \" מאיי \". The author also mentions having received a letter from Shmuel Hanan (\"חנן\" l. 14r) via Izmir. The Mediterranean sea itself is also mentioned in the phrase \"אי סוברי לה מאר\" (l. 12r). The verso appears to have been reused for numerical calculations. MCD.",
+  "description_he": "מכתב בלאדינו מאת ראובן מיריס (Miris או Mires) הממוען לאברהם קריספין (Crespin), שעל פי כתובת המכותב נמצא ב\"מצרים\" (קהיר). בכותרת המכתב מתוארך לשנת 1787 לסה\"נ (אייר ה'תקמ\"ז). במכתב מופיע מגוון רחב של נתונים מספריים המבוטאים במטבעות כסף מסוג מדין, המופיעים כאן בקיצור \"מאיי\". הכותב מזכיר גם שקיבל מכתב משמואל חנן (\"חנן\", שורה 14 בצד הפנים) דרך איזמיר. הים התיכון עצמו מוזכר אף הוא בביטוי \"אי סוברי לה מאר\" (שורה 12 בצד הפנים). נראה כי צדו האחורי של המכתב נוצל מחדש לצורך חישובים מספריים.",
+  "destination": "Cairo",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19765",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Ladino",
+  "lang_he": "Ladino",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Izmir",
+  "multifragment": "",
+  "next": "19769",
+  "origin": "",
+  "pos": 22337,
+  "prev": "19764",
+  "princeton_url": "https://geniza.princeton.edu/documents/19765/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 4.60",
+  "tags": [
+    "18th c, Ladino, Izmir, Krispin"
+  ],
+  "tags_he": [
+    "מכתב",
+    "קהיר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

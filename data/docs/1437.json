@@ -1,1 +1,47 @@
-{"id":"1437","shelfmark":"T-S NS J404","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: List of sums promised or paid (the entries crossed out), ranging from 1/8 to 6 1/2, mostly in fractions, wherefore in cases in which exactly 1 or 2 dirhams were given the word sawa, 'exactly,' was added. The mother of the writer gives 2 dirhams, and in 3 instances the entries consist in balances owed to the contributors. The list probably represents school fees pledged or donated for needy children. \n\nOn verso (see PGPID 565), notation of prices obtained for 4 books, e.g. Guide of the Perplexed, 30 dirhams, with 2 dirhams for brokerage (see Goitein, Kiryat Sefer 44 [1969], 125-126). In the hand of Shelomo b. Eliyyahu.","tags":["Shelomo b. Eliyyahu, brokerage, charity, book trade"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00404"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00404/1"],"princeton_url":"https://geniza.princeton.edu/documents/1437/","mentioned":"","description_he":"רשימת סכומים שהובטחו או שולמו (חלקם בשברים), כנראה שכר לימוד לילדי נזקקים. על הגב: מחירי ארבעה ספרים, כולל מורה נבוכים ב-30 דרהם. בכתב שלמה בן אליהו.","tags_he":["חשבונות","יהודית-ערבית","שלמה בן אליהו"],"prev":"1436","next":"1438","pos":778,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: List of sums promised or paid (the entries crossed out), ranging from 1/8 to 6 1/2, mostly in fractions, wherefore in cases in which exactly 1 or 2 dirhams were given the word sawa, 'exactly,' was added. The mother of the writer gives 2 dirhams, and in 3 instances the entries consist in balances owed to the contributors. The list probably represents school fees pledged or donated for needy children. \n\nOn verso (see PGPID 565), notation of prices obtained for 4 books, e.g. Guide of the Perplexed, 30 dirhams, with 2 dirhams for brokerage (see Goitein, Kiryat Sefer 44 [1969], 125-126). In the hand of Shelomo b. Eliyyahu.",
+  "description_he": "רקטו: רשימת סכומים שהובטחו או שולמו (הרשומות מחוקות בקו), הנעים בין 1/8 ל-6½, רובם בשברים, ולכן במקרים שבהם ניתנו בדיוק 1 או 2 דרהמים נוספה המילה \"סוא\" (سواء), כלומר \"בדיוק\". אמו של הכותב נותנת 2 דרהמים, ובשלושה מקרים מורכבות הרשומות מיתרות חוב של התורמים. ככל הנראה הרשימה מייצגת שכר לימוד שהובטח או שניתן בתרומה עבור ילדים נזקקים.\n\nבוורסו: רישום של המחירים שהתקבלו עבור ארבעה ספרים, למשל \"מורה הנבוכים\" ב-30 דרהמים, עם 2 דרהמים דמי תיווך. בכתב ידו של שלמה בן אליהו.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00404/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1437",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00404"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1438",
+  "origin": "",
+  "pos": 778,
+  "prev": "1436",
+  "princeton_url": "https://geniza.princeton.edu/documents/1437/",
+  "region": "",
+  "shelfmark": "T-S NS J404",
+  "tags": [
+    "Shelomo b. Eliyyahu, brokerage, charity, book trade"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית",
+    "שלמה בן אליהו"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

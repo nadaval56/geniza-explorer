@@ -1,1 +1,42 @@
-{"id":"32274","shelfmark":"BL OR 12312.10 + BL OR 12312.11","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית · הספרייה הבריטית","library_raw":"BL ; BL","collection":"BL ; BL","description":"State decree. Three fragmentary lines from the end of a chancery decree, probably addressed to a provincial official, mentions majlis al-naẓar (refer al-Qalqashandī, Ṣubḥ al-Āʿshā VIII, 331). The text that remains is from the beginning of the closing section, containing the admonitions and the dating clause (which, as usual, hasn't been preserved). Reused for the commentary of Rabbenu Ḥannanel on Bava Kamma 98, 101.","tags":["Decree, Majlis al-Nazar, DIMME, chancery"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/32274/","mentioned":"","description_he":"צו ממלכתי. שלוש שורות שבריריות מסוף צו משרדי, כנראה מופנה לפקיד מחוזי; מזכיר 'מג'לס אל-נד'ר'. שוימש מחדש לפירוש רבנו חננאל על בבא קמא צ'ח, ק'א.","tags_he":["מסמך מדינה","ערבית"],"prev":"32273","next":"32275","pos":30005,"total":35937}
+{
+  "collection": "BL ; BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "State decree. Three fragmentary lines from the end of a chancery decree, probably addressed to a provincial official, mentions majlis al-naẓar (refer al-Qalqashandī, Ṣubḥ al-Āʿshā VIII, 331). The text that remains is from the beginning of the closing section, containing the admonitions and the dating clause (which, as usual, hasn't been preserved). Reused for the commentary of Rabbenu Ḥannanel on Bava Kamma 98, 101.",
+  "description_he": "צו ממשלתי. שלוש שורות מקוטעות מסופו של צו רשמי שיצא מהדיוואן, ככל הנראה מופנה לפקיד מחוזי, ובו אזכור של מג'לס אלנט'ר (ראו אלקלקשנדי, צֻבְּח אלאעשא ח', 331). הטקסט ששרד הוא מתחילת חלק הסיום של הצו, הכולל את דברי האזהרה והתוכחה ואת פסקת התיארוך (שכרגיל לא השתמרה). הדף נעשה בו שימוש משני עבור פירוש רבנו חננאל לבבא קמא צ\"ח, ק\"א.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "32274",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית · הספרייה הבריטית",
+  "library_raw": "BL ; BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "32275",
+  "origin": "",
+  "pos": 30005,
+  "prev": "32273",
+  "princeton_url": "https://geniza.princeton.edu/documents/32274/",
+  "region": "",
+  "shelfmark": "BL OR 12312.10 + BL OR 12312.11",
+  "tags": [
+    "Decree, Majlis al-Nazar, DIMME, chancery"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

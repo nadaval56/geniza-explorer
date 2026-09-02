@@ -1,1 +1,45 @@
-{"id":"8249","shelfmark":"T-S Ar.39.399","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"0993-02-26/0994-02-14","date_original":"383","date_standard":"0993-02-26/0994-02-14","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Accounts in Arabic script. Detailing the arrival of various consignments of Oriental goods like lacquer, frankincense, and pepper, it all seems to be by caravan. Dated: Jan–March 994 CE (Dhū l-Qaʿda 383 - Ṣafar 384 H). (Information mainly from Goitein's note cards.) Shows signs of having been used in a book binding. There is also mirror image text on verso, reflected from another document.","tags":["DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8249/","mentioned":"","description_he":"חשבונות בכתב ערבי. מפרטים הגעת משלוחים שונים של סחורות מזרחיות כמו לכה, לבונה ופלפל. תאריך: ינואר-מרץ 994 לספירה (ד'ו אל-קעדה 383 - צפר 384 היג'רה)","tags_he":["חשבונות","ערבית","פלפל","לבונה","לכה"],"prev":"8248","next":"8250","pos":21353,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "0993-02-26/0994-02-14",
+  "date_inferred": "",
+  "date_original": "383",
+  "date_rationale": "",
+  "date_standard": "0993-02-26/0994-02-14",
+  "description": "Accounts in Arabic script. Detailing the arrival of various consignments of Oriental goods like lacquer, frankincense, and pepper, it all seems to be by caravan. Dated: Jan–March 994 CE (Dhū l-Qaʿda 383 - Ṣafar 384 H). (Information mainly from Goitein's note cards.) Shows signs of having been used in a book binding. There is also mirror image text on verso, reflected from another document.",
+  "description_he": "חשבונות בכתב ערבי. המסמך מפרט את הגעתם של משלוחים שונים של סחורות ממזרח אסיה — לכה, לבונה ופלפל — וכפי הנראה כל הסחורות הובאו בשיירה. מתוארך לחודשים ינואר–מרץ 994 לסה\"נ (ד'ו אלקעדה 383 – צפר 384 להג'רה). (המידע מתבסס בעיקרו על כרטיסיות גויטיין.) המסמך נושא סימנים לכך ששימש בעבר בכריכת ספר. בנוסף, על הצד האחורי מופיע טקסט בכתב מראה, שהוטבע מתוך מסמך אחר.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8249",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8250",
+  "origin": "",
+  "pos": 21353,
+  "prev": "8248",
+  "princeton_url": "https://geniza.princeton.edu/documents/8249/",
+  "region": "",
+  "shelfmark": "T-S Ar.39.399",
+  "tags": [
+    "DIMME"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "ערבית",
+    "פלפל",
+    "לבונה",
+    "לכה"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

@@ -1,1 +1,44 @@
-{"id":"3098","shelfmark":"T-S 12.13","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"Alexandria","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter. The sender, a newcomer in Fustat from Yemen, describes himself as 'a pigeon whose wings have been clipped' (line 1), writes to his brother in Alexandria concerning his trouble having to live on a half or a quarter dirham a day, and also relating family news. \"As for what you wished to know about Yūsuf. . . he now has many dependents, and his vision has weakened, and he has nothing.\" A palimpsest. (Information from Mediterranean Society, III, 478; IV, 443; V, 562)","tags":["illness letter 969-1517, IB5, Illness, disability: vision, disability, illness: poverty, India, illness: eye"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/3098/","mentioned":"","description_he":"מכתב ממהגר תימני חדש בפוסטאט לאחיו באלכסנדריה. מתאר עצמו כ'יונה שנגזרו כנפיה', חי על חצי או רבע דרהם ליום. מוסר ידיעות משפחתיות על יוסף שכהו עיניו והוא חסר כל.","tags_he":["מכתב","יהודית-ערבית","פוסטאט","אלכסנדריה"],"prev":"3097","next":"3100","pos":20714,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter. The sender, a newcomer in Fustat from Yemen, describes himself as 'a pigeon whose wings have been clipped' (line 1), writes to his brother in Alexandria concerning his trouble having to live on a half or a quarter dirham a day, and also relating family news. \"As for what you wished to know about Yūsuf. . . he now has many dependents, and his vision has weakened, and he has nothing.\" A palimpsest. (Information from Mediterranean Society, III, 478; IV, 443; V, 562)",
+  "description_he": "מכתב. השולח, מהגר חדש בפוסטאט שהגיע מתימן, מתאר את עצמו כ\"יונה שכנפיה נגזזו\" (שורה 1), וכותב לאחיו באלכסנדריה על מצוקתו כשהוא נאלץ להתקיים על חצי דירהם או רבע דירהם ביום. הוא גם מוסר חדשות משפחתיות: \"ובאשר למה שביקשת לדעת על יוסף... כעת יש לו תלויים רבים, וראייתו נחלשה, ואין לו דבר.\" פלימפססט (כתב על גבי כתב שנמחק).",
+  "destination": "Alexandria",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "3098",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "3100",
+  "origin": "Fustat",
+  "pos": 20714,
+  "prev": "3097",
+  "princeton_url": "https://geniza.princeton.edu/documents/3098/",
+  "region": "",
+  "shelfmark": "T-S 12.13",
+  "tags": [
+    "illness letter 969-1517, IB5, Illness, disability: vision, disability, illness: poverty, India, illness: eye"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "אלכסנדריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

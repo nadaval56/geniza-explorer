@@ -1,1 +1,43 @@
-{"id":"890","shelfmark":"Moss. IV,82","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter from Yisra'el b. Natan to a relative in Egypt. In Judaeo-Arabic. Dating: ca. 1060 CE. The fate of the addressee was apparently a cause for great worry. Yisra'el mentions the fact that many people died and much property was lost in the Maghrib. The letter also discusses prices, the addressee's going to the Fayyūm, and the problem of the quarter-dinars brought by refugees from the west. Information from Gil.","tags":["suftaja"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/890/","mentioned":"al-Fayyūm","description_he":"מכתב מישראל בן נתן לקרוב משפחה במצרים, בערך 1060. נפטרים רבים ואובדן רכוש במגרב; מחירים ובעיית רבעי-דינרים של פליטים.","tags_he":["מכתב","יהודית-ערבית","מגרב"],"prev":"889","next":"891","pos":20586,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yisra'el b. Natan to a relative in Egypt. In Judaeo-Arabic. Dating: ca. 1060 CE. The fate of the addressee was apparently a cause for great worry. Yisra'el mentions the fact that many people died and much property was lost in the Maghrib. The letter also discusses prices, the addressee's going to the Fayyūm, and the problem of the quarter-dinars brought by refugees from the west. Information from Gil.",
+  "description_he": "מכתב מישראל בן נתן לקרוב משפחה במצרים, בערבית-יהודית. התאריך המשוער: סביב 1060. גורלו של הנמען היה כנראה מקור לדאגה רבה. ישראל מזכיר את העובדה שאנשים רבים מתו וממון רב אבד במגרב. המכתב דן גם במחירים, בנסיעת הנמען לפיום, ובבעיית רבעי הדינרים שהביאו עמם הפליטים מן המערב. המידע מבוסס על גיל.",
+  "destination": "Fustat",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "890",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "al-Fayyūm",
+  "multifragment": "",
+  "next": "891",
+  "origin": "",
+  "pos": 20586,
+  "prev": "889",
+  "princeton_url": "https://geniza.princeton.edu/documents/890/",
+  "region": "",
+  "shelfmark": "Moss. IV,82",
+  "tags": [
+    "suftaja"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מגרב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

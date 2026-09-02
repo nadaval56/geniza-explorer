@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter discussing the liturgy, specifically the different siddurim of R. Shelomo (who must be Shelomo b. Natan of Sijilmāsa), the seder moʿed included in the Mishneh (Torah) of R. Moshe (Moshe Maimonides), and that of Rabbenu Saʿadya (Gaʾon). The writer points out that no one from the communities of Fusṭāṭ or Cairo (מן אהל מצר ואלקאהרה) has produced anything like it – he’s complaining about a lack of native talent among the Egyptian Jews (since Maimonides was a Spaniard and Saʿadya, despite being born in Egypt, was evidently viewed as an Iraqi). He refers to Maimonides as אלרייס (al-Rayyis, ‘the Head’)– so he is still alive then and probably in the earlier period of his time in Egypt – and says that the Rambam has been teaching אלגמר ואלטב, ‘talmud and medicine’. (Information from Ben Outhwaite via https://www.lib.cam.ac.uk/genizah-fragments/posts/qa-wednesday-ben-outhwaite-managing-gru-time-covid)",
-  "description_he": "מכתב הדן בליטורגיה, ספציפית בסידורים השונים של ר' שלמה (כנראה שלמה בן נתן מסיג'ילמאסה), בסדר מועד שבמשנה תורה של ר' משה (הרמב\"ם), ובסידורו של רבנו סעדיה (גאון). הכותב מציין שאיש מקהילות פסטאט וקהיר לא הפיק דבר דומה - מתלונן על חוסר כישרון מקומי בקרב יהודי מצרים. מכנה את הרמב\"ם 'אלראיס' - כלומר הוא עדיין בחיים - ואומר שהרמב\"ם מלמד 'אלגמר ואלטב', 'תלמוד ורפואה'.",
+  "description_he": "מכתב העוסק בליטורגיה, ובפרט בסידורי התפילה השונים: סידוריו של ר' שלמה (כנראה שלמה בן נתן מסג'למאסה), סדר מועד הכלול במשנה (תורה) של ר' משה (הרמב\"ם), וזה של רבנו סעדיה (גאון). הכותב מציין שאיש מאנשי קהילות פוסטאט וקהיר (\"מן אהל מצר ואלקאהרה\") לא חיבר דבר דומה — כלומר הוא מתלונן על העדר כישרון מקומי בקרב יהודי מצרים (שכן הרמב\"ם היה ספרדי, וסעדיה, אף שנולד במצרים, נתפס כפי הנראה כעיראקי). הוא מכנה את הרמב\"ם \"אלרייס\" (al-Rayyis, 'הראש') — ומכאן שהרמב\"ם עודנו בחיים בעת כתיבת המכתב, וקרוב לוודאי שמדובר בתקופה המוקדמת יחסית של ישיבתו במצרים — ומספר שהרמב\"ם מלמד \"אלגמר ואלטב\", כלומר תלמוד ורפואה. (המידע מבן אאוטוויית.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -40,7 +40,7 @@
     "קהיר",
     "ספרד",
     "מלמד",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

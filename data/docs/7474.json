@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Recto: letter to Maimonides with his handwritten reply on verso (see separate record). The writer states that he has acquired a rudimentary knowledge of philosophy but needs an instructor to make further progress. Having read part of Maimonides’ Guide - and finding that he has not entirely understood it - the writer asks if he can either meet with Maimonides or with someone else that Maimonides recommends. He also asks for dietary recommendations that will help him in his pursuit of knowledge. Dating: ca. 1190–1204 CE, based on the approximate completion date of The Guide for the Perplexed and the year of Maimonides' death. (Information from CUDL.)",
-  "description_he": "צד פנים: מכתב למיימוניד עם תשובתו הכתובה בכתב ידו בגב הדף. הכותב רכש ידע בפילוסופיה אך זקוק למדריך. קרא חלק ממורה נבוכים ומבקש להיפגש עם מיימוניד או מי שהמיימוניד ימליץ עליו. מבקש גם המלצות תזונה. תיארוך: כ-1190–1204 לספירה",
+  "description_he": "רקטו: מכתב אל הרמב\"ם, עם תשובתו בכתב ידו בוורסו (ראו רשומה נפרדת). הכותב מציין כי רכש ידע בסיסי בפילוסופיה, אך זקוק למורה שינחה אותו כדי להתקדם הלאה. לאחר שקרא חלק מ\"מורה הנבוכים\" של הרמב\"ם וגילה שאינו מבין אותו עד תום, הוא מבקש לדעת אם יוכל להיפגש עם הרמב\"ם עצמו, או לחלופין עם אדם אחר שהרמב\"ם ימליץ עליו. בנוסף הוא מבקש המלצות תזונתיות שיסייעו לו בשאיפתו לרכישת הדעת. תיארוך משוער: 1204-1190 לערך לספירה, על פי מועד השלמתו המשוער של \"מורה הנבוכים\" ושנת פטירתו של הרמב\"ם.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00290"
@@ -39,7 +39,7 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

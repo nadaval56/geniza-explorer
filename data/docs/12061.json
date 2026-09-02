@@ -1,1 +1,45 @@
-{"id":"12061","shelfmark":"ENA 3504.4","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter addressed to Yūsuf al-Surrī. The name Saʿīd Maḍmūn the Blind appears at the bottom of verso; unclear if this is the name of the writer. The letter is written in Judaeo-Arabic. The hand looks Yemeni. Dating: Probably Ottoman-era, based on the mention of the currency qirsh. The purpose of the letter is to inform the addressee that the money he kindly sent (or promised to send) never arrived. The writer mentions his paternal aunts Shamʿa and Turkiyya. NB: This IIIF image is currently displaying incorrectly in Figgy (DPUL), for the correct image consult FGP or Ktiv.","tags":["Late JA, Appeal"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/76b03593-e34a-4e7a-aec0-1f560f1c3797/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12061/","mentioned":"","description_he":"מכתב מופנה ליוסף אל-סורי. שם סעיד מצ'מון העיוור מופיע בתחתית הגב. ביהודית-ערבית. כתב יד ימני. תאריך: ככל הנראה עות'מאני (מוזכר קירש). הכסף שנשלח לא הגיע. מוזכרות דודות שמעא וטורקיה.","tags_he":["מכתב","יהודית-ערבית","עות'מאני"],"prev":"12060","next":"12062","pos":8103,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter addressed to Yūsuf al-Surrī. The name Saʿīd Maḍmūn the Blind appears at the bottom of verso; unclear if this is the name of the writer. The letter is written in Judaeo-Arabic. The hand looks Yemeni. Dating: Probably Ottoman-era, based on the mention of the currency qirsh. The purpose of the letter is to inform the addressee that the money he kindly sent (or promised to send) never arrived. The writer mentions his paternal aunts Shamʿa and Turkiyya. NB: This IIIF image is currently displaying incorrectly in Figgy (DPUL), for the correct image consult FGP or Ktiv.",
+  "description_he": "מכתב הממוען ליוסף אלסֻרִّי. בתחתית ה-verso מופיע השם סעיד מצ'מון העיוור; לא ברור אם זהו שמו של הכותב. המכתב כתוב בערבית-יהודית, וכתב היד נראה תימני. תיארוך: ככל הנראה מהתקופה העות'מאנית, על סמך אזכור המטבע קִרְשׁ. מטרת המכתב היא להודיע לנמען שהכסף ששלח (או שהבטיח לשלוח) באדיבותו מעולם לא הגיע. הכותב מזכיר את דודותיו מצד אביו, שמעה ותֻרכִּיה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12061",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/76b03593-e34a-4e7a-aec0-1f560f1c3797/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12062",
+  "origin": "",
+  "pos": 8103,
+  "prev": "12060",
+  "princeton_url": "https://geniza.princeton.edu/documents/12061/",
+  "region": "",
+  "shelfmark": "ENA 3504.4",
+  "tags": [
+    "Late JA, Appeal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "עות'מאני"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

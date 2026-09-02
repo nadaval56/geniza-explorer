@@ -1,1 +1,42 @@
-{"id":"20425","shelfmark":"T-S Ar.30.307","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: Distribution list in Judaeo-Arabic. In a Byzantine hand? Lists dozens upon dozens of people, including a large proportion of women and people such as 'the chronically ill women' and 'the chess player' (line 11), 'Kali the Byzantine woman and her daughter' (line 13), 'the woman from Ṣahrajt' (6 lines from the bottom). On verso there are accounts in Arabic script introduced by wa-ḥaṣala, so perhaps this part is a revenue/donation list. Needs further examination.","tags":["distribution, women, charity, Byzantines"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/20425/","mentioned":"","description_he":"פנים הדף: רשימת חלוקה בערבית-יהודית. בכתב יד ביזנטי? מפרטת עשרות אנשים, כולל נשים רבות. גב הדף: חשבונות בכתב ערבי, אולי רשימת הכנסות/תרומות. דורש בדיקה נוספת.","tags_he":["חשבונות","ביזנטי"],"prev":"20422","next":"20426","pos":22783,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: Distribution list in Judaeo-Arabic. In a Byzantine hand? Lists dozens upon dozens of people, including a large proportion of women and people such as 'the chronically ill women' and 'the chess player' (line 11), 'Kali the Byzantine woman and her daughter' (line 13), 'the woman from Ṣahrajt' (6 lines from the bottom). On verso there are accounts in Arabic script introduced by wa-ḥaṣala, so perhaps this part is a revenue/donation list. Needs further examination.",
+  "description_he": "רקטו: רשימת חלוקה בערבית-יהודית, אולי בכתב יד ביזנטי. הרשימה כוללת עשרות רבות של אנשים, ובהם חלק ניכר של נשים ודמויות ייחודיות כגון 'הנשים חולות הכרוניות' ו'שחקן השחמט' (שורה 11), 'כאלי הביזנטית ובתה' (שורה 13), ו'האישה מצהרג'ת' (שש שורות מהסוף). בוורסו מופיעים חשבונות בכתב ערבי, הפותחים במילים 'וחצל' (= והתקבל), ולכן ייתכן שחלק זה הוא רשימת הכנסות או תרומות. דרושה בחינה נוספת.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "20425",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "20426",
+  "origin": "",
+  "pos": 22783,
+  "prev": "20422",
+  "princeton_url": "https://geniza.princeton.edu/documents/20425/",
+  "region": "",
+  "shelfmark": "T-S Ar.30.307",
+  "tags": [
+    "distribution, women, charity, Byzantines"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "ביזנטי"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

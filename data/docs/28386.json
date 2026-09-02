@@ -1,1 +1,47 @@
-{"id":"28386","shelfmark":"JRL B 1937 + AIU VII.F.14 + AIU VII.F.28 + AIU VII.F.92 + JRL C 58","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic, Ladino","lang_he":"Judaeo-Arabic, Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"JRL · כיא פריז · כיא פריז · כיא פריז · JRL","library_raw":"JRL ; AIU ; AIU ; AIU ; JRL","collection":"JRL ; AIU ; AIU ; AIU ; JRL","description":"Accounts mainly in Ladino, written in the same hand but not necessarily from the same notebook (the pages are not all the same size, and the grids on different fragments are in purple ink vs. red/brown ink). Lists of names in Ladino which follow a common formula repeating the phrase \"la mujer de X.\" There are also Greek influenced names such as \"la mujer de Nicoli ẓu Demitri\". The list's structure and the paleography help to estimate the dating as 18th/19th-century. One fragment additionally contains a list of donations (?) from individuals including Yaʿaqov Bibas, a Mosseri, and a Bialobos. MCD.","tags":["Mosseri, Ladino, Ya'aqov Bibas, 18th or 19th c, Bialobos"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/jrl/b/b-1937.json","https://princetongenizalab.github.io/iiif/jrl/c/c-58.json"],"fragment_urls":["https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22B+1937%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created","https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22C+58%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"],"princeton_url":"https://geniza.princeton.edu/documents/28386/","mentioned":"","description_he":"חשבונות בעיקר בלאדינו, באותו כתב יד. רשימות שמות בלאדינו החוזרות על הביטוי 'la mujer de X' (אשת X). ישנם גם שמות יווניים כגון 'la mujer de Nicoli ẓu Demitri'. הפריסה והפליאוגרפיה מצביעות על המאה ה-18/19. קטע אחד מכיל גם רשימת תרומות (?) מיעקב ביבאס, מוסרי וביאלובוס.","tags_he":["חשבונות"],"prev":"28385","next":"28387","pos":15958,"total":35937}
+{
+  "collection": "JRL ; AIU ; AIU ; AIU ; JRL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Accounts mainly in Ladino, written in the same hand but not necessarily from the same notebook (the pages are not all the same size, and the grids on different fragments are in purple ink vs. red/brown ink). Lists of names in Ladino which follow a common formula repeating the phrase \"la mujer de X.\" There are also Greek influenced names such as \"la mujer de Nicoli ẓu Demitri\". The list's structure and the paleography help to estimate the dating as 18th/19th-century. One fragment additionally contains a list of donations (?) from individuals including Yaʿaqov Bibas, a Mosseri, and a Bialobos. MCD.",
+  "description_he": "חשבונות בעיקר בלאדינו, כתובים באותה יד אך לא בהכרח מאותה מחברת (העמודים אינם כולם באותו גודל, והרשתות בקטעים השונים מצוירות בדיו סגולה לעומת דיו אדומה/חומה). רשימות שמות בלאדינו ההולכות לפי נוסחה קבועה החוזרת על הביטוי \"la mujer de X\" (\"אשתו של X\"). מופיעים גם שמות בעלי גוון יווני, כגון \"la mujer de Nicoli ẓu Demitri\". מבנה הרשימה והפלאוגרפיה מסייעים לקבוע את התיארוך למאה ה-18 או ה-19. אחד הקטעים מכיל בנוסף רשימה של תרומות (?) מאנשים פרטיים, ובהם יעקב ביבאס, אדם ממשפחת מוצרי, ואחד בשם ביאלובוס.",
+  "destination": "",
+  "fragment_urls": [
+    "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22B+1937%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created",
+    "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22C+58%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "28386",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/jrl/b/b-1937.json",
+    "https://princetongenizalab.github.io/iiif/jrl/c/c-58.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic, Ladino",
+  "lang_he": "Judaeo-Arabic, Ladino",
+  "lang_note": "",
+  "library": "JRL · כיא פריז · כיא פריז · כיא פריז · JRL",
+  "library_raw": "JRL ; AIU ; AIU ; AIU ; JRL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "28387",
+  "origin": "",
+  "pos": 15958,
+  "prev": "28385",
+  "princeton_url": "https://geniza.princeton.edu/documents/28386/",
+  "region": "",
+  "shelfmark": "JRL B 1937 + AIU VII.F.14 + AIU VII.F.28 + AIU VII.F.92 + JRL C 58",
+  "tags": [
+    "Mosseri, Ladino, Ya'aqov Bibas, 18th or 19th c, Bialobos"
+  ],
+  "tags_he": [
+    "חשבונות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

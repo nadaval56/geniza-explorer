@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1225-07-06",
   "description": "Recto: Letter from Shelomo b. Eliyyahu to a certain Abū l-Surūr (probably an elder relative, since he is addressed as \"father\"). In Judaeo-Arabic. Faded and damaged, and only the upper part is preserved. Verso: Draft of a generic legal document—a \"trial of style,\" according to Goitein. Location: Fustat. Dated: Thursday, 29 Tammuz 1536 Seleucid, which is 1225 CE, under the authority of Avraham Maimonides. Probably written by Judge Eliyyahu b. Zekharya (AA). (Information from Goitein's index cards) EMS.",
-  "description_he": "מכתב משלמה בן אליהו לאבו אל-סרור, יהודית-ערבית, חלק עליון בלבד. על הגב: טיוטת שטר סגנוני, פוסטאט, 29 תמוז 1536 לשטרות = 1225, בסמכות אברהם מיימוניד.",
+  "description_he": "רקטו: מכתב משלמה בן אליהו אל אדם בשם אבו אל-סרור (ככל הנראה קרוב משפחה מבוגר, שכן הוא מכונה \"אב\"). בערבית-יהודית. דהוי ופגום, ורק החלק העליון שרד. ורסו: טיוטה של מסמך משפטי גנרי — \"תרגיל סגנון\", לפי גויטיין. מקום: פוסטאט. מתוארך ליום חמישי, כ\"ט בתמוז א'תקל\"ו לשטרות, היינו 1225 לספירה, תחת סמכותו של אברהם מימוני. ככל הנראה נכתב בידי הדיין אליהו בן זכריה. (המידע מבוסס על כרטיסיות גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00005"
@@ -42,6 +42,7 @@
     "טיוטה",
     "פוסטאט",
     "דיין",
+    "רבי אברהם בן הרמב\"ם",
     "שלמה בן אליהו"
   ],
   "total": 35937,

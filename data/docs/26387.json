@@ -1,1 +1,42 @@
-{"id":"26387","shelfmark":"T-S NS J248","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Abū l-Faraj to R. Eliyya or to [...] b. R. Eliyya. In Judaeo-Arabic. The writer is distressed. He had sent a letter with Ṭāhir, to be given to Menaḥem, to be given to the addressee. He tells the addressee not to give his response to Ṭāhir, lest it fall into the hands of someone other than the writer. (This sentence could also be read, \"do not give it to anyone except Abū Ṭāhir,\" but in that case the word לשיך should have been spelled ללשיך.) The writer alludes to a distresing matter involving his elder son Yūsuf. ASE.","tags":["secrecy"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/26387/","mentioned":"","description_he":"מכתב מאת אבו אל-פרג' אל ר' אליה או אל [...] בן ר' אליה. ביהודית-ערבית. הכותב מצוי במצוקה. הוא שלח מכתב עם טאהר, למסור למנחם, למסור לנמען. הוא מבקש מהנמען שלא למסור את תשובתו לטאהר, שמא תגיע לידי אדם אחר. הכותב רומז לעניין מצער הנוגע לבנו הבכור יוסף.","tags_he":["מכתב","יהודית-ערבית"],"prev":"26386","next":"26389","pos":27114,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Abū l-Faraj to R. Eliyya or to [...] b. R. Eliyya. In Judaeo-Arabic. The writer is distressed. He had sent a letter with Ṭāhir, to be given to Menaḥem, to be given to the addressee. He tells the addressee not to give his response to Ṭāhir, lest it fall into the hands of someone other than the writer. (This sentence could also be read, \"do not give it to anyone except Abū Ṭāhir,\" but in that case the word לשיך should have been spelled ללשיך.) The writer alludes to a distresing matter involving his elder son Yūsuf. ASE.",
+  "description_he": "מכתב מאת אבו אלפרג' אל ר' אליה או אל [...] בן ר' אליה, בערבית-יהודית. הכותב שרוי במצוקה. הוא שלח מכתב באמצעות טאהר, שיועבר למנחם, ומשם לידי הנמען. הכותב מבקש מן הנמען שלא ימסור את תשובתו לטאהר, פן תיפול לידי גורם אחר מלבד הכותב עצמו. (ניתן לקרוא משפט זה גם באופן אחר: \"אל תיתן אותו לאיש מלבד אבו טאהר\", אך במקרה כזה היה צריך לכתוב את המילה לשיך בכתיב ללשיך.) הכותב רומז לעניין מצער הקשור בבנו הבכור יוסף.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "26387",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "26389",
+  "origin": "",
+  "pos": 27114,
+  "prev": "26386",
+  "princeton_url": "https://geniza.princeton.edu/documents/26387/",
+  "region": "",
+  "shelfmark": "T-S NS J248",
+  "tags": [
+    "secrecy"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

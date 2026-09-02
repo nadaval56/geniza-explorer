@@ -1,1 +1,43 @@
-{"id":"32293","shelfmark":"MS 8254, fol. 17","multifragment":"","type_en":"Legal query or responsum","type_he":"שאלה משפטית","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Legal query addressed to Avraham Maimonides (r. 1205–1237 CE), with the latter's autograph responsum. NB: There is an extensive bibliography on this fragment, but it is often erroneously called MS 8254, fol. 16. See FGP under MS 8254, fol. 16.","tags":["Avraham Maimonides autograph, legal query, Responsum"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/32293/","mentioned":"","description_he":"שאלה משפטית המופנית לאברהם מימוניד (ד'ת'ל'ה-ד'תתצ'ז, 1205-1237 לספירה), עם תשובתו בכתב ידו. שגיאה נפוצה מכנה שבר זה MS 8254, fol. 16.","tags_he":["יהודית-ערבית"],"prev":"32290","next":"32294","pos":30020,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Legal query addressed to Avraham Maimonides (r. 1205–1237 CE), with the latter's autograph responsum. NB: There is an extensive bibliography on this fragment, but it is often erroneously called MS 8254, fol. 16. See FGP under MS 8254, fol. 16.",
+  "description_he": "שאלה משפטית המופנית לרבי אברהם בן הרמב\"ם (ד'ת'ל'ה-ד'תתצ'ז, 1205-1237 לספירה), עם תשובתו בכתב ידו. שגיאה נפוצה מכנה שבר זה MS 8254, fol. 16.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "32293",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "32294",
+  "origin": "",
+  "pos": 30020,
+  "prev": "32290",
+  "princeton_url": "https://geniza.princeton.edu/documents/32293/",
+  "region": "",
+  "shelfmark": "MS 8254, fol. 17",
+  "tags": [
+    "Avraham Maimonides autograph, legal query, Responsum"
+  ],
+  "tags_he": [
+    "יהודית-ערבית",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Legal query or responsum",
+  "type_he": "שאלה משפטית"
+}

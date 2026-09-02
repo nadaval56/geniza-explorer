@@ -1,1 +1,46 @@
-{"id":"5684","shelfmark":"ENA 2804.5","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1034","date_original":"","date_standard":"","date_inferred":"1034","date_rationale":"Event mentioned","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter from Efrayim b. Shemarya to Natan b. Avraham. Dating: ca. 1034 CE (per Gil). Relates to the early stages of a conflict between Natan b. Avraham and Shelomo b. Yehuda, which worsened into a schism between 1038–1042 regarding Gaonic leadership (CUL Or.1080 J7 PGPID 4474). Efrayim b. Shemarya gives his support to Natan b. Avraham. Mentions regular correspondence between the writer and the addressee. Mentions a person who arrived from Babylonia, possibly Daniel b. ʿAzarya, who was elected to the Palestinian gaonate after Shelomo b. Yehuda. (Information from Bareket, The Jews of Egypt, p. 99.) On recto there is a document in Arabic script (see separate record).","tags":["Efrayim b. Shemarya, Natan b. Avraham, Daniel b. 'Azarya, palestinian geonim"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/72772ec7-c098-4d9a-8748-4d6575c20437/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/5684/","mentioned":"","description_he":"מכתב מאת אפרים בן שמריה אל נתן בן אברהם. התיארוך: בערך 1034 לספירה (לפי גיל). המכתב קשור לשלבים המוקדמים של הסכסוך בין נתן בן אברהם לבין שלמה בן יהודה, סכסוך שהחריף לכדי פילוג בשנים 1038–1042 סביב הנהגת הגאונות. אפרים בן שמריה מביע את תמיכתו בנתן בן אברהם. המכתב מזכיר חליפת מכתבים סדירה בין הכותב לבין הנמען. כמו כן מוזכר אדם שהגיע מבבל, ייתכן שמדובר בדניאל בן עזריה, אשר נבחר לגאונות ארץ ישראל לאחר שלמה בן יהודה. (המידע מבוסס על ברקת, יהודי מצרים, עמ' 99.) בצד הרקטו מופיע מסמך בכתב ערבי (ראו רישום נפרד).","tags_he":["מכתב","עברית","ישיבה וגאונות","אפרים בן שמריה"],"prev":"5683","next":"5685","pos":3742,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1034",
+  "date_inferred": "1034",
+  "date_original": "",
+  "date_rationale": "Event mentioned",
+  "date_standard": "",
+  "description": "Letter from Efrayim b. Shemarya to Natan b. Avraham. Dating: ca. 1034 CE (per Gil). Relates to the early stages of a conflict between Natan b. Avraham and Shelomo b. Yehuda, which worsened into a schism between 1038–1042 regarding Gaonic leadership (CUL Or.1080 J7 PGPID 4474). Efrayim b. Shemarya gives his support to Natan b. Avraham. Mentions regular correspondence between the writer and the addressee. Mentions a person who arrived from Babylonia, possibly Daniel b. ʿAzarya, who was elected to the Palestinian gaonate after Shelomo b. Yehuda. (Information from Bareket, The Jews of Egypt, p. 99.) On recto there is a document in Arabic script (see separate record).",
+  "description_he": "מכתב מאת רבי אפרים בן שמריה אל נתן בן אברהם. התיארוך: בערך 1034 לספירה (לפי גיל). המכתב קשור לשלבים המוקדמים של הסכסוך בין נתן בן אברהם לבין רב שלמה בן יהודה, סכסוך שהחריף לכדי פילוג בשנים 1038–1042 סביב הנהגת הגאונות. רבי אפרים בן שמריה מביע את תמיכתו בנתן בן אברהם. המכתב מזכיר חליפת מכתבים סדירה בין הכותב לבין הנמען. כמו כן מוזכר אדם שהגיע מבבל, ייתכן שמדובר ברב דניאל בן עזריה, אשר נבחר לגאונות ארץ ישראל לאחר רב שלמה בן יהודה. (המידע מבוסס על ברקת, יהודי מצרים, עמ' 99.) בצד הרקטו מופיע מסמך בכתב ערבי (ראו רישום נפרד).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5684",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/72772ec7-c098-4d9a-8748-4d6575c20437/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "5685",
+  "origin": "",
+  "pos": 3742,
+  "prev": "5683",
+  "princeton_url": "https://geniza.princeton.edu/documents/5684/",
+  "region": "",
+  "shelfmark": "ENA 2804.5",
+  "tags": [
+    "Efrayim b. Shemarya, Natan b. Avraham, Daniel b. 'Azarya, palestinian geonim"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ישיבה וגאונות",
+    "רבי אפרים בן שמריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter fragment from ʿOvadya to an unknown addressee. In Judaeo-Arabic. Mentions Abū l-Faraj; asks the addressee to help al-Shaykh al-Rashīd in some legal dispute on behalf of the writer, because that would save the writer the trouble of traveling and the exhaustion; mentions Sayyidnā al-Rayyis and Shelomo and R. Shemuel ha-Dayyān (perhaps Shemuel b. Saʿadya ha-Levi, who served in Maimonides's court in Fustat, and appears in documents ranging between 1165–1203). (Information in part from FGP.) NB: Either the FGP images or metadata for Halper 380 and Halper 381 are assigned to the wrong shelfmark; see 381 for the description of 380 and vice versa.",
-  "description_he": "קטע מכתב מעובדיה לנמען לא ידוע. ביהודית-ערבית. מבקש לסייע לשייח' אל-ראשיד בסכסוך משפטי, כדי לחסוך לו (לכותב) את הנסיעה. מוזכרים סייידנא אל-ראיס, שלמה ור' שמואל הדיין.",
+  "description_he": "קטע ממכתב מאת עובדיה לנמען לא ידוע, בערבית-יהודית. נזכר בו אבו אלפרג', והכותב מבקש מהנמען לסייע לאלשיח' אלרשיד במחלוקת משפטית כלשהי בשמו, מאחר שכך ייחסך מהכותב הטורח של מסע מתיש. כן מוזכרים סיידנא אלריס, שלמה, ור' שמואל הדיין — ייתכן שמדובר בשמואל בן סעדיה הלוי, ששימש בבית דינו של הרמב\"ם בפוסטאט ומופיע במסמכים מהשנים 1165–1203. (חלק מן המידע מתוך FGP.) הערה: או שתמונות FGP או שהמטא-דאטה של Halper 380 ו-Halper 381 שויכו לסימני המדף הלא נכונים; לתיאור של 380 יש לעיין ב-381 ולהפך.",
   "destination": "",
   "fragment_urls": [
     "https://colenda.library.upenn.edu/catalog/81431-p3xw48f2z"
@@ -39,7 +39,7 @@
     "יהודית-ערבית",
     "פוסטאט",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -1,1 +1,45 @@
-{"id":"6110","shelfmark":"T-S NS J200","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Greek/Coptic Numerals, Judaeo-Arabic","lang_he":"Greek/Coptic Numerals, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Private accounts written by Nahray b. Nissim. Dating: ca. 1058 (Gil). Details several small amounts of money and their sum – 250 dinars. There is a shorthand symbol that Nahray uses which Gil interprets as the Coptic/Zimām symbol for ½. Presumably due to typographical limitations, Gil prints it as <, but we use the unicode symbol for Coptic ½, which is ⳽. The document is dated \"Sunday with 5 days remaining in Rabīʿ II,\" no year. (Information from Gil, Kingdom, Vol. 2, #285 and from Marina Rustow)","tags":["Nahray B. Nissim"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00200"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00200"],"princeton_url":"https://geniza.princeton.edu/documents/6110/","mentioned":"Būṣīr, al-Ṣīn","description_he":"חשבונות פרטיים של נהראי בן ניסים, כ-1058, פרטי סכומי כסף קטנים וסכומם 250 דינרים","tags_he":["חשבונות"],"prev":"6109","next":"6111","pos":4054,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Private accounts written by Nahray b. Nissim. Dating: ca. 1058 (Gil). Details several small amounts of money and their sum – 250 dinars. There is a shorthand symbol that Nahray uses which Gil interprets as the Coptic/Zimām symbol for ½. Presumably due to typographical limitations, Gil prints it as <, but we use the unicode symbol for Coptic ½, which is ⳽. The document is dated \"Sunday with 5 days remaining in Rabīʿ II,\" no year. (Information from Gil, Kingdom, Vol. 2, #285 and from Marina Rustow)",
+  "description_he": "חשבונות פרטיים בכתב ידו של נהראי בן נסים. התיארוך הוא בקירוב 1058 לפי גיל. המסמך מפרט מספר סכומי כסף קטנים ואת הסיכום שלהם — 250 דינרים. נהראי משתמש בסימן קצרנות שגיל מפרש כסימן הקופטי/זִמַאם לחצי (½). ככל הנראה בשל מגבלות טיפוגרפיות גיל מדפיס את הסימן כ-<, אך כאן נעשה שימוש בסימן היוניקוד הקופטי לחצי — ⳽. המסמך מתוארך ל\"יום ראשון בנותר חמישה ימים מרביע השני\", ללא ציון שנה. (המידע מבוסס על גיל, ממלכת ישמעאל, כרך 2, מס' 285, ועל מרינה רוסטו.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00200"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6110",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-NS-J-00200"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Greek/Coptic Numerals, Judaeo-Arabic",
+  "lang_he": "Greek/Coptic Numerals, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Būṣīr, al-Ṣīn",
+  "multifragment": "",
+  "next": "6111",
+  "origin": "",
+  "pos": 4054,
+  "prev": "6109",
+  "princeton_url": "https://geniza.princeton.edu/documents/6110/",
+  "region": "",
+  "shelfmark": "T-S NS J200",
+  "tags": [
+    "Nahray B. Nissim"
+  ],
+  "tags_he": [
+    "חשבונות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

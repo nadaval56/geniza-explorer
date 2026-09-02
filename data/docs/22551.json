@@ -1,1 +1,45 @@
-{"id":"22551","shelfmark":"T-S AS 181.79","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Book list in Arabic script. The first two items are the Life of al-Ḥākim and the Epistles of the Brethren of Purity. There is also poetry and a book of medicine. 6 volumes altogether. There is a damaged note at the bottom that may indicate the price they sold for. The full list:\nسيرة مولانا الحاكم صلوات الله عليه\nرسايل اخوان الصفا\nجزوين شعر خالد(؟)\nكناش في الطب\nجزو الحروب(؟؟)\nالجملة\nستة\n. . . . . د[ينار]ا سوا","tags":["Ismailis, book trade"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/22551/","mentioned":"","description_he":"רשימת ספרים בכתב ערבי. שני הפריטים הראשונים הם: תולדות אל-חאכם וכתבי האחים לטוהר. כולל גם שירה וספר רפואה. 6 כרכים סה\"כ. פתק פגום בתחתית אולי מציין את מחיר המכירה.","tags_he":["חשבונות","ערבית","שירה","רשימת ספרים","רפואה"],"prev":"22550","next":"22552","pos":24307,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Book list in Arabic script. The first two items are the Life of al-Ḥākim and the Epistles of the Brethren of Purity. There is also poetry and a book of medicine. 6 volumes altogether. There is a damaged note at the bottom that may indicate the price they sold for. The full list:\nسيرة مولانا الحاكم صلوات الله عليه\nرسايل اخوان الصفا\nجزوين شعر خالد(؟)\nكناش في الطب\nجزو الحروب(؟؟)\nالجملة\nستة\n. . . . . د[ينار]ا سوا",
+  "description_he": "רשימת ספרים בכתב ערבי. שני הפריטים הראשונים הם \"סירת מולאנא אלחאכם צלואת אללה עליה\" (תולדות חייו של אלחאכם) ו\"רסאיל אח'ואן אלצפא\" (איגרות אחי הטוהר). כמו כן מופיעים בה שני כרכים של שירה — כנראה של ח'אלד (הקריאה אינה ודאית), ספר רפואה (כנאש פי אלטב), וכרך בשם \"ג'זו אלחרוב\" (הקריאה מסופקת). בסך הכול שישה כרכים. בתחתית הרשימה הערה פגומה שאולי מציינת את המחיר שבו נמכרו הספרים. הרשימה המלאה:\n\nסירה מולאנא אלחאכם צלואת אללה עליה\nרסאיל אח'ואן אלצפא\nג'זוין שער ח'אלד(?)\nכנאש פי אלטב\nג'זו אלחרוב(??)\nאלג'מלה\nסתה\n. . . . . ד[ינארא] סוא",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "22551",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "22552",
+  "origin": "",
+  "pos": 24307,
+  "prev": "22550",
+  "princeton_url": "https://geniza.princeton.edu/documents/22551/",
+  "region": "",
+  "shelfmark": "T-S AS 181.79",
+  "tags": [
+    "Ismailis, book trade"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "ערבית",
+    "שירה",
+    "רשימת ספרים",
+    "רפואה"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

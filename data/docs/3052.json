@@ -1,1 +1,49 @@
-{"id":"3052","shelfmark":"T-S 10J7.16","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Greek","lang2_he":"יוונית","lang_note":"","origin":"","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Yefet to Abū l-Barakāt the physician, in Fustat (bāb qaṣr al-shamʿ). which the writer alludes to some bad news (\"ever since I heard the news, I have fasted in the daytime and prostrated in bed\") and urges the addressee to keep him informed. There is a mysterious word in Greek on verso written in a hand that may be modern: πιουται (piyyutim)?","tags":["bedbound, illness letter 969-1517, fasting, illness: emotion, Arabic address, Illness"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00007-00016"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00007-00016"],"princeton_url":"https://geniza.princeton.edu/documents/3052/","mentioned":"Qaṣr al-Shamʿ (neighborhood)","description_he":"מכתב מיפת לאבו אל-ברכאת הרופא בפוסטאט, בו המחבר מרמז לחדשות רעות ומבקש לעדכנו. בצד ב' מילה מסתורית ביוונית: πιουται (פיוטים?).","tags_he":["מכתב","יהודית-ערבית","פיוט","רפואה","פוסטאט"],"prev":"3051","next":"3053","pos":2101,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yefet to Abū l-Barakāt the physician, in Fustat (bāb qaṣr al-shamʿ). which the writer alludes to some bad news (\"ever since I heard the news, I have fasted in the daytime and prostrated in bed\") and urges the addressee to keep him informed. There is a mysterious word in Greek on verso written in a hand that may be modern: πιουται (piyyutim)?",
+  "description_he": "מכתב מיפת אל אבו אל-ברכאת הרופא בפוסטאט (באב קצר אל-שמע). הכותב רומז לחדשות רעות שהגיעו אליו (\"מאז ששמעתי את הידיעה, אני צם ביום ומשתטח על מיטתי\") ומפציר בנמען להמשיך ולעדכן אותו בכל המתרחש. על גב המכתב מופיעה מילה מסתורית ביוונית, בכתב יד שייתכן שהוא מודרני: πιουται (אולי \"פיוטים\"?).",
+  "destination": "Fustat",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00007-00016"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "3052",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00007-00016"
+  ],
+  "lang2_en": "Greek",
+  "lang2_he": "יוונית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Qaṣr al-Shamʿ (neighborhood)",
+  "multifragment": "",
+  "next": "3053",
+  "origin": "",
+  "pos": 2101,
+  "prev": "3051",
+  "princeton_url": "https://geniza.princeton.edu/documents/3052/",
+  "region": "",
+  "shelfmark": "T-S 10J7.16",
+  "tags": [
+    "bedbound, illness letter 969-1517, fasting, illness: emotion, Arabic address, Illness"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פיוט",
+    "רפואה",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

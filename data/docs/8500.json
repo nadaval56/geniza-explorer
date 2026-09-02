@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "\"Specification of the Distribution of Wheat,\" upper section of partly effaced list; about forty names preserved, among them that of Maimonides' sister-in-law, the widow of David b. Maymūn who perished in the Indian Sea. She received \"a quarter and an eighth\" of a wayba, obviously a quarter for herself and an eighth for her infant daughter (see B 26). At least five persons are characterized as shāmī (from Palestine, or from Damascus); otherwise no persons from outside Egypt. (Information from Goitein, Med Soc II, App. B, #35.)",
-  "description_he": "מפרט חלוקת חיטה; כ-40 שמות שמורים, ביניהם גיסתו של הרמב\"ם, אלמנת דוד בן מימון שנספה בים הודי",
+  "description_he": "\"רשימת חלוקת חיטה\" — חלקה העליון של רשימה שנמחקה חלקית, ובה השתמרו כארבעים שמות. בין הנמנים בה אחות אשתו של הרמב\"ם, אלמנתו של דוד בן מימון שטבע בים הודו. היא קיבלה \"רבע ושמינית\" של ויבה, כלומר רבע עבור עצמה ושמינית עבור בתה התינוקת. לפחות חמישה אנשים מתוארים כ\"שאמי\" (כלומר מארץ ישראל או מדמשק); מלבדם אין ברשימה אנשים מחוץ למצרים. המידע מבוסס על גויטיין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00015-00030"
@@ -40,7 +40,7 @@
     "דמשק",
     "הודו",
     "חיטה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

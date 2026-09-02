@@ -6,7 +6,7 @@
   "date_rationale": "Paleography",
   "date_standard": "",
   "description": "Recto (secondary use): India Book I,40. Legal document in the hand of Avraham Maimonides (identification by M. A. Friedman). Location: Fustat. Dating: before 1237 CE. Nabaʾ b. Abū l-Barakāt b. Yosef Lebdi, appoints two attorneys to settle his claim over 'sugar, sugar molasses (qatara) and (other) goods.' The fact that Avraham Maimonides wrote this document makes the legal terminology in it significant. The appointment is carried out not only by the legal transfer of four cubits in the land of Israel, but also through the threshold of the house he inherited from his father.\n\nVerso is a letter/petition in Arabic script.",
-  "description_he": "ספר הודו I,40: מסמך משפטי בכתב אברהם מימונידס, נבא בן אבו אל-ברכאת ממנה עורכי דין לסכסוך סוכר",
+  "description_he": "רקטו (שימוש משני): מסמך משפטי שנכתב בכתב ידו של אברהם מימוני (הזיהוי על ידי מ\"א פרידמן). מקום: פוסטאט. תיארוך: לפני 1237. נבא בן אבו אלברכאת בן יוסף לבדי ממנה שני מורשים שיטפלו בתביעתו בנוגע ל\"סוכר, מולסה של סוכר (קטארה) ו(שאר) סחורות\". העובדה שאברהם מימוני הוא שכתב את המסמך מקנה משקל מיוחד לטרמינולוגיה המשפטית המופיעה בו. המינוי מתבצע לא רק באמצעות הקניין המשפטי המקובל של ארבע אמות בארץ ישראל, אלא גם באמצעות מפתן הבית שירש מאביו.\n\nורסו: מכתב או עצומה בכתב ערבי.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00148-00004"
@@ -41,7 +41,8 @@
     "יהודית-ערבית",
     "עצומה",
     "פוסטאט",
-    "סוכר"
+    "סוכר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -1,1 +1,45 @@
-{"id":"38482","shelfmark":"T-S NS 225.17b","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1100–1138","date_original":"","date_standard":"","date_inferred":"1100–1138","date_rationale":"Paleography","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal document in the hand of Halfon b. Menashshe ha-Levi (fl. 1100–38 CE). Settlement of a dispute over a husband's support for his wife during his absence. T-S AS 149.74 + T-S NS 225.17a (PGPID 16440) and T-S NS 225.17b are distinct but similar documents with parallel formulae including the section beginning אן יפרץ להא (line 10 of T-S NS 225.17b and line 3 of T-S NS 225.17a).","tags":["Halfon b. Menashshe"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00225-00017-B"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/38482/","mentioned":"","description_he":"מסמך משפטי בכתב ידו של חלפון בן מנשה הלוי (פעיל 1100-1138 לספירה). יישוב סכסוך על מזונות שהבעל חייב לאשתו בזמן היעדרותו.","tags_he":["מסמך משפטי","יהודית-ערבית","חלפון בן מנשה הלוי"],"prev":"38481","next":"38487","pos":19469,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1100–1138",
+  "date_inferred": "1100–1138",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Legal document in the hand of Halfon b. Menashshe ha-Levi (fl. 1100–38 CE). Settlement of a dispute over a husband's support for his wife during his absence. T-S AS 149.74 + T-S NS 225.17a (PGPID 16440) and T-S NS 225.17b are distinct but similar documents with parallel formulae including the section beginning אן יפרץ להא (line 10 of T-S NS 225.17b and line 3 of T-S NS 225.17a).",
+  "description_he": "מסמך משפטי בכתב ידו של חלפון בן מנשה הלוי (פעיל בשנים 1100–1138). הסכם פשרה בסכסוך הנוגע למזונות שעל הבעל לספק לאשתו בתקופת היעדרותו. שני המסמכים (T-S AS 149.74 + T-S NS 225.17a ו-T-S NS 225.17b) הם מסמכים נפרדים אך דומים זה לזה, הכוללים נוסחאות מקבילות, ובהן הקטע הפותח במילים \"אן יפרץ להא\" (שורה 10 במסמך האחד ושורה 3 במסמך האחר).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "38482",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-NS-00225-00017-B"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "38487",
+  "origin": "",
+  "pos": 19469,
+  "prev": "38481",
+  "princeton_url": "https://geniza.princeton.edu/documents/38482/",
+  "region": "",
+  "shelfmark": "T-S NS 225.17b",
+  "tags": [
+    "Halfon b. Menashshe"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "חלפון בן מנשה הלוי"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

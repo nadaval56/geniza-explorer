@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter probably from one of the later Maimonidean Nagids (less likely Avraham Maimonides himself). In Judaeo-Arabic. There is an 'emet' motto at the top, with the tail cutting through the first lines of the text. The sender tells al-Shaykh al-Makīn to tell the congregation that he misses them and urges them to be diligent in the matter of the lavish siyyum(?) for the poor(?). He also reminds them to pay the sums pledged from specific collections (Purim and another day?). Probably the same hand as ENA NS 67.9 (PGPID 12227) and ENA 3603.2.",
-  "description_he": "מכתב ככל הנראה מאחד מהנגידים המימוניים המאוחרים. ביהודית-ערבית. בראש: מוטיב 'אמת' שזנבו חוצה את השורות הראשונות. השולח מורה לאל-שייח' אל-מכין להגיד לקהל שהוא גועגע אליהם, ומעודד אותם להיות מוקדשים לסיום(?) הנדיב לעניים(?). כן מזכיר לשלם את הסכומים שנבטחו מגבאיות ספציפיות (פורים ויום אחר?).",
+  "description_he": "מכתב כנראה מאת אחד מן הנגידים המאוחרים לבית הרמב\"ם (פחות סביר שמדובר ברבי אברהם בן הרמב\"ם עצמו). בערבית-יהודית. בראש הדף מופיע מוטו \"אמת\", שזנבו חוצה את השורות הראשונות של הטקסט. השולח מבקש מאלשיח' אלמכין למסור לקהל שהוא מתגעגע אליהם, ומפציר בהם לשקוד על עניין הסיום(?) הנכבד עבור העניים(?). הוא גם מזכיר להם לשלם את הסכומים שהתחייבו להם במגביות מסוימות (פורים ויום נוסף?). ככל הנראה אותו כתב יד כמו שני מכתבים נוספים המיוחסים לאותו כותב.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

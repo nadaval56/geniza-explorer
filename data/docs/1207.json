@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1213",
   "description": "Account (draft) of the Qodesh ca. 1213. This account is written on the verso and also on the remaining space of the recto of a document concerning the sale of a female slave to a certain Elazar ha-Kohen. Different kidns of revenue and expenditures are recorded together. There are items of charity, for the local poor and for foreigners, and repairs to buildings of the qodesh, and also to the synagogues of Fustat and Dammuh. Several sums that were emoluments for scholars are included as well. Some revenue from rent is listed, as it is also income from collections for charity, among them one \"light\" dinar paid by Rayyis, i.e. the Nagid, Avraham Maimuni, the son of Maimonides. (Information from Gil, Documents, pp. 403 #109)",
-  "description_he": "חשבון הקדש משנת כ-1213. כולל הוצאות צדקה לעניים מקומיים ולנכרים, תיקוני מבנים ובתי כנסת בפוסטאט ודמוה, שכר תלמידי חכמים, הכנסות שכירות ותרומות — ביניהן דינר אחד שנתרם בידי הנגיד אברהם מיימוני.",
+  "description_he": "חשבון (טיוטה) של הקודש משנת 1213 לערך. החשבון נכתב על גבי ה-verso וגם בשטח הפנוי שנותר ב-recto של מסמך הנוגע למכירת שפחה לאלעזר הכהן. סוגים שונים של הכנסות והוצאות נרשמים יחד. בין הסעיפים: דברי צדקה לעניי המקום ולעניים זרים, תיקונים במבני הקודש, וכן בבתי הכנסת בפוסטאט ובדמוה. נכללים גם כמה סכומים ששימשו כמשכורות לתלמידי חכמים. רשומות הכנסות מסוימות משכר דירה, כמו גם הכנסות מאיסוף תרומות לצדקה, וביניהן דינר \"קל\" אחד ששולם על ידי הראיס, דהיינו הנגיד אברהם מימוני, בנו של הרמב\"ם. (המידע על פי גיל)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00008-00011"
@@ -43,7 +43,8 @@
     "צדקה",
     "שכירות",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

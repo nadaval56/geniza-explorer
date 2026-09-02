@@ -1,1 +1,43 @@
-{"id":"28050","shelfmark":"Yevr.-Arab. II 1595","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1765-01-09","date_original":"16 Tevet 5525","date_standard":"1765-01-09","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Legal document, Qaraite. In Judaeo-Arabic. Dated: Tuesday, 16 Tevet 5525 AM, which is 1765 CE. Venue: House of Shelomo Kohen nin Aharon Kohen known as Shāmī. Protagonists: Moshe b. Yosef known as Berakha and Eliyyahu b. Yashar al-Ḥakīm. The two were partners in אלסירגה, which it seems refers to the manufacture of sesame oil (sīraj); sesame (simsim) is mentioned again in line 5. The partners are breaking up and have divided everything evenly, except for the dūlāb, which is worth 54 reals. Eliyyahu purchases Moshe's share in the dūlāb for 27 reals. The term \"dūlāb\" may indicate some form of oil production machinery or a storage cabinet. ASE. MCD.","tags":["sesame, real, Karaite, 18th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/28050/","mentioned":"","description_he":"מסמך משפטי קראי. ביהודית-ערבית. תאריך: שלישי, ט\"ז טבת 5525 = 1765 לספירה. מקום: בית שלמה כהן ב' אהרן כהן הידוע כשאמי. עוסק בפירוק שותפות בייצור שמן שומשום (אל-סירג'ה) בין משה ב' יוסף הידוע כברכה לאליהו ב' ישר אל-חכים. הדולאב בשווי 54 ריאל מחולק שווה בשווה.","tags_he":["מסמך משפטי","יהודית-ערבית","שומשום"],"prev":"28049","next":"28051","pos":28352,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1765-01-09",
+  "date_inferred": "",
+  "date_original": "16 Tevet 5525",
+  "date_rationale": "",
+  "date_standard": "1765-01-09",
+  "description": "Legal document, Qaraite. In Judaeo-Arabic. Dated: Tuesday, 16 Tevet 5525 AM, which is 1765 CE. Venue: House of Shelomo Kohen nin Aharon Kohen known as Shāmī. Protagonists: Moshe b. Yosef known as Berakha and Eliyyahu b. Yashar al-Ḥakīm. The two were partners in אלסירגה, which it seems refers to the manufacture of sesame oil (sīraj); sesame (simsim) is mentioned again in line 5. The partners are breaking up and have divided everything evenly, except for the dūlāb, which is worth 54 reals. Eliyyahu purchases Moshe's share in the dūlāb for 27 reals. The term \"dūlāb\" may indicate some form of oil production machinery or a storage cabinet. ASE. MCD.",
+  "description_he": "מסמך משפטי קראי בערבית-יהודית, מתוארך ליום שלישי, ט\"ז בטבת ה'תקכ\"ה (1765). המעמד נערך בביתו של שלמה הכהן בן אהרן הכהן המכונה שאמי. הצדדים: משה בן יוסף המכונה ברכה ואליהו בן ישר אלחכים. השניים היו שותפים ב\"אלסירגה\", שלפי הנראה מתייחס לייצור שמן שומשום (סיראג'); השומשום (סמסם) מוזכר שוב בשורה 5. השותפים מפרקים את שותפותם וחילקו את כל הרכוש בחלקים שווים, למעט ה\"דולאב\" ששוויו 54 ריאל. אליהו רוכש את חלקו של משה בדולאב תמורת 27 ריאל. המונח \"דולאב\" עשוי להצביע על מתקן כלשהו לייצור שמן או על ארון אחסון.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "28050",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "28051",
+  "origin": "",
+  "pos": 28352,
+  "prev": "28049",
+  "princeton_url": "https://geniza.princeton.edu/documents/28050/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1595",
+  "tags": [
+    "sesame, real, Karaite, 18th c"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "שומשום"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

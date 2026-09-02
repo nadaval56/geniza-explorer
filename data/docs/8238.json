@@ -1,1 +1,46 @@
-{"id":"8238","shelfmark":"T-S Ar.39.189","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1284-02-18","date_original":"Thursday, 20 Dhū l-Qaʿda 682","date_standard":"1284-02-18","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Report of the death of a Jewish woman. In Arabic script. The deceased is ʿAlāʾ bt. Abū l-ʿAlāʾ b. Bū Saʿīd (Khan suggests this is the same Bū Saʿīd as in T-S NS 297.1, another report of the death of a Jewish woman). Dated: Thursday, 20 Dhū l-Qaʿda 682 AH, which is 18 February 1284 CE. She left a father and two sons. (Information from Goitein’s index card and Khan.) On verso and the margins of recto, there are business accounts in Judaeo-Arabic and Greek/Coptic numerals.","tags":["report of death, inheritance, death"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00039-00189"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00039-00189"],"princeton_url":"https://geniza.princeton.edu/documents/8238/","mentioned":"","description_he":"דיווח על מות אישה יהודית. בכתב ערבי. הנפטרת: עלא בת אבו אל-עלא. תאריך: חמישי, 20 ד'ו אל-קעדה 682 היג'רה = 18 פברואר 1284 לספירה. השאירה אחריה אב ושני בנים. בגב חשבונות עסקיים","tags_he":["מסמך משפטי","ערבית"],"prev":"8237","next":"8242","pos":5470,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1284-02-18",
+  "date_inferred": "",
+  "date_original": "Thursday, 20 Dhū l-Qaʿda 682",
+  "date_rationale": "",
+  "date_standard": "1284-02-18",
+  "description": "Report of the death of a Jewish woman. In Arabic script. The deceased is ʿAlāʾ bt. Abū l-ʿAlāʾ b. Bū Saʿīd (Khan suggests this is the same Bū Saʿīd as in T-S NS 297.1, another report of the death of a Jewish woman). Dated: Thursday, 20 Dhū l-Qaʿda 682 AH, which is 18 February 1284 CE. She left a father and two sons. (Information from Goitein’s index card and Khan.) On verso and the margins of recto, there are business accounts in Judaeo-Arabic and Greek/Coptic numerals.",
+  "description_he": "דיווח על פטירתה של אישה יהודייה, כתוב בכתב ערבי. הנפטרת היא עלאא' בת אבו אל-עלאא' בן בו סעיד (לפי הצעת ח'אן, מדובר באותו בו סעיד המוזכר בדיווח אחר על פטירת אישה יהודייה). המסמך מתוארך ליום חמישי, כ' בד'ו אל-קעדה 682 להג'רה, הוא 18 בפברואר 1284 לספירה. הנפטרת הותירה אחריה אב ושני בנים. (המידע מבוסס על כרטיסיית גויטיין ועל ח'אן.) בצד האחורי ובשולי הצד הקדמי של המסמך נמצאים חשבונות עסקיים בערבית-יהודית ובספרות יווניות/קופטיות.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00039-00189"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8238",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00039-00189"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8242",
+  "origin": "",
+  "pos": 5470,
+  "prev": "8237",
+  "princeton_url": "https://geniza.princeton.edu/documents/8238/",
+  "region": "",
+  "shelfmark": "T-S Ar.39.189",
+  "tags": [
+    "report of death, inheritance, death"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

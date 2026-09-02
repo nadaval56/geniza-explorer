@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1253-01-21",
   "description": "Certificate of the Qodesh. Location: Alexandria. Dated: 20 Shevaṭ 1564 Seleucid = 21 January 1253 CE, under the authority (reshut) of the Nagid David I Maimonides. The leaders of the community of Alexandria grant Elazar b. Shelomo the right to receive bread from the qodesh as well as the sum needed for the capitation tax. The right is granted to him by reason of his poverty, old age, and membership in a family of scholars. (Information from Gil, Documents, pp. 477 #144)",
-  "description_he": "תעודת קודש. אלכסנדריה, 21 בינואר 1253. מנהיגי הקהילה מעניקים לאלעזר בן שלמה זכות קבלת לחם וכספי מס גולגולת.",
+  "description_he": "אישור מטעם הקודש. מקום: אלכסנדריה. תאריך: כ' בשבט א'תקס\"ד למניין השטרות = 21 בינואר 1253, תחת רשותו של הנגיד דוד הראשון בן הרמב\"ם. ראשי קהילת אלכסנדריה מעניקים לאלעזר בן שלמה את הזכות לקבל לחם מן הקודש וכן את הסכום הדרוש לתשלום מס הגולגולת (ג'אליה). הזכות ניתנת לו בשל עוניו, זקנותו, והשתייכותו למשפחת תלמידי חכמים. (המידע מבוסס על גיל.)",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_91#MS_Heb_d_68-part23"
@@ -40,7 +40,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

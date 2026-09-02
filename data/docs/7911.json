@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter, from the elders of the Jewish community in Ṣahrajt, Egypt, to Efrayim b. Sehmarya he-Ḥaver (fl. 1007–1055), in Fusṭāṭ, confirming receipt of Efrayim’s letter and implementation of his instructions relating to an improper marriage. Dating: 1034 CE (CUDL) but this exact year needs further verification. Mentions [...] b. Nāmūs, and Raḥmūn, Ibn Yosef, and [...] Ibn Yāʾīr. (Information from CUDL.)",
-  "description_he": "מכתב מזקני הקהילה היהודית בצחרג't, מצרים, לאפרים ב. שמריה החבר בפוסטאט, המאשר קבלת מכתבו ויישום הוראותיו בנוגע לנישואין פסולים. תאריך: 1034 לספירה",
+  "description_he": "מכתב מזקני הקהילה היהודית בצהרג'ת שבמצרים אל רבי אפרים בן שמריה החבר (פעיל בין השנים 1007–1055) בפוסטאט. במכתב מאשרים השולחים את קבלת איגרתו של אפרים, ומדווחים על ביצוע ההוראות שמסר להם בנוגע לעניין של נישואין לא תקינים. תיארוך משוער: 1034 לסה\"נ, אם כי השנה המדויקת טעונה אימות נוסף. בין הנזכרים במכתב: [...] בן נאמוס, רחמון, אבן יוסף, ו[...] אבן יאיר.",
   "destination": "Fustat",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00022-00007"
@@ -38,7 +38,7 @@
     "מכתב",
     "נישואין",
     "פוסטאט",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

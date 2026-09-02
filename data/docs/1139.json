@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1226-04",
   "description": "Legal document from Minyat Ghamr concerning a debt; during the holiday of Passover 1537 sel., mid-April 1226 CE. Reshut of Abraham Maimonides. Ḥalfon b. Elazar known as ben al-Meshorer received from Nadiv b. Shelomo fifty dirhems in \"Egyptian cash,\" to pay back in four half-monthly installments. (Information from Goitein's index cards) VMR and EMS",
-  "description_he": "מסמך משפטי ממנית ע'מר על חוב, אפריל 1226. בסמכות אברהם מיימוניד. חלפון בן אלעזר מקבל 50 דירהם בארבעה תשלומי חצי חודש.",
+  "description_he": "מסמך משפטי ממניית גמר העוסק בחוב; נכתב בימי חג הפסח בשנת 1537 לשטרות, באמצע אפריל 1226 לספירה. ברשות רבי אברהם בן הרמב\"ם. חלפון בן אלעזר המכונה אבן אלמשורר קיבל מנדיב בן שלמה חמישים דרהם ב\"מזומן מצרי\", שעליו להחזיר בארבעה תשלומים דו־שבועיים. (המידע מבוסס על כרטיסיות גויטיין)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00004-00001/1"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מסמך משפטי",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

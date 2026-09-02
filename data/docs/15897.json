@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Yehuda b. Ṭuviyyahu to Moshe Maimonides. In Hebrew and Judaeo-Arabic. Congratulating him on his marriage? Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt.\n\nNB: The identifications and bibliography on FGP (an autograph responsum of Avraham Maimonides) actually refer to MS 8254, fol. 17.",
-  "description_he": "מכתב מיהודה בן טוביהו לרמב'ם משה מימוניד. בעברית וביהודית-ערבית. מברך אותו על נישואיו? תיארוך: בערך 1168-1204 לספירה.",
+  "description_he": "מכתב מיהודה בן טוביהו אל רבי משה בן מימון. כתוב בעברית ובערבית-יהודית. נראה כי תוכנו ברכה לרמב\"ם לרגל נישואיו. תיארוך משוער: 1168–1204 לספירה לערך, על פי השנים שבהן פעל הרמב\"ם במצרים.\n\nהערה: הזיהויים והביבליוגרפיה המופיעים ב-FGP (תשובה אוטוגרפית של רבי אברהם בן הרמב\"ם) מתייחסים למעשה לכתב יד אחר.",
   "destination": "",
   "fragment_urls": [
     "https://dpul.princeton.edu/catalog/dc44558q15f"
@@ -36,7 +36,8 @@
   "tags": [],
   "tags_he": [
     "מכתב",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

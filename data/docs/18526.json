@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from Mūsā b. Hibatallāh al-Yahūdī al-Mutaṭabbib (\"the Jewish doctor\") to an unidentified dignitary. In Arabic script. Dating: Perhaps 12th or 13th century based on handwriting and style. Preserved text: افضل تحياته وسلامه على . . . وعلى ابائه الطاهرين. The sender may be Moshe b. Netanʾel ha-Levi, known to have served as a physician in a government hospital; see Goitein, Med Soc II, pp. 528 and 578, and M. A. Friedman, “Maimonides and Zuta: A Tale of Three Bans.” Zion 74 (2005): 473–527. However, not enough is preserved, so this identification is speculative. (Information in part from CUDL.) ASE",
-  "description_he": "מכתב ממוסא בן הבתאללה אל-יהודי אל-מוטטבב ('הרופא היהודי') לאציל לא מזוהה. בכתב ערבי. תיארוך: אולי המאה ה-12 או ה-13. ייתכן שהשולח הוא משה בן נתנאל הלוי, שהיה ידוע כרופא בבית חולים ממשלתי.",
+  "description_he": "מכתב מאת מוסא בן הִבַּתאללה אל-יהודי אל-מֻתַטַבִּב (\"הרופא היהודי\") אל אישיות נכבדת שזהותה לא ידועה. כתוב בכתב ערבי. תיארוך משוער: אולי המאה ה-12 או ה-13, על סמך כתב היד והסגנון. הטקסט השמור כולל את הברכה: افضل تحياته وسلامه على . . . وعلى ابائه الطاهرين (\"מיטב ברכותיו ושלומותיו על... ועל אבותיו הטהורים\"). ייתכן שהשולח הוא משה בן נתנאל הלוי, שידוע כי שימש כרופא בבית חולים ממשלתי (ראו גויטיין, וכן מחקרו של מ\"ע פרידמן \"הרמב\"ם וזוטא: סיפור על שלושה חרמות\", ציון ע\"ד [תשס\"ה], עמ' 473–527). עם זאת, מאחר שלא נשתמר די מן הטקסט, הזיהוי הוא בגדר השערה בלבד.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00184-00183"
@@ -38,7 +38,7 @@
     "מכתב",
     "ערבית",
     "רפואה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

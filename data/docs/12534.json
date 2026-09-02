@@ -1,1 +1,44 @@
-{"id":"12534","shelfmark":"ENA 2899.25","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"List of payments or accounts in which the heading labels the document as a \"חסבת\" or conceivably a \"חסבה/حسبة\" if we disconnect the word from its Arabic idāfa-construction. The term may indicate a \"receipt\" or simply a \"sum\" of money which is likely expressed here in alphanumerical figures. The heading states that this \"חסבה/حسبة\" is connected to one \"Yūsuf ibn Salam[?]/יוסף אבן סלם\" (probably Sālim or Salīm). Mentions a chest (קומטריא) and carnelians (ʿaqīq) Verso: Letters (or symbols?) in an unidentified script. MCD/ASE","tags":["list"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/0c76c74a-0cac-4365-a493-5384d97f62e0/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12534/","mentioned":"","description_he":"רשימת תשלומים או חשבונות שהכותרת מסמנת כ'חסבת' (קבלה/סכום). הנושא: יוסף אבן סלם(?). מוזכרים ארגז (קומטריא) ואקיק (אבן חן). ורסו: אותיות (או סמלים?) בכתב לא מזוהה.","tags_he":["חשבונות","יהודית-ערבית"],"prev":"12533","next":"12535","pos":8493,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "List of payments or accounts in which the heading labels the document as a \"חסבת\" or conceivably a \"חסבה/حسبة\" if we disconnect the word from its Arabic idāfa-construction. The term may indicate a \"receipt\" or simply a \"sum\" of money which is likely expressed here in alphanumerical figures. The heading states that this \"חסבה/حسبة\" is connected to one \"Yūsuf ibn Salam[?]/יוסף אבן סלם\" (probably Sālim or Salīm). Mentions a chest (קומטריא) and carnelians (ʿaqīq) Verso: Letters (or symbols?) in an unidentified script. MCD/ASE",
+  "description_he": "רשימת תשלומים או חשבונות שכותרתה מתארת את המסמך כ\"חסבת\" או אולי \"חסבה/حسبة\" אם מנתקים את המילה ממבנה האִצ'אפה הערבי שלה. המונח עשוי להצביע על \"קבלה\" או פשוט על \"סכום\" כסף, המבוטא כאן ככל הנראה בספרות אלפא-נומריות. הכותרת מציינת שה\"חסבה/حسبة\" קשורה לאדם בשם \"יוסף אבן סלם\" (יוסף בן סָאלִם או סָלִים, ככל הנראה). מוזכרים תיבה (קומטריא) ואבני קרנליאן (עקיק/ʿaqīq). בצד השני (verso): אותיות (או סמלים?) בכתב לא מזוהה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12534",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/0c76c74a-0cac-4365-a493-5384d97f62e0/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12535",
+  "origin": "",
+  "pos": 8493,
+  "prev": "12533",
+  "princeton_url": "https://geniza.princeton.edu/documents/12534/",
+  "region": "",
+  "shelfmark": "ENA 2899.25",
+  "tags": [
+    "list"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

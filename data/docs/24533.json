@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Draft of a letter written either by Avraham Maimonides or his son David I Maimonides (their hands are almost identical). The fact that the opening phrase (גרץ תסטירהא etc.) is identical to that of T-S 16.343 (PGPID 7489) may tilt the probability in favor of David being the writer. The letter is probably addressed to a physician known as al-Rashīd (\"al-ḥaḍra... al-ḥakīmiyya al-rashīdiyya...\"). It concerns al-Shaykh al-Thiqa Hiba, perhaps Hibat[allāh b. Abū] l-Faraj. The draft is repeated on verso. AA. ASE.",
-  "description_he": "טיוטת מכתב שנכתבה על ידי אברהם מיימוניד או בנו דוד הראשון מיימוניד (כתב ידם כמעט זהה). המכתב כנראה מופנה לרופא הידוע בשם אל-ראשיד. הוא עוסק באל-שיח' אל-ת'קה היבה, אולי היבת[אללה בן אבו] אל-פרג'. הטיוטה חוזרת גם בגב הדף.",
+  "description_he": "טיוטה של מכתב שנכתב על ידי רבי אברהם בן הרמב\"ם או על ידי בנו דוד הראשון בן אברהם מימוני (כתבי היד שלהם כמעט זהים). העובדה שמשפט הפתיחה (גרץ תסטירהא וכו') זהה לזה של מכתב אחר מאוסף הגניזה (PGPID 7489) עשויה להטות את ההסתברות לטובת דוד ככותב. המכתב כנראה ממוען לרופא הידוע בכינוי אל-רשיד (\"אל-חצ'רה... אל-חכימיה אל-רשידיה...\"). הוא עוסק באל-שיח' אל-ת'קה הבה, אולי הבת[אללה בן אבו] אל-פרג'. הטיוטה חוזרת על עצמה גם בצד האחורי של הדף.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -37,7 +37,8 @@
     "יהודית-ערבית",
     "טיוטה",
     "רפואה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

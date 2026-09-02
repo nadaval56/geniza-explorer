@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1221",
   "description": "Letter from Yehuda Ibn al-ʿAmmānī, in Alexandria, to Eliyyahu the Judge, in Fustat. In Judaeo-Arabic. Dated: 23 Nisan 1532 Seleucid, which is 1221 CE. There is a lengthy opening with expressions of longing and pleasantries. The addressee is asked to convey a legal query (fatwā) to Avraham Maimonides. Yehuda reports on the death of Hilāl b. Thābit b. Munīr, the brother of the cantor Bū l-Majd (Meʾir b. Yakhin). “[Hilāl] went to rest in the evening and did not awake in the morning. It was the first day of the holiday, and he was buried on the same day; he left a fine boy of sixteen, who studies with me\" (trans. Goitein, Med Soc II, 220 and V, 155.) There are photostats and an edition in Goitein's notes (to be uploaded).",
-  "description_he": "מכתב מיהודה אבן אל-עמאני, אלכסנדריה, לשופט אליהו, פוסטאט; ביהודית-ערבית; 1221 לספירה; מעביר שאלה הלכתית לאברהם מימוני; מספר על מות הלאל בן ת'אבת, שהלך לישון ולא קם, ועל בנו בן ה-16",
+  "description_he": "מכתב מיהודה אבן אלעמאני באלכסנדריה אל אליהו הדיין בפוסטאט, בערבית-יהודית. מתוארך: כ\"ג בניסן 1532 לשטרות, היינו 1221 לספירה. המכתב נפתח בפתיחה ארוכה ובה ביטויי געגוע ודברי נימוסין. הכותב מבקש מהנמען להעביר שאלה הלכתית (פתווא) לרבי אברהם בן הרמב\"ם. יהודה מדווח על מות הילאל בן ת'אבת בן מניר, אחיו של החזן בו אלמג'ד (מאיר בן יכין). \"[הילאל] שכב לישון בערב ולא התעורר בבוקר. זה היה היום הראשון של החג, והוא נקבר באותו יום עצמו; הוא הותיר אחריו נער מצוין בן שש-עשרה, הלומד אצלי\" (בתרגום גויטיין). קיימים פוטוסטטים ומהדורה בעיזבונו של גויטיין (טרם הועלו).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -39,7 +39,8 @@
     "אלכסנדריה",
     "חזן",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

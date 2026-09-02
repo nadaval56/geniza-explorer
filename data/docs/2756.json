@@ -6,7 +6,7 @@
   "date_rationale": "Other (please specify)",
   "date_standard": "",
   "description": "Legal document (fragment) in which Qurra bt. Shelomo, as sole heiress of her father, asks to be given 20 dinars of the 35 he had deposited with a representative of the merchants, Sa'id b. Nahman, in Ramla, Palestine. The document is written in the hand of Yefet b. David (Goitein) or Efrayim b. Shemarya (Bareket; Rustow confirms). Dating: ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. (Information from Goitein, Mediterranean Society, III, p. 280; Bareket, Yehudei misrayim, p. 157, and Bareket, Shafrir misrayim, pp. 257-258.) On verso are pen-trials consisting of legal formulae. (Information from CUDL.) See also T-S 18J4.21.",
-  "description_he": "מסמך משפטי (קטע) שבו קורא בת שלמה, כיורשת יחידה של אביה, מבקשת לקבל 20 מתוך 35 הדינרים שהפקיד אצל סעיד ב' נחמן ברמלה, ארץ ישראל. תאריך: 1007–1055 לספירה בערך.",
+  "description_he": "מסמך משפטי (קטע) שבו קֻרּה בת שלמה, היורשת היחידה של אביה, מבקשת לקבל 20 דינרים מתוך 35 שאביה הפקיד אצל נציג הסוחרים, סעיד בן נחמן, ברמלה שבארץ ישראל. המסמך כתוב בכתב ידו של יפת בן דוד (לפי גויטיין) או של רבי אפרים בן שמריה (לפי ברקת; רוסטוב מאשרת). התיארוך: בערך 1007–1055 לספירה, על פי שנות פעילותו של רבי אפרים בן שמריה. בצד האחורי ניסיונות קולמוס הכוללים נוסחאות משפטיות. ראו גם מסמך משלים נוסף.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-VII-00089-00004"
@@ -39,7 +39,7 @@
     "עברית",
     "מסחר",
     "רמלה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Top portion of a court record from the court of Avraham Maimonides (r. 1205-1237), who held the title Nagid after 1213 CE, specifically (l. 4). Witnessed on Tuesday the 16th of the month of Adar in Fustat. On Avraham Maimonides, see S. D. Goitein, Mediterranean Society, 2: 39-40 and 5:476-77; on cases brought before his court see Mediterranean Society, 1:88, 255, 366, 491; 2:397; 3:72.",
-  "description_he": "חלק עליון של רשומת בית דין מבית דינו של אברהם מימונידס, מ-1205-1237, יום שלישי 16 אדר",
+  "description_he": "חלקו העליון של פרוטוקול בית דין מבית דינו של רבי אברהם בן הרמב\"ם (כיהן בשנים 1205–1237), שנשא את התואר \"נגיד\" לאחר שנת 1213 לספירה, כפי שמצוין במפורש בשורה 4. המסמך נחתם על ידי עדים ביום שלישי, ט\"ז באדר, בפוסטאט. רבי אברהם בן הרמב\"ם ידוע כדמות מרכזית בקהילה היהודית במצרים בתחילת המאה השלוש-עשרה, ובית דינו דן בשלל סוגיות הלכתיות, מסחריות וקהילתיות שעלו בפניו.",
   "destination": "",
   "fragment_urls": [
     "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22A+636%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"
@@ -39,7 +39,8 @@
     "פרוטוקול בית דין",
     "מסחר",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1205/1237",
   "description": "Marriage contract (ketubba). The marriage gift at the conclusion of this marriage contract is five dinars and the payment required at the termination of the marriage is 30 dinars. Dated between 1205 and 1237, the period of Avraham Maimonides' tenure as head of the Jews. (Information from Goitein, Mediterranean Society, III, 400.) NB: In Letters from Medieval Jewish Traders, Goitein mistakenly cites this shelfmark for the document T-S 12.114, which is a letter from a merchant from southern Italy.",
-  "description_he": "חוזה נישואין (כתובה). מוהר 5 דינרים ותוספת 30 דינרים. מתוארך 1205–1237, תקופת כהונת אברהם מיימון כראש היהודים.",
+  "description_he": "כתובה. מתנת הנישואין בסוף שטר הכתובה היא חמישה דינרים, והתשלום הנדרש עם סיום הנישואין הוא 30 דינרים. השטר מתוארך לשנים שבין 1205 ל-1237, התקופה שבה כיהן רבי אברהם בן הרמב\"ם כראש היהודים (לפי גויטיין). יש לציין: בספרו \"Letters from Medieval Jewish Traders\" ציין גויטיין בטעות את מספר השמורה הזה עבור מסמך אחר, שהוא למעשה מכתב מסוחר מדרום איטליה.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00144"
@@ -41,7 +41,8 @@
     "כתובה",
     "מסחר",
     "נישואין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

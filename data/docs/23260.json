@@ -1,1 +1,43 @@
-{"id":"23260","shelfmark":"T-S Misc.10.155","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic, Hebrew, Judaeo-Arabic","lang_he":"Aramaic, Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1220-05","date_original":"24 Sivan 1531","date_standard":"1220-05","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal document dated 1220 CE (24 Sivan 1531) under the reshut of Avraham Maimonides. The handwriting is very rudimentary; needs further examination for content.","tags":["13th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/23260/","mentioned":"","description_he":"מסמך משפטי מתוארך 1220 לספירה (24 סיוון 1531) בתוקף רשות אברהם מיימוניד. כתב היד גולמי מאוד; דרוש בדיקה נוספת לבירור התוכן.","tags_he":["מסמך משפטי"],"prev":"23258","next":"23261","pos":24818,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1220-05",
+  "date_inferred": "",
+  "date_original": "24 Sivan 1531",
+  "date_rationale": "",
+  "date_standard": "1220-05",
+  "description": "Legal document dated 1220 CE (24 Sivan 1531) under the reshut of Avraham Maimonides. The handwriting is very rudimentary; needs further examination for content.",
+  "description_he": "מסמך משפטי מתוארך 1220 לספירה (24 סיוון 1531) בתוקף רשות רבי אברהם בן הרמב\"ם. כתב היד גולמי מאוד; דרוש בדיקה נוספת לבירור התוכן.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "23260",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Hebrew, Judaeo-Arabic",
+  "lang_he": "Aramaic, Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "23261",
+  "origin": "",
+  "pos": 24818,
+  "prev": "23258",
+  "princeton_url": "https://geniza.princeton.edu/documents/23260/",
+  "region": "",
+  "shelfmark": "T-S Misc.10.155",
+  "tags": [
+    "13th c"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

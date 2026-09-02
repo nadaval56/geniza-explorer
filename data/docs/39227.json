@@ -1,1 +1,45 @@
-{"id":"39227","shelfmark":"ENA NS 7.28","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso: legal document in Arabic script. Fragment (left side). Does not seem to be the Arabic script hand of Efrayim b. Shemarya, which we know from other fragments. Like recto, consists of a testimony regarding something that happened on a Sunday; unclear if or how the two sides are related. Halfway down refers to [...] b. Hillel (بن هليل), but this is crossed out.","tags":["Efrayim b. Shemarya"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/72e3e7a9-27e8-418a-bddb-afc120f01cee/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/39227/","mentioned":"","description_he":"ורסו: מסמך משפטי בכתב ערבי. שבר (צד שמאל). אינו נראה ככתב ידו הערבי של אפרים בן שמריה. כמו ברקטו, מורכב מעדות על משהו שקרה ביום ראשון; לא ברור אם או כיצד שני הצדדים קשורים.","tags_he":["מסמך משפטי","ערבית","אפרים בן שמריה"],"prev":"39224","next":"39228","pos":19861,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: legal document in Arabic script. Fragment (left side). Does not seem to be the Arabic script hand of Efrayim b. Shemarya, which we know from other fragments. Like recto, consists of a testimony regarding something that happened on a Sunday; unclear if or how the two sides are related. Halfway down refers to [...] b. Hillel (بن هليل), but this is crossed out.",
+  "description_he": "ורסו: מסמך משפטי בכתב ערבי. שבר (צד שמאל). אינו נראה ככתב ידו הערבי של רבי אפרים בן שמריה. כמו ברקטו, מורכב מעדות על משהו שקרה ביום ראשון; לא ברור אם או כיצד שני הצדדים קשורים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "39227",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/72e3e7a9-27e8-418a-bddb-afc120f01cee/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "39228",
+  "origin": "",
+  "pos": 19861,
+  "prev": "39224",
+  "princeton_url": "https://geniza.princeton.edu/documents/39227/",
+  "region": "",
+  "shelfmark": "ENA NS 7.28",
+  "tags": [
+    "Efrayim b. Shemarya"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ערבית",
+    "רבי אפרים בן שמריה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

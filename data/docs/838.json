@@ -1,1 +1,42 @@
-{"id":"838","shelfmark":"F 1908.44E","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"Freer","library_raw":"Freer","collection":"Freer","description":"Letter from Shelomo b. Yehuda to Yaʿaqov Ha-Meʿuttad b. Yosef. Dating: probably end of 1015. The content emphasizes the need of communal leaders and includes biblical citations from Ezra 7.28, Ezekiel 10.11, and Proverbs 16.20.","tags":["communal"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/838/","mentioned":"","description_he":"מכתב משלמה בן יהודה ליעקב המעותד בן יוסף, כנראה סוף 1015.","tags_he":["מכתב","עברית"],"prev":"837","next":"839","pos":20564,"total":35937}
+{
+  "collection": "Freer",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Shelomo b. Yehuda to Yaʿaqov Ha-Meʿuttad b. Yosef. Dating: probably end of 1015. The content emphasizes the need of communal leaders and includes biblical citations from Ezra 7.28, Ezekiel 10.11, and Proverbs 16.20.",
+  "description_he": "מכתב מאת רב שלמה בן יהודה אל יעקב המעותד בן יוסף. התיארוך: ככל הנראה סוף שנת 1015. תוכן המכתב מדגיש את הצורך במנהיגי ציבור, וכולל ציטוטים מן המקרא מתוך עזרא ז, כח; יחזקאל י, יא; ומשלי טז, כ.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "838",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "Freer",
+  "library_raw": "Freer",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "839",
+  "origin": "",
+  "pos": 20564,
+  "prev": "837",
+  "princeton_url": "https://geniza.princeton.edu/documents/838/",
+  "region": "",
+  "shelfmark": "F 1908.44E",
+  "tags": [
+    "communal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

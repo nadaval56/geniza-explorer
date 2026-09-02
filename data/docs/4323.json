@@ -1,1 +1,42 @@
-{"id":"4323","shelfmark":"T-S NS J351","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: Legal document dated 1089–1188 CE, describing a son whose father, before traveling to Yemen, had given him, as ẓedaqa, two houses. The father then gives this on his death-bed to his wife (the son's mother) and declares that everything in and outside the house either belongs to or is given to her. He frees her from all oaths. (Information from Goitein's index card). VMR","tags":["Yemen, 11th or 12th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/4323/","mentioned":"","description_he":"מסמך משפטי, 1089-1188 לספירה. מתאר בן שאביו, לפני נסיעה לתימן, נתן לו כצדקה שני בתים. האב מוסר על ערש דווי לאשתו את כל מה שבתוך הבית ומחוצה לו ומשחרר אותה מכל שבועות.","tags_he":["מסמך משפטי","צדקה"],"prev":"4316","next":"4324","pos":20854,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: Legal document dated 1089–1188 CE, describing a son whose father, before traveling to Yemen, had given him, as ẓedaqa, two houses. The father then gives this on his death-bed to his wife (the son's mother) and declares that everything in and outside the house either belongs to or is given to her. He frees her from all oaths. (Information from Goitein's index card). VMR",
+  "description_he": "צד הפנים (recto): מסמך משפטי המתוארך לשנים 1089–1188 לספירה, ובו מתואר בן שאביו, לפני נסיעתו לתימן, נתן לו במתנת צדקה שני בתים. בהמשך, על ערש דווי, מעביר האב את הרכוש לאשתו (אמו של הבן) ומצהיר כי כל מה שבתוך הבית ומחוצה לו שייך לה או ניתן לה במתנה. כמו כן הוא פוטר אותה מכל השבועות. המידע מבוסס על כרטיסיית האינדקס של גויטיין.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4323",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "4324",
+  "origin": "",
+  "pos": 20854,
+  "prev": "4316",
+  "princeton_url": "https://geniza.princeton.edu/documents/4323/",
+  "region": "",
+  "shelfmark": "T-S NS J351",
+  "tags": [
+    "Yemen, 11th or 12th c"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "צדקה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

@@ -1,1 +1,42 @@
-{"id":"2254","shelfmark":"CUL Or.1080 J108","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Fragment of a letter from Shelomo b. Yehuda in a time of distress, approximately 1030.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-OR-01080-J-00108"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/2254/","mentioned":"Jerusalem","description_he":"שבר ממכתב שלמה בן יהודה בעת צרה, כ-1030.","tags_he":["מכתב","עברית"],"prev":"2253","next":"2256","pos":1477,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a letter from Shelomo b. Yehuda in a time of distress, approximately 1030.",
+  "description_he": "שבר ממכתב רב שלמה בן יהודה בעת צרה, כ-1030.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2254",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-OR-01080-J-00108"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Jerusalem",
+  "multifragment": "",
+  "next": "2256",
+  "origin": "",
+  "pos": 1477,
+  "prev": "2253",
+  "princeton_url": "https://geniza.princeton.edu/documents/2254/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J108",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

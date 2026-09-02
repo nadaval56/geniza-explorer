@@ -1,1 +1,43 @@
-{"id":"21105","shelfmark":"T-S Ar.42.143","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso (original use): Petition in Arabic script. Somewhat rudimentary hand. Possibly to the caliph himself (al-ḥaḍra al-ṭāhira). The sender desires to be sent to Syria to fight (raghiba al-jihād) with the victorious army (...wa-yatajarrad ilā al-Shām fī jumlat al-ʿaskar al-manṣūr wa-yabdhul majhūdahu fī al-khidma al-sharīfa...). The addressee is asked to issue an order to the Kātib al-Jaysh ordering his deployment (tajrīd).\n\nRecto (secondary use): Informal note in Arabic script confirming the granting of a gift without any conditions.","tags":["jihad, Petition, army"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/21105/","mentioned":"al-Shām","description_he":"ורסו (שימוש מקורי): עצומה בכתב ערבי. כנראה לח'ליף עצמו. השולח מבקש לנסוע לסוריה ללחום בג'יהאד עם הצבא המנצח. מבקש צו לכאתב אל-ג'ייש. רקטו (שימוש משני): פתק בלתי רשמי המאשר מתן מתנה ללא תנאים.","tags_he":["מסמך מדינה","ערבית","עצומה"],"prev":"21102","next":"21106","pos":23405,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso (original use): Petition in Arabic script. Somewhat rudimentary hand. Possibly to the caliph himself (al-ḥaḍra al-ṭāhira). The sender desires to be sent to Syria to fight (raghiba al-jihād) with the victorious army (...wa-yatajarrad ilā al-Shām fī jumlat al-ʿaskar al-manṣūr wa-yabdhul majhūdahu fī al-khidma al-sharīfa...). The addressee is asked to issue an order to the Kātib al-Jaysh ordering his deployment (tajrīd).\n\nRecto (secondary use): Informal note in Arabic script confirming the granting of a gift without any conditions.",
+  "description_he": "ורסו (השימוש המקורי): עצומה בכתב ערבי, בכתב יד מגושם משהו. ייתכן שהיא מופנית לח'ליפה עצמו (אלחצ'רה אלטאהרה). השולח מבקש להישלח לסוריה כדי להילחם (רע'בה אלג'האד) בשורות הצבא המנצח, ולהקדיש את מאמציו לשירות הנשגב (...ויתג'רד אלא אלשאם פי ג'מלת אלעסכר אלמנצור ויבד'ל מג'הודה פי אלח'דמה אלשריפה...). הנמען מתבקש להוציא צו לכאתב אלג'יש (מזכיר הצבא) שיורה על גיוסו ושיגורו (תג'ריד).\n\nרקטו (השימוש המשני): פתק בלתי-פורמלי בכתב ערבי המאשר הענקת מתנה ללא כל תנאים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "21105",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "al-Shām",
+  "multifragment": "",
+  "next": "21106",
+  "origin": "",
+  "pos": 23405,
+  "prev": "21102",
+  "princeton_url": "https://geniza.princeton.edu/documents/21105/",
+  "region": "",
+  "shelfmark": "T-S Ar.42.143",
+  "tags": [
+    "jihad, Petition, army"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

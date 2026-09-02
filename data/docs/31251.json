@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Piyyut by Gamliel b. Moshe on the occasion of Avraham Maimonides's recovery from illness. Goitein: \"As was customary at such banquets, poems in honor of the event were recited. We have one in the Geniza written on the occasion of the recovery of Abraham Maimonides from a grave illness (the Geniza contains several references to his poor health). The poem is jubilant, and praises, of course, also Abraham's illustrious late father, other ancestors, his two sons (who must have been mere boys at that time), and the happy community, for which he had been spared\" Med Soc V, 111.",
-  "description_he": "פיוט מאת גמליאל בן משה לרגל החלמתו של אברהם מימוניד ממחלה. גויטיין: 'כמנהג בסעודות כאלה, הוקראו שירים לכבוד האירוע. שיר זה בגניזה נכתב לרגל החלמתו של אברהם מימוניד ממחלה קשה. השיר חגיגי ומשבח גם את אביו המפורסם המנוח, אבות אחרים, שני בניו, ואת הקהילה הנורמלית.'",
+  "description_he": "פיוט מאת גמליאל בן משה לרגל החלמתו של רבי אברהם בן הרמב\"ם ממחלה. לפי גויטיין, הנוהג היה שבמשתאות מעין אלה היו מקריאים שירים לכבוד האירוע, ובידינו פיוט מן הגניזה שחובר לציון החלמתו של אברהם מימוני ממחלה קשה (בגניזה ישנן התייחסויות אחדות למצב בריאותו הרעוע). הפיוט שמח וצוהל, ומשבח כמובן גם את אביו הדגול המנוח של אברהם, אבות אחרים במשפחתו, את שני בניו (שבאותה עת היו ודאי עוד נערים צעירים), ואת הקהילה המאושרת שלמענה ניצל.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-00108-00050/1"
@@ -40,7 +40,8 @@
     "עברית",
     "פיוט",
     "שירה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Literary text",

@@ -1,1 +1,49 @@
-{"id":"9509","shelfmark":"T-S 8J22.18","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Alexandria to the family of Yeshuʿa b. Sahl in Fusṭāṭ. (Yeshuʿa b. Sahl might actually be the sender.) Mentions: \"the wheat.... If you saw your sister, you would not recognize her... from the female slave, she threatens her with the judge (al-qāḍī) and the barracks (al-ḥujra)... three times, and her heart is not at peace... the thing which you said you sent with Fuḍayl has not arrived... do not deprive us of the maintenance (al-mawna)....\" May mention legal actions. Umm ʿImrān sends greetings. (Information in part from CUDL.)","tags":["slave, hujra"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00022-00018"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00022-00018"],"princeton_url":"https://geniza.princeton.edu/documents/9509/","mentioned":"","description_he":"מכתב מאלכסנדריה למשפחת ישועה בן סהל בפוסטאט; מזכיר חיטה, מצב האחות (שאינה מוכרת), שפחה שמאיימת בשופט ובקסרקטין; מצב המזונות","tags_he":["מכתב","יהודית-ערבית","פוסטאט","אלכסנדריה","חיטה"],"prev":"9508","next":"9510","pos":6134,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Alexandria to the family of Yeshuʿa b. Sahl in Fusṭāṭ. (Yeshuʿa b. Sahl might actually be the sender.) Mentions: \"the wheat.... If you saw your sister, you would not recognize her... from the female slave, she threatens her with the judge (al-qāḍī) and the barracks (al-ḥujra)... three times, and her heart is not at peace... the thing which you said you sent with Fuḍayl has not arrived... do not deprive us of the maintenance (al-mawna)....\" May mention legal actions. Umm ʿImrān sends greetings. (Information in part from CUDL.)",
+  "description_he": "מכתב מאלכסנדריה אל בני משפחתו של ישועה בן סהל בפוסטאט. ייתכן שישועה בן סהל הוא דווקא השולח עצמו. בין הדברים המוזכרים במכתב: \"החיטה.... לו ראית את אחותך, לא היית מזהה אותה... מן השפחה, היא מאיימת עליה בקאדי (al-qāḍī) ובמגורי החיילים (al-ḥujra)... שלוש פעמים, ולבה אינו שקט... הדבר שאמרת ששלחת עם פֻצַ'יל לא הגיע... אל תקפחו ממנו את המזונות (al-mawna)....\" ייתכן שיש בו אזכור של הליכים משפטיים. אֻם עִמראן שולחת ברכות שלום.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00022-00018"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9509",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00022-00018"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9510",
+  "origin": "",
+  "pos": 6134,
+  "prev": "9508",
+  "princeton_url": "https://geniza.princeton.edu/documents/9509/",
+  "region": "",
+  "shelfmark": "T-S 8J22.18",
+  "tags": [
+    "slave, hujra"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "אלכסנדריה",
+    "חיטה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

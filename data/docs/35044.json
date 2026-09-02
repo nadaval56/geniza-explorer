@@ -1,1 +1,44 @@
-{"id":"35044","shelfmark":"ENA 3235.1 + ENA 3235.2","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים · בית המדרש לרבנים","library_raw":"JTS ; JTS","collection":"JTS ; JTS","description":"Calendar manual with distinctive Palestinian calendar traditions, such as the rule of 641–642. Defers to Babylonian calendar rules, in a way that is inconsistent and calendrically impossible. The outcome is a flawed manual that could never have been used.\n\nThis text confirms that Palestinian calendar rules were preserved for well over a century after the controversy of 921/2. It also provides us, for the first time ever, with explicit evidence of a different version of the Four Gates, based on the month of Nisan.\n\nThe manuscript can be dated by its script to the late eleventh or early twelfth centuries.93 The text begins on the first folio, and appears to finish at the bottom of the second; thus the manual appears to be preserved completely.","tags":["manual, calendar controversy"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/5e7ca09f-5d67-42ec-b76b-d1f2cad09083/manifest","https://figgy.princeton.edu/concern/scanned_resources/6a4e2d89-b047-4337-8d6e-5f839c1ae13b/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/35044/","mentioned":"","description_he":"מדריך לוח עם מסורות לוח ארץ ישראליות כולל כלל 641-642. אחר כך נכנע לכללי לוח בבלי בדרך שאינה עקבית ובלתי אפשרית קלנדרית. מדריך פגום שלא היה ניתן לשימוש, אך מאשש את שימור כללי הלוח הארץ ישראלי למעלה ממאה שנה לאחר הפולמוס.","tags_he":["עברית"],"prev":"35043","next":"35046","pos":18896,"total":35937}
+{
+  "collection": "JTS ; JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Calendar manual with distinctive Palestinian calendar traditions, such as the rule of 641–642. Defers to Babylonian calendar rules, in a way that is inconsistent and calendrically impossible. The outcome is a flawed manual that could never have been used.\n\nThis text confirms that Palestinian calendar rules were preserved for well over a century after the controversy of 921/2. It also provides us, for the first time ever, with explicit evidence of a different version of the Four Gates, based on the month of Nisan.\n\nThe manuscript can be dated by its script to the late eleventh or early twelfth centuries.93 The text begins on the first folio, and appears to finish at the bottom of the second; thus the manual appears to be preserved completely.",
+  "description_he": "מדריך לחישובי לוח השנה ובו מסורות לוח ארץ-ישראליות ייחודיות, ובהן כלל 641–642. החיבור נסמך על כללי הלוח הבבלי, אך באופן בלתי עקבי ובלתי אפשרי מבחינה לוחית. התוצאה היא מדריך פגום שלא היה יכול לשמש בפועל.\n\nהטקסט מאשש כי כללי הלוח הארץ-ישראלי השתמרו במשך למעלה ממאה שנים לאחר המחלוקת של 921/2. כמו כן, הוא מספק לראשונה אי-פעם עדות מפורשת לגרסה שונה של \"ארבעת השערים\", המבוססת על חודש ניסן.\n\nניתן לתארך את כתב היד על פי הכתב לסוף המאה האחת-עשרה או לראשית המאה השתים-עשרה. הטקסט מתחיל בעמוד הראשון ונראה כי הוא מסתיים בתחתית העמוד השני, כך שהמדריך כנראה השתמר במלואו.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35044",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/5e7ca09f-5d67-42ec-b76b-d1f2cad09083/manifest",
+    "https://figgy.princeton.edu/concern/scanned_resources/6a4e2d89-b047-4337-8d6e-5f839c1ae13b/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים · בית המדרש לרבנים",
+  "library_raw": "JTS ; JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35046",
+  "origin": "",
+  "pos": 18896,
+  "prev": "35043",
+  "princeton_url": "https://geniza.princeton.edu/documents/35044/",
+  "region": "",
+  "shelfmark": "ENA 3235.1 + ENA 3235.2",
+  "tags": [
+    "manual, calendar controversy"
+  ],
+  "tags_he": [
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

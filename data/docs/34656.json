@@ -1,1 +1,41 @@
-{"id":"34656","shelfmark":"MIAC 74","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ENL","library_raw":"ENL","collection":"ENL, ENL 'New Geniza' Catalogue","description":"Prayers and blessings on the occasion of Rosh ha-Shanah – undated – Museum of Islamic Art – (number 74) – in Hebrew. (information from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 35). MCD.","tags":["Rosh Hashanah, prayer"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34656/","mentioned":"","description_he":"תפילות וברכות לרגל ראש השנה - ללא תאריך - מוזיאון האמנות האסלאמית (מספר 74). בעברית.","tags_he":["עברית"],"prev":"34655","next":"34657","pos":30913,"total":35937}
+{
+  "collection": "ENL, ENL 'New Geniza' Catalogue",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Prayers and blessings on the occasion of Rosh ha-Shanah – undated – Museum of Islamic Art – (number 74) – in Hebrew. (information from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 35). MCD.",
+  "description_he": "תפילות וברכות לרגל ראש השנה. ללא תאריך. כתוב בעברית.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34656",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ENL",
+  "library_raw": "ENL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34657",
+  "origin": "",
+  "pos": 30913,
+  "prev": "34655",
+  "princeton_url": "https://geniza.princeton.edu/documents/34656/",
+  "region": "",
+  "shelfmark": "MIAC 74",
+  "tags": [
+    "Rosh Hashanah, prayer"
+  ],
+  "tags_he": [
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

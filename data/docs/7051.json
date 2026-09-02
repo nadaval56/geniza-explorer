@@ -1,1 +1,45 @@
-{"id":"7051","shelfmark":"T-S 8.30","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter fragment in the hand of Peraḥya b. Yosef Yiju addressed to Avraham b. Aharon ha-Kohen, with greetings to sons Abū ʿAlī and Abū l-Surūr. Mentions: being insulted; a dispute involving 30 dinars and a plan to write a letter to the Rayyis; \"he said to Abū Naṣr and Abū l-Faraj, that he only wished to obtain the signatures and send them to the Rayyis, because you are ordering (good) and forbidding (bad) . . .\"; a government official (ḥājib) named ʿIzz al-Mulk; and \"Rabbenu Sayyidnā Moshe\" (probably Maimonides). The address includes a blessing for whoever delivers it (מוצלה ברוך יהיה) and a curse for whoever diverts it from its addressee (מצייעה ארור יהיה). (Information in part from Goitein's index card and CUDL.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00030"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00030"],"princeton_url":"https://geniza.princeton.edu/documents/7051/","mentioned":"","description_he":"שבר מכתב בכתב יד פרחיה ב. יוסף יג'ו המופנה לאברהם ב. אהרון הכהן. מזכיר עלבון, מחלוקת על 30 דינרים, פקיד ממשל בשם עז אל-מולק, ו'רבנו סיידנא משה' (כנראה הרמב\"ם)","tags_he":["מכתב","יהודית-ערבית","מיימוניד"],"prev":"7050","next":"7052","pos":4594,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter fragment in the hand of Peraḥya b. Yosef Yiju addressed to Avraham b. Aharon ha-Kohen, with greetings to sons Abū ʿAlī and Abū l-Surūr. Mentions: being insulted; a dispute involving 30 dinars and a plan to write a letter to the Rayyis; \"he said to Abū Naṣr and Abū l-Faraj, that he only wished to obtain the signatures and send them to the Rayyis, because you are ordering (good) and forbidding (bad) . . .\"; a government official (ḥājib) named ʿIzz al-Mulk; and \"Rabbenu Sayyidnā Moshe\" (probably Maimonides). The address includes a blessing for whoever delivers it (מוצלה ברוך יהיה) and a curse for whoever diverts it from its addressee (מצייעה ארור יהיה). (Information in part from Goitein's index card and CUDL.)",
+  "description_he": "קטע ממכתב בכתב ידו של פרחיה בן יוסף יג'ו, הממוען לאברהם בן אהרן הכהן, ובו דרישות שלום לבנים אבו עלי ואבו אל-סרור. במכתב מוזכרים: עלבון שספג הכותב; סכסוך הכרוך בסכום של שלושים דינרים ותכנית לכתוב מכתב אל הראיֵס; \"הוא אמר לאבו נצר ולאבו אל-פרג', שכל רצונו היה להשיג את החתימות ולשולחן אל הראיֵס, מפני שאתם מצווים על הטוב ואוסרים את הרע...\"; פקיד ממשלתי (חאג'יב) בשם עז אל-מלכ; ו\"רבנו סיידנא משה\" (כנראה הרמב\"ם). על הכתובת מופיעה ברכה למי שיביא את המכתב ליעדו (\"מוצלה ברוך יהיה\") וקללה למי שיסיט אותו מנמענו (\"מצייעה ארור יהיה\").",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00030"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7051",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00030"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7052",
+  "origin": "",
+  "pos": 4594,
+  "prev": "7050",
+  "princeton_url": "https://geniza.princeton.edu/documents/7051/",
+  "region": "",
+  "shelfmark": "T-S 8.30",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "רמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

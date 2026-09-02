@@ -1,1 +1,41 @@
-{"id":"8400","shelfmark":"T-S Ar.29.82","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1082-06-18","date_original":"18 Muḥarram 475","date_standard":"1082-06-18","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Anniversary horoscope. The native was born on 17 June 1066 CE, and the anniversary occurred on 17 June 1082. Cites \"the method of the Sind Hind\" probably referring to the 9th century work Zīj al-Sindhind by al-Khwārizmī. (Information from Goldstein and Pingree, \"Horoscopes from the Cairo Geniza,\" JNES 1977.)","tags":["Horoscope"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8400/","mentioned":"","description_he":"הורוסקופ שנתי. הנולד נולד ב-17 ביוני 1066 לספירה; השנה הנחשבת היא 17 ביוני 1082; מצטט את שיטת הסינד הינד של אל-חוארזמי","tags_he":["יהודית-ערבית"],"prev":"8396","next":"8403","pos":21398,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1082-06-18",
+  "date_inferred": "",
+  "date_original": "18 Muḥarram 475",
+  "date_rationale": "",
+  "date_standard": "1082-06-18",
+  "description": "Anniversary horoscope. The native was born on 17 June 1066 CE, and the anniversary occurred on 17 June 1082. Cites \"the method of the Sind Hind\" probably referring to the 9th century work Zīj al-Sindhind by al-Khwārizmī. (Information from Goldstein and Pingree, \"Horoscopes from the Cairo Geniza,\" JNES 1977.)",
+  "description_he": "הורוסקופ יום-הולדת. בעל ההורוסקופ נולד ב-17 ביוני 1066, ויום ההולדת שבו עוסק החישוב חל ב-17 ביוני 1082. המסמך מצטט את \"שיטת הסינד הינד\", ככל הנראה התייחסות לחיבור מן המאה התשיעית \"זיג' אל-סינדהינד\" של אל-ח'ואריזמי.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8400",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8403",
+  "origin": "",
+  "pos": 21398,
+  "prev": "8396",
+  "princeton_url": "https://geniza.princeton.edu/documents/8400/",
+  "region": "",
+  "shelfmark": "T-S Ar.29.82",
+  "tags": [
+    "Horoscope"
+  ],
+  "tags_he": [
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

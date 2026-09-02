@@ -1,1 +1,41 @@
-{"id":"32439","shelfmark":"JRL Gaster heb. ms 2110b/17","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1833","date_original":"","date_standard":"1833","date_inferred":"","date_rationale":"","library":"JRL","library_raw":"JRL","collection":"JRL","description":"Bifolium from Kitāb Tawārīkh Mukhtaṣar Yunabbi'u ʿan Mamālik wa-Bilād ʿAdīda. Printed in Malta by the Church Missionary Society in 1833 CE. The faces of the people in the frontispiece have been scratched out. On the background of Arabic printing in Malta and the Church Missionary Society, see Geoffrey J. Roper, \"Arabic Printing in Malta 1825–45\" (PhD Diss, University of Durham, 1988). Scans of the full book may be readily found online, e.g., https://archive.org/details/1164pdf2228/page/n137/mode/2up.","tags":["printed, Malta, Arabic literary"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/32439/","mentioned":"Malta","description_he":"ביפוליום מ'כתאב תואריח מח'תצר יונבא ען ממאלך ובלאד עדידה'. נדפס במלטה על ידי החברה המיסיונרית הכנסייתית בשנת 1833 לספירה. פניהם של האנשים בדף השער גורדו. כנראה אינו מהגניזה.","tags_he":["ערבית"],"prev":"32438","next":"32441","pos":30158,"total":35937}
+{
+  "collection": "JRL",
+  "date": "1833",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "1833",
+  "description": "Bifolium from Kitāb Tawārīkh Mukhtaṣar Yunabbi'u ʿan Mamālik wa-Bilād ʿAdīda. Printed in Malta by the Church Missionary Society in 1833 CE. The faces of the people in the frontispiece have been scratched out. On the background of Arabic printing in Malta and the Church Missionary Society, see Geoffrey J. Roper, \"Arabic Printing in Malta 1825–45\" (PhD Diss, University of Durham, 1988). Scans of the full book may be readily found online, e.g., https://archive.org/details/1164pdf2228/page/n137/mode/2up.",
+  "description_he": "דו-עלה מתוך הספר \"כתאב תואריך' מח'תצר ינבי' ען ממאלך ובלאד עדידה\" — חיבור היסטורי מקוצר על ממלכות וארצות שונות. הספר נדפס במלטה בשנת 1833 על ידי אגודת המיסיון הכנסייתית (Church Missionary Society). פניהם של האנשים המופיעים באיור הפתיחה (frontispiece) נמחקו בגירוד. לרקע על הדפוס הערבי במלטה ועל פעילות אגודת המיסיון הכנסייתית, ראו את עבודת הדוקטורט של ג'פרי ג'יי. רופר, \"Arabic Printing in Malta 1825–45\" (אוניברסיטת דרהם, 1988). סריקות של הספר השלם זמינות באינטרנט, למשל בכתובת https://archive.org/details/1164pdf2228/page/n137/mode/2up.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "32439",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "JRL",
+  "library_raw": "JRL",
+  "mentioned": "Malta",
+  "multifragment": "",
+  "next": "32441",
+  "origin": "",
+  "pos": 30158,
+  "prev": "32438",
+  "princeton_url": "https://geniza.princeton.edu/documents/32439/",
+  "region": "",
+  "shelfmark": "JRL Gaster heb. ms 2110b/17",
+  "tags": [
+    "printed, Malta, Arabic literary"
+  ],
+  "tags_he": [
+    "ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

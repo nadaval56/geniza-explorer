@@ -1,1 +1,46 @@
-{"id":"38795","shelfmark":"T-S AS 151.48","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Petition/letter of appeal for assistance likely addressed to 'the overseer' (al-mushārif, l. 1). The sender refers to this document as \"this khidma.\" The sender is in difficult straits, cannot work, and is afraid of showing his face. Ends with a raʾy clause. On verso there are a few words in Arabic, maybe related, ending with an \"in shāʾ allāh.\"Some of the legible phrases: المشارف بان . . . السنة الماضية وما احرجني الى هذه الخدمة الا . . . . والمملوك منعاق عن التصرف خائف ما يقدر يظهر وللمولى علو الراي في ذلك . . . Reused for Hebrew piyyuṭ. (Information in part from CUDL.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-AS-00151-00048"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00151-00048/1"],"princeton_url":"https://geniza.princeton.edu/documents/38795/","mentioned":"","description_he":"עצומה/מכתב ערעור לסיוע המופנה כנראה ל'הממונה' (אל-משארף, ש' 1). השולח מכנה מסמך זה 'ח'דמה זו'. השולח במצוקה, אינו יכול לעבוד ומפחד להראות פניו. מסתיים בסעיף ראיי. בורסו יש כמה מילים בערבית, אולי קשורות, המסתיימות ב'אן שאא אללה'. שומש מחדש לפיוט עברי. (מידע בחלקו מ-CUDL.)","tags_he":["מסמך מדינה","ערבית","פיוט","עצומה"],"prev":"38794","next":"38796","pos":19617,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Petition/letter of appeal for assistance likely addressed to 'the overseer' (al-mushārif, l. 1). The sender refers to this document as \"this khidma.\" The sender is in difficult straits, cannot work, and is afraid of showing his face. Ends with a raʾy clause. On verso there are a few words in Arabic, maybe related, ending with an \"in shāʾ allāh.\"Some of the legible phrases: المشارف بان . . . السنة الماضية وما احرجني الى هذه الخدمة الا . . . . والمملوك منعاق عن التصرف خائف ما يقدر يظهر وللمولى علو الراي في ذلك . . . Reused for Hebrew piyyuṭ. (Information in part from CUDL.)",
+  "description_he": "עצומה או מכתב בקשה לסיוע, ככל הנראה ממוען ל\"אלמשארף\" (al-mushārif, המפקח, שורה 1). השולח מתייחס למסמך עצמו במילים \"ההד'ה אלכ'דמה\" (\"שירות זה\"). הוא מצוי במצוקה קשה, אינו מסוגל לעבוד וחושש להראות את פניו ברבים. המכתב מסתיים בנוסחת ראי (raʾy) המשאירה את ההכרעה בידי הנמען. בצד ב' מופיעות מספר מילים בערבית, אולי קשורות לתוכן הפנים, המסתיימות בביטוי \"אן שאא אללה\". בין הקטעים הקריאים: \"אלמשארף באן... אלסנה אלמאצ'יה ומא אחרג'ני אלי הד'ה אלכ'דמה אלא... ואלממלוך מנעאק ען אלתצרף כ'אאף מא יקדר יט'הר וללמולא עלו אלראי פי ד'לך...\". הדף עוּבּד מחדש לשימוש משני לכתיבת פיוט עברי. (חלק מן המידע מבוסס על CUDL.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00151-00048/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "38795",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-AS-00151-00048"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "38796",
+  "origin": "",
+  "pos": 19617,
+  "prev": "38794",
+  "princeton_url": "https://geniza.princeton.edu/documents/38795/",
+  "region": "",
+  "shelfmark": "T-S AS 151.48",
+  "tags": [],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "פיוט",
+    "עצומה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

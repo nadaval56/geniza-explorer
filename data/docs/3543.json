@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter sent from Alexandria, in which the writer, Avraham b. Elazar the doctor, reports about the arrival of a ship from Marseilles, containing queries from a distant country to Maimonides (l. 28r), and complains about a new imposition by the Sultan and the general poverty of the local community. Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. (Information from Mediterranean Society, I, p. 301 and from Goitein's index cards)",
-  "description_he": "מכתב שנשלח מאלכסנדריה. הכותב אברהם ב' אלעזר הרופא מדווח על הגעת אנייה ממרסיי המכילה שאלות ממדינה רחוקה למיימוני ומתלונן על מס חדש שהטיל הסולטאן. כ-1168-1204.",
+  "description_he": "מכתב שנשלח מאלכסנדריה, שבו הכותב, אברהם בן אלעזר הרופא, מדווח על הגעתה של ספינה ממרסיי ובה שאלות שנשלחו מארץ רחוקה אל הרמב\"ם (שורה 28r), ומתלונן על מס חדש שהטיל הסולטאן וכן על העוני הכללי של הקהילה המקומית. התיארוך משוער לשנים 1168–1204 לספירה לערך, בהתאם לתקופת פעילותו של הרמב\"ם במצרים. (המידע מבוסס על גויטיין וכרטסת המחקר שלו.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00020-00133"
@@ -40,7 +40,7 @@
     "רפואה",
     "ספינה",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

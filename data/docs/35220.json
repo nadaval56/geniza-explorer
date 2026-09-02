@@ -1,1 +1,43 @@
-{"id":"35220","shelfmark":"ENA 1822a.102","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Right side fragment: Letter addressed to Shemuel b. Sīd. In Hebrew. Dating: Early 17th century. In the upper margin of recto, it refers to the death of Yosef and to his son Shelomo b. Yosef. The sender also mentions seeing someone's \"face before I perish.\" In the lower right margin, the sender mentions being ill, a scribe who has been sick for 40 days, and the death \"of his six year-old grandson.\" Requires further examination.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/ee85cf8f-cb1e-4e40-a4cf-cd42272ef5c4/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/35220/","mentioned":"","description_he":"שבר צד ימין: מכתב לשמואל בן סיד. בעברית. תחילת המאה ה-17. מזכיר מות יוסף ובנו שלמה, חולי, סופר שחלה 40 יום, ומות 'נכדו בן שש'.","tags_he":["מכתב","עברית","סופר"],"prev":"35219","next":"35222","pos":19002,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Right side fragment: Letter addressed to Shemuel b. Sīd. In Hebrew. Dating: Early 17th century. In the upper margin of recto, it refers to the death of Yosef and to his son Shelomo b. Yosef. The sender also mentions seeing someone's \"face before I perish.\" In the lower right margin, the sender mentions being ill, a scribe who has been sick for 40 days, and the death \"of his six year-old grandson.\" Requires further examination.",
+  "description_he": "הקטע בצד ימין: מכתב הממוען לשמואל בן סיד. בעברית. מתוארך לראשית המאה ה-17. בשוליים העליונים של הצד הקדמי מוזכרים מותו של יוסף ובנו שלמה בן יוסף. השולח מזכיר גם שראה את פניו של מישהו \"בטרם אובד\". בשוליים הימניים התחתונים מציין השולח כי הוא חולה, מזכיר סופר שחלה זה ארבעים יום, ואת מותו \"של נכדו בן השש\". דרוש עיון נוסף.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35220",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/ee85cf8f-cb1e-4e40-a4cf-cd42272ef5c4/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35222",
+  "origin": "",
+  "pos": 19002,
+  "prev": "35219",
+  "princeton_url": "https://geniza.princeton.edu/documents/35220/",
+  "region": "",
+  "shelfmark": "ENA 1822a.102",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

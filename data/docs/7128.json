@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Opening of a letter from 'the community of Jews on the jazīra(?)' (verso) to Abū Kathīr Efrayim b. Shemarya (1007–55 CE), with extensive rhymed phrases. The letter is prefaced by כי רם יי and the opening words are שלום רב בישע מעורב. Address in Arabic script on verso. (Information from CUDL and Goitein's index card.) It is unclear which \"island\" the address may refer to, however, for medieval references to properties on Nile islands near Cairo/Fustat, see for example: BL OR 5557B.17 (PGPID 30831), T-S 8J34.4 (PGPID 7720).",
-  "description_he": "פתיחת מכתב מ'קהילת היהודים על האי' לאבו כת'יר אפרים ב. שמריה (1007–1055 לספירה), עם ביטויים מחורזים. הכתובת בכתב ערבי בגב הדף",
+  "description_he": "פתיחה של מכתב מ\"קהילת היהודים שעל האי (?)\" (לפי הכתובת בצד ה-verso) אל אבו כת'יר רבי אפרים בן שמריה (1007–1055 לסה\"נ), ובו ביטויים מחורזים רבים. המכתב נפתח בפסוק \"כי רם יי\" ומילותיו הראשונות הן \"שלום רב בישע מעורב\". בצד ה-verso מופיעה הכתובת בכתב ערבי. לא ברור לאיזה \"אי\" מתייחסת הכתובת; ואולם, להתייחסויות מימי הביניים לנכסים על איי הנילוס סמוך לקהיר/פוסטאט, ראו למשל את התעודות BL OR 5557B.17 ו-T-S 8J34.4. המידע נמסר על פי CUDL וכרטסת גויטיין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00263"
@@ -41,7 +41,7 @@
     "עברית",
     "פוסטאט",
     "קהיר",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

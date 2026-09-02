@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter in the hand of Maimonides (ca. 1168–1204 CE), with a medical recipe consisting of (iron) water, lentisk and spikenard, and a mysterious mention of a huge number of wooden ships (\"There arrived from the wooden (ships) that which blocked the sea/Nile, 100 ships and 18 great ships, all of them wood.\") (Information from CUDL, join from CUDL.) See Wagner, E. (2007). A newly-discovered fragment of a letter written by Maimonides (T-S AS 152.86). [Genizah Research Unit, Fragment of the Month, October 2007]. https://doi.org/10.17863/CAM.40720.",
-  "description_he": "מכתב בכתב ידו של מיימונידס (כ-1168-1204 לסה'נ). כולל מרשם רפואי עם מים (ברזל), לנטיסקוס ושיבולת שועל, ואזכור מסתורי של 118 ספינות עץ שחסמו את הנהר. ראו Wagner (2007) על גילוי השבר.",
+  "description_he": "מכתב בכתב ידו של הרמב\"ם (בקירוב 1168–1204), הכולל מרשם רפואי המורכב ממי (ברזל), מסטיק ונרד הודי, ולצידו אזכור תמוה של מספר עצום של ספינות עץ: \"הגיעו מן [הספינות] העץ אשר חסמו את הים/הנילוס, 100 ספינות ו-18 ספינות גדולות, כולן עץ.\" הצירוף בין הקטעים זוהה. ראו את מאמרה של א' וגנר משנת 2007 על קטע שהתגלה לאחרונה ממכתב שכתב הרמב\"ם.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00152-00086",
@@ -44,7 +44,7 @@
     "ספינה",
     "מסטיק",
     "נרד",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

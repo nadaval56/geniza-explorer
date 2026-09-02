@@ -1,1 +1,44 @@
-{"id":"26829","shelfmark":"Moss. IV,71.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter fragment in Judaeo-Arabic. The sender seems to be complaining that the addressee did not inform him about the price of saffron; he heard that it is going for \"10 per mann.\" There is none in \"al-thaghr\" (probably Alexandria). Excerpts: באן לם תערפני איש . . . אלזעפראן וסמעת אן . . . בעשרה אלמן ומא מנה פי [אל]תגר שי אצלא ווחק אללה יאהי מא . . . .","tags":["saffron"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/26829/","mentioned":"","description_he":"קטע ממכתב ביהודית-ערבית. השולח נראה מתלונן שהנמען לא עדכן אותו על מחיר הזעפרן; שמע שהוא נמכר ב'10 למן'. אין ממנו ב'אל-ת'גר' (כנראה אלכסנדריה) כלום.","tags_he":["מכתב","יהודית-ערבית","אלכסנדריה","זעפרן"],"prev":"26826","next":"26832","pos":27361,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter fragment in Judaeo-Arabic. The sender seems to be complaining that the addressee did not inform him about the price of saffron; he heard that it is going for \"10 per mann.\" There is none in \"al-thaghr\" (probably Alexandria). Excerpts: באן לם תערפני איש . . . אלזעפראן וסמעת אן . . . בעשרה אלמן ומא מנה פי [אל]תגר שי אצלא ווחק אללה יאהי מא . . . .",
+  "description_he": "שריד מכתב בערבית-יהודית. נראה שהשולח מתלונן על כך שהנמען לא יידע אותו על מחיר הזעפרן; הוא שמע שהוא נמכר ב\"עשרה למַן\". אין ממנו ב\"אל-ת'גר\" (כנראה אלכסנדריה). קטעי ציטוט: באן לם תערפני איש . . . אלזעפראן וסמעת אן . . . בעשרה אלמן ומא מנה פי [אל]תגר שי אצלא ווחק אללה יאהי מא . . . .",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "26829",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "26832",
+  "origin": "",
+  "pos": 27361,
+  "prev": "26826",
+  "princeton_url": "https://geniza.princeton.edu/documents/26829/",
+  "region": "",
+  "shelfmark": "Moss. IV,71.2",
+  "tags": [
+    "saffron"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "אלכסנדריה",
+    "זעפרן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

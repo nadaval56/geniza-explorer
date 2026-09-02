@@ -1,1 +1,48 @@
-{"id":"1766","shelfmark":"T-S 18J4.3","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from ʿIwaḍ to Peraḥya the judge. In Judaeo-Arabic and Hebrew, with the address in Arabic script and Hebrew. Written on a very long strip of paper, for which the writer asks forgiveness, because time was tight and the matter was urgent. The writer reports that Ibn al-Yamanī rejected the authority of Avraham Maimonides (r. 1205–1237 CE), while he himself vigorously defended the Nagid. The writer gives a blow by blow report of his argument with Ibn al-Yamanī. The writer adds that the ḥaver R. Eliezer was sick (mutamarriḍ) at the time the letter was written (or: at the time he wrote his letter). Eliezer is upset at Peraḥya for failing to respond to his letter or to send him Isaac Israeli's Book on Fevers. On verso there are several undeciphered lines in Arabic script, mentioning al-Rayyis Abū l-Faḍl, possibly with some Greek/Coptic numerals, and possibly referring to fevers and days of crisis (buḥrān). (Information in part from S. D. Goitein, The Yemenites, 125–29.) VMR/ASE","tags":["book trade, medical books, complaints, Illness, illness letter 969-1517"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00018-J-00004-00003"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00018-J-00004-00003/1"],"princeton_url":"https://geniza.princeton.edu/documents/1766/","mentioned":"","description_he":"מכתב מעִוַץ' אל פרחיה הדיין. כתוב בערבית-יהודית ובעברית, והכתובת בכתב ערבי ובעברית. נכתב על רצועת נייר ארוכה במיוחד, והכותב מתנצל על כך, שכן הזמן היה דחוק והעניין היה דחוף. הכותב מדווח כי אבן אל-ימני דחה את סמכותו של אברהם בן הרמב\"ם (כיהן בשנים 1205–1237 לסה\"נ), ואילו הוא עצמו הגן בתוקף על הנגיד. הכותב מוסר דיווח מפורט שלב אחר שלב על הוויכוח שהתנהל בינו לבין אבן אל-ימני. הכותב מוסיף שהחבר ר' אליעזר היה חולה (מֻתַמַרִּץ') בעת כתיבת המכתב (או: בעת שהוא כתב את מכתבו). אליעזר נפגע מפרחיה על שלא השיב למכתבו ולא שלח לו את ספרו של יצחק ישראלי על הקדחות. בצד השני (verso) ישנן כמה שורות בכתב ערבי שטרם פוענחו, ובהן אזכור של אלרַיִּיס אבו אלפצ'ל, ואולי גם ספרות יווניות/קופטיות, וייתכן שהן מתייחסות לקדחות ולימי המשבר (בֻחְרַאן). (חלק מן המידע מבוסס על גויטיין, התימנים, עמ' 125–129.)","tags_he":["מכתב","דיין","מיימוניד"],"prev":"1765","next":"1768","pos":1025,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Letter from ʿIwaḍ to Peraḥya the judge. In Judaeo-Arabic and Hebrew, with the address in Arabic script and Hebrew. Written on a very long strip of paper, for which the writer asks forgiveness, because time was tight and the matter was urgent. The writer reports that Ibn al-Yamanī rejected the authority of Avraham Maimonides (r. 1205–1237 CE), while he himself vigorously defended the Nagid. The writer gives a blow by blow report of his argument with Ibn al-Yamanī. The writer adds that the ḥaver R. Eliezer was sick (mutamarriḍ) at the time the letter was written (or: at the time he wrote his letter). Eliezer is upset at Peraḥya for failing to respond to his letter or to send him Isaac Israeli's Book on Fevers. On verso there are several undeciphered lines in Arabic script, mentioning al-Rayyis Abū l-Faḍl, possibly with some Greek/Coptic numerals, and possibly referring to fevers and days of crisis (buḥrān). (Information in part from S. D. Goitein, The Yemenites, 125–29.) VMR/ASE",
+  "description_he": "מכתב מעִוַץ' אל פרחיה הדיין. כתוב בערבית-יהודית ובעברית, והכתובת בכתב ערבי ובעברית. נכתב על רצועת נייר ארוכה במיוחד, והכותב מתנצל על כך, שכן הזמן היה דחוק והעניין היה דחוף. הכותב מדווח כי אבן אל-ימני דחה את סמכותו של רבי אברהם בן הרמב\"ם (כיהן בשנים 1205–1237 לסה\"נ), ואילו הוא עצמו הגן בתוקף על הנגיד. הכותב מוסר דיווח מפורט שלב אחר שלב על הוויכוח שהתנהל בינו לבין אבן אל-ימני. הכותב מוסיף שהחבר ר' אליעזר היה חולה (מֻתַמַרִּץ') בעת כתיבת המכתב (או: בעת שהוא כתב את מכתבו). אליעזר נפגע מפרחיה על שלא השיב למכתבו ולא שלח לו את ספרו של יצחק ישראלי על הקדחות. בצד השני (verso) ישנן כמה שורות בכתב ערבי שטרם פוענחו, ובהן אזכור של אלרַיִּיס אבו אלפצ'ל, ואולי גם ספרות יווניות/קופטיות, וייתכן שהן מתייחסות לקדחות ולימי המשבר (בֻחְרַאן). (חלק מן המידע מבוסס על גויטיין, התימנים, עמ' 125–129.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00018-J-00004-00003/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1766",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00018-J-00004-00003"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1768",
+  "origin": "",
+  "pos": 1025,
+  "prev": "1765",
+  "princeton_url": "https://geniza.princeton.edu/documents/1766/",
+  "region": "",
+  "shelfmark": "T-S 18J4.3",
+  "tags": [
+    "book trade, medical books, complaints, Illness, illness letter 969-1517"
+  ],
+  "tags_he": [
+    "מכתב",
+    "דיין",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -1,1 +1,45 @@
-{"id":"9554","shelfmark":"Moss. II,154.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"Alexandria","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter from Mardūk b. Mūsā (Alexandria) to Yosef b. ʿEli Kohen Fāsī (Fustat), ca. 1065. In the hand of the sender’s son, Mūsā b. Mardūk. Mentions various wares, including rice, sugar, camphor water and regrets that previous letters by Yosef b. ʿEli Kohen Fāsī did not include more information about himself and the state of affairs in town. The recipient is requested to urge Nahray b. Nissim to conclude a purchase. (Information from Gil, Kingdom, Vol. 3, p. 803.)","tags":["trade, Nahray B. Nissim"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/9554/","mentioned":"","description_he":"מכתב ממרדוך בן מוסא (אלכסנדריה) ליוסף בן עלי כהן פאסי (פוסטאט); כ-1065 לספירה; בכתב בנו מוסא בן מרדוך; מזכיר אורז, סוכר ומי קמפור; מבקש מהנמען לדחוף את נהריי בן נסים לסיים רכישה","tags_he":["מכתב","פוסטאט","אלכסנדריה","אורז","סוכר"],"prev":"9553","next":"9555","pos":21688,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Mardūk b. Mūsā (Alexandria) to Yosef b. ʿEli Kohen Fāsī (Fustat), ca. 1065. In the hand of the sender’s son, Mūsā b. Mardūk. Mentions various wares, including rice, sugar, camphor water and regrets that previous letters by Yosef b. ʿEli Kohen Fāsī did not include more information about himself and the state of affairs in town. The recipient is requested to urge Nahray b. Nissim to conclude a purchase. (Information from Gil, Kingdom, Vol. 3, p. 803.)",
+  "description_he": "מכתב מאת מרדוך בן מוסא מאלכסנדריה אל יוסף בן עלי הכהן פאסי בפוסטאט, מתוארך לסביבות 1065. המכתב נכתב בכתב ידו של בנו של השולח, מוסא בן מרדוך. במכתב נזכרות סחורות שונות, ובהן אורז, סוכר ומי קמפור (כפור). הכותב מביע צער על כך שמכתביו הקודמים של יוסף בן עלי הכהן פאסי לא כללו פרטים נוספים על שלומו ועל מצב העניינים בעיר. הנמען מתבקש לזרז את נהראי בן נסים להשלים עסקת קנייה. (המידע על פי גיל.)",
+  "destination": "Fustat",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9554",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9555",
+  "origin": "Alexandria",
+  "pos": 21688,
+  "prev": "9553",
+  "princeton_url": "https://geniza.princeton.edu/documents/9554/",
+  "region": "",
+  "shelfmark": "Moss. II,154.2",
+  "tags": [
+    "trade, Nahray B. Nissim"
+  ],
+  "tags_he": [
+    "מכתב",
+    "פוסטאט",
+    "אלכסנדריה",
+    "אורז",
+    "סוכר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

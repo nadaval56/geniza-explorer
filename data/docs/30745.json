@@ -1,1 +1,42 @@
-{"id":"30745","shelfmark":"T-S AS 218.157","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Ladino","lang_he":"Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Ladino letter from one woman to another; the writer lives in the Holy Land and asks for the recipient's charity. Information from http://www.investigacion.cchs.csic.es/judeo-arabe/sites/investigacion.cchs.csic.es.judeo-arabe/files/Genizah-Al-Andalus.pdf.","tags":["Ladino"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/30745/","mentioned":"","description_he":"מכתב לאדינו מאישה לאישה. הכותבת גרה בארץ הקודש ומבקשת צדקה מהנמענת.","tags_he":["מכתב","צדקה"],"prev":"30744","next":"30747","pos":28998,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Ladino letter from one woman to another; the writer lives in the Holy Land and asks for the recipient's charity. Information from http://www.investigacion.cchs.csic.es/judeo-arabe/sites/investigacion.cchs.csic.es.judeo-arabe/files/Genizah-Al-Andalus.pdf.",
+  "description_he": "מכתב בלאדינו מאישה אחת לאחרת. הכותבת מתגוררת בארץ הקודש ומבקשת מהנמענת תרומת צדקה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "30745",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Ladino",
+  "lang_he": "Ladino",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "30747",
+  "origin": "",
+  "pos": 28998,
+  "prev": "30744",
+  "princeton_url": "https://geniza.princeton.edu/documents/30745/",
+  "region": "",
+  "shelfmark": "T-S AS 218.157",
+  "tags": [
+    "Ladino"
+  ],
+  "tags_he": [
+    "מכתב",
+    "צדקה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

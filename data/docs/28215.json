@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Verso: Book list in the hand of Shelomo b. Eliyyahu (identification by Frenkel), written on the back of a letter addressed to his father Eliyyahu the Judge. Dating: early 13th century (Allony speculated 11th century, since none of the books are later than that). The book list mentions a translation of Deuteronomy, commentaries to biblical books (e.g. Psalms, Genesis, the Megillot), and a copy of Saʿadya’s Siddur on verso(?). (Information from CUDL.) NB: Allony et al. edited this manuscript under the name \"T-S K23.27,\" which was either a mistake or the shelfmarks have changed. Also, there is no fragment at T-S K3.25.",
-  "description_he": "ורסו: רשימת ספרים בכתב ידו של שלמה ב' אליהו (זיהוי מאת פרנקל), כתובה בגב מכתב המופנה לאביו אליהו הדיין. תיארוך: תחילת המאה ה-13. הרשימה מזכירה תרגום דברים, פירושים לספרי המקרא (תהלים, בראשית, מגילות) ועותק של סידור סעדיה. הערה: אלוני ואחרים ערכו כתב יד זה תחת השם 'T-S K23.27', שהיה שגיאה או שהסימנים השתנו.",
+  "description_he": "בצד ה-verso: רשימת ספרים בכתב ידו של שלמה בן אליהו (זיהוי של פרנקל), שנכתבה על גב מכתב הממוען לאביו אליהו הדיין. תיארוך: ראשית המאה ה-13 (אלוני שיער שמדובר במאה ה-11, מאחר שאף אחד מן הספרים אינו מאוחר לתקופה זו). רשימת הספרים מזכירה תרגום של ספר דברים, פירושים לספרי מקרא (למשל לתהלים, לבראשית ולמגילות), והעתק של סידור רב סעדיה גאון בצד ה-verso(?). יש לציין שאלוני ושותפיו פרסמו את כתב היד הזה תחת מספר אחר, ככל הנראה בשל טעות או בשל שינוי במספרי השמורה.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00003-00026"
@@ -42,7 +42,7 @@
     "תפילה וליטורגיה",
     "דיין",
     "שלמה בן אליהו",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "List or table",

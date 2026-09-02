@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1334-08-03",
   "description": "Settlement between a husband and wife. Location: Fustat. Dated: 1 Elul 1645 Seleucid = 3 August 1334 CE. Shemuʾel b. ʿAbdallāh al-Kohen takes upon himself to provide his unnamed wife with clothing, 5.5 nuqra dirhams, and 0.5 nuqra dirhams daily until they move in together. Headed with an 'emet' and ending with a 've-shalom' rather than witness signatures—suggesting that this is a legal/administrative communication rather than a formal legal document. The handwriting has some resemblances to that of Yehoshuaʿ Maimonides (see PER H 129) but does not seem to be his.",
-  "description_he": "הסדר בין בני זוג. פוסטאט, 3 באוגוסט 1334. שמואל בן עבדאללה הכהן מתחייב לספק לאשתו לבוש ו-6 דרהם נוקרה ליום עד שיתחילו לגור יחד.",
+  "description_he": "הסכם פשרה בין בעל לאשתו. נכתב בפוסטאט, בתאריך א' באלול א'תרמ\"ה לשטרות, הוא 3 באוגוסט 1334. שמואל בן עבדאללה הכהן מקבל על עצמו לספק לאשתו (ששמה אינו מוזכר) ביגוד, סכום של 5.5 דרהמים נֻקרה, ובנוסף 0.5 דרהם נֻקרה ליום עד למועד שבו יעברו לגור יחדיו. המסמך נפתח במילה \"אמת\" ומסתיים ב\"ושלום\" במקום בחתימות עדים — דבר המרמז שמדובר בתכתובת משפטית-מנהלית ולא במסמך משפטי פורמלי. כתב היד מזכיר במקצת את כתב ידו של יהושע בן הרמב\"ם, אך ככל הנראה אינו שלו.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

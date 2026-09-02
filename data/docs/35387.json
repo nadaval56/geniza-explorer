@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Marriage contract (ketubba). Dating: ca. 1337 CE, since the same witnesses appear on T-S 13J2.18 from that year. Groom: ʿOvadya b. Avraham b. Shelomo. Bride: Ẓarīfa bt. Yehoshuaʿ. (\"The men bear several pompous titles,\" per Goitein.) For the dowry there is a long list of jewelry, clothes, and household goods, full of late terms. The dinar is valued as being equivalent to 13 1/3 full silver dirhams, as was usual int he 13th and 14th centuries. The bride is obliged to wash herself in the ritual bath for menstrual purity (following Maimonides' enactment on this issue). The bride is entitled to keep her earnings for herself. Witnessed by Elʿazar b. Moshe ha-Kohen and Elishaʿ b. Ḥananya ha-Levi. (Information from CUDL and Goitein's index card.)",
-  "description_he": "כתובה. תאריך: כ-1337 לסה'נ (אותם עדים ב-T-S 13J2.18). חתן: עובדיה בן אברהם בן שלמה. כלה: צריפה בת יהושע. נדוניה ארוכה עם תכשיטים, בגדים ומוצרי בית. הדינר שווה 13 וחצי דרהמים כסף. הכלה חייבת לטבול במקווה. חתמו: אלעזר בן משה הכהן ואלישע בן חנניה הלוי.",
+  "description_he": "כתובה. תיארוך: בערך 1337 לספירה, מאחר שאותם עדים מופיעים על מסמך נוסף משנה זו. החתן: עובדיה בן אברהם בן שלמה. הכלה: ט'ריפה בת יהושע. לפי גויטיין, הגברים נושאים כמה תארים מפוארים. עבור הנדוניה מופיעה רשימה ארוכה של תכשיטים, בגדים וחפצי בית, רוויה במונחים מאוחרים. הדינר מוערך כשווה ערך ל-13 1/3 דרהמים מכסף מלא, כפי שהיה מקובל במאות ה-13 וה-14. הכלה מחויבת לטבול במקווה לטהרה מנידה (בהתאם לתקנת הרמב\"ם בעניין זה). הכלה זכאית לשמור לעצמה את הכנסותיה. חתומים כעדים: אלעזר בן משה הכהן ואלישע בן חנניה הלוי.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00024-00008/1"
@@ -40,7 +40,7 @@
     "מסמך משפטי",
     "כתובה",
     "נדוניה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

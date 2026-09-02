@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1021-09-11/1022-08-29",
   "description": "Recto: legal document, in which eight persons, Levi b. Yaʿaqov ha-Levi, Avraham b. Sahlān, Efrayim b. Shemarya, David b. Aharon ha-Levi, Avraham b. Yiṣḥaq, Shelomo b. Seʿadya, Shelomo b. Ḥakīm and Shelomo b. David undertake to refund Ismaʿīl b. Ṭalyūn (=Shemuel b. Avṭalyon) the sum guaranteed for the ransom of two captives. Dated: 1333 Seleucid = 1021/22 CE. Verso: list of contributions in Arabic script. (Information from CUDL and Goitein's index card.)",
-  "description_he": "שמונה אנשים מתחייבים להחזיר לישמעיל ב. טליון את הסכום שערב עבור פדיון שני שבויים. תאריך: 1333 סלאוקי = 1021/22 לספירה",
+  "description_he": "רקטו: מסמך משפטי שבו שמונה אנשים — לוי בן יעקב הלוי, אברהם בן סהלאן, רבי אפרים בן שמריה, דוד בן אהרן הלוי, אברהם בן יצחק, שלמה בן סעדיה, שלמה בן חכים ושלמה בן דוד — מתחייבים להחזיר לאסמאעיל בן טליון (=שמואל בן אבטליון) את הסכום שערב עבור פדיונם של שני שבויים. מתוארך: 1333 למניין השטרות = 1021/22 לספירה. ורסו: רשימת תרומות בכתב ערבי. (המידע מבוסס על CUDL וכרטיסיית גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00005-00011"
@@ -39,7 +39,7 @@
   "tags_he": [
     "מסמך משפטי",
     "יהודית-ערבית",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

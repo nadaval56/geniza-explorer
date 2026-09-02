@@ -1,1 +1,48 @@
-{"id":"9369","shelfmark":"Moss. VII,180","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter of appeal for charity. Addressed to someone titled al-Amīniyya. Probably from a cantor, although theoretically al-Ḥazzān could be part of the addressee's name. In Judaeo-Arabic. Recto is entirely greetings and good wishes for the holiday. Verso presents the writer's case and his pressing need for money for the holidays. He sends regards to Abū l-Ṭāhir Amīn al-Dawla.","tags":["Appeal"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-VII-00180"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-VII-00180"],"princeton_url":"https://geniza.princeton.edu/documents/9369/","mentioned":"","description_he":"מכתב בקשת צדקה; לאמינייה; כנראה מחזן; ביהודית-ערבית; פנים: ברכות לחג; גב: מצבו הקשה וצורך דחוף בכסף לחג; שולח ברכות לאבו אל-טאהר","tags_he":["מכתב","יהודית-ערבית","צדקה","חזן"],"prev":"9367","next":"9374","pos":6082,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter of appeal for charity. Addressed to someone titled al-Amīniyya. Probably from a cantor, although theoretically al-Ḥazzān could be part of the addressee's name. In Judaeo-Arabic. Recto is entirely greetings and good wishes for the holiday. Verso presents the writer's case and his pressing need for money for the holidays. He sends regards to Abū l-Ṭāhir Amīn al-Dawla.",
+  "description_he": "מכתב בקשה לצדקה, הממוען לאדם הנושא בתואר אלאמיניّה. כותב המכתב הוא ככל הנראה חזן, אם כי תאורטית ניתן להניח שהכינוי אלחזّאן הוא חלק משמו של הנמען. המכתב כתוב בערבית-יהודית. צד הרקטו מוקדש כולו לדברי ברכה ואיחולים לרגל החג. בצד הוורסו פורש הכותב את עניינו ואת מצוקתו הדחופה ואת הצורך הבוער שלו בכסף לקראת החגים. בסיום הוא שולח דרישת שלום לאבו אלטّאהר אמין אלדّולה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-VII-00180"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9369",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-VII-00180"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9374",
+  "origin": "",
+  "pos": 6082,
+  "prev": "9367",
+  "princeton_url": "https://geniza.princeton.edu/documents/9369/",
+  "region": "",
+  "shelfmark": "Moss. VII,180",
+  "tags": [
+    "Appeal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "צדקה",
+    "חזן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

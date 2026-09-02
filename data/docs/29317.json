@@ -1,1 +1,45 @@
-{"id":"29317","shelfmark":"T-S Ar.18(1).1","multifragment":"","type_en":"Legal query or responsum","type_he":"שאלה משפטית","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Responsum of Hai Gaon, on the management of orphans’ property. (Information from CUDL)","tags":["Responsum"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00018-00001-00001"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00018-00001-00001"],"princeton_url":"https://geniza.princeton.edu/documents/29317/","mentioned":"","description_he":"תשובה של האי גאון, על ניהול רכוש יתומים.","tags_he":["ישיבה וגאונות"],"prev":"29316","next":"29318","pos":16784,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Responsum of Hai Gaon, on the management of orphans’ property. (Information from CUDL)",
+  "description_he": "תשובה של רב האי גאון, על ניהול רכוש יתומים.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00018-00001-00001"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "29317",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00018-00001-00001"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "29318",
+  "origin": "",
+  "pos": 16784,
+  "prev": "29316",
+  "princeton_url": "https://geniza.princeton.edu/documents/29317/",
+  "region": "",
+  "shelfmark": "T-S Ar.18(1).1",
+  "tags": [
+    "Responsum"
+  ],
+  "tags_he": [
+    "ישיבה וגאונות"
+  ],
+  "total": 35937,
+  "type_en": "Legal query or responsum",
+  "type_he": "שאלה משפטית"
+}

@@ -1,1 +1,44 @@
-{"id":"889","shelfmark":"Moss. Ia,8","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Letter from Yisrael ha-Kohen Gaon b. Shemuel b. Ḥofni to one of Shelomo ha-Kohen b. Se’adya’s sons in Fustat. January 1021, in the handwriting of Israel ha-Kohen Gaon b. Shemuel. The writer asks for a donation to the Yeshiva, that Sahlan b. Avraham, the head of the Babylonian community in Fustat, will transfer. (Information from Gil, Kingdom, Vol. 2, #63) VMR","tags":["communal"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/889/","mentioned":"","description_he":"מכתב מישראל הכהן גאון בן שמואל בן חופני לבן שלמה הכהן בפוסטאט, ינואר 1021. בבקשת תרומה לישיבה.","tags_he":["מכתב","עברית","ישיבה וגאונות","פוסטאט"],"prev":"876","next":"890","pos":20585,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yisrael ha-Kohen Gaon b. Shemuel b. Ḥofni to one of Shelomo ha-Kohen b. Se’adya’s sons in Fustat. January 1021, in the handwriting of Israel ha-Kohen Gaon b. Shemuel. The writer asks for a donation to the Yeshiva, that Sahlan b. Avraham, the head of the Babylonian community in Fustat, will transfer. (Information from Gil, Kingdom, Vol. 2, #63) VMR",
+  "description_he": "מכתב מישראל הכהן גאון בן שמואל בן חפני אל אחד מבניו של שלמה הכהן בן סעדיה בפוסטאט, מינואר 1021, בכתב ידו של ישראל הכהן גאון בן שמואל. הכותב מבקש תרומה לישיבה, אשר תועבר באמצעות סהלאן בן אברהם, ראש הקהילה הבבלית בפוסטאט. המידע מבוסס על גיל, מלכות ישמעאל, כרך ב', מסמך 63.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "889",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "890",
+  "origin": "",
+  "pos": 20585,
+  "prev": "876",
+  "princeton_url": "https://geniza.princeton.edu/documents/889/",
+  "region": "",
+  "shelfmark": "Moss. Ia,8",
+  "tags": [
+    "communal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ישיבה וגאונות",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

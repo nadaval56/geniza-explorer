@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Fragment of a book (or booklist) that belonged to the Head of the Gola Daniel b. Hisdai, end of the 12th century. Seems like the book was given as a gift to Nahum ha-Kohen b. Mansur, and belonged to Daniel b. Hisdai from April 25, 1135, then to Ya’aqov b. Eli from August 1174, and then was given to Nahum. The book contains parts written by Rav Se’adya Gaon and Rav Shemuel ha-Kohen Gaon b. Hofni. (Information from Gil, Kingdom, Vol. 2, #92) VMR",
-  "description_he": "שרידי ספר שהשתייך לראש הגולה דניאל בן חסדאי, סוף המאה ה-12, כולל קטעים מרב סעדיה גאון ומרב שמואל הכהן גאון",
+  "description_he": "קטע של ספר (או רשימת ספרים) ששייך לראש הגולה דניאל בן חסדאי, מסוף המאה ה-12. נראה כי הספר ניתן במתנה לנחום הכהן בן מנצור, והיה בבעלות דניאל בן חסדאי מ-25 באפריל 1135, לאחר מכן בבעלות יעקב בן עלי מאוגוסט 1174, ולבסוף נמסר לנחום. הספר מכיל חלקים שנכתבו על ידי רב סעדיה גאון ורב שמואל הכהן גאון בן חפני. (המידע על פי גיל, מלכות, כרך 2, מס' 92.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-K-00001/1"
@@ -37,7 +37,7 @@
   "tags_he": [
     "רשימת ספרים",
     "ישיבה וגאונות",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "Paraliterary text",

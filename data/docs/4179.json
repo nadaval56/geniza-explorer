@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Informal note from David to a certain Nasi. In Judaeo-Arabic. Dating: Likely early 13th century. The sender reports that he has met with one of the brothers of Abū l-Majd (likely Meʾir b. Yakhin, the secretary of Avraham Maimonides), who will send \"it\" to him. The sender emphasizes that he is diligently trying to accomplish \"the thing he mentioned to our master (Sayyidnā).\" (Information from Goitein's index cards)",
-  "description_he": "פתק בלתי פורמלי מדוד לנשיא, ביהודית-ערבית, כנראה מתחילת המאה ה-13. השולח מדווח שנפגש עם אחד מאחי אבו אל-מג'ד ומדגיש שהוא פועל בדבר שהזכיר לאדוננו.",
+  "description_he": "פתק לא־רשמי מאת דוד לנשיא מסוים. בערבית־יהודית. תיארוך: ככל הנראה ראשית המאה ה-13. השולח מדווח שנפגש עם אחד מאחיו של אבו אלמג'ד (ככל הנראה מאיר בן יכין, סופרו של אברהם מימוני), אשר ישלח אליו \"אותו דבר\". השולח מדגיש כי הוא משתדל בחריצות להוציא לפועל את \"העניין שהזכיר לאדוננו (סיידנא)\".",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00149-00008"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "סופר"
+    "סופר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

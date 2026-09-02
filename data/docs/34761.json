@@ -1,1 +1,44 @@
-{"id":"34761","shelfmark":"T-S AS 178.110","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter addressed to Abū ʿImrān, in Fustat. In Arabic script. Reporting that the addressee's son (also named Abū ʿImrān?) arrived with nothing but [...] and a kind of fūṭa garment. They set him up with al-Qazzāz (the silk weaver), but then he ran away and was gone all day. When he came back, the sender took him into his own shop. Then he ran away again, and they chased him, but couldn't catch up with him, and now his whereabouts are unknown. The other details of the letter are still obscure; needs examination. There are a few lines of accounts in Arabic script and Greek/Coptic numerals on verso, probably unrelated.","tags":["runaway"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34761/","mentioned":"","description_he":"מכתב המיועד לאבו עמראן, בפוסטאט. בכתב ערבי. מדווח שבנו הגיע עם מעט רכוש, הושם אצל אל-קַזַּאז (אורג המשי), ברח, חזר, הושב בחנות השולח, ברח שוב ומיקומו אינו ידוע. בגב מספר שורות חשבונות לא קשורות.","tags_he":["מכתב","ערבית","פוסטאט","משי"],"prev":"34759","next":"34763","pos":31016,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter addressed to Abū ʿImrān, in Fustat. In Arabic script. Reporting that the addressee's son (also named Abū ʿImrān?) arrived with nothing but [...] and a kind of fūṭa garment. They set him up with al-Qazzāz (the silk weaver), but then he ran away and was gone all day. When he came back, the sender took him into his own shop. Then he ran away again, and they chased him, but couldn't catch up with him, and now his whereabouts are unknown. The other details of the letter are still obscure; needs examination. There are a few lines of accounts in Arabic script and Greek/Coptic numerals on verso, probably unrelated.",
+  "description_he": "מכתב הממוען לאבו עמראן בפוסטאט, כתוב בכתב ערבי. השולח מדווח שבנו של הנמען (כנראה גם הוא בשם אבו עמראן?) הגיע אליו כשבידיו לא היה דבר מלבד [...] וסוג של בגד פוטה. הם סידרו לו עבודה אצל אלקזאז (אורג המשי), אך הנער ברח משם ונעדר במשך יום שלם. כאשר חזר, לקח אותו השולח אל החנות שלו עצמו. אך גם משם הוא ברח שוב, והם רדפו אחריו ולא הצליחו להשיגו, וכעת מקום הימצאו אינו ידוע. שאר פרטי המכתב עדיין סתומים וטעונים בדיקה נוספת. בצדו האחורי של המכתב מופיעות כמה שורות של חשבונות בכתב ערבי ובספרות יווניות/קופטיות, ככל הנראה ללא קשר לתוכן המכתב.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34761",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34763",
+  "origin": "",
+  "pos": 31016,
+  "prev": "34759",
+  "princeton_url": "https://geniza.princeton.edu/documents/34761/",
+  "region": "",
+  "shelfmark": "T-S AS 178.110",
+  "tags": [
+    "runaway"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "פוסטאט",
+    "משי"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Autograph letter from Avraham Maimonides (r. 1205–1237 CE) to his \"dear son\" (i.e., congenial pupil) Yosef. In Judaeo-Arabic. Avraham excuses his absence from a student's recent wedding, saying, \"The night of your wedding was the night of my turn to be on duty at the hospital, and I could not at that time put it off for reasons it would take too long to explain\" (translation from Mark Cohen, “The Burdensome Life of a Jewish Physician and Communal Leader,” p. 135).",
-  "description_he": "מכתב אוטוגרף מאברהם מיימוני לתלמידו אהובו יוסף ביהודית-ערבית. מסביר מדוע נעדר מחתונת התלמיד: לילה ההוא היה תורנותו בבית החולים.",
+  "description_he": "מכתב בכתב ידו של רבי אברהם בן הרמב\"ם (שכיהן כנגיד בין השנים 1205–1237) אל \"בנו היקר\" (כלומר, תלמידו האהוב) יוסף. המכתב כתוב בערבית-יהודית. אברהם מתנצל על היעדרותו מחתונתו של אחד מתלמידיו שהתקיימה לאחרונה, ומסביר: \"ליל חתונתך היה הלילה שבו הגיע תורי לתורנות בבית החולים, ולא יכולתי באותה עת לדחותו מסיבות שיארך זמן רב להסבירן\" (התרגום מתוך מאמרו של מארק כהן, \"חייו הקשים של רופא ומנהיג קהילתי יהודי\", עמ' 135).",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00014-00005/1"
@@ -40,7 +40,8 @@
     "מכתב",
     "יהודית-ערבית",
     "רפואה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

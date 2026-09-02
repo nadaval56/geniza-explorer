@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Ismaʿīl b. Barhūn al-Tahartī (CUDL), Yosef b. Berekhya or Moshe b. Barhun al-Taharti, Qayrawān (PGP), to (Efrayim b.) Shemarya, Fustat. Discusses responsa of the geʾonim. Dating: ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active, but this date range might be narrowed further based on the years when the potential senders were active/alive.",
-  "description_he": "מכתב מאחד מאנשי משפחת אל-טאהרתי, קירואן, ל(אפרים בן) שמריה, פוסטאט. דן בתשובות הגאונים. כ-1007–1055.",
+  "description_he": "מכתב מאת אסמאעיל בן ברהון אלתאהרתי (לפי קטלוג קיימברידג'), או יוסף בן ברכיה או משה בן ברהון אלתאהרתי (לפי קטלוג פרינסטון), שנשלח מקירואן אל (אפרים בן) שמריה בפוסטאט. המכתב דן בתשובות הגאונים. תיארוך: בקירוב 1007–1055 לספירה, על פי השנים שבהן היה רבי אפרים בן שמריה פעיל, אם כי ייתכן שניתן לצמצם את טווח התאריכים הזה עוד יותר על סמך השנים שבהן היו השולחים האפשריים פעילים או בחיים.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00265/1"
@@ -41,7 +41,7 @@
     "יהודית-ערבית",
     "פוסטאט",
     "קירואן",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

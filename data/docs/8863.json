@@ -1,1 +1,45 @@
-{"id":"8863","shelfmark":"CUL Or.1080 J56","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Letter from a certain Meʾir to his 'friend and brother' Abū ʿImrān ('ha-talmid ha-navon'). In Judaeo-Arabic. The sender's hand is familiar from other documents (distinctive qofs). Dating: probably 12th or early 13th century. Announcing his arrival and greeting the trustee Abū l-Makārim, the cantor Abū Manṣūr, Abū l-Munā, and various relatives. He also requests a detailed update on the news of the country, as if he were present, \"and who died.\" (Information in part from Goitein's index card.)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00056"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00056"],"princeton_url":"https://geniza.princeton.edu/documents/8863/","mentioned":"","description_he":"מכתב ממאיר לחברו ואחיו אבו עמראן; ביהודית-ערבית; מודיע על הגעתו; מברך את האמין, החזן ואנשים אחרים; מבקש עדכון על הנעשה בארץ","tags_he":["מכתב","יהודית-ערבית","חזן"],"prev":"8861","next":"8864","pos":5823,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from a certain Meʾir to his 'friend and brother' Abū ʿImrān ('ha-talmid ha-navon'). In Judaeo-Arabic. The sender's hand is familiar from other documents (distinctive qofs). Dating: probably 12th or early 13th century. Announcing his arrival and greeting the trustee Abū l-Makārim, the cantor Abū Manṣūr, Abū l-Munā, and various relatives. He also requests a detailed update on the news of the country, as if he were present, \"and who died.\" (Information in part from Goitein's index card.)",
+  "description_he": "מכתב מאדם בשם מאיר אל 'ידידו ואחיו' אבו עמראן (המכונה 'התלמיד הנבון'). בערבית-יהודית. כתב היד של השולח מוכר ממסמכים נוספים (בולטות במיוחד אותיות הקו\"ף האופייניות לו). התיארוך משוער למאה ה-12 או לראשית המאה ה-13. השולח מבשר על הגעתו ושולח דרישת שלום לנאמן אבו אלמכארם, לחזן אבו מנצור, לאבו אלמנא ולקרובי משפחה שונים. כמו כן הוא מבקש לקבל עדכון מפורט על חדשות הארץ, כאילו היה נוכח שם בעצמו, \"ומי מת\". (חלק מהמידע מתבסס על כרטיסיית גויטיין.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00056"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8863",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-OR-01080-J-00056"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8864",
+  "origin": "",
+  "pos": 5823,
+  "prev": "8861",
+  "princeton_url": "https://geniza.princeton.edu/documents/8863/",
+  "region": "",
+  "shelfmark": "CUL Or.1080 J56",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "חזן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

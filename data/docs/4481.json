@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from ʿEli Ha-Mumḥe b. Avraham, in Jerusalem, to Efrayim b. Shemarya, in Fustat. In Judaeo-Arabic, with the address in Arabic script. Dating: approximately 1045 CE (per Gil) and ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. In which ʿEli urges Efrayim to stop ignoring his letters and to give him an update about his earlier request concerning Abū l-Faraj al-Mawṣilī.",
-  "description_he": "מכתב מעלי המומחה ב' אברהם, ירושלים, לאפרים ב' שמריה, פוסטאט. כ-1045. עלי מבקש מאפרים להפסיק להתעלם ממכתביו ולדווח על בקשתו הקודמת בנוגע לאבו אל-פרג' אל-מוסולי.",
+  "description_he": "מכתב מעלי המומחה בן אברהם, בירושלים, אל רבי אפרים בן שמריה, בפוסטאט. בערבית-יהודית, כאשר הכתובת כתובה באותיות ערביות. תיארוך: בקירוב 1045 לספירה (לפי גיל), וכן בין 1007 ל-1055 לספירה בקירוב, על פי השנים שבהן היה רבי אפרים בן שמריה פעיל. במכתב מפציר עלי באפרים שיחדל מלהתעלם ממכתביו, ויעדכן אותו בנוגע לבקשתו הקודמת בעניין אבו אלפרג' אלמוצלי.",
   "destination": "Fustat",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-OR-01080-J-00176"
@@ -42,7 +42,7 @@
     "כתובה",
     "פוסטאט",
     "ירושלים",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

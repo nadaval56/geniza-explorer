@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Recto: Bottom part of a letter from Berakhot probably to Avraham Maimonides (r. 1205–37). Concerning public affairs. Asking him to act with regard to certain dangers arising from the gathering of young (Jewish) men and from leasing houses in the Jewish quarter to Muslims. People involved: a kohl seller (al-kaḥḥāl) (who has been allowing the young men to gather at his place); Ibn Rummān and his mother (they are the ones with Muslim tenants); and the father of the kaḥḥāl, who is Barakāt al-Ṣīrī. Greetings to the sons Moshe and ʿOvadya.",
-  "description_he": "מכתב מברכות לאברהם מיימוני בנוגע לסכנות מצעירים המתקהלים ודיירים מוסלמים.",
+  "description_he": "רקטו: חלקה התחתון של איגרת מאת ברכות, ככל הנראה אל רבי אברהם בן הרמב\"ם (כיהן 1205–1237). האיגרת עוסקת בענייני ציבור ומבקשת ממנו לפעול בעניין סכנות מסוימות הנובעות משני מקורות: התקבצותם של צעירים (יהודים) במקום אחד, והשכרת בתים ברובע היהודי לדיירים מוסלמים. המעורבים בפרשה: מוכר כחול עיניים (אלכחאל), שמתיר לצעירים להתאסף במקומו; אבן רומאן ואמו, שהם בעלי הדירות המושכרות לדיירים המוסלמים; ואביו של הכחאל, הוא ברכאת אלצירי. בסוף האיגרת נמסרות דרישות שלום לבנים משה ועובדיה.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_4#MS_Heb_a_2-part22"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

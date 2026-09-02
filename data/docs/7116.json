@@ -1,1 +1,46 @@
-{"id":"7116","shelfmark":"T-S 8.212","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Digest of a partnership contract for a period of one year between Abū ʿAlī b. David and Netanʾel b. Nadiv. Written mainly in Judaeo-Arabic, but with some Arabic script mixed in. Each of the partners may take one dirham each day from the shop. The sums 150 (or rather 500-something?) and 500 wariq (dirhams) are mentioned in relation to each of the partners. On verso there are pen trials. (Information from Goitein's index card.)","tags":["bialphabetic"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00212"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00212"],"princeton_url":"https://geniza.princeton.edu/documents/7116/","mentioned":"","description_he":"תמצית חוזה שותפות לשנה אחת בין אבו עלי ב. דוד ונתנאל ב. נדיב. עיקרו ביהודית-ערבית עם תוספת כתב ערבי. כל שותף יכול לקחת דרהם ליום מהחנות. בגב ניסיון כתיבה","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"7114","next":"7117","pos":4656,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Digest of a partnership contract for a period of one year between Abū ʿAlī b. David and Netanʾel b. Nadiv. Written mainly in Judaeo-Arabic, but with some Arabic script mixed in. Each of the partners may take one dirham each day from the shop. The sums 150 (or rather 500-something?) and 500 wariq (dirhams) are mentioned in relation to each of the partners. On verso there are pen trials. (Information from Goitein's index card.)",
+  "description_he": "תקציר של חוזה שותפות לתקופה של שנה אחת בין אבו עלי בן דוד לבין נתנאל בן נדיב. הכתיבה היא בעיקר בערבית-יהודית, אך משולבת בה גם כתיבה בכתב ערבי. על פי תנאי השותפות, רשאי כל אחד מהשותפים למשוך דרהם אחד ביום מן החנות. בנוסף, מוזכרים הסכומים 150 (או אולי 500 ומשהו?) ו-500 וריק (דרהם) ביחס לכל אחד מהשותפים. בצדו האחורי של המסמך מופיעים ניסיונות קולמוס. (המידע מבוסס על כרטיסיית גויטיין.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00212"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7116",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00212"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7117",
+  "origin": "",
+  "pos": 4656,
+  "prev": "7114",
+  "princeton_url": "https://geniza.princeton.edu/documents/7116/",
+  "region": "",
+  "shelfmark": "T-S 8.212",
+  "tags": [
+    "bialphabetic"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

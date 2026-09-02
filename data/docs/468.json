@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from the teacher Abū Saʿīd to al-Shaykh al-Raṣuy, in which he asks in the most humble terms to be paid the fees due to him by the community for children sent to his school. People mentioned include three children of the wife of the Persian (אמראה אלעגמי) who is in the funduq, and Yosef al-Maghribī. (The same sender, there called Saʿīd, wrote T-S NS 324.35 to Avraham Maimonides. AA) NB: Goitein sometimes referred to this fragment as BL OR 5542.23. (See Med Soc II, App. B, doc. 98.)",
-  "description_he": "מכתב מהמורה אבו סעיד לאל-שייח' אל-ראצוי, שבו הוא מבקש בנימוסים רבים לקבל את שכרו מהקהילה עבור הילדים שנשלחו לבית ספרו. מוזכרים שלושה ילדי אשת הפרסי השוהה בפונדוק, ויוסף אל-מגרבי.",
+  "description_he": "מכתב מהמלמד אבו סעיד אל אלשייח' אלרצוי, שבו הוא מבקש בלשון נמוכה וצנועה ביותר לקבל את שכר הלימוד המגיע לו מן הקהילה עבור ילדים שנשלחו ללמוד בבית מדרשו. בין האנשים הנזכרים במכתב: שלושה ילדים של אשת הפרסי (אמראה אלעג'מי) השוהה בפֻנדֻק, ויוסף אלמע'רבי. אותו שולח עצמו, הנקרא שם סעיד, כתב גם מכתב נוסף אל אברהם מימוני. יש לציין שגויטיין התייחס לעיתים לקטע זה תחת סימן מדף אחר.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
   ],
   "tags_he": [
     "מכתב",
-    "יהודית-ערבית"
+    "יהודית-ערבית",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

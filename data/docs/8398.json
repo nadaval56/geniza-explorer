@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Verso (original use): Distribution list for cash and wheat for the poor of the Rabbanites, administered by the ḥaver (al-ḥibr) [...] and Yaʿqūb al-[...]. Written in Arabic script. Much larger than other known distribution lists from this period. About 55 lines are preserved, listing dozens of alms recipients, many of them blind. Also mentions \"... al-Andalusī wa-akhūhā (l. 4).\" This document was subsequently cut up to form (at least) 3 folios, which were then reused for a halakhic text in the hand of Efrayim b. Shemarya. Merits further examination.",
-  "description_he": "רשימת חלוקה: מזומן וחיטה לעניי הרבנים; בכתב ערבי; כ-55 שורות עם עשרות מקבלי צדקה רבים מהם עיוורים",
+  "description_he": "צד הוורסו (השימוש המקורי): רשימת חלוקה של כסף וחיטה לעניי הרבנים, המנוהלת בידי החבר (אל-חִבְּר) [...] ויעקוב אל-[...]. כתוב בכתב ערבי. הרשימה גדולה בהרבה מרשימות חלוקה אחרות הידועות מתקופה זו. כ-55 שורות השתמרו, ובהן מופיעים עשרות מקבלי צדקה, רבים מהם עיוורים. בין השאר מוזכרים \"... אל-אנדלוסי וא-אח'והא\" (שורה 4). המסמך נחתך לאחר מכן לשלושה דפים (לפחות), אשר שימשו מחדש לכתיבת טקסט הלכתי בכתב ידו של רבי אפרים בן שמריה. ראוי לבחינה נוספת.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00036-00014"
@@ -41,7 +41,7 @@
     "ערבית",
     "צדקה",
     "חיטה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "List or table",

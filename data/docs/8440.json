@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "List of 57 names, in some cases indicating their profession (many are physicians, also common are pharmacists, silk merchants, and silk weavers and dyers), beginning with ‘Abū Naṣr ibn Dāwūd and his father’. Among the names listed (line 7) there is Dāʾūd ibn al-Rayyīs, possibly the son of the Nagid Abraham Maimonides and grandson of Maimonides. (Information from CUDL and Goitein's index card.)",
-  "description_he": "רשימת 57 שמות עם ציון מקצועם (רבים רופאים, גם רוקחים, סוחרי משי וצבעי משי); בראשה אבו נצר בן דאוד ואביו",
+  "description_he": "רשימה של 57 שמות, בחלק מהמקרים בציון מקצועם (רבים מהם רופאים, ושכיחים גם רוקחים, סוחרי משי, ואורגי משי וצובעיו). הרשימה פותחת ב\"אבו נצר אבן דאוד ואביו\". בין השמות המופיעים ברשימה (בשורה 7) מופיע דאוד אבן אלרייס, שייתכן שהוא בנו של הנגיד רבי אברהם בן הרמב\"ם ונכדו של הרמב\"ם. (המידע מבוסס על CUDL ועל כרטיסיית גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00003-00006"
@@ -40,7 +40,8 @@
     "מסחר",
     "רפואה",
     "משי",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

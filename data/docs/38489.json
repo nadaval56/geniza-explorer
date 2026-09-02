@@ -1,1 +1,42 @@
-{"id":"38489","shelfmark":"Moss. II,120.3","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Small fragment of a letter to 'he-ḥaver ha-meʿulle.' Handwriting of Shelomo b. Yehuda?","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-MOSSERI-II-00120-00003"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/38489/","mentioned":"","description_he":"שבר קטן ממכתב ל'חבר המעולה'. כתב ידו של שלמה בן יהודה?","tags_he":["מכתב","יהודית-ערבית"],"prev":"38487","next":"38493","pos":19471,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Small fragment of a letter to 'he-ḥaver ha-meʿulle.' Handwriting of Shelomo b. Yehuda?",
+  "description_he": "שבר קטן ממכתב ל'חבר המעולה'. כתב ידו של רב שלמה בן יהודה?",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "38489",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-MOSSERI-II-00120-00003"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "38493",
+  "origin": "",
+  "pos": 19471,
+  "prev": "38487",
+  "princeton_url": "https://geniza.princeton.edu/documents/38489/",
+  "region": "",
+  "shelfmark": "Moss. II,120.3",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

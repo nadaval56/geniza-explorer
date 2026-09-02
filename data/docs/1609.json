@@ -1,1 +1,51 @@
-{"id":"1609","shelfmark":"T-S 6J2.15 + T-S 10K8.13","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Hebrew","lang2_he":"עברית","lang_note":"","origin":"","destination":"","region":"","date":"1213-1237","date_original":"","date_standard":"","date_inferred":"1213-1237","date_rationale":"Person mentioned","library":"ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL","collection":"CUL, T-S ; CUL, T-S","description":"Two legal queries addressed to Avraham Maimonides (Nagid) with his autograph responsa (r. 1205-1237 CE as Rayyis al-Yahūd and also with the title Nagid after 1213 CE):\n\n(I) concerning a man from Alexandria, married with children, who took an enslaved woman and lives with her as his concubine in the Fayyūm, abandoning his family in Alexandria. Is this permissible, or must he divorce his wife and pay her ketubba? Separately, is it permissible for a bachelor to cohabit with an enslaved woman? The answer: It is forbidden for a man to live alone with an enslaved woman, and if he does so, he should be excommunicated by name until he removes her from his home. \n\n(II) concerning whether the laws of loan forgiveness in shemiṭa apply to women as well as men. The answer: Yes.","tags":["Responsum, Avraham Maimonides autograph"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00006-J-00002-00015","https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-K-00008-00013"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00006-J-00002-00015","https://cudl.lib.cam.ac.uk/view/MS-TS-00010-K-00008-00013/1"],"princeton_url":"https://geniza.princeton.edu/documents/1609/","mentioned":"Alexandria, al-Fayyūm","description_he":"שתי שאלות הלכתיות שהופנו לאברהם בן הרמב\"ם (הנגיד), עם תשובותיו בכתב ידו. אברהם כיהן כראיס אליהוד בשנים 1205–1237 לסה\"נ, ונשא גם את התואר \"נגיד\" החל משנת 1213 לסה\"נ.\n\n(I) השאלה הראשונה עוסקת באיש מאלכסנדריה, נשוי ואב לילדים, אשר לקח לעצמו שפחה וחי עמה כפילגש בפיום, תוך שהוא נוטש את משפחתו באלכסנדריה. האם הדבר מותר, או שמא עליו לגרש את אשתו ולשלם לה את כתובתה? בנוסף נשאלה שאלה נפרדת: האם מותר לרווק לגור עם שפחה? תשובתו של הנגיד: אסור לאדם להתייחד עם שפחה, ואם עשה כן — יש להחרימו בנקיבת שמו עד שיוציאנה מביתו.\n\n(II) השאלה השנייה עוסקת בשאלה האם דיני שמיטת כספים חלים גם על נשים כשם שהם חלים על גברים. תשובתו של הנגיד: כן, הדינים חלים גם על נשים.","tags_he":["מסמך משפטי","יהודית-ערבית","אלכסנדריה","מיימוניד"],"prev":"1600","next":"1610","pos":890,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, T-S",
+  "date": "1213-1237",
+  "date_inferred": "1213-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Two legal queries addressed to Avraham Maimonides (Nagid) with his autograph responsa (r. 1205-1237 CE as Rayyis al-Yahūd and also with the title Nagid after 1213 CE):\n\n(I) concerning a man from Alexandria, married with children, who took an enslaved woman and lives with her as his concubine in the Fayyūm, abandoning his family in Alexandria. Is this permissible, or must he divorce his wife and pay her ketubba? Separately, is it permissible for a bachelor to cohabit with an enslaved woman? The answer: It is forbidden for a man to live alone with an enslaved woman, and if he does so, he should be excommunicated by name until he removes her from his home. \n\n(II) concerning whether the laws of loan forgiveness in shemiṭa apply to women as well as men. The answer: Yes.",
+  "description_he": "שתי שאלות הלכתיות שהופנו לרבי אברהם בן הרמב\"ם (הנגיד), עם תשובותיו בכתב ידו. אברהם כיהן כראיס אליהוד בשנים 1205–1237 לסה\"נ, ונשא גם את התואר \"נגיד\" החל משנת 1213 לסה\"נ.\n\n(I) השאלה הראשונה עוסקת באיש מאלכסנדריה, נשוי ואב לילדים, אשר לקח לעצמו שפחה וחי עמה כפילגש בפיום, תוך שהוא נוטש את משפחתו באלכסנדריה. האם הדבר מותר, או שמא עליו לגרש את אשתו ולשלם לה את כתובתה? בנוסף נשאלה שאלה נפרדת: האם מותר לרווק לגור עם שפחה? תשובתו של הנגיד: אסור לאדם להתייחד עם שפחה, ואם עשה כן — יש להחרימו בנקיבת שמו עד שיוציאנה מביתו.\n\n(II) השאלה השנייה עוסקת בשאלה האם דיני שמיטת כספים חלים גם על נשים כשם שהם חלים על גברים. תשובתו של הנגיד: כן, הדינים חלים גם על נשים.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00006-J-00002-00015",
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-K-00008-00013/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1609",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00006-J-00002-00015",
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-K-00008-00013"
+  ],
+  "lang2_en": "Hebrew",
+  "lang2_he": "עברית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL",
+  "mentioned": "Alexandria, al-Fayyūm",
+  "multifragment": "",
+  "next": "1610",
+  "origin": "",
+  "pos": 890,
+  "prev": "1600",
+  "princeton_url": "https://geniza.princeton.edu/documents/1609/",
+  "region": "",
+  "shelfmark": "T-S 6J2.15 + T-S 10K8.13",
+  "tags": [
+    "Responsum, Avraham Maimonides autograph"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "אלכסנדריה",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

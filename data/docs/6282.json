@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "List of contributors. Dating: From the time of the Nagid Avraham Maimonides (1205–37). Four pages of names, largely identical with those in contemporary lists, with contributions of 1/4, 1/2, 1, 1 1/2, 1 3/4, 2 (dirhems?). Some give together with the laborers of their workshops: Ibn al-Shāʿir (the Son of the Poet, a family name) wa-ṣunnāʿh, Saʿīd wa-ṣunnāʿh. Altogether about 214 names legible. The Raṣuy appears again, as sixth in the first column, but with the highest sum. Goitein, Med Soc, II, Appendix C, #50 (p. 491).",
-  "description_he": "רשימת תורמים מתקופת הנגיד אברהם מימוניד (1205–1237), ארבעה עמודים",
+  "description_he": "רשימת תורמים. תיארוך: מתקופת הנגיד רבי אברהם בן הרמב\"ם (1205–1237). ארבעה עמודים של שמות, זהים ברובם לאלה המופיעים ברשימות בנות התקופה, עם תרומות בסכומים של 1/4, 1/2, 1, 1 1/2, 1 3/4 ו-2 (דרהמים?). אחדים מן התורמים נותנים יחד עם פועלי בתי המלאכה שלהם: אבן אלשאער (בן המשורר, שם משפחה) וצֻנַّאעֻה, סעיד וצֻנַّאעֻה. בסך הכול ניתן לקרוא כ-214 שמות. ה\"רצוי\" מופיע כאן שוב, ששי בטור הראשון, אך עם הסכום הגבוה ביותר.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,8 @@
   "tags_he": [
     "חשבונות",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

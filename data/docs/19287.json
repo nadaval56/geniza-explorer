@@ -1,1 +1,50 @@
-{"id":"19287","shelfmark":"Bodl. MS heb. a 3/41","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1847-09-15","date_original":"5 Tishrei 5608","date_standard":"1847-09-15","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Ketubba dated 15 September 1847 CE (5 Tishrei 5608 AM) from Tangier (spelled: טאנג'אר) for Ḥayyim Naḥmias b. Avraham b. Moshe b. Yiṣḥaq and Ordueña bt. Menaḥem b. Aharon. The currency used is אותייות and is mentioned in connection with a specific(?) mint on several occasions. The total value of the various marital payments within the ketubba is 18,000 אותייות, which appear prominently at the center of the document as ח׳׳י. Scribed and witnessed by Masʿūd ha-Kohen. The groom also signed underneath as a consenting party to the marriage. Among the conditions mentioned, the groom is not permitted to travel to other cities or to marry a second wife, unless with the consent of Ordueña. In the event that he does so without her permission, the groom commits to grant her a bill of divorce. The ketubba notes in the final lines that it is recorded in accordance with the Sephardi traditions of the \"congregations of expellees from Qastīlya\" (Castille). ASE. MCD.","tags":["19th c, Morocco"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/a/ms-heb-a-3-41.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_5#MS_Heb_a_3-part41"],"princeton_url":"https://geniza.princeton.edu/documents/19287/","mentioned":"","description_he":"כתובה מתאריך 15 בספטמבר 1847 (ה' בתשרי ה'תר\"ח) מטנג'יר (בכתיב: טאנג'אר), עבור חיים נחמיאש בן אברהם בן משה בן יצחק ואורדואינייה בת מנחם בן אהרן. המטבע המשמש בכתובה הוא \"אותייות\", והוא מוזכר מספר פעמים בהקשר למטבעה מסוימת(?). הסכום הכולל של התשלומים הנישואיים השונים בכתובה הוא 18,000 אותייות, המופיעים באופן בולט במרכז המסמך כ-ח׳׳י. הכתובה נכתבה ונחתמה בידי מסעוד הכהן. החתן אף חתם בתחתיתה בתור צד מסכים לנישואין. בין התנאים הנזכרים בכתובה: החתן אינו רשאי לנסוע לערים אחרות או לשאת אישה שנייה, אלא בהסכמתה של אורדואינייה. במידה שיעשה כן ללא רשותה, מתחייב החתן להעניק לה גט. בשורות האחרונות מצוין כי הכתובה נערכה בהתאם למסורות הספרדיות של \"קהל המגורשים מקסטיליה\" (קאסטיליה).","tags_he":["מסמך משפטי","עברית","כתובה","נישואין","ספרד","אברהם מיימוניד"],"prev":"19284","next":"19288","pos":14250,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "1847-09-15",
+  "date_inferred": "",
+  "date_original": "5 Tishrei 5608",
+  "date_rationale": "",
+  "date_standard": "1847-09-15",
+  "description": "Ketubba dated 15 September 1847 CE (5 Tishrei 5608 AM) from Tangier (spelled: טאנג'אר) for Ḥayyim Naḥmias b. Avraham b. Moshe b. Yiṣḥaq and Ordueña bt. Menaḥem b. Aharon. The currency used is אותייות and is mentioned in connection with a specific(?) mint on several occasions. The total value of the various marital payments within the ketubba is 18,000 אותייות, which appear prominently at the center of the document as ח׳׳י. Scribed and witnessed by Masʿūd ha-Kohen. The groom also signed underneath as a consenting party to the marriage. Among the conditions mentioned, the groom is not permitted to travel to other cities or to marry a second wife, unless with the consent of Ordueña. In the event that he does so without her permission, the groom commits to grant her a bill of divorce. The ketubba notes in the final lines that it is recorded in accordance with the Sephardi traditions of the \"congregations of expellees from Qastīlya\" (Castille). ASE. MCD.",
+  "description_he": "כתובה מתאריך 15 בספטמבר 1847 (ה' בתשרי ה'תר\"ח) מטנג'יר (בכתיב: טאנג'אר), עבור חיים נחמיאש בן אברהם בן משה בן יצחק ואורדואינייה בת מנחם בן אהרן. המטבע המשמש בכתובה הוא \"אותייות\", והוא מוזכר מספר פעמים בהקשר למטבעה מסוימת(?). הסכום הכולל של התשלומים הנישואיים השונים בכתובה הוא 18,000 אותייות, המופיעים באופן בולט במרכז המסמך כ-ח׳׳י. הכתובה נכתבה ונחתמה בידי מסעוד הכהן. החתן אף חתם בתחתיתה בתור צד מסכים לנישואין. בין התנאים הנזכרים בכתובה: החתן אינו רשאי לנסוע לערים אחרות או לשאת אישה שנייה, אלא בהסכמתה של אורדואינייה. במידה שיעשה כן ללא רשותה, מתחייב החתן להעניק לה גט. בשורות האחרונות מצוין כי הכתובה נערכה בהתאם למסורות הספרדיות של \"קהל המגורשים מקסטיליה\" (קאסטיליה).",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_5#MS_Heb_a_3-part41"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19287",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/a/ms-heb-a-3-41.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19288",
+  "origin": "",
+  "pos": 14250,
+  "prev": "19284",
+  "princeton_url": "https://geniza.princeton.edu/documents/19287/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. a 3/41",
+  "tags": [
+    "19th c, Morocco"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "עברית",
+    "כתובה",
+    "נישואין",
+    "ספרד",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

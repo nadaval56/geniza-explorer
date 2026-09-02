@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Query to Avraham Maimonides (ha-Nagid) on the issue of a man who married a second wife while traveling outside the city in which he resides with his first wife and whether divorce is necessary. Avraham Maimonides served as Rayyis al-Yahūd between 1205–1237 CE and also with the title Nagid after 1213 CE.",
-  "description_he": "שאלה לאברהם מיימוני בדין איש שנשא אישה שנייה בנסיעה מחוץ לעיר מגוריו: האם נדרש גט?",
+  "description_he": "שאלה הלכתית שהופנתה לרבי אברהם בן הרמב\"ם (הנגיד) בנוגע למקרה של אדם שנשא אישה שנייה בעת שהותו מחוץ לעיר שבה הוא מתגורר עם אשתו הראשונה, והשאלה היא האם נדרש גירושין במצב זה. רבי אברהם בן הרמב\"ם כיהן כראיס אל-יהוד (ראש היהודים) בין השנים 1205–1237 לספירה, ומשנת 1213 ואילך נשא גם את התואר נגיד.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
   ],
   "tags_he": [
     "גירושין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

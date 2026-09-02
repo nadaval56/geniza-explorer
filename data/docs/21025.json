@@ -1,1 +1,42 @@
-{"id":"21025","shelfmark":"T-S Ar.40.118","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic, Greek/Coptic Numerals","lang_he":"Arabic, Greek/Coptic Numerals","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1276-06-15/1277-06-03","date_original":"675","date_standard":"1276-06-15/1277-06-03","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Mamluk-era state document in Arabic script. Dated: 675 AH = 1276/77 CE. Contains various annotations by clerks and is endorsed by both thin and thick pen. It may be concerned with wages. Mentions at least one amīr (maybe ʿIzz al-Dīn or ʿAlāʾ al-Dīn), the mutawallī of the al-Gharbiyya(?) district. There is a phrase that looks like \"li-muwaẓẓaf mustaẓhir al-wilāya,\" but the meaning is opaque. On verso there are two additional annotations (\"qubiḍa min dhālika nuqra... qubiḍa ayḍan...\") indicating sums collected, with Greek/Coptic numerals. Also mentions a bureau \"dār al-wukalā(?) bi-dār al-malik\". (Information in part from Baker/Polliack catalog.) Merits further examination.","tags":["DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/21025/","mentioned":"","description_he":"מסמך מדינה מתקופת הממלוכים בכתב ערבי. תאריך: 675 להיג'רה (1276/77 לספירה). מכיל הערות פקידים ואושר בעט דק ועבה. עשוי לעסוק בשכר. מוזכרים אמיר ומותוולי מחוז אל-ג'רביה. ראוי לבדיקה נוספת.","tags_he":["מסמך מדינה","ממלוכי"],"prev":"21024","next":"21026","pos":23337,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1276-06-15/1277-06-03",
+  "date_inferred": "",
+  "date_original": "675",
+  "date_rationale": "",
+  "date_standard": "1276-06-15/1277-06-03",
+  "description": "Mamluk-era state document in Arabic script. Dated: 675 AH = 1276/77 CE. Contains various annotations by clerks and is endorsed by both thin and thick pen. It may be concerned with wages. Mentions at least one amīr (maybe ʿIzz al-Dīn or ʿAlāʾ al-Dīn), the mutawallī of the al-Gharbiyya(?) district. There is a phrase that looks like \"li-muwaẓẓaf mustaẓhir al-wilāya,\" but the meaning is opaque. On verso there are two additional annotations (\"qubiḍa min dhālika nuqra... qubiḍa ayḍan...\") indicating sums collected, with Greek/Coptic numerals. Also mentions a bureau \"dār al-wukalā(?) bi-dār al-malik\". (Information in part from Baker/Polliack catalog.) Merits further examination.",
+  "description_he": "מסמך מנהלי מתקופת הממלוכים בכתב ערבי. מתוארך לשנת 675 להג'רה = 1276/77 לסה\"נ. כולל הערות שונות שנרשמו על ידי לבלרים ואישורים שנכתבו הן בעט דק והן בעט עבה. ייתכן שהמסמך עוסק בענייני שכר. נזכר בו לפחות אמיר אחד (אולי עז אלדין או עלאא אלדין), המתולי (הממונה) של מחוז אלע'רביה(?). מופיע צירוף שנראה כ-\"li-muwaẓẓaf mustaẓhir al-wilāya\", אך משמעותו אינה ברורה. בצד ה-verso מצויות שתי הערות נוספות (\"qubiḍa min dhālika nuqra... qubiḍa ayḍan...\") המציינות סכומים שנגבו, בליווי ספרות יווניות/קופטיות. כמו כן נזכר משרד בשם \"dār al-wukalā(?) bi-dār al-malik\" (בית המיופים בארמון המלך). (חלק מהמידע מבוסס על קטלוג בייקר/פוליאק.) ראוי לבחינה נוספת.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "21025",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Greek/Coptic Numerals",
+  "lang_he": "Arabic, Greek/Coptic Numerals",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "21026",
+  "origin": "",
+  "pos": 23337,
+  "prev": "21024",
+  "princeton_url": "https://geniza.princeton.edu/documents/21025/",
+  "region": "",
+  "shelfmark": "T-S Ar.40.118",
+  "tags": [
+    "DIMME"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ממלוכי"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

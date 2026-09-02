@@ -1,1 +1,47 @@
-{"id":"2172","shelfmark":"T-S 8J6.18","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"c","date":"1026-12-08","date_original":"26 Kislev 1338","date_standard":"1026-12-08","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"C1: Page from a court notebook dated Thursday, 26 Kislev 1338 Seleucid (December 1026 CE). unsigned, because only one witness appeared, Eli ha-Kohen b. Yefet. He conferred the right from Mawhuba bt. Yusuf ha-Kohen b. Avraham, widow of Yusuf ha-Yadu'a b. Bikar, vouching (ḍaminat) for Shlomo (Sulayman) b. Yusuf, that he could marry her daughter Sitt al-Dar bt. Yusuf ha-Kohen any time between now and Passover. If it was prevented, she would have to pay 15 dinars. If he would not marry until Passover he would have no claim except in the case of illness. He had no claim on this מהר (mahr, pledge of a cash dowry usually divided into two portions).C2: Page from a court notebook dated Monday, 7 Tevet, 1026, December. Netanel b. Aaron ha-Shulhani (known as Ibn al-Qata’if) acknowledges the guarantee likewise that Mawhuba bt. Yusuf made the understanding (mentioned in 1, above) and adds that these 15 dinars were the ones which were claimed from the bride's brother. C1 and C2 are both written by Yefet b. Daud. At the end of page signs Shemuel ha-Kohen b. Avtalyon and Efrayim b. Shemarya. See also T-S 8J6.18 (a, b and d). (Information from Goitein's index cards). EMS and VMR","tags":["Court notebook, Yefet b. David"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00006-00018"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00018"],"princeton_url":"https://geniza.princeton.edu/documents/2172/","mentioned":"","description_he":"ק1: דף מתוך פנקס בית דין, מיום חמישי, כ\"ו בכסלו א'של\"ח לשטרות (דצמבר 1026 לסה\"נ). אינו חתום, מכיוון שרק עד אחד התייצב, עלי הכהן בן יפת. הוא העביר את הזכות ממוהובה בת יוסף הכהן בן אברהם, אלמנת יוסף הידוע בן ביכאר, אשר ערבה (צ'מנת) לשלמה (סלימאן) בן יוסף, שיוכל לשאת את בתה סת אלדאר בת יוסף הכהן בכל עת מעתה ועד הפסח. אם הדבר ייבצר, היא תהיה חייבת לשלם 15 דינרים. אם לא יישא אותה עד הפסח, לא תהיה לו טענה כלשהי, פרט למקרה של מחלה. לא הייתה לו תביעה על המוהר (מהר, התחייבות לנדוניית מזומנים המחולקת בדרך כלל לשני חלקים).\n\nק2: דף מתוך פנקס בית דין, מיום שני, ז' בטבת, דצמבר 1026. נתנאל בן אהרן השולחני (המכונה אבן אלקטאיף) מודה בערבות באופן דומה, שמוהובה בת יוסף הגיעה להבנה (הנזכרת בק1 לעיל), ומוסיף ש-15 הדינרים הללו הם אלו שנתבעו מאחיה של הכלה.\n\nק1 וק2 נכתבו שניהם בידי יפת בן דאוד. בסוף העמוד חתומים שמואל הכהן בן אבטליון ואפרים בן שמריה.\n\nראו גם פריט נוסף הקשור (a, b ו-d). המידע מבוסס על כרטסת גויטיין.","tags_he":["מסמך משפטי","יהודית-ערבית","אפרים בן שמריה"],"prev":"2171","next":"2173","pos":1404,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1026-12-08",
+  "date_inferred": "",
+  "date_original": "26 Kislev 1338",
+  "date_rationale": "",
+  "date_standard": "1026-12-08",
+  "description": "C1: Page from a court notebook dated Thursday, 26 Kislev 1338 Seleucid (December 1026 CE). unsigned, because only one witness appeared, Eli ha-Kohen b. Yefet. He conferred the right from Mawhuba bt. Yusuf ha-Kohen b. Avraham, widow of Yusuf ha-Yadu'a b. Bikar, vouching (ḍaminat) for Shlomo (Sulayman) b. Yusuf, that he could marry her daughter Sitt al-Dar bt. Yusuf ha-Kohen any time between now and Passover. If it was prevented, she would have to pay 15 dinars. If he would not marry until Passover he would have no claim except in the case of illness. He had no claim on this מהר (mahr, pledge of a cash dowry usually divided into two portions).C2: Page from a court notebook dated Monday, 7 Tevet, 1026, December. Netanel b. Aaron ha-Shulhani (known as Ibn al-Qata’if) acknowledges the guarantee likewise that Mawhuba bt. Yusuf made the understanding (mentioned in 1, above) and adds that these 15 dinars were the ones which were claimed from the bride's brother. C1 and C2 are both written by Yefet b. Daud. At the end of page signs Shemuel ha-Kohen b. Avtalyon and Efrayim b. Shemarya. See also T-S 8J6.18 (a, b and d). (Information from Goitein's index cards). EMS and VMR",
+  "description_he": "ק1: דף מתוך פנקס בית דין, מיום חמישי, כ\"ו בכסלו א'של\"ח לשטרות (דצמבר 1026 לסה\"נ). אינו חתום, מכיוון שרק עד אחד התייצב, עלי הכהן בן יפת. הוא העביר את הזכות ממוהובה בת יוסף הכהן בן אברהם, אלמנת יוסף הידוע בן ביכאר, אשר ערבה (צ'מנת) לשלמה (סלימאן) בן יוסף, שיוכל לשאת את בתה סת אלדאר בת יוסף הכהן בכל עת מעתה ועד הפסח. אם הדבר ייבצר, היא תהיה חייבת לשלם 15 דינרים. אם לא יישא אותה עד הפסח, לא תהיה לו טענה כלשהי, פרט למקרה של מחלה. לא הייתה לו תביעה על המוהר (מהר, התחייבות לנדוניית מזומנים המחולקת בדרך כלל לשני חלקים).\n\nק2: דף מתוך פנקס בית דין, מיום שני, ז' בטבת, דצמבר 1026. נתנאל בן אהרן השולחני (המכונה אבן אלקטאיף) מודה בערבות באופן דומה, שמוהובה בת יוסף הגיעה להבנה (הנזכרת בק1 לעיל), ומוסיף ש-15 הדינרים הללו הם אלו שנתבעו מאחיה של הכלה.\n\nק1 וק2 נכתבו שניהם בידי יפת בן דאוד. בסוף העמוד חתומים שמואל הכהן בן אבטליון ורבי אפרים בן שמריה.\n\nראו גם פריט נוסף הקשור (a, b ו-d). המידע מבוסס על כרטסת גויטיין.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00018"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2172",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00006-00018"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2173",
+  "origin": "",
+  "pos": 1404,
+  "prev": "2171",
+  "princeton_url": "https://geniza.princeton.edu/documents/2172/",
+  "region": "c",
+  "shelfmark": "T-S 8J6.18",
+  "tags": [
+    "Court notebook, Yefet b. David"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "רבי אפרים בן שמריה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

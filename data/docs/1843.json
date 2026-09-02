@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Responsum concerning orphans, describing a loan from orphans that is taken orally without an oath, and a statement that orphans who are in debt because of a deceased parent should not have anything taken from them until they reach a mature age. (Information partly from Goitein's index cards) EMS and VMR. \nThe scribe is familiar from Avraham Maimuni's period. AA",
-  "description_he": "תשובה הלכתית בנושא יתומים: הלוואה מיתומים נלקחת בעל-פה ללא שבועה; חייבים בשל הורה מנוח לא ייגבה מהם דבר עד שיגיעו לבגרות.",
+  "description_he": "תשובה הלכתית בעניין יתומים. נדונה בה הלוואה הנלקחת מיתומים בעל פה ללא שבועה, ומובאת קביעה כי מיתומים החייבים בחובות בשל הוריהם שנפטרו אין לגבות דבר עד שיגיעו לגיל בגרות. (חלק מן המידע מבוסס על כרטיסיות גויטיין.) הסופר מוכר מתקופתו של אברהם מימוני.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00010-00001/1"
@@ -41,7 +41,8 @@
     "יהודית-ערבית",
     "תשובה הלכתית",
     "הלוואה",
-    "סופר"
+    "סופר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Signature of the Exilarch David. \"A signature on an otherwise blank piece of paper, possibly an ex libris inscribed on the first page of a codex. It reads, in rough cursive script: הודו לי'י כי טוב \\ מרשות אדוננו \\ דוד הנשיא הגדול \\ ראש גליות כל ישראל \\ יעזרהם אלהים על כלל. Possibly referring to David ben Zakai, who reigned as the Exilarch between 917 and 940, but more likely the later, 12th century Exilarch mentioned by Abraham Maimonides. See Gil, Be-malkhut Yishmaʹel bi-teḳufat ha-geʹonim / Mosheh Gil. Tel Aviv : University of Tel Aviv, 1997, vol. 1, p. 437 n. 255; sporadically vocalized.\" Information from Penn catalog.",
-  "description_he": "חתימת ראש הגולה דוד. חתימה על פיסת נייר ריקה אחרת, אולי אקס-ליבריס על הדף הראשון של ספר. קוראת: 'הודו לי'י כי טוב / מרשות אדוננו / דוד הנשיא הגדול / ראש גליות כל ישראל / יעזרהם אלהים על כלל'. כנראה דוד ראש הגולה שהוזכר על ידי אברהם מיימוניס.",
+  "description_he": "חתימה של ראש הגולה דוד. חתימה על דף נייר ריק לחלוטין מלבדה, שייתכן שמדובר בכתובת בעלות (ex libris) שנרשמה בעמוד הראשון של קודקס. הכתב הוא קורסיב גס, ונוסח החתימה הוא: \"הודו לי'י כי טוב \\ מרשות אדוננו \\ דוד הנשיא הגדול \\ ראש גליות כל ישראל \\ יעזרהם אלהים על כלל\". ייתכן שמדובר בדוד בן זכאי, שכיהן כראש הגולה בין השנים 917 ל-940, אך סביר יותר שמדובר בראש הגולה המאוחר יותר מהמאה ה-12, שנזכר אצל רבי אברהם בן הרמב\"ם. לפי גיל, מדובר ככל הנראה בדמות המאוחרת יותר. הטקסט מנוקד באופן ספורדי.",
   "destination": "",
   "fragment_urls": [
     "https://colenda.library.upenn.edu/catalog/81431-p3vm43g3f"
@@ -36,7 +36,8 @@
   "tags": [],
   "tags_he": [
     "הודו",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Paraliterary text",

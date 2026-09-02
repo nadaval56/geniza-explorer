@@ -1,1 +1,45 @@
-{"id":"6657","shelfmark":"ENA 2727.48","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Greek/Coptic Numerals, Judaeo-Arabic","lang_he":"Greek/Coptic Numerals, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Detailed mercantile account with names and sums of money. Most names appear in connection to certain markets (including Sūq Barbar, Sūq Wardān, and al-Sūq al-Kabīr), suggesting this was some sort of collection of communal tax(?). All the goods are materia medica. On verso the name Yeshuʿa b. Yoshiyyahu the descendant of Shemaʿyahu Gaʾon appears twice (known from other documents ca. 1140 CE, e.g., ENA 4020.8, T-S 13J2.25, and T-S AS 145.79).","tags":["to edit, list"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/b120f1c3-96b1-4981-ba5a-e53fd40bf2ea/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/6657/","mentioned":"","description_he":"חשבון מסחרי מפורט עם שמות וסכומים; הסחורות הן כולן חומרי מרפא; ורסו: שם ישועה בן יאשיהו צאצא שמעיהו גאון מוזכר פעמיים (כ-1140 לספירה)","tags_he":["חשבונות","מסחר","ישיבה וגאונות"],"prev":"6656","next":"6658","pos":4328,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Detailed mercantile account with names and sums of money. Most names appear in connection to certain markets (including Sūq Barbar, Sūq Wardān, and al-Sūq al-Kabīr), suggesting this was some sort of collection of communal tax(?). All the goods are materia medica. On verso the name Yeshuʿa b. Yoshiyyahu the descendant of Shemaʿyahu Gaʾon appears twice (known from other documents ca. 1140 CE, e.g., ENA 4020.8, T-S 13J2.25, and T-S AS 145.79).",
+  "description_he": "חשבון מסחרי מפורט הכולל שמות וסכומי כסף. רוב השמות מופיעים בזיקה לשווקים מסוימים (ובהם סוק ברבר, סוק ורדאן, וסוק אלכביר), דבר המרמז כי מדובר מן הסתם באיסוף של מס קהילתי כלשהו(?). כל הסחורות הנזכרות הן מאטריה מדיקה (חומרי מרפא). בצד ה-verso מופיע פעמיים שמו של ישועה בן יאשיהו, צאצא של שמעיהו גאון (המוכר ממסמכים נוספים מסביבות שנת 1140 לסה\"נ).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "6657",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/b120f1c3-96b1-4981-ba5a-e53fd40bf2ea/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Greek/Coptic Numerals, Judaeo-Arabic",
+  "lang_he": "Greek/Coptic Numerals, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "6658",
+  "origin": "",
+  "pos": 4328,
+  "prev": "6656",
+  "princeton_url": "https://geniza.princeton.edu/documents/6657/",
+  "region": "",
+  "shelfmark": "ENA 2727.48",
+  "tags": [
+    "to edit, list"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "מסחר",
+    "ישיבה וגאונות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

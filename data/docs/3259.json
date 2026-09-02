@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Marriage contract containing details of a dowry and written at the time of the Nagid ʿAmram (1378-1383). The name Avraham is preserved. (Information from Goitein's index cards.) The hand is very close to that of the clerk of Yehoshua Maimonides (d. 1355); see T-S 13J4.15 for another document from the time of the Nagid ʿAmram possibly written by the same scribe.",
-  "description_he": "חוזה נישואין הכולל פרטי נדוניה ושנכתב בתקופת הנגיד עמרם (1378–1383). השם אברהם שמור.",
+  "description_he": "כתובה הכוללת פרטי נדוניה, שנכתבה בימי הנגיד עמרם (1378–1383). השם אברהם השתמר במסמך. (המידע מבוסס על כרטיסיות גויטיין.) כתב היד קרוב מאוד לזה של סופרו של יהושע בן הרמב\"ם (נפטר ב-1355); ראו מסמך נוסף מתקופת הנגיד עמרם שייתכן שנכתב בידי אותו סופר.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00017-00013"
@@ -41,7 +41,7 @@
     "כתובה",
     "נדוניה",
     "סופר",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",
