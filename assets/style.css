@@ -661,6 +661,61 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
 }
 
+.page-gap {
+  color: var(--text-3);
+  padding: 0 .15rem;
+  user-select: none;
+}
+
+/* The jump box. Four thousand pages have no shape a reader can aim at with
+   buttons, so this is the control that actually reaches page 1,847. It sits on
+   its own line below the numbers once the bar wraps. */
+.page-jump {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin-inline-start: .9rem;
+  padding-inline-start: .9rem;
+  border-inline-start: 1px solid var(--border);
+}
+.page-jump label,
+.page-jump-total {
+  font-size: .82rem;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+.page-jump input {
+  width: 4.5rem;
+  padding: .35rem .5rem;
+  font: inherit;
+  font-size: .88rem;
+  text-align: center;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm, .35rem);
+}
+.page-jump input:focus-visible {
+  outline: 2px solid var(--gold-dark);
+  outline-offset: 1px;
+}
+@media (max-width: 620px) {
+  .page-jump {
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+    border-inline-start: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: .7rem;
+  }
+  /* At 320px with the text-size control turned up, "מתוך 4,493" is the piece
+     that pushes the row past the viewport. The count is still on the input as
+     its accessible name and its max, so nothing is lost by dropping it here. */
+  .page-jump-total { display: none; }
+  .page-jump input { width: 4rem; }
+}
+
 .page-btn {
   min-width: 2.2rem;
   height: 2.2rem;
@@ -761,10 +816,24 @@ img { display: block; max-width: 100%; }
   margin-bottom: .75rem;
 }
 
-/* The heading carries the description; the shelfmark sits under it. When a
-   document has no description long enough to make a clause, the shelfmark is
-   itself the h1 and keeps this same rule. */
-.fragment-heading,
+/* The heading carries the description; the shelfmark sits under it.
+
+   Heebo, not the serif: every other h1 on the site — .site-title on the home
+   page, .tag-title on a hub — is set in it, and this one only inherited the
+   serif because the rule was written when the heading was a Latin shelfmark.
+   Frank Ruhl Libre suits a catalogue label and a figure; it does not suit a
+   Hebrew sentence sitting where the reader expects the site's own voice. The
+   shelfmark keeps the serif below, which is what it was chosen for. */
+.fragment-heading {
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  letter-spacing: -.01em;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.25;
+  margin-bottom: .4rem;
+}
+
 h1.fragment-shelfmark {
   font-family: var(--font-serif);
   font-size: clamp(1.6rem, 4vw, 2.4rem);

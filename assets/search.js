@@ -275,30 +275,42 @@
   function renderPagination(pages) {
     if (pages <= 1) { pagination.innerHTML = ''; return; }
     const p = page;
-    let html = `<button class="page-btn" ${p===1?'disabled':''} data-page="${p-1}" aria-label="קודם">→</button>`;
-    const shown = new Set();
-    [1,2,p-2,p-1,p,p+1,p+2,pages-1,pages].forEach(n => { if(n>=1&&n<=pages) shown.add(n); });
 
-    /* Without jumps this bar reads "1 2 … 69 70 71 … 4492 4493", and page 200
-       costs a hundred and thirty clicks on "next". Eight documents a page over
-       the whole collection is about 4,500 pages, so a fixed step of ten would
-       print four hundred buttons; the step scales instead, to a round 1/2/5
-       ×10^k that keeps roughly ten of them whatever the filters leave. */
-    if (pages > 12) {
-      const raw = pages / 10;
-      const mag = Math.pow(10, Math.floor(Math.log10(raw)));
-      const step = (raw / mag <= 1 ? 1 : raw / mag <= 2 ? 2 : raw / mag <= 5 ? 5 : 10) * mag;
-      for (let n = step; n < pages; n += step) shown.add(Math.round(n));
-    }
-    let prev=0;
-    [...shown].sort((a,b)=>a-b).forEach(n => {
-      if (prev && n>prev+1) html += '<span class="page-btn" style="pointer-events:none;opacity:.3">…</span>';
-      html += `<button class="page-btn${n===p?' active':''}" data-page="${n}">${n}</button>`;
-      prev=n;
+    /* Jumps of five hundred were worse than useless here. The gallery has no
+       meaningful order to jump into, so "page 2500" tells a reader nothing —
+       it only made the bar long. What a reader actually does is step through
+       neighbours, or go straight to a page they already have in mind, and the
+       box serves the second far better than any set of buttons could. */
+    const shown = new Set([1, pages]);
+    for (let n = p - 2; n <= p + 2; n++) if (n >= 1 && n <= pages) shown.add(n);
+
+    let html = `<button class="page-btn" ${p === 1 ? 'disabled' : ''} data-page="${p - 1}" aria-label="לעמוד הקודם">→</button>`;
+    let prev = 0;
+    [...shown].sort((a, b) => a - b).forEach(n => {
+      if (prev && n > prev + 1) html += '<span class="page-gap" aria-hidden="true">…</span>';
+      html += `<button class="page-btn${n === p ? ' active' : ''}" data-page="${n}"`
+            + `${n === p ? ' aria-current="page"' : ''} aria-label="עמוד ${n}">${n}</button>`;
+      prev = n;
     });
-    html += `<button class="page-btn" ${p===pages?'disabled':''} data-page="${p+1}" aria-label="הבא">←</button>`;
+    html += `<button class="page-btn" ${p === pages ? 'disabled' : ''} data-page="${p + 1}" aria-label="לעמוד הבא">←</button>`;
+
+    html += `<form class="page-jump" id="page-jump">`
+          + `<label for="page-jump-input">עבור לעמוד</label>`
+          + `<input id="page-jump-input" type="number" min="1" max="${pages}" `
+          + `inputmode="numeric" placeholder="${p}" aria-label="מספר עמוד, בין 1 ל-${pages}">`
+          + `<span class="page-jump-total">מתוך ${pages.toLocaleString('he-IL')}</span>`
+          + `<button type="submit" class="page-btn page-jump-go">עבור</button>`
+          + `</form>`;
+
     pagination.innerHTML = html;
   }
+
+  function goToPage(n, pages) {
+    page = Math.min(Math.max(1, n), pages);
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 
   // ── Events ────────────────────────────────────────────────────────────────────
   function wire() {
@@ -361,9 +373,15 @@
     pagination.addEventListener('click', e => {
       const btn = e.target.closest('[data-page]');
       if (!btn || btn.disabled) return;
-      page = +btn.dataset.page;
-      render();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      goToPage(+btn.dataset.page, Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)));
+    });
+
+    pagination.addEventListener('submit', e => {
+      const form = e.target.closest('#page-jump');
+      if (!form) return;
+      e.preventDefault();
+      const n = parseInt(form.querySelector('input').value, 10);
+      if (Number.isFinite(n)) goToPage(n, Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)));
     });
   }
 

@@ -116,7 +116,63 @@ def doc_title(doc):
 # A description too short to hold a real clause; below this the shelfmark is
 # still the most useful thing a search result can show.
 TITLE_MIN_SOURCE = 60
-TITLE_LIMIT = 62
+TITLE_LIMIT = 62        # <title>: what a search result shows before it truncates
+HEADING_LIMIT = 115     # <h1>: the page has room the search result does not
+
+CLAUSE_BREAK = re.compile(r"[,;:]")
+
+# Hebrew words that demand a continuation. Cutting after one of them reads as a
+# sentence that broke rather than one that ended: "לאליהו הכהן הרביעי בן",
+# "האישה הנקראת בת", "מדריך לניחוש, תוך שימוש".
+DANGLING = {
+    "של", "את", "עם", "אל", "על", "בן", "בת", "מן", "אב", "בת", "לפי", "תוך",
+    "בין", "או", "גם", "כי", "אך", "אבל", "אשר", "כל", "אחד", "אחת", "שתי",
+    "שני", "לכבוד", "בנוגע", "בשם", "מאת", "בידי", "עבור", "נגד", "לאחר",
+    "לפני", "בתוך", "מתוך", "ללא", "בעניין", "בדבר", "כדי", "וכן", "כנראה",
+    "הנקרא", "הנקראת", "הידוע", "המכונה", "ר'", "ר׳", "בר", "אבו", "אבן", "בני",
+}
+
+# Words that can end a sentence but not a heading: they announce what comes next.
+TRAILING = {
+    "במילים", "בנוסח", "כדלקמן", "הבא", "הבאים", "הבאות", "הכלה", "החתן",
+    "לאמור", "ובו", "ובה", "שבו", "שבה", "כולל", "הכולל", "המכיל", "ובהם",
+}
+
+
+def _clause(text, limit):
+    """The opening of a description, cut where a reader would actually stop.
+
+    Nine descriptions in ten open with a sentence shorter than HEADING_LIMIT, so
+    the common case is no cut at all. When one is needed, a comma beats a word
+    boundary and a word boundary beats a character count — and a tail word that
+    cannot end a phrase is dropped rather than left hanging.
+    """
+    first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0].strip()
+    if len(first) <= limit:
+        out = first
+    else:
+        cut = first[:limit + 1]
+        for m in reversed(list(CLAUSE_BREAK.finditer(cut))):
+            if m.start() >= 25:
+                cut = cut[:m.start()]
+                break
+        else:
+            words = cut.rsplit(" ", 1)[0].split(" ")
+            while words and (words[-1] in DANGLING or len(words[-1]) <= 1):
+                words.pop()
+            cut = " ".join(words)
+        out = cut
+
+    # An opened bracket that never closes reads as damage; drop it and its tail.
+    # Dropping it can expose a new dangling word ("הפותח במילים" once the quote
+    # it introduced is gone), so the tail is cleaned again afterwards.
+    for opener, closer in (("(", ")"), ("[", "]"), ("\"", "\"")):
+        if out.count(opener) > out.count(closer):
+            out = out[:out.rindex(opener)]
+    words = out.strip().split(" ")
+    while len(words) > 4 and (words[-1] in DANGLING or words[-1] in TRAILING):
+        words.pop()
+    return " ".join(words).strip().rstrip(" .,;:־-–\u05f3\u05f4")
 
 
 def search_title(doc):
@@ -125,40 +181,32 @@ def search_title(doc):
     The catalogue label is what a researcher types when they already know the
     document: T-S 13J35.3. Nobody else types it, and it was occupying the one
     line a search result gives you. The Hebrew description opens with the words
-    people actually search — "טיוטת מכתב על הטלת חרם בקהילת פוסטאט" — so that
-    goes first and the shelfmark follows it, still findable by exact match.
+    people actually search, so that goes first and the shelfmark follows it,
+    still findable by exact match.
 
     Documents whose Hebrew description is too short to yield a clause keep the
     catalogue label: half a sentence cut mid-word is worse than a shelfmark.
     """
     shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
-    text = clean(doc.get("description_he"))
-    if len(text) < TITLE_MIN_SOURCE:
-        return doc_title(doc)
-
-    # First sentence when there is one, otherwise the opening of the paragraph.
-    first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0]
-    snippet = truncate(first, TITLE_LIMIT).rstrip("…").rstrip(" .,;:־-")
-    if len(snippet) < 25:
-        return doc_title(doc)
-    return f"{snippet} · {shelfmark}"
+    heading = page_heading(doc, limit=TITLE_LIMIT)
+    return f"{heading} · {shelfmark}" if heading else doc_title(doc)
 
 
-def page_heading(doc):
+def page_heading(doc, limit=HEADING_LIMIT):
     """The descriptive clause on its own, for the visible <h1>.
 
-    search_title() appends the shelfmark because a search result is one line
-    and has to carry both. The page does not: it can put the description in
-    the heading and the catalogue label on the line beneath, where a
-    researcher scanning for it still finds it.
+    Longer than the <title> version on purpose. A search result is one line and
+    Google cuts it near sixty characters; the page itself has a whole heading to
+    spend, and at this limit nine descriptions in ten need no cut at all.
 
     Returns None when the description is too short to yield a clause, and the
     heading falls back to the shelfmark.
     """
-    title = search_title(doc)
-    shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
-    suffix = f" · {shelfmark}"
-    return title[:-len(suffix)] if title.endswith(suffix) else None
+    text = clean(doc.get("description_he"))
+    if len(text) < TITLE_MIN_SOURCE:
+        return None
+    out = _clause(text, limit)
+    return out if len(out) >= 25 else None
 
 
 def doc_description(doc):
@@ -377,7 +425,7 @@ DOC_PAGE = """<!DOCTYPE html>
   <a href="#doc-main" class="skip-link">דלג לתוכן המסמך</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="{root}" class="nav-home">← חזרה לגלריה</a>
+    <a href="{root}" class="nav-home">← חזרה לדף הבית של הגניזה</a>
     <span class="nav-breadcrumb" aria-current="page">{breadcrumb}</span>
   </nav>
 
@@ -589,7 +637,7 @@ INDEX_PAGE = """<!DOCTYPE html>
   <a href="#doc-index" class="skip-link">דלג לרשימת המסמכים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../" class="nav-home">← חזרה לגלריה</a>
+    <a href="../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
     <span class="nav-breadcrumb" aria-current="page">כל המסמכים · עמוד {page}</span>
   </nav>
 
@@ -877,7 +925,7 @@ TAG_PAGE = """<!DOCTYPE html>
   <a href="#tag-main" class="skip-link">דלג לרשימת המסמכים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../../" class="nav-home">← חזרה לגלריה</a>
+    <a href="../../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
     <span class="nav-breadcrumb" aria-current="page">{crumb}</span>
   </nav>
 
@@ -946,7 +994,7 @@ TAG_DIRECTORY = """<!DOCTYPE html>
   <a href="#tag-dir" class="skip-link">דלג לרשימת הנושאים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../" class="nav-home">← חזרה לגלריה</a>
+    <a href="../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
     <span class="nav-breadcrumb" aria-current="page">נושאים</span>
   </nav>
 
