@@ -442,6 +442,7 @@ DOC_PAGE = """<!DOCTYPE html>
 
   <script src="{root}assets/doc-image.js" defer></script>
   <script src="{root}assets/doc-english.js" defer></script>
+  <script src="{root}assets/card-thumbs.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -678,6 +679,12 @@ def render_index_pages(docs, base, out_dir):
 # build never finished. Keeping the best few dozen per bucket is also better
 # on the merits: a reader wants the strongest neighbours, not the nearest.
 RELATED_BUCKET = 40
+RELATED_DESC = 110
+
+# Six full cards on every one of 35,940 pages put the published site at 1,010 MB
+# against a GitHub Pages ceiling of 1 GB. Four is what the grid shows in a row
+# anyway, and it is the cheap half of the fix: the descriptions are capped too.
+RELATED_MAX = 4
 
 
 def _quality(doc):
@@ -734,7 +741,7 @@ def _tag_weight(size):
     return 1
 
 
-def related_docs(doc, index, limit=8):
+def related_docs(doc, index, limit=RELATED_MAX):
     """Documents worth reading next, scored by how much they share.
 
     A shared tag is the strongest signal, scaled by how rare that tag is. Same
@@ -763,25 +770,7 @@ def related_docs(doc, index, limit=8):
     return [lookup[doc_id] for doc_id, _ in ranked[:limit]]
 
 
-def render_related(doc, index):
-    neighbours = related_docs(doc, index)
-    if not neighbours:
-        return ""
-    items = "".join(
-        f'<a class="related-card" href="{esc(other["id"])}.html">'
-        f'<span class="related-shelfmark">{esc(clean(other.get("shelfmark")) or "PGPID " + str(other["id"]))}</span>'
-        f'<span class="related-meta">{esc(summary_line(other))}</span>'
-        f'<span class="related-desc">{esc(truncate(doc_description(other), 110))}</span>'
-        "</a>"
-        for other in neighbours
-    )
-    return ('\n    <section class="related-block" aria-labelledby="related-hd">\n'
-            '      <h2 class="section-label" id="related-hd">מסמכים קשורים</h2>\n'
-            f'      <div class="related-grid">{items}</div>\n'
-            '    </section>\n')
-
-
-def render_doc_card(doc, root="../../"):
+def render_doc_card(doc, root="../../", desc_limit=None):
     """A document card, matching the one the home page builds in search.js.
 
     Deliberately duplicated rather than shared: the home page renders cards in
@@ -812,6 +801,10 @@ def render_doc_card(doc, root="../../"):
                + "</div>")
 
     desc = clean(doc.get("description_he"))
+    # A hub lists a hundred documents on one page and a description can run
+    # long, so callers that repeat this card across every document page cap it.
+    if desc_limit:
+        desc = truncate(desc, desc_limit)
     desc_html = f'<p class="card-description">{esc(desc)}</p>' if desc else ""
 
     library = clean(doc.get("library"))
@@ -834,6 +827,20 @@ def render_doc_card(doc, root="../../"):
         f'        {geo}{desc_html}{footer}\n'
         f'      </a>'
     )
+
+def render_related(doc, index):
+    neighbours = related_docs(doc, index)
+    if not neighbours:
+        return ""
+    # The same card the home page and the tag hubs draw, thumbnail included.
+    # A related document with no picture next to it reads as an afterthought,
+    # and a manuscript is the one thing a reader can judge at a glance.
+    items = "\n".join(render_doc_card(other, root="../", desc_limit=RELATED_DESC) for other in neighbours)
+    return ('\n    <section class="related-block" aria-labelledby="related-hd">\n'
+            '      <h2 class="section-label" id="related-hd">מסמכים קשורים</h2>\n'
+            f'      <div class="cards-grid related-grid" role="list">\n{items}\n      </div>\n'
+            '    </section>\n')
+
 
 
 # ── Tag hub pages ─────────────────────────────────────────────────────────────
