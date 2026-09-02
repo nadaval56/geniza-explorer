@@ -1,1 +1,47 @@
-{"id":"4083","shelfmark":"T-S 16.36","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"Bilbays","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Jalāl al-Dawla, in Fustat, to Shelomo ha-Nasi b. Yishay, in Bilbays. In Judaeo-Arabic. Dating: ca. 1240 CE. The writer describes the difficult economic state of his group staying in Egypt and says that they intend to go back to Mosul. As part of a litany of complaints, he mentions that he has been sick many times and nearly died (v25–26). His sicknesses also feature in T-S 12.654 and T-S NS 321.93. (Information from Gil, Kingdom, II, pp. 264f.) ASE","tags":["Illness, Mosul Nasis, 13th c, illness letter 969-1517"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00036"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00036"],"princeton_url":"https://geniza.princeton.edu/documents/4083/","mentioned":"Baghdād, Damascus","description_he":"מכתב מג'לאל אל-דאולה בפוסטאט לשלמה הנשיא ב' ישי בבילבייס, ביהודית-ערבית, כ-1240 לספירה. מתאר את המצב הכלכלי הקשה של קבוצתו במצרים וכוונתם לחזור למוסול. מדווח על מחלות חוזרות וחולשה קרובה למוות.","tags_he":["מכתב","יהודית-ערבית","פוסטאט"],"prev":"4082","next":"4084","pos":3001,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Jalāl al-Dawla, in Fustat, to Shelomo ha-Nasi b. Yishay, in Bilbays. In Judaeo-Arabic. Dating: ca. 1240 CE. The writer describes the difficult economic state of his group staying in Egypt and says that they intend to go back to Mosul. As part of a litany of complaints, he mentions that he has been sick many times and nearly died (v25–26). His sicknesses also feature in T-S 12.654 and T-S NS 321.93. (Information from Gil, Kingdom, II, pp. 264f.) ASE",
+  "description_he": "מכתב מאת ג'לאל אלדולה, השוהה בפוסטאט, אל שלמה הנשיא בן ישי, היושב בבלביס. המכתב כתוב בערבית-יהודית ומתוארך לסביבות שנת 1240 לספירה. הכותב מתאר את מצבה הכלכלי הקשה של הקבוצה שלו השוהה במצרים, ומספר כי בכוונתם לשוב למוצול. במסגרת רשימת תלונות ארוכה הוא מזכיר כי חלה פעמים רבות וכמעט מת (שורות 25–26 בצד ההפוך). מחלותיו מופיעות גם במכתבים נוספים. המידע מבוסס על גיל, מלכות.",
+  "destination": "Bilbays",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00036"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4083",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00016-00036"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Baghdād, Damascus",
+  "multifragment": "",
+  "next": "4084",
+  "origin": "Fustat",
+  "pos": 3001,
+  "prev": "4082",
+  "princeton_url": "https://geniza.princeton.edu/documents/4083/",
+  "region": "",
+  "shelfmark": "T-S 16.36",
+  "tags": [
+    "Illness, Mosul Nasis, 13th c, illness letter 969-1517"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

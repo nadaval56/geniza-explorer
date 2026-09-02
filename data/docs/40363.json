@@ -1,1 +1,42 @@
-{"id":"40363","shelfmark":"JRL B 7849","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"JRL","library_raw":"JRL","collection":"JRL","description":"Letter fragment (upper left corner). In the hand of Shelomo b. Yehuda?","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/jrl/b/b-7849.json"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/40363/","mentioned":"","description_he":"קטע מכתב (פינה עליונה שמאלית), כנראה בכתב ידו של שלמה בן יהודה","tags_he":["מכתב","עברית"],"prev":"40361","next":"40384","pos":20168,"total":35937}
+{
+  "collection": "JRL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter fragment (upper left corner). In the hand of Shelomo b. Yehuda?",
+  "description_he": "קטע מכתב (פינה עליונה שמאלית), כנראה בכתב ידו של רב שלמה בן יהודה",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "40363",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/jrl/b/b-7849.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "JRL",
+  "library_raw": "JRL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "40384",
+  "origin": "",
+  "pos": 20168,
+  "prev": "40361",
+  "princeton_url": "https://geniza.princeton.edu/documents/40363/",
+  "region": "",
+  "shelfmark": "JRL B 7849",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

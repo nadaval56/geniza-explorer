@@ -1,1 +1,46 @@
-{"id":"2890","shelfmark":"T-S 10J17.15","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter fragment probably from ʿEli b. Hillel to his brother-in-law Ḥalfon b. Menashshe (identification is tentative, based on comparison with T-S 13J19.5). In Judaeo-Arabic. Mentions an item of iron and two rings. The writer is preoccupied on account of the illness of the addressee's wife and has taken a vow to fast. If the identifications are correct, the sick woman is probably his sister (Ḥalfon's wife) Sitt al-Fakhr. VMR. ASE.","tags":["fasting, illness: marad, Illness: women's, illness letter 969-1517, Illness"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00017-00015"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00017-00015/1"],"princeton_url":"https://geniza.princeton.edu/documents/2890/","mentioned":"","description_he":"קטע מכתב ככל הנראה מעלי ב' הלל לגיסו חלפון ב' מנשה. ביהודית-ערבית. מזכיר חפץ ברזל ושני טבעות. הכותב נוטל נדר לצום מדאגה למחלת אשת הנמען.","tags_he":["מכתב","יהודית-ערבית"],"prev":"2889","next":"2891","pos":1946,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter fragment probably from ʿEli b. Hillel to his brother-in-law Ḥalfon b. Menashshe (identification is tentative, based on comparison with T-S 13J19.5). In Judaeo-Arabic. Mentions an item of iron and two rings. The writer is preoccupied on account of the illness of the addressee's wife and has taken a vow to fast. If the identifications are correct, the sick woman is probably his sister (Ḥalfon's wife) Sitt al-Fakhr. VMR. ASE.",
+  "description_he": "שריד של מכתב, כנראה מעלי בן הלל אל גיסו חלפון בן מנשה (הזיהוי משוער, ומבוסס על השוואה למסמך אחר). כתוב בערבית-יהודית. נזכרים בו פריט מברזל ושתי טבעות. הכותב מודאג מאוד בשל מחלתה של אשת הנמען, ואף נדר נדר לצום. אם הזיהויים נכונים, האישה החולה היא ככל הנראה אחותו של הכותב (אשתו של חלפון), סת אלפח'ר.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00017-00015/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2890",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00017-00015"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2891",
+  "origin": "",
+  "pos": 1946,
+  "prev": "2889",
+  "princeton_url": "https://geniza.princeton.edu/documents/2890/",
+  "region": "",
+  "shelfmark": "T-S 10J17.15",
+  "tags": [
+    "fasting, illness: marad, Illness: women's, illness letter 969-1517, Illness"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

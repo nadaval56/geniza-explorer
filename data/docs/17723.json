@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Fragment from a letter/petition from Abū Saʿīd Ibn al-Muʿallima to Maḍmūn b. [Ḥasan] the Nagid of Yemen. In Judaeo-Arabic, with long introductory formulae in Hebrew. Of note one of Maḍmūn's titles here is מרדכי הזמן, which later became typical of Maimonides' titles, but was not unique to him. The sender is a teacher in the Iraqi synagogue (מע]לם בכניסה אל[ער]אקיין) and also mentions a certain Shelomo [...] al-ḥaver. The continuation and almost all of the substance are missing. Likely he goes on to ask for financial support for the synagogue/community, as we find in other letters sent from Fustat to wealthy benefactors in Yemen edited in the India Book. (Information in part from CUDL and M. A. Friedman.) ASE",
-  "description_he": "קטע ממכתב/עצומה מאבו סעיד אבן אל-מעלמה למד'מון בן [חסן], נגיד תימן. ביהודית-ערבית עם נוסחאות מבוא ארוכות בעברית. אחד מתואריו של מד'מון הוא 'מרדכי הזמן'. השולח הוא מורה בבית הכנסת העיראקי. ייתכן שמבקש תמיכה כספית לבית הכנסת/קהילה.",
+  "description_he": "קטע ממכתב או עצומה ששלח אבו סעיד אבן אלמעלמה אל מצמון בן [חסן], נגיד תימן. הקטע כתוב בערבית-יהודית ופותח בנוסחאות פתיחה ארוכות בעברית. ראוי לציון אחד מתאריו של מצמון המופיעים כאן — \"מרדכי הזמן\" — תואר שלימים נעשה אופייני לתאריו של הרמב\"ם, אם כי לא היה ייחודי לו. השולח הוא מלמד בבית הכנסת של העיראקים (מע]לם בכניסה אל[ער]אקיין), ומזכיר גם אדם בשם שלמה [...] אלחבר. ההמשך וכמעט כל גוף המכתב חסרים. סביר להניח שבהמשך הוא פונה ומבקש תמיכה כספית למען בית הכנסת או הקהילה, כפי שמצוי במכתבים אחרים שנשלחו מפוסטאט אל נדיבים אמידים בתימן ופורסמו בספר הודו. (המידע מבוסס בחלקו על CUDL ועל מ\"א פרידמן.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00152-00191"
@@ -43,7 +43,7 @@
     "פוסטאט",
     "הודו",
     "מלמד",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

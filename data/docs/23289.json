@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Fragment of an 11th-century legal document in Judaeo-Arabic. In the hand of Efrayim b. Shemarya? It involves Manṣūr and ʿAmram. It seems that one of them takes an oath that he will work for the other, either beginning or ending at the end of Nisan 13[..] Seleucid. A sum of 40 dirhams is named. The phrase \"his effort and his advice to his teacher\" appears out of context, and medicinal syrups or wine (sharāb) are mentioned next.",
-  "description_he": "קטע ממסמך משפטי מהמאה ה-11 בערבית-יהודית. בכתב ידו של אפרים בן שמריה? עוסק במנצור ובעמרם. נראה שאחד מהם נשבע שיעבוד עבור האחר. סכום של 40 דרהמים נזכר.",
+  "description_he": "קטע ממסמך משפטי מן המאה ה-11 בערבית-יהודית. ייתכן שנכתב בכתב ידו של רבי אפרים בן שמריה. המסמך עוסק בשני אנשים בשם מנצור ועמרם. נראה כי אחד מהם נשבע שיעבוד בשירותו של האחר, כאשר תקופת ההתחייבות מתחילה או מסתיימת בסוף חודש ניסן בשנת 13[..] למניין השטרות (סלאוקי). מוזכר סכום של 40 דרהם. הביטוי \"יגיעתו ועצתו לרבו\" מופיע בלא הקשר ברור, ובסמוך לו נזכרים שיקויי רפואה או יין (שראב').",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "רפואה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

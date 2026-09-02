@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Verso: Letter from Moshe Maimonides. Autograph. Giving instructions to al-Dayyan al-Maskil (i.e., Shemuʾel b. Saʿadya ha-Levi) to go to the dyehouse (maṭbakh, maṣbagh) where Abū Isḥāq works and confirm the value of its rent. Dating: ca. 1168–1204, based on the years when Maimonides was active in Egypt. Information in part from Friedman, Dictionary, p. 723.",
-  "description_he": "גב: מכתב מרמב\"ם, אוטוגרף, עם הוראות לדיין המשכיל (שמואל בן סעדיה הלוי) ללכת לצבעייה שבה עובד אבו יצחק ולאשר שכר דירתה; בערך 1168-1204 לסה\"נ",
+  "description_he": "ורסו: מכתב מאת רבי משה בן מימון (הרמב\"ם), בכתב ידו. הרמב\"ם נותן הוראות לאלדיאן אלמשכיל (כלומר, שמואל בן סעדיה הלוי) ללכת לבית הצביעה (מטבח', מצבע') שבו עובד אבו אסחאק, ולאשר את שווי דמי השכירות שלו. תיארוך: בקירוב 1168–1204, על פי שנות פעילותו של הרמב\"ם במצרים. חלק מהמידע נסמך על מילון פרידמן.",
   "destination": "",
   "fragment_urls": [
     "https://dpul.princeton.edu/catalog/dcvt150v14x"
@@ -40,7 +40,7 @@
     "מכתב",
     "יהודית-ערבית",
     "שכירות",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

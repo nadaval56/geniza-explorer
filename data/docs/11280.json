@@ -1,1 +1,48 @@
-{"id":"11280","shelfmark":"ENA 1822a.60","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Petition in Arabic script from a physician employed in the hospital in Cairo who had a government stipend of 5 dinars per month. This stipend has evidently been threatened, so he writes this petition to ensure that he will continue to get it. Alternatively, he has been promised the stipend but hasn't actually started to receive it yet. The formulary suggests 12th-century Fatimid origin. Instead of جملة in l. 2 it is also possible to read جمكية (jāmakiyya, \"stipend,\" though this is typically spelled with an alif). \n\nReused for a private petition in both Arabic and Hebrew script (see separate record).","tags":["jamakiyya, government officials, bimaristan, Fatimid, physician, Petition"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/2e9165d8-7ed2-430b-a9d1-a1974fdc4594/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/11280/","mentioned":"Cairo","description_he":"עצומה בכתב ערבי מרופא המועסק בבית החולים בקהיר, שקיבל קצבה ממשלתית של 5 דינרים לחודש. הקצבה אוּיְּמָה, ולכן כתב עצומה זו כדי להבטיח את המשכה. נוסח המסמך מצביע על מקור פאטמי מהמאה ה-12. נעשה בו שימוש חוזר לעצומה פרטית בערבית ובעברית (ראה רשומה נפרדת).","tags_he":["מסמך מדינה","ערבית","עצומה","רפואה","קהיר","פאטמי"],"prev":"11279","next":"11281","pos":7406,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Petition in Arabic script from a physician employed in the hospital in Cairo who had a government stipend of 5 dinars per month. This stipend has evidently been threatened, so he writes this petition to ensure that he will continue to get it. Alternatively, he has been promised the stipend but hasn't actually started to receive it yet. The formulary suggests 12th-century Fatimid origin. Instead of جملة in l. 2 it is also possible to read جمكية (jāmakiyya, \"stipend,\" though this is typically spelled with an alif). \n\nReused for a private petition in both Arabic and Hebrew script (see separate record).",
+  "description_he": "עצומה בכתב ערבי מאת רופא המועסק בבית החולים בקהיר, שהיה זכאי לקצבה ממשלתית בסך 5 דינרים בחודש. ככל הנראה הקצבה הזו נמצאה בסכנה, והוא כותב את העצומה כדי לוודא שימשיך לקבל אותה. אפשרות אחרת היא שהובטחה לו הקצבה אך הוא עדיין לא החל לקבלה בפועל. סגנון הנוסחאות מצביע על מקור פאטמי מן המאה ה-12. במקום המילה جملة בשורה 2 אפשר גם לקרוא جمكية (ג'אמכייה, \"קצבה\", אם כי בדרך כלל היא נכתבת עם אליף).\n\nנעשה בו שימוש חוזר לעצומה פרטית בכתב ערבי ובכתב עברי כאחד (ראו רשומה נפרדת).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "11280",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/2e9165d8-7ed2-430b-a9d1-a1974fdc4594/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "Cairo",
+  "multifragment": "",
+  "next": "11281",
+  "origin": "",
+  "pos": 7406,
+  "prev": "11279",
+  "princeton_url": "https://geniza.princeton.edu/documents/11280/",
+  "region": "",
+  "shelfmark": "ENA 1822a.60",
+  "tags": [
+    "jamakiyya, government officials, bimaristan, Fatimid, physician, Petition"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה",
+    "רפואה",
+    "קהיר",
+    "פאטמי"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

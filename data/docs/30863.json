@@ -1,1 +1,41 @@
-{"id":"30863","shelfmark":"AIU IX.A.48","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"18th-19th centuries","date_original":"","date_standard":"","date_inferred":"18th-19th centuries","date_rationale":"Person mentioned","library":"כיא פריז","library_raw":"AIU","collection":"AIU","description":"Writing exercises of the Hebrew alphabet that display the surname Meṣlīḥ/מצליח in the heading. Based on AIU IX.A.46 in this series and other writing exercises that follow this format (BL: OR 10123.6-7; JRL Series B 3647), the surname Meṣlīḥ is likely that of the student. Based on the paleography, nomenclature in these document types, and the paper it is likely that these exercises date to the 18th or 19th centuries (Date: 18th c or 19th c). MCD.","tags":["c, 18th c, or, 19th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/30863/","mentioned":"","description_he":"תרגילי כתיבה של האלפבית העברי עם שם המשפחה מצליח בכותרת - ככל הנראה שם התלמיד. ממאה ה-18 או ה-19.","tags_he":["חשבונות"],"prev":"30862","next":"30864","pos":29087,"total":35937}
+{
+  "collection": "AIU",
+  "date": "18th-19th centuries",
+  "date_inferred": "18th-19th centuries",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Writing exercises of the Hebrew alphabet that display the surname Meṣlīḥ/מצליח in the heading. Based on AIU IX.A.46 in this series and other writing exercises that follow this format (BL: OR 10123.6-7; JRL Series B 3647), the surname Meṣlīḥ is likely that of the student. Based on the paleography, nomenclature in these document types, and the paper it is likely that these exercises date to the 18th or 19th centuries (Date: 18th c or 19th c). MCD.",
+  "description_he": "תרגילי כתיבה של האלף-בית העברי שמציגים בכותרת את שם המשפחה מצליח/Meṣlīḥ. בהתבסס על מסמך אחר באותה סדרה ועל תרגילי כתיבה נוספים בעלי פורמט דומה, סביר להניח ששם המשפחה מצליח הוא שמו של התלמיד. על פי הפלאוגרפיה, השמות המופיעים במסמכים מסוג זה, וסוג הנייר — סביר שתרגילים אלה נכתבו במאה ה-18 או ה-19.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "30863",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "כיא פריז",
+  "library_raw": "AIU",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "30864",
+  "origin": "",
+  "pos": 29087,
+  "prev": "30862",
+  "princeton_url": "https://geniza.princeton.edu/documents/30863/",
+  "region": "",
+  "shelfmark": "AIU IX.A.48",
+  "tags": [
+    "c, 18th c, or, 19th c"
+  ],
+  "tags_he": [
+    "חשבונות"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

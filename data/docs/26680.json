@@ -1,1 +1,42 @@
-{"id":"26680","shelfmark":"Moss. II,103.2","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Fragment of a family letter, same writer and addressee as T-S NS 338.71, mainly rebuking the addressee for the lack of letters. \"Your mother and sister send you regards and adjure you by God to not cut off your letters from us more than this, for you have burned our hearts with fires, especially when we see on this blessed [holiday]. . . everyone in health. And Muslim got sick and suffered hardship and, thanks to God, returned to health. You should send regards to him and congratulate him on his health, even if you do not see fit to write to any of us. . .\" ASE.","tags":["illness: recovered, nar, Illness, illness letter 969-1517"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/26680/","mentioned":"","description_he":"שבר של מכתב משפחתי, אותו כותב ואותו נמען כמו T-S NS 338.71, הגוער בעיקר בנמען על העדר מכתבים. 'אמך ואחותך שולחות לך ברכות ומשביעות אותך בשם האל שלא תפסיק את מכתביך אלינו יותר מזה, כי שרפת את לבותינו באש, ובמיוחד כשאנו רואים בחג המבורך הזה... כולם בריאים. ומוסלם חלה וסבל קשיים, ותודה לאל, שב לבריאות...' ASE","tags_he":["מכתב","יהודית-ערבית"],"prev":"26679","next":"26681","pos":27254,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment of a family letter, same writer and addressee as T-S NS 338.71, mainly rebuking the addressee for the lack of letters. \"Your mother and sister send you regards and adjure you by God to not cut off your letters from us more than this, for you have burned our hearts with fires, especially when we see on this blessed [holiday]. . . everyone in health. And Muslim got sick and suffered hardship and, thanks to God, returned to health. You should send regards to him and congratulate him on his health, even if you do not see fit to write to any of us. . .\" ASE.",
+  "description_he": "קטע ממכתב משפחתי, מאותו כותב ואותו נמען כמו מכתב נוסף מהגניזה. עיקר המכתב הוא נזיפה בנמען על שאינו שולח מכתבים. הכותב מוסר: \"אמך ואחותך שולחות לך דרישת שלום ומשביעות אותך באלוהים שלא תפסיק את מכתביך אלינו יותר מזה, כי שרפת את לבבותינו באשים, במיוחד כאשר אנו רואים ב[חג] המבורך הזה... כל אחד בבריאותו. ומֻסלִם חלה וסבל קשיים, ותודה לאל, חזר לבריאותו. עליך לשלוח לו דרישת שלום ולברך אותו על בריאותו, גם אם אינך רואה לנכון לכתוב לאיש מאיתנו...\"",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "26680",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "26681",
+  "origin": "",
+  "pos": 27254,
+  "prev": "26679",
+  "princeton_url": "https://geniza.princeton.edu/documents/26680/",
+  "region": "",
+  "shelfmark": "Moss. II,103.2",
+  "tags": [
+    "illness: recovered, nar, Illness, illness letter 969-1517"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

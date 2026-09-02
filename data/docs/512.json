@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Legal document, mentions ziqnei ha-yishmaelim. Deed of authorization of son to represent mother before her two brothers concerning the collection of debt at Efrayim b. Shemarya's court (l. 22r). Written in Tyre, confirmed in Fustat. Dating: ca. 1007–1055 CE, based on Efrayim b. Shemarya's years of activity.",
-  "description_he": "שטר הרשאה, צור מאושר בפוסטאט.",
+  "description_he": "מסמך משפטי הכולל אזכור של \"זקני הישמעאלים\". מדובר בשטר הרשאה שבו האם ממנה את בנה לייצגה מול שני אחיה בעניין גביית חוב, בבית דינו של רבי אפרים בן שמריה (שורה 22r). השטר נכתב בצור ואושר בפוסטאט. תיארוך משוער: בערך 1007–1055 לספירה, על פי שנות פעילותו של רבי אפרים בן שמריה.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_9#MS_Heb_b_11-part12"
@@ -40,7 +40,7 @@
     "מסמך משפטי",
     "פוסטאט",
     "צור",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Recto with the address on verso: Letter from an unknown sender, in Ṣahrajt, probably sent to Efrayim b. Shemarya. Dating: First half of the 11th century. In Hebrew and Judaeo-Arabic, in beautiful script. Describing the machinations of a rascal. The amīr and the qāḍī are mentioned several times. Perhaps connected to T-S 10J22.7\n\nVerso: Business accounts in Arabic script. Probably the secondary use.",
-  "description_he": "פנים עם הכתובת בגב: מכתב מכותב לא ידוע, בצחרג'ת, כנראה לאפרים ב. שמריה. תאריך: מחצית ראשונה של המאה ה-11. בעברית וביהודית-ערבית. מתאר מעשי רשע של נוכל. גב: חשבונות עסקיים בכתב ערבי",
+  "description_he": "מכתב בצד הרקטו ובצד הוורסו כתובת המען: מכתב מאת שולח לא ידוע, השוהה בצהרג'ת, ככל הנראה אל רבי אפרים בן שמריה. תיארוך: המחצית הראשונה של המאה ה-11. בעברית ובערבית-יהודית, בכתב יפה. המכתב מתאר את תכסיסיו ומזימותיו של נוכל. האמיר והקאדי נזכרים מספר פעמים לאורך המכתב. ייתכן שהמכתב קשור לפריט נוסף.\n\nבצד הוורסו: חשבונות מסחריים בכתב ערבי. ככל הנראה זהו השימוש המשני של הדף.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00006-00029"
@@ -37,7 +37,7 @@
   "tags_he": [
     "מכתב",
     "מסחר",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

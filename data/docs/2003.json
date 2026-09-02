@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter to Nathan, asking him visit and to stay with the writer over the Sabbath should he arrive by then. The letter also mentions the jāliya; a letter that had been sent to Alexandria; Barukh; the writer’s cousin Shelomo; and the carrier of the note, Mūsā (?). 13th century. The script similar to that of Abraham Maimonides. (Information from CUDL)",
-  "description_he": "מכתב לנתן: מבקשו לבקר ולשהות אצל הכותב בשבת אם יגיע בזמן. מוזכרים הג'אליה, מכתב לאלכסנדריה, ברוך, שלמה הדוד. המאה ה-13.",
+  "description_he": "מכתב הממוען לנתן, ובו מבקש הכותב ממנו לבוא לבקרו ולשהות עמו לאורך השבת אם יגיע עד אז. במכתב מוזכרים גם הג'אליה (מס הגולגולת המוטל על בני החסות); מכתב שנשלח לאלכסנדריה; ברוך; שלמה בן דודו של הכותב; ומוסא (?), נושא הפתק. מתוארך למאה ה-13. כתב היד דומה לזה של רבי אברהם בן הרמב\"ם.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00017-00008/1"
@@ -40,7 +40,8 @@
     "מכתב",
     "יהודית-ערבית",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

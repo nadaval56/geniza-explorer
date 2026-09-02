@@ -1,1 +1,47 @@
-{"id":"1003","shelfmark":"T-S 13J2.17","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1116-02-16/1116-03-15","date_original":"Adar 1427","date_standard":"1116-02-16/1116-03-15","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal testimony. Location: Sunbāṭ (Sambuṭya). Dated: Adar 1427 Seleucid = February/March 1116 CE. In which Hilāla bt. Natan (aka Hilāla bt. Hiba), a widow with three sons, releases her new husband Sason b. Yefet from from all obligations other than paying the delayed marriage gift and dowry and letting her live in his house for five years after his death as promised, and declares that her three sons would have no claims whatsoever against him and that her husband would not sue her sons. Same couple: T-S AS 147.170 + CUL Or.1080 J175 (PGPID 3992). Same cluster of documents from Sunbāṭ: T-S AS 151.156 (PGPID 16482), T-S 13J2.17 (PGPID 1003), T-S 13J3.8 (PGPID 1117).","tags":["Marriage, widow, testimony, ketubba"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00002-00017"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00002-00017/1"],"princeton_url":"https://geniza.princeton.edu/documents/1003/","mentioned":"","description_he":"עדות משפטית, סנבוט, פברואר–מרץ 1116. הילאלה בת נתן, אלמנה עם שלושה בנים, משחררת בעלה החדש סאסון בן יפת מכל חיוב חוץ ממוהר ונדוניה.","tags_he":["מסמך משפטי","יהודית-ערבית","נדוניה"],"prev":"1002","next":"1004","pos":388,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1116-02-16/1116-03-15",
+  "date_inferred": "",
+  "date_original": "Adar 1427",
+  "date_rationale": "",
+  "date_standard": "1116-02-16/1116-03-15",
+  "description": "Legal testimony. Location: Sunbāṭ (Sambuṭya). Dated: Adar 1427 Seleucid = February/March 1116 CE. In which Hilāla bt. Natan (aka Hilāla bt. Hiba), a widow with three sons, releases her new husband Sason b. Yefet from from all obligations other than paying the delayed marriage gift and dowry and letting her live in his house for five years after his death as promised, and declares that her three sons would have no claims whatsoever against him and that her husband would not sue her sons. Same couple: T-S AS 147.170 + CUL Or.1080 J175 (PGPID 3992). Same cluster of documents from Sunbāṭ: T-S AS 151.156 (PGPID 16482), T-S 13J2.17 (PGPID 1003), T-S 13J3.8 (PGPID 1117).",
+  "description_he": "עדות בבית דין מסונבאט (סמבוטיא), מאדר א'תכ\"ז למניין שטרות = פברואר/מרץ 1116. בה הילאלה בת נתן (המכונה גם הילאלה בת היבה), אלמנה ואם לשלושה בנים, משחררת את בעלה החדש ססון בן יפת מכל ההתחייבויות כלפיה, פרט לתשלום מוהר מאוחר ונדוניה ולמתן רשות לגור בביתו במשך חמש שנים לאחר מותו כפי שהובטח לה. כמו כן היא מצהירה כי שלושת בניה לא יוכלו לתבוע אותו בשום תביעה שהיא, ובמקביל מתחייב הבעל שלא יתבע את בניה. בני הזוג מופיעים גם במסמך נוסף, וקיימים מסמכים נוספים מאותה אסופה שמקורה בסונבאט.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00002-00017/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1003",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00002-00017"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1004",
+  "origin": "",
+  "pos": 388,
+  "prev": "1002",
+  "princeton_url": "https://geniza.princeton.edu/documents/1003/",
+  "region": "",
+  "shelfmark": "T-S 13J2.17",
+  "tags": [
+    "Marriage, widow, testimony, ketubba"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "נדוניה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

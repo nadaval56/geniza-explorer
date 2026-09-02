@@ -1,1 +1,45 @@
-{"id":"1260","shelfmark":"T-S Ar.47.243","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Jerusalem","destination":"","region":"","date":"1048/1049","date_original":"","date_standard":"1048/1049","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter fragment. Sent from Jerusalem, presumably to Fustat. In Hebrew. Dating: Ca. 1048/49 CE. Damaged and faded. Mentions a scholar who escaped from trouble with the government, apparently in the Maghrib; his sister and a guardianship; that the community honored him when he came to Jerusalem \"three years ago [in] the year 4806,\" which is 1045/46 CE. Also mentions Natan Av Bet Din. Goitein speculated that this might be a description of Daniel b. ʿAzarya, in part based on seeing a dispute over kosher slaughter in l. 21 and connecting this letter to T-S 20.19. Gil disagreed and understood this letter to be saying that the scholar is now dead.","tags":["Spain, Jerusalem"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/1260/","mentioned":"","description_he":"שבר מכתב מירושלים לפוסטאט, עברית, כ-1048/49. מזכיר חכם שנמלט מצרות עם השלטון במגרב, קהילתו בירושלים ואת נתן אב בית הדין.","tags_he":["מכתב","עברית","פוסטאט","ירושלים","מגרב"],"prev":"1247","next":"1262","pos":20608,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1048/1049",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "1048/1049",
+  "description": "Letter fragment. Sent from Jerusalem, presumably to Fustat. In Hebrew. Dating: Ca. 1048/49 CE. Damaged and faded. Mentions a scholar who escaped from trouble with the government, apparently in the Maghrib; his sister and a guardianship; that the community honored him when he came to Jerusalem \"three years ago [in] the year 4806,\" which is 1045/46 CE. Also mentions Natan Av Bet Din. Goitein speculated that this might be a description of Daniel b. ʿAzarya, in part based on seeing a dispute over kosher slaughter in l. 21 and connecting this letter to T-S 20.19. Gil disagreed and understood this letter to be saying that the scholar is now dead.",
+  "description_he": "קטע ממכתב שנשלח מירושלים, ככל הנראה לפוסטאט, בעברית. תיארוך: בקירוב 1048/49 לספירה. הקטע פגום ודהוי. במכתב מוזכר תלמיד חכם שנמלט מצרות עם השלטונות, ככל הנראה במגרב; מוזכרים אחותו ועניין של אפוטרופסות; וכן שהקהילה כיבדה אותו בבואו לירושלים \"לפני שלוש שנים [ב]שנת ד'תתו\"ו\" — היא שנת 1045/46 לספירה. כמו כן נזכר במכתב נתן אב בית דין. גויטיין שיער שייתכן ומדובר בתיאור של רב דניאל בן עזריה, בין היתר על סמך אזכור של מחלוקת סביב שחיטה כשרה בשורה 21 וחיבור המכתב הזה למכתב נוסף. גיל חלק על כך, והבין מן המכתב שהתלמיד חכם המוזכר בו כבר אינו בין החיים בעת הכתיבה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1260",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1262",
+  "origin": "Jerusalem",
+  "pos": 20608,
+  "prev": "1247",
+  "princeton_url": "https://geniza.princeton.edu/documents/1260/",
+  "region": "",
+  "shelfmark": "T-S Ar.47.243",
+  "tags": [
+    "Spain, Jerusalem"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "פוסטאט",
+    "ירושלים",
+    "מגרב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

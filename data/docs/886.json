@@ -6,7 +6,7 @@
   "date_rationale": "Event mentioned",
   "date_standard": "",
   "description": "Fragment of a letter, possibly intended to be sent from Fustat to Jerusalem. In Judaeo-Arabic. Dating: Likely ca. 1039 CE, since the content is related to T-S 12.365 (e.g., both mention Ben Meʾir and ʿAllūn and 'the party (ʿaṣabiyya) of Abū Sahl,' i.e., the party of Natan Av b. Avraham). Mentions a bill of exchange (suftaja) from Abū [Naṣr Shelomo b. Saʿadya known as] Ibn Ṣaghīr to the amount of 14 dinars; the house of the elder Abū l-Ṣaqr; events in the synagogue including a Torah scroll being taken out; Ibn Meʾir; the ḥaver Abū Kathīr (Efrayim b. Shemarya); and a date, the 16th of Adar. (Information from Gil and CUDL.)",
-  "description_he": "שבר מכתב, כנראה מפוסטאט לירושלים, בערך 1039. קשור לסכסוך הגאונות; מוזכרים שטר חליפין, בן מאיר ואבו כת'יר.",
+  "description_he": "קטע ממכתב, ככל הנראה נועד להישלח מפוסטאט לירושלים. בערבית-יהודית. תיארוך: כנראה סביב 1039 לסה\"נ, שכן התוכן קשור לקטע אחר (שם מוזכרים בן מאיר ועלון וכן 'הסיעה (עצביה) של אבו סהל', כלומר סיעתו של נתן אב בן אברהם). המכתב מזכיר שטר חליפין (סֻפְתַּגַ'ה) מאת אבו [נצר שלמה בן סעדיה הידוע כ]אבן צע'יר על סך 14 דינרים; את ביתו של הזקן אבו אלצקר; אירועים בבית הכנסת ובהם הוצאת ספר תורה; אבן מאיר; החבר אבו כת'יר (רבי אפרים בן שמריה); ותאריך — ט\"ז באדר. (המידע מבוסס על גיל ועל CUDL.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IV-00033-00003"
@@ -41,7 +41,7 @@
     "יהודית-ערבית",
     "פוסטאט",
     "ירושלים",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

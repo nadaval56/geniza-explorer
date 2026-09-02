@@ -1,1 +1,49 @@
-{"id":"31260","shelfmark":"Moss. IIIa,9 + T-S AS 212.54 + T-S AS 212.55 + T-S AS 214.40","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Italian, Yiddish","lang_he":"Hebrew, Judaeo-Italian, Yiddish","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1549-11-14","date_original":"23 Ḥeshvan 5310","date_standard":"1549-11-14","date_inferred":"","date_rationale":"","library":"אוסף מוסרי · ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"Mosseri ; CUL ; CUL ; CUL","collection":"Mosseri, Moss. ; CUL, T-S ; CUL, T-S ; CUL, T-S","description":"Letter from Yiṣḥaq b. Yeḥiel. Dated: Friday, 23 Ḥeshvan 5310 AM, which is 1549 CE. In Hebrew, with phrases in Yiddish and many words in Judaeo-Italian. The sender rebukes the addressee for various lapses in business correspondence, including for sending partial documents and writing in terms of the currency \"perahim\" instead of \"gerushim.\" This letter mentions Avraham Kolon (the sender of ENA 2727.45, Moss. IV,93, and HUC 1034). See also T-S Ar.30.232 + T-S NS 83.19, an account register by Yiṣḥaq b. Yeḥiel from later in the year 5310 AM (spring of 1550 CE). And see Avraham David's transcription and extensive notes on FGP.","tags":["Yiddish, Late Heb, perahim"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-IIIA-00009","https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00212-00055","https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00214-00040"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IIIA-00009/1","https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00212-00055","https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00214-00040"],"princeton_url":"https://geniza.princeton.edu/documents/31260/","mentioned":"","description_he":"מכתב מאת יצחק בן יחיאל. מתוארך: יום שישי, 23 חשון ה'ש'י = 1549 לספירה. בעברית, עם ביטויים ביידיש ומילים רבות ביהודית-איטלקית. השולח מוכיח את הנמען על מחדלים שונים בתכתובת עסקית, כולל שליחת מסמכים חלקיים וכתיבה במונחי המטבע 'פרחים' במקום 'גרושים'. מכתב זה מזכיר את אברהם קולון.","tags_he":["מכתב"],"prev":"31256","next":"31262","pos":17028,"total":35937}
+{
+  "collection": "Mosseri, Moss. ; CUL, T-S ; CUL, T-S ; CUL, T-S",
+  "date": "1549-11-14",
+  "date_inferred": "",
+  "date_original": "23 Ḥeshvan 5310",
+  "date_rationale": "",
+  "date_standard": "1549-11-14",
+  "description": "Letter from Yiṣḥaq b. Yeḥiel. Dated: Friday, 23 Ḥeshvan 5310 AM, which is 1549 CE. In Hebrew, with phrases in Yiddish and many words in Judaeo-Italian. The sender rebukes the addressee for various lapses in business correspondence, including for sending partial documents and writing in terms of the currency \"perahim\" instead of \"gerushim.\" This letter mentions Avraham Kolon (the sender of ENA 2727.45, Moss. IV,93, and HUC 1034). See also T-S Ar.30.232 + T-S NS 83.19, an account register by Yiṣḥaq b. Yeḥiel from later in the year 5310 AM (spring of 1550 CE). And see Avraham David's transcription and extensive notes on FGP.",
+  "description_he": "מכתב מאת יצחק בן יחיאל. מתוארך ליום שישי, כ\"ג בחשוון ה'ש\"י לבריאת העולם, היינו 1549 לספירה. הכתיבה היא בעברית, עם ביטויים ביידיש ומילים רבות ביהודית־איטלקית. השולח נוזף בנמען על שורה של מחדלים בהתכתבות העסקית ביניהם, ובכלל זאת על משלוח מסמכים חלקיים ועל ניסוח סכומים במטבע \"פרחים\" במקום ב\"גרושים\". במכתב מוזכר אברהם קולון (שולחם של שלושה מכתבים נוספים מן הגניזה). יש להשוות גם לפנקס חשבונות שניהל יצחק בן יחיאל מאוחר יותר באותה שנה, ה'ש\"י (אביב 1550), וכן לעיין בתעתיק ובהערות המקיפות של אברהם דוד במאגר פרידברג.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IIIA-00009/1",
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00212-00055",
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00214-00040"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "31260",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-MOSSERI-IIIA-00009",
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00212-00055",
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00214-00040"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Italian, Yiddish",
+  "lang_he": "Hebrew, Judaeo-Italian, Yiddish",
+  "lang_note": "",
+  "library": "אוסף מוסרי · ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "Mosseri ; CUL ; CUL ; CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "31262",
+  "origin": "",
+  "pos": 17028,
+  "prev": "31256",
+  "princeton_url": "https://geniza.princeton.edu/documents/31260/",
+  "region": "",
+  "shelfmark": "Moss. IIIa,9 + T-S AS 212.54 + T-S AS 212.55 + T-S AS 214.40",
+  "tags": [
+    "Yiddish, Late Heb, perahim"
+  ],
+  "tags_he": [
+    "מכתב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Draft of a letter that was not sent. A question that was addressed to Maimonides about remission of debts. Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. (Information from Goitein, Tarbiz, 28, 1959: 195-196). VMR",
-  "description_he": "טיוטת מכתב/שאלה למיימוני שלא נשלחה, בדין שמיטת חובות. כ-1168–1204.",
+  "description_he": "טיוטה של מכתב שלא נשלח. שאלה שהופנתה אל הרמב\"ם בעניין שמיטת חובות. התיארוך הוא בקירוב 1168–1204 לספירה, על פי השנים שבהן פעל הרמב\"ם במצרים.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00043/1"
@@ -39,7 +39,7 @@
   "tags_he": [
     "יהודית-ערבית",
     "טיוטה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

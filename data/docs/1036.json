@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from Eliyyahu the Judge, in Fustat, to his son Shelomo b. Eliyyahu, in Qalyūb. In Judaeo-Arabic. Dating: early 13th century. To be delivered to Abū l-Munā al-ʿAṭṭār, who will forward it to the addressee. The letter opens with blessings for either Hannuka or Purim. Eliyyahu provides a report about Hilāl and a compound (dār) and two small houses (duwayra) belonging to the heqdesh. If Hilāl is in Qalyūb, Shelomo should detain him there so that Eliyyahu can come out for Shabbat and take care of this affair. This is by the order of 'the Rayyis' (probably Avraham Maimonides).",
-  "description_he": "מכתב מאליהו השופט, פוסטאט, לבנו שלמה בן אליהו, בקליוב. מוקדם המאה השלוש עשרה. בעניין ניהול חצרות הקודש.",
+  "description_he": "מכתב מאליהו הדיין בפוסטאט אל בנו שלמה בן אליהו, בקליוב. בערבית-יהודית. תיארוך: ראשית המאה ה-13. המכתב נועד להימסר תחילה לאבו אל-מנא אל-עטאר, שיעבירוֹ ליעדו. פתיחת המכתב כוללת ברכות לרגל חנוכה או פורים. אליהו מוסר דיווח על הילאל ועל מתחם (דאר) ושני בתים קטנים (דווירה) השייכים להקדש. אם הילאל נמצא בקליוב, על שלמה לעכבו שם כדי שאליהו יוכל לצאת לשבת ולטפל בעניין זה. ההוראה ניתנת בפקודת 'הרֵיִיס' (ככל הנראה רבי אברהם בן הרמב\"ם).",
   "destination": "Qalyūb",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00022-00015/1"
@@ -42,7 +42,8 @@
     "הקדש",
     "פוסטאט",
     "דיין",
-    "מיימוניד",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם",
     "שלמה בן אליהו"
   ],
   "total": 35937,

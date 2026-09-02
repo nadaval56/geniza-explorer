@@ -1,1 +1,47 @@
-{"id":"35159","shelfmark":"T-S Misc.28.79.22 + T-S Misc.28.79.25 + T-S Misc.28.79","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1119-06-12/1119-07-10","date_original":"Tammuz 1430","date_standard":"1119-06-12/1119-07-10","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'","library_raw":"CUL ; CUL ; CUL","collection":"CUL, T-S ; CUL, T-S ; CUL, T-S","description":"P22 + P25: Legal document in the hand of Ḥalfon b. Menashshe. Dated: Tammuz 1430 Seleucid, which is 1119 CE. Involves: [Yosef] b. Mevorakh (the same as in T-S 24.74 from 1104 CE?); his ṣihr (son-in-law in this context) Abū l-Khayr b. Seʿadya; and Abū l-Khayr’s wife named [Ḥu]sn bt. Yūsuf. Her father (Yūsuf) wished to move her from the house of Abū l-Khayr's mother, but Abū l-Khayr refused. The court forced him to go along with it. There is a complicated discussion and settlement involving the dowry (qumāsh), compensation to her for the wear and tear on the dowry, the delayed marriage payment (muʾakhkhar), and the court compelling Abū l-Khayr to move. All this is tentative, pending the identification of the remaining joins. Join: Alan Elbaum.","tags":["dowry, Halfon b. Menashshe"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-MISC-00028-00079"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-MISC-00028-00079"],"princeton_url":"https://geniza.princeton.edu/documents/35159/","mentioned":"","description_he":"P22 + P25: מסמך משפטי בכתב ידו של חלפון בן מנשה. תאריך: תמוז 1430 לשטרות (1119 לסה'נ). כולל: [יוסף] בן מבורך, חתנו אבו אל-חייר בן סעדיה ואשתו [חו]סן בת יוסף. דיון מסובך על נדוניה, פיצוי על בלייתה, מועד מאוחר ובית מגורים.","tags_he":["חשבונות","יהודית-ערבית","נדוניה"],"prev":"35158","next":"35160","pos":18966,"total":35937}
+{
+  "collection": "CUL, T-S ; CUL, T-S ; CUL, T-S",
+  "date": "1119-06-12/1119-07-10",
+  "date_inferred": "",
+  "date_original": "Tammuz 1430",
+  "date_rationale": "",
+  "date_standard": "1119-06-12/1119-07-10",
+  "description": "P22 + P25: Legal document in the hand of Ḥalfon b. Menashshe. Dated: Tammuz 1430 Seleucid, which is 1119 CE. Involves: [Yosef] b. Mevorakh (the same as in T-S 24.74 from 1104 CE?); his ṣihr (son-in-law in this context) Abū l-Khayr b. Seʿadya; and Abū l-Khayr’s wife named [Ḥu]sn bt. Yūsuf. Her father (Yūsuf) wished to move her from the house of Abū l-Khayr's mother, but Abū l-Khayr refused. The court forced him to go along with it. There is a complicated discussion and settlement involving the dowry (qumāsh), compensation to her for the wear and tear on the dowry, the delayed marriage payment (muʾakhkhar), and the court compelling Abū l-Khayr to move. All this is tentative, pending the identification of the remaining joins. Join: Alan Elbaum.",
+  "description_he": "מסמך משפטי בכתב ידו של חלפון בן מנשה. מתוארך לתמוז א'תל\"ל למניין השטרות, היינו 1119 לסה\"נ. המעורבים: [יוסף] בן מבורך (אולי אותו אדם המופיע במסמך משנת 1104 לסה\"נ?); צהרו (חתנו, במובן בעל בתו) אבו אלח'יר בן סעדיה; ואשתו של אבו אלח'יר בשם [חֻ]סן בת יוסף. אביה (יוסף) ביקש להעביר אותה מבית אמו של אבו אלח'יר, ואילו אבו אלח'יר סירב לכך. בית הדין כפה עליו להיענות לדרישה. במסמך מתועד דיון מורכב והסדר הכולל את הנדוניה (קמאש), פיצוי לאישה על הבלאי שנגרם לנדוניה, את המוהר המאוחר (מאח'ר), וכפיית בית הדין על אבו אלח'יר לעבור דירה. כל זאת בהשערה, בכפוף לזיהוי שאר החיבורים. החיבור בין הקטעים נעשה בידי אלן אלבאום.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-MISC-00028-00079"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35159",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-MISC-00028-00079"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג' · ספריית קיימברידג' · ספריית קיימברידג'",
+  "library_raw": "CUL ; CUL ; CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35160",
+  "origin": "",
+  "pos": 18966,
+  "prev": "35158",
+  "princeton_url": "https://geniza.princeton.edu/documents/35159/",
+  "region": "",
+  "shelfmark": "T-S Misc.28.79.22 + T-S Misc.28.79.25 + T-S Misc.28.79",
+  "tags": [
+    "dowry, Halfon b. Menashshe"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "יהודית-ערבית",
+    "נדוניה"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

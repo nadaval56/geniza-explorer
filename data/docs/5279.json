@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1219-09-12/1220-08-30",
   "description": "Legal document. Location: Alexandria. Dated: 4980 AM, which is 1219/20 CE, under the authority of Avraham Maimonides. Involving Yefet ha-Rofe and his wife Sitt al-[..]Mʿ, and the right of living in an upper floor. Witnesses: the teacher Berakhot b. Ḥalfon; Raṣon b. Fityān. Witnesses for the validation (qiyyum): the judge Anaṭoli b. Yosef; Shemuel b. Yaʿaqov; and Ḥafeṣ b. Yosef. (Information from Frenkel and Goitein's index card.)",
-  "description_he": "מסמך משפטי מאלכסנדריה, 1219/20, בסמכות אברהם מימונידס, על יפת הרופא ואשתו וזכות מגורים",
+  "description_he": "מסמך משפטי מאלכסנדריה, מתוארך לשנת ד'תתק\"פ לבריאת העולם (1219/20 לסה\"נ), תחת סמכותו של רבי אברהם בן הרמב\"ם. המסמך עוסק ביפת הרופא ואשתו סת אל-[..]מע', ובזכות המגורים בקומה העליונה. העדים החתומים: המלמד ברכות בן חלפון; רצון בן פתיאן. עדי הקיום: הדיין אנטולי בן יוסף; שמואל בן יעקב; וחפץ בן יוסף. (המידע מתבסס על כרטיסיות של פרנקל וגויטיין.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -37,7 +37,8 @@
     "אלכסנדריה",
     "דיין",
     "מלמד",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

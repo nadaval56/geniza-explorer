@@ -1,1 +1,44 @@
-{"id":"4197","shelfmark":"T-S AS 152.2","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1100–1138","date_original":"","date_standard":"","date_inferred":"1100–1138","date_rationale":"Paleography","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Fragment of a legal document in the hand of Ḥalfon b. Menashshe (fl. 1100-1138 CE), dealing with the settlement of accounts. Involves Hiba b. Moshe (aka Natan b. Moshe) and Yiṣḥaq b. [...] ha-Levi known as Sayyid al-Kull. It appears that Hiba/Natan is ill. Reused on verso for Hebrew biblical and/or liturgical text. (Information in part from Goitein's index card.) \n\nSee JRL Gaster heb. ms 1760/10 (PGPID 32317).","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00152-00002"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00152-00002"],"princeton_url":"https://geniza.princeton.edu/documents/4197/","mentioned":"","description_he":"שבר מסמך משפטי בכתב חלפון ב' מנשה (1100-1138), לסילוק חשבונות. עוסק בהבה ב' משה (הידוע גם כנתן ב' משה) ויצחק ב' [...] הלוי הידוע כסיד אל-כול. נראה שהבה/נתן חולה.","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"4196","next":"4198","pos":3100,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1100–1138",
+  "date_inferred": "1100–1138",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Fragment of a legal document in the hand of Ḥalfon b. Menashshe (fl. 1100-1138 CE), dealing with the settlement of accounts. Involves Hiba b. Moshe (aka Natan b. Moshe) and Yiṣḥaq b. [...] ha-Levi known as Sayyid al-Kull. It appears that Hiba/Natan is ill. Reused on verso for Hebrew biblical and/or liturgical text. (Information in part from Goitein's index card.) \n\nSee JRL Gaster heb. ms 1760/10 (PGPID 32317).",
+  "description_he": "קטע ממסמך משפטי בכתב ידו של חלפון בן מנשה (פעיל בשנים 1100–1138 לספירה), העוסק בהסדרת חשבונות. מעורבים בו הִבּה בן משה (הידוע גם בשם נתן בן משה) ויצחק בן [...] הלוי המכונה סייד אלכֻּל. נראה כי הִבּה/נתן חולה. בצד השני נעשה שימוש חוזר בדף לכתיבת טקסט עברי מקראי ו/או ליטורגי. (חלק מהמידע מבוסס על כרטיסיית גויטיין.)\n\nראו את הקטע הקשור (PGPID 32317).",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00152-00002"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4197",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00152-00002"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "4198",
+  "origin": "",
+  "pos": 3100,
+  "prev": "4196",
+  "princeton_url": "https://geniza.princeton.edu/documents/4197/",
+  "region": "",
+  "shelfmark": "T-S AS 152.2",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

@@ -1,1 +1,42 @@
-{"id":"8985","shelfmark":"L-G Ar. II.63","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1078–1108","date_original":"","date_standard":"","date_inferred":"1078–1108","date_rationale":"Person mentioned","library":"CUL & Bodl.","library_raw":"CUL & Bodl.","collection":"CUL & Bodl., L-G","description":"One of three draft versions of a document concerning an official (muqaddam) in the community of al-Mahalla during the administration of Mevorakh b. Saadya (active 1078-1111). In the handwriting of Hillel b. Eli (active 1066-1108). The three copies are T-S 20.125 (PGPID 7538), L-G Ar. II.63 (PGPID 8985), and T-S 12.9 + T-S 16.196 (PGPID 3440). (Information from GRU catalog via FGP.)","tags":["Hillel b. Eli, Muqaddam"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8985/","mentioned":"al-Maḥalla","description_he":"אחת משלש טיוטות של מסמך בדבר פקיד (מוקדם) בקהילת המחלה בימי מבורך בן סעדיה; בכתב יד הלל בן עלי","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"8983","next":"8986","pos":21561,"total":35937}
+{
+  "collection": "CUL & Bodl., L-G",
+  "date": "1078–1108",
+  "date_inferred": "1078–1108",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "One of three draft versions of a document concerning an official (muqaddam) in the community of al-Mahalla during the administration of Mevorakh b. Saadya (active 1078-1111). In the handwriting of Hillel b. Eli (active 1066-1108). The three copies are T-S 20.125 (PGPID 7538), L-G Ar. II.63 (PGPID 8985), and T-S 12.9 + T-S 16.196 (PGPID 3440). (Information from GRU catalog via FGP.)",
+  "description_he": "אחת משלוש טיוטות של מסמך הנוגע לפקיד (מֻקַדַּם) בקהילת אל-מחלה בתקופת כהונתו של מבורך בן סעדיה (פעיל בשנים 1078–1111). המסמך כתוב בכתב ידו של הלל בן עלי (פעיל בשנים 1066–1108). שלושת העותקים הידועים של המסמך נשמרו בשלושה קטעים שונים מהגניזה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8985",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "CUL & Bodl.",
+  "library_raw": "CUL & Bodl.",
+  "mentioned": "al-Maḥalla",
+  "multifragment": "",
+  "next": "8986",
+  "origin": "",
+  "pos": 21561,
+  "prev": "8983",
+  "princeton_url": "https://geniza.princeton.edu/documents/8985/",
+  "region": "",
+  "shelfmark": "L-G Ar. II.63",
+  "tags": [
+    "Hillel b. Eli, Muqaddam"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

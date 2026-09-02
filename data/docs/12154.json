@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter of recommendation from Avraham Maimonides (r. 1205–1237 CE) addressed to the congregation of 'Goshen' and surrounding villages, at their head the judge Shemuel. In Judaeo-Arabic. The recommendee is R. Shelomo ha-Levi from Iraq. Due to his debts in his own country, he had to leave his family behind and go wandering about, despite his weakness and age.",
-  "description_he": "מכתב המלצה מאברהם מימוניד (כהן 1205-1237) לקהילת 'גושן' וכפרים סביבה. ביהודית-ערבית. הממלץ: ר' שלמה הלוי מעיראק שנאלץ לעזוב משפחתו בשל חובות.",
+  "description_he": "מכתב המלצה מאת רבי אברהם בן הרמב\"ם (כיהן כנגיד 1205–1237) המופנה אל קהל 'גושן' והכפרים שסביבו, ובראשם הדיין שמואל. המכתב כתוב בערבית-יהודית. המומלץ הוא ר' שלמה הלוי, יוצא עיראק, אשר בעקבות חובותיו במולדתו נאלץ להותיר את משפחתו מאחור ולצאת לנדודים, וזאת על אף חולשתו וזקנתו.",
   "destination": "Goshen",
   "fragment_urls": [],
   "has_transcription": false,
@@ -38,7 +38,8 @@
     "מכתב",
     "יהודית-ערבית",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

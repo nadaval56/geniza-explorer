@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1214-10-09",
   "description": "Legal document. Location: Alexandria. Dated: 4 Ḥeshvan 4975 AM = 9 October 1214 CE, under the authority of the Nagid Avraham Maimonides. A Sicilian trader, Furājī (פראגי) b. Yosef ha-Kohen, appears before the court in Alexandria and declares that he sold to Bū l-Faraj b. Barakāt b. Sulaymān 160 pounds of Sicilian kosher cheese. Since he wishes now to sell the cheese in the Egyptian country-side, the court issues him a certificate about the information supplied to them by him. Signed: Ṣadoq b. Shemuel ha-Rofeʾ, and another witness whose name is mostly missing. On verso there are jotted accounts in Judaeo-Arabic and Greek/Coptic numerals. (Information mainly from Mediterranean Society, IV, 251.)",
-  "description_he": "מסמך משפטי, אלכסנדריה, 4 חשון 4975 (9 באוקטובר 1214), תחת נגיד אברהם מיימוניד. סוחר סיציליאני, פראג'י ב' יוסף הכהן, מצהיר שמכר לבו אל-פרג' ב' ברכת 160 קילוגרם גבינה כשרה סיציליאנית. חתום: צדוק ב' שמואל הרופא.",
+  "description_he": "מסמך משפטי מאלכסנדריה, מיום ד' בחשוון ד'תתקע\"ה (9 באוקטובר 1214), שנערך תחת סמכותו של הנגיד רבי אברהם בן הרמב\"ם. סוחר סיציליאני בשם פראגי בן יוסף הכהן מתייצב בפני בית הדין באלכסנדריה ומצהיר כי מכר לבו אלפרג' בן ברכאת בן סלימאן 160 ליטראות של גבינה סיציליאנית כשרה. מאחר שברצונו כעת למכור את הגבינה באזורי הכפר במצרים, מנפיק לו בית הדין תעודה המאשרת את המידע שמסר בפניהם. חתום: צדוק בן שמואל הרופא, ועד נוסף ששמו אבד ברובו. בצד האחורי של המסמך רשומים חשבונות מקריים בערבית-יהודית ובספרות יווניות/קופטיות. (המידע מבוסס בעיקרו על גויטיין, חברה ים-תיכונית, כרך ד', עמ' 251.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00147-00024"
@@ -42,7 +42,8 @@
     "מסחר",
     "רפואה",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Avraham Maimonides, autograph (r. 1205–1237 CE). In Judaeo-Arabic. Begins with the motto הנה אל ישועתי. Addressed to the ḥaver, morenu ve-rabbenu, Yosef. This is a letter of recommendation for Yaʿqūb b. Dani'el: \"he is in in grave need\" (fa-huwa fī ḍurūra akhīdha wa-ʿindahu qaṭʿa(?) wa-qillat ḥīla); \"appoint a guardian for him\" (? tawaṣṣā bihi); \"he is deserving\"; mentions Peraḥya and other people in the margin; then, \"encourage them to help him according to your ability\" (tuḥarrikhum fī ḥaqqihi ḥasaba ṭāqatika). Information largely from Friedman's Dictionary (pp. 11, 209, 308, 762). ASE.",
-  "description_he": "מכתב מאברהם מיימוני, בכתב ידו (1205–1237 לספירה). בערבית-יהודית. פותח במוטו 'הנה אל ישועתי'. מופנה אל החבר, מורנו ורבנו, יוסף. מכתב המלצה עבור יעקב בן דניאל: 'הוא במצוקה קשה'; 'מנה לו אפוטרופוס'; 'הוא ראוי לכך'; מזכיר פרחיה ואחרים בשולי הדף; 'עוררם לעזור לו כפי יכולתך'. המידע בעיקר מלקסיקון פרידמן (עמ׳ 11, 209, 308, 762).",
+  "description_he": "מכתב מאת רבי אברהם בן הרמב\"ם, בכתב ידו (כיהן בשנים 1205–1237 לסה\"נ). בערבית-יהודית. נפתח בפסוקית המוטו \"הנה אל ישועתי\". המכתב ממוען אל החבר, מורנו ורבנו, יוסף. זהו מכתב המלצה עבור יעקוב בן דניאל: \"הוא נתון במצוקה קשה\" (פַהֻוַ פִי ضַ'רוּרַה אַכִ'יד'ַה וַעִנְדַהֻ קַטְעַה(?) וַקִלַּת חִילַה); \"מַנֵּה עליו אפוטרופוס\" (? תַוַצַּא בִּהִ); \"הוא ראוי לכך\"; מוזכרים פרחיה ואנשים נוספים בשוליים; ובהמשך: \"עוֹרֵר אותם לסייע לו ככל יכולתך\" (תֻחַרִּכְּהֻם פִי חַקִּהִ חַסַבַּ טַאקַתִכַּ). המידע נשען בעיקרו על מילונו של פרידמן.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

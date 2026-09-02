@@ -1,1 +1,49 @@
-{"id":"1617","shelfmark":"T-S 12.146","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from an unidentified Babylonian gaʾon. Fragment (top and bottom missing). On parchment. Containing a recommendation for the bearer Nuʿmān b. Moshe b. Shalmon, who is traveling from Iraq to the addressees' location, probably Fustat. Mentions funds which arrived from Qayrawān (l. 18). Also mentions the arrival of Yiṣḥaq b. Shalmon who sang the praises of the addressees. Reused for literary text on verso in a different hand (with lameds ending in distinctive little loops). (Information mainly from Gil.)","tags":["communal, Babylonian Geonim"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00146"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00146/1"],"princeton_url":"https://geniza.princeton.edu/documents/1617/","mentioned":"Qayrawān","description_he":"מכתב משבר מגאון בבלי בלתי מזוהה, על קלף. המלצה על הנושא נועמאן בן משה בן שלמון הנוסע מעיראק לפוסטאט. מזכיר כספים שהגיעו מקירואן.","tags_he":["מכתב","עברית","ישיבה וגאונות","פוסטאט","קירואן"],"prev":"1616","next":"1618","pos":898,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from an unidentified Babylonian gaʾon. Fragment (top and bottom missing). On parchment. Containing a recommendation for the bearer Nuʿmān b. Moshe b. Shalmon, who is traveling from Iraq to the addressees' location, probably Fustat. Mentions funds which arrived from Qayrawān (l. 18). Also mentions the arrival of Yiṣḥaq b. Shalmon who sang the praises of the addressees. Reused for literary text on verso in a different hand (with lameds ending in distinctive little loops). (Information mainly from Gil.)",
+  "description_he": "מכתב מאת גאון בבלי שזהותו אינה ידועה. קטע (החלקים העליון והתחתון חסרים). על קלף. כולל המלצה עבור נושא המכתב, נעמאן בן משה בן שלמון, המגיע מעיראק אל מקום מושבם של הנמענים, ככל הנראה פוסטאט. מוזכרים כספים שהגיעו מקירואן (שורה 18). כמו כן מוזכרת הגעתו של יצחק בן שלמון, אשר הפליג בשבחם של הנמענים. בצדו האחורי של הקלף נעשה שימוש חוזר לטקסט ספרותי בכתב יד אחר (שבו הלמ\"דים מסתיימים בלולאות קטנות אופייניות). המידע מבוסס בעיקרו על גיל.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00146/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1617",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00146"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Qayrawān",
+  "multifragment": "",
+  "next": "1618",
+  "origin": "",
+  "pos": 898,
+  "prev": "1616",
+  "princeton_url": "https://geniza.princeton.edu/documents/1617/",
+  "region": "",
+  "shelfmark": "T-S 12.146",
+  "tags": [
+    "communal, Babylonian Geonim"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "קירואן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

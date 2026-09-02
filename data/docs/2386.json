@@ -1,1 +1,43 @@
-{"id":"2386","shelfmark":"ENA 4011.42","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso: Legal document: agreement with the Qodesh. Dating: ca. 1160. An agreement is concluded between a certain Ṣubḥ and his wife, and the qodesh, represented by Abū Naṣr Yeshaʿyahu ha-Levi, the general administrator of the estates of the qodesh. Since the couple own nine qarārīṭ (=3/8) of the house of which the qodesh owns the rest, the repairs needed in the house could not be made without their collaboration. As a pledge for their part of the cost, they temporarily waive the ownership rights over their part as long as Yeshaʿyahu ha-Levi wants it. They also will accept the sum of the expenditures stated by him without question. (Information from Gil, Documents, pp. 292 #62)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/79098fd4-e516-4b55-a1b3-0b29dfdfa496/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/2386/","mentioned":"Fustat, Qaṣr al-Shamʿ (neighborhood)","description_he":"גב: שטר משפטי: הסכם עם ההקדש. תאריך: כ-1160. הסכם בין צובח ואשתו לבין ההקדש, המיוצג בידי אבו נצר ישעיהו הלוי. הזוג מחזיקים ב-9/32 מהבית; ההקדש מחזיק ביתר. לצורך תיקונים: הזוג מוותרים זמנית על זכויות בעלותם ומסכימים לסכומי הוצאות שיצהיר עליהם ישעיהו.","tags_he":["מסמך משפטי","יהודית-ערבית","הקדש"],"prev":"2384","next":"2387","pos":1509,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: Legal document: agreement with the Qodesh. Dating: ca. 1160. An agreement is concluded between a certain Ṣubḥ and his wife, and the qodesh, represented by Abū Naṣr Yeshaʿyahu ha-Levi, the general administrator of the estates of the qodesh. Since the couple own nine qarārīṭ (=3/8) of the house of which the qodesh owns the rest, the repairs needed in the house could not be made without their collaboration. As a pledge for their part of the cost, they temporarily waive the ownership rights over their part as long as Yeshaʿyahu ha-Levi wants it. They also will accept the sum of the expenditures stated by him without question. (Information from Gil, Documents, pp. 292 #62)",
+  "description_he": "בצד ה-verso: מסמך משפטי — הסכם עם הקודש. תיארוך: בערך 1160. ההסכם נכרת בין אדם בשם צֻבְּח ואשתו לבין הקודש, המיוצג על ידי אבו נצר ישעיהו הלוי, המנהל הכללי של נכסי הקודש. מאחר שבני הזוג מחזיקים בתשעה קיראטים (=3/8) מן הבית שיתרת חלקיו שייכת לקודש, לא ניתן היה לבצע את התיקונים הנדרשים בבית בלא שיתוף פעולה מצדם. כערובה לחלקם בעלות, הם מוותרים זמנית על זכויות הבעלות בחלקם כל עוד ישעיהו הלוי יחפוץ בכך. כמו כן הם מתחייבים לקבל ללא עוררין את סכום ההוצאות כפי שיקבע על ידו. (המידע מתוך גיל, Documents, עמ' 292 מס' 62)",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2386",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/79098fd4-e516-4b55-a1b3-0b29dfdfa496/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "Fustat, Qaṣr al-Shamʿ (neighborhood)",
+  "multifragment": "",
+  "next": "2387",
+  "origin": "",
+  "pos": 1509,
+  "prev": "2384",
+  "princeton_url": "https://geniza.princeton.edu/documents/2386/",
+  "region": "",
+  "shelfmark": "ENA 4011.42",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "הקדש"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

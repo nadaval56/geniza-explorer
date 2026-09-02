@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1213-08-19/1213-09-16",
   "description": "Letter in Judaeo-Arabic to two unknown addressees. Dated: Elul 1524 Seleucid = August/September 1213 CE. The writer requests a rapid response \"to that which was indicated.\" Goitein describes this document as an instruction by order of Avraham Maimonides to help a needy man. His handwritten edition includes the note 'in the handwriting of Avraham Maimonides,' l. 10. On verso a poem, probably by the hand of Moshe b. Levi ha-Levi (d. 1212 CE). (AA)",
-  "description_he": "מכתב ביהודית-ערבית לשני נמענים לא ידועים. תאריך: אלול 1524 סלאוקי = אוגוסט/ספטמבר 1213. הכותב מבקש מענה מהיר. גויטיין תיאר מסמך זה כהוראה בצו אברהם ממוני לסייע לנצרך. בגב: שיר, ייתכן שבכתב ידו של משה ב' לוי הלוי.",
+  "description_he": "מכתב בערבית-יהודית לשני נמענים שזהותם אינה ידועה. מתוארך: אלול 1524 למניין השטרות = אוגוסט/ספטמבר 1213 לסה\"נ. הכותב מבקש תשובה מהירה \"לאותו עניין שצוין\". לפי גויטיין, מדובר בהוראה שניתנה בפקודתו של אברהם מימוני לסייע לאדם נזקק. במהדורתו בכתב יד של גויטיין מופיעה ההערה \"בכתב ידו של אברהם מימוני\", שורה 10. בצד ה-verso מופיע שיר, ככל הנראה בכתב ידו של משה בן לוי הלוי (נפטר 1212 לסה\"נ).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "שירה"
+    "שירה",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

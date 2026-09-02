@@ -6,7 +6,7 @@
   "date_rationale": "Other (please specify)",
   "date_standard": "",
   "description": "Marriage contract, fragment. Location: Cairo. Dating: 1310–55 CE, based on the reshut clause naming the Nagid Yehoshuaʿ (b. Avraham II Maimonides). Bride: Sitt al-Karam bt. Menashshe. Unknown marriage payment. Dowry items preserved in this fragment are worth over 65 dinars. Signed by Moshe b. Elʿazar ha-Melammed and Menaḥem b. Mevorakh ha-Kohen. There is a validation signed by Yiṣḥaq b. Netanʾel ha-Levi and Aharon b. Menaḥem ha-Kohen. The name [...] b. Ḥalfon ha-Levi also appears. See Goitein's note card for further details.",
-  "description_he": "כתובה, שבר. מיקום: קהיר. תאריך: 1310–1355 לספירה, בסמכות הנגיד יהושע (ב. אברהם ב' מיימוניד). הכלה: סת אל-כרם בת מנשה. פריטי נדוניה שמורים בשבר זה שווים מעל 65 דינרים",
+  "description_he": "שטר כתובה, קטע. מקום: קהיר. תאריך: 1310–1355, על פי סעיף הרשות שמזכיר את הנגיד יהושע (בן אברהם השני בן הרמב\"ם). הכלה: סת אלכרם בת מנשה. תשלום הנישואין אינו ידוע. פריטי הנדוניה שנשתמרו בקטע זה מוערכים בלמעלה מ-65 דינרים. חתומים על השטר: משה בן אלעזר המלמד ומנחם בן מבורך הכהן. בנוסף יש אישור קיום החתום בידי יצחק בן נתנאל הלוי ואהרן בן מנחם הכהן. מופיע גם השם [...] בן חלפון הלוי. לפרטים נוספים ראו את כרטיסיית גויטיין.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -39,7 +39,7 @@
     "נישואין",
     "קהיר",
     "מלמד",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

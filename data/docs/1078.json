@@ -1,1 +1,47 @@
-{"id":"1078","shelfmark":"T-S 13J26.18","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Daniel b. Azarya to a Jerusalemite staying in Fustat (Gil, Palestine, II, pp. 655-662)","tags":["Daniel b. Azarya"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00026-00018"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00026-00018/1"],"princeton_url":"https://geniza.princeton.edu/documents/1078/","mentioned":"Tinnīs, al-Ramla","description_he":"מכתב מדניאל בן עזריה לירושלמי השוהה בפוסטאט.","tags_he":["מכתב","יהודית-ערבית","פוסטאט"],"prev":"1077","next":"1079","pos":460,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Daniel b. Azarya to a Jerusalemite staying in Fustat (Gil, Palestine, II, pp. 655-662)",
+  "description_he": "מכתב מרב דניאל בן עזריה לירושלמי השוהה בפוסטאט.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00026-00018/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1078",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00026-00018"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Tinnīs, al-Ramla",
+  "multifragment": "",
+  "next": "1079",
+  "origin": "",
+  "pos": 460,
+  "prev": "1077",
+  "princeton_url": "https://geniza.princeton.edu/documents/1078/",
+  "region": "",
+  "shelfmark": "T-S 13J26.18",
+  "tags": [
+    "Daniel b. Azarya"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

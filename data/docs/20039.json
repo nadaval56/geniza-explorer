@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1189-09-12/1288-08-28",
   "description": "Ketubbah for [...] b. Eleazar (bride). Dated 28th Elul 15[.. Sel.], in the time of R. Abraham (possibly Maimonides?). Might be by the hand of Yeḥiʾel b. Elyaqim (1213-1233).\nHeading in large square script. \n2 lines on verso run transversely, probably a draft of an opening of a letter. Below the text a drawing of a circle with few Arabic words. AA",
-  "description_he": "כתובה ל[...] בת אלעזר; תאריך: כ'ח אלול 15[..] לשטרות; בתקופת ר' אברהם (ייתכן הרמב'ם); ייתכן בכתב ידו של יחיאל בן אליקים (1213-1233)",
+  "description_he": "כתובה לכלה [...] בת אלעזר. מתוארכת לכ\"ח באלול שנת 15[.. למניין השטרות], בימיו של ר' אברהם (ייתכן שמדובר ברבי אברהם בן הרמב\"ם). אפשר שנכתבה בידי יחיאל בן אליקים (הפעיל בין השנים 1213–1233).\n\nהכותרת בכתב מרובע גדול. בצדו האחורי של הדף שתי שורות הכתובות לרוחב, ככל הנראה טיוטה של פתיחת מכתב. מתחת לטקסט מופיע ציור של עיגול שבתוכו מספר מילים בערבית.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,8 @@
     "מסמך משפטי",
     "כתובה",
     "טיוטה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

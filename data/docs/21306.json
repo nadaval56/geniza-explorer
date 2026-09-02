@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Official letter headed by the ʿalāma (motto) of the Nagid Yehoshuaʿ Maimonides (b. 1310–d. 1355) and written in the typical hand of his clerk (compare Moss. IV,37.1). Issuing an order about a suwayqa (little market?). Every Jew is forbidden from doing [...] without the permission of the court. The elders should be informed that if they [...] or [...], a ban of excommunication will be placed. More information might be extracted with further examination. On verso there is Zechariah 1:16–17; 8:7–8. AA. ASE.",
-  "description_he": "מכתב רשמי עם הקדמת העלאמה (מוטו) של הנגיד יהושע מימוניד (נ' 1310 - נ' 1355) וכתוב בכתב ידו האופייני של מזכירו. מוציא פקודה בנוגע לשוּוַיְקַה (שוק קטן?). כל יהודי נאסר מלעשות [  ] ללא רשות בית הדין. מאיים בחרם על עוברים על הפקודה. בגב זכריה א:טז-יז; ח:ז-ח.",
+  "description_he": "מכתב רשמי הפותח בעלאמה (סיסמה) של הנגיד יהושע בן אברהם מימוני (נולד 1310 — נפטר 1355), כתוב ביד האופיינית של סופרו (להשוואה: מסמך אחר ביד דומה). המכתב מוציא צו בענייני סוויקה (שוק קטן?). נאסר על כל יהודי לעסוק ב[...] ללא רשות בית הדין. יש להודיע לזקנים שאם הם [...] או [...], יוטל עליהם חרם נידוי. ייתכן שניתן יהיה לחלץ מידע נוסף בבדיקה מעמיקה יותר. בצד הגב מופיעים פסוקים מספר זכריה א, טז–יז ומפרק ח, ז–ח.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00101-00013"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "סופר"
+    "סופר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

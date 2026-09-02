@@ -1,1 +1,43 @@
-{"id":"756","shelfmark":"ENA 4010.1","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1075-05-07","date_original":"18 Iyyar 1386","date_standard":"1075-05-07","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Recto: Legal document. Location: Fustat. Dated: Thursday, 18 Iyyar 1386 Seleucid = 7 May 1075 CE. Appointment of Efrayim b. Bashād as the beadle (khādim) of the Palestinian synagogue. He will live there with his boys and guard its property; an inventory is then given. \"Like his predecessors,\" he will receive funds from two pesiqas each year and the payment of the capitation tax (kharāj) in full.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/ab58ed11-1072-46fe-b3e3-936b99800c59/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/756/","mentioned":"","description_he":"מסמך משפטי. מינוי אפרים בן בשאד כשמש הכנסת הארץ ישראלית בפוסטאט, עם מלאי רכוש, 7 במאי 1075.","tags_he":["מסמך משפטי","יהודית-ערבית","פוסטאט"],"prev":"755","next":"757","pos":206,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1075-05-07",
+  "date_inferred": "",
+  "date_original": "18 Iyyar 1386",
+  "date_rationale": "",
+  "date_standard": "1075-05-07",
+  "description": "Recto: Legal document. Location: Fustat. Dated: Thursday, 18 Iyyar 1386 Seleucid = 7 May 1075 CE. Appointment of Efrayim b. Bashād as the beadle (khādim) of the Palestinian synagogue. He will live there with his boys and guard its property; an inventory is then given. \"Like his predecessors,\" he will receive funds from two pesiqas each year and the payment of the capitation tax (kharāj) in full.",
+  "description_he": "רקטו: מסמך משפטי. מקום: פוסטאט. מתוארך: יום חמישי, י\"ח באייר אלפ\"ו למניין שטרות = 7 במאי 1075. מינויו של אפרים בן בשאד למשמש (ח'אדם) של בית הכנסת של הירושלמים. הוא יתגורר בתוך בית הכנסת יחד עם בניו וישמור על רכושו; בהמשך המסמך מובא פירוט (אינוונטר) של הרכוש. \"ככל קודמיו\" יזכה לקבל מדי שנה כספים משתי פסיקות, וכן את תשלום מס הגולגולת (ח'ראג') במלואו.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "756",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/ab58ed11-1072-46fe-b3e3-936b99800c59/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "757",
+  "origin": "",
+  "pos": 206,
+  "prev": "755",
+  "princeton_url": "https://geniza.princeton.edu/documents/756/",
+  "region": "",
+  "shelfmark": "ENA 4010.1",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

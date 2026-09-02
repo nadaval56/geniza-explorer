@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Recto: fragment from a legal manual or formulary discussing protocol for the writing of conditions attendant to a debt agreement, including procedure when a debt document is lost. Includes a slightly-modified citation from the Mishneh Torah, Laws of Debts 23:11.",
-  "description_he": "קטע ממדריך משפטי על כתיבת תנאי הסכם חוב ואובדן שטר חוב, כולל ציטוט מהמשנה תורה",
+  "description_he": "רקטו: קטע ממדריך משפטי או פורמולר העוסק בפרוטוקול לכתיבת תנאים נלווים להסכם חוב, ובכלל זה הנוהל במקרה שבו אבד שטר החוב. כולל ציטוט בשינוי קל מתוך משנה תורה לרמב\"ם, הלכות מלווה ולווה כ\"ג, י\"א.",
   "destination": "",
   "fragment_urls": [
     "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22B+3175%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created"
@@ -38,7 +38,7 @@
   ],
   "tags_he": [
     "מסמך משפטי",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

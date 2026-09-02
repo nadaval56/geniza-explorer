@@ -1,1 +1,44 @@
-{"id":"11551","shelfmark":"ENA NS I.93d","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Legal document. Dating: ca. early 13th century. Not much survives from the larger context but since it involves the release of several sisters of a man after they received their \"right\" (haqq), it is probable this was a quittance after the division of an inheritance. Refers to the wife (of the deceased?) Sitt al-[?] bt. Abū l-Faḍl and the (deceased's?) three daughters: Sitt al-Rutab the widow (the same as in T-S K25.251 (PGPID 8594)?), Sitt al-Jamāl the mature woman, and [Sitt] al-ʿAlam the wife of Hibatallāh b. Abū l-Faḍl. They release the Alexandrian trader Abū l-Ṭāhir b. Ibrāhīm aka Ṭahor b. Avraham Ibn al-[...].","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/94995060-0c9d-43ee-b382-562a7c2895f1/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/11551/","mentioned":"","description_he":"מסמך משפטי. כ-ראשית המאה ה-13. שחרור לאחר חלוקת ירושה. עוסק באשת הנפטר סת אל-[?] בת אבו אל-פד'ל ושלוש בנות הנפטר: סת אל-רוטב האלמנה, סת אל-ג'מאל הגדולה ו[סת] אל-עלם אשת היבת-אלאה בן אבו אל-פד'ל. הן משחררות את הסוחר האלכסנדרוני אבו אל-טאהר בן אברהים הידוע כ'טהור בן אברהם'.","tags_he":["מסמך משפטי","יהודית-ערבית","מסחר","ירושה"],"prev":"11548","next":"11552","pos":7640,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Legal document. Dating: ca. early 13th century. Not much survives from the larger context but since it involves the release of several sisters of a man after they received their \"right\" (haqq), it is probable this was a quittance after the division of an inheritance. Refers to the wife (of the deceased?) Sitt al-[?] bt. Abū l-Faḍl and the (deceased's?) three daughters: Sitt al-Rutab the widow (the same as in T-S K25.251 (PGPID 8594)?), Sitt al-Jamāl the mature woman, and [Sitt] al-ʿAlam the wife of Hibatallāh b. Abū l-Faḍl. They release the Alexandrian trader Abū l-Ṭāhir b. Ibrāhīm aka Ṭahor b. Avraham Ibn al-[...].",
+  "description_he": "מסמך משפטי. תיארוך: ראשית המאה ה-13 בקירוב. לא שרד הרבה מההקשר הרחב, אך מאחר שמדובר בשחרור של כמה אחיות של גבר לאחר שקיבלו את ה\"חק\" (haqq) שלהן, סביר להניח שזהו שטר קבלה (quittance) שנערך בעקבות חלוקת ירושה. המסמך מזכיר את האישה (של המנוח?) סת אל-[?] בת אבו אל-פצ'ל ואת שלוש הבנות (של המנוח?): סת אל-רֻתַּב האלמנה (אולי זהה לזו המופיעה במסמך אחר?), סת אל-ג'מאל האישה הבוגרת, ו[סת] אל-עלם אשתו של הִבַּת-אללה בן אבו אל-פצ'ל. הן משחררות את הסוחר האלכסנדרוני אבו אל-טאהר בן אברהים, הוא טהור בן אברהם אבן אל-[...].",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "11551",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/94995060-0c9d-43ee-b382-562a7c2895f1/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "11552",
+  "origin": "",
+  "pos": 7640,
+  "prev": "11548",
+  "princeton_url": "https://geniza.princeton.edu/documents/11551/",
+  "region": "",
+  "shelfmark": "ENA NS I.93d",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "מסחר",
+    "ירושה"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

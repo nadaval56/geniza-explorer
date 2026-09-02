@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1218",
   "description": "Letter from a judge to Avraham Maimonides, reporting about a case that came before him in Adar I 1529 Seleucid (which is 1218 CE). About 32 lines, partly effaced but mostly legible. There are 6 lines of (autograph) response in Avraham's hand, but these are mostly torn away or effaced. Mentions people including Ismāʿīl b. Maʿālī and Abū l-Ḥassan al-Levi and someone's first return from the Levant. (Information from Goitein's index card.)",
-  "description_he": "מכתב משופט אל אברהם מימוניד, המדווח על תיק מחודש אדר א' בשנת 1529 לספירת השטרות (1218 לספירה)",
+  "description_he": "מכתב משופט אל רבי אברהם בן הרמב\"ם, ובו דיווח על מקרה שהובא בפניו באדר א' של שנת 1529 למניין שטרות (היא שנת 1218 לספירה). המכתב מכיל כ-32 שורות, מחוקות בחלקן אך ברובן עדיין קריאות. בתחתית המסמך נוספו 6 שורות של תשובה בכתב ידו של אברהם עצמו (אוטוגרף), אך רובן קרועות או מחוקות. בין הנזכרים במכתב: אסמאעיל בן מעאלי ואבו אלחסן הלוי, וכן נזכרת שיבתו הראשונה של אדם כלשהו מארץ לבנט. (המידע מבוסס על כרטיסיית גויטיין.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -1,1 +1,46 @@
-{"id":"17334","shelfmark":"T-S AS 145.55","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto: Letter from Abū Sahl Levi to his son Moshe b. Levi ha-Levi. He has sent: parchments (ruqūq), scissors (miqaṣṣ), a belt (zunnār), a razor (mūs), and a hook (? khaṭfa). He blames ʿUthmān for the delay: he spends every day looking around trying to find him. Mentions Ṣāfī and Khalaf. Verso: Letter from Moshe b. Levi ha-Levi, presumably to his father Abū Sahl Levi. He asks for news of three different women (perhaps related to BL OR 12186.12, in which his father offers him the choice of several brides?). These identifications are based on handwriting and typical content and phrases. ASE","tags":["Moshe b. Levi, Abu Sahl Levi"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00055"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00055"],"princeton_url":"https://geniza.princeton.edu/documents/17334/","mentioned":"","description_he":"גב: מכתב מאבו סאהל לוי לבנו משה בן לוי הלוי. הוא שלח: קלפים (רוקוק), מספריים (מקץ'), חגורה (זנאר), תער (מוס) וקרס (? ח'טפה). הוא מאשים עות'מאן בעיכוב: הוא מבלה כל יום ומחפש אותו. מוזכרים צאפי וח'לף. גב: מכתב ממשה בן לוי הלוי, כנראה לאביו אבו סאהל לוי. הוא מבקש חדשות על שלוש נשים שונות.","tags_he":["מכתב","יהודית-ערבית"],"prev":"17333","next":"17335","pos":12700,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto: Letter from Abū Sahl Levi to his son Moshe b. Levi ha-Levi. He has sent: parchments (ruqūq), scissors (miqaṣṣ), a belt (zunnār), a razor (mūs), and a hook (? khaṭfa). He blames ʿUthmān for the delay: he spends every day looking around trying to find him. Mentions Ṣāfī and Khalaf. Verso: Letter from Moshe b. Levi ha-Levi, presumably to his father Abū Sahl Levi. He asks for news of three different women (perhaps related to BL OR 12186.12, in which his father offers him the choice of several brides?). These identifications are based on handwriting and typical content and phrases. ASE",
+  "description_he": "רקטו: מכתב מאבו סהל לוי לבנו משה בן לוי הלוי. הוא שלח: קלפים (רֻקוּק), מספריים (מִקַצּ), חגורה (זֻנָּאר), תער (מוּס), וקרס (?) (ח'טפה). הוא תולה את האשמה בעיכוב בעות'מאן: הוא מבלה כל יום בחיפוש סביב במאמץ למצוא אותו. מזכיר את צאפי וח'לף. ורסו: מכתב ממשה בן לוי הלוי, ככל הנראה לאביו אבו סהל לוי. הוא מבקש לדעת מה שלומן של שלוש נשים שונות (אולי בקשר ל-BL OR 12186.12, שבו אביו מציע לו לבחור מבין כמה כלות אפשריות?). זיהויים אלו מבוססים על כתב היד ועל תוכן וביטויים אופייניים.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00145-00055"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "17334",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00145-00055"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "17335",
+  "origin": "",
+  "pos": 12700,
+  "prev": "17333",
+  "princeton_url": "https://geniza.princeton.edu/documents/17334/",
+  "region": "",
+  "shelfmark": "T-S AS 145.55",
+  "tags": [
+    "Moshe b. Levi, Abu Sahl Levi"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

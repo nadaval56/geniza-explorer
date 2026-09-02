@@ -1,1 +1,43 @@
-{"id":"19916","shelfmark":"T-S 12.193","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"Qayrawān","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Elḥanan b. Shemarya to the community of Qayrawān. In Hebrew. The content of the letter is lacking, with only the sender's title and opening blessings preserved. On verso there is the beginning of the address as well as the opening of another letter. Letter prefaced with four short lines of blessing, beginning with Psalms 119:165. No names preserved. (Information from CUL catalogue via FGP.)","tags":["unedited 11th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19916/","mentioned":"","description_he":"מכתב מאלחנן בן שמריה לקהילת קירואן; בעברית; נשמרו רק כותרת השולח וברכות פתיחה; בצד ב' תחילת כתובת ופתיחת מכתב נוסף","tags_he":["מכתב","עברית","קירואן"],"prev":"19913","next":"19917","pos":22449,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Elḥanan b. Shemarya to the community of Qayrawān. In Hebrew. The content of the letter is lacking, with only the sender's title and opening blessings preserved. On verso there is the beginning of the address as well as the opening of another letter. Letter prefaced with four short lines of blessing, beginning with Psalms 119:165. No names preserved. (Information from CUL catalogue via FGP.)",
+  "description_he": "מכתב מאלחנן בן שמריה אל קהילת קירואן. בעברית. תוכן המכתב חסר, ונשתמרו רק תוארו של השולח וברכות הפתיחה. בצד ה-verso מופיעה תחילתה של הכתובת וכן פתיחתו של מכתב נוסף. המכתב נפתח בארבע שורות קצרות של ברכה, הפותחות בפסוק מתהילים קי״ט, קס״ה. לא נשתמרו שמות.",
+  "destination": "Qayrawān",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19916",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19917",
+  "origin": "Fustat",
+  "pos": 22449,
+  "prev": "19913",
+  "princeton_url": "https://geniza.princeton.edu/documents/19916/",
+  "region": "",
+  "shelfmark": "T-S 12.193",
+  "tags": [
+    "unedited 11th c"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "קירואן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

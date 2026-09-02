@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter/petition from Barukh to Eliyyahu the Judge. In Judaeo-Arabic, with the address in both Judaeo-Arabic and Arabic script. Dating: early 13th century. Requesting help obtaining a tawqīʿ (decree/rescript for a petition) from the Sultan on behalf of Abū l-Faraj b. Abū l-Wafāʾ. Also mentions having sent a fatwā (legal query) to the Nagid (Avraham Maimonides).",
-  "description_he": "מכתב/עתירה מברוך לאליהו השופט. ביהודית-ערבית. תאריך: תחילת המאה ה-13. מבקש עזרה בהשגת צו (תוקיע) מהסולטן בשם אבו אל-פרג' ב. אבו אל-ופא",
+  "description_he": "מכתב/עצומה מברוך אל אליהו הדיין. כתוב בערבית-יהודית, כאשר הכתובת רשומה הן באותיות עבריות והן באותיות ערביות. תיארוך: ראשית המאה ה-13. הכותב מבקש סיוע בהשגת תַוְקִיע (צו או רסקריפט בתגובה לעצומה) מאת השולטאן, עבור אבו אלפרג' בן אבו אלוופאא'. כמו כן מוזכר במכתב כי נשלחה פתוא (שאלה הלכתית/משפטית) אל הנגיד (רבי אברהם בן הרמב\"ם).",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00015-00017/1"
@@ -41,7 +41,8 @@
     "יהודית-ערבית",
     "עצומה",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Ibrahim b. Miṣbāḥ to Eliyyahu the Judge (spelled אליהוא). In Judaeo-Arabic. Dating: early 13th century. The sender had previously sent with the bearer Ismāʿīl a legal query (fatwā) and other documents (masāṭir). Evidently Eliyyahu brought these to Avraham Maimonides (Sayyidnā al-Rayyis), who wrote his response at the bottom of the query but who did not sign the masṭūr or the pisqei din. The sender now asks Eliyyahu to get Avraham to write his signature on these documents. Avraham Maimonides' years of service as Rayyis al-Yahūd support an inferred date range estimate of 1205–1237 CE. (Information in part from CUDL and Goitein's index card.)",
-  "description_he": "מכתב מאברהים בן מצבאח לאליהו השופט, תחילת המאה ה-13: שלח שאילה הלכתית עם ישמאעיל. אברהם מיימוניד כתב תשובתו בתחתית השאילה אך לא חתם. מבקש מאליהו להביא לאברהם לחתום.",
+  "description_he": "מכתב מאת אברהים בן מצבאח אל אליהו הדיין (הנכתב \"אליהוא\"). בערבית-יהודית. תיארוך: ראשית המאה ה-13. השולח שלח קודם לכן באמצעות הנושא איסמאעיל שאלה הלכתית (פתווא) ומסמכים נוספים (מסאטיר). ככל הנראה אליהו הביא אותם אל רבי אברהם בן הרמב\"ם (סיידנא אלרייס), שכתב את תשובתו בתחתית השאלה אך לא חתם על המסטור או על פסקי הדין. כעת מבקש השולח מאליהו לפעול אצל אברהם כדי שיוסיף את חתימתו על המסמכים הללו. שנות כהונתו של רבי אברהם בן הרמב\"ם כראש היהודים (רייס אליהוד) תומכות בטווח תיארוך משוער של 1205–1237 לסה\"נ.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00017-00029/1"
@@ -40,7 +40,8 @@
     "מכתב",
     "יהודית-ערבית",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Shelomo b. Semah of Ramla to Efrayim b. Shemarya written in his own hand. Dating: ca. 1030 CE (per Gil) and ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. Mentions someone called Faraj b. ʿAlī, who may have been persecuted by merchants (mā jarā ʿalayhi min al-shidda... dhālika min al-tujjār...).",
-  "description_he": "מכתב משלמה בן צמח מרמלה לאפרים בן שמריה, בכתב ידו, בערך 1030.",
+  "description_he": "מכתב משלמה בן צמח מרמלה אל רבי אפרים בן שמריה, שנכתב בכתב ידו של השולח. התיארוך המשוער הוא סביב שנת 1030 לספירה לפי גיל, ובאופן רחב יותר בין השנים 1007 ל-1055 לספירה, בהתבסס על השנים שבהן רבי אפרים בן שמריה היה פעיל. במכתב מוזכר אדם בשם פרג' בן עלי, שייתכן כי נרדף בידי סוחרים, כפי שעולה מן הביטוי \"מא ג'רא עליה מן אלשדה... ד'לך מן אלתג'אר...\" (מה שעבר עליו מן הצרה... זאת מצד הסוחרים...).",
   "destination": "Fustat",
   "fragment_urls": [],
   "has_transcription": false,
@@ -39,7 +39,7 @@
     "יהודית-ערבית",
     "מסחר",
     "רמלה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1150-09-25/1150-10-23",
   "description": "List of books found in the estate of Yiṣḥaq b. Moshe, the local judge (nāʾib) of Sunbāṭ, in Lower Egypt. Dated: Jumāḍā II 545 AH, which is October 1150 CE. The list includes talmudic tractates, works by Isaac al-Fāsī, Hayy Gaʾon, Saʿadya Gaʾon, midrashim, responsa by Rabbi Joseph ha-Levi, and geonic responsa. (Information from CUDL and Goitein's index card.) T-S K3.32 (listing the books) and ENA 4020.60a (listing the goods) are part of the same inventory.",
-  "description_he": "רשימת ספרים מעיזבון יצחק בן משה, שופט מקומי של סונבאט במצרים התחתונה; מתוארך: ג'מאדא ת'אני 545 להיג'רה = אוקטובר 1150 לספירה",
+  "description_he": "רשימת ספרים שנמצאה בעיזבונו של יצחק בן משה, הדיין המקומי (נאא'ב) של סנבאט שבמצרים התחתונה. הרשימה מתוארכת לג'ומאדא' אלת'אני 545 להג'רה, היינו אוקטובר 1150. בין הספרים המנויים: מסכתות תלמודיות, חיבוריו של רבי יצחק אלפאסי, חיבורי רב האי גאון, חיבורי רב סעדיה גאון, מדרשים, תשובות של רבי יוסף הלוי, ותשובות הגאונים. (המידע מבוסס על CUDL ועל כרטיסייתו של גויטיין.) המסמך המפרט את הספרים והמסמך המפרט את החפצים נמנים על אותה רשימת עיזבון.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00003-00032"
@@ -40,7 +40,7 @@
     "רשימת ספרים",
     "ישיבה וגאונות",
     "דיין",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "Legal document",

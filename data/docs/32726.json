@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Mysterious document. Perhaps a letter originally -- there is something that looks like an address, naming Abū l-Majd and Isḥāq(?) b. Shemuel. On the same side of the sheet, Shelomo b. Eliyyahu signed his name several times and copied out the beginning of a ketubba (under the reshut of Avraham Maimonides, r. 1205–1237) in an unusual zigzag pattern. There are additional drafts of literary texts. On the other side there is biblical text, calligraphically written. ASE Shows evidence of having once been inside a book binding (glue traces on one side and patterns of discoloration). MR",
-  "description_he": "מסמך מסתורי. אולי מכתב במקור - יש כתובת הנוקבת באבו אלמג'ד ויצחק(?) בן שמואל. על אותו צד חתם שלמה בן אליהו את שמו מספר פעמים והעתיק תחילת כתובה (ברשות אברהם מיימוניס) בדפוס זיגזג יוצא דופן. בצד השני טקסט מקראי כתוב קליגרפית.",
+  "description_he": "מסמך מסתורי. ייתכן שמדובר במקורו במכתב — נראית בו כתובת ובה מוזכרים אבו אלמג'ד ויצחק(?) בן שמואל. באותו צד של הדף חתם שלמה בן אליהו את שמו מספר פעמים והעתיק את פתיחתה של כתובה (תחת רשותו של רבי אברהם בן הרמב\"ם, שכיהן בשנים 1205–1237) בדפוס זיגזג חריג. נוספים על כך טיוטות של טקסטים ספרותיים. בצד השני של הדף מופיע טקסט מקראי בכתיבה קליגרפית. ניכרים על הדף סימנים לכך שבשלב כלשהו שולב בכריכת ספר — שרידי דבק בצד אחד ודפוסי דהיית צבע אופייניים.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -32,7 +32,8 @@
   "tags": [],
   "tags_he": [
     "כתובה",
-    "מיימוניד",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם",
     "שלמה בן אליהו"
   ],
   "total": 35937,

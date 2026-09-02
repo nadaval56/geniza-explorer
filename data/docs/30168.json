@@ -1,1 +1,41 @@
-{"id":"30168","shelfmark":"PUL Islamic Manuscripts, Third Series no. 584e.19 (Michaelides 20a)","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"PUL","library_raw":"PUL","collection":"PUL","description":"Described in PUDL as a letter from a slave to his master regarding administrative matters.[Described on the paper wrapper as: \"lettre d'un esclave à son maître expliquant sa methode d'administration\" ; on a separate small piece of paper: \"A letter from a slave who is called Gani Bek to his master explaining to him his method of administration\"].","tags":["Arabic"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/30168/","mentioned":"","description_he":"מכתב מעבד לאדונו בנושאי ניהול. [על העטיפה: 'מכתב מעבד בשם ג'אני בק לאדונו המסביר את שיטת הניהול שלו'].","tags_he":["מסמך מדינה"],"prev":"30167","next":"30169","pos":28514,"total":35937}
+{
+  "collection": "PUL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Described in PUDL as a letter from a slave to his master regarding administrative matters.[Described on the paper wrapper as: \"lettre d'un esclave à son maître expliquant sa methode d'administration\" ; on a separate small piece of paper: \"A letter from a slave who is called Gani Bek to his master explaining to him his method of administration\"].",
+  "description_he": "מכתב מעבד אל אדונו בענייני ניהול ומנהלה. על עטיפת הנייר נכתב בצרפתית: \"מכתב מעבד אל אדונו המסביר לו את שיטת הניהול שלו\" (\"lettre d'un esclave à son maître expliquant sa methode d'administration\"). על פיסת נייר קטנה ונפרדת נוסף תיאור באנגלית: \"מכתב מעבד הנקרא גַ'אנִי בֵּק (Gani Bek) אל אדונו, המסביר לו את שיטת הניהול שלו\".",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "30168",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "PUL",
+  "library_raw": "PUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "30169",
+  "origin": "",
+  "pos": 28514,
+  "prev": "30167",
+  "princeton_url": "https://geniza.princeton.edu/documents/30168/",
+  "region": "",
+  "shelfmark": "PUL Islamic Manuscripts, Third Series no. 584e.19 (Michaelides 20a)",
+  "tags": [
+    "Arabic"
+  ],
+  "tags_he": [
+    "מסמך מדינה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

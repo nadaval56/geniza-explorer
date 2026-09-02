@@ -1,1 +1,47 @@
-{"id":"12019","shelfmark":"ENA NS 13.15","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"402-462","date_original":"","date_standard":"","date_inferred":"402-462","date_rationale":"Person mentioned","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso (original use): Petition in Arabic script in a chancery hand. Fragment from the middle of the document. Refers to the well-known Jewish leader [Daniel b.] ʿAzarya al-Dāʾūdī (second half of the 11th century) and to the addressee's benefactions in the administration of the Fatimid state: \"...wa-bi-sāʾir aʿmāl al-dawla al-Nabawiyya wa-tummimat al-niʿma ʿa[lā ...]... al-ṭāhir....\" Then asks for a mighty decree confirming the continued benefaction of registering something (bi-manshūr muʿaẓẓam muqirr bi-dawām niʿmat ithbātih) in the Majlis al-Ḥimāya and at least one other majlis. Rustow has translated ḥimāya in another context as \"law enforcement\" in Lost Archive p. 209, and Bauden notes that the term can refer to a tax of circulation on the Nile (\"Le Transport de Marchandises et de Personnes sur le Nil,\" p. 125 note 117). See also Claude Cahen, “Notes pour l’histoire de la ḥimāya\" (1956) and Jürgen Paul, \"Ḥimāya Revisited\" (2020) (https://journals.openedition.org/anisl/7518?lang=en). See also T-S Misc.8.67 for a similar-looking Arabic-script document involving Daniel b. ʿAzarya (but not a join). \n\nOn the other side there is a Judaeo-Arabic letter by the same scribe who wrote T-S K25.244 (and several others), known to have been an ardent supporter of Daniel b. ʿAzarya (so it is probably related).","tags":["DIMME"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/72283703-ad23-4457-b874-5bd5875e0313/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12019/","mentioned":"","description_he":"מעבר הדף (השימוש המקורי): עצומה בכתב ערבי בידו של פקיד הדיואן. שריד מאמצע המסמך. מאזכר את המנהיג היהודי הידוע [דניאל בן] עזריה אלדאוודי (מהמחצית השנייה של המאה ה-11) ואת חסדיו של הנמען בענייני מנהל המדינה הפאטמית: \"...wa-bi-sāʾir aʿmāl al-dawla al-Nabawiyya wa-tummimat al-niʿma ʿa[lā ...]... al-ṭāhir....\". בהמשך מבקש הכותב צו רב־עוצמה המאשר את המשך החסד של רישום דבר־מה (bi-manshūr muʿaẓẓam muqirr bi-dawām niʿmat ithbātih) ב-Majlis al-Ḥimāya ולפחות במג'לס נוסף אחד. רסטו תרגמה את המונח ḥimāya בהקשר אחר כ\"אכיפת חוק\", ובאודן מציין שהמונח יכול להתייחס למס תנועה על הנילוס. ראו גם את עבודותיהם של קלוד קאהן על תולדות ה-ḥimāya (1956) ושל יורגן פאול על אותו מונח (2020). קיים גם מסמך נוסף בכתב ערבי בעל מראה דומה הנוגע לדניאל בן עזריה (אך אינו מצטרף לקטע זה).\n\nבצד השני של הדף נמצאת איגרת בערבית-יהודית שנכתבה בידי אותו סופר שכתב מסמכים אחדים נוספים, אשר ידוע כתומך נלהב של דניאל בן עזריה (ולכן סביר שהאיגרת קשורה לכך).","tags_he":["מסמך מדינה","ערבית","עצומה","פאטמי","סופר"],"prev":"12018","next":"12020","pos":8067,"total":35937}
+{
+  "collection": "JTS",
+  "date": "402-462",
+  "date_inferred": "402-462",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Verso (original use): Petition in Arabic script in a chancery hand. Fragment from the middle of the document. Refers to the well-known Jewish leader [Daniel b.] ʿAzarya al-Dāʾūdī (second half of the 11th century) and to the addressee's benefactions in the administration of the Fatimid state: \"...wa-bi-sāʾir aʿmāl al-dawla al-Nabawiyya wa-tummimat al-niʿma ʿa[lā ...]... al-ṭāhir....\" Then asks for a mighty decree confirming the continued benefaction of registering something (bi-manshūr muʿaẓẓam muqirr bi-dawām niʿmat ithbātih) in the Majlis al-Ḥimāya and at least one other majlis. Rustow has translated ḥimāya in another context as \"law enforcement\" in Lost Archive p. 209, and Bauden notes that the term can refer to a tax of circulation on the Nile (\"Le Transport de Marchandises et de Personnes sur le Nil,\" p. 125 note 117). See also Claude Cahen, “Notes pour l’histoire de la ḥimāya\" (1956) and Jürgen Paul, \"Ḥimāya Revisited\" (2020) (https://journals.openedition.org/anisl/7518?lang=en). See also T-S Misc.8.67 for a similar-looking Arabic-script document involving Daniel b. ʿAzarya (but not a join). \n\nOn the other side there is a Judaeo-Arabic letter by the same scribe who wrote T-S K25.244 (and several others), known to have been an ardent supporter of Daniel b. ʿAzarya (so it is probably related).",
+  "description_he": "מעבר הדף (השימוש המקורי): עצומה בכתב ערבי בידו של פקיד הדיואן. שריד מאמצע המסמך. מאזכר את המנהיג היהודי הידוע [דניאל בן] עזריה אלדאוודי (מהמחצית השנייה של המאה ה-11) ואת חסדיו של הנמען בענייני מנהל המדינה הפאטמית: \"...wa-bi-sāʾir aʿmāl al-dawla al-Nabawiyya wa-tummimat al-niʿma ʿa[lā ...]... al-ṭāhir....\". בהמשך מבקש הכותב צו רב־עוצמה המאשר את המשך החסד של רישום דבר־מה (bi-manshūr muʿaẓẓam muqirr bi-dawām niʿmat ithbātih) ב-Majlis al-Ḥimāya ולפחות במג'לס נוסף אחד. רסטו תרגמה את המונח ḥimāya בהקשר אחר כ\"אכיפת חוק\", ובאודן מציין שהמונח יכול להתייחס למס תנועה על הנילוס. ראו גם את עבודותיהם של קלוד קאהן על תולדות ה-ḥimāya (1956) ושל יורגן פאול על אותו מונח (2020). קיים גם מסמך נוסף בכתב ערבי בעל מראה דומה הנוגע לרב דניאל בן עזריה (אך אינו מצטרף לקטע זה).\n\nבצד השני של הדף נמצאת איגרת בערבית-יהודית שנכתבה בידי אותו סופר שכתב מסמכים אחדים נוספים, אשר ידוע כתומך נלהב של רב דניאל בן עזריה (ולכן סביר שהאיגרת קשורה לכך).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12019",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/72283703-ad23-4457-b874-5bd5875e0313/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12020",
+  "origin": "",
+  "pos": 8067,
+  "prev": "12018",
+  "princeton_url": "https://geniza.princeton.edu/documents/12019/",
+  "region": "",
+  "shelfmark": "ENA NS 13.15",
+  "tags": [
+    "DIMME"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה",
+    "פאטמי",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

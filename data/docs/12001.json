@@ -1,1 +1,46 @@
-{"id":"12001","shelfmark":"ENA 3958.3","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Family letter in Arabic script, from a distant man to his children and wife. Dating: Probably Mamluk era, or possibly early Ottoman era, based on handwriting, names, format, and formulary. The letter goes into detail about previous correspondence and other family matters. One of the sender's sons, who is mentioned a couple of times, is Yāʿqūb and the mother is Umm Aṣīla. He narrates his longing to see his family and may mention recovery from an illness which brought someone close to death, but God dispelled it (wa-l-ḥamdu lil-lāh kunnā(?) aḥad(?) man(?) ilā l-mawt wa-lākin lak ṭāl(!) al-ʿumr lā budd fa-infaraja(?) Allāh taʿāla...)","tags":["paper trail, DIMME, pinholes, distant husband"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/bdde4e1b-6747-4ef0-a823-947170363980/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/12001/","mentioned":"","description_he":"מכתב משפחתי בכתב ערבי, ממישהו הרחוק לילדיו ואשתו. תאריך: ככל הנראה תקופת הממלוכים או תחילת העות'מאנים. עוסק בכמיהה לראות את המשפחה ובהחלמה ממחלה. אחד הבנים נקרא יעקוב, האם: אם אצ'ילה.","tags_he":["מכתב","ערבית","ממלוכי","עות'מאני"],"prev":"12000","next":"12002","pos":8050,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Family letter in Arabic script, from a distant man to his children and wife. Dating: Probably Mamluk era, or possibly early Ottoman era, based on handwriting, names, format, and formulary. The letter goes into detail about previous correspondence and other family matters. One of the sender's sons, who is mentioned a couple of times, is Yāʿqūb and the mother is Umm Aṣīla. He narrates his longing to see his family and may mention recovery from an illness which brought someone close to death, but God dispelled it (wa-l-ḥamdu lil-lāh kunnā(?) aḥad(?) man(?) ilā l-mawt wa-lākin lak ṭāl(!) al-ʿumr lā budd fa-infaraja(?) Allāh taʿāla...)",
+  "description_he": "מכתב משפחתי בכתב ערבי, מאב הרחוק מבני ביתו אל ילדיו ואשתו. תיארוך: ככל הנראה מן התקופה הממלוכית, או אולי מראשית התקופה העות'מאנית, בהתבסס על כתב היד, השמות, המבנה והנוסחאות. המכתב נכנס לפרטים בנוגע לחליפת מכתבים קודמת ולעניינים משפחתיים נוספים. אחד מבני השולח, המוזכר פעמיים, הוא יעקוב, ושם האם הוא אם אצילה. השולח מתאר את געגועיו לראות את משפחתו, ויש להניח שהוא מזכיר החלמה ממחלה שהביאה מישהו עד שערי מוות, אך האל הסיר אותה ממנו (ואלחמד ללה כנא(?) אחד(?) מן(?) אלי אלמות ולכן לך טאל(!) אלעמר לא בד פאנפרג'(?) אללה תעאלי...).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "12001",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/bdde4e1b-6747-4ef0-a823-947170363980/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "12002",
+  "origin": "",
+  "pos": 8050,
+  "prev": "12000",
+  "princeton_url": "https://geniza.princeton.edu/documents/12001/",
+  "region": "",
+  "shelfmark": "ENA 3958.3",
+  "tags": [
+    "paper trail, DIMME, pinholes, distant husband"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "ממלוכי",
+    "עות'מאני"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

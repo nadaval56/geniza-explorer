@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "List of donors to charity, in large characters, apparently destined for display, 6 persons under the heading 'Sunday' and another 10 under the heading 'Wednesday.' Verso contains lists in different hands for 'Monday' (10 persons), 'Thursday' (12), 'Tuesday' (11). These seem to be the names of the collectors of the weekly alms. Only one man, Yaʿaqov, the money assayer, served twice. Dated: time of David b. Avraham b. ha-Rambam. (Information from Mediterranean Society, II, pp. 494-495, App. C 62)",
-  "description_he": "רשימת תורמים לצדקה באותיות גדולות, לפי ימי שבוע, מימי דוד בן אברהם בן הרמב\"ם",
+  "description_he": "רשימת תורמים לצדקה, כתובה באותיות גדולות, ככל הנראה מיועדת לתצוגה. בצד אחד שישה אנשים תחת הכותרת \"יום ראשון\" ועשרה נוספים תחת הכותרת \"יום רביעי\". בצד השני רשימות בכתבי יד שונים: \"יום שני\" (עשרה אנשים), \"יום חמישי\" (שנים-עשר), ו\"יום שלישי\" (אחד-עשר). נראה שמדובר בשמות הגבאים שאספו את נדבות השבוע. רק אדם אחד, יעקב בוחן המטבעות (אַסַּאי הכספים), שירת פעמיים. מתוארך לתקופתו של דוד ב\"ר אברהם ב\"ר הרמב\"ם.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00015-00043"
@@ -41,7 +41,7 @@
     "כתובה",
     "שירה",
     "צדקה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

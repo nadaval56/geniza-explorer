@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1281-12-14/1281-12-23",
   "description": "Recto: Beginning of a court record. Location: Cairo. Dated: First decade of Ṭevet 1593 Seleucid, which is December 1281 CE, under the authority of David I Maimonides. Nothing is preserved from the body of the document except for the name of one of the parties: Abū Naṣr al-Levi. On verso there are two poems in Hebrew, one attributed to Shelomo the younger (הקטן) and one to Yehuda ha-Levi. (Information in part from CUDL.)",
-  "description_he": "תחילת פרוטוקול בית דין, קהיר, טבת 1593 לשטרות = דצמבר 1281, בסמכות דוד מיימוניד הראשון. שם אחד השותפים: אבו נצר הלוי. על הגב: שני שירים עבריים, אחד מיוחס לשלמה הקטן ואחד ליהודה הלוי.",
+  "description_he": "recto: תחילתו של פרוטוקול בית דין. המקום: קהיר. התאריך: העשור הראשון של טבת א'תקצ\"ג למניין השטרות, דהיינו דצמבר 1281, תחת סמכותו של דוד הראשון בן אברהם מימוני (נגיד). מגוף המסמך לא נשתמר דבר פרט לשמו של אחד הצדדים: אבו נצר הלוי. בverso מופיעים שני שירים בעברית, האחד מיוחס ל\"שלמה הקטן\" והשני לרבי יהודה הלוי.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00017"
@@ -38,7 +38,8 @@
     "מסמך משפטי",
     "שירה",
     "פרוטוקול בית דין",
-    "קהיר"
+    "קהיר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

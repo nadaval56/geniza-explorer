@@ -6,7 +6,7 @@
   "date_rationale": "Paleography",
   "date_standard": "",
   "description": "Book list in Judaeo-Arabic. In the hand of Ḥalfon b. Menashshe (dates: 1100–38). T-S NS 190.1 mentions: וטריפות וניקוי... לרבנו סעדיה זל... דרג לבני פאס יג . . . כאגד. Maybe a work on slaughter by Saadya, a rotulus (? daraj), and [a book written on] paper (kāghad). T-S NS 190.2 mentions several more works on paper, one book whose title includes al-Alfāẓ, and one \"in his handwriting.\" There are probably more fragments of this list to be found in the Geniza. See also ENA 2687.2 (PGPID 11115).",
-  "description_he": "רשימת ספרים ביהודית-ערבית. בכתב ידו של חלפון ב. מנשה (1100–1138 לספירה). מזכיר עבודה על שחיטה וטריפות של רבנו סעדיה, רוטולוס ועבודות על נייר",
+  "description_he": "רשימת ספרים בערבית-יהודית, בכתב ידו של חלפון בן מנשה (פעיל בין השנים 1100–1138). אחד הקטעים מזכיר: \"וטריפות וניקוי... לרבנו סעדיה זל... דרג לבני פאס יג . . . כאגד\". ייתכן שמדובר בחיבור על שחיטה מאת רב סעדיה גאון, ברוטולוס (כנראה דרג', דרג'ה) ובספר שנכתב על נייר (כאג'ד). קטע נוסף מזכיר מספר חיבורים נוספים שנכתבו על נייר, ובכללם ספר שכותרתו כוללת את המילה \"אלאלפאט'\", וספר אחד \"בכתב ידו\". סביר להניח שקיימים בגניזה קטעים נוספים השייכים לרשימה זו. ראו גם את הרשימה המקבילה במסמך נוסף (PGPID 11115).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -37,7 +37,7 @@
     "יהודית-ערבית",
     "רשימת ספרים",
     "ישיבה וגאונות",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "List or table",

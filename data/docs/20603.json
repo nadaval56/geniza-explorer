@@ -1,1 +1,43 @@
-{"id":"20603","shelfmark":"T-S Ar.35.126","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso (original use): Fragment of a petition or other formal state correspondence. The beginnings of 8 lines are preserved, mostly consisting of honorifics for the addressee. \n\nThere are also some notations in the upper margin; these might relate to the document on recto or could be the tarjama of the petition.","tags":["DIMME, Petition"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/20603/","mentioned":"","description_he":"גב הדף (שימוש מקורי): שבר של עצומה או התכתבות ממלכתית פורמלית אחרת. שמורים תחיליות של 8 שורות, בעיקרן אוגרופים לנמען.","tags_he":["מסמך מדינה","ערבית","עצומה"],"prev":"20602","next":"20604","pos":22948,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso (original use): Fragment of a petition or other formal state correspondence. The beginnings of 8 lines are preserved, mostly consisting of honorifics for the addressee. \n\nThere are also some notations in the upper margin; these might relate to the document on recto or could be the tarjama of the petition.",
+  "description_he": "ורסו (השימוש המקורי): שריד של עצומה או תכתובת רשמית אחרת מטעם השלטון. נשתמרו ראשי שמונה שורות, המורכבים ברובם מתארי כבוד המופנים אל הנמען.\n\nבשולי הדף העליונים מופיעות גם כמה הערות; ייתכן שהן קשורות למסמך שברקטו, או שהן מהוות את התרג'מה (התקציר/הכותרת) של העצומה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "20603",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "20604",
+  "origin": "",
+  "pos": 22948,
+  "prev": "20602",
+  "princeton_url": "https://geniza.princeton.edu/documents/20603/",
+  "region": "",
+  "shelfmark": "T-S Ar.35.126",
+  "tags": [
+    "DIMME, Petition"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

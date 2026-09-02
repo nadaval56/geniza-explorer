@@ -1,1 +1,44 @@
-{"id":"19369","shelfmark":"Bodl. MS heb. d 65/19","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter from Yūsuf b. Q[...] al-[...]ān to Abū l-Faḍl [ʿAṭallāh?] b. Yaʿqūb. In Judaeo-Arabic. Very rudimentary hand. The writer is in distress for some reason, and he seems to have run out of his money thanks to Ibn Asad, and he thanks the addressee for his prior help. The details of his story are difficult to decipher. Verso was reused for accounts in Judaeo-Arabic, but these are too faded to read.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-65-19.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_88#MS_Heb_d_65-part19"],"princeton_url":"https://geniza.princeton.edu/documents/19369/","mentioned":"","description_he":"מכתב מיוסף בן ק[...] ל-אבו אל-פצ'ל [עטאללה?] בן יעקוב. ביהודית-ערבית. כתב ידיים ראשוני. הכותב במצוקה, נגמר לו הכסף בגלל בן אסד. צד ב: חשבונות דהויים.","tags_he":["מכתב","יהודית-ערבית"],"prev":"19368","next":"19370","pos":14322,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yūsuf b. Q[...] al-[...]ān to Abū l-Faḍl [ʿAṭallāh?] b. Yaʿqūb. In Judaeo-Arabic. Very rudimentary hand. The writer is in distress for some reason, and he seems to have run out of his money thanks to Ibn Asad, and he thanks the addressee for his prior help. The details of his story are difficult to decipher. Verso was reused for accounts in Judaeo-Arabic, but these are too faded to read.",
+  "description_he": "מכתב מיוסף בן ק[...] אל-[...]אן אל אבו אלפצ'ל [עטאללה?] בן יעקוב. בערבית-יהודית. כתב יד גולמי מאוד. הכותב שרוי במצוקה מסיבה כלשהי, ונראה שכספו אזל בעטיו של אבן אסד, והוא מודה לנמען על עזרה שהושיט לו בעבר. פרטי סיפורו קשים לפענוח. צדו האחורי של הקטע נוצל מחדש לרישום חשבונות בערבית-יהודית, אך אלו דהויים מכדי להיקרא.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_88#MS_Heb_d_65-part19"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19369",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/d/ms-heb-d-65-19.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19370",
+  "origin": "",
+  "pos": 14322,
+  "prev": "19368",
+  "princeton_url": "https://geniza.princeton.edu/documents/19369/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. d 65/19",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

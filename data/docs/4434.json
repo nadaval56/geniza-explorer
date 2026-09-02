@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "1025",
   "description": "Letter from Shelomo [b. Yosef] ha-Kohen Gaon (r. 1025 CE) to Efrayim b. Shemarya, Fustat. Dating: 1025 CE (per Gil), but this estimate is based solely on the Gaon's potential scribal hand. For other documents with this scribal attribution, compare with: ENA 4101.17b (PGPID 796), ENA 2804.8 (PGPID 686), ENA 4020.42 (PGPID 781).",
-  "description_he": "מכתב משלמה [ב' יוסף] הכהן גאון (שלט 1025 לספירה) לאפרים ב' שמריה, פוסטאט. מתוארך 1025 לספירה.",
+  "description_he": "מכתב מאת שלמה [בן יוסף] הכהן גאון (כיהן בשנת 1025 לסה\"נ) אל רבי אפרים בן שמריה בפוסטאט. התיארוך לשנת 1025 לסה\"נ (לפי גיל) מבוסס אך ורק על זיהוי אפשרי של כתב ידו של הגאון עצמו כסופר המסמך. למסמכים נוספים המיוחסים לאותו כתב יד ניתן להשוות בין השאר שלושה פריטים אחרים מאותה קבוצה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -40,7 +40,7 @@
     "ישיבה וגאונות",
     "פוסטאט",
     "סופר",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Legal query to Avraham Maimonides (r. 1205–1237 CE) regarding a man who takes a 200 dinar loan and appoints his parents as guarantors, providing them with a house on his property equivalent in value to his debt. Over the course of the ten-year period of the loan, the debtor marries a woman in Egypt and then travels to India (l. 11r), leaving her in Egypt. When the ten-year period comes to a close and the debt has not been repaid, the creditors wish to sell the house on the property to recoup their funds. The question facing Avraham Maimonides is whether the wife who remained in Egypt has the authority to prevent the sale. Old IB number: 169. New IB number: VII, 31. (Nathaniel Moses)",
-  "description_he": "שאלה הלכתית לאברהם מימוני (1205-1237) בדבר אדם שלווה 200 דינרים ומינה הוריו ערבים; אשתו נשארה במצרים בזמן שנסע להודו; לאחר 10 שנים הנושים רוצים למכור את הבית; האם האשה יכולה לעכב את המכירה?",
+  "description_he": "שאלה הלכתית המופנית לרבי אברהם בן הרמב\"ם (כיהן כנגיד בשנים 1205–1237) בעניין אדם שנטל הלוואה בסך 200 דינר ומינה את הוריו כערבים לחוב, תוך שהוא מעמיד לרשותם בית מנכסיו ששוויו שקול לסכום החוב. במהלך עשר השנים שנקבעו לפירעון ההלוואה, נשא הלווה אישה במצרים ולאחר מכן יצא למסע להודו (שורה 11r), בעודו מותיר את אשתו במצרים. בתום תקופת עשר השנים, וכאשר החוב לא נפרע, ביקשו הנושים למכור את הבית שבנכס כדי להיפרע מכספם. השאלה המונחת לפתחו של רבי אברהם בן הרמב\"ם היא האם נתונה לאישה שנותרה במצרים הסמכות למנוע את המכירה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "הלוואה",
     "הודו",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

@@ -1,1 +1,45 @@
-{"id":"41682","shelfmark":"Yevr.-Arab. I 328","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1565-11-20","date_original":"27 Kislev 5326","date_standard":"1565-11-20","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Legal record (#107) in a court register/pinqas from a Karaite beit din in Cairo (on f. 35v of Yevr.-Arab. I 328). Dated 27 Kislev 5326 AM (1565 CE). Betrothal agreement between the prospective bride and groom Yiṣḥaq b. ʿAbd al-Karīm al-Kohen al-Kurdī and Estīta bt. Shimʿon ha-Levi ha-Ḥazzan (who is probably represented by her father). The wedding date is set for the following year. The groom's payments are listed as: 50 dirham + 30 ashrafī judad. The betrothal agreement lists a fine that Yiṣḥaq must pay his wife if he ever strikes her and a clause restricting his travel outside Miṣr/מצר (Egypt or possibly Cairo). Estīta may have been a minor at the time of this agreement because the travel prohibition clause might read: \"except by consent of the [bride's] fa[ther?]\" (these clauses are normally framed by the bride's legal consent) MCD.","tags":["minor daughter, minor marriage"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/41682/","mentioned":"","description_he":"רשומה משפטית (#107) בפנקס בית דין קראי בקהיר (בדף 35v של Yevr.-Arab. I 328). מתוארכת לכ\"ז כסלו ה'שכ\"ו (1565 לספירה). הסכם אירוסין בין הכלה והחתן העתידיים יצחק בן עבד אל-כרים הכהן אל-כורדי ואסתיטא בת שמעון הלוי החזן (המיוצגת ככל הנראה על ידי אביה). תאריך החתונה נקבע לשנה הבאה. תשלומי החתן: 50 דרהם + 30 אשרפי ג'דד. הסכם האירוסין כולל קנס שיצחק חייב לשלם לאשתו אם יכה אותה, וסעיף המגביל את נסיעותיו מחוץ למצר/מצרים (מצרים, או אולי קהיר). אסתיטא יתכן שהייתה קטינה בעת ההסכם, משום שסעיף איסור הנסיעה יתכן שנקרא: \"אלא בהסכמת [אב] הכלה?\" (סעיפים כאלה מנוסחים בדרך כלל לפי הסכמת הכלה המשפטית). MCD.","tags_he":["מסמך משפטי","יהודית-ערבית","נישואין","קהיר","חזן"],"prev":"41681","next":"41683","pos":35934,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1565-11-20",
+  "date_inferred": "",
+  "date_original": "27 Kislev 5326",
+  "date_rationale": "",
+  "date_standard": "1565-11-20",
+  "description": "Legal record (#107) in a court register/pinqas from a Karaite beit din in Cairo (on f. 35v of Yevr.-Arab. I 328). Dated 27 Kislev 5326 AM (1565 CE). Betrothal agreement between the prospective bride and groom Yiṣḥaq b. ʿAbd al-Karīm al-Kohen al-Kurdī and Estīta bt. Shimʿon ha-Levi ha-Ḥazzan (who is probably represented by her father). The wedding date is set for the following year. The groom's payments are listed as: 50 dirham + 30 ashrafī judad. The betrothal agreement lists a fine that Yiṣḥaq must pay his wife if he ever strikes her and a clause restricting his travel outside Miṣr/מצר (Egypt or possibly Cairo). Estīta may have been a minor at the time of this agreement because the travel prohibition clause might read: \"except by consent of the [bride's] fa[ther?]\" (these clauses are normally framed by the bride's legal consent) MCD.",
+  "description_he": "רשומה משפטית (מס' 107) בפנקס בית דין קראי בקהיר. מתוארכת ל-כ\"ז בכסלו ה'שכ\"ו (1565). הסכם אירוסין בין החתן והכלה המיועדים יצחק בן עבד אלכרים אלכהן אלכֻרדי ואסתיתא בת שמעון הלוי החזן (ככל הנראה אביה הוא המייצג אותה). מועד החתונה נקבע לשנה שלאחר מכן. תשלומי החתן המפורטים הם: 50 דרהם + 30 אשרפי ג'דד (חדשים). הסכם האירוסין כולל קנס שיצחק יידרש לשלם לאשתו אם יכה אותה אי-פעם, וכן סעיף המגביל את יציאתו מחוץ למצר/מצרים (או אולי קהיר). ייתכן שאסתיתא הייתה קטינה בעת ההסכם, שכן ניסוח סעיף איסור הנסיעה אולי קורא: \"אלא בהסכמת הא[ב?]\" (סעיפים מסוג זה מנוסחים בדרך כלל סביב הסכמתה המשפטית של הכלה עצמה).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "41682",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "41683",
+  "origin": "",
+  "pos": 35934,
+  "prev": "41681",
+  "princeton_url": "https://geniza.princeton.edu/documents/41682/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. I 328",
+  "tags": [
+    "minor daughter, minor marriage"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "נישואין",
+    "קהיר",
+    "חזן"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

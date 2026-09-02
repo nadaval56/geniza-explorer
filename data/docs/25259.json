@@ -1,1 +1,44 @@
-{"id":"25259","shelfmark":"T-S NS 309.91","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Hebrew","lang2_he":"עברית","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Leaf probably originally from a larger quire. On recto there is a poem in Hebrew. On verso there is a dedication (mostly in Judaeo-Arabic) stating that these are poems (aqwāl) from Shemaryahu b. Aharon ha-Kohen written for 'the master of the scribes' Aharon b. Yaʿaqov ha-Kohen. There is an interesting addendum which might make sense to those well-versed in Hebrew calligraphy styles, in which the scribe explains why he used a \"hanging\" calligraphy (khaṭṭ muʿallaq), namely because the paper was soft and it was written in 'the time of Kānūn' (=winter), thus the paper could hardly \"hold\" (fa-lā yakād an yamsik) a \"settled/seated\" calligraphy (khaṭṭ mujallas).","tags":["calligraphy"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/25259/","mentioned":"","description_he":"דף הלקוח כנראה מחוברת גדולה יותר. ברקטו שיר בעברית. בוורסו הקדשה (בעיקר בערבית-יהודית) הקובעת שמדובר בשירים (אקוואל) מאת שמריהו בן אהרן הכהן שנכתבו עבור 'אדון הסופרים' אהרן בן יעקב הכהן. הסופר מסביר מדוע השתמש בכתיבה 'תלויה' (חַטּ מֻעַלַּק): הנייר היה רך והכתיבה נעשתה בחורף, ולכן בקושי יכול היה לשאת כתיבה 'יושבת' (חַטּ מֻגַ'לַּס).","tags_he":["יהודית-ערבית","שירה","הקדש","סופר"],"prev":"25258","next":"25260","pos":26265,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Leaf probably originally from a larger quire. On recto there is a poem in Hebrew. On verso there is a dedication (mostly in Judaeo-Arabic) stating that these are poems (aqwāl) from Shemaryahu b. Aharon ha-Kohen written for 'the master of the scribes' Aharon b. Yaʿaqov ha-Kohen. There is an interesting addendum which might make sense to those well-versed in Hebrew calligraphy styles, in which the scribe explains why he used a \"hanging\" calligraphy (khaṭṭ muʿallaq), namely because the paper was soft and it was written in 'the time of Kānūn' (=winter), thus the paper could hardly \"hold\" (fa-lā yakād an yamsik) a \"settled/seated\" calligraphy (khaṭṭ mujallas).",
+  "description_he": "דף שכנראה היה במקור חלק מקווייר גדול יותר. ברקטו מופיע שיר בעברית. בוורסו מופיעה הקדשה (בעיקרה ביהודית-ערבית) המציינת כי מדובר בשירים (אקואל) מאת שמריהו בן אהרן הכהן, שנכתבו עבור \"אדון הסופרים\" אהרן בן יעקב הכהן. נוסף לכך מופיע נספח מעניין שעשוי להיות מובן למי שבקיא בסגנונות הקליגרפיה העברית: הסופר מסביר מדוע השתמש בכתב \"תלוי\" (ח'ט מעלק), והסיבה היא שהנייר היה רך והכתיבה נעשתה ב\"זמן כאנון\" (=החורף), ולפיכך הנייר בקושי היה יכול \"להחזיק\" (פלא יכאד אן ימסך) כתב \"מיושב\" (ח'ט מג'לס).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "25259",
+  "iiif_urls": [],
+  "lang2_en": "Hebrew",
+  "lang2_he": "עברית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "25260",
+  "origin": "",
+  "pos": 26265,
+  "prev": "25258",
+  "princeton_url": "https://geniza.princeton.edu/documents/25259/",
+  "region": "",
+  "shelfmark": "T-S NS 309.91",
+  "tags": [
+    "calligraphy"
+  ],
+  "tags_he": [
+    "יהודית-ערבית",
+    "שירה",
+    "הקדש",
+    "סופר"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

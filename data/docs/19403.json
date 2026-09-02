@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Legal query addressed to Avraham Maimonides, who bears the title Nagid (thus, post-1213). Reuven b. Yaʿaqov married a widow. He sickened and died, when she was 6 months pregnant. He left behind household goods such as earthenware and copper pots (birām). His father Yaʿqūb demanded the household goods. Reuven's widow refused to hand them over, arguing that she had to pawn them to raise money to pay for syrups and chickens for Reuven in his illness and also to repay his debts. Yaʿqūb continues to demand the goods, and she continues to refuse. What should be done?",
-  "description_he": "שאלה לאברהם מיימון (לאחר 1213). ראובן בן יעקב נשא אלמנה, חלה ומת כשהיא בהיריון בחודש שישי. אביו יעקוב תובע את חפצי הבית; האלמנה טוענת שמשכנה אותם לשלם על הרופאות. מה יש לעשות?",
+  "description_he": "שאלה הלכתית המופנית אל רבי אברהם בן הרמב\"ם, הנושא בתואר \"נגיד\" — ולכן השאלה מאוחרת לשנת 1213. ראובן בן יעקב נשא אלמנה לאישה. הוא חלה ונפטר כאשר אשתו הייתה בחודש השישי להריונה. הוא הותיר אחריו חפצי בית, ובהם כלי חרס וסירי נחושת (בִּרָאם). אביו יעקוב תובע את חפצי הבית לעצמו, ואילו אלמנתו של ראובן מסרבת למוסרם לידיו, בטענה שנאלצה למשכן אותם כדי לגייס כסף לתשלום עבור שיקויים ותרנגולות שנדרשו לראובן בימי חוליו, וכן כדי לפרוע את חובותיו. יעקוב ממשיך לדרוש את החפצים, והיא ממשיכה לסרב. השאלה הנשאלת היא כיצד יש לפסוק במחלוקת זו.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_89#MS_Heb_d_66-part123"
@@ -39,7 +39,8 @@
   "tags_he": [
     "תרנגול",
     "נחושת",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

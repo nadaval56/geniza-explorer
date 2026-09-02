@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from a file of Avraham Maimonides' court. Recto: Letter from a divorcee, the wife of Manṣūr, to the Nagid, asking him to intervene because her ex-husband has taken their child, and to forbid her ex-husband to remarry before he has paid the dues owed to her from her marriage contract. Both the husband and the wife's father are tax farmers, the latter of Maḥallat al-Yumn. Verso: Postscript or possibly an addendum written while forwarding the letter, in a different hand, mainly in Hebrew. (Information from CUDL)",
-  "description_he": "מכתב מתיק בית הדין של אברהם מיימוניד: גרושה (אשת מנצור) לנגיד — בעלה לשעבר לקח את ילדם ומונע ממנה כתובתה. מבקשת שיאסור עליו להינשא שוב לפני פירעון הכתובה. שניהם (ואבי האישה) הם מוסרי מסים.",
+  "description_he": "מכתב מתיק בית הדין של רבי אברהם בן הרמב\"ם. בצד הפנים (recto): מכתב מאישה גרושה, אשתו לשעבר של מנצור, אל הנגיד, ובו היא מבקשת את התערבותו לאחר שגרושה לקח את ילדם. היא מבקשת שהנגיד יאסור על הבעל לשעבר להינשא מחדש בטרם ישלם לה את חיוביו הכספיים מכוח כתובתה. הן הבעל והן אביה של האישה הם חוכרי מסים (multazimūn), כאשר האב מחזיק בחכירת המסים של מחלת אל-יֻמְן. בצד האחור (verso): נספח או תוספת שנכתבה כנראה בעת העברת המכתב הלאה, בכתב יד שונה ובעיקר בעברית.",
   "destination": "Fustat",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00022-00022/1"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

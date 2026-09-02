@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter of thanks addressed to the Nagid making reference to recommendations granted. The writer uses the phrase “the Mordechai of the age,” a common designation for communal leaders and court physicians. (S. D. Goitein, Mediterranean Society, 5:491, 642; and Elisha Russ-Fishbane, Judaism, Sufism, and the Pietists of Medieval Egypt: A Study of Avraham Maimonides and His times, Oxford University Press: 2015, 18 ) EMS\nWritten by a person named Daud, who is well attested during this period. AA\n\nVerso: Accounts in Arabic with Greek/Coptic numerals recorded at multiple angles of the paper's orientation. Merits further examination.",
-  "description_he": "מכתב תודה לנגיד על המלצות שניתנו. הכותב מכנהו 'מרדכי הדור' (כינוי נפוץ לנכבדים ורופאי חצר). בכתב דאוד.",
+  "description_he": "מכתב תודה הממוען לנגיד ובו הזכרה של המלצות שהוענקו על ידיו. הכותב משתמש בכינוי \"מרדכי הדור\", ביטוי המקובל לתיאור מנהיגי קהילה ורופאי חצר. לפי גויטיין ולפי אלישע רוס-פישביין בספרו על רבי אברהם בן הרמב\"ם והחסידים שבמצרים של ימי הביניים, מדובר בכינוי נפוץ בהקשרים אלה. המכתב נכתב על ידי אדם בשם דאוד, דמות המתועדת היטב בתקופה זו.\n\nבצד השני (ורסו): רישומי חשבונות בערבית עם ספרות יווניות/קופטיות, הרשומים בכמה זוויות שונות ביחס לכיוון הדף. ראוי לבדיקה נוספת.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00009-00016"
@@ -40,7 +40,8 @@
     "מכתב",
     "יהודית-ערבית",
     "רפואה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

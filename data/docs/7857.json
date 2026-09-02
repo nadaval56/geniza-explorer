@@ -6,7 +6,7 @@
   "date_rationale": "Other (please specify) ; Other (please specify)",
   "date_standard": "",
   "description": "Official correspondence, in Arabic script, reused for a legal document on recto in the hand of Efrayim b. Shermaya. The writer states that he will send reports on a daily basis \"aktub bi-l-akhbār al-mutajaddida fī kull yawm\". The phrase \"aḍammathu l-kitāb al-kabīr\" demands examination.",
-  "description_he": "התכתבות רשמית בכתב ערבי שנוצלה מחדש למסמך משפטי על ידי אפרים ב. שמריה",
+  "description_he": "תכתובת רשמית בכתב ערבי, ששימשה שימוש משני עבור מסמך משפטי בצד הרקטו בכתב ידו של רבי אפרים בן שמריה. הכותב מצהיר שישלח דיווחים על בסיס יומי — \"אכתב באלאח'באר אלמתג'דדה פי כל יום\" (אכתוב על החדשות המתחדשות בכל יום). הביטוי \"אצ'מת'ה אלכתאב אלכביר\" (\"צירפתי אותו אל הכתב הגדול\") מצריך עיון נוסף.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00007-00008/2"
@@ -39,7 +39,7 @@
   "tags_he": [
     "מסמך מדינה",
     "ערבית",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "State document",

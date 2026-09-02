@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Efrayim b. Shemarya to Shelomo b. Yehuda, draft. Dating: ca. 1025–1051 CE, based on the years when Shelomo b. Yehuda served as Gaʾon. (See S. D. Goitein, Mediterranean Society, 1:399; 2:8, 520, 534)",
-  "description_he": "טיוטת מכתב מאפרים בן שמריה לשלמה בן יהודה, 1025–1051.",
+  "description_he": "טיוטה של מכתב מאת רבי אפרים בן שמריה אל רב שלמה בן יהודה. התיארוך: בקירוב 1025–1051 לספירה, על פי השנים שבהן כיהן רב שלמה בן יהודה כגאון.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00026-00024/1"
@@ -40,7 +40,7 @@
     "מכתב",
     "טיוטה",
     "ישיבה וגאונות",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

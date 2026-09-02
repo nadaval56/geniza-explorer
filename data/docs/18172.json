@@ -1,1 +1,44 @@
-{"id":"18172","shelfmark":"T-S D1.75","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"The recto begins with citations from 2 Kings 23:30 and 24:6, noting the deaths of the kings of Judah, Josiah and Jehoiakim. This is followed by a list of citations (beginning, apparently, from 1 Kings 14) noting the deaths and burials of the kings of Israel. The verso consists of the list of the kings of Judah from Shelomo to Josiah, each with a citation from Chronicles, beginning with some form of the root קבר, noting the death of the king. (Information from CUDL)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-D-00001-00075"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-D-00001-00075"],"princeton_url":"https://geniza.princeton.edu/documents/18172/","mentioned":"","description_he":"הרקטו פותח בציטוטים ממלכים ב כג:30 ו-כד:6 בדבר מות מלכי יהודה יאשיהו ויהויקים, ואחר מגיע לרשימת ציטוטים על מות מלכי ישראל. הורסו: רשימת מלכי יהודה משלמה ועד יאשיהו, כל אחד עם ציטוט מדברי הימים על מותו.","tags_he":["חשבונות","עברית"],"prev":"18171","next":"18173","pos":13464,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "The recto begins with citations from 2 Kings 23:30 and 24:6, noting the deaths of the kings of Judah, Josiah and Jehoiakim. This is followed by a list of citations (beginning, apparently, from 1 Kings 14) noting the deaths and burials of the kings of Israel. The verso consists of the list of the kings of Judah from Shelomo to Josiah, each with a citation from Chronicles, beginning with some form of the root קבר, noting the death of the king. (Information from CUDL)",
+  "description_he": "הרקטו פותח בציטוטים ממלכים ב' כ\"ג 30 וכ\"ד 6, המתעדים את מות מלכי יהודה יאשיהו ויהויקים. בהמשך מובאת רשימה של ציטוטים (המתחילה ככל הנראה ממלכים א' י\"ד) המתעדים את מותם וקבורתם של מלכי ישראל. הוורסו כולל רשימה של מלכי יהודה משלמה ועד יאשיהו, כאשר לכל מלך מצורף ציטוט מספר דברי הימים הפותח בצורה כלשהי של השורש קב\"ר ומתעד את מות המלך.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-D-00001-00075"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "18172",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-D-00001-00075"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "18173",
+  "origin": "",
+  "pos": 13464,
+  "prev": "18171",
+  "princeton_url": "https://geniza.princeton.edu/documents/18172/",
+  "region": "",
+  "shelfmark": "T-S D1.75",
+  "tags": [],
+  "tags_he": [
+    "חשבונות",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

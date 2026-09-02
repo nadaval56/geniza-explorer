@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Verso: Letter likely addressed to one of the later Maimonidean Nagids (14th or 15th century). The sender asks for permission to release a vow about leaving money to a certain Mūsā.\n\nRecto: Official letter/order from the office of one of the later Maimonidean Nagids, with motto/ʿalāma at the top. Similarly concerns the releasing a vow between Yiṣḥaq and Ṣedaqa b. ʿEli. May have been written in response to verso, though the names aren't the same. (Information in part from Goitein's index card.)",
-  "description_he": "גב: מכתב כנראה לאחד מנגידי המיימונידים המאוחרים (מאות 14-15). השולח מבקש רשות לשחרר נדר בנושא כסף למוסא. פנים: מכתב רשמי ממשרד הנגיד בנוגע לשחרור נדר בין יצחק וצדקה ב' עלי.",
+  "description_he": "צד verso: מכתב המופנה ככל הנראה לאחד הנגידים המאוחרים מבית הרמב\"ם (המאה ה-14 או ה-15). השולח מבקש רשות להתיר נדר הקשור להותרת כסף לאדם בשם מוסא.\n\nצד recto: מכתב או צו רשמי שיצא ממשרדו של אחד הנגידים המאוחרים מבית הרמב\"ם, ובראשו מוטו/עלאמה. גם הוא עוסק בהתרת נדר, הפעם בין יצחק ובין צדקה בן עלי. ייתכן שנכתב בתגובה לתוכן שב-verso, אף שהשמות אינם זהים. (חלק מהמידע מבוסס על כרטיסיית גויטיין.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,7 @@
     "מסמך משפטי",
     "עברית",
     "צדקה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Small fragment with both Judaeo-Arabic and Arabic script. One of the Judaeo-Arabic sections lists the names al-Shaykh al-Makīn and Abū l-Munā, which are familiar from the circle of Avraham Maimonides (Avraham himself had the kunya Abū l-Munā). The Arabic script is quite difficult and remains mostly undeciphered, though one of the Arabic text blocks in the margin says \"12 raṭls each month\" underneath a section in Judaeo-Arabic which says 1 week: 3, 1 week: 3, 1 week: 3, 1 week: 3. This might be unrelated to the main text. Needs further examination.",
-  "description_he": "שבר קטן ובו כתב יהודי-ערבי וכתב ערבי כאחד. אחד מהקטעים ביהודי-ערבי מפרט את השמות אל-שיח' אל-מכּין ואבו אל-מֻנא, המוכרים מחוגו של אברהם מימוניד. הכתב הערבי מזכיר '12 רטל בכל חודש' מתחת לקטע ביהודי-ערבי המפרט ספירות שבועיות (שבוע: 3, שבוע: 3, שבוע: 3, שבוע: 3). דרוש בדיקה נוספת.",
+  "description_he": "קטע קטן הכתוב בערבית-יהודית ובכתב ערבי כאחד. באחד הקטעים בערבית-יהודית נזכרים השמות אלשיח' אלמכין ואבו אלמנא, שניהם מוכרים מחוגו של רבי אברהם בן הרמב\"ם (לאברהם עצמו הייתה הכוניה אבו אלמנא). הכתב הערבי קשה לקריאה ונותר ברובו לא מפוענח, אך באחד מגושי הטקסט בערבית בשוליים נכתב \"12 רטלים בכל חודש\" מתחת לקטע בערבית-יהודית שבו רשום \"שבוע אחד: 3, שבוע אחד: 3, שבוע אחד: 3, שבוע אחד: 3\". ייתכן שאין לכך קשר לטקסט המרכזי. דרושה בחינה נוספת.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -32,7 +32,8 @@
   "tags": [],
   "tags_he": [
     "חשבונות",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "List or table",

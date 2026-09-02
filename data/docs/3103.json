@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Avraham Maimonides (in office as head of the Jews 1205-1237) is asked about the procedure in which a party appears in court together with an attorney, and answers that the defendant is obliged to respond to claims and arguments made by the attorney, but questions addressed by the defendant to the claimant have to be answered by the latter in person. (Information from Mediterranean Society, II, p. 335, 600)",
-  "description_he": "שאלה לאברהם מיימון (ראש היהודים 1205–1237) על הליך שבו צד מופיע בבית דין עם עורך דין. תשובתו: הנתבע חייב להגיב לטענות הסנגור, אך על שאלות לתובע יענה התובע עצמו.",
+  "description_he": "שאלה הלכתית שהופנתה אל ר' אברהם בן הרמב\"ם (שכיהן כראש היהודים בשנים 1205–1237) בנוגע לסדרי הדין כאשר בעל דין מופיע בבית הדין יחד עם מורשה (עורך דין/שליח). בתשובתו פוסק ר' אברהם כי הנתבע מחויב להשיב על טענות ודברים המועלים נגדו מפי המורשה, אך כאשר הנתבע עצמו מפנה שאלות אל התובע — חובה על התובע להשיב עליהן בעצמו, ואין הוא יכול להסתתר מאחורי מורשהו.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,8 @@
     "Responsum, Maimonides"
   ],
   "tags_he": [
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

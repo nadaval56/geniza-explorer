@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter drafts from a certain Shelomo. Rudimentary handwriting. On recto he states that he is unable to come because his father is sick. The draft on verso is addressed to Avraham ha-Sar Ner ha-Maʿaravi (probably Avraham Maimonides). In the margin he mentions \"my brother and lord Abū l-Ṭāhir.\" (Information in part from Goitein's index card.)",
-  "description_he": "טיוטות מכתב משלמה מסוים. כתב יד ראשוני. בפנים מסביר שאינו יכול לבוא כי אביו חולה. הטיוטה בגב מופנית לאברהם השר נר המערבי (כנראה אברהם מימוניד)",
+  "description_he": "טיוטות מכתב מאת אדם בשם שלמה, בכתב יד גולמי ולא מיומן. בצד הרקטו הוא כותב כי אין ביכולתו לבוא משום שאביו חולה. הטיוטה שבצד הוורסו ממוענת אל אברהם השר נר המערבי (כפי הנראה רבי אברהם בן הרמב\"ם). בשוליים הוא מזכיר את \"אחי ואדוני אבו אלטאהר\". (חלק מן המידע מבוסס על כרטיסייתו של גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00021-00015/1"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מכתב",
     "טיוטה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

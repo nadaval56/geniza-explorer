@@ -1,1 +1,47 @@
-{"id":"35472","shelfmark":"T-S K25.240.15","multifragment":"","type_en":"Credit instrument or private receipt","type_he":"שטר אשראי או קבלה","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). In a mixture of Judaeo-Arabic and Arabic script. The cantor al-Shaykh al-Makīn (=Abū l-Majd?) is to give 10 dirhams to the bearer, a judge. The judge Anaṭoli is also somehow involved. The money should come from the rent of the compound. Note that recto is a join with T-S K25.240.50. \n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)","tags":["account, waqf, qodesh, heqdesh"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/35472/","mentioned":"","description_he":"ורסו: הוראת תשלום בכתב ידו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237), בשילוב של ערבית-יהודית וכתב ערבי. החזן אלשיח' אלמכין (כנראה אבו אלמג'ד?) מתבקש למסור עשרה דרהמים למוסר הכתב, שהוא דיין. גם הדיין אנטולי מעורב באופן כלשהו בעניין. הכסף אמור להגיע משכר הדירה של החצר (\"המתחם\"). יש לציין שהרקטו מצטרף למסמך נוסף (join).\n\nהמסמך הוא חלק מאוסף של הוראות תשלום קצרות בכתב יד, חלקן בכתב עברי וחלקן בכתב ערבי, המורות על תשלומים חודשיים מתוך הכנסות שכר הדירה של ההקדש (וקף) המכונה \"חצר העניים\" (דאר אלמסאכין), או מתוך ההקדש שיסד הרופא אלמהד'ב. כל ההוראות הנושאות תאריך הן מאביב וקיץ שנת 1218 (תיארוך כללי של האוסף: 1210–1225 לערך). מידע על האוסף נמסר על ידי גויטיין וכן אצל מארק כהן בספרו על העוני והצדקה בקהילה היהודית במצרים בימי הביניים.","tags_he":["צדקה","רפואה","הקדש","חזן","דיין","מיימוניד"],"prev":"35470","next":"35473","pos":31399,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). In a mixture of Judaeo-Arabic and Arabic script. The cantor al-Shaykh al-Makīn (=Abū l-Majd?) is to give 10 dirhams to the bearer, a judge. The judge Anaṭoli is also somehow involved. The money should come from the rent of the compound. Note that recto is a join with T-S K25.240.50. \n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
+  "description_he": "ורסו: הוראת תשלום בכתב ידו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237), בשילוב של ערבית-יהודית וכתב ערבי. החזן אלשיח' אלמכין (כנראה אבו אלמג'ד?) מתבקש למסור עשרה דרהמים למוסר הכתב, שהוא דיין. גם הדיין אנטולי מעורב באופן כלשהו בעניין. הכסף אמור להגיע משכר הדירה של החצר (\"המתחם\"). יש לציין שהרקטו מצטרף למסמך נוסף (join).\n\nהמסמך הוא חלק מאוסף של הוראות תשלום קצרות בכתב יד, חלקן בכתב עברי וחלקן בכתב ערבי, המורות על תשלומים חודשיים מתוך הכנסות שכר הדירה של ההקדש (וקף) המכונה \"חצר העניים\" (דאר אלמסאכין), או מתוך ההקדש שיסד הרופא אלמהד'ב. כל ההוראות הנושאות תאריך הן מאביב וקיץ שנת 1218 (תיארוך כללי של האוסף: 1210–1225 לערך). מידע על האוסף נמסר על ידי גויטיין וכן אצל מארק כהן בספרו על העוני והצדקה בקהילה היהודית במצרים בימי הביניים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35472",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35473",
+  "origin": "",
+  "pos": 31399,
+  "prev": "35470",
+  "princeton_url": "https://geniza.princeton.edu/documents/35472/",
+  "region": "",
+  "shelfmark": "T-S K25.240.15",
+  "tags": [
+    "account, waqf, qodesh, heqdesh"
+  ],
+  "tags_he": [
+    "צדקה",
+    "רפואה",
+    "הקדש",
+    "חזן",
+    "דיין",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Credit instrument or private receipt",
+  "type_he": "שטר אשראי או קבלה"
+}

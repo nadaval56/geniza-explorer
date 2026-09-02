@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter that mentions Avraham Maimonides - it seems that the writer asked him a question regarding legal procedure and now he is asking the recipient to go to him and obtain his ruling (?) . ENA 1822a.4 is possibly related to this document. Avraham Maimonides is referred to as \"Nagid\" in the letter, a title he held after 1213 during his tenure as Rayyis between 1205–1237 CE.",
-  "description_he": "מכתב שמוזכר בו אברהם מימוניד — נראה שהכותב שאל אותו שאלה הלכתית ועכשיו מבקש מהנמען לגשת אליו ולקבל את פסיקתו. אברהם מימוניד מכונה 'נגיד', תואר שנשא לאחר 1213 לספירה.",
+  "description_he": "מכתב המזכיר את רבי אברהם בן הרמב\"ם. נראה שהכותב פנה אליו בשאלה הנוגעת לסדרי דין משפטיים, וכעת הוא מבקש מהנמען לגשת אליו ולקבל ממנו את פסיקתו (?). ייתכן שמסמך אחר קשור לזה. רבי אברהם בן הרמב\"ם מכונה במכתב \"נגיד\" — תואר שנשא לאחר שנת 1213, במהלך כהונתו כראיס בשנים 1205–1237 לספירה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

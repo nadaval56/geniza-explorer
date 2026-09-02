@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from a synagogue dignitary to a donor. In Judaeo-Arabic. Dating: early 13th century (during the period of Eliyyahu the Judge and Avraham Maimonides). Concerning the restoration of a Bible codex called al-Jāmiʿ, \"the brother of the codex called the Tāj (i.e., the Aleppo Codex,\" which was in need of restoration and could not be replaced even for 100 dinars. \"For work requiring special skills, the usually low tariffs would not do. An ancient model codex of the whole Bible, which had been written, it seems, in the ninth century and was the property of the synagogue of the Palestinians in Old Cairo, needed to be restored at the beginning of the thirteenth century. Three experts were invited for the task, but declared themselves unable to carry it out, for \"the resurrection of the dead is more difficult than bringing a human being into existence.\" Finally, a fourth scribe undertook the restoration of sixty particularly bad leaves, for which he asked a compensation of 1 dirham per leaf. This demand, as stated in the document, was far more than expected. (Information from Goitein's index card and Mediterranean Society II, p. 239, note 52.) Ed. S.D. Goitein, “New Documents from the Cairo Geniza,” in Homenaje: Millás-Vallicrosa, vol. 1 (Barcelona: Consejo Superior de Investigaciones Cientificas, 1954), 713–16, 719–20.",
-  "description_he": "מכתב מאת אחד מנכבדי בית הכנסת אל תורם. בערבית-יהודית. תיארוך: ראשית המאה ה-13 (בתקופת אליהו הדיין ואברהם בן הרמב\"ם). המכתב עוסק בשיקומו של כתב יד מקראי בשם \"אלג'אמע\", המתואר כ\"אחיו של הקודקס הנקרא אלתאג'\" (כלומר כתר ארם צובא). כתב יד זה היה זקוק לשיקום, ולא ניתן היה להחליפו אפילו תמורת 100 דינרים. עבודות הדורשות מיומנות מיוחדת לא ניתן היה לבצע בתעריפים הנמוכים המקובלים. כתב יד עתיק וייצוגי זה של המקרא כולו, שנכתב ככל הנראה במאה התשיעית והיה רכושו של בית הכנסת של הארץ-ישראלים בפוסטאט, נזקק לשיקום בראשית המאה ה-13. שלושה מומחים הוזמנו למשימה, אך הצהירו כי אינם מסוגלים לבצעה, שכן \"תחיית המתים קשה יותר מבריאתו של אדם\". לבסוף נטל סופר רביעי על עצמו את שיקומם של שישים דפים פגומים במיוחד, וביקש כשכר דירהם אחד עבור כל דף. דרישה זו, כפי שמצוין במסמך, הייתה גבוהה בהרבה מן הצפוי. (המידע מבוסס על כרטיסיית גויטיין וספרו על החברה הים-תיכונית.) המסמך פורסם על ידי ש\"ד גויטיין במאמרו על תעודות חדשות מגניזת קהיר, בכרך לכבוד מיליאס-ואייקרוסה (ברצלונה 1954).",
+  "description_he": "מכתב מאת אחד מנכבדי בית הכנסת אל תורם. בערבית-יהודית. תיארוך: ראשית המאה ה-13 (בתקופת אליהו הדיין ורבי אברהם בן הרמב\"ם). המכתב עוסק בשיקומו של כתב יד מקראי בשם \"אלג'אמע\", המתואר כ\"אחיו של הקודקס הנקרא אלתאג'\" (כלומר כתר ארם צובא). כתב יד זה היה זקוק לשיקום, ולא ניתן היה להחליפו אפילו תמורת 100 דינרים. עבודות הדורשות מיומנות מיוחדת לא ניתן היה לבצע בתעריפים הנמוכים המקובלים. כתב יד עתיק וייצוגי זה של המקרא כולו, שנכתב ככל הנראה במאה התשיעית והיה רכושו של בית הכנסת של הארץ-ישראלים בפוסטאט, נזקק לשיקום בראשית המאה ה-13. שלושה מומחים הוזמנו למשימה, אך הצהירו כי אינם מסוגלים לבצעה, שכן \"תחיית המתים קשה יותר מבריאתו של אדם\". לבסוף נטל סופר רביעי על עצמו את שיקומם של שישים דפים פגומים במיוחד, וביקש כשכר דירהם אחד עבור כל דף. דרישה זו, כפי שמצוין במסמך, הייתה גבוהה בהרבה מן הצפוי. (המידע מבוסס על כרטיסיית גויטיין וספרו על החברה הים-תיכונית.) המסמך פורסם על ידי ש\"ד גויטיין במאמרו על תעודות חדשות מגניזת קהיר, בכרך לכבוד מיליאס-ואייקרוסה (ברצלונה 1954).",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part23"
@@ -44,7 +44,8 @@
     "קהיר",
     "סופר",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

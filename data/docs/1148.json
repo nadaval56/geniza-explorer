@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "1226-03-31",
   "description": "Document concerning the sale of a female slave named Ḍiyāʾ. Location: Fustat. Dated: Tuesday, 1 Nisan 1537 Seleucid, which is 31 March 1226 CE, under the authority of Avraham Maimonides (r. 1205-1237 CE), who is referenced here with the title \"ha-Nagid\" which he bore after 1213. CUL Or.1080 J273 (PGPID 4009) is an unsigned copy of the same document. Witnesses include: [...] b. Elʿazar ha-Kohen; Yefet b. Adonim; Shemuel b. Simḥa. Join: Oded Zinger.",
-  "description_he": "מסמך מכירת שפחה בשם ד'יאא'. פוסטאט, 31 במרץ 1226, בסמכות אברהם מיימוניד.",
+  "description_he": "שטר העוסק במכירת שפחה בשם צ'יאא'. המקום: פוסטאט. התאריך: יום שלישי, א' בניסן א'תקל\"ז למניין השטרות, שהוא 31 במרץ 1226 לספירה, תחת סמכותו של רבי אברהם בן הרמב\"ם (כיהן בשנים 1205-1237), המוזכר כאן בתואר \"הנגיד\" שבו נשא לאחר 1213. קיים העתק נוסף לא חתום של אותו המסמך. בין העדים: [...] בן אלעזר הכהן; יפת בן אדונים; שמואל בן שמחה. צירוף: עודד צינגר.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00006-J-00001-00007",
@@ -42,7 +42,8 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

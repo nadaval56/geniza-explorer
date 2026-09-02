@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Legal query addressed to Avraham Maimonides concerning a husband's financial obligations towards his wife. The text mentions several objects including the wife's household effects and gold and silver jewelry, and the existence of three children. On the other side there is the autograph responsum. Join: Amir Ashur. (Information in part from CUDL)",
-  "description_he": "שאלה לאברהם מימונידס על חובות כספיות של בעל כלפי אשתו, עם תשובה אוטוגרף בגב",
+  "description_he": "שאלה הלכתית המופנית אל רבי אברהם בן הרמב\"ם, העוסקת בחיוביו הכספיים של בעל כלפי אשתו. הטקסט מזכיר מספר חפצים, ובהם כלי הבית של האישה ותכשיטי זהב וכסף, וכן את קיומם של שלושה ילדים. בצדו השני של המסמך מופיעה התשובה בכתב ידו של רבי אברהם בן הרמב\"ם. הצירוף נעשה בידי אמיר אשור.",
   "destination": "",
   "fragment_urls": [
     "https://luna.manchester.ac.uk/luna/servlet/view/search?q=%22B+3819%22+LIMIT%3AManchesterDev~95~&sort=reference_number%2Cdate_created",
@@ -40,7 +40,8 @@
   ],
   "tags_he": [
     "זהב",
-    "מיימוניד",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם",
     "כסף"
   ],
   "total": 35937,

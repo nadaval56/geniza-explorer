@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter/petition. Draft. From Abū ʿAlī b. Abū l-ʿIzz to Avraham Maimonides, who bears the title \"Nagid\" (post-1213 CE). On recto there are two efforts at the same letter. One can see the writer working out the best way to phrase things. The prose is elaborate and often rhymed ('the reason for [some lapse] was the debts (al-duyūn) and not madness (al-junūn)'). In line 13, the writer gets to the point: he asks for forgiveness for something and asks for 'the strengthening of his heart' (ijbār qalb al-mamlūk) and something that will 'console' the writer (yaslūh) given what he has lost—typical phrases in the context of grief and letters of condolence, but plausibly also just asking for money. On verso there is the draft of a letter in Arabic script to 'my brother'—so not the same letter. Only the formulaic beginning is preserved. On verso there is also a list of names in Judaeo-Arabic: Ibn al-ʿŪdī Abū l-Ḥasan and his brothers Abū l-Faḍl and Abū l-ʿIzz, and his grandfather Abū l-Riḍā. Also Abū l-Majd b. Hibatallāh.",
-  "description_he": "מכתב/עצומה. טיוטה. מאבו עלי בן אבו אלעז לאברהם מימוניד, הנושא את התואר 'נגיד' (אחרי 1213 לספירה). בצד הקדמי שתי נסיונות של אותו מכתב. ניתן לראות את הכותב מחפש את הדרך הטובה ביותר לנסח. הפרוזה מפורטת ולעיתים מחורזת. בשורה 13 הכותב מגיע לעיקר: הוא מבקש סליחה ומשהו שיכול 'לנחם' אותו - ביטויים אופייניים בהקשר של אבל ומכתבי ניחום, אך ייתכן גם שהוא פשוט מבקש כסף. בצד האחורי טיוטת מכתב בכתב ערבי ל'אחי', ורשימת שמות בערבית-יהודית: אבן אלעודי אבו אלחסן ואחיו אבו אלפצ'ל ואבו אלעז, וסבו אבו אלרצ'א. כמו כן אבו אלמג'ד בן הבת אללה.",
+  "description_he": "מכתב/עצומה. טיוטה. מאת אבו עלי בן אבו אלעז' אל רבי אברהם בן הרמב\"ם, הנושא את התואר \"נגיד\" (לאחר 1213). ברקטו מופיעים שני ניסיונות לאותו מכתב, ואפשר לראות את הכותב מתלבט ומגבש את הניסוח הטוב ביותר. הפרוזה מורכבת ולעיתים קרובות מחורזת (\"הסיבה ל[איזושהי תקלה] היתה החובות (אלדיון) ולא השיגעון (אלג'נון)\"). בשורה 13 הכותב מגיע לעיקר: הוא מבקש סליחה על דבר מה, ומבקש \"חיזוק לבו\" (אג'באר קלב אלממלוך) ומשהו ש\"ינחם\" את הכותב (יסלוה) לאור מה שאיבד — ביטויים אופייניים בהקשר של אבל ומכתבי תנחומים, אך ייתכן בהחלט שמדובר פשוט בבקשה לכסף. בוורסו מופיעה טיוטה של מכתב בכתב ערבי אל \"אחי\" — כלומר לא אותו מכתב. רק הפתיחה הפורמולית השתמרה. בוורסו מופיעה גם רשימת שמות בערבית-יהודית: אבן אלעודי אבו אלחסן ואחיו אבו אלפצ'ל ואבו אלעז', וסבו אבו אלרצ'א. כמו כן אבו אלמג'ד בן הבת אללה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
     "מכתב",
     "עצומה",
     "טיוטה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

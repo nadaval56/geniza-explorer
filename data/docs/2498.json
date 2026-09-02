@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "The physician Menahem writes to his colleague, the Nagid Avraham Maimonides, about happenings when he traveled to the village Ṭanān (in the Qalyubiyya district near Cairo) to see a patient. Avraham Maimonides served as Rayyis al-Yahūd between 1205–1237 CE and also bore the title Nagid after 1213 CE. (Information from Mediterranean Society, III, p. 579)",
-  "description_he": "הרופא מנחם כותב לעמיתו הנגיד אברהם מיימוניד על מה שקרה לו בנסיעה לכפר טנאן (במחוז קליוביה) לביקור חולה.",
+  "description_he": "הרופא מנחם כותב לעמיתו, הנגיד רבי אברהם בן הרמב\"ם, על מאורעות שהתרחשו בעת שנסע אל הכפר טַנַאן (במחוז קַלְיוּבּיה הסמוך לקהיר) כדי לבקר חולה. רבי אברהם בן הרמב\"ם שימש כראיס אל-יהוד (ראש היהודים) בין השנים 1205–1237 לסה\"נ, ונשא גם את התואר נגיד החל משנת 1213 לסה\"נ.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part38"
@@ -39,7 +39,8 @@
     "יהודית-ערבית",
     "רפואה",
     "קהיר",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

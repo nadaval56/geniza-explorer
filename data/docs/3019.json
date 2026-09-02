@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Fragment of a legal deed. Involving Muḥsin and Ṣedaqa. Written and signed by Efrayim b. Shemarya (dated documents: 1007-1055 CE), head of the Palestinian congregation and court of law. Also signed by four others: Aharon b. David ha-Levi; Shemarya b. Moshe; Shelomo b. Ḥakīm; Yefet b. Ṭoviyya ha-Levi. Dated to the middle of the 11th century. On the back of a reused Fatimid decree (two fragmentary lines preserved).",
-  "description_he": "קטע שטר משפטי. כולל מוחסין וצדקה. נכתב ונחתם על ידי אפרים ב' שמריה, ראש הקהל הארץ ישראלי ובית הדין. גם חתום על ידי ארבעה נוספים. תאריך: אמצע המאה ה-11.",
+  "description_he": "קטע משטר משפטי שבו מעורבים מֻחְסִן וצדקה. נכתב ונחתם בידי רבי אפרים בן שמריה (מסמכים מתוארכים שלו: 1007–1055), ראש הקהילה הפלסטינית ובית הדין שלה. חתומים עליו ארבעה נוספים: אהרן בן דוד הלוי; שמריה בן משה; שלמה בן חכים; ויפת בן טוביה הלוי. המסמך מתוארך לאמצע המאה ה-11. נכתב על גב מסמך פאטימי שנעשה בו שימוש חוזר, וממנו שרדו שתי שורות מקוטעות.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00004-00005"
@@ -38,7 +38,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "צדקה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

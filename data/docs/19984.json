@@ -1,1 +1,45 @@
-{"id":"19984","shelfmark":"T-S 12.462","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"966","date_original":"","date_standard":"","date_inferred":"966","date_rationale":"Other (please specify)","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Confirmation of a former deed of sale in which Yosef and Maymūn sons of Yaʿaqov al-Ghallāq (? אלגלאק) are interested. The document in question was drawn up in 966 CE before the Beth Din in Qaṣr al-Shamʿ (inferred dating: 966 CE or later). Of the five original witnesses, only ʿAli b. Shelomo is still living, and he confirmed that his own signature was valid, and others were brought to confirm the remaining signatures. Information from FGP.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00462"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00462"],"princeton_url":"https://geniza.princeton.edu/documents/19984/","mentioned":"Fustat, Qaṣr al-Shamʿ (neighborhood)","description_he":"אישור שטר מכר קודם מ-966 לספירה שבו יוסף ומיימון בני יעקב אל-גלאק עניינם; מבית דין של קצר אל-שמע","tags_he":["מסמך משפטי","עברית","שטר מכר"],"prev":"19973","next":"19987","pos":14610,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "966",
+  "date_inferred": "966",
+  "date_original": "",
+  "date_rationale": "Other (please specify)",
+  "date_standard": "",
+  "description": "Confirmation of a former deed of sale in which Yosef and Maymūn sons of Yaʿaqov al-Ghallāq (? אלגלאק) are interested. The document in question was drawn up in 966 CE before the Beth Din in Qaṣr al-Shamʿ (inferred dating: 966 CE or later). Of the five original witnesses, only ʿAli b. Shelomo is still living, and he confirmed that his own signature was valid, and others were brought to confirm the remaining signatures. Information from FGP.",
+  "description_he": "אישור מחודש לשטר מכר קודם שבו מעורבים יוסף ומיימון בני יעקב אלגלאק (?, אלגלאק). השטר המקורי נערך בשנת 966 לסה\"נ בפני בית הדין בקצר אלשמע (תיארוך משוער: 966 לסה\"נ או לאחר מכן). מבין חמשת העדים המקוריים שחתמו על השטר, רק עלי בן שלמה עודנו בחיים בעת עריכת האישור, והוא אישר כי חתימתו שלו תקפה. לשם אימות יתר החתימות הובאו עדים אחרים. המידע מבוסס על FGP.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00462"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19984",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00462"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Fustat, Qaṣr al-Shamʿ (neighborhood)",
+  "multifragment": "",
+  "next": "19987",
+  "origin": "",
+  "pos": 14610,
+  "prev": "19973",
+  "princeton_url": "https://geniza.princeton.edu/documents/19984/",
+  "region": "",
+  "shelfmark": "T-S 12.462",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "עברית",
+    "שטר מכר"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

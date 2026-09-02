@@ -1,1 +1,44 @@
-{"id":"40865","shelfmark":"Moss. Xa,362","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1108-08-11/1109-07-30","date_original":"502","date_standard":"1108-08-11/1109-07-30","date_inferred":"","date_rationale":"","library":"אוסף מוסרי","library_raw":"Mosseri","collection":"Mosseri, Moss.","description":"Bill of sale for real estate. In Arabic script. Fragment (upper left piece). The buyer is “one of the heads/captains of the arsenal” (احد روسا الصناعة المحروسة). He purchases a qāʿa, whose description follows (صفقة واحدة وعقدا واحدا جميع القاعة . . . ). The description includes a staircase (sullam), a T-shaped living room (majlis ḥayrī/ḥīrī), and a wind catcher (bādāhanj). The property is located in Qaṣr al-Shamʿ in Fustat at Bāb al-Kharrāṭīn. The year is 502 AH = 1108/09 CE. The sum is not preserved (only “X dinars and a half dinar”).\n\nAs of July 2025 this fragment is not conserved and can be seen only in Cambridge.","tags":["arsenal"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/40865/","mentioned":"Qaṣr al-Shamʿ (neighborhood)","description_he":"שטר מכר של נכס מקרקעין בכתב ערבי; שבר (פינה שמאלית עליונה); הקונה הוא 'אחד ראשי הארסנל' (אחד רוסא אל-צנאעה אל-מחרוסה); הוא רוכש קָאעָה שתיאורה כולל מדרגות, אולם מגורים ותופס-רוח (בָּאדָהַנְג'); הנכס נמצא בקַצְר אַל-שַׁמְע בפוסטאט ליד בָּאב אַל-ח'ַרָּאטִין; שנת 502 לה' = 1108/09 לספירה","tags_he":["מסמך משפטי","ערבית","שטר מכר","פוסטאט"],"prev":"40864","next":"40868","pos":35277,"total":35937}
+{
+  "collection": "Mosseri, Moss.",
+  "date": "1108-08-11/1109-07-30",
+  "date_inferred": "",
+  "date_original": "502",
+  "date_rationale": "",
+  "date_standard": "1108-08-11/1109-07-30",
+  "description": "Bill of sale for real estate. In Arabic script. Fragment (upper left piece). The buyer is “one of the heads/captains of the arsenal” (احد روسا الصناعة المحروسة). He purchases a qāʿa, whose description follows (صفقة واحدة وعقدا واحدا جميع القاعة . . . ). The description includes a staircase (sullam), a T-shaped living room (majlis ḥayrī/ḥīrī), and a wind catcher (bādāhanj). The property is located in Qaṣr al-Shamʿ in Fustat at Bāb al-Kharrāṭīn. The year is 502 AH = 1108/09 CE. The sum is not preserved (only “X dinars and a half dinar”).\n\nAs of July 2025 this fragment is not conserved and can be seen only in Cambridge.",
+  "description_he": "שטר מכר של נכס דלא ניידי, כתוב בכתב ערבי. מדובר בקטע (החלק השמאלי העליון של המסמך). הקונה מתואר כ\"אחד מראשי/קציני בית-המלאכה (הממשלתי)\" (אחד רוסא אלצנאעה אלמחרוסה). הוא רוכש קאעה (אולם או חצר מקורה), שתיאורה בא בהמשך השטר: \"צפקה ואחדה ועקדא ואחדא ג'מיע אלקאעה...\" (כלומר: בעסקה אחת ובחוזה אחד את כלל הקאעה...). התיאור כולל גרם מדרגות (סֻלַّם), חדר אורחים בצורת T (מג'לס חיירי/חירי), ומלכודת רוח לאוורור (באד'אהנג'). הנכס שוכן בקצר אלשמע (מצודת הנרות) בפוסטאט, סמוך לבאב אלח'רّאטין (שער החרטים). השנה הנקובה היא 502 לה' = 1108/09 לסה\"נ. סכום העסקה לא נשתמר, ומה שניתן לקרוא הוא רק \"X דינרים וחצי דינר\".\n\nנכון ליולי 2025 הקטע אינו משומר, וניתן לעיין בו רק בקיימברידג'.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "40865",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "אוסף מוסרי",
+  "library_raw": "Mosseri",
+  "mentioned": "Qaṣr al-Shamʿ (neighborhood)",
+  "multifragment": "",
+  "next": "40868",
+  "origin": "",
+  "pos": 35277,
+  "prev": "40864",
+  "princeton_url": "https://geniza.princeton.edu/documents/40865/",
+  "region": "",
+  "shelfmark": "Moss. Xa,362",
+  "tags": [
+    "arsenal"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "ערבית",
+    "שטר מכר",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

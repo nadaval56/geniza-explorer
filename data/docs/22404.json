@@ -1,1 +1,42 @@
-{"id":"22404","shelfmark":"T-S AS 158.354","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1100–1138","date_original":"","date_standard":"","date_inferred":"1100–1138","date_rationale":"Paleography","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Legal record(s) in the hand of Halfon b. Menashshe (fl. 1100–1138 CE). Fragment (right side of recto). Partial translation: \"When our master the qāḍī purchased (ibtāʿa)... among them there was a house belonging to Abū [...]... known as Abū l-Faḍl al-Qaraʾ (the Qaraite)... Arabic documents in their possession... Efrayim b. Barakāt... al-Damsīsī al-Rabbānī (the Rabbanite)... [[the treasury]]... bears witness... Ibn al-[...]... [...] b. Elʿazar.\" On verso, an unrelated legal record naming [...] b. David, Malīḥa bt. ʿEli, and [...] ha-Kohen b. Seʿadya. Underneath, yet another legal record, too faded to read. T-S AS 158.354r and T-S NS 342.68r resemble each other but are probably not a join. AA. ASE.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk//iiif/MS-TS-AS-00158-00354"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/22404/","mentioned":"","description_he":"פרוטוקול/ים משפטיים בכתב ידו של חלפון ב. מנשה (פעיל 1100-1138 לסה\"נ). מזכיר: הקאדי שרכש נכס; בית השייך לאבו [...] המכונה אבו אל-פצ'ל אל-קראי; מסמכים ערביים ברשותם; אפרים ב. ברכאת; ועוד. בצד האחורי פרוטוקול נוסף.","tags_he":["מסמך משפטי","יהודית-ערבית"],"prev":"22403","next":"22409","pos":14962,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1100–1138",
+  "date_inferred": "1100–1138",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Legal record(s) in the hand of Halfon b. Menashshe (fl. 1100–1138 CE). Fragment (right side of recto). Partial translation: \"When our master the qāḍī purchased (ibtāʿa)... among them there was a house belonging to Abū [...]... known as Abū l-Faḍl al-Qaraʾ (the Qaraite)... Arabic documents in their possession... Efrayim b. Barakāt... al-Damsīsī al-Rabbānī (the Rabbanite)... [[the treasury]]... bears witness... Ibn al-[...]... [...] b. Elʿazar.\" On verso, an unrelated legal record naming [...] b. David, Malīḥa bt. ʿEli, and [...] ha-Kohen b. Seʿadya. Underneath, yet another legal record, too faded to read. T-S AS 158.354r and T-S NS 342.68r resemble each other but are probably not a join. AA. ASE.",
+  "description_he": "תעודה משפטית (או תעודות) בכתב ידו של חלפון בן מנשה (פעיל בשנים 1100–1138 לסה\"נ). שריד של מסמך (צד ימין של הרקטו). תרגום חלקי: \"כאשר אדוננו הקאדי קנה (אבּתאע)... ביניהם היה בית השייך לאבו [...]... המוכר כאבו אלפצ'ל אלקרא (הקראי)... מסמכים בערבית שברשותם... אפרים בן ברכאת... אלדמסיסי אלרבאני (הרבני)... [[האוצר]]... מעיד... אבן אל[...]... [...] בן אלעזר.\" בוורסו, תעודה משפטית שאינה קשורה לעניין, ובה מופיעים השמות [...] בן דוד, מליחה בת עלי, ו[...] הכהן בן סעדיה. מתחתיה, תעודה משפטית נוספת, דהויה מכדי לקרוא אותה. שני קטעים נוספים דומים זה לזה במראם אך כנראה אינם מהווים חיבור (join) של ממש.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "22404",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk//iiif/MS-TS-AS-00158-00354"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "22409",
+  "origin": "",
+  "pos": 14962,
+  "prev": "22403",
+  "princeton_url": "https://geniza.princeton.edu/documents/22404/",
+  "region": "",
+  "shelfmark": "T-S AS 158.354",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

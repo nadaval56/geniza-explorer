@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter addressed to Farajallāh the cantor. In Judaeo-Arabic. Dating: Probably ca. 14th century. Bears a motto at the top usually seen in the documents of the latter day Maimonideses, e.g., Yehoshua Maimonides. But the handwriting is not that of the clerk of Yehoshua Maimonides. The addressee is to inform Surūr al-Iskandarānī al-Kohen and his son that the two mandīls that the cantor sent from Alexandria have received an offer of 40 dirhams. If they wish to sell them, they should make a declaration before witnesses. If not, they must report immediately to the court. The matter is urgent, because \"[fines?] are heavy upon us\" concerning \"the house of Moshe Rabbenu\" (the shrine at Dammūh?). \"The remainder of the 4 dinars\" is mentioned in the margin.",
-  "description_he": "מכתב המופנה לפרג'אללה החזן, ביהודית-ערבית. תיארוך: ככל הנראה בסביבות המאה ה-14. שני מנדילים שנשלחו מאלכסנדריה קיבלו הצעת 40 דרהמים. העניין דחוף בגין קנסות הקשורים ל'בית משה רבנו'.",
+  "description_he": "מכתב הממוען לפרג'אללה החזן. בערבית-יהודית. תיארוך: ככל הנראה סביב המאה ה-14. בראש המכתב מופיע מוטו שמופיע בדרך כלל במסמכים של בני בית הרמב\"ם המאוחרים, למשל יהושע המיימוני. עם זאת, כתב היד אינו של הסופר של יהושע המיימוני. הנמען מתבקש להודיע לסרור אל-אסכנדראני הכהן ולבנו שעבור שני המנדילים (מטפחות) שהחזן שלח מאלכסנדריה התקבלה הצעה של 40 דרהם. אם ברצונם למכור אותם, עליהם להצהיר על כך בפני עדים. אם לא, עליהם לדווח מיד לבית הדין. העניין דחוף, מפני ש\"[קנסות?] כבדים מוטלים עלינו\" בקשר ל\"בית משה רבנו\" (האם הכוונה למקדש בדמוה?). בשוליים מוזכרת \"יתרת ארבעת הדינרים\".",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -39,7 +39,8 @@
     "יהודית-ערבית",
     "אלכסנדריה",
     "סופר",
-    "חזן"
+    "חזן",
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

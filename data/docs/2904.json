@@ -1,1 +1,45 @@
-{"id":"2904","shelfmark":"T-S 10J17.29","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter addressed to Yosef ha-Kohen. Contains initial greetings, a request for assistance, a congratulations on recovering from an illness, and wishes for the forthcoming high holidays. This letter is written in the same hand as T-S 10 J17 fs. 27-28 and T-S 10 J17 f. 30 (Goitein). (Information from Goitein's index cards)","tags":["Petition, private"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00017-00029"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00017-00029/1"],"princeton_url":"https://geniza.princeton.edu/documents/2904/","mentioned":"","description_he":"מכתב המופנה ליוסף הכהן. מכיל ברכות ראשוניות, בקשת סיוע, ברכה על החלמה ממחלה, ואיחולים לחגי תשרי הקרובים.","tags_he":["מכתב"],"prev":"2903","next":"2905","pos":1960,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter addressed to Yosef ha-Kohen. Contains initial greetings, a request for assistance, a congratulations on recovering from an illness, and wishes for the forthcoming high holidays. This letter is written in the same hand as T-S 10 J17 fs. 27-28 and T-S 10 J17 f. 30 (Goitein). (Information from Goitein's index cards)",
+  "description_he": "מכתב הממוען ליוסף הכהן. כולל ברכות פתיחה, בקשת סיוע, איחולים על החלמתו ממחלה ואיחולים לקראת הימים הנוראים הקרבים ובאים. לפי גויטיין, המכתב נכתב באותו כתב יד כמו מסמכים נוספים מאותו אוסף. (המידע מתוך כרטיסיות הקטלוג של גויטיין)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00017-00029/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2904",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00010-J-00017-00029"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2905",
+  "origin": "",
+  "pos": 1960,
+  "prev": "2903",
+  "princeton_url": "https://geniza.princeton.edu/documents/2904/",
+  "region": "",
+  "shelfmark": "T-S 10J17.29",
+  "tags": [
+    "Petition, private"
+  ],
+  "tags_he": [
+    "מכתב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

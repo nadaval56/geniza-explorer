@@ -1,1 +1,47 @@
-{"id":"3747","shelfmark":"T-S 8J27.13","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Farah b. Yosef b. Farah in Alexandria to Abu Sa'd Khalaf b. Sahl in Fustat mentioning a shipment of coats, turbans, robes, and brazilwood. On the verso in the bottom margin is an unrelated Arabic account of 9 lines with amounts of money (in dinars) due to various people. See also T-S 8.20 (PGPID 7046).","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00027-00013"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00027-00013"],"princeton_url":"https://geniza.princeton.edu/documents/3747/","mentioned":"","description_he":"מכתב מפרח ב' יוסף ב' פרח באלכסנדריה לאבו סעד ח'לף ב' סהל בפוסטאט, המזכיר משלוח של מעילים, סרבלים, גלימות ועץ ברזיל.","tags_he":["מכתב","יהודית-ערבית","פוסטאט","אלכסנדריה","עץ ברזיל"],"prev":"3746","next":"3748","pos":2750,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Farah b. Yosef b. Farah in Alexandria to Abu Sa'd Khalaf b. Sahl in Fustat mentioning a shipment of coats, turbans, robes, and brazilwood. On the verso in the bottom margin is an unrelated Arabic account of 9 lines with amounts of money (in dinars) due to various people. See also T-S 8.20 (PGPID 7046).",
+  "description_he": "מכתב מפרח' בן יוסף בן פרח' באלכסנדריה אל אבו סעד ח'לף בן סהל בפוסטאט, ובו אזכור של משלוח הכולל מעילים, טורבנים, גלימות ועץ ברזיל. בשולי הצד האחורי בתחתית העמוד מופיע חשבון בערבית שאינו קשור לעניין המכתב, בן 9 שורות, ובו סכומי כסף (בדינרים) המגיעים לאנשים שונים. ראו גם מסמך נוסף קשור (PGPID 7046).",
+  "destination": "Fustat",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00027-00013"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "3747",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00027-00013"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "3748",
+  "origin": "",
+  "pos": 2750,
+  "prev": "3746",
+  "princeton_url": "https://geniza.princeton.edu/documents/3747/",
+  "region": "",
+  "shelfmark": "T-S 8J27.13",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "אלכסנדריה",
+    "עץ ברזיל"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

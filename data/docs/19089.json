@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Top of a legal declaration drawn up in Fustat in the middle of Iyyar 15[..], under the authority of the Avraham Maimonides. One of the parties is Hibatallāh. Most of the document is missing and it is unclear if Avraham is listed with the title \"Nagid\" (post-1213) so the potential date range is 1205–1237 CE.",
-  "description_he": "ראש הצהרה משפטית בסמכות אברהם מיימון.",
+  "description_he": "ראש הצהרה משפטית שנערכה בפוסטאט באמצע חודש אייר בשנת 15[..], תחת סמכותו של רבי אברהם בן הרמב\"ם. אחד הצדדים הוא הבּת אללה. רוב המסמך חסר, ולא ברור אם אברהם מופיע עם התואר \"נגיד\" (תואר שקיבל לאחר 1213), כך שטווח התיארוך האפשרי הוא 1205–1237 לספירה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

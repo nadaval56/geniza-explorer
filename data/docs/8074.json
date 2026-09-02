@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter/petition from a cantor apparently addressed to Moshe Maimonides. Mainly in Judaeo-Arabic. Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. The sender asks him for assistance with the payment of the capitation tax, as he does every year for 200 other people. The petitioner seems to be a Qaraite, as he says \"do not make me turn to the Qaraites\" (ll. 26–27). (Information from CUDL and Goitein's index card.)",
-  "description_he": "מכתב/עתירה מחזן המופנה כנראה למשה מימוניד. בעיקר ביהודית-ערבית. תאריך: כ-1168-1204 לספירה. מבקש עזרה בתשלום מס הגולגולת, כפי שהוא עושה בכל שנה עבור 200 אנשים אחרים",
+  "description_he": "מכתב או עצומה מחזן, ככל הנראה ממוען לרבי משה בן מימון. רובו כתוב בערבית-יהודית. תיארוך: בקירוב 1168–1204, על פי השנים שבהן פעל הרמב\"ם במצרים. השולח מבקש את עזרתו של הנמען בתשלום מס הגולגולת (ג'זיה), כפי שהוא נוהג לעשות מדי שנה עבור 200 אנשים נוספים. נראה שהמבקש הוא קראי, שכן הוא אומר \"אל תאלץ אותי לפנות אל הקראים\" (שורות 26–27). (המידע מבוסס על CUDL ועל כרטיסייתו של גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00034-00008"
@@ -42,7 +42,7 @@
     "עצומה",
     "מס גולגולת",
     "חזן",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

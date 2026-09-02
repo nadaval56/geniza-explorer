@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Long letter in Hebrew, probably first half of the 11th century. Very damaged. Mentions the Mount of Olives and \"this woman.\" The name Shemarya b. Moshe (?) appears at the end. Addressed in Arabic script to Abu Kathir Efrayim (possibly Efrayim b. Shemaryah).",
-  "description_he": "מכתב ארוך בעברית, ככל הנראה מהמחצית הראשונה של המאה ה-11; מוזכר הר הזיתים.",
+  "description_he": "מכתב ארוך בעברית, ככל הנראה מן המחצית הראשונה של המאה ה-11. פגוע מאוד. מזכיר את הר הזיתים ואת \"האשה הזאת\". בסופו מופיע השם שמריה בן משה (?). מוען בכתב ערבי אל אבו כת'יר אפרים (אולי רבי אפרים בן שמריה).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,7 @@
   "tags_he": [
     "מכתב",
     "זית",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

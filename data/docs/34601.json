@@ -1,1 +1,42 @@
-{"id":"34601","shelfmark":"MIAC 97","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic, French","lang_he":"Arabic, French","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1954","date_original":"1954","date_standard":"1954","date_inferred":"","date_rationale":"","library":"ENL","library_raw":"ENL","collection":"ENL, ENL 'New Geniza' Catalogue","description":"Announcement from the council of teachers of the Jews of Cairo to parents on the matters of the beginning of the school year in 1954/55 – Museum of Islamic Art – (number 97) – in Arabic and French. (information from Ḥassanein Muḥammad Rabīʿa. ed. Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 29). MCD.","tags":["education"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34601/","mentioned":"","description_he":"הכרזה ממועצת המורים של יהודי קהיר להורים בענין פתיחת שנת הלימודים 1954/55 - מוזיאון האמנות האסלאמית (מספר 97). בערבית ובצרפתית.","tags_he":["מכתב","קהיר"],"prev":"34600","next":"34602","pos":30869,"total":35937}
+{
+  "collection": "ENL, ENL 'New Geniza' Catalogue",
+  "date": "1954",
+  "date_inferred": "",
+  "date_original": "1954",
+  "date_rationale": "",
+  "date_standard": "1954",
+  "description": "Announcement from the council of teachers of the Jews of Cairo to parents on the matters of the beginning of the school year in 1954/55 – Museum of Islamic Art – (number 97) – in Arabic and French. (information from Ḥassanein Muḥammad Rabīʿa. ed. Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 29). MCD.",
+  "description_he": "הודעה ממועצת המורים של יהודי קהיר להורים בעניין פתיחת שנת הלימודים 1954/55. המסמך כתוב בערבית ובצרפתית. המידע מובא על פי חסנין מחמד רביעה (עורך), דליל ות'איק אלג'ניזה אלג'דידה / קטלוג מסמכי הגניזה החדשה, עמ' 29.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34601",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, French",
+  "lang_he": "Arabic, French",
+  "lang_note": "",
+  "library": "ENL",
+  "library_raw": "ENL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34602",
+  "origin": "",
+  "pos": 30869,
+  "prev": "34600",
+  "princeton_url": "https://geniza.princeton.edu/documents/34601/",
+  "region": "",
+  "shelfmark": "MIAC 97",
+  "tags": [
+    "education"
+  ],
+  "tags_he": [
+    "מכתב",
+    "קהיר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

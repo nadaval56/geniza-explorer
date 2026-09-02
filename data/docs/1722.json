@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter to Efrayim b. Shemarya (fl. 1007–1055 CE) on behalf of the lepers of Tiberias. Dating: approximately 1050 CE (per Gil). People with skin ailments were drawn to the hot springs of Tiberias and those without means to support themselves were sent with letters appealing to the generosity of communities such as Fustat by describing their sufferings in graphic terms. (Information from CUDL)",
-  "description_he": "מכתב לאפרים בן שמריה בשם מצורעי טבריה, כ-1050. חולי עור נמשכו לבורות החמים של טבריה; חסרי אמצעים נשלחו עם מכתבים לקהילות כפוסטאט.",
+  "description_he": "מכתב אל רבי אפרים בן שמריה (פעיל בשנים 1007–1055 לספירה) שנכתב בשם מצורעי טבריה. התיארוך: סביבות שנת 1050 לספירה (לפי גיל). אנשים שלקו במחלות עור נמשכו אל המעיינות החמים של טבריה, ואלה שלא היו להם אמצעים לפרנס את עצמם נשלחו עם מכתבים שפנו לנדיבותן של קהילות כגון פוסטאט, תוך תיאור סבלם במונחים חיים וציוריים.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00016-00248/1"
@@ -42,7 +42,7 @@
     "פוסטאט",
     "טבריה",
     "פרנס",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

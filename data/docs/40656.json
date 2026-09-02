@@ -1,1 +1,41 @@
-{"id":"40656","shelfmark":"ENA 4101.13","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Fragment with several different text blocks. The upper part of recto reads like a riddle and/or utterances in the mouth of God. The bottom part of recto is in a different hand (that of Hillel b. ʿEli?). It seems like a Hebrew fakhr (boast) poem. The speaker compares himself favorably to Galen, Hippocrates, and Plato. Verso contains two more poems. \n\nAt the bottom of verso there is a jotting with documentary value: \"I borrowed from our rabbi ʿEli the w[ise] and the en[lightened] Kitāb al-Faṣīḥ [presumably the work by Thaʿlab] and a commentary on [...] by our rabbi [...].\"","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/40393cc2-4b1a-4d02-9d7a-fba09ec65bfe/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/40656/","mentioned":"","description_he":"שבר עם מספר גושי טקסט שונים; חלקו העליון של הפנים נראה כחידה ו/או אמרות בפי האל; חלקו התחתון בכתב יד אחר (של הלל בן עלי?) הוא לכאורה שיר פח'ר (שבח) עברי; הדובר משווה עצמו לגאלנוס, היפוקרטס ואפלטון; הגב מכיל עוד שני שירים ורישום תיעודי על השאלת 'כתאב אל-פציח' מרבי עלי החכים","tags_he":["שירה"],"prev":"40653","next":"40667","pos":20351,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Fragment with several different text blocks. The upper part of recto reads like a riddle and/or utterances in the mouth of God. The bottom part of recto is in a different hand (that of Hillel b. ʿEli?). It seems like a Hebrew fakhr (boast) poem. The speaker compares himself favorably to Galen, Hippocrates, and Plato. Verso contains two more poems. \n\nAt the bottom of verso there is a jotting with documentary value: \"I borrowed from our rabbi ʿEli the w[ise] and the en[lightened] Kitāb al-Faṣīḥ [presumably the work by Thaʿlab] and a commentary on [...] by our rabbi [...].\"",
+  "description_he": "קטע ובו כמה גושי טקסט שונים. החלק העליון של הרקטו נקרא כחידה ו/או כדברים המושמים בפיו של האל. החלק התחתון של הרקטו כתוב ביד אחרת (אולי ידו של הלל ב\"ר עלי?), ונראה שהוא שיר פאח'ר (שיר התפארות) בעברית. הדובר משווה את עצמו לטובה מול גלנוס, היפוקרטס ואפלטון. הוורסו מכיל שני שירים נוספים.\n\nבתחתית הוורסו מופיעה רשימה קצרה בעלת ערך תיעודי-דוקומנטרי: \"שאלתי מרבנו עלי הח[כם] והנ[בון] את כתאב אלפציח [ככל הנראה החיבור של ת'עלב] ופירוש על [...] לרבנו [...]\".",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "40656",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/40393cc2-4b1a-4d02-9d7a-fba09ec65bfe/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "40667",
+  "origin": "",
+  "pos": 20351,
+  "prev": "40653",
+  "princeton_url": "https://geniza.princeton.edu/documents/40656/",
+  "region": "",
+  "shelfmark": "ENA 4101.13",
+  "tags": [],
+  "tags_he": [
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

@@ -1,1 +1,45 @@
-{"id":"2606","shelfmark":"ENA 1822a.61","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter in Judaeo-Arabic. Fragment (bottom part). Asking for help from the addressee. Mentions R. Avraham; being in great distress (wa-l-sāʿa al-shidda ʿaẓīma); lack of clothing for the writer and their child; talking to somebody about this on one of the nights of the holiday; and he says he is \"sitting in the store\" but no syrups or sugar are coming in (mā yajīʾ fīhā raṭl sharāb wa-lā sukkar). The handwriting resembles that of Yosef b. Shemuʾel b. Saʿadya ha-Levi, though if it were actually him the letter would likely have better spelling.","tags":["Petition, private"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/fc45e03a-dc0d-463a-8ea4-b989e19942df/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/2606/","mentioned":"","description_he":"קטע תחתון של מכתב ביהודית-ערבית. בקשת עזרה. מזכיר את ר' אברהם, מצוקה גדולה, חוסר בגדים לכותב ולילדו, ואת העובדה שהוא 'יושב בחנות' אך לא מגיעים שרבטים וסוכר.","tags_he":["מכתב","יהודית-ערבית","סוכר"],"prev":"2605","next":"2607","pos":1702,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter in Judaeo-Arabic. Fragment (bottom part). Asking for help from the addressee. Mentions R. Avraham; being in great distress (wa-l-sāʿa al-shidda ʿaẓīma); lack of clothing for the writer and their child; talking to somebody about this on one of the nights of the holiday; and he says he is \"sitting in the store\" but no syrups or sugar are coming in (mā yajīʾ fīhā raṭl sharāb wa-lā sukkar). The handwriting resembles that of Yosef b. Shemuʾel b. Saʿadya ha-Levi, though if it were actually him the letter would likely have better spelling.",
+  "description_he": "מכתב בערבית-יהודית. קטע (חלקו התחתון). בקשת עזרה מהנמען. מזכיר את ר' אברהם; מתאר מצוקה גדולה (\"wa-l-sāʿa al-shidda ʿaẓīma\"); חוסר בגדים עבור הכותב וילדו; שיחה עם מישהו על כך באחד מלילות החג; ואותו אדם אומר שהוא \"יושב בחנות\" אך אין נכנסים לשם סירופים או סוכר (\"mā yajīʾ fīhā raṭl sharāb wa-lā sukkar\"). כתב היד דומה לזה של יוסף בן שמואל בן סעדיה הלוי, אם כי לו היה זה אכן הוא, סביר שהמכתב היה כתוב באיות טוב יותר.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2606",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/fc45e03a-dc0d-463a-8ea4-b989e19942df/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2607",
+  "origin": "",
+  "pos": 1702,
+  "prev": "2605",
+  "princeton_url": "https://geniza.princeton.edu/documents/2606/",
+  "region": "",
+  "shelfmark": "ENA 1822a.61",
+  "tags": [
+    "Petition, private"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "סוכר"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Beginning of a query submitted to Maimonides, beginning by telling about a local man who is now living in another city (the rest is too fragmentary to understand). Dating ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. (Information from Goitein's index cards)",
-  "description_he": "תחילת שאלה שהוגשה למיימוני, בדבר גבר מקומי הגר כעת בעיר אחרת. כ-1168-1204.",
+  "description_he": "תחילתה של שאלה שהופנתה אל הרמב\"ם, הנפתחת בסיפור על אדם בן המקום אשר מתגורר כעת בעיר אחרת (יתר הטקסט מקוטע מכדי שניתן יהיה להבינו). התיעוד מתוארך לשנים 1168–1204 לערך, בהתבסס על התקופה שבה היה הרמב\"ם פעיל במצרים. (המידע מבוסס על כרטיסיות המפתח של גויטיין)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00022-00029"
@@ -37,7 +37,7 @@
     "legal query, Responsum"
   ],
   "tags_he": [
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

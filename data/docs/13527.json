@@ -1,1 +1,44 @@
-{"id":"13527","shelfmark":"ENA NS 77.198","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter fragment. in Hebrew. Dating to the sixteenth or seventeenth century based on the paleography. Someone with the name Zerḥiya (זרחיה) is mentioned in line 4, which is commonly a surname but in this instance may be a first name based on where it appears in the honorifics. MCD.","tags":["early modern"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/4b0b90f0-0e43-4889-a763-d7521c8b19a3/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/13527/","mentioned":"","description_he":"קטע ממכתב. בעברית. תיארוך לפי הפליאוגרפיה: המאה ה-16 או ה-17. השם זרחיה מוזכר בשורה 4. MCD.","tags_he":["מכתב","עברית"],"prev":"13526","next":"13528","pos":9402,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter fragment. in Hebrew. Dating to the sixteenth or seventeenth century based on the paleography. Someone with the name Zerḥiya (זרחיה) is mentioned in line 4, which is commonly a surname but in this instance may be a first name based on where it appears in the honorifics. MCD.",
+  "description_he": "שריד של מכתב בעברית. על פי הפלאוגרפיה ניתן לתארך אותו למאה השש-עשרה או למאה השבע-עשרה. בשורה 4 מוזכר אדם בשם זרחיה (זרחיה) — שם המשמש בדרך כלל כשם משפחה, אך במקרה זה ייתכן שמדובר בשם פרטי, על סמך מיקומו ברצף תארי הכבוד.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "13527",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/4b0b90f0-0e43-4889-a763-d7521c8b19a3/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "13528",
+  "origin": "",
+  "pos": 9402,
+  "prev": "13526",
+  "princeton_url": "https://geniza.princeton.edu/documents/13527/",
+  "region": "",
+  "shelfmark": "ENA NS 77.198",
+  "tags": [
+    "early modern"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

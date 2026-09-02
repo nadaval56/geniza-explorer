@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from Avraham Maimonides to Ḥayyim b. Ḥananel. An autograph. A previous description called this \"Three drafts of a letter sent by Shelomo to Hayyim.\" Published by P. B. Fenton, ‘A Judeo-Arabic Commentary on the Hafṭārōt by Ḥanan’ēl ben Šěmū’ēl (?), Abraham Maimonides’ Father-in-Law’, Maimonidean Studies, 1 (1990), pp. 27–56",
-  "description_he": "מכתב מאברהם מיימוניד לחיים בן חנאנאל. אוטוגרף.",
+  "description_he": "מכתב מרבי אברהם בן הרמב\"ם אל חיים בן חננאל. אוטוגרף בכתב ידו של אברהם. תיאור קודם של המסמך זיהה אותו בטעות כ\"שלושה טיוטות של מכתב ששלח שלמה אל חיים\". המסמך פורסם על ידי פ\"ב פנטון במאמרו על פירוש יהודי-ערבי להפטרות מאת חננאל בן שמואל (?), חותנו של רבי אברהם בן הרמב\"ם, בכתב העת Maimonidean Studies, כרך 1 (1990), עמ' 27–56.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -37,7 +37,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

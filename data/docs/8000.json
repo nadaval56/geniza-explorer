@@ -1,1 +1,47 @@
-{"id":"8000","shelfmark":"T-S 13J16.22","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Business letter in Judaeo-Arabic. The last letter received from the addressee came with Mikhaʾel, from Dahrūṭ, along with medicinal powders and ophthalmics (sufūf wa-ashyāfāt). However, the vessels (al-zabādī wa-l-kīzān) didn't arrive. The next part is faded; mentions ‘my brother’ Abū Isḥāq and Abū Saʿīd. The sender has sent 15 pounds of flax. Greetings to many people at the end, including Sayyid al-Ahl, Khalaf and Ḥusna. Refers to flax again on verso and something involving [...] the Christian (al-ʿarel) whose name seems to be followed by the curse \"ḥaramahū Allāh\" in lieu of the blessing \"ḥarasahū Allāh.\" (Information in part from CUDL and Goitein's index card.)","tags":["to edit"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00016-00022"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00016-00022"],"princeton_url":"https://geniza.princeton.edu/documents/8000/","mentioned":"Dahrūṭ","description_he":"מכתב עסקי ביהודית-ערבית. המכתב האחרון שהתקבל הגיע עם מיכאל מדהרוט, יחד עם אבקות רפואיות ותכשירים לעיניים. השולח שלח 15 קילו פשתן. ברכות לאנשים רבים","tags_he":["מכתב","יהודית-ערבית","פשתן"],"prev":"7998","next":"8001","pos":5285,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Business letter in Judaeo-Arabic. The last letter received from the addressee came with Mikhaʾel, from Dahrūṭ, along with medicinal powders and ophthalmics (sufūf wa-ashyāfāt). However, the vessels (al-zabādī wa-l-kīzān) didn't arrive. The next part is faded; mentions ‘my brother’ Abū Isḥāq and Abū Saʿīd. The sender has sent 15 pounds of flax. Greetings to many people at the end, including Sayyid al-Ahl, Khalaf and Ḥusna. Refers to flax again on verso and something involving [...] the Christian (al-ʿarel) whose name seems to be followed by the curse \"ḥaramahū Allāh\" in lieu of the blessing \"ḥarasahū Allāh.\" (Information in part from CUDL and Goitein's index card.)",
+  "description_he": "מכתב עסקי בערבית-יהודית. המכתב האחרון שהתקבל מהנמען הגיע באמצעות מיכאל, מדהרוט, יחד עם אבקות רפואיות ומשחות לעיניים (סֻפוּף ואשיאפאת). עם זאת, הכלים (אלזבאדי ואלכיזאן) לא הגיעו. החלק הבא דהוי; מוזכרים בו 'אחי' אבו אסחאק ואבו סעיד. השולח שלח 15 ליטראות פשתן. בסיום המכתב מובאות דרישות שלום לאנשים רבים, ובהם סייד אלאהל, ח'לף וחֻסנא. בצד האחורי שב ומוזכר הפשתן, וכן דבר-מה הקשור ב[...] הנוצרי (אלערל) ששמו נראה כמלוּוה בקללה \"חרמהֻ אללה\" (\"יחרימהו אלוהים\") במקום הברכה המקובלת \"חרסהֻ אללה\" (\"ישמרהו אלוהים\"). (חלק מן המידע מבוסס על CUDL ועל כרטיסיית גויטיין.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00013-J-00016-00022"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8000",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00013-J-00016-00022"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Dahrūṭ",
+  "multifragment": "",
+  "next": "8001",
+  "origin": "",
+  "pos": 5285,
+  "prev": "7998",
+  "princeton_url": "https://geniza.princeton.edu/documents/8000/",
+  "region": "",
+  "shelfmark": "T-S 13J16.22",
+  "tags": [
+    "to edit"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פשתן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

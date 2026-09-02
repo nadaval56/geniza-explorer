@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1211",
   "description": "A covenant (כתב אמנה) of the congregation of the Palestinian synagogue in Fustat, drawn up in Adar 1522 (=1211 CE), which enumerates the venerable liturgical rites they inherited from their ancestors and which they refuse to allow anyone to change. The context is the controvery over the prayer reforms that Avraham Maimonides attempted to introduce. There is an extensive literature on this controversy, and this document sheds important light on the practices that the traditionalists wished to preserve. The handwriting is that of the cantor Yedutun ha-Levi, a fact first noted by Fleischer; see 'לסדרי התפילה בבית הכנסת של בני ארץ-ישראל בפוסטאט' in his collected articles, תפילות הקבע בישראל בהתהוותן ובהתגבשותן, vol. 1, p. 827 (p. 245 in the original article); thanks to Shulamit Elizur for this information. Two lines were added in a different hand, reiterating the main point that it is forbidden to change these traditions, signed by [Nissim] b. Seʿadya ha-Kohen. Verso contains a liturgical composition in a different hand. (Ed. Fleischer, Tefilah u-minhage tefilah Erets-Yiśreʼeliyim bi-teḳufat ha-genizah, 1988, 218–57. Trans. Friedman, Teuda, vol. 10 (1996), 251–53.) ASE.",
-  "description_he": "כתב אמנה (כתב התחייבות) של קהל בית הכנסת של הארץ-ישראלים בפוסטאט, שנערך באדר א'תקכ\"ב לשטרות (=1211 לסה\"נ), ובו פירוט מנהגי התפילה העתיקים והמכובדים שירשו מאבותיהם, ושאותם הם מסרבים לאפשר לאיש לשנות. הרקע למסמך הוא המחלוקת סביב רפורמות התפילה שאברהם בן הרמב\"ם ניסה להנהיג. קיימת ספרות ענפה על מחלוקת זו, והמסמך הזה שופך אור חשוב על המנהגים שאותם ביקשו השמרנים לשמר. כתב היד הוא של החזן ידותון הלוי, עובדה שעמד עליה לראשונה פליישר; תודה לשולמית אליצור על המידע. שתי שורות הוספו בכתב יד אחר, החוזרות על הנקודה המרכזית שלפיה אסור לשנות מסורות אלו, וחתום עליהן [נסים] בן סעדיה הכהן. בצד האחורי של המסמך מופיע חיבור ליטורגי בכתב יד שונה.",
+  "description_he": "כתב אמנה (כתב התחייבות) של קהל בית הכנסת של הארץ-ישראלים בפוסטאט, שנערך באדר א'תקכ\"ב לשטרות (=1211 לסה\"נ), ובו פירוט מנהגי התפילה העתיקים והמכובדים שירשו מאבותיהם, ושאותם הם מסרבים לאפשר לאיש לשנות. הרקע למסמך הוא המחלוקת סביב רפורמות התפילה שרבי אברהם בן הרמב\"ם ניסה להנהיג. קיימת ספרות ענפה על מחלוקת זו, והמסמך הזה שופך אור חשוב על המנהגים שאותם ביקשו השמרנים לשמר. כתב היד הוא של החזן ידותון הלוי, עובדה שעמד עליה לראשונה פליישר; תודה לשולמית אליצור על המידע. שתי שורות הוספו בכתב יד אחר, החוזרות על הנקודה המרכזית שלפיה אסור לשנות מסורות אלו, וחתום עליהן [נסים] בן סעדיה הכהן. בצד האחורי של המסמך מופיע חיבור ליטורגי בכתב יד שונה.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_11#MS_Heb_b_13-part22"
@@ -41,7 +41,8 @@
     "תפילה וליטורגיה",
     "פוסטאט",
     "חזן",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -1,1 +1,51 @@
-{"id":"1911","shelfmark":"T-S 8J14.18","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from a member of the nasi family of Mosul addressed to Shelomo b. Yishay. Dating: the events described in the letter likely took place in the 1190s CE, though it may have been written considerably later; many of the same scribe's other letters come from the 1230s CE, though there is no blessing for the dead after the name of Maimonides in this letter. The sender reminisces on a visit when he was younger to the house of Moshe Maimonides. He describes his reception by Maimonides, various other matters, includes information on the layout of Maimonides' home, and mentions a servant of Maimonides, describing him as the “keeper of the curtain\" (purdah-dār), a duty similar to that of an usher. (S. D. Goitein, Mediterranean Society, 4:381, 454; 5:65, 522.) EMS. \n\nThis letter is edited and discussed in Paul Fenton, \"A Meeting with Maimonides,\" BSOAS vol. 45 no. 1 (1982), 1–4.\n\nIn recto, l. 7, Fenton reads ר טוק, citing Goitein, and explains that \"ṭawq means 'strength', especially that of a young man. Rabbi Ṭawq is colloquial for young man. The writer stresses the master's joviality.\" However, the phrase is much more likely ד טרק, meaning \"four times.\"\n\nIn verso, l. 3, Fenton translates \"aqrāṣ laymū\" as \"lemon cakes.\" The term qurṣ (pl. aqrāṣ) should be translated \"pastille,\" and refers to a small medicated or flavored tablet. See Leigh Chipman, \"The World of Pharmacy and Pharmacists in Mamlūk Cairo,\" Brill (2010), p. 281.","tags":["Mosul Nasis, Maimonides"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00014-00018"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00014-00018/1"],"princeton_url":"https://geniza.princeton.edu/documents/1911/","mentioned":"","description_he":"מכתב מבן למשפחת הנשיאים של מוצול, הממוען לשלמה בן ישי. תיארוך: האירועים המתוארים במכתב התרחשו ככל הנראה בשנות ה-90 של המאה ה-12, אם כי ייתכן שהמכתב עצמו נכתב זמן ניכר לאחר מכן. מכתבים רבים אחרים מאותו סופר מתוארכים לשנות ה-30 של המאה ה-13, אך יש לציין שבמכתב זה אין ברכת מתים אחרי שמו של הרמב\"ם. הכותב מעלה זיכרונות מביקור שערך בצעירותו בביתו של משה בן מימון, ומתאר את אופן קבלת הפנים שלו אצל הרמב\"ם, עניינים שונים נוספים, וכן כולל פרטים על תכנית ביתו של הרמב\"ם. הוא מזכיר משרת של הרמב\"ם ומתאר אותו כ\"שומר הפרגוד\" (פֻרְדַה-דאר), תפקיד הדומה לזה של שַׁמָּשׁ או מקדם פני אורחים.\n\nהמכתב יצא לאור ונדון אצל פול פנטון, \"A Meeting with Maimonides\" (1982), עמ' 1–4.\n\nבשורה 7 בצד הפנים (recto) קורא פנטון \"ר טוק\", בעקבות גויטיין, ומסביר ש\"טַוְק\" משמעו \"כוח\", במיוחד זה של איש צעיר, ושהכינוי \"רבי טַוְק\" הוא לשון מדוברת לאיש צעיר, וכי הכותב מדגיש את עליצותו של הרב. אולם, הצירוף הוא ככל הנראה \"ד טרק\", שמשמעו \"ארבע פעמים\".\n\nבשורה 3 בצד האחור (verso) מתרגם פנטון את הצירוף \"אקראץ ליימו\" כ\"עוגיות לימון\". אך המונח קֻרְץ (ברבים: אקראץ) ראוי שיתורגם \"פסטיל\", ומציין טבלית קטנה תרופתית או מתובלת (ראו ליי צ'יפמן בנושא בית המרקחת והרוקחים בקהיר הממלוכית, 2010, עמ' 281).","tags_he":["מכתב","יהודית-ערבית","קהיר","ממלוכי","לימון","סופר","מיימוניד"],"prev":"1910","next":"1912","pos":1157,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from a member of the nasi family of Mosul addressed to Shelomo b. Yishay. Dating: the events described in the letter likely took place in the 1190s CE, though it may have been written considerably later; many of the same scribe's other letters come from the 1230s CE, though there is no blessing for the dead after the name of Maimonides in this letter. The sender reminisces on a visit when he was younger to the house of Moshe Maimonides. He describes his reception by Maimonides, various other matters, includes information on the layout of Maimonides' home, and mentions a servant of Maimonides, describing him as the “keeper of the curtain\" (purdah-dār), a duty similar to that of an usher. (S. D. Goitein, Mediterranean Society, 4:381, 454; 5:65, 522.) EMS. \n\nThis letter is edited and discussed in Paul Fenton, \"A Meeting with Maimonides,\" BSOAS vol. 45 no. 1 (1982), 1–4.\n\nIn recto, l. 7, Fenton reads ר טוק, citing Goitein, and explains that \"ṭawq means 'strength', especially that of a young man. Rabbi Ṭawq is colloquial for young man. The writer stresses the master's joviality.\" However, the phrase is much more likely ד טרק, meaning \"four times.\"\n\nIn verso, l. 3, Fenton translates \"aqrāṣ laymū\" as \"lemon cakes.\" The term qurṣ (pl. aqrāṣ) should be translated \"pastille,\" and refers to a small medicated or flavored tablet. See Leigh Chipman, \"The World of Pharmacy and Pharmacists in Mamlūk Cairo,\" Brill (2010), p. 281.",
+  "description_he": "מכתב מבן למשפחת הנשיאים של מוצול, הממוען לשלמה בן ישי. תיארוך: האירועים המתוארים במכתב התרחשו ככל הנראה בשנות ה-90 של המאה ה-12, אם כי ייתכן שהמכתב עצמו נכתב זמן ניכר לאחר מכן. מכתבים רבים אחרים מאותו סופר מתוארכים לשנות ה-30 של המאה ה-13, אך יש לציין שבמכתב זה אין ברכת מתים אחרי שמו של הרמב\"ם. הכותב מעלה זיכרונות מביקור שערך בצעירותו בביתו של רבי משה בן מימון, ומתאר את אופן קבלת הפנים שלו אצל הרמב\"ם, עניינים שונים נוספים, וכן כולל פרטים על תכנית ביתו של הרמב\"ם. הוא מזכיר משרת של הרמב\"ם ומתאר אותו כ\"שומר הפרגוד\" (פֻרְדַה-דאר), תפקיד הדומה לזה של שַׁמָּשׁ או מקדם פני אורחים.\n\nהמכתב יצא לאור ונדון אצל פול פנטון, \"A Meeting with Maimonides\" (1982), עמ' 1–4.\n\nבשורה 7 בצד הפנים (recto) קורא פנטון \"ר טוק\", בעקבות גויטיין, ומסביר ש\"טַוְק\" משמעו \"כוח\", במיוחד זה של איש צעיר, ושהכינוי \"רבי טַוְק\" הוא לשון מדוברת לאיש צעיר, וכי הכותב מדגיש את עליצותו של הרב. אולם, הצירוף הוא ככל הנראה \"ד טרק\", שמשמעו \"ארבע פעמים\".\n\nבשורה 3 בצד האחור (verso) מתרגם פנטון את הצירוף \"אקראץ ליימו\" כ\"עוגיות לימון\". אך המונח קֻרְץ (ברבים: אקראץ) ראוי שיתורגם \"פסטיל\", ומציין טבלית קטנה תרופתית או מתובלת (ראו ליי צ'יפמן בנושא בית המרקחת והרוקחים בקהיר הממלוכית, 2010, עמ' 281).",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00014-00018/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1911",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00014-00018"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1912",
+  "origin": "",
+  "pos": 1157,
+  "prev": "1910",
+  "princeton_url": "https://geniza.princeton.edu/documents/1911/",
+  "region": "",
+  "shelfmark": "T-S 8J14.18",
+  "tags": [
+    "Mosul Nasis, Maimonides"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "קהיר",
+    "ממלוכי",
+    "לימון",
+    "סופר",
+    "רמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

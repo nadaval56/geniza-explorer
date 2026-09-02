@@ -1,1 +1,48 @@
-{"id":"5728","shelfmark":"Halper 332","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"Arabic","lang2_he":"ערבית","lang_note":"","origin":"","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"CAJS","library_raw":"CAJS","collection":"CAJS","description":"Partially preserved 11th century copy of second of three letters written by Saadya in the course of the 921-922 calendar controversy between Palestinians and Babylonians. There is an address in Arabic script. The letters are addressed to Saadya’s disciples Shelomo, Ezra and ʿEli in Fustat and recount the events of the Palestinian calendar declaration by Ben Meir and the Babylonian’s reaction to it. Saadya urges his addressees to uphold the dates of the Babylonians, and ensure that Jews do not eat leaven on Passover and desecrate the Day of Atonement. (Information from Rustow, Stern, The Jewish Calendar Controversy of 921-22, in Stern, S and Burnett, C, (eds.) Time, Astronomy, and Calendars in the Jewish Tradition. (pp. 79-95). Brill: Leiden, 2013. See also Gil, Kingdom, Vol. 2, p. 17 and Goitein notes linked below, and the Penn Catalog.)","tags":["calendar controversy"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://colenda.library.upenn.edu/items/ark:/81431/p3ms3kk66/manifest"],"fragment_urls":["https://colenda.library.upenn.edu/catalog/81431-p3ms3kk66"],"princeton_url":"https://geniza.princeton.edu/documents/5728/","mentioned":"Aleppo","description_he":"העתק חלקי מן המאה ה-11 של האיגרת השנייה מתוך שלוש איגרות שכתב רב סעדיה גאון במהלך מחלוקת הלוח שהתחוללה בשנים 921–922 בין בני ארץ ישראל ובני בבל. בראש המסמך מופיעה כתובת בכתב ערבי. האיגרות ממוענות לתלמידיו של סעדיה — שלמה, עזרא ועלי שבפוסטאט — ובהן הוא מתאר את השתלשלות האירועים סביב הכרזת הלוח של בן מאיר מטעם בני ארץ ישראל ואת תגובת בני בבל לכך. סעדיה קורא לנמענים לדבוק בתאריכים שקבעו בני בבל, ולהקפיד שלא יבואו יהודים לאכול חמץ בפסח ולחלל את יום הכיפורים. (המידע מבוסס בין היתר על מחקרם של רוסטוב ושטרן על מחלוקת הלוח של 921–922, וכן על דברי גיל בספרו על מלכות ישמעאל ועל הערותיו של גויטיין.)","tags_he":["מכתב","ישיבה וגאונות","פוסטאט","סעדיה גאון"],"prev":"5727","next":"5729","pos":3778,"total":35937}
+{
+  "collection": "CAJS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Partially preserved 11th century copy of second of three letters written by Saadya in the course of the 921-922 calendar controversy between Palestinians and Babylonians. There is an address in Arabic script. The letters are addressed to Saadya’s disciples Shelomo, Ezra and ʿEli in Fustat and recount the events of the Palestinian calendar declaration by Ben Meir and the Babylonian’s reaction to it. Saadya urges his addressees to uphold the dates of the Babylonians, and ensure that Jews do not eat leaven on Passover and desecrate the Day of Atonement. (Information from Rustow, Stern, The Jewish Calendar Controversy of 921-22, in Stern, S and Burnett, C, (eds.) Time, Astronomy, and Calendars in the Jewish Tradition. (pp. 79-95). Brill: Leiden, 2013. See also Gil, Kingdom, Vol. 2, p. 17 and Goitein notes linked below, and the Penn Catalog.)",
+  "description_he": "העתק חלקי מן המאה ה-11 של האיגרת השנייה מתוך שלוש איגרות שכתב רב סעדיה גאון במהלך מחלוקת הלוח שהתחוללה בשנים 921–922 בין בני ארץ ישראל ובני בבל. בראש המסמך מופיעה כתובת בכתב ערבי. האיגרות ממוענות לתלמידיו של סעדיה — שלמה, עזרא ועלי שבפוסטאט — ובהן הוא מתאר את השתלשלות האירועים סביב הכרזת הלוח של בן מאיר מטעם בני ארץ ישראל ואת תגובת בני בבל לכך. סעדיה קורא לנמענים לדבוק בתאריכים שקבעו בני בבל, ולהקפיד שלא יבואו יהודים לאכול חמץ בפסח ולחלל את יום הכיפורים. (המידע מבוסס בין היתר על מחקרם של רוסטוב ושטרן על מחלוקת הלוח של 921–922, וכן על דברי גיל בספרו על מלכות ישמעאל ועל הערותיו של גויטיין.)",
+  "destination": "Fustat",
+  "fragment_urls": [
+    "https://colenda.library.upenn.edu/catalog/81431-p3ms3kk66"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "5728",
+  "iiif_urls": [
+    "https://colenda.library.upenn.edu/items/ark:/81431/p3ms3kk66/manifest"
+  ],
+  "lang2_en": "Arabic",
+  "lang2_he": "ערבית",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "CAJS",
+  "library_raw": "CAJS",
+  "mentioned": "Aleppo",
+  "multifragment": "",
+  "next": "5729",
+  "origin": "",
+  "pos": 3778,
+  "prev": "5727",
+  "princeton_url": "https://geniza.princeton.edu/documents/5728/",
+  "region": "",
+  "shelfmark": "Halper 332",
+  "tags": [
+    "calendar controversy"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ישיבה וגאונות",
+    "פוסטאט",
+    "רב סעדיה גאון"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

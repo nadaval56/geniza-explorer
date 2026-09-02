@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter of recommendation for a needy widow with two children from Damascus who, on recommendation of a letter from the muqaddam of Ascalon, had received what the community of Bilbays was able to come up with. Now she and her two orphans are recommended to Yiṣḥaq b. Sasson, the Cairene member of Maimonides' court, for more help. (Information from Mediterranean Society, III, p. 503)",
-  "description_he": "מכתב המלצה לאלמנה נזקקת עם שני ילדים מדמשק, שקיבלה מה שקהילת בילבייס יכלה לתת. כעת היא מוצגת ליצחק ב' סאסון, חבר בית הדין של מיימוניד בקהיר, לסיוע נוסף.",
+  "description_he": "מכתב המלצה לאלמנה נזקקת מדמשק, אם לשני ילדים. בעקבות מכתב המלצה ממוקדם אשקלון, היא קיבלה את הסיוע שהקהילה בבלביס הצליחה לגייס למענה. כעת ממליצים עליה ועל שני יתומיה לפני יצחק בן ססון, חבר בית הדין של הרמב\"ם בקהיר, בבקשה לסיוע נוסף.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00147-00022"
@@ -40,7 +40,7 @@
     "מכתב",
     "קהיר",
     "דמשק",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

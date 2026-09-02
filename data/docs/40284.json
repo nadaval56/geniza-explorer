@@ -1,1 +1,45 @@
-{"id":"40284","shelfmark":"ENA 2878.4","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Verso: Accounts in Arabic script. Probably fiscal, concerning amounts of produce (e.g., بان عنده ستين اربد غلة four lines from the bottom). Dating: likely Fatimid, 11th or 12th century. There are distinct sections headed by individuals' names: [...] b. Mūsā al-[...]; Rāfiʿ b. al-[...]; ʿAbd al-Khāliq b. ʿAbdallāh. The next line in each case begins with the same trigger word (الصرة?) followed by another person's name. The first full entry mentions al-amīr al-ajall al-muʿaẓẓam; the next Saʿīd min ṣibyān al-[...] al-ajall al-muʿaẓẓam; and the next \"ghilmān Sharaf al-Umarāʾ [...]. Needs further examination.\n\nReused on recto for qinnot in vocalized Hebrew.","tags":["cmp"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/8352afe5-bbd2-4f48-8fc8-8eead98e0a23/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/40284/","mentioned":"","description_he":"גב: חשבונות פיסקליים בכתב ערבי על כמויות תוצרת, כנראה פאטמי מהמאה ה-11 או 12, עם סעיפים לפי שמות אנשים; פנים שומש לקינות עבריות מנוקדות","tags_he":["מסמך מדינה","ערבית","פאטמי"],"prev":"40283","next":"40285","pos":20142,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: Accounts in Arabic script. Probably fiscal, concerning amounts of produce (e.g., بان عنده ستين اربد غلة four lines from the bottom). Dating: likely Fatimid, 11th or 12th century. There are distinct sections headed by individuals' names: [...] b. Mūsā al-[...]; Rāfiʿ b. al-[...]; ʿAbd al-Khāliq b. ʿAbdallāh. The next line in each case begins with the same trigger word (الصرة?) followed by another person's name. The first full entry mentions al-amīr al-ajall al-muʿaẓẓam; the next Saʿīd min ṣibyān al-[...] al-ajall al-muʿaẓẓam; and the next \"ghilmān Sharaf al-Umarāʾ [...]. Needs further examination.\n\nReused on recto for qinnot in vocalized Hebrew.",
+  "description_he": "בצד ה-verso: רישומי חשבונות בכתב ערבי. ככל הנראה חשבונות פיסקליים העוסקים בכמויות של תוצרת חקלאית (למשל בארבע שורות מתחתית הדף: بان عنده ستين اربد غلة — כלומר שאצלו שישים אִרְדַבּ של תבואה). תיארוך: ככל הנראה התקופה הפאטמית, המאה ה-11 או ה-12. ניתן להבחין במסמך במקטעים נפרדים, שכל אחד מהם נפתח בשמו של אדם: [...] בן מוסא אל-[...]; ראפע בן אל-[...]; עבד אל-ח'אלק בן עבדאללה. השורה הבאה בכל אחד מהמקטעים פותחת באותה מילת-מפתח (אלצֻרּה?) ולאחריה שם של אדם נוסף. הרישום המלא הראשון מזכיר את אל-אמיר אל-אג'לّ אל-מֻעַט'ّם; הבא מזכיר את סעיד מן צביאן אל-[...] אל-אג'לّ אל-מֻעט'ם; והבא אחריו את ע'למאן שרף אל-אֻמראא' [...]. נדרשת בחינה נוספת של המסמך.\n\nבצד ה-recto: שימוש משני — קינות בעברית מנוקדת.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "40284",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/8352afe5-bbd2-4f48-8fc8-8eead98e0a23/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "40285",
+  "origin": "",
+  "pos": 20142,
+  "prev": "40283",
+  "princeton_url": "https://geniza.princeton.edu/documents/40284/",
+  "region": "",
+  "shelfmark": "ENA 2878.4",
+  "tags": [
+    "cmp"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "פאטמי"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

@@ -1,1 +1,43 @@
-{"id":"22526","shelfmark":"T-S AS 176.166","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Fustat","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from a woman to her brother Ḥusayn, the ghulām of Rashīd al-Dawla. In Arabic script. The sender may be complaining about the character of a woman (al-qubḥ alladhī kāna khulquhā), but this is unclear, or khalfahā. She mentions something happening to an ass (al-ḥimāra), perhaps it perished, and hence she no longer has an animal (mā lī bahīma). Mentions a period of time and rent. On verso there are also jottings in Judaeo-Arabic. Needs further examination.","tags":["letter, women's"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/22526/","mentioned":"","description_he":"מכתב מאישה אל אחיה חוסיין, עבד רשיד אל-דולה. בכתב ערבי. השולחת אולי מתלוננת על אופי אישה. מזכירה חמורה שכנראה מתה ('אין לי עוד בהמה'). מזכירה תקופת זמן ושכר דירה. בצד האחורי גם הערות ביהודית-ערבית.","tags_he":["מכתב","ערבית","שכירות"],"prev":"22525","next":"22527","pos":24290,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from a woman to her brother Ḥusayn, the ghulām of Rashīd al-Dawla. In Arabic script. The sender may be complaining about the character of a woman (al-qubḥ alladhī kāna khulquhā), but this is unclear, or khalfahā. She mentions something happening to an ass (al-ḥimāra), perhaps it perished, and hence she no longer has an animal (mā lī bahīma). Mentions a period of time and rent. On verso there are also jottings in Judaeo-Arabic. Needs further examination.",
+  "description_he": "מכתב מאישה אל אחיה חֻסיין, הע'ולאם (משרת/נער) של רשיד אלדולה. כתוב בכתב ערבי. ייתכן שהשולחת מתלוננת על אופייה של אישה כלשהי (al-qubḥ alladhī kāna khulquhā — \"הכיעור שהיה באופייה\"), אך הדבר אינו ברור, ואפשר גם שיש לקרוא khalfahā (\"אחריה\"). היא מזכירה משהו שאירע לאתון (al-ḥimāra), אולי שמתה, ומשום כך אין לה עוד בהמה (mā lī bahīma — \"אין לי בהמה\"). מוזכרים גם פרק זמן מסוים ושכר דירה. בצד האחורי של המסמך מופיעים גם רישומים מקריים בערבית-יהודית. דרוש עיון נוסף.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "22526",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "22527",
+  "origin": "Fustat",
+  "pos": 24290,
+  "prev": "22525",
+  "princeton_url": "https://geniza.princeton.edu/documents/22526/",
+  "region": "",
+  "shelfmark": "T-S AS 176.166",
+  "tags": [
+    "letter, women's"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "שכירות"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

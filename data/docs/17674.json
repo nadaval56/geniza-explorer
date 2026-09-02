@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter fragment (two pieces comprising the lower left corner). The sender mentions that he was sick with a fever and cold and nobody (or nobody [except ...]) visited/asked after him (mā iftaqadanī [...]). Mentions 'my master al-Ḥemdat' and 'my master, the rayyis, our rabbi Avraham (Maimonides?).' Join: Alan Elbaum.",
-  "description_he": "קטע מכתב (שני חלקים המהווים פינה שמאלית תחתונה). השולח מציין שחלה בחום וצינון ואיש לא ביקרו/שאל לשלומו. מוזכרים 'אדוני אל-חמדאת' ו'אדוני הראיס, רבנו אברהם (מיימונידס?)'. חיבור: אלן אלבאום.",
+  "description_he": "קטע מכתב (שני חלקים המהווים פינה שמאלית תחתונה). השולח מציין שחלה בחום וצינון ואיש לא ביקרו/שאל לשלומו. מוזכרים 'אדוני אל-חמדאת' ו'אדוני הראיס, רבנו אברהם (הרמב\"ם?)'. חיבור: אלן אלבאום.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00151-00205"
@@ -37,7 +37,8 @@
     "Illness, illness letter 969-1517"
   ],
   "tags_he": [
-    "מכתב"
+    "מכתב",
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

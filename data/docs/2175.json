@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1209/1218",
   "description": "Record of testimony. Fragment (upper left corner). Location: Fustat. Dated: End of Sivan 152[.] Seleucid, which is 1209–18 CE, under the reshut of Avraham Maimonides. Involves [...] b. Abū l-Yumn (ZL) and [...] al-Ṣabbāgh b. Abū l-Surūr. (S. D. Goitein, Mediterannean Society, 3:327, 500.) EMS. Same scribe: T-S 8J6.1, T-S 8J6.2, T-S 8J11.6, and probably T-S 16.341.",
-  "description_he": "שבר עדות בית דין (פינה שמאלית עליונה), פוסטאט, סוף סיון 152[.] לשטרות = 1209–18, בסמכות אברהם מיימוניד: [...] בן אבו אל-יומן ו[...] אל-צבאג' בן אבו אל-סרור.",
+  "description_he": "רישום עדות. שריד מסמך (פינה שמאלית עליונה). נכתב בפוסטאט בסוף סיון שנת 152[.] לשטרות, התואם לטווח השנים 1209–1218 לספירה, ברשותו של רבי אברהם בן הרמב\"ם. במסמך מופיעים [...] בן אבו אל-יֻמן (ז\"ל) ו-[...] אל-צבאע' בן אבו אל-סרור. אותו סופר חתום גם על מספר מסמכים נוספים. אזכור אצל גויטיין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00006-00001"
@@ -41,7 +41,8 @@
     "יהודית-ערבית",
     "פוסטאט",
     "סופר",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

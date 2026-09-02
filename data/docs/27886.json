@@ -1,1 +1,43 @@
-{"id":"27886","shelfmark":"Yevr.-Arab. I 4575","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Aramaic, Hebrew","lang_he":"Aramaic, Hebrew","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"The main documentary item under this shelfmark is a copy of a letter from Rav Hayya Gaon to Avraham b. ʿAṭā' the Nagid of Qayrawān. Needs examination.","tags":["Avraham b. Ata, Hayya Gaon, Qayrawan"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27886/","mentioned":"","description_he":"הפריט התיעודי הראשי הוא עותק מכתב מרב האיי גאון לאברהם ב' עטא' נגיד קירואן. דרוש בדיקה.","tags_he":["מכתב","ישיבה וגאונות","קירואן"],"prev":"27885","next":"27887","pos":28191,"total":35937}
+{
+  "collection": "NLR",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "The main documentary item under this shelfmark is a copy of a letter from Rav Hayya Gaon to Avraham b. ʿAṭā' the Nagid of Qayrawān. Needs examination.",
+  "description_he": "הפריט התיעודי הראשי הוא עותק מכתב מרב האי גאון לאברהם ב' עטא' נגיד קירואן. דרוש בדיקה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27886",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Hebrew",
+  "lang_he": "Aramaic, Hebrew",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27887",
+  "origin": "",
+  "pos": 28191,
+  "prev": "27885",
+  "princeton_url": "https://geniza.princeton.edu/documents/27886/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. I 4575",
+  "tags": [
+    "Avraham b. Ata, Hayya Gaon, Qayrawan"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ישיבה וגאונות",
+    "קירואן"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

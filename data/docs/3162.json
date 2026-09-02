@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from a Sicilian who had come to Egypt in order to study with Moses Maimonides and with Yiṣḥaq b. Sason. Despite his long sojourn in the place where his children were born and died, he could not bear the hot climate. He expresses his wish to return to his hometown, Messina, where his learned father lived. (Information from Mediterranean Society, V, p. 101) Full English translation by J. Kraemer in MHR 4 (1989).",
-  "description_he": "מכתב מסיציליאני שבא למצרים ללמוד אצל משה מיימון ויצחק ב' ססון. למרות שהותו הארוכה ולידת ומות ילדיו שם, לא יכול לסבול את האקלים החם ומבטא רצונו לחזור למסינה אל אביו המלומד.",
+  "description_he": "מכתב מאת יהודי יליד סיציליה שהגיע למצרים על מנת ללמוד תורה אצל הרמב\"ם ואצל יצחק בן ססון. למרות שהותו הממושכת במקום, שבו נולדו ילדיו ובו גם מתו, לא הצליח לעמוד באקלים החם של מצרים. הוא מביע במכתב את משאלתו לשוב לעיר מולדתו מסינה שבסיציליה, שבה מתגורר אביו המלומד. המידע מבוסס על דברי גויטיין. תרגום אנגלי מלא של המכתב פורסם על ידי י' קרמר במאמרו משנת 1989.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00428"
@@ -40,7 +40,7 @@
     "מכתב",
     "יהודית-ערבית",
     "סיציליה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

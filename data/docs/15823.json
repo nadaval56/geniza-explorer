@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "A torn and damaged page. On recto probably end of a responsum citing Pesahim 49a, followed by the number 11 which is probably the next rsponsum. This is a query regarding validity of a contract ('her contract') with a doubtful testimony and qinyan. The responsum continues on verso mentions an oath not to testify in writing nor vocaly, and a testimpny given before the oath was taken. The ruling given: the testimony can only be validated by an act of qinyan. The end is missing. Copied by Meir b. Hillel b. Zadoq from Alexandria (Date: 1160-1175). Meir was in contact woth Maimonides, so tis queries might sent to him, but there is no direct evidence for that. AA",
-  "description_he": "עמוד קרוע ופגום. בצד הקדמי כנראה סוף תשובה המצטטת פסחים מט ע'א, ואחריה המספר 11 שהוא כנראה התשובה הבאה. שאלה בנוגע לתוקף חוזה עם עדות ספקנית וקניין. הכרעה: העדות ניתנת לאישור רק על ידי מעשה קניין. הועתק על ידי מאיר בן הלל בן צדוק מאלכסנדריה (תאריך: 1160-1175).",
+  "description_he": "דף קרוע ופגום. בצד הפנים ככל הנראה סופו של רספונסום המצטט פסחים מ\"ט ע\"א, ולאחריו מופיע המספר 11 שהוא כנראה הרספונסום הבא. מדובר בשאלה הנוגעת לתקפותו של חוזה ('כתובתה') שבו יש עדות וקניין מוטלים בספק. הרספונסום נמשך בצד האחור ומזכיר שבועה שלא להעיד בכתב ולא בעל פה, ועדות שניתנה לפני שהושבעה השבועה. הפסיקה שניתנה: ניתן לאשר את העדות רק באמצעות מעשה קניין. הסוף חסר. הועתק על ידי מאיר בן הלל בן צדוק מאלכסנדריה (התאריך: 1160–1175). מאיר היה בקשר עם הרמב\"ם, ולכן ייתכן שהשאלות הללו נשלחו אליו, אך אין לכך עדות ישירה.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,7 @@
   "tags": [],
   "tags_he": [
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

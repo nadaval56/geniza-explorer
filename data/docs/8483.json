@@ -1,1 +1,45 @@
-{"id":"8483","shelfmark":"T-S K5.82","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Parchment fragment with pen trials and drawings. Recto: monumental Hebrew characters with full masoretic vocalization and decorative flourishes; a sun or other concentric shape with rays; and a pair of small houses, which Goitein (see index card) interprets as a Nile boat. Verso: basmala in Arabic script, Hebrew aleph-bet in order; ink blots that have been spread out with a pen. (MR, with thanks to RSK for rediscovering the fragment)","tags":["drawing, nile boat, house"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00005-00082"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-K-00005-00082"],"princeton_url":"https://geniza.princeton.edu/documents/8483/","mentioned":"","description_he":"שבר קלף עם ניסיונות עט וציורים: אותיות עבריות מונומנטליות עם ניקוד מסורתי; ציור שמש; ובסמלה בכתב ערבי","tags_he":["עברית"],"prev":"8482","next":"8484","pos":5623,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Parchment fragment with pen trials and drawings. Recto: monumental Hebrew characters with full masoretic vocalization and decorative flourishes; a sun or other concentric shape with rays; and a pair of small houses, which Goitein (see index card) interprets as a Nile boat. Verso: basmala in Arabic script, Hebrew aleph-bet in order; ink blots that have been spread out with a pen. (MR, with thanks to RSK for rediscovering the fragment)",
+  "description_he": "קטע קלף ובו ניסויי קולמוס וציורים. בצד הרקטו: אותיות עבריות מונומנטליות עם ניקוד מסורתי מלא וקישוטים דקורטיביים; צורה עגולה קונצנטרית הדומה לשמש או לאובייקט אחר עם קרניים היוצאות ממנה; וזוג בתים קטנים, שגויטיין (לפי כרטיסיית האינדקס שלו) מפרש כסירה על הנילוס. בצד הוורסו: בסמלה בכתב ערבי, אותיות האל\"ף-בי\"ת העברי לפי סדרן; וכתמי דיו שנמרחו ופוזרו באמצעות הקולמוס.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00005-00082"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8483",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-K-00005-00082"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8484",
+  "origin": "",
+  "pos": 5623,
+  "prev": "8482",
+  "princeton_url": "https://geniza.princeton.edu/documents/8483/",
+  "region": "",
+  "shelfmark": "T-S K5.82",
+  "tags": [
+    "drawing, nile boat, house"
+  ],
+  "tags_he": [
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

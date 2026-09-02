@@ -1,1 +1,43 @@
-{"id":"8544","shelfmark":"T-S K25.240.3","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Tax receipt of some sort, for the poor Jews of Fustat. Very similar to T-S K25.240.6v. T-S K25.240 ff.3–6 comprise one cluster (ḥikr receipts?) and T-S K25.240 ff.1, 2, 7, 9, and 10 comprise another cluster (jāliya receipts?). See also T-S AS 177.154. All need examination.","tags":["hikr"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8544/","mentioned":"","description_he":"קבלת מס מסוג כלשהו עבור יהודים עניים של פוסטאט; דומה מאוד ל-T-S K25.240.6v","tags_he":["מסמך מדינה","ערבית","פוסטאט"],"prev":"8543","next":"8545","pos":21417,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Tax receipt of some sort, for the poor Jews of Fustat. Very similar to T-S K25.240.6v. T-S K25.240 ff.3–6 comprise one cluster (ḥikr receipts?) and T-S K25.240 ff.1, 2, 7, 9, and 10 comprise another cluster (jāliya receipts?). See also T-S AS 177.154. All need examination.",
+  "description_he": "קבלת מס מסוג כלשהו, עבור יהודי פוסטאט העניים. דומה מאוד ל-T-S K25.240.6v. לפי ההערה, T-S K25.240 ff.3–6 מהווים אשכול אחד (אולי קבלות חִכּר), ואילו T-S K25.240 ff.1, 2, 7, 9 ו-10 מהווים אשכול אחר (אולי קבלות ג'אליה — מס הגולגולת). ראו גם T-S AS 177.154. כל המסמכים הללו טעונים בדיקה נוספת.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8544",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8545",
+  "origin": "",
+  "pos": 21417,
+  "prev": "8543",
+  "princeton_url": "https://geniza.princeton.edu/documents/8544/",
+  "region": "",
+  "shelfmark": "T-S K25.240.3",
+  "tags": [
+    "hikr"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter/petition in Judaeo-Arabic. Dating: Likely early 13th century. Dealing with communal politics and controversies at length, but in vague terms. It likely has to do with Avraham Maimonides' decision regarding the appointment of 3 judges in Alexandria (see Mordechai Akiva Friedman, \"The Nagid, the Nasi and the French Rabbis: A Threat to Abraham Maimonides' Leadership\" Zion 82 (2017) 193–266). This letter is addressed to someone titled Sayyidnā or at least someone close to him; mentions R. Yiṣḥaq throughout (possibly Yiṣḥaq b. Ḥalfon); also mentions (at the bottom of verso) a judge named Ḥananel ha-Ḥasid, likely the well-known Ḥananel b. Shemuel. The last line of the fragment also mentions an evil man possibly named Abū l-ʿAlāʾ Munīr. Needs further examination. (Identifications provided by Amir Ashur and Mordechai Akiva Friedman.)",
-  "description_he": "מכתב/עצומה בערבית-יהודית, כנראה מתחילת המאה ה-13. עוסק בפוליטיקה קהילתית ובמחלוקות בפרוטרוט, אך בניסוח עמום. כנראה קשור להחלטת אברהם מיימוני על מינוי שלושה שופטים באלכסנדריה. מזכיר ר' יצחק, השופט חנאנאל החסיד (כנראה חנאנאל בן שמואל), ואיש רע בשם אבו אל-עלאא מוניר.",
+  "description_he": "מכתב או עצומה בערבית-יהודית, ככל הנראה מראשית המאה ה-13. המסמך עוסק בהרחבה בענייני פוליטיקה ומחלוקות קהילתיות, אך במונחים מעורפלים. סביר להניח שהוא קשור להחלטתו של רבי אברהם בן הרמב\"ם בדבר מינוי שלושה דיינים באלכסנדריה (ראו מאמרו של מרדכי עקיבא פרידמן, \"הנגיד, הנשיא ורבני צרפת: איום על הנהגתו של אברהם מימוני\", ציון פ\"ב [2017], עמ' 193–266). המכתב ממוען לאדם הנושא בתואר \"סיידנא\" או למישהו מקורבו, ומזכיר לאורכו את ר' יצחק (אולי יצחק בן חלפון). בתחתית צד ה-verso מוזכר דיין בשם חננאל החסיד, ככל הנראה חננאל בן שמואל הידוע. בשורה האחרונה של הקטע מוזכר אדם מרושע ששמו אולי אבו אל-עלאא מניר. המסמך טעון בדיקה נוספת. (הזיהויים על פי אמיר אשור ומרדכי עקיבא פרידמן.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,8 @@
     "עצומה",
     "אלכסנדריה",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

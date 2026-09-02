@@ -1,1 +1,45 @@
-{"id":"9991","shelfmark":"ENA NS 50.5","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Report or petition fragment, addressed to a higher state official regarding the matters in southern Upper Egypt, contains the taqbīl clause towards the end. The writer thanks the addressee for his benefactions and reports on a specific group of people who were consumed by greed and hence lost their decency. Mentions bāb al-Ṭāhir al-Nabawī, probably the Caliph himself, and reports that no traveler passed through the gates of southern Upper Egypt. The Hebrew in the lower right margin is a continuation of the text on verso, which is one of the prayers for Yom Kippur (the Vidui specifically).","tags":["DIMME, taqbil"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/7eb62669-b9d4-41c1-80a1-eb4520b2e7c0/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/9991/","mentioned":"","description_he":"שבר דו'ח או עצומה המופנה לפקיד מדינה בכיר בענייני מצרים העליונה הדרומית; כולל את תקנת התקביל; מזכיר באב אל-טאהר אל-נבוי (הח'ליף?); שוליים ימניים בעברית: המשך תפילת ווידוי ליום כיפור","tags_he":["מסמך מדינה","ערבית","עצומה"],"prev":"9990","next":"9992","pos":6275,"total":35937}
+{
+  "collection": "JTS",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Report or petition fragment, addressed to a higher state official regarding the matters in southern Upper Egypt, contains the taqbīl clause towards the end. The writer thanks the addressee for his benefactions and reports on a specific group of people who were consumed by greed and hence lost their decency. Mentions bāb al-Ṭāhir al-Nabawī, probably the Caliph himself, and reports that no traveler passed through the gates of southern Upper Egypt. The Hebrew in the lower right margin is a continuation of the text on verso, which is one of the prayers for Yom Kippur (the Vidui specifically).",
+  "description_he": "שבר של דוח או עצומה הממוען לפקיד מדינה בכיר ועוסק בענייני דרום מצרים העילית. בסוף המסמך מופיעה נוסחת התַּקְבִּיל (נשיקת ידיו של הנמען). הכותב מודה לנמען על חסדיו ומדווח על קבוצת אנשים מסוימת שתאוות הבצע אכלה אותם ולכן איבדו את הגינותם. נזכר \"באב אלטאהר אלנבוי\" — ככל הנראה הכוונה לח'ליפה עצמו — והכותב מדווח כי איש מן הנוסעים לא עבר דרך שערי דרום מצרים העילית. הכתב העברי בשוליים הימניים התחתונים הוא המשך הטקסט שעל גב הדף, שהוא אחת התפילות ליום הכיפורים, ובמיוחד הווידוי.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "9991",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/7eb62669-b9d4-41c1-80a1-eb4520b2e7c0/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "9992",
+  "origin": "",
+  "pos": 6275,
+  "prev": "9990",
+  "princeton_url": "https://geniza.princeton.edu/documents/9991/",
+  "region": "",
+  "shelfmark": "ENA NS 50.5",
+  "tags": [
+    "DIMME, taqbil"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "עצומה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

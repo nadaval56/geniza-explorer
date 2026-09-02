@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1150-10-03",
   "description": "Letter from Shelomo, a ritual slaughterer in al-Maḥalla, to the judge Zakkay (probably the father of Shelomo b. Zakkay who was active in the period of Maimonides). The sender feared losing his job for having only memorized a handbook on his profession, instead of studying the sources, when a new judge, Menaḥem, arrived in al-Maḥalla. Verso is covered with various jottings, including the possible date of arrival of the letter: 12 Ḥeshvan 1462 Seleucid, which is 3 October 1150 CE. (Information from Goitein’s index card and Friedman's article on Zuta, pp. 484–85.) Probably related: ENA NS I.81 (PGPID 11334), Moss. VII,210 (PGPID 27096), and/or Bodl. MS heb. c 28/28 (PGPID 6427).",
-  "description_he": "מכתב משלמה שוחט באל-מחלה לשופט זכאי; הכותב חושש לאבד עבודתו כי שינן רק מדריך בעל פה במקצועו ולא למד את המקורות עצמם; ורסו עם תאריך אפשרי: 12 חשוון 1462 לספירת השטרות",
+  "description_he": "מכתב משלמה, שוחט במחלה, אל הדיין זכאי (ככל הנראה אביו של שלמה בן זכאי שפעל בתקופת הרמב\"ם). השולח חשש לאבד את משרתו לאחר שדיין חדש בשם מנחם הגיע למחלה, משום ששלמה הסתפק בשינון של חיבור הדרכה במקצועו במקום ללמוד את המקורות עצמם. צדו השני של המכתב מכוסה ברישומים שונים, ובהם תאריך אפשרי להגעת המכתב: י\"ב במרחשוון א'תס\"ב לשטרות, הוא 3 באוקטובר 1150. (המידע מבוסס על כרטיס המפתח של גויטיין ועל מאמרו של פרידמן על זוטא.) ככל הנראה קשורים לכך מסמכים נוספים מאותה פרשה.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_36#MS_Heb_c_28-part28"
@@ -39,7 +39,7 @@
     "יהודית-ערבית",
     "דיין",
     "שוחט",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Official letter from the office of one of the later Maimonidean Nagids. In Judaeo-Arabic. Dating: between the late 13th and 1355 CE. Instructing the beadle Sulaymān to urgently summon to court a woman who had refused to accompany her husband Ṣadaqa Ibn al-Rofeʾ the previous week when he came to the court to complain about her. (Information from Mediterranean Society, III, pp. 178, 464, and from Oded Zinger's forthcoming edition.)",
-  "description_he": "מכתב רשמי ממשרד אחד מנגידי משפחת מיימוניד המאוחרים. ביהודית-ערבית. בין סוף המאה ה-13 ל-1355. מורה לשמש סולימאן לזמן לבית הדין בדחיפות אשה שסרבה ללוות את בעלה צדקה אבן הרופא כשהגיע להתלונן עליה.",
+  "description_he": "מכתב רשמי מלשכתו של אחד הנגידים המאוחרים מבית הרמב\"ם. בערבית-יהודית. תאריך: בין סוף המאה ה-13 ל-1355 לספירה. המכתב מורה לשמש סלימאן לזמן בדחיפות לבית הדין אישה שסירבה בשבוע שעבר להתלוות לבעלה, צדקה אבן אלרופא, כאשר הגיע לבית הדין כדי להתלונן עליה. (המידע מבוסס על גויטיין ועל מהדורתו הצפויה של עודד צינגר.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00006-J-00003-00016"
@@ -39,7 +39,7 @@
     "יהודית-ערבית",
     "צדקה",
     "רפואה",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

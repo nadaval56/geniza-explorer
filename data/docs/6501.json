@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Legal query involving Sitt al-Ḥusn and the property of an orphan. With responsa from Moshe Maimonides, Sason ha-Dayyan, and Shelomo b. Natan. There is another legal query with responsum on verso. This document has been published by both M. A. Friedman and Joshua Blau. (Information in part from Goitein’s index card.)",
-  "description_he": "שאלה משפטית בעניין סת אל-חוסן ורכוש יתום; עם תשובות ממשה מימוניד, ססון הדיין ושלמה בן נתן; שאלה ותשובה נוספות בורסו",
+  "description_he": "שאילתה משפטית הנוגעת לסת אלחסן ולרכושו של יתום. כוללת תשובות של רבי משה בן מימון (הרמב\"ם), ששון הדיין, ושלמה בן נתן. בצדו האחורי של המסמך מופיעה שאילתה משפטית נוספת בצירוף תשובה. המסמך פורסם הן על ידי מ' ע' פרידמן והן על ידי יהושע בלאו. (חלק מהמידע מבוסס על כרטיסייתו של גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_162#MS_Heb_e_98-part22"
@@ -39,7 +39,7 @@
   "tags_he": [
     "יהודית-ערבית",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

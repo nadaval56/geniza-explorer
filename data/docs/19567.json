@@ -1,1 +1,45 @@
-{"id":"19567","shelfmark":"Bodl. MS heb. f 103/46","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Letter or 2 letters. The handwriting is different between recto and verso, which suggests that one might be the response to the other. The letter on recto is very damaged. The writer reports on items that he sent with Avraham, including a fūṭa. He mentions Sulaymān and Abū l-Ḥasan and Yosef and Abū Saʿīd. The letter on verso is from Bū Saʿīd b. Yefet to his son Abū l-Ḥasan (even though this is not the usual placement of the address, the handwriting matches). Mentions a woman and some codices and perhaps paper (if כאגץ is an alternate spelling of كاغذ). This side was later reused for Hebrew poetry.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-103-46.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_167#MS_Heb_f_103-part38"],"princeton_url":"https://geniza.princeton.edu/documents/19567/","mentioned":"","description_he":"מכתב או שני מכתבים. צד א: הכותב מדווח על פריטים שנשלחו עם אברהם. צד ב: מבו סעיד בן יפת לבנו אבו אל-חסן, מוזכרים אישה, כרכים ואולי נייר. שימוש חוזר לשירה עברית.","tags_he":["מכתב","יהודית-ערבית","שירה"],"prev":"19566","next":"19568","pos":14466,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter or 2 letters. The handwriting is different between recto and verso, which suggests that one might be the response to the other. The letter on recto is very damaged. The writer reports on items that he sent with Avraham, including a fūṭa. He mentions Sulaymān and Abū l-Ḥasan and Yosef and Abū Saʿīd. The letter on verso is from Bū Saʿīd b. Yefet to his son Abū l-Ḥasan (even though this is not the usual placement of the address, the handwriting matches). Mentions a woman and some codices and perhaps paper (if כאגץ is an alternate spelling of كاغذ). This side was later reused for Hebrew poetry.",
+  "description_he": "מכתב או שני מכתבים. כתב היד שונה בין הרקטו לוורסו, מה שמרמז כי ייתכן שהאחד הוא תגובה למשנהו. המכתב שברקטו פגוע מאוד. הכותב מדווח על פריטים ששלח עם אברהם, ובהם פוטה (פיסת בד). הוא מזכיר את סלימאן ואבו אלחסן ויוסף ואבו סעיד. המכתב שבוורסו הוא מאת בו סעיד בן יפת לבנו אבו אלחסן (אף שזהו אינו המיקום הרגיל של הכתובת, כתב היד תואם). מוזכרים בו אישה וכמה קודיצים ואולי גם נייר (אם \"כאגץ\" הוא איות חלופי של كاغذ). צד זה נוצל מאוחר יותר לכתיבת שירה עברית.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_167#MS_Heb_f_103-part38"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19567",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-103-46.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19568",
+  "origin": "",
+  "pos": 14466,
+  "prev": "19566",
+  "princeton_url": "https://geniza.princeton.edu/documents/19567/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. f 103/46",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

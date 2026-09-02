@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "The opening of a circular letter for \"all the cities of the Rīf\" in the name of Moses Maimonides. Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. BL OR 5533.1, T-S 12.238, and T-S 16.9 are all versions of the same letter.",
-  "description_he": "פתיחת מכתב סיבובי 'לכל ערי הריף' בשם משה הרמב'ם; תיארוך: כ-1168-1204 לספירה",
+  "description_he": "פתיחה של מכתב חוזר המופנה אל \"כל ערי הריף\" בשמו של רבי משה בן מימון. תיארוך: בקירוב 1168–1204 לספירה, על פי תקופת פעילותו של הרמב\"ם במצרים. מדובר באחת מכמה גרסאות של אותו מכתב עצמו, ששרדו במספר עותקים מקבילים.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00238"
@@ -39,7 +39,7 @@
   "tags_he": [
     "מכתב",
     "עברית",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "The nature of the text is unclear- very dark and hard to read. Few names on Verso such as Ishaq b. Barukh,. Sevilla is mentioned. Seems to be written by Abu Nasr b. al-Tabib (see TS 8J15.13 where he signed on top). He was active during Maimonides' time: in TS 16.229 he mentions him in the blessing for the living. He copied dozens of halakhic treatises, Geonic responsa and other collections of responsa such as those by R. Yosef Migash (see Ashur, ‘Responsa of Rabbi Joseph Ibn Migash from the Cairo Geniza’, Qovets-Al-Yad 21 [31], pp. 1˗24, 2012 [Hebrew]). AA",
-  "description_he": "אופי הטקסט אינו ברור — כהה מאוד וקשה לקריאה. בצד האחורי שמות אחדים כגון יצחק ב. ברוך. מוזכרת סביליה. נראה שנכתב על ידי אבו נצר ב. אל-טביב. פעל בימי הרמב\"ם ועסק בהעתקת עשרות חיבורים הלכתיים ותשובות גאוניות.",
+  "description_he": "טיב הטקסט אינו ברור — הכתב כהה מאוד וקשה לקריאה. בצד ה-Verso מופיעים מספר שמות, ביניהם יצחק בן ברוך, וכן מוזכרת סביליה. נראה שהמסמך נכתב בידי אבו נצר בן אלטביב (השווה למסמך שבו חתם בראש העמוד), שפעל בתקופת הרמב\"ם: באחד המסמכים הוא מזכיר אותו בברכת החיים. הוא העתיק עשרות חיבורים הלכתיים, תשובות הגאונים ואסופות תשובות נוספות, ובכללן תשובותיו של ר' יוסף אבן מיגאש (ראו אשור, \"תשובות ר' יוסף אבן מיגאש מגניזת קהיר\", קובץ על יד כא [לא], עמ' 1–24, 2012).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,7 @@
   "tags_he": [
     "יהודית-ערבית",
     "קהיר",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Paraliterary text",

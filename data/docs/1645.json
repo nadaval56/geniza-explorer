@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter of recommendation from Yehuda to Avraham ha-Zaqen about a righteous silk weaver named Tahor al-Talmid from the pupils of Avraham Maimonides (min jumlat aṣḥāb sayyidinā), who has \"left the world from his heart\" and sought the service of the Creator. The letter discusses Tahor's altruistic intention to marry an orphan girl.",
-  "description_he": "מכתב המלצה מיהודה לאברהם הזקן על טהור התלמיד, אורג משי צדיק מחוג תלמידי אברהם מיימוני, שרוצה לשאת יתומה לאישה.",
+  "description_he": "מכתב המלצה מיהודה לאברהם הזקן בעניין אורג משי צדיק בשם טהור אלתלמיד, הנמנה עם תלמידיו של רבי אברהם בן הרמב\"ם (מן ג'מלת אצחאב סיידנא). על פי המכתב, טהור \"הוציא את העולם מליבו\" וביקש להתמסר כל-כולו לעבודת הבורא. עיקר המכתב נסב על כוונתו האלטרואיסטית של טהור לשאת לאישה נערה יתומה.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00289/1"
@@ -40,7 +40,8 @@
     "מכתב",
     "יהודית-ערבית",
     "משי",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

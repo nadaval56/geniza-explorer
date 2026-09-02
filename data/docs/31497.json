@@ -1,1 +1,42 @@
-{"id":"31497","shelfmark":"T-S 10K8.6","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Hebrew, Judaeo-Arabic","lang_he":"Hebrew, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Exposition of a halakhic point (taʿlīq ʿal sefer Nezaqim) which the writer says he heard from Avraham Maimonides.","tags":["Avraham Maimonides"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/31497/","mentioned":"","description_he":"הסבר נקודה הלכתית (תעליק על ספר נזיקים) שהכותב אומר ששמע מאברהם מימוניד.","tags_he":[],"prev":"31496","next":"31498","pos":29600,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Exposition of a halakhic point (taʿlīq ʿal sefer Nezaqim) which the writer says he heard from Avraham Maimonides.",
+  "description_he": "הסבר נקודה הלכתית (תעליק על ספר נזיקים) שהכותב אומר ששמע מרבי אברהם בן הרמב\"ם.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "31497",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Judaeo-Arabic",
+  "lang_he": "Hebrew, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "31498",
+  "origin": "",
+  "pos": 29600,
+  "prev": "31496",
+  "princeton_url": "https://geniza.princeton.edu/documents/31497/",
+  "region": "",
+  "shelfmark": "T-S 10K8.6",
+  "tags": [
+    "Avraham Maimonides"
+  ],
+  "tags_he": [
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

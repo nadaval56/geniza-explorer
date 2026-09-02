@@ -1,1 +1,45 @@
-{"id":"8584","shelfmark":"T-S K25.240.48","multifragment":"","type_en":"Credit instrument or private receipt","type_he":"שטר אשראי או קבלה","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). Mainly in Arabic script with some Hebrew script. Abū l-Majd is to pay support (mawna/mūna/muʾna) to the bearer, a man from Baghdād.\n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)","tags":["heqdesh, account, qodesh, waqf, tax"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8584/","mentioned":"","description_he":"בצד הוורסו: הוראת תשלום בכתב ידו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237). הטקסט כתוב בעיקרו בכתב ערבי, עם מעט מילים בכתב עברי. ההוראה מופנית אל אבו אלמג'ד, ובה הוא מצווה לשלם דמי מחיה (מַוְנָה / מוּנָה / מֻאְנָה) לנושא המסמך, אדם שמוצאו מבגדאד.\n\nהמסמך הוא חלק מאוסף של הוראות תשלום קצרות, חלקן בכתב עברי וחלקן בכתב ערבי, שעניינן תשלומים חודשיים שהוצאו מהכנסות השכירות של ההקדש \"חצר העניים\" (קודש) או מן ההקדש שייסד הרופא אלמהד'ב. ההוראות הנושאות תאריך כולן מאביב וקיץ שנת 1218. לפי גויטיין, מדובר בקבוצת מסמכים בעלי אופי דומה המתעדים את מערך התמיכה הציבורית שהפעילה הקהילה היהודית בפסטאט במאה ה-13.","tags_he":["רפואה","הקדש","שכירות","מיימוניד"],"prev":"8583","next":"8585","pos":21433,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). Mainly in Arabic script with some Hebrew script. Abū l-Majd is to pay support (mawna/mūna/muʾna) to the bearer, a man from Baghdād.\n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
+  "description_he": "בצד הוורסו: הוראת תשלום בכתב ידו של ר' אברהם בן הרמב\"ם (כיהן בשנים 1205–1237). הטקסט כתוב בעיקרו בכתב ערבי, עם מעט מילים בכתב עברי. ההוראה מופנית אל אבו אלמג'ד, ובה הוא מצווה לשלם דמי מחיה (מַוְנָה / מוּנָה / מֻאְנָה) לנושא המסמך, אדם שמוצאו מבגדאד.\n\nהמסמך הוא חלק מאוסף של הוראות תשלום קצרות, חלקן בכתב עברי וחלקן בכתב ערבי, שעניינן תשלומים חודשיים שהוצאו מהכנסות השכירות של ההקדש \"חצר העניים\" (קודש) או מן ההקדש שייסד הרופא אלמהד'ב. ההוראות הנושאות תאריך כולן מאביב וקיץ שנת 1218. לפי גויטיין, מדובר בקבוצת מסמכים בעלי אופי דומה המתעדים את מערך התמיכה הציבורית שהפעילה הקהילה היהודית בפסטאט במאה ה-13.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8584",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8585",
+  "origin": "",
+  "pos": 21433,
+  "prev": "8583",
+  "princeton_url": "https://geniza.princeton.edu/documents/8584/",
+  "region": "",
+  "shelfmark": "T-S K25.240.48",
+  "tags": [
+    "heqdesh, account, qodesh, waqf, tax"
+  ],
+  "tags_he": [
+    "רפואה",
+    "הקדש",
+    "שכירות",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Credit instrument or private receipt",
+  "type_he": "שטר אשראי או קבלה"
+}

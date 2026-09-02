@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from הדוד(?) addressed to a certain Ṭahor. In Judaeo-Arabic. Dating: Ca. 1220 CE, based on the mention of Eliyyahu the Judge and Avraham Maimonides (sayyidnā al-Nagid, a title he held ca. 1213–1237 CE). The letter was dictated, as it was nighttime and the sender could not see. Concerning a quarter of a house, 40 dirhams, Barakāt b. Bū ʿUmar, the addressee's son Ibrāhīm, a Nasi, and an Abū l-Ḥasan. Information from Goitein's note card.",
-  "description_he": "מכתב מהדוד(?) לטהור מסוים, ביהודית-ערבית, כ-1220 לספירה. המכתב הוכתב שכן היה לילה והשולח לא יכול היה לראות. עוסק ברבע בית, 40 דרהם, ברכאת ב. בו עמר ואחרים",
+  "description_he": "מכתב מה\"דוד\"(?) הממוען לאדם בשם טהור. בערבית-יהודית. תיארוך: בערך 1220 לספירה, על סמך אזכור אליהו הדיין ורבי אברהם בן הרמב\"ם (סיידנא אלנגיד, תואר שנשא בערך בין השנים 1213–1237 לספירה). המכתב הוכתב, מאחר שהיה לילה והשולח לא יכול היה לראות. הוא עוסק ברבע מבית, ב-40 דירהם, בברכאת בן בו עומר, בנו של הנמען אבראהים, נשיא, ואבו אלחסן. המידע מבוסס על כרטיסיית הרישום של גויטיין.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00231/2"
@@ -38,7 +38,8 @@
     "מכתב",
     "יהודית-ערבית",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

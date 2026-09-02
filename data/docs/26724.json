@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Nearly complete letter in Judaeo-Arabic regarding a political conflict within the Jewish community, in which the parties have recourse to the government. Mainly in Judaeo-Arabic. Dating: 13th or 14th century. The handwriting is reminiscent of the later Maimonidean Nagids. The writer inquires if Ibn al-Rifʿa (conceivably the famous jurist) is home, and if so, he should take the tawqīʿ (signed decision) and bring it to a certain official named al-Sayfī. Then, people should gather together and call for help (yughawwithū) at al-Sayfī's gate. The remainder is rather obscure and mentions the governor (wālī) of Fustat, who may have refused to talk to anybody until he had personally met with al-Sayfī. Needs further examination. ASE.",
-  "description_he": "מכתב כמעט שלם ביהודית-ערבית בנוגע לסכסוך פוליטי בתוך הקהילה היהודית שבו הצדדים פונים לשלטון. תאריך: המאה ה-13 או ה-14. הכותב מברר אם אבן אל-ריפעה (ייתכן שהוא המשפטן המפורסם) נמצא בביתו, ואם כן, עליו לקחת את התוקיע (החלטה חתומה) ולהביאה לפקיד מסוים בשם אל-סייפי. לאחר מכן על האנשים להתכנס ולקרוא לעזרה בשער אל-סייפי. יש להמשיך ולבחון את הקטע.",
+  "description_he": "מכתב כמעט שלם בערבית-יהודית העוסק בסכסוך פוליטי בתוך הקהילה היהודית, שבו הצדדים פונים לשלטונות. רובו בערבית-יהודית. תיארוך: המאה ה-13 או ה-14. כתב היד מזכיר את כתבי היד של הנגידים המאוחרים מבית הרמב\"ם. הכותב מברר אם אבן אלרפעה (ייתכן שמדובר במשפטן המפורסם) נמצא בביתו, ואם כן, עליו לקחת את התַוקיע (הוראה חתומה) ולהביאו לפקיד מסוים בשם אלסיפי. לאחר מכן, אנשים אמורים להתאסף יחד ולקרוא לעזרה (יע'את'ו) בשערו של אלסיפי. שאר המכתב סתום למדי ומזכיר את הוואלי (המושל) של פוסטאט, שאולי סירב לדבר עם מישהו עד שייפגש באופן אישי עם אלסיפי. דרוש עיון נוסף.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,7 @@
     "מכתב",
     "יהודית-ערבית",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

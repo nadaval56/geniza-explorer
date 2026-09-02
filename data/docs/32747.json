@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Lower fragment: Letter in Judaeo-Arabic, probably in the handwriting of Ḥananʾel b. Shemuel (the father-in-law of Avraham Maimonides). However the sender of the letter is a woman (\"all I desire is that you see me happy (f.)\" / מא אשתהי אלא אן תרוני פרחאנה); she could have had Ḥananʾel write on her behalf. The letter is full of expressions of dependence on God's will. She explains also that she determined (by some kind of divination?) that a certain 'movement' (ḥaraka, ḥarakiyya) was favorable, and therefore she acted. She also mentions that 'al-Kohen' made her something beautiful (כרג כטך(?)) the likes of which can only be found in the market.",
-  "description_he": "שבר תחתי: מכתב בערבית-יהודית, כנראה בכתב ידו של חנניאל בן שמואל (חמיו של אברהם מיימוניס). אך השולחת היא אישה ('כל מה שאני רוצה הוא שתראה אותי שמחה'). המכתב מלא בביטויי תלות ברצון האל. היא מסבירה גם שקבעה (מתוך סוג של ניחוש?) שתנועה מסוימת הייתה נוחה, ולכן פעלה.",
+  "description_he": "חלקו התחתון של מכתב בערבית-יהודית, כנראה בכתב ידו של חננאל בן שמואל (חמיו של רבי אברהם בן הרמב\"ם). עם זאת, השולחת היא אישה (\"מא אשתהי אלא אן תרוני פרחאנה\" — אין משאלתי אלא שתראני שמחה, בלשון נקבה); ייתכן שביקשה מחננאל לכתוב בשמה. המכתב גדוש בביטויי תלות ברצון האל. הכותבת מסבירה גם כי קבעה (על ידי סוג כלשהו של ניחוש?) שתנועה מסוימת (חרכה, חרכיה) הייתה לטובה, ולכן פעלה בהתאם. כמו כן היא מזכירה כי 'אלכהן' עשה לה דבר-מה יפה (כרג כטך(?)) שאת כמותו ניתן למצוא רק בשוק.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

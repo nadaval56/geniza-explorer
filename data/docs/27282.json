@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1230-08-21/1230-08-31",
   "description": "Letter fragment (bottom half) in Judaeo-Arabic, addressed to an important person (perhaps Avraham Maimonides). Dated: Middle decade of Elul 1541 Seleucid = August 1230 CE. Opens with a mention of the ḥushshār (capitation tax collectors) of Alexandria and somebody they wanted to imprison. Mentions the noble congregation of Bilbays. Seems to be a letter of recommendation for a man in need. \n\nVerso: List of names, including Ibn al-Labbān Abū Saʿd; al-Rayyis Abū l-Riḍā Ibn al-Shelishi and his son; al-Rayyis Abū Manṣūr and David and Netanel and Yaʿaqov. There are also various jottings in Hebrew, Judaeo-Arabic, and Arabic script. Notably, the jottings include the five categories of sharīʿa rulings (aḥkām), but in Judaeo-Arabic: mafrūḍ (compulsory); manhiyy ʿanhu (forbidden); makrūh (discouraged); mustaḥabb (encouraged); mubāḥ (neutral).",
-  "description_he": "קטע מכתב (מחצית תחתונה) ביהודית-ערבית, המופנה לאישיות חשובה (אולי אברהם מימוני). תאריך: עשור האמצע של אלול 1541 לשטרות = אוגוסט 1230 לספירה. פותח בהזכרת גובי המס (חֻשָּׁאר) של אלכסנדריה ומישהו שרצו לאסור. מזכיר את הקהל הנכבד של בלבייס. נראה שהוא מכתב המלצה לאיש נזקק. ורסו: רשימת שמות וכן רשומות שונות בעברית, ביהודית-ערבית ובכתב ערבי, כולל חמש קטגוריות פסיקת השריעה (אחכאם) ביהודית-ערבית.",
+  "description_he": "קטע מכתב (חציו התחתון) בערבית-יהודית, ממוען לאישיות חשובה (אולי רבי אברהם בן הרמב\"ם). מתוארך לעשור האמצעי של חודש אלול שנת 1541 למניין השטרות = אוגוסט 1230 לספירה. המכתב נפתח באזכור של החֻשָּׁאר (גובי מס הגולגולת) של אלכסנדריה ושל אדם מסוים שביקשו לכלוא. מוזכרת קהילתה המכובדת של בלביס. נראה שמדובר במכתב המלצה עבור איש נזקק.\n\nבצד ה-verso: רשימת שמות, ובהם אבן אל-לבּאן אבו סעד; אל-רייס אבו אל-רצ'א אבן אל-שלישי ובנו; אל-רייס אבו מנצור ודוד ונתנאל ויעקב. כן מופיעים שרבוטים שונים בכתב עברי, ערבי-יהודי וערבי. ראוי לציין במיוחד ששרבוטים אלה כוללים את חמש קטגוריות פסיקות השריעה (אחכּאם), אך בערבית-יהודית: מפרוצ' (חובה); מנהי ענה (אסור); מכרוה (לא רצוי); מסתחבּ (מומלץ); מבּאח (מותר/נייטרלי).",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,8 @@
   "tags_he": [
     "מכתב",
     "אלכסנדריה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -1,1 +1,45 @@
-{"id":"27945","shelfmark":"Yevr.-Arab. II 1403","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Jerusalem","destination":"Cairo","region":"","date":"1790-04-17","date_original":"3 Iyyar 5550","date_standard":"1790-04-17","date_inferred":"","date_rationale":"","library":"הספרייה הלאומית רוסיה","library_raw":"NLR","collection":"NLR","description":"Letter from Mordekhai ha-Levi b. Shemuel, Moshe Levi b. Shemuel, and the Qaraite community of Jerusalem to Shelomo Kohen, his son Yosef Kohen, Aharon Levi, Yosef Gabbai, and Yeshuʿa Ẓaʿir, in Fustat/Cairo. In Judaeo-Arabic. Dated: Tuesday, 3 Iyyar 5550 AM (רחש לבי), which is 1790 CE. The writers report that the addressees departed without the letters of Muṣṭafā al-Ṣabbāgh regarding the \"bolsa\" of 247.5 of a certain currency that they have with them. They are to give this money to the partners of Muṣṭafā, Ḥannā Ṣāṣī and Mikha'īl al-Kuḥayl(?). Needs further examination.","tags":["bolsa"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/27945/","mentioned":"","description_he":"מכתב ממרדכי הלוי ב' שמואל, משה לוי ב' שמואל וקהילת הקראים בירושלים לשלמה כהן ועוד כמה אנשים בפוסטאט/קהיר. ביהודית-ערבית. תאריך: שלישי, ג' אייר 5550 = 1790 לספירה. עוסק בכסף השייך לשותפי מוצטפא אל-צבאח.","tags_he":["מכתב","יהודית-ערבית","פוסטאט","קהיר","ירושלים"],"prev":"27944","next":"27946","pos":28249,"total":35937}
+{
+  "collection": "NLR",
+  "date": "1790-04-17",
+  "date_inferred": "",
+  "date_original": "3 Iyyar 5550",
+  "date_rationale": "",
+  "date_standard": "1790-04-17",
+  "description": "Letter from Mordekhai ha-Levi b. Shemuel, Moshe Levi b. Shemuel, and the Qaraite community of Jerusalem to Shelomo Kohen, his son Yosef Kohen, Aharon Levi, Yosef Gabbai, and Yeshuʿa Ẓaʿir, in Fustat/Cairo. In Judaeo-Arabic. Dated: Tuesday, 3 Iyyar 5550 AM (רחש לבי), which is 1790 CE. The writers report that the addressees departed without the letters of Muṣṭafā al-Ṣabbāgh regarding the \"bolsa\" of 247.5 of a certain currency that they have with them. They are to give this money to the partners of Muṣṭafā, Ḥannā Ṣāṣī and Mikha'īl al-Kuḥayl(?). Needs further examination.",
+  "description_he": "מכתב מאת מרדכי הלוי בן שמואל, משה לוי בן שמואל וקהילת הקראים בירושלים אל שלמה כהן, בנו יוסף כהן, אהרן לוי, יוסף גבאי וישועה צעיר, בפוסטאט/קהיר. כתוב בערבית-יהודית. מתוארך ליום שלישי, ג' באייר ה'תק\"ן (\"רחש לבי\") — 1790 לספירה. הכותבים מדווחים כי הנמענים יצאו לדרכם בלי לקחת עמם את מכתביו של מצטפא אלצבאע' בנוגע ל\"בולסה\" (ארנק/שקית) של 247.5 ממטבע מסוים שנמצאת ברשותם. עליהם למסור את הכסף לשותפיו של מצטפא — חנא צאצי ומיכאיל אלכֻחיל(?). דורש בדיקה נוספת.",
+  "destination": "Cairo",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "27945",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הלאומית רוסיה",
+  "library_raw": "NLR",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "27946",
+  "origin": "Jerusalem",
+  "pos": 28249,
+  "prev": "27944",
+  "princeton_url": "https://geniza.princeton.edu/documents/27945/",
+  "region": "",
+  "shelfmark": "Yevr.-Arab. II 1403",
+  "tags": [
+    "bolsa"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "פוסטאט",
+    "קהיר",
+    "ירושלים"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

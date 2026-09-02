@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1224-03-13",
   "description": "Fragment from the top of a deed of sale. In the hand of Shelomo b. Eliyyahu. Location: Bilbays. Dated: 20 Adar II 1535 Seleucid = 13 March 1224 CE, under the authority of the Nagid Avraham Maimonides. Ṭahor b. Shelomo Ibn al-Labbān acknowledges that he has received 40 broken (mutaqaṭṭiʿa) dirhams from Mubārak b. Shelomo ha-Kohen, in exchange for which he sells him half of a plot (sāḥa) in Ushmūm Ṭannāh together with its walls. (Information mainly from Goitein's index card.)",
-  "description_he": "קטע מתחילת שטר מכר. בכתב ידו של שלמה ב. אליהו. מיקום: בילבייס. תאריך: 20 אדר ב' 1535 סלאוקי = 13 מרץ 1224 לספירה. טהור ב. שלמה אבן אל-לבאן מוכר מחצית מגרש לאבו מברך ב. שלמה הכהן תמורת 40 דרהם שבורים",
+  "description_he": "קטע מראשו של שטר מכר, בכתב ידו של שלמה בן אליהו. נכתב בבלביס ומתוארך ל-20 באדר ב' אתקל\"ה למניין השטרות, הוא 13 במרץ 1224, תחת סמכותו של הנגיד אברהם מימוני. טהור בן שלמה אבן אללבּאן מאשר כי קיבל 40 דרהמים שבורים (מֻתַקַטִּעַה) ממובארכ בן שלמה הכהן, ותמורתם הוא מוכר לו את מחצית מגרש (סאחה) באושמום טנאה יחד עם כתליו. (המידע נשען בעיקרו על כרטסת גויטיין.)",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00026-00005/1"
@@ -40,6 +40,7 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "שטר מכר",
+    "רבי אברהם בן הרמב\"ם",
     "שלמה בן אליהו"
   ],
   "total": 35937,

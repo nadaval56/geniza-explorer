@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "On recto a draft of an Hebrew legal query regarding two brothers who one of them is demanding his share in his father's inheritance. One of the brothers, Reuben, held for 20 years an apartment from the father's possessions. The will is missing and Reuben brought one of the witnesses who signed it. On verso a similar case in JA. The scribe is familiar from legal queries sent to Abraham Maimuni and his contemporaries. AA",
-  "description_he": "בצד הקדמי טיוטה של שאלה משפטית בעברית בנוגע לשני אחים שאחד מהם תובע את חלקו בירושת אביו. ראובן אחד החזיק דירה מרכוש האב במשך 20 שנה. בצד האחורי מקרה דומה ביהודית-ערבית.",
+  "description_he": "בצד הרקטו טיוטה של שאלה הלכתית בעברית בעניין שני אחים, שאחד מהם תובע את חלקו בירושת אביהם. אחד האחים, ראובן, החזיק במשך עשרים שנה בדירה מנכסי האב. הצוואה אינה בנמצא, וראובן הביא את אחד העדים שחתמו עליה. בצד הוורסו מקרה דומה בערבית-יהודית. כתב היד של הסופר מוכר משאלות הלכתיות שנשלחו אל אברהם מימוני ובני דורו.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -38,7 +38,8 @@
     "טיוטה",
     "צוואה",
     "ירושה",
-    "סופר"
+    "סופר",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal query or responsum",

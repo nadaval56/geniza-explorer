@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1224-03",
   "description": "Legal document in which a loan of 200 ‘black coins’ is made by a school teacher, to be repaid in monthly instalments of 40 coins. Dated: Thursday, 28 Adar II 1535 Seleucid, which is 1224 CE, under the reshut of Avraham Maimonides. Signed by Yeḥiel b. Elyaqim and Namir b. Eliyya. On verso, the court testifies that this loan will not be cancelled in the shemiṭa (sabbatical year). Signed by Yiṣḥaq b. Ḥalfon, Ḥananel b. Shemuel and Yeḥiel b. Elyaqim. (Information from CUDL.) See also Goitein's attached notes.",
-  "description_he": "מסמך משפטי בו מלמד בית ספר מלווה 200 מטבעות שחורות, לפרעון בתשלומים חודשיים של 40 מטבעות. תאריך: יום חמישי כ\"ח אדר ב' 1535 סלאוקי (1224 לספירה), בסמכות אברהם מיימוניד. בגב: בית הדין מאשר שהחוב לא יבוטל בשמיטה",
+  "description_he": "מסמך משפטי המתעד הלוואה של 200 \"מטבעות שחורים\" שניתנה על ידי מלמד תינוקות, שתיפרע בתשלומים חודשיים של 40 מטבעות. תאריך המסמך: יום חמישי, כ\"ח באדר ב' ה'תקל\"ה למניין השטרות, שהוא שנת 1224 לסה\"נ, תחת רשותו של רבי אברהם בן הרמב\"ם. חתומים על השטר יחיאל בן אליקים ונמיר בן אליה. בצדו האחורי של המסמך מעיד בית הדין כי הלוואה זו לא תיבטל בשנת השמיטה. על עדות זו חתומים יצחק בן חלפון, חננאל בן שמואל ויחיאל בן אליקים. ראו גם את הערותיו המצורפות של גויטיין.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -36,7 +36,8 @@
     "מסמך משפטי",
     "הלוואה",
     "מלמד",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

@@ -1,1 +1,44 @@
-{"id":"8586","shelfmark":"T-S K25.240.50","multifragment":"","type_en":"Credit instrument or private receipt","type_he":"שטר אשראי או קבלה","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1205-1237","date_original":"","date_standard":"","date_inferred":"1205-1237","date_rationale":"Person mentioned","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). Mainly in Arabic script with some Hebrew script. Abū l-Majd is to give the bearer [...] al-Ṭawwāf a sum of money. There's a word that looks like ḥammām, but this might be a cipher for 5 dirhams. Note that recto is a join with T-S K25.240.15.\n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)","tags":["tax, waqf, heqdesh, account, qodesh"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/8586/","mentioned":"","description_he":"ורסו: פקודת תשלום בכתב ידו של אברהם מימוני (כיהן 1205–1237 לסה\"נ). רובה בכתב ערבי עם מעט כתב עברי. אבו אלמג'ד נדרש לתת למוסר הכתב [...] אלטוואף סכום כסף. מופיעה מילה הנראית כמו \"חמאם\" (מרחץ), אך ייתכן שמדובר בצופן ל-5 דרהמים. יש לציין שהרקטו מהווה צירוף עם מסמך אחר.\n\nהאוסף שאליו שייך המסמך כולל פקודות תשלום קצרות בכתב יד, חלקן בכתב עברי וחלקן בכתב ערבי, עבור תשלומים חודשיים שהוצאו מהכנסות דמי השכירות של ההקדש (וקף) \"חצר העניים\", או מההקדש שייסד הרופא אלמהד'ב. כל הפקודות הנושאות תאריך הן מאביב וקיץ של שנת 1218. (מידע על פי גויטיין וכהן.)","tags_he":["רפואה","הקדש","שכירות"],"prev":"8585","next":"8587","pos":21435,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1205-1237",
+  "date_inferred": "1205-1237",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Verso: Autograph order in the hand of Avraham Maimonides (r. 1205–1237 CE). Mainly in Arabic script with some Hebrew script. Abū l-Majd is to give the bearer [...] al-Ṭawwāf a sum of money. There's a word that looks like ḥammām, but this might be a cipher for 5 dirhams. Note that recto is a join with T-S K25.240.15.\n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
+  "description_he": "ורסו: פקודת תשלום בכתב ידו של אברהם מימוני (כיהן 1205–1237 לסה\"נ). רובה בכתב ערבי עם מעט כתב עברי. אבו אלמג'ד נדרש לתת למוסר הכתב [...] אלטוואף סכום כסף. מופיעה מילה הנראית כמו \"חמאם\" (מרחץ), אך ייתכן שמדובר בצופן ל-5 דרהמים. יש לציין שהרקטו מהווה צירוף עם מסמך אחר.\n\nהאוסף שאליו שייך המסמך כולל פקודות תשלום קצרות בכתב יד, חלקן בכתב עברי וחלקן בכתב ערבי, עבור תשלומים חודשיים שהוצאו מהכנסות דמי השכירות של ההקדש (וקף) \"חצר העניים\", או מההקדש שייסד הרופא אלמהד'ב. כל הפקודות הנושאות תאריך הן מאביב וקיץ של שנת 1218. (מידע על פי גויטיין וכהן.)",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8586",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8587",
+  "origin": "",
+  "pos": 21435,
+  "prev": "8585",
+  "princeton_url": "https://geniza.princeton.edu/documents/8586/",
+  "region": "",
+  "shelfmark": "T-S K25.240.50",
+  "tags": [
+    "tax, waqf, heqdesh, account, qodesh"
+  ],
+  "tags_he": [
+    "רפואה",
+    "הקדש",
+    "שכירות",
+    "רבי אברהם בן הרמב\"ם"
+  ],
+  "total": 35937,
+  "type_en": "Credit instrument or private receipt",
+  "type_he": "שטר אשראי או קבלה"
+}

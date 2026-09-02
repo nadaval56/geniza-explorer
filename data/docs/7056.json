@@ -1,1 +1,45 @@
-{"id":"7056","shelfmark":"T-S 8.41","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"Jubayl","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Yosef b. Hiba, unknown location, to Abū Sahl Menashshe b. Ṭoviyya, in Jubayl (likely Byblos in present-day Lebanon, but there is also a Jubayl in Yemen). In Judaeo-Arabic, with some odd spellings. Very damaged. Mentions 'to Jerusalem, him and his son' in l. 5. May mention someone's good character a few lines further down. Very little of the content is preserved. (Information in part from CUDL)","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00041"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00041"],"princeton_url":"https://geniza.princeton.edu/documents/7056/","mentioned":"","description_he":"מכתב מיוסף ב. הבה, מיקום לא ידוע, לאבו סהל מנשה ב. טוביה, ביג'ביל (כנראה ביבלוס, לבנון). ביהודית-ערבית. פגום מאוד. מזכיר 'לירושלים, הוא ובנו' בשורה 5","tags_he":["מכתב","יהודית-ערבית","ירושלים"],"prev":"7054","next":"7057","pos":4598,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Yosef b. Hiba, unknown location, to Abū Sahl Menashshe b. Ṭoviyya, in Jubayl (likely Byblos in present-day Lebanon, but there is also a Jubayl in Yemen). In Judaeo-Arabic, with some odd spellings. Very damaged. Mentions 'to Jerusalem, him and his son' in l. 5. May mention someone's good character a few lines further down. Very little of the content is preserved. (Information in part from CUDL)",
+  "description_he": "מכתב מאת יוסף בן היבה, ממקום לא ידוע, אל אבו סהל מנשה בן טוביה, ביֻ'בַּיְל (ככל הנראה ביבלוס שבלבנון של ימינו, אם כי קיים גם ג'ביל בתימן). כתוב ביהודית-ערבית, עם כמה כתיבים חריגים. הכתב יד פגום מאוד. בשורה 5 מופיע אזכור 'לירושלים, הוא ובנו'. ייתכן שיש בהמשך הזכרה של אופיו הטוב של מישהו. רק מעט מאוד מן התוכן נשתמר. (חלק מן המידע מבוסס על CUDL)",
+  "destination": "Jubayl",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-00041"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7056",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-00041"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7057",
+  "origin": "",
+  "pos": 4598,
+  "prev": "7054",
+  "princeton_url": "https://geniza.princeton.edu/documents/7056/",
+  "region": "",
+  "shelfmark": "T-S 8.41",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "ירושלים"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

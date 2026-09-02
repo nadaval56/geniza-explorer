@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1232-09-16/1233-09-05",
   "description": "Fragment of a petition addressed to the Nagid (Avraham Maimonides). In Judaeo-Arabic. Dated: 1544 Seleucid, which is 1232/33 CE. The names of four senders appear at the top: Elʿazar b. Yosef; Nadiv b. Yosef; Yefet b. David; and the last is difficult to read. The senders are objecting to the appointment of Abū Naṣr (possibly as the shammash of the synagogue of Dammūh) on account of his filthiness (qadhāratuh) and impurity (ʿadm ṭahāratih). (Information from Goitein's index card.)",
-  "description_he": "שבר עתירה אל הנגיד אברהם מימוניד מתוארך ל-1232/33 לספירה",
+  "description_he": "קטע מעצומה הממוענת אל הנגיד (רבי אברהם בן הרמב\"ם). בערבית-יהודית. מתוארך לשנת 1544 למניין השטרות, שהם 1232/33 לספירה. בראש המסמך מופיעים שמותיהם של ארבעה שולחים: אלעזר בן יוסף; נדיב בן יוסף; יפת בן דוד; ושם רביעי שקריאתו קשה. השולחים מתנגדים למינויו של אבו נצר (ככל הנראה כשמש בית הכנסת בדמוה) בשל לכלוכו (קד'אראתה) וחוסר טהרתו (עדם טהארתה). (המידע מבוסס על כרטיסיית גויטיין.)",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
     "מכתב",
     "יהודית-ערבית",
     "עצומה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -1,1 +1,41 @@
-{"id":"19228","shelfmark":"BL OR 5561A.6–6a","multifragment":"","type_en":"Paraliterary text","type_he":"טקסט פרא-ספרותי","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"A magnificent illuminated certificate/amulet for a circumcision. Assuming we're meant to add up all the red numbers at the bottom to find the year, it is from 1847/8 CE ([5]608, but could also be 5 years earlier if one of the red \"ה\"s signifies 5000 rather than the black one). ASE.","tags":["circumcision, 19th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19228/","mentioned":"","description_he":"תעודת מילה מוארת ומפוארת. על פי חישוב הסכומים האדומים בתחתית — משנת 1847/8 ([5]608).","tags_he":["עברית"],"prev":"19227","next":"19229","pos":22234,"total":35937}
+{
+  "collection": "BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "A magnificent illuminated certificate/amulet for a circumcision. Assuming we're meant to add up all the red numbers at the bottom to find the year, it is from 1847/8 CE ([5]608, but could also be 5 years earlier if one of the red \"ה\"s signifies 5000 rather than the black one). ASE.",
+  "description_he": "תעודה/קמע מאוירת ומפוארת לרגל ברית מילה. אם יש להניח שמסכמים את כל המספרים האדומים בתחתית כדי לקבל את השנה, הרי שהיא מתוארכת לשנת 1847/8 לספירה ([ה]תר\"ח), אם כי ייתכן גם שמדובר בחמש שנים קודם לכן, במקרה שאחת האותיות ה\"ה\" האדומות היא זו המסמלת 5000 ולא ה\"ה\" השחורה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19228",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "19229",
+  "origin": "",
+  "pos": 22234,
+  "prev": "19227",
+  "princeton_url": "https://geniza.princeton.edu/documents/19228/",
+  "region": "",
+  "shelfmark": "BL OR 5561A.6–6a",
+  "tags": [
+    "circumcision, 19th c"
+  ],
+  "tags_he": [
+    "עברית"
+  ],
+  "total": 35937,
+  "type_en": "Paraliterary text",
+  "type_he": "טקסט פרא-ספרותי"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Moshe Maimonides to Abū l-Munā. Autograph. In Judaeo-Arabic. Dating: ca. 1168–1204 CE, based on the years when Maimonides was active in Egypt. Abū l-Munā is asked to convey Moshe's gratitude to Najm [al]-Dīn on account of the benefaction he bestowed by helping a certain prisoner. Moshe cannot come in person to thank him.",
-  "description_he": "מכתב ממשה מימוניד לאבו אל-מנא. כתב יד המחבר. בערבית-יהודית. תיארוך: כ-1168-1204 לספירה. מבקש מאבו אל-מנא להעביר את תודתו לנג'ם אל-דין על חסדו בעזרה לאסיר מסוים. משה אינו יכול לבוא להודות לו באופן אישי.",
+  "description_he": "מכתב מהרמב\"ם לאבו אל-מנא. כתב יד המחבר. בערבית-יהודית. תיארוך: כ-1168-1204 לספירה. מבקש מאבו אל-מנא להעביר את תודתו לנג'ם אל-דין על חסדו בעזרה לאסיר מסוים. משה אינו יכול לבוא להודות לו באופן אישי.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -34,7 +34,8 @@
   ],
   "tags_he": [
     "מכתב",
-    "יהודית-ערבית"
+    "יהודית-ערבית",
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

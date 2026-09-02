@@ -1,1 +1,42 @@
-{"id":"34843","shelfmark":"MIAC 254","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ENL","library_raw":"ENL","collection":"ENL, ENL 'New Geniza' Catalogue","description":"Files of Jewish families who are owed payment containing names, addresses, the members of each family, and their employment, wages, and neighborhood, the initial payment for each family is calculated in kilograms – undated – Museum of Islamic Art – (number 254) – in Arabic. (information from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 61-62). MCD.","tags":["payment, 19th or 20th c"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34843/","mentioned":"","description_he":"תיקי משפחות יהודיות הזכאיות לתשלום, כולל שמות, כתובות, חברי כל משפחה, עיסוקם, שכרם ורובעם - ללא תאריך - מוזיאון האמנות האסלאמית (מספר 254) - בערבית. (ג'ניזה החדשה, MIAC).","tags_he":["חשבונות","ערבית"],"prev":"34842","next":"34844","pos":31078,"total":35937}
+{
+  "collection": "ENL, ENL 'New Geniza' Catalogue",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Files of Jewish families who are owed payment containing names, addresses, the members of each family, and their employment, wages, and neighborhood, the initial payment for each family is calculated in kilograms – undated – Museum of Islamic Art – (number 254) – in Arabic. (information from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 61-62). MCD.",
+  "description_he": "תיקים של משפחות יהודיות הזכאיות לתשלום, הכוללים שמות, כתובות, פירוט בני המשפחה, מקום עבודתם, שכרם והשכונה שבה הם מתגוררים. התשלום הראשוני לכל משפחה מחושב בקילוגרמים. ללא תאריך. המסמך כתוב בערבית. המידע לקוח מתוך מהדורתו של חסנין מחמד רביעה, מדריך לתעודות הגניזה החדשה.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34843",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ENL",
+  "library_raw": "ENL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34844",
+  "origin": "",
+  "pos": 31078,
+  "prev": "34842",
+  "princeton_url": "https://geniza.princeton.edu/documents/34843/",
+  "region": "",
+  "shelfmark": "MIAC 254",
+  "tags": [
+    "payment, 19th or 20th c"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "ערבית"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

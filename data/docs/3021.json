@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1214-09-26/1214-10-05",
   "description": "Deed of acknowledgment of a debt of 76.25 black dirhams to be repaid in weekly installments by Bū l-Fakhr b. Bū l-Futūḥ al-Levi, who works in the perfumers' market, to the perfumer Barakāt b. Bū Saʿd. Location: Fustat. Dated: Last decade of Tishrei 1526 = September/October 1214 CE, under the authority of the Nagid Avraham Maimonides. (Information mainly from Mediterranean Society, I, pp. 388, 492.) Reused for accounts on verso.",
-  "description_he": "שטר הכרת חוב של 76.25 דרהם שחורים שישולמו בתשלומים שבועיים על ידי בו אל-פח'ר ב' בו אל-פתוח הלוי, עובד בשוק הבשמים, לרוקח ברכאת ב' בו סעד. מקום: פסטאט. תאריך: סוף תשרי 1526 = ספטמבר/אוקטובר 1214 לספירה.",
+  "description_he": "שטר הודאה על חוב בסך 76.25 דרהם שחורים, שאמור להיפרע בתשלומים שבועיים. החייב הוא בו אלפח'ר בן בו אלפתוח הלוי, העובד בשוק הבשמים, והנושה הוא הבושם ברכאת בן בו סעד. נכתב בפוסטאט, בעשרת הימים האחרונים של חודש תשרי א'תקכ\"ו לשטרות = ספטמבר/אוקטובר 1214, תחת סמכותו של הנגיד רבי אברהם בן הרמב\"ם. (המידע מבוסס בעיקר על גויטיין, חברה ים-תיכונית.) בצדו השני של השטר נעשה שימוש חוזר לרישום חשבונות.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00005-00001"
@@ -40,7 +40,8 @@
     "מסמך משפטי",
     "יהודית-ערבית",
     "פוסטאט",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

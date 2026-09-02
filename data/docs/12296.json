@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Yehuda b. [...] to Avraham Maimonides. In Judaeo-Arabic. The name of the city Tripoli appears after the sender's name, much of which is visible and may be decipherable: [?]...יהודה בן ח. He reports on a legal dispute with R. Shem[...] and asks for instructions from Avraham and/or whether they must report to him in person. Avraham Maimonides is referred to as \"Nagid,\" a title that he bore after 1213 CE during his tenure as Rayyis between 1205–1237 CE.",
-  "description_he": "מכתב מיהודה בן [...] לאברהם מימוניד ביהודית-ערבית. מדווח על סכסוך משפטי עם ר' שם[...] ומבקש הוראות מאברהם. אברהם מימוניד מכונה 'נגיד', תואר שנשא לאחר 1213 לספירה.",
+  "description_he": "מכתב מיהודה בן [...] אל אברהם מימוני, בערבית-יהודית. לאחר שם השולח מופיע שם העיר טריפולי, וחלק ניכר מן השם עצמו נראה וייתכן שניתן לפענוח: [?]...יהודה בן ח. הכותב מדווח על סכסוך משפטי עם ר' שם[...] ומבקש הנחיות מאברהם, או לחלופין שואל האם עליהם להתייצב בפניו באופן אישי. אברהם מימוני מכונה במכתב \"נגיד\", תואר שנשא לאחר 1213 לסה\"נ במהלך כהונתו כראיס בין השנים 1205–1237 לסה\"נ.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,8 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "טריפולי"
+    "טריפולי",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

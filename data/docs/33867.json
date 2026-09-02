@@ -1,1 +1,45 @@
-{"id":"33867","shelfmark":"T-S NS 99.70","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1100–1138","date_original":"","date_standard":"","date_inferred":"1100–1138","date_rationale":"Paleography","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso: Legal notes in the hand of Ḥalfon b. Menashshe (fl. 1100–1138 CE) concerning the execution of a will. Headed, \"all of the inherited gold (ʿayn) and silver (wariq).\" Then mentions Maḥfuẓ al-Iqrīṭīshī (the Cretan), who may be identical with Shemarya al-Iqrīṭīshī from JRL SERIES B 4804 (PGPID 28716). In the left column, specifies the expenses for the funeral and throughout the seven days of mourning (7 + 1/2 + 1/4 dinars). There may be a join waiting to be found.","tags":["account"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/33867/","mentioned":"","description_he":"גב: פתקים משפטיים בכתב ידו של חלפון בן מנשה (פעיל 1100-1138 לספירה) בנוגע לביצוע צוואה. בראשם, 'כל הזהב הירוש (עין) והכסף (וריק).' ואז מוזכר מחפוז אלאקריטישי (הכרתי). בעמודה השמאלית, מפרט הוצאות הלוויה וכל שבעת ימי האבל.","tags_he":["מסמך משפטי","יהודית-ערבית","צוואה","זהב","כסף"],"prev":"33866","next":"33868","pos":30510,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1100–1138",
+  "date_inferred": "1100–1138",
+  "date_original": "",
+  "date_rationale": "Paleography",
+  "date_standard": "",
+  "description": "Verso: Legal notes in the hand of Ḥalfon b. Menashshe (fl. 1100–1138 CE) concerning the execution of a will. Headed, \"all of the inherited gold (ʿayn) and silver (wariq).\" Then mentions Maḥfuẓ al-Iqrīṭīshī (the Cretan), who may be identical with Shemarya al-Iqrīṭīshī from JRL SERIES B 4804 (PGPID 28716). In the left column, specifies the expenses for the funeral and throughout the seven days of mourning (7 + 1/2 + 1/4 dinars). There may be a join waiting to be found.",
+  "description_he": "בצד השני: רשימות משפטיות בכתב ידו של חלפון בן מנשה (פעיל 1100–1138 לסה\"נ) הנוגעות לביצועה של צוואה. בראש הרשימה נכתב \"כל הזהב (עין) והכסף (ורק) שהורישו\". בהמשך מוזכר מחפוז' אלאקריטישי (הכרתי), שאולי ניתן לזהותו עם שמריה אלאקריטישי המופיע במסמך אחר. בטור השמאלי מפורטות הוצאות הלוויה וההוצאות לאורך שבעת ימי האבל (7 + 1/2 + 1/4 דינרים). ייתכן שקיים צירוף (join) של הקטע עם קטע נוסף שטרם נמצא.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "33867",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "33868",
+  "origin": "",
+  "pos": 30510,
+  "prev": "33866",
+  "princeton_url": "https://geniza.princeton.edu/documents/33867/",
+  "region": "",
+  "shelfmark": "T-S NS 99.70",
+  "tags": [
+    "account"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "צוואה",
+    "זהב",
+    "כסף"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

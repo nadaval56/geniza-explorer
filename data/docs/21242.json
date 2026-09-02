@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Inventory of the items from a dead man's estate that are in Alexandria, mainly books (two pages) and various household items (last page). In Judaeo-Arabic and Greek/Coptic numerals, with some Arabic script. A selection of the books: the Torah; the Tuffāḥa on Leviticus; commentary (tafsīr) on Tehillim (this entry crossed out); Shemuel b. Ḥofni's treatise on partnerships (al-Sharikāt); Saadya's translation (sharḥ) of the Torah; many more sacred books; and what may be a composition on love (Alfāẓ ʿalā l-Ulfa). AA. ASE.",
-  "description_he": "מלאי פריטים מעיזבון נפטר באלכסנדריה, בעיקר ספרים (שני עמודים) ופריטי בית (עמוד אחרון). ביהודית-ערבית ובמספרים יווניים/קופטיים. בין הספרים: תורה; תפוחה על ויקרא; פירוש על תהלים; חיבור שמואל בן חופני על שותפויות; תרגום רס'ג על התורה ועוד.",
+  "description_he": "רשימת מצאי של פריטים מעיזבונו של אדם שנפטר, הנמצאים באלכסנדריה. עיקר הרשימה מוקדש לספרים (שני עמודים), והעמוד האחרון מפרט כלי בית שונים. המסמך כתוב ביהודית-ערבית ובספרות יווניות/קופטיות, עם מקצת כתב ערבי. בין הספרים המופיעים ברשימה: ספר התורה; ה\"תפאחה\" על ויקרא; פירוש (תפסיר) על תהילים (רשומה זו נמחקה בקו); חיבורו של רב שמואל בן חפני על דיני שותפויות (אלשרכאת); תרגום (שרח) רב סעדיה גאון לתורה; ספרי קודש נוספים רבים; ויתכן שגם חיבור על אהבה (אלפאט' עלא אלאלפה).",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00051-00075"
@@ -41,7 +41,7 @@
     "יהודית-ערבית",
     "ישיבה וגאונות",
     "אלכסנדריה",
-    "סעדיה גאון"
+    "רב סעדיה גאון"
   ],
   "total": 35937,
   "type_en": "List or table",

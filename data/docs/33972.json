@@ -1,1 +1,42 @@
-{"id":"33972","shelfmark":"BL OR 10578C.49","multifragment":"","type_en":"Literary text","type_he":"טקסט ספרותי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"verso","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"הספרייה הבריטית","library_raw":"BL","collection":"BL","description":"Verso: Literary. A Judaeo-Arabic transcription of an Arabic poem, telling the story of the falcon (bāz) who caught the songbird (ʿuṣfūr) but let it go after it begged for mercy. Goitein suggests that a preacher wished to use the story in a sermon. It is an approximate equivalent of an Arabic poem that can be found in literary anthologies. According to al-Abshīhī in Al-Mustaṭraf Fī Kull Fann Mustaẓraf, a certain Naṣr b. Manīʿ who had been sentenced to death recited this poem before the caliph. ASE\n( زعموا بأن الصقر صادف مرة ... عصفور بر ساقه التقدير )\n( فتكلم العصفور تحت جناحه ... والصقر منقض عليه يطير )\n( إني لمثلك لا أتمم لقمة ... ولئن شويت فإنني لحقير )\n( فتهاون الصقر المدل بصيده ... كرما وأفلت ذلك العصفور )","tags":["judaeo-arabic poetry"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/33972/","mentioned":"","description_he":"גב: ספרותי. תעתיק בערבית-יהודית של שיר ערבי, המספר את סיפור הנץ (באז) שתפס את הצפרדע (עוצפור) אך שחרר אותה לאחר שהתחננה לרחמים. גויטיין מציע שדרשן רצה להשתמש בסיפור בדרשה. לפי אל-אבשיהי ב'אל-מוסטטרף', נסר מסוים בן מניע שנגזר עליו מוות קרא שיר זה לפני הח'ליף.","tags_he":["יהודית-ערבית","שירה"],"prev":"33970","next":"33974","pos":30556,"total":35937}
+{
+  "collection": "BL",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Verso: Literary. A Judaeo-Arabic transcription of an Arabic poem, telling the story of the falcon (bāz) who caught the songbird (ʿuṣfūr) but let it go after it begged for mercy. Goitein suggests that a preacher wished to use the story in a sermon. It is an approximate equivalent of an Arabic poem that can be found in literary anthologies. According to al-Abshīhī in Al-Mustaṭraf Fī Kull Fann Mustaẓraf, a certain Naṣr b. Manīʿ who had been sentenced to death recited this poem before the caliph. ASE\n( زعموا بأن الصقر صادف مرة ... عصفور بر ساقه التقدير )\n( فتكلم العصفور تحت جناحه ... والصقر منقض عليه يطير )\n( إني لمثلك لا أتمم لقمة ... ولئن شويت فإنني لحقير )\n( فتهاون الصقر المدل بصيده ... كرما وأفلت ذلك العصفور )",
+  "description_he": "בצד האחורי (verso): טקסט ספרותי. תעתיק בערבית-יהודית של שיר ערבי המספר את סיפורו של הבז (בָּאז) שצד את הציפור המזמרת (עֻצְפוּר), אך שחרר אותה לאחר שהתחננה לרחמים. גויטיין מציע שדרשן ביקש להשתמש בסיפור זה בדרשתו. השיר הוא מקבילה משוערת לשיר ערבי המופיע באנתולוגיות ספרותיות. לפי אל־אבְּשִיהִי בחיבורו \"אל־מֻסְתַטְרַף פי כֻּלִּ פַן מֻסְתַטְ׳רַף\", אדם בשם נַצְר בן מַנִיע, שנגזר עליו עונש מוות, דקלם שיר זה בפני הח'ליפה.\n\nנוסח השיר (בארבעה בתים):\n\"זָעַמוּ בִּאַןַ אלצַקְר צַאדַף מַרַּה ... עֻצְפוּר בַּר סַאקַהֻ אלתַקְדִיר\"\n\"פַתַכַּלַם אלעֻצְפוּר תַחְתַ גַ'נַאחִהִ ... וַאלצַקְר מֻנְקַץ עַלַיְהִ יַטִיר\"\n\"אִנִּי לְמִתְ'לִכַּ לַא אֻתַמִּם לֻקְמַה ... וַלַאִן שֻוִיתֻ פַאִנַּנִי לַחַקִיר\"\n\"פַתַהַאוַן אלצַקְר אלמֻדִלّ בִּצַיְדִהִ ... כַּרַמַן וַאַפְלַתַ ד'אלִכַּ אלעֻצְפוּר\"\n\n(תרגום חופשי של תוכן השיר: סיפרו שהבז נתקל פעם אחת בציפור תמימה שגזירת הגורל הביאה אליו; הציפור דיברה מתחת לכנפו בעוד הבז ניחת עליה במעופו ואמרה: עבור שכמותך אינני אפילו פת לחם שלמה, ואם אִיצָלֶה, הרי שאני זעירה ופחותה; אז הקל הבז המתפאר בציִדו ראש בטרפו, ומתוך נדיבות שחרר את אותה ציפור.)",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "33972",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "הספרייה הבריטית",
+  "library_raw": "BL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "33974",
+  "origin": "",
+  "pos": 30556,
+  "prev": "33970",
+  "princeton_url": "https://geniza.princeton.edu/documents/33972/",
+  "region": "verso",
+  "shelfmark": "BL OR 10578C.49",
+  "tags": [
+    "judaeo-arabic poetry"
+  ],
+  "tags_he": [
+    "יהודית-ערבית",
+    "שירה"
+  ],
+  "total": 35937,
+  "type_en": "Literary text",
+  "type_he": "טקסט ספרותי"
+}

@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Letter from Shelomo b. Yehuda, Ramla, to Efrayim b. Shemarya (=Abū Kathīr Efrāyim b. Maḥfūẓ), Fustat. Dating: 1040 CE (after Kislev) per Gil and ca. 1025-1051 CE based on the years when Shelomo b. Yehuda served as Gaʾon. It is about a father who is constantly \"complaining\" (קובל בכל עת) to Shelomo b. Yehuda about his daughter, an aguna, who is constantly \"screaming\" (צועקת בכל עת) to be released from her condition. See Zinger's dissertation, pp. 319, 322.",
-  "description_he": "מכתב משלמה בן יהודה, רמלה, לאפרים בן שמריה, פוסטאט, 1040. על אב שמתלונן בלי הפסקה על בתו עגונה.",
+  "description_he": "מכתב מרב שלמה בן יהודה מרמלה אל רבי אפרים בן שמריה (=אבו כת'יר אפרים בן מחפוט') בפוסטאט. התיארוך: שנת 1040 לספירה (לאחר חודש כסלו) לפי גיל, ובאופן רחב יותר בין השנים 1025–1051 לספירה לערך, בהתבסס על תקופת כהונתו של רב שלמה בן יהודה כגאון. המכתב עוסק באב המתלונן בלי הרף (\"קובל בכל עת\") בפני רב שלמה בן יהודה על בתו, אישה עגונה, אשר זועקת בלי הרף (\"צועקת בכל עת\") שתשוחרר ממצבה.",
   "destination": "Fustat",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-MOSSERI-IA-00004"
@@ -42,7 +42,7 @@
     "ישיבה וגאונות",
     "פוסטאט",
     "רמלה",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Letter",

@@ -1,1 +1,48 @@
-{"id":"29029","shelfmark":"T-S Ar.34.90","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1013-06-03","date_original":"21 Dhū l-Qaʿda 403","date_standard":"1013-06-03","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Verso: Receipt issued to Abū l-Ḥasan b. Wahb for his ḍamān on dyeing in Madīnat al-Fayyūm. Dated: 21 Dhū l-Qaʿda 403 (Khan reads 26 Dhū l-Qaʿda 403). Measurements: 8.7 × 8.5 cm. Written by the jahbadh Mīkhāʾīl b. ʿAbd al-Masīḥ. Amount of payment: one-half, one-third, and one-eighth dīnār and two ḥabbas (Khan reads two, one-half, one-third and one-eighth). Other texts on the same support: The recto contains part of a letter concerning ships, a commercial partnership (ṣuḥba), and a qāḍī. It was written before the verso.","tags":["daman"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00034-00090"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00034-00090"],"princeton_url":"https://geniza.princeton.edu/documents/29029/","mentioned":"Madīnat al-Fayyūm","description_he":"גב: קבלת מס לאבו אל-חסן ב' והב על ערבותו לצביעה במדינת אל-פיום. מתוארכת: 21 בד'ו אל-קעדה 403. נכתבה על ידי הג'הבד' מיח'איל ב' עבד אל-מסיח. הפנים מכילים חלק ממכתב הנוגע לספינות, שותפות מסחרית (צוחבה) וקאצ'י. נכתב לפני הגב.","tags_he":["מסמך מדינה","ערבית","מסחר","ספינה"],"prev":"29028","next":"29030","pos":16515,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "1013-06-03",
+  "date_inferred": "",
+  "date_original": "21 Dhū l-Qaʿda 403",
+  "date_rationale": "",
+  "date_standard": "1013-06-03",
+  "description": "Verso: Receipt issued to Abū l-Ḥasan b. Wahb for his ḍamān on dyeing in Madīnat al-Fayyūm. Dated: 21 Dhū l-Qaʿda 403 (Khan reads 26 Dhū l-Qaʿda 403). Measurements: 8.7 × 8.5 cm. Written by the jahbadh Mīkhāʾīl b. ʿAbd al-Masīḥ. Amount of payment: one-half, one-third, and one-eighth dīnār and two ḥabbas (Khan reads two, one-half, one-third and one-eighth). Other texts on the same support: The recto contains part of a letter concerning ships, a commercial partnership (ṣuḥba), and a qāḍī. It was written before the verso.",
+  "description_he": "ורסו: שובר שהונפק לאבו אל-חסן בן והב על הצ'מאן שלו לצביעה במדינת אל-פיום. מתוארך: 21 בד'ו אל-קעדה 403 (ח'אן קורא 26 בד'ו אל-קעדה 403). מידות: 8.7 × 8.5 ס\"מ. נכתב בידי הג'הבד' (פקיד מטבעות וכספים) מיכאיל בן עבד אל-מסיח. סכום התשלום: חצי, שליש ושמינית דינר ושתי חבּות (ח'אן קורא: שתיים, חצי, שליש ושמינית). טקסטים נוספים על אותו עותק: ברקטו מופיע חלק ממכתב העוסק בספינות, בשותפות מסחרית (צֻחבּה) ובקאדי. הוא נכתב לפני הוורסו.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00034-00090"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "29029",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00034-00090"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Madīnat al-Fayyūm",
+  "multifragment": "",
+  "next": "29030",
+  "origin": "",
+  "pos": 16515,
+  "prev": "29028",
+  "princeton_url": "https://geniza.princeton.edu/documents/29029/",
+  "region": "",
+  "shelfmark": "T-S Ar.34.90",
+  "tags": [
+    "daman"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "מסחר",
+    "ספינה"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

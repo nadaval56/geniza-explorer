@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Legal query addressed to Avraham Maimonides. Concerning a certain Kohen who is seeking a restraining order against his divorcee and to prohibit her from entering the alley where he lives, because he is scared of her and her witchcraft (כישוף). She keeps visiting her female friends who live in the same alley as he. (Information in part from Goitein's index cards.) Avraham Maimonides served as Rayyis al-Yahūd between 1205–1237 CE and also with the title Nagid after 1213 CE. ASE",
-  "description_he": "שאלה משפטית לאברהם מיימוניד. עניין כהן המבקש צו מניעה נגד גרושתו ואיסור כניסה לסמטה שגר בה — הוא ירא ממנה ומכישופיה. היא ממשיכה לבקר חברות הגרות באותה סמטה.",
+  "description_he": "שאלה הלכתית המופנית אל רבי אברהם בן הרמב\"ם, בנוגע לכהן מסוים המבקש צו הרחקה כנגד גרושתו ולאסור עליה להיכנס לסמטה שבה הוא מתגורר, מכיוון שהוא חושש ממנה ומכישוף שהיא עלולה לעשות לו. הגרושה ממשיכה לבקר את חברותיה המתגוררות באותה סמטה שבה הוא גר. (חלק מהמידע מתבסס על כרטיסיות הקטלוג של גויטיין.) רבי אברהם בן הרמב\"ם שימש כראיס אל-יהוד (ראש היהודים) בין השנים 1205–1237 לסה\"נ, ונשא גם את התואר נגיד החל משנת 1213 לסה\"נ.",
   "destination": "",
   "fragment_urls": [
     "https://genizah.bodleian.ox.ac.uk/catalog/volume_162#MS_Heb_e_98-part48"
@@ -39,7 +39,8 @@
   "tags_he": [
     "מסמך משפטי",
     "מאגיה",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

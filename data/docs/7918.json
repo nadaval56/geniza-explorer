@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter from Yosef b. Gershon (a French scholar appointed by the Nagid Avraham Maimonides to be one of the three judges of the Jewish community in Alexandria), probably written to the Nagid. In Hebrew. Complaining about one of his fellow judges, whose name is not preserved, and seeking confirmation of his position from the local non-Jewish authorities. Also mentions the third judge, Eliyya, with whom he is pleased, and Ṭahīr, an elder of the community. (Information from CUDL; see also Goitein's index card.)",
-  "description_he": "מכתב מיוסף ב. גרשון (חוקר צרפתי שמונה על ידי הנגיד אברהם מימוניד לשמש כאחד משלושת שופטי הקהילה היהודית באלכסנדריה). בעברית. מתלונן על עמיתו ומבקש אישור מרשויות לא-יהודיות",
+  "description_he": "מכתב מאת יוסף בן גרשון, תלמיד חכם ממוצא צרפתי שמונה על ידי הנגיד רבי אברהם בן הרמב\"ם לכהן כאחד משלושת דייני הקהילה היהודית באלכסנדריה. המכתב כתוב בעברית ומופנה ככל הנראה אל הנגיד עצמו. הכותב מתלונן על אחד מחבריו לבית הדין, ששמו לא השתמר, ומבקש לקבל אישור רשמי לתפקידו מן השלטונות המקומיים הלא־יהודיים. כן מוזכר במכתב הדיין השלישי, אליה, שממנו שבע רצון הכותב, וכן טאהר, מזקני הקהילה.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00010-J-00024-00008"
@@ -39,7 +39,8 @@
     "עברית",
     "אלכסנדריה",
     "דיין",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

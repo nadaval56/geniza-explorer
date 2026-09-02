@@ -1,1 +1,44 @@
-{"id":"35696","shelfmark":"T-S K6.195","multifragment":"","type_en":"State document","type_he":"מסמך ממלכתי","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Three words of a decree probably: fa-lammā intahā ilayhi. Reused for copious jottings in Arabic script and Hebrew script, including elaborate designs with micrography, including a wheel with spokes (the text in the wheel is also found in T-S H5.95 according to Maagarim: במוסף בהוסיפי תחן תמור נתח גם כי בער אנכי ולא כמפותח.... One of the jottings says \"Yedutun ha-Levi\" (a cantor active in Fustat 1190s–1230s), but this does not appear to be his handwriting.","tags":["Yedutun ha-Levi, micrography"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/35696/","mentioned":"","description_he":"שלוש מילים מגזרה כנראה: 'פלמא אנתהא אלייהי'. שומש מחדש לרישומים רבים בכתב ערבי ועברי, כולל עיצובים מפורטים עם מיקרוגרפיה, כולל גלגל עם חישורים. אחד הרישומים אומר 'ידותון הלוי' (חזן פעיל בפוסטאט בשנות 1190-1230).","tags_he":["מסמך מדינה","ערבית","פוסטאט","חזן"],"prev":"35695","next":"35697","pos":31585,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Three words of a decree probably: fa-lammā intahā ilayhi. Reused for copious jottings in Arabic script and Hebrew script, including elaborate designs with micrography, including a wheel with spokes (the text in the wheel is also found in T-S H5.95 according to Maagarim: במוסף בהוסיפי תחן תמור נתח גם כי בער אנכי ולא כמפותח.... One of the jottings says \"Yedutun ha-Levi\" (a cantor active in Fustat 1190s–1230s), but this does not appear to be his handwriting.",
+  "description_he": "שלוש מילים משריד של פקודה שלטונית, ככל הנראה: \"פלמّא אנתהא אליה\". הדף מוחזר לשימוש עבור שרבוטים רבים בכתב ערבי ובכתב עברי, ובכלל זה עיטורים מורכבים במיקרוגרפיה, ובהם גלגל עם חישורים (הטקסט שבתוך הגלגל מופיע גם בשריד נוסף, לפי מאגרים: \"במוסף בהוסיפי תחן תמור נתח גם כי בער אנכי ולא כמפותח...\"). באחד השרבוטים מוזכר השם \"ידותון הלוי\" (חזן שפעל בפוסטאט בין שנות ה-90 של המאה ה-12 לשנות ה-30 של המאה ה-13), אך אין הדבר נראה כתב ידו שלו.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "35696",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "35697",
+  "origin": "",
+  "pos": 31585,
+  "prev": "35695",
+  "princeton_url": "https://geniza.princeton.edu/documents/35696/",
+  "region": "",
+  "shelfmark": "T-S K6.195",
+  "tags": [
+    "Yedutun ha-Levi, micrography"
+  ],
+  "tags_he": [
+    "מסמך מדינה",
+    "ערבית",
+    "פוסטאט",
+    "חזן"
+  ],
+  "total": 35937,
+  "type_en": "State document",
+  "type_he": "מסמך ממלכתי"
+}

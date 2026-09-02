@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Fragment from a letter in Judaeo-Arabic. A reference is made to רבינו המעוז המגדול (our Rabbi, the Great Fortress), a title usually reserved for Maimonides or his son. Mentions: \"I have not received any response from our Rabbi, the Great Fortress. If he is still owed anything by my son, let me know\" (ומא גא מן רבינו המעוז המגדול גואב אן כאן בקית לה שי קבל אבני יערפני). The sender asks for news about the capitation taxes (al-jawālī). Refers to an amīr. There are a few words in Arabic script on verso (على الحكيم . . . على معارضته . . . ). Potentially the same hand (and/or indirect joins): T-S NS 292.56 (PGPID 24738), T-S 13J7.24 (PGPID 1197), T-S AS 159.236 (PGPID 22445). AA/ASE",
-  "description_he": "שבר ממכתב ביהודית-ערבית. מוזכר 'רבינו המעוז המגדול', תואר השמור בדרך כלל לרמב\"ם או לבנו. '...ולא קיבלתי כל תגובה מרבינו המעוז המגדול. אם עדיין חייב לו בני משהו, הודיעני.' השולח מבקש חדשות על מס הגולגולת. מתייחס לאמיר.",
+  "description_he": "קטע ממכתב בערבית-יהודית. מופיעה בו התייחסות ל\"רבינו המעוז המגדול\" — תואר שיוחד בדרך כלל לרמב\"ם או לבנו. בין היתר נכתב: \"ומא גא מן רבינו המעוז המגדול גואב אן כאן בקית לה שי קבל אבני יערפני\" — כלומר, לא התקבלה כל תשובה מרבינו המעוז המגדול, ואם עדיין חייב לו בנו של השולח דבר־מה, מבקש השולח שיודיעו לו. השולח מבקש גם חדשות בנוגע למס הגולגולת (אלג'ואלי), ומזכיר אמיר. בצד האחורי מופיעות מספר מילים בכתב ערבי (على الحكيم . . . على معارضته . . .). ייתכן שמדובר באותו כותב (או בצירופים עקיפים) של מספר קטעים נוספים.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -33,7 +33,7 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
-    "מיימוניד"
+    "רמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

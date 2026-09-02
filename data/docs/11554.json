@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "1228/1229",
   "description": "Recto: Two fragmentary legal records or drafts, perhaps from a court notebook. The lower one refers to Abū l-Maḥāsin [...] b. Abū l-Riḍā [...] and the purchase of a shop with all its equipment and scales for a sum of 46[.]. Verso: Draft of a the beginning of a legal document. In a different hand. Dated: 1540 Seleucid = 1228/29 CE, under the authority of Avraham Maimonides. One of the parties is Shelomo ha-Kohen.",
-  "description_he": "פנים: שתי רשומות משפטיות קטועות, ייתכן מפנקס בית דין. התחתונה: אבו אל-מחאסן [...] בן אבו אל-ריד'א ורכישת חנות עם ציודה ומאזניה תמורת 46[...]. גב: טיוטת ראש מסמך משפטי בכתב יד שונה. תאריך: 1540 לשטרות = 1228/29 לספירה, בסמכות אברהם מימוניד. אחד הצדדים: שלמה הכהן.",
+  "description_he": "פנים: שתי רשומות משפטיות קטועות, ייתכן מפנקס בית דין. התחתונה: אבו אל-מחאסן [...] בן אבו אל-ריד'א ורכישת חנות עם ציודה ומאזניה תמורת 46[...]. גב: טיוטת ראש מסמך משפטי בכתב יד שונה. תאריך: 1540 לשטרות = 1228/29 לספירה, בסמכות רבי אברהם בן הרמב\"ם. אחד הצדדים: שלמה הכהן.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -35,7 +35,9 @@
   "tags_he": [
     "מסמך משפטי",
     "יהודית-ערבית",
-    "טיוטה"
+    "טיוטה",
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Legal document",

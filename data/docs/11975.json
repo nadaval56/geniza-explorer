@@ -1,1 +1,42 @@
-{"id":"11975","shelfmark":"ENA 2804.20","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1025–1051","date_original":"","date_standard":"","date_inferred":"1025–1051","date_rationale":"Person mentioned","library":"בית המדרש לרבנים","library_raw":"JTS","collection":"JTS","description":"Letter from Shelomo b. Yehuda and nine other Jerusalemites confirming the receipt of ten dinars from Fustat. Dating: approximately 1030 (per Gil) and ca. 1025–1051 CE based on the years when Shelomo b. Yehuda served as Gaʾon. The letter bears the signature of every sender.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://figgy.princeton.edu/concern/scanned_resources/5c9ae127-4058-4729-8959-c5633366ebff/manifest"],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/11975/","mentioned":"","description_he":"מכתב משלמה בן יהודה ועשרה ירושלמים אחרים המאשרים קבלת 10 דינרים מפסטאט. תאריך: כ-1030 (גיל), כ-1025-1051 לפי שנות כהונת שלמה בן יהודה כגאון. חתום בידי כל השולחים.","tags_he":["מכתב","ישיבה וגאונות"],"prev":"11974","next":"11976","pos":8026,"total":35937}
+{
+  "collection": "JTS",
+  "date": "1025–1051",
+  "date_inferred": "1025–1051",
+  "date_original": "",
+  "date_rationale": "Person mentioned",
+  "date_standard": "",
+  "description": "Letter from Shelomo b. Yehuda and nine other Jerusalemites confirming the receipt of ten dinars from Fustat. Dating: approximately 1030 (per Gil) and ca. 1025–1051 CE based on the years when Shelomo b. Yehuda served as Gaʾon. The letter bears the signature of every sender.",
+  "description_he": "מכתב מרב שלמה בן יהודה ועשרה ירושלמים אחרים המאשרים קבלת 10 דינרים מפסטאט. תאריך: כ-1030 (גיל), כ-1025-1051 לפי שנות כהונת רב שלמה בן יהודה כגאון. חתום בידי כל השולחים.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "11975",
+  "iiif_urls": [
+    "https://figgy.princeton.edu/concern/scanned_resources/5c9ae127-4058-4729-8959-c5633366ebff/manifest"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "בית המדרש לרבנים",
+  "library_raw": "JTS",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "11976",
+  "origin": "",
+  "pos": 8026,
+  "prev": "11974",
+  "princeton_url": "https://geniza.princeton.edu/documents/11975/",
+  "region": "",
+  "shelfmark": "ENA 2804.20",
+  "tags": [],
+  "tags_he": [
+    "מכתב",
+    "ישיבה וגאונות"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

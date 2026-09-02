@@ -1,1 +1,43 @@
-{"id":"18051","shelfmark":"T-S AS 161.37","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"al-Ṣāfiyya","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Recto, with the address on verso: letter in Judaeo-Arabic from an unidentified sender (his name might appear in the address) to Abū l-Riḍā Nissim b. Shemuel. After a prolonged and deferential introduction, the substance of the message begins five lines from the bottom. As he had been instructed, the sender went to Abū l-Karam and paid him a sum of dinars. Abū Saʿīd brought a letter from 'al-mukhtār.' Mentions a rubāʿī (quarter-dinar coin).The margin contains other details about other transactions, mentioning Khalaf. ُ The sender reports that he is living in al-Ṣāfiyya (in the Delta, on the Rosetta branch of the Nile). Much of the rest is too faded to read, but might become legible with multispectral imaging. \n\nVerso: Letter in Arabic script addressed to al-Qāḍī al-Ajall Abū l-Ḥasan ʿAlī b. al-Qāḍī al-Muwaffaq. The whole page is preserved but the document is too faded to read much. (Information in part from CUDL.) ASE","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00161-00037"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00161-00037"],"princeton_url":"https://geniza.princeton.edu/documents/18051/","mentioned":"","description_he":"רקטו עם כתובת בגב: מכתב ביהודית-ערבית מנמען לא מזוהה לאבו אל-ריד'א נסים בן שמואל. לאחר הקדמה ארוכה: השולח שילם לאבו אל-כרם דינרים. אבו סעיד הביא מכתב מ'אל-מוח'תאר'. מוזכרים רובאעי (מטבע רבע דינר) וח'לף. השולח גר באל-צאפיה. ורסו: מכתב ערבי לקאד'י אל-אג'ל אבו אל-חסן עלי בן אל-קאד'י אל-מווּפּק.","tags_he":["מכתב"],"prev":"18050","next":"18052","pos":13357,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Recto, with the address on verso: letter in Judaeo-Arabic from an unidentified sender (his name might appear in the address) to Abū l-Riḍā Nissim b. Shemuel. After a prolonged and deferential introduction, the substance of the message begins five lines from the bottom. As he had been instructed, the sender went to Abū l-Karam and paid him a sum of dinars. Abū Saʿīd brought a letter from 'al-mukhtār.' Mentions a rubāʿī (quarter-dinar coin).The margin contains other details about other transactions, mentioning Khalaf. ُ The sender reports that he is living in al-Ṣāfiyya (in the Delta, on the Rosetta branch of the Nile). Much of the rest is too faded to read, but might become legible with multispectral imaging. \n\nVerso: Letter in Arabic script addressed to al-Qāḍī al-Ajall Abū l-Ḥasan ʿAlī b. al-Qāḍī al-Muwaffaq. The whole page is preserved but the document is too faded to read much. (Information in part from CUDL.) ASE",
+  "description_he": "מכתב בערבית-יהודית בצד הרקטו, עם הכתובת בוורסו, מאת שולח לא מזוהה (ייתכן ששמו מופיע בכתובת) אל אבו אלרצ'א נסים בן שמואל. לאחר הקדמה ארוכה ומלאת הצטדדויות וכבוד, מתחיל גוף המסר חמש שורות מהתחתית. בהתאם להוראות שקיבל, הלך השולח אל אבו אלכרם ושילם לו סכום של דינרים. אבו סעיד הביא מכתב מ\"אלמח'תאר\". מוזכר רֻבָּאעִי (מטבע של רבע דינר). בשוליים מפורטים פרטים נוספים על עסקאות אחרות, ומוזכר ח'לף. השולח מדווח כי הוא מתגורר באלצאפיה (בדלתא, על שלוחת רשיד של הנילוס). חלק ניכר מן הנותר דהוי מכדי שניתן לקרוא בו, אך אולי יתבהר באמצעות צילום רב-ספקטרלי.\n\nבוורסו: מכתב בכתב ערבי הממוען אל אלקאצ'י אלאג'ל אבו אלחסן עלי בן אלקאצ'י אלמופק. העמוד כולו שמור, אך המסמך דהוי מכדי שניתן יהיה לקרוא בו הרבה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00161-00037"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "18051",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00161-00037"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "18052",
+  "origin": "al-Ṣāfiyya",
+  "pos": 13357,
+  "prev": "18050",
+  "princeton_url": "https://geniza.princeton.edu/documents/18051/",
+  "region": "",
+  "shelfmark": "T-S AS 161.37",
+  "tags": [],
+  "tags_he": [
+    "מכתב"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

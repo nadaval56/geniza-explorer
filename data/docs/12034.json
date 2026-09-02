@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter in Judaeo-Arabic - from the end of the 12th or first half of 13th century. Mentions \"Sayyidnā may he live forever,\" which may be a reference to Avraham Maimonides. Concerning a debt of 100 dirhams to be collected from Muʿammar. Sayyidnā has said that Muʿammar has great 'manliness' (muruwwa). A small note at the bottom reveals that a certain Ḥalfon acted as scribe for the sender of the letter. On the back are crude writing of biblical passages.",
-  "description_he": "מכתב ביהודית-ערבית מסוף המאה ה-12 או מחצית ראשונה ה-13. מוזכר 'סידנא יחי לעולם', ייתכן רמז לאברהם מימוניד. עוסק בחוב 100 דירהם לגביה ממועמר. בתחתית: חלפון שימש סופר. גב: כתיבה גסה של פסוקי תנ\"ך.",
+  "description_he": "מכתב בערבית-יהודית מסוף המאה ה-12 או מהמחצית הראשונה של המאה ה-13. מוזכר בו \"סיידנא ירום הודו\" (\"Sayyidnā may he live forever\"), ייתכן שזהו אזכור של רבי אברהם בן הרמב\"ם. עניינו של המכתב הוא חוב בסך 100 דרהם שיש לגבות מאדם בשם מועמר (Muʿammar). סיידנא אמר שמועמר ניחן ב'גבריות' (מורווה, muruwwa) רבה. הערה קטנה בתחתית הדף חושפת כי אדם בשם חלפון שימש סופר ורשם את המכתב עבור השולח. על גב הדף מופיעים בכתב גס פסוקים מן המקרא.",
   "destination": "",
   "fragment_urls": [],
   "has_transcription": false,
@@ -37,7 +37,8 @@
     "יהודית-ערבית",
     "הודו",
     "סופר",
-    "מיימוניד"
+    "רמב\"ם",
+    "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,
   "type_en": "Letter",

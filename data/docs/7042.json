@@ -1,1 +1,41 @@
-{"id":"7042","shelfmark":"p. Heid. Hebr. 14","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Arabic, Judaeo-Arabic","lang_he":"Arabic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1086-04-18/1086-05-17","date_original":"Muḥarram 479","date_standard":"1086-04-18/1086-05-17","date_inferred":"","date_rationale":"","library":"Heidelberg","library_raw":"Heidelberg","collection":"Heidelberg","description":"Two statements in Arabic characters about small sums owed by Jaʿfar b. Rajāʾ al-Jawdarī to Mubārak b. Avraham (also the addressee of the letter at p. Heid. Hebr. 28 (PGPID 7041)). The statements are respectively dated Dhū l-Qaʿda 478 AH (February/March 1086 CE) and Muḥarram 479 AH (April/May 1086 CE). They are followed by eight entries in Judaeo-Arabic about other sums owed by Jaʿfar, mostly for clothes he purchased, and some sums due to him. NB: this fragment is also known as p. Heid. Hebr. 916 = p. Heid. Arab. 843 = P.Heid. Inv. Arab.843.","tags":["aodeh"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/7042/","mentioned":"","description_he":"שתי הצהרות בכתב ערבי על סכומים קטנים שג'עפר ב. רג'א אל-ג'ורדרי חייב למובארק ב. אברהים, מתוארכות לשנת 478-479 לספירה המוסלמית (1086 לספירה). בהמשך שמונה רשומות ביהודית-ערבית על סכומים נוספים","tags_he":["מסמך משפטי"],"prev":"7041","next":"7043","pos":21232,"total":35937}
+{
+  "collection": "Heidelberg",
+  "date": "1086-04-18/1086-05-17",
+  "date_inferred": "",
+  "date_original": "Muḥarram 479",
+  "date_rationale": "",
+  "date_standard": "1086-04-18/1086-05-17",
+  "description": "Two statements in Arabic characters about small sums owed by Jaʿfar b. Rajāʾ al-Jawdarī to Mubārak b. Avraham (also the addressee of the letter at p. Heid. Hebr. 28 (PGPID 7041)). The statements are respectively dated Dhū l-Qaʿda 478 AH (February/March 1086 CE) and Muḥarram 479 AH (April/May 1086 CE). They are followed by eight entries in Judaeo-Arabic about other sums owed by Jaʿfar, mostly for clothes he purchased, and some sums due to him. NB: this fragment is also known as p. Heid. Hebr. 916 = p. Heid. Arab. 843 = P.Heid. Inv. Arab.843.",
+  "description_he": "שני הצהרות בכתב ערבי על סכומים קטנים שחב ג'עפר בן רג'אא אלג'ודרי למבארכ בן אברהם (שגם אליו ממוענת האיגרת שב-PGPID 7041). ההצהרות מתוארכות בהתאמה לד'ו אלקעדה 478 להג'רה (פברואר/מרץ 1086) ולמוחרם 479 להג'רה (אפריל/מאי 1086). בעקבותיהן מופיעים שמונה רישומים בערבית-יהודית על סכומים נוספים שחב ג'עפר, רובם בגין בגדים שרכש, וכן כמה סכומים המגיעים לו.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "7042",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic, Judaeo-Arabic",
+  "lang_he": "Arabic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "Heidelberg",
+  "library_raw": "Heidelberg",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "7043",
+  "origin": "",
+  "pos": 21232,
+  "prev": "7041",
+  "princeton_url": "https://geniza.princeton.edu/documents/7042/",
+  "region": "",
+  "shelfmark": "p. Heid. Hebr. 14",
+  "tags": [
+    "aodeh"
+  ],
+  "tags_he": [
+    "מסמך משפטי"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

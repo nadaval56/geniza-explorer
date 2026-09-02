@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Recto: draft of a lengthy panegyric for Yehuda b. Menashshe he-Ḥasid, with his name in acrostic. The poet continues writing what may be a draft of a letter on verso, after which he starts to rework the first few lines of his poem a second time. \n\nVerso also contains a legal deed written by Efrayim b. Shemarya (who also signs), and signed by Yaʿīsh b. Avraham ha-Levi, Yeshuʿa b. Avraham ha-Kohen, Naḥum b. Yeshuʿa ha-Kohen, Avraham b. Mevasser, and the cantor Yefet b. David the cantor. Dating: ca. 1007–1055 CE, based on the years when Efrayim b. Shemarya was active. (Information from CUDL.)",
-  "description_he": "רקטו: טיוטה של פאנגיריק ארוך ליהודה בן מנשה החסיד, עם שמו באקרוסטיכון. המשורר ממשיך לכתוב מה שעשוי להיות טיוטת מכתב בורסו, ולאחר מכן הוא מתחיל לעבד שוב את השורות הראשונות של שירו. ורסו מכיל גם שטר משפטי שנכתב ונחתם על ידי אפרים בן שמריה, ונחתם על ידי מספר עדים. תיארוך: כ-1007-1055 לספירה.",
+  "description_he": "רקטו: טיוטה של פיוט שבח ארוך לכבודו של יהודה בן מנשה החסיד, ובו שמו של הנמען משובץ באקרוסטיכון. הפייטן ממשיך לכתוב בוורסו את מה שעשוי להיות טיוטה של מכתב, ולאחר מכן שב ומעבד מחדש את השורות הראשונות של הפיוט בנוסח שני.\n\nהוורסו מכיל גם שטר משפטי שנכתב בידי רבי אפרים בן שמריה (החותם עליו אף בעצמו), ועליו חתומים: יעיש בן אברהם הלוי, ישועה בן אברהם הכהן, נחום בן ישועה הכהן, אברהם בן מבשר, והחזן יפת בן דוד החזן. תיארוך: בערך 1007–1055 לספירה, על פי שנות פעילותו הידועות של רבי אפרים בן שמריה.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00025/1"
@@ -39,7 +39,7 @@
     "פיוט",
     "טיוטה",
     "חזן",
-    "אפרים בן שמריה"
+    "רבי אפרים בן שמריה"
   ],
   "total": 35937,
   "type_en": "Legal document",

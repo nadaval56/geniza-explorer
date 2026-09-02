@@ -1,1 +1,49 @@
-{"id":"1697","shelfmark":"T-S 12.792","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Alexandria","destination":"Fustat","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Nahray b. Nissim, Alexandria, to Abū Isḥāq Ibrāhīm (a.k.a. ʿIwāḍ) b. Ḥananel, Fustat. Abū l-Khayr became ill following ʿIwāḍ's departure, and his mother suffered greatly on his account. He then improved. Nahray himself developed an abscess on his left hip. He too recovered, but the remnants of the illness are still with him. He was not able to go about his work until the present moment. The rest of the letter deals with business matters. ASE.","tags":["Nahray B. Nissim, illness: skin, illness: remnants, Illness, illness letter 969-1517, trade"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00792"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00792/1"],"princeton_url":"https://geniza.princeton.edu/documents/1697/","mentioned":"","description_he":"מכתב מנהריי בן נסים, אלכסנדריה, לאבו יצחק אברהים (עואד') בן חנאנאל, פוסטאט. אבו אל-ח'יר חלה, לנהריי צמח מורסה בירך שמאל; שניהם החלימו. ענייני מסחר.","tags_he":["מכתב","יהודית-ערבית","מסחר","פוסטאט","אלכסנדריה"],"prev":"1696","next":"1698","pos":963,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Nahray b. Nissim, Alexandria, to Abū Isḥāq Ibrāhīm (a.k.a. ʿIwāḍ) b. Ḥananel, Fustat. Abū l-Khayr became ill following ʿIwāḍ's departure, and his mother suffered greatly on his account. He then improved. Nahray himself developed an abscess on his left hip. He too recovered, but the remnants of the illness are still with him. He was not able to go about his work until the present moment. The rest of the letter deals with business matters. ASE.",
+  "description_he": "מכתב מנהראי בן נסים באלכסנדריה אל אבו אסחאק אבראהים (המכונה גם עוץ') בן חננאל בפוסטאט. אבו אלח'יר חלה לאחר עזיבתו של עוץ', ואמו סבלה רבות בעטיו. לאחר מכן מצבו השתפר. נהראי עצמו פיתח מורסה בירכו השמאלית. אף הוא החלים, אך שרידי המחלה עודם נותרים בו, ועד הרגע הנוכחי לא היה מסוגל לעסוק בענייניו ולצאת לעבודתו. שאר המכתב עוסק בענייני מסחר.",
+  "destination": "Fustat",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00012-00792/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "1697",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00012-00792"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "1698",
+  "origin": "Alexandria",
+  "pos": 963,
+  "prev": "1696",
+  "princeton_url": "https://geniza.princeton.edu/documents/1697/",
+  "region": "",
+  "shelfmark": "T-S 12.792",
+  "tags": [
+    "Nahray B. Nissim, illness: skin, illness: remnants, Illness, illness letter 969-1517, trade"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "מסחר",
+    "פוסטאט",
+    "אלכסנדריה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}
