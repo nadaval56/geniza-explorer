@@ -1,1 +1,51 @@
-{"id":"8207","shelfmark":"T-S Ar.38.14","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Damascus","destination":"Aleppo","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from an unknown writer, in Damascus, to Abū l-Ḥasan, in Aleppo. In Arabic script. The writer reports that his brother Ismāʿīl arrived in Acre, and they traveled together to Damascus, where they spent the holidays in the house of Hilāl. If they hear good news from Aleppo, they will travel to Aleppo, but until now the news from Aleppo has been bad (lines 7 and 13), and they are thriving in Damascus. The distance between Damascus and Aleppo is 20 days' travel. Mentions Ibn Mufaḍḍal. The next three lines have to do with the honey that the writer had deposited with Abū l-Ḥasan. It is not clear what he wants. He indicates that he wants to collect either the honey or its price (fa-innī muṭālibuka bihi). He also writes that he intended for the addressee to hide it (an tastatira bihi), and if the addressee was unable to do so (wa-inna min ḥaythu an lā waqaʿa satruhu), the writer will not grant him a credit for it (mā aḥtasibu laka minhu). He urges the addressee to look after the boy until the writer and Hilāl can come and get him or until they can send somebody to get him. They have been delayed on account of \"the fear of the water\"—of the rainy season? Hilāl sends regards to his father and paternal aunt and her sons. A postscript was then added stating that the Rūmī (Byzantine) died. (Information from Ṣabīḥ ʿAodeh, \"Eleventh Century Arabic Letters of Jewish Merchants from the Cairo Geniza\" (PhD diss., Tel Aviv University, 1992.) ASE.","tags":["aodeh"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00038-00014"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00038-00014"],"princeton_url":"https://geniza.princeton.edu/documents/8207/","mentioned":"","description_he":"מכתב מאת כותב לא ידוע בדמשק אל אבו אלחסן בחלב. בכתב ערבי. הכותב מדווח שאחיו אסמאעיל הגיע לעכו, ומשם נסעו יחד לדמשק, שם שהו בחגים בביתו של הלאל. אם יגיעו אליהם חדשות טובות מחלב, הם יסעו לחלב, אך עד עתה החדשות מחלב היו רעות (שורות 7 ו-13), והם משגשגים בדמשק. המרחק בין דמשק לחלב הוא עשרים ימי מסע. מוזכר אבן מפצ'ל. שלוש השורות הבאות עוסקות בדבש שהכותב הפקיד אצל אבו אלחסן. לא ברור לחלוטין מה הוא רוצה. הוא מציין שהוא תובע ממנו את הדבש או את תמורתו (פאנני מטאלבך בה). הוא גם כותב שכוונתו הייתה שהנמען יסתיר אותו (אן תסתתר בה), ואם הנמען לא הצליח לעשות זאת (ואן מן חית' אן לא וקע סתרה), הכותב לא יזכה אותו על כך (מא אחתסב לך מנה). הוא מפציר בנמען לדאוג לנער עד שהכותב והלאל יוכלו לבוא לקחתו או עד שיוכלו לשלוח מישהו אחר להביאו. הם התעכבו בשל \"הפחד מן המים\" — אולי מעונת הגשמים? הלאל שולח דרישת שלום לאביו ולדודתו מצד אביו ולבניה. בהמשך נוספה תוספת המציינת שהרומי (הביזנטי) נפטר.","tags_he":["מכתב","ערבית","דמשק","חלב","עכו","ביזנטי","דבש"],"prev":"8206","next":"8209","pos":5447,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from an unknown writer, in Damascus, to Abū l-Ḥasan, in Aleppo. In Arabic script. The writer reports that his brother Ismāʿīl arrived in Acre, and they traveled together to Damascus, where they spent the holidays in the house of Hilāl. If they hear good news from Aleppo, they will travel to Aleppo, but until now the news from Aleppo has been bad (lines 7 and 13), and they are thriving in Damascus. The distance between Damascus and Aleppo is 20 days' travel. Mentions Ibn Mufaḍḍal. The next three lines have to do with the honey that the writer had deposited with Abū l-Ḥasan. It is not clear what he wants. He indicates that he wants to collect either the honey or its price (fa-innī muṭālibuka bihi). He also writes that he intended for the addressee to hide it (an tastatira bihi), and if the addressee was unable to do so (wa-inna min ḥaythu an lā waqaʿa satruhu), the writer will not grant him a credit for it (mā aḥtasibu laka minhu). He urges the addressee to look after the boy until the writer and Hilāl can come and get him or until they can send somebody to get him. They have been delayed on account of \"the fear of the water\"—of the rainy season? Hilāl sends regards to his father and paternal aunt and her sons. A postscript was then added stating that the Rūmī (Byzantine) died. (Information from Ṣabīḥ ʿAodeh, \"Eleventh Century Arabic Letters of Jewish Merchants from the Cairo Geniza\" (PhD diss., Tel Aviv University, 1992.) ASE.",
+  "description_he": "מכתב מכותב לא ידוע בדמשק אל אבו אלחסן בחלב, בכתב ערבי. הכותב מדווח כי אחיו אסמאעיל הגיע לעכו, ומשם נסעו יחדיו לדמשק, שם בילו את החגים בביתו של הלאל. אם ישמעו חדשות טובות מחלב, יסעו לשם, אך עד כה החדשות המגיעות מחלב רעות (שורות 7 ו-13), והם מצליחים ומשגשגים בדמשק. המרחק בין דמשק לחלב הוא עשרים ימי מסע. מוזכר אבן מפצ'ל. שלוש השורות הבאות עוסקות בדבש שהכותב הפקיד בידי אבו אלחסן. לא ברור בדיוק מה הוא רוצה: הוא מציין שהוא תובע ממנו אותו (פאנני מטאלבכ בה), כלומר שברצונו לגבות את הדבש או את שוויו. עוד הוא כותב שכוונתו הייתה שהנמען יסתיר אותו (אן תסתתר בה), ואם הנמען לא הצליח בכך (ואן מן חית' אן לא וקע סתרה), הכותב לא יזקוף לזכותו סכום עבורו (מא אחתסב לכ מנה). הוא מפציר בנמען לדאוג לנער עד שהוא והלאל יוכלו לבוא לקחתו, או עד שיוכלו לשלוח מישהו אחר לשם כך. הם התעכבו בשל \"החשש מן המים\" — אולי מעונת הגשמים? הלאל מוסר דרישת שלום לאביו ולדודתו מצד אביו ולבניה. בהמשך נוספה תוספת המודיעה כי הרומי (הביזנטי) מת. המידע מתבסס על עבודת הדוקטורט של צביח עאודה על מכתבי סוחרים יהודים מן המאה האחת-עשרה בגניזת קהיר.",
+  "destination": "Aleppo",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00038-00014"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8207",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00038-00014"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8209",
+  "origin": "Damascus",
+  "pos": 5447,
+  "prev": "8206",
+  "princeton_url": "https://geniza.princeton.edu/documents/8207/",
+  "region": "",
+  "shelfmark": "T-S Ar.38.14",
+  "tags": [
+    "aodeh"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "דמשק",
+    "חלב",
+    "עכו",
+    "ביזנטי",
+    "דבש"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

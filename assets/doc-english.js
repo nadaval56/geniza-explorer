@@ -14,6 +14,11 @@
  * is the same page for everyone — crawler included — so it is disclosure on
  * demand, not cloaking.
  *
+ * The file it fetches holds the English description and nothing else.
+ * data/docs/ has the full record and stays in the repository — prerender.py
+ * builds every page from it — but it is dropped from the Pages artifact, so
+ * the published site carries 11MB here instead of 57MB.
+ *
  * Without JavaScript the button simply does nothing beyond what the markup
  * says, and the "צפייה ב-Princeton Geniza Project" link on the page still
  * leads to the English text at its source.
@@ -59,7 +64,7 @@
     inFlight = true;
     message('טוען…');
 
-    fetch('../data/docs/' + encodeURIComponent(docId) + '.json', { cache: 'force-cache' })
+    fetch('../data/en/' + encodeURIComponent(docId) + '.json', { cache: 'force-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
         const text = typeof d?.description === 'string' ? d.description.replace(/\s+/g, ' ').trim() : '';

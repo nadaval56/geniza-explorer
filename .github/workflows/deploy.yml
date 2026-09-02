@@ -112,6 +112,24 @@ jobs:
           echo "lastmod of today:  $stale of $urls URLs"
           echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
 
+      # data/docs נחוץ לבנייה ולגיבוי המקומי, ואינו נחוץ לאתר: הדפדפן קורא
+      # רק את data/en. הוא נגרע מהארטיפקט בלבד ולא מהריפו — 57MB פחות
+      # בפריסה. אם הוא נשאר, כל רשומה מתפרסמת פעמיים.
+      - name: Drop the build-only data from the artifact
+        run: |
+          if [ ! -d data/en ]; then
+            echo "::error::data/en חסר — doc-english.js לא ימצא דבר"
+            exit 1
+          fi
+          rm -rf data/docs
+          python3 - <<'PY'
+          import pathlib
+          skip = (".git/", ".github/")
+          n = sum(p.stat().st_size for p in pathlib.Path(".").rglob("*")
+                  if p.is_file() and not str(p).startswith(skip))
+          print(f"published size: {n / 2**20:,.0f} MB of 1024 MB")
+          PY
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
