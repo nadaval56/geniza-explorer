@@ -1,1 +1,47 @@
-{"id":"608","shelfmark":"Bodl. MS heb. f 56/129","multifragment":"","type_en":"List or table","type_he":"רשימה או טבלה","lang_en":"","lang_he":"","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"בודליאן אוקספורד","library_raw":"Bodl.","collection":"Bodl.","description":"Report on a compound dedicated to the Qodesh ca. after 1127. A fragment of a report, or memorandum, about the compound known as Dar Naqa that figures in several documents of the qodesh. The history of the dedication of one quarter of this compound to the qodesh is briefly reviewed. It appears that it had been dedicated in the 11th century, for the purpose of charity for both the Rabbanite and Karaite needy. During a period of persecution and confiscation that occurred in the year 1127, a sum of money was kept by an official of the qodesh; in order to prevent its confiscation, the money was registered as having already been spent on the purchase of the half of that compound. The purpose of the memorandum is to justify that fictitious record, and probably also to make clear what part of Dar Naqa actually belonged to the qodesh. Gil connects this account with Bodl. MS heb. f 56/130 (PGPID 2500). (Information from Gil, Documents, pp. 246 #45)","tags":["qodesh, heqdesh, waqf, 12th c, account"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-129.json"],"fragment_urls":["https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part40"],"princeton_url":"https://geniza.princeton.edu/documents/608/","mentioned":"","description_he":"דוח על מתחם המוקדש לקודש, ככל הנראה לאחר שנת 1127. שריד של דוח או תזכיר על המתחם הידוע בשם דאר נאקה, המופיע בכמה מסמכים של הקודש. בתזכיר נסקרת בקצרה תולדות הקדשת רבע מן המתחם הזה לקודש. נראה כי המתחם הוקדש במאה ה-11, למטרות צדקה הן לנזקקים הרבניים והן לנזקקים הקראים. בתקופה של רדיפות והחרמות שהתרחשה בשנת 1127, סכום כסף הוחזק בידי אחד מפקידי הקודש; כדי למנוע את החרמתו, נרשם הכסף כאילו כבר הוצא לרכישת מחצית מאותו מתחם. מטרת התזכיר היא להצדיק את הרישום הפיקטיבי הזה, וכנראה גם להבהיר איזה חלק מדאר נאקה השתייך בפועל לקודש. גיל מקשר דיווח זה עם מסמך נוסף (PGPID 2500).","tags_he":["חשבונות","צדקה","הקדש"],"prev":"607","next":"609","pos":101,"total":35937}
+{
+  "collection": "Bodl.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Report on a compound dedicated to the Qodesh ca. after 1127. A fragment of a report, or memorandum, about the compound known as Dar Naqa that figures in several documents of the qodesh. The history of the dedication of one quarter of this compound to the qodesh is briefly reviewed. It appears that it had been dedicated in the 11th century, for the purpose of charity for both the Rabbanite and Karaite needy. During a period of persecution and confiscation that occurred in the year 1127, a sum of money was kept by an official of the qodesh; in order to prevent its confiscation, the money was registered as having already been spent on the purchase of the half of that compound. The purpose of the memorandum is to justify that fictitious record, and probably also to make clear what part of Dar Naqa actually belonged to the qodesh. Gil connects this account with Bodl. MS heb. f 56/130 (PGPID 2500). (Information from Gil, Documents, pp. 246 #45)",
+  "description_he": "דיווח על מתחם המוקדש להקדש, שנכתב ככל הנראה לאחר שנת 1127. לפנינו קטע מדיווח או תזכיר על המתחם המכונה \"דאר נאקה\", המופיע במספר תעודות של ההקדש. במסמך נסקרת בקצרה תולדות ההקדשה של רבע מן המתחם הזה לטובת ההקדש. נראה כי ההקדשה נעשתה עוד במאה האחת־עשרה, לצורך צדקה לנזקקים משתי הקהילות — הרבנים והקראים כאחד. בתקופה של רדיפות והחרמות שהתרחשה בשנת 1127, החזיק אחד מפקידי ההקדש בסכום כסף; כדי למנוע את החרמתו של הסכום, נרשם הכסף כאילו הוצא כבר לצורך רכישת מחציתו של אותו מתחם. מטרת התזכיר היא להצדיק את הרישום הפיקטיבי הזה, וככל הנראה גם להבהיר איזה חלק של דאר נאקה שייך בפועל להקדש. לפי גיל, יש לקשור דיווח זה עם מסמך נוסף מן הגניזה העוסק באותה פרשה.",
+  "destination": "",
+  "fragment_urls": [
+    "https://genizah.bodleian.ox.ac.uk/catalog/volume_206#MS_Heb_f_56-part40"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "608",
+  "iiif_urls": [
+    "https://princetongenizalab.github.io/iiif/bodleian/f/ms-heb-f-56-129.json"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "",
+  "lang_he": "",
+  "lang_note": "",
+  "library": "בודליאן אוקספורד",
+  "library_raw": "Bodl.",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "609",
+  "origin": "",
+  "pos": 101,
+  "prev": "607",
+  "princeton_url": "https://geniza.princeton.edu/documents/608/",
+  "region": "",
+  "shelfmark": "Bodl. MS heb. f 56/129",
+  "tags": [
+    "qodesh, heqdesh, waqf, 12th c, account"
+  ],
+  "tags_he": [
+    "חשבונות",
+    "צדקה",
+    "הקדש"
+  ],
+  "total": 35937,
+  "type_en": "List or table",
+  "type_he": "רשימה או טבלה"
+}

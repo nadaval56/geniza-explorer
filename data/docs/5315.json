@@ -6,7 +6,7 @@
   "date_rationale": "Person mentioned",
   "date_standard": "",
   "description": "Autograph order in the hand of Avraham Maimonides. Al-Makīn (=Abū l-Majd?) is to give 3 dirhams to the relative of the Andalusī rabbi (\"Toledan\" is crossed out) and 2 dirhams to the old Persian man. This was written three weeks prior to T-S K25.240.20, which is also for the relative of the Toledan rabbi (\"Toledan\" was not crossed out there).\n\nT-S K25.240 consists of small written orders, partly in Hebrew and partly in Arabic script, for monthly payments, made out of the rent-revenue from the pious foundation (waqf) 'Compound of the Poor' or from the pious foundation made by the physician al-Muhadhdhab. All dated orders are from spring and summer, 1218. (Information from Mediterranean Society, II, pp. 420-421, App. A 48-92; pp. 449-450, App. B 39b [dated 1210-1225]; Cohen, Poverty and Charity in the Jewish Community of Medieval Egypt, pp. 218-220)",
-  "description_he": "הוראת תשלום בכתב ידו של רבי אברהם בן הרמב\"ם. אלמכין (=אבו אלמג'ד?) מתבקש לתת 3 דרהמים לקרובו של הרב האנדלוסי (המילה \"הטולדני\" נמחקה) ו-2 דרהמים לזקן הפרסי. ההוראה נכתבה שלושה שבועות לפני הוראה דומה אחרת, אשר אף היא ניתנה עבור קרובו של הרב הטולדני (שם המילה \"הטולדני\" לא נמחקה).\n\nמדובר בקובץ של הוראות תשלום קצרות בכתב, חלקן בכתב עברי וחלקן בכתב ערבי, עבור תשלומים חודשיים שנעשו מהכנסות שכר הדירה של ההקדש (וקף) \"חצר העניים\" או מההקדש שייסד הרופא אלמהד'ב. כל ההוראות הנושאות תאריך הן מאביב וקיץ שנת 1218.",
+  "description_he": "הוראת תשלום בכתב ידו של אברהם מימוני. אלמכין (=אבו אלמג'ד?) מתבקש למסור 3 דרהם לקרובו של הרב האנדלוסי (המילה \"טולדני\" נמחקה) ו-2 דרהם לזקן הפרסי. ההוראה נכתבה שלושה שבועות לפני הוראה נוספת שאף היא עוסקת בקרובו של הרב הטולדני — שם המילה \"טולדני\" לא נמחקה.\n\nהקובץ שאליו משתייכת הרשומה מכיל אוסף של הוראות תשלום קצרות, חלקן בכתב עברי וחלקן בכתב ערבי, לתשלומים חודשיים שנעשו מהכנסות דמי השכירות של ההקדש \"חצר העניים\" (waqf) או מן ההקדש שייסד הרופא אלמהד'ב. כל ההוראות הנושאות תאריך הן מאביב וקיץ 1218.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-K-00025-00240-00019"
@@ -41,7 +41,7 @@
     "יהודית-ערבית",
     "רפואה",
     "הקדש",
-    "רמב\"ם",
+    "שכירות",
     "רבי אברהם בן הרמב\"ם"
   ],
   "total": 35937,

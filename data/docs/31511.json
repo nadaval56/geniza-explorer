@@ -1,1 +1,44 @@
-{"id":"31511","shelfmark":"CUL Or.1081 2.3","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Arabic","lang_he":"ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, Or.","description":"Letter in Arabic script. The writer is Barakāt b. al-Dayyān (presumably Shelomo b. Eliyyahu, cf. ENA 3927.1 and CUL Or. 1080 J155 for other specimens of his Arabic-script handwriting). The recipient is an older, respected relative: the writer addresses him as both 'father' and 'brother' in the protocol, where he also includes blessings for the [addressee's?] father Abū l-Thanā'. That Abū l-Thanā' is distinct from the recipient is evident four lines from the bottom, where it seems that the recipient had sent a request to Abū l-Thanā' (or to his wife?), and the writer fulfilled the request in his absence. The bulk of the letter is taken up with praises and congratulations, most likely for the birth of a child to the addressee (unless Sayyidnā al-Nāsī is a different person) after the death of a previous child. Line 15f: \"By the Law, I rejoiced for his sake when [a newborn boy] took the place of the boy of our master the Nasi on Saturday and consoled his heart\" (wa-ḥaqq al-sharīʿa laqad faraḥtu lahu lammā khalafa yawma l-sabt ʿalā ghulāmi Sayyidinā al-Nāsī wa-jabara qalbahu). Following the good wishes, he explains that he carried out what was requested in the letter and purchased two (ithnān) of something (or ushnān? meaning potash), but could not find anybody with whom to send them (last three lines of recto). ASE.","tags":["Arabic script"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/31511/","mentioned":"","description_he":"מכתב בכתב ערבי. הכותב הוא ברכאת בן אלדיאן (כנראה שלמה בן אליהו, בהשוואה לדוגמאות אחרות של כתב ידו בערבית). הנמען הוא קרוב משפחה מבוגר ונכבד: בפתיחת המכתב פונה אליו הכותב הן בכינוי \"אב\" והן בכינוי \"אח\", וכולל גם ברכות עבור [אביו של הנמען?] אבו אלת'נא. ניכר שאבו אלת'נא הוא דמות נפרדת מן הנמען, שכן ארבע שורות מן הסוף עולה כי הנמען שלח בקשה לאבו אלת'נא (או לאשתו?), והכותב מילא את הבקשה בהיעדרו. עיקר המכתב מוקדש לדברי שבח וברכות, ככל הנראה לרגל הולדת בן לנמען (אלא אם כן \"סיידנא אלנאסי\" הוא אדם אחר) לאחר מותו של ילד קודם. בשורות 15 ואילך נכתב: \"ובחק השריעה, אכן שמחתי בעבורו כאשר ביום השבת בא [בן זכר] במקום הילד של אדוננו הנשיא וניחם את לבו\" (וחק אלשריעה לקד פרחת לה למא ח'לף יום אלסבת עלי גלאם סיידנא אלנאסי וג'בר קלבה). בעקבות איחולי הברכה, מסביר הכותב כי ביצע את שנתבקש במכתב ורכש שניים (את'נאן) של דבר מה (או אולי \"אשנאן\", כלומר אשלגן), אך לא מצא אדם שעמו ניתן לשלוח אותם (שלוש השורות האחרונות בצד הפנים).","tags_he":["מכתב","ערבית","שלמה בן אליהו"],"prev":"31510","next":"31512","pos":29612,"total":35937}
+{
+  "collection": "CUL, Or.",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter in Arabic script. The writer is Barakāt b. al-Dayyān (presumably Shelomo b. Eliyyahu, cf. ENA 3927.1 and CUL Or. 1080 J155 for other specimens of his Arabic-script handwriting). The recipient is an older, respected relative: the writer addresses him as both 'father' and 'brother' in the protocol, where he also includes blessings for the [addressee's?] father Abū l-Thanā'. That Abū l-Thanā' is distinct from the recipient is evident four lines from the bottom, where it seems that the recipient had sent a request to Abū l-Thanā' (or to his wife?), and the writer fulfilled the request in his absence. The bulk of the letter is taken up with praises and congratulations, most likely for the birth of a child to the addressee (unless Sayyidnā al-Nāsī is a different person) after the death of a previous child. Line 15f: \"By the Law, I rejoiced for his sake when [a newborn boy] took the place of the boy of our master the Nasi on Saturday and consoled his heart\" (wa-ḥaqq al-sharīʿa laqad faraḥtu lahu lammā khalafa yawma l-sabt ʿalā ghulāmi Sayyidinā al-Nāsī wa-jabara qalbahu). Following the good wishes, he explains that he carried out what was requested in the letter and purchased two (ithnān) of something (or ushnān? meaning potash), but could not find anybody with whom to send them (last three lines of recto). ASE.",
+  "description_he": "מכתב בכתב ערבי. הכותב הוא ברכאת בן הדיין (ככל הנראה שלמה בן אליהו, בהשוואה לדוגמאות אחרות של כתב ידו הערבי). הנמען הוא קרוב משפחה מבוגר ומכובד: בפתיחה הכותב פונה אליו הן כ\"אב\" והן כ\"אח\", וכולל בה גם ברכות לאביו [של הנמען?] אבו אלת'נאא'. שאבו אלת'נאא' אינו זהה לנמען עולה בבירור מן השורה הרביעית מלמטה, שם מסתבר שהנמען שלח בקשה לאבו אלת'נאא' (או לאשתו?), והכותב מילא את הבקשה בהיעדרו. עיקר המכתב מוקדש לשבחים ולברכות מזל טוב, ככל הנראה לרגל הולדת בן לנמען (אלא אם \"סיידנא אלנאסי\" הוא אדם אחר) לאחר מות ילד קודם. בשורה 15 ואילך נאמר: \"בחיי התורה, שמחתי בעבורו כאשר [נולד בן חדש] במקום בנו של אדוננו הנשיא ביום השבת, וניחם את לבו\" (وحق الشريعة لقد فرحت له لما خلف يوم السبت على غلام سيدنا الناسي وجبر قلبه). לאחר איחולי הטוב הוא מסביר שביצע את המבוקש במכתב ורכש שניים (את'נאן) של פריט כלשהו (או אולי אשנאן, כלומר אשלג לניקוי), אך לא מצא איש שיוכל לשלוח באמצעותו את הפריטים (בשלוש השורות האחרונות של הצד הקדמי).",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "31511",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Arabic",
+  "lang_he": "ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "31512",
+  "origin": "",
+  "pos": 29612,
+  "prev": "31510",
+  "princeton_url": "https://geniza.princeton.edu/documents/31511/",
+  "region": "",
+  "shelfmark": "CUL Or.1081 2.3",
+  "tags": [
+    "Arabic script"
+  ],
+  "tags_he": [
+    "מכתב",
+    "ערבית",
+    "דיין",
+    "שלמה בן אליהו"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

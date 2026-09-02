@@ -6,7 +6,7 @@
   "date_rationale": "Event mentioned",
   "date_standard": "",
   "description": "India Book, II,21 (T-S NS J241) and II,21c (T-S AS 158.393).\n\nLetter from Maḍmūn b. Ḥasan, in Aden, to Avraham Ibn Yiju. Dating: ca. 1135 CE.\n\nFragments of four or five different copies of this letter exist. This fragment is labeled as Copy 3. Here the scribe has prepared a second version of the letter that includes Maḍmūn's postscripts from Copy 2.\n\nThe copies of the letter are as follows:\nCopy 1 (the original by Maḍmūn): IB II,22 (T-S NS J240r), II,22a (Moss. IV,21.1), and II,23 (T-S 20.137r). PGPID 5448. The verso of this copy has accounts written by Ibn Yijū (PGPID 5537). \nCopy 2 (first copy by the clerk): IB II,24 (T-S NS J1). PGPID 5479.\nCopy 3 (second copy by the clerk): IB II,21 (T-S NS J241) and II,21c (T-S AS 158.393); i.e. this page.\nCopies 4 [by?] and 5 [by?]: IB II,21a (JRL Series B 4089) and II,21b (T-S AS 151.222). PGPID 5233\n\nCopies 1-3 were identified and published in Goitein and Friedman (2008), India Traders. Copies 4-5, as well as a direct join (IB II,21c) for Copy 3, were found by ASE in 2023.",
-  "description_he": "מכתב מאת מצ'מון בן חסן, באדן, אל אברהם אבן יג'ו. התיווך: בסביבות 1135 לספירה.\n\nקיימים שרידים של ארבעה או חמישה העתקים שונים של המכתב הזה. הקטע הנוכחי מסומן כ\"העתק 3\". כאן הסופר הכין גרסה שנייה של המכתב, הכוללת את הנספחים (postscripts) של מצ'מון מתוך העתק 2.\n\nההעתקים השונים של המכתב הם כדלקמן:\n- העתק 1 (המקור בכתב ידו של מצ'מון עצמו): על גבו של העתק זה רשומים חשבונות בכתב ידו של אבן יג'ו.\n- העתק 2 (ההעתק הראשון מאת הסופר/הלבלר).\n- העתק 3 (ההעתק השני מאת הסופר/הלבלר): הוא הקטע הנוכחי.\n- העתקים 4 ו-5 (לא ברור מי מעתיקיהם).\n\nהעתקים 1–3 זוהו ופורסמו בידי גויטיין ופרידמן (2008) ב-India Traders. העתקים 4–5, וכן צירוף ישיר נוסף להעתק 3, התגלו בשנת 2023.",
+  "description_he": "מכתב מאת מצ׳מון בן חסן, בעדן, אל אברהם בן יג׳ו. תיארוך: בקירוב 1135 לספירה.\n\nקיימים קטעים של ארבעה או חמישה עותקים שונים של המכתב הזה. הקטע הנוכחי מסומן כעותק 3. כאן הסופר הכין גרסה שנייה של המכתב הכוללת את תוספותיו של מצ׳מון (הפוסט-סקריפטים) מעותק 2.\n\nהעותקים השונים של המכתב הם כדלקמן:\nעותק 1 (המקור בכתב ידו של מצ׳מון): בגב העותק הזה נמצאים חשבונות שכתב אבן יג׳ו.\nעותק 2 (העותק הראשון של המעתיק/הסופר).\nעותק 3 (העותק השני של המעתיק/הסופר): הוא הדף הנוכחי.\nעותקים 4 ו-5 (זהות המעתיקים אינה ברורה).\n\nעותקים 1–3 זוהו ופורסמו על ידי גויטיין ופרידמן בספרם על סוחרי הודו (2008). עותקים 4–5, וכן חיבור ישיר לעותק 3, אותרו בשנת 2023.",
   "destination": "",
   "fragment_urls": [
     "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-J-00241"
@@ -40,6 +40,9 @@
   "tags_he": [
     "מכתב",
     "יהודית-ערבית",
+    "מסחר",
+    "עדן",
+    "הודו",
     "סופר"
   ],
   "total": 35937,

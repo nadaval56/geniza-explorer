@@ -1,1 +1,43 @@
-{"id":"34740","shelfmark":"MIAC 170","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew","lang_he":"עברית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"1922-06-29","date_original":"29 June 1922","date_standard":"1922-06-29","date_inferred":"","date_rationale":"","library":"ENL","library_raw":"ENL","collection":"ENL, ENL 'New Geniza' Catalogue","description":"Letter covering family matters – [dated June 29 1923] – Museum of Islamic Art – (number 170) – in Hebrew. (information translated from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 51). An original scan of the letter and Arabic translation of it appear in Al-Janiza wa-l-maʿābid al-Yahūdiyya fī Miṣr (pp. 190-194). The letter covers the inheritance of two brothers' shares in a piece of real estate (they are Sālim and Yaḥyā al-Sharfī. It refers frequently to a legal document (שטר) connected to the property that the two letter signers, David Barim[?] and Sālim b. Yosef Binyamin, are each confirming to have seen or currently maintain in their possession. Their statements at the end of the letter have a probative legal tone, for example: \"אני הצעיר שכותב מכתב זה ראיתי השטר שהוא מאושר ומקויים שהקרקע כל[?] שני האכים\". MCD.","tags":["real estate, 20th c, legal"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/34740/","mentioned":"","description_he":"מכתב העוסק בענייני משפחה, מיום 29 ביוני 1923, בעברית. סריקה מקורית של המכתב ותרגום ערבי שלו מופיעים בספר \"אלג'ניזה ואלמעאבד אליהודייה פי מצר\" (עמ' 190–194). המכתב עוסק בירושת חלקיהם של שני אחים בנכס מקרקעין — סאלם ויחיא אלשרפי. לאורכו מופיעות אזכורים תכופים ל\"שטר\" משפטי הקשור לנכס, ושני חותמי המכתב — דוד ברים[?] וסאלם בן יוסף בנימין — מאשרים כל אחד לחוד שראו את השטר או שהוא מצוי כעת ברשותם. הצהרותיהם בסוף המכתב נושאות אופי משפטי-ראייתי, למשל: \"אני הצעיר שכותב מכתב זה ראיתי השטר שהוא מאושר ומקויים שהקרקע כל[?] שני האכים\".","tags_he":["מכתב","עברית","ירושה"],"prev":"34739","next":"34741","pos":30996,"total":35937}
+{
+  "collection": "ENL, ENL 'New Geniza' Catalogue",
+  "date": "1922-06-29",
+  "date_inferred": "",
+  "date_original": "29 June 1922",
+  "date_rationale": "",
+  "date_standard": "1922-06-29",
+  "description": "Letter covering family matters – [dated June 29 1923] – Museum of Islamic Art – (number 170) – in Hebrew. (information translated from Ḥassanein Muḥammad Rabīʿa, ed., Dalīl Wathā'iq al-Janīza al-Jadīda / Catalogue of the Documents of the New Geniza, 51). An original scan of the letter and Arabic translation of it appear in Al-Janiza wa-l-maʿābid al-Yahūdiyya fī Miṣr (pp. 190-194). The letter covers the inheritance of two brothers' shares in a piece of real estate (they are Sālim and Yaḥyā al-Sharfī. It refers frequently to a legal document (שטר) connected to the property that the two letter signers, David Barim[?] and Sālim b. Yosef Binyamin, are each confirming to have seen or currently maintain in their possession. Their statements at the end of the letter have a probative legal tone, for example: \"אני הצעיר שכותב מכתב זה ראיתי השטר שהוא מאושר ומקויים שהקרקע כל[?] שני האכים\". MCD.",
+  "description_he": "מכתב העוסק בענייני משפחה, מתוארך ל־29 ביוני 1923, כתוב בעברית. המידע תורגם מתוך המהדורה של חסנין מחמד רביעה, קטלוג המסמכים של הגניזה החדשה (עמ' 51). סריקה מקורית של המכתב ותרגומו לערבית מופיעים בספר \"אלג'ניזה ואלמעאבד אליהודיה פי מצר\" (עמ' 190–194). המכתב עוסק בירושת חלקיהם של שני אחים בחלקת מקרקעין — סאלם ויחיא אלשרפי. הוא מתייחס פעמים רבות לשטר משפטי הקשור לנכס, ושני חותמי המכתב, דוד ברים(?) וסאלם בן יוסף בנימין, מאשרים כל אחד שראה את השטר או שהוא מוחזק כעת ברשותו. הצהרותיהם בסוף המכתב נושאות אופי משפטי־ראייתי מובהק, למשל: \"אני הצעיר שכותב מכתב זה ראיתי השטר שהוא מאושר ומקויים שהקרקע כל[?] שני האכים\".",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "34740",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew",
+  "lang_he": "עברית",
+  "lang_note": "",
+  "library": "ENL",
+  "library_raw": "ENL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "34741",
+  "origin": "",
+  "pos": 30996,
+  "prev": "34739",
+  "princeton_url": "https://geniza.princeton.edu/documents/34740/",
+  "region": "",
+  "shelfmark": "MIAC 170",
+  "tags": [
+    "real estate, 20th c, legal"
+  ],
+  "tags_he": [
+    "מכתב",
+    "עברית",
+    "ירושה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

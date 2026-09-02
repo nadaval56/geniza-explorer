@@ -1,1 +1,46 @@
-{"id":"19937","shelfmark":"T-S 12.318","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Hebrew, Ladino","lang_he":"Hebrew, Ladino","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter from Shemuel Sidi, in Damietta, to his brother-in-law and business partner Gabriel (likely Gabriel Conforte, son of the famous David Conforte). In Ladino. See T-S 12.381 for another letter from the same Shemuel Sidi, also with a responsum on the other side. Written on Friday, the 13th of Tammuz. It is not clear where the various people are based. Shemuel's father is also in Damietta, but Shemuel's wife is in Gabriel's location. Shemuel writes: \"Always write to me via Rashid to Izmir,\" and, \"God willing, on Sukkot, you will tell me what happened the garments that I will send to Salonica, and God willing, tell me about in Izmir.\" Perhaps Gabriel and Shemuel's wife live in Cairo/Fustat, and Shemuel has embarked on a trip to Izmir. Shemuel reports that he is sending some clothing back to (presumably) Cairo/Fustat for his wife (? \"by my sins, I left her practically naked / muy desnuda\"). He mentions that he is sending a silk skirt (futa de seda) with R. Ya'aqov Sobrado (?). \"Our brother\" R. Shelomo al-Hanati (אלחאנאטי) and R. David Kivas (דוד כיואס) are also mentioned. Shemuel sends regards to his father-in-law, Tia Havah (or Hannah), Tio Moshe, and Menahem, and to his own \"brother\" יאודה מראלי. This fragment also contains a responsum regarding a Jew who had a Gentile process the parchment for Torah scrolls and tefillin but failed to mark the parchment so that he would know if the Gentile swapped it out. The responsum has been edited by Shmuel Glick of the FGP Seride Teshuvot Team. ASE.","tags":["Salonica, Responsum, Izmir, Shemuel Sidi, Ladino, Rashid"],"has_transcription":false,"has_translation":false,"iiif_urls":[],"fragment_urls":[],"princeton_url":"https://geniza.princeton.edu/documents/19937/","mentioned":"Izmir, Rosetta, Thessaloniki","description_he":"מכתב משמואל סידי, השוהה בדמיאט, אל גיסו ושותפו לעסקים גבריאל (ככל הנראה גבריאל קונפורטה, בנו של דוד קונפורטה המפורסם). הכתב בלאדינו. קיים מכתב נוסף מאותו שמואל סידי, ובו אף הוא תשובה הלכתית בצד השני. המכתב נכתב ביום שישי, י\"ג בתמוז. אין זה ברור היכן שוהים האישים השונים השונים המוזכרים. אביו של שמואל אף הוא בדמיאט, אך אשתו של שמואל נמצאת במקום מושבו של גבריאל. שמואל כותב: \"תמיד כתוב אליי דרך רשיד אל איזמיר\", וכן: \"בעזרת ה', בסוכות, תספר לי מה עלה בגורל הבגדים שאשלח לסלוניקי, ובעזרת ה' תספר לי גם על איזמיר\". יתכן שגבריאל ואשת שמואל מתגוררים בקהיר/פוסטאט, ושמואל יצא למסע לאיזמיר. שמואל מדווח כי הוא שולח כמה פריטי לבוש בחזרה (כפי הנראה לקהיר/פוסטאט) עבור אשתו (? \"בחטאיי, השארתי אותה כמעט עירומה / muy desnuda\"). הוא מציין כי הוא שולח חצאית משי (futa de seda) עם ר' יעקב סוברדו (?). מוזכרים גם \"אחינו\" ר' שלמה אלחאנאטי ור' דוד כיואס. שמואל שולח דרישת שלום לחותנו, לתיא חוה (או חנה), לתיו משה ולמנחם, וכן ל\"אחיו\" יאודה מראלי. הקטע מכיל גם תשובה הלכתית בעניין יהודי שמסר לגוי לעבד קלף לספרי תורה ולתפילין, אך לא סימן את הקלף באופן שיוכל לדעת אם הגוי החליפו באחר.","tags_he":["מכתב","תשובה הלכתית","פוסטאט","קהיר","דמיאט","משי"],"prev":"19936","next":"19939","pos":22464,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter from Shemuel Sidi, in Damietta, to his brother-in-law and business partner Gabriel (likely Gabriel Conforte, son of the famous David Conforte). In Ladino. See T-S 12.381 for another letter from the same Shemuel Sidi, also with a responsum on the other side. Written on Friday, the 13th of Tammuz. It is not clear where the various people are based. Shemuel's father is also in Damietta, but Shemuel's wife is in Gabriel's location. Shemuel writes: \"Always write to me via Rashid to Izmir,\" and, \"God willing, on Sukkot, you will tell me what happened the garments that I will send to Salonica, and God willing, tell me about in Izmir.\" Perhaps Gabriel and Shemuel's wife live in Cairo/Fustat, and Shemuel has embarked on a trip to Izmir. Shemuel reports that he is sending some clothing back to (presumably) Cairo/Fustat for his wife (? \"by my sins, I left her practically naked / muy desnuda\"). He mentions that he is sending a silk skirt (futa de seda) with R. Ya'aqov Sobrado (?). \"Our brother\" R. Shelomo al-Hanati (אלחאנאטי) and R. David Kivas (דוד כיואס) are also mentioned. Shemuel sends regards to his father-in-law, Tia Havah (or Hannah), Tio Moshe, and Menahem, and to his own \"brother\" יאודה מראלי. This fragment also contains a responsum regarding a Jew who had a Gentile process the parchment for Torah scrolls and tefillin but failed to mark the parchment so that he would know if the Gentile swapped it out. The responsum has been edited by Shmuel Glick of the FGP Seride Teshuvot Team. ASE.",
+  "description_he": "מכתב משמואל סידי, בדמיאט, אל גיסו ושותפו העסקי גבריאל (ככל הנראה גבריאל קונפורטה, בנו של דוד קונפורטה המפורסם). בלאדינו. ראו מכתב נוסף מאותו שמואל סידי שגם בגבו תשובה הלכתית. נכתב ביום שישי, י\"ג בתמוז. אין זה ברור היכן שוהים האנשים השונים המוזכרים במכתב. אביו של שמואל אף הוא בדמיאט, אך אשתו של שמואל נמצאת במקום שבו שוהה גבריאל. שמואל כותב: \"כתוב לי תמיד דרך רשיד לאיזמיר\", וכן: \"אם ירצה השם, בסוכות תספר לי מה עלה בגורל הבגדים שאשלח לסלוניקי, ואם ירצה השם, ספר לי גם על מה שקרה באיזמיר\". ייתכן שגבריאל ואשתו של שמואל מתגוררים בקהיר/פוסטאט, ושמואל יצא למסע לאיזמיר. שמואל מדווח כי הוא שולח בגדים חזרה (ככל הנראה לקהיר/פוסטאט) עבור אשתו (הוא כותב שבשל חטאיו הותיר אותה כמעט עירומה — \"muy desnuda\"). הוא מזכיר כי הוא שולח חצאית משי (futa de seda) עם ר' יעקב סוברדו (?). מוזכרים גם \"אחינו\" ר' שלמה אלחאנאטי ור' דוד כיואס. שמואל שולח דרישת שלום לחמיו, לדודה חוה (או חנה), לדוד משה, ולמנחם, וכן ל\"אחיו\" יאודה מראלי. הקטע מכיל גם תשובה הלכתית בעניין יהודי שנתן לגוי לעבד קלף לספר תורה ולתפילין, אך לא סימן את הקלף כדי לוודא שהגוי לא החליף אותו. התשובה נערכה על ידי שמואל גליק מצוות שרידי תשובות של FGP.",
+  "destination": "",
+  "fragment_urls": [],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "19937",
+  "iiif_urls": [],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Hebrew, Ladino",
+  "lang_he": "Hebrew, Ladino",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Izmir, Rosetta, Thessaloniki",
+  "multifragment": "",
+  "next": "19939",
+  "origin": "",
+  "pos": 22464,
+  "prev": "19936",
+  "princeton_url": "https://geniza.princeton.edu/documents/19937/",
+  "region": "",
+  "shelfmark": "T-S 12.318",
+  "tags": [
+    "Salonica, Responsum, Izmir, Shemuel Sidi, Ladino, Rashid"
+  ],
+  "tags_he": [
+    "מכתב",
+    "תשובה הלכתית",
+    "פוסטאט",
+    "קהיר",
+    "דמיאט",
+    "משי"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

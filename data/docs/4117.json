@@ -1,1 +1,48 @@
-{"id":"4117","shelfmark":"T-S AS 147.12","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Prenuptial contract on the occasion of a betrothal (erusin/shiddukhin). Groom: Moshe b. Yosef ha-Kohen. Bride: [...] bt. Shemarya ha-Kohen (her name is left blank). Stipulating the details agreed upon for the marriage. Dated ca. 1220 (per Goitein). Goitein sets the dating at around 1220 but does not provide proof to it (Med. Soc. 3:403, no. 149). In any case, the handwriting is typical for the 13th century as well as the expression: “matched and engaged” found in line 2 which appears in Geniza documents from the 13th century onward. Marriage payments: 15 + 60. The conditions include living 12 months in Fustat, then Bilbays. The condition that the bride will determine the domicile in Fustat for the duration of one year is noteworthy. After this year the couple intended to move to Bilbays and there the wife will also determine the location of the domicile. More on this matter see Ashur’s dissertation Chapter Four pp. 130-131. (Information in part from Goitein's index card and from Mediterranean Society, III, p. 403. Also from Amir Ashur's dissertation.)","tags":["13th c, contract, premarital"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00147-00012"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00147-00012"],"princeton_url":"https://geniza.princeton.edu/documents/4117/","mentioned":"Bilbays, Fustat","description_he":"חוזה טרום-נישואין שנערך לרגל אירוסין (ארוסין/שידוכין). החתן: משה בן יוסף הכהן. הכלה: [...] בת שמריה הכהן (שמה הושאר ריק). בחוזה מפורטים התנאים שהוסכמו לקראת הנישואין. מתוארך לסביבות שנת 1220 על פי גויטיין, אך הוא אינו מביא ראיה לתיארוך זה. בכל מקרה, כתב היד אופייני גם למאה ה-13, וכן הביטוי \"נזדווגו ונשתדכו\" המופיע בשורה 2 ומצוי במסמכי הגניזה מהמאה ה-13 ואילך. תשלומי הנישואין: 15 + 60. בין התנאים נקבע כי בני הזוג יגורו 12 חודשים בפוסטאט ולאחר מכן יעברו לבלביס. ראוי לציון התנאי שלפיו הכלה היא שתקבע את מקום המגורים בפוסטאט במשך שנה אחת. לאחר שנה זו עתידים בני הזוג לעבור לבלביס, ושם גם תקבע האישה את מיקום הדירה. עוד על עניין זה ראו בפרק הרביעי בעבודת הדוקטור של עשור, עמ' 130–131.","tags_he":["מסמך משפטי","יהודית-ערבית","נישואין","ארוסין","פוסטאט"],"prev":"4116","next":"4118","pos":3031,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Prenuptial contract on the occasion of a betrothal (erusin/shiddukhin). Groom: Moshe b. Yosef ha-Kohen. Bride: [...] bt. Shemarya ha-Kohen (her name is left blank). Stipulating the details agreed upon for the marriage. Dated ca. 1220 (per Goitein). Goitein sets the dating at around 1220 but does not provide proof to it (Med. Soc. 3:403, no. 149). In any case, the handwriting is typical for the 13th century as well as the expression: “matched and engaged” found in line 2 which appears in Geniza documents from the 13th century onward. Marriage payments: 15 + 60. The conditions include living 12 months in Fustat, then Bilbays. The condition that the bride will determine the domicile in Fustat for the duration of one year is noteworthy. After this year the couple intended to move to Bilbays and there the wife will also determine the location of the domicile. More on this matter see Ashur’s dissertation Chapter Four pp. 130-131. (Information in part from Goitein's index card and from Mediterranean Society, III, p. 403. Also from Amir Ashur's dissertation.)",
+  "description_he": "הסכם קדם־נישואין שנכתב לרגל אירוסין (ערוסין/שידוכין). החתן: משה בן יוסף הכהן. הכלה: [...] בת שמריה הכהן (שמה הושאר ריק). המסמך מפרט את התנאים שהוסכמו לקראת הנישואין. מתוארך בקירוב לשנת 1220 לפי גויטיין, אף שהוא אינו מביא הוכחה לתיארוך זה. מכל מקום, כתב היד אופייני גם למאה השלוש־עשרה, וכך גם הביטוי \"נזדווג ונשתדך\" המופיע בשורה 2, שמצוי בתעודות הגניזה מן המאה השלוש־עשרה ואילך. תשלומי הנישואין: 15 + 60. בין התנאים: מגורים במשך 12 חודשים בפוסטאט, ולאחר מכן מעבר לבלביס. ראוי לתשומת לב במיוחד התנאי לפיו הכלה היא זו שתקבע את מקום המגורים בפוסטאט למשך שנה אחת. לאחר שנה זו התכוון הזוג לעבור לבלביס, ואף שם תקבע האישה את מקום המגורים. להרחבה בסוגיה זו ראו עבודת הדוקטור של אשור, פרק רביעי, עמ' 130–131.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00147-00012"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "4117",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AS-00147-00012"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "Bilbays, Fustat",
+  "multifragment": "",
+  "next": "4118",
+  "origin": "",
+  "pos": 3031,
+  "prev": "4116",
+  "princeton_url": "https://geniza.princeton.edu/documents/4117/",
+  "region": "",
+  "shelfmark": "T-S AS 147.12",
+  "tags": [
+    "13th c, contract, premarital"
+  ],
+  "tags_he": [
+    "מסמך משפטי",
+    "יהודית-ערבית",
+    "נישואין",
+    "פוסטאט"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

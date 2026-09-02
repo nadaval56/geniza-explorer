@@ -1,1 +1,46 @@
-{"id":"8206","shelfmark":"T-S Ar.38.11","multifragment":"","type_en":"Legal document","type_he":"מסמך משפטי","lang_en":"Aramaic, Judaeo-Arabic","lang_he":"Aramaic, Judaeo-Arabic","lang2_en":"","lang2_he":"","lang_note":"","origin":"","destination":"","region":"","date":"889/988","date_original":"13 Nisan 13[..]","date_standard":"889/988","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Ketubba fragment. Location: Wardūnya, a suburb of Baghdad (ורדוניא דבגדד), on the Tigris river (דגלת). Dated: 13 Nisan 13[..] Seleucid, which corresponds to the range 889–988 CE. Groom: [...] b. Yosef. Bride: Miriam bt. Yosef. There is an extensive secondary literature on this fragment both on account of its unique location and its early date. Simon Hopkins (‘The Oldest Dated Document in the Geniza?’, pp. 92–93) thought that this ketubba might have predated Halper 331; but Olszowy-Schlanger (‘Les plus anciens documents datés de la Guenizah du Caire’) showed that this was based on a misreading of its date, which is 13th century SE, thus between 889 and 988 CE. On this document, see also N. Golb, ‘A Marriage Deed from ‘Warduniā of Baghdad,’ Journal of Near Eastern Studies 43.2 (1984), pp. 152–56. (Information from Krakowski and Stern, \"The ‘oldest dated document of the Cairo Genizah’ (Halper 331),\" Journal of the Royal Asiatic Society 31.3 (2021), 617–34.","tags":[],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00038-00011"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00038-00011"],"princeton_url":"https://geniza.princeton.edu/documents/8206/","mentioned":"","description_he":"קטע מכתובה. המקום: ורדוניא, פרבר של בגדאד (ורדוניא דבגדד), על נהר החידקל (דגלת). תאריך: י\"ג בניסן 13[..] לשטרות, דהיינו טווח התואם לשנים 889–988 לסה\"נ. החתן: [...] בן יוסף. הכלה: מרים בת יוסף. קיימת ספרות מחקרית ענפה על קטע זה, הן בשל מיקומו הייחודי והן בשל תאריכו הקדום. סיימון הופקינס סבר שכתובה זו עשויה להקדים את הלפר 331, אך אולשובי-שלנגר הראתה כי הנחה זו התבססה על קריאה שגויה של התאריך, שהוא למעשה מן המאה ה-13 לשטרות, ומכאן שהמסמך נכתב בין השנים 889 ל-988 לסה\"נ. על מסמך זה ראו גם את מאמרו של נ' גולב על שטר נישואין מוורדוניא של בגדאד.","tags_he":["מסמך משפטי","כתובה","נישואין","בגדד"],"prev":"8204","next":"8207","pos":5446,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "889/988",
+  "date_inferred": "",
+  "date_original": "13 Nisan 13[..]",
+  "date_rationale": "",
+  "date_standard": "889/988",
+  "description": "Ketubba fragment. Location: Wardūnya, a suburb of Baghdad (ורדוניא דבגדד), on the Tigris river (דגלת). Dated: 13 Nisan 13[..] Seleucid, which corresponds to the range 889–988 CE. Groom: [...] b. Yosef. Bride: Miriam bt. Yosef. There is an extensive secondary literature on this fragment both on account of its unique location and its early date. Simon Hopkins (‘The Oldest Dated Document in the Geniza?’, pp. 92–93) thought that this ketubba might have predated Halper 331; but Olszowy-Schlanger (‘Les plus anciens documents datés de la Guenizah du Caire’) showed that this was based on a misreading of its date, which is 13th century SE, thus between 889 and 988 CE. On this document, see also N. Golb, ‘A Marriage Deed from ‘Warduniā of Baghdad,’ Journal of Near Eastern Studies 43.2 (1984), pp. 152–56. (Information from Krakowski and Stern, \"The ‘oldest dated document of the Cairo Genizah’ (Halper 331),\" Journal of the Royal Asiatic Society 31.3 (2021), 617–34.",
+  "description_he": "שריד כתובה. מקום העריכה: ורדוניא דבגדד — פרוור של בגדאד על נהר החידקל (דגלת). מתוארך: י\"ג בניסן י\"ג[..] למניין השטרות (מניין סלאוקידים), כלומר בטווח 889–988 לספירה. החתן: [...] בן יוסף. הכלה: מרים בת יוסף. סביב מסמך זה נכתבה ספרות מחקרית ענפה, הן בשל מקום עריכתו הייחודי והן בשל תאריכו הקדום. סימון הופקינס (\"The Oldest Dated Document in the Geniza?\", עמ' 92–93) סבר שכתובה זו עשויה להיות קדומה מהלפר 331; אולם אולשובי-שלנגר (\"Les plus anciens documents datés de la Guenizah du Caire\") הראתה שסברה זו נשענה על קריאה שגויה של התאריך, שהוא למעשה במאה הי\"ג למניין השטרות, ולכן בין 889 ל-988 לספירה. על מסמך זה ראו גם את מאמרו של נ' גולב, \"A Marriage Deed from 'Warduniā of Baghdad\", Journal of Near Eastern Studies 43.2 (1984), עמ' 152–56. (המידע מבוסס על מאמרם של קרקובסקי ושטרן על \"המסמך המתוארך הקדום ביותר מגניזת קהיר\" [הלפר 331], שהתפרסם ב-Journal of the Royal Asiatic Society ב-2021.)",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-AR-00038-00011"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "8206",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-AR-00038-00011"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Aramaic, Judaeo-Arabic",
+  "lang_he": "Aramaic, Judaeo-Arabic",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "8207",
+  "origin": "",
+  "pos": 5446,
+  "prev": "8204",
+  "princeton_url": "https://geniza.princeton.edu/documents/8206/",
+  "region": "",
+  "shelfmark": "T-S Ar.38.11",
+  "tags": [],
+  "tags_he": [
+    "מסמך משפטי",
+    "כתובה",
+    "קהיר",
+    "בגדד"
+  ],
+  "total": 35937,
+  "type_en": "Legal document",
+  "type_he": "מסמך משפטי"
+}

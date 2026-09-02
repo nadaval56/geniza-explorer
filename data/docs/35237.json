@@ -6,7 +6,7 @@
   "date_rationale": "",
   "date_standard": "",
   "description": "Letter on paper in Arabic script. Appears to be secondary use, on the verso of another letter (PGPID 35236), under the address. Ink is faded. \n\nImage: https://findit.library.yale.edu/catalog/digcoll:2759172.  \n\nNote: non-geniza; sold to Yale by Abraham Shalom Yahuda in 1951 (see provenance notes at https://beinecke.library.yale.edu/research-teaching/doing-research-beinecke/introduction-yale-papyrus-collection/guide-yale-papyrus).",
-  "description_he": "מכתב על נייר בכתב ערבי. נראה כשימוש משני, על גב מכתב אחר, מתחת לכתובת. הדיו דהויה.\n\nהערה: אינו מגניזת קהיר; נמכר לאוניברסיטת ייל על ידי אברהם שלום יהודה בשנת 1951.",
+  "description_he": "מכתב על נייר בכתב ערבי. נראה כי מדובר בשימוש משני, על גב מכתב אחר, מתחת לכתובת המען. הדיו דהוי.\n\nהערה: אינו ממקור הגניזה; נמכר לאוניברסיטת ייל על ידי אברהם שלום יהודה בשנת 1951.",
   "destination": "",
   "fragment_urls": [
     "https://findit.library.yale.edu/catalog/digcoll:2759172"
@@ -34,8 +34,7 @@
   "tags": [],
   "tags_he": [
     "מכתב",
-    "ערבית",
-    "קהיר"
+    "ערבית"
   ],
   "total": 35937,
   "type_en": "Letter",
