@@ -252,7 +252,8 @@ html.a11y-focus :focus-visible {
   border: 2px solid var(--bg-card, #fff);
   box-shadow: 0 2px 10px rgba(30,20,10,.35);
   display: flex; align-items: center; justify-content: center;
-  padding: 0; cursor: pointer; transition: bottom .2s ease, background .2s ease;
+  padding: 0; cursor: pointer; transition: bottom var(--dur-fast, .15s) var(--ease, ease),
+              background var(--dur-fast, .15s) var(--ease, ease);
 }
 .a11y-fab svg { width: 26px; height: 26px; fill: currentColor; }
 .a11y-fab:hover, .a11y-fab[aria-expanded="true"] { background: var(--gold, #b5621e); }
@@ -323,12 +324,13 @@ html.a11y-invert .a11y-seg button[aria-pressed="true"] { color: #000; }
 .a11y-tog .sw {
   flex: 0 0 auto; width: 38px; height: 22px; border-radius: 11px;
   background: var(--bg-2, #f2ede4); border: 1px solid var(--text-2, #5c5044); position: relative;
-  transition: background .15s ease;
+  transition: background var(--dur-fast, .15s) var(--ease, ease);
 }
 .a11y-tog .sw::after {
   content: ''; position: absolute; top: 2px; inset-inline-start: 2px;
   width: 16px; height: 16px; border-radius: 50%; background: var(--text-2, #5c5044);
-  transition: transform .15s ease, background .15s ease;
+  transition: transform var(--dur-fast, .15s) var(--ease, ease),
+              background var(--dur-fast, .15s) var(--ease, ease);
 }
 .a11y-tog[aria-pressed="true"] .sw {
   background: var(--gold-dark, #7a3e0e); border-color: var(--gold-dark, #7a3e0e);
