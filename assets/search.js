@@ -616,14 +616,33 @@
       const marker = L.marker([loc.lat, loc.lng], { icon, keyboard: true }).addTo(map);
       /* Leaflet מוסיף לסיכה tabindex=0, ולכן היא נגישה במקלדת — אבל
          בלי role ובלי שם היא מוכרזת כ"קבוצה" ריקה. */
+      const slug = TAG_SLUGS[loc.name];
+      /* Leaflet gives the pin tabindex=0 and role="button", so it is reachable
+         by keyboard but announced as an unnamed button. The name has to be set
+         on the element Leaflet builds, and that element does not exist until
+         the marker is on the map — reading it straight after addTo() returns
+         null and the labels are silently dropped. */
+      const label = () => {
+        const el = marker.getElement();
+        if (!el) return;
+        el.setAttribute('role', slug ? 'link' : 'button');
+        el.setAttribute('aria-label', slug
+          ? `${loc.name} — ${count.toLocaleString('he-IL')} מסמכים, לדף הנושא`
+          : `סינון לפי ${loc.name} — ${count.toLocaleString('he-IL')} מסמכים`);
+        if (slug) el.removeAttribute('aria-pressed');
+        else el.setAttribute('aria-pressed', 'false');
+      };
+      marker.on('add', label);
+      label();
       const el = marker.getElement();
-      if (el) {
-        el.setAttribute('role', 'button');
-        el.setAttribute('aria-label',
-          `סינון לפי ${loc.name} — ${count.toLocaleString('he-IL')} מסמכים`);
-        el.setAttribute('aria-pressed', 'false');
-      }
       marker.on('click', () => {
+        /* A pin used to filter the gallery in place, which left the reader on
+           the home page with no URL to share and no way back to the place
+           itself. Every location on this map now has a hub under t/, and the
+           hub is strictly more: an introduction, every document rather than
+           the first page of them, and an address. Filtering stays only for a
+           location that has no hub yet. */
+        if (slug) { window.location.href = `t/${slug}/`; return; }
         const pinEl = marker.getElement()?.querySelector('.gmap-pin');
         const isActive = fLocation === loc.name;
 

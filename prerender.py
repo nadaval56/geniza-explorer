@@ -144,6 +144,23 @@ def search_title(doc):
     return f"{snippet} · {shelfmark}"
 
 
+def page_heading(doc):
+    """The descriptive clause on its own, for the visible <h1>.
+
+    search_title() appends the shelfmark because a search result is one line
+    and has to carry both. The page does not: it can put the description in
+    the heading and the catalogue label on the line beneath, where a
+    researcher scanning for it still finds it.
+
+    Returns None when the description is too short to yield a clause, and the
+    heading falls back to the shelfmark.
+    """
+    title = search_title(doc)
+    shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
+    suffix = f" · {shelfmark}"
+    return title[:-len(suffix)] if title.endswith(suffix) else None
+
+
 def doc_description(doc):
     """Best available prose, Hebrew first, English as a fallback."""
     return clean(doc.get("description_he")) or clean(doc.get("description"))
@@ -368,7 +385,7 @@ DOC_PAGE = """<!DOCTYPE html>
 
     <header class="fragment-header">
       <div class="fragment-badges">{badges}</div>
-      <h1 class="fragment-shelfmark">{shelfmark}</h1>
+      {heading_block}
       <p class="fragment-library">{library}</p>
     </header>
 
@@ -435,6 +452,7 @@ def render_doc(doc, base, related_index=None):
     doc_id = doc["id"]
     url = f"{base}d/{doc_id}.html"
     title = search_title(doc)
+    heading = page_heading(doc)
     shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc_id}"
 
     kind = clean(doc.get("type_he"))
@@ -514,6 +532,12 @@ def render_doc(doc, base, related_index=None):
         jsonld=render_json_ld(doc, url, base),
         breadcrumb=esc(shelfmark),
         badges=badges,
+        heading_block=(
+            f'<h1 class="fragment-heading">{esc(heading)}</h1>\n'
+            f'      <p class="fragment-shelfmark">{esc(shelfmark)}</p>'
+            if heading else
+            f'<h1 class="fragment-shelfmark">{esc(shelfmark)}</h1>'
+        ),
         shelfmark=esc(shelfmark),
         library=esc(clean(doc.get("library"))),
         image_note=("התצלום זמין בספרייה הדיגיטלית" if iiif else "אין תצלום זמין"),
