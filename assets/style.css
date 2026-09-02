@@ -32,6 +32,13 @@
   --border-2:     #d4c6b8;
   --divider:      rgba(181,98,30,.15);
 
+  /* Surprise panel — גוונים חמים ולא משפחת צבע שנייה. ראו ההערה ב-.surprise-btn */
+  --surprise-1:        #f9f0e4;
+  --surprise-2:        #f5ead9;
+  --surprise-shadow:   rgba(122,62,14,.15);
+  --surprise-shadow-2: rgba(122,62,14,.08);
+  --surprise-shadow-h: rgba(122,62,14,.22);
+
   /* Type badges (light bg) */
   --badge-letter: #ede9f9;
   --badge-legal:  #e8f5ee;
@@ -44,11 +51,41 @@
   --font-serif: 'Frank Ruhl Libre', 'David Libre', serif;
   --font-ui:    'Heebo', 'Arial', sans-serif;
 
-  /* Spacing */
+  /* Spacing — סקאלה אחת, בקפיצות של .25rem (4px על בסיס 16px).
+     לפני כן היו בקובץ 34 ערכי מרווח שונים, ובהם שלישיות כמעט־זהות
+     (.6/.65/.7 ; .35/.4/.45 ; 1.2/1.25/1.3/1.35) שנוצרו כל אחת בנפרד
+     ולא נבדלו זו מזו בעין. כל מרווח בקובץ מתיישר עכשיו על אחד עשר
+     השלבים האלה. ערך שאינו ברשימה הוא סימן שצריך שלב חדש, לא ערך חדש.
+     --sp-0 הוא השלב האופטי: 2px, לתיקוני יישור שאינם מרווח (למשל
+     ה-margin-top של .card-icons, שמיישר אייקון לקו הבסיס של הטקסט). */
+  --sp-0:  .125rem;
+  --sp-1:  .25rem;
+  --sp-2:  .5rem;
+  --sp-3:  .75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-7:  2rem;
+  --sp-8:  2.5rem;
+  --sp-9:  3rem;
+  --sp-10: 4rem;
+  --sp-11: 5rem;
+
   --radius:    6px;
   --radius-lg: 12px;
   --shadow:    0 2px 10px rgba(30,20,10,.08);
   --shadow-lg: 0 8px 32px rgba(30,20,10,.13);
+
+  /* Motion — שלושה משכים ועקומה אחת, במכוון.
+     קודם היו בקובץ שבעה משכים (.12s עד .5s) פזורים על 26 כללים, ורובם
+     בלי easing כלל, כך שכל ריחוף התנהג קצת אחרת. --ease היא ease-out
+     סטנדרטית בלי חריגה מעבר ליעד: עקומה שחורגת וחוזרת (הישנה,
+     cubic-bezier(.34,1.56,.64,1), על הקובייה) נקראת כשובבות, וזה לא
+     הרושם שארכיון אמור לעשות. */
+  --dur-fast: .15s;   /* צבע, גבול — לא אמור להיות מורגש */
+  --dur-base: .25s;   /* transform, צל — כל מה שיש לו משקל */
+  --dur-slow: .45s;   /* חשיפה מכוונת, שהעין אמורה לעקוב אחריה */
+  --ease:     cubic-bezier(.4, 0, .2, 1);
 }
 
 /* ── Reset ───────────────────────────────────────────────────────────────────── */
@@ -83,7 +120,7 @@ img { display: block; max-width: 100%; }
   background: linear-gradient(180deg, #f8f3e8 0%, var(--bg-2) 100%);
   border-bottom: 1px solid var(--divider);
   text-align: center;
-  padding: 4rem 1.5rem 3rem;
+  padding: var(--sp-10) var(--sp-6) var(--sp-9);
   position: relative;
   overflow: hidden;
 }
@@ -103,7 +140,7 @@ img { display: block; max-width: 100%; }
   font-size: 1.5rem;
   color: var(--gold);
   opacity: .6;
-  margin-bottom: .75rem;
+  margin-bottom: var(--sp-3);
   letter-spacing: .5em;
   display: block;
 }
@@ -115,14 +152,14 @@ img { display: block; max-width: 100%; }
   color: var(--text);
   letter-spacing: -.02em;
   line-height: 1.1;
-  margin-bottom: .5rem;
+  margin-bottom: var(--sp-2);
 }
 
 .site-subtitle {
   font-size: clamp(.95rem, 2.5vw, 1.15rem);
   color: var(--text-2);
   font-weight: 300;
-  margin-bottom: .75rem;
+  margin-bottom: var(--sp-3);
   max-width: 560px;
   margin-inline: auto;
 }
@@ -140,7 +177,7 @@ img { display: block; max-width: 100%; }
   color: var(--text-3);
   font-weight: 300;
   max-width: 600px;
-  margin: 1rem auto 0;
+  margin: var(--sp-4) auto 0;
   line-height: 1.75;
 }
 
@@ -148,7 +185,7 @@ img { display: block; max-width: 100%; }
 .browse-section {
   background: var(--bg-2);
   border-bottom: 1px solid var(--border);
-  padding: 1.25rem 1.5rem;
+  padding: var(--sp-5) var(--sp-6);
 }
 
 .browse-inner {
@@ -156,14 +193,14 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.1rem;
+  gap: var(--sp-4);
   align-items: center;
 }
 
 .browse-group {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: var(--sp-2);
   flex-wrap: wrap;
 }
 
@@ -180,11 +217,11 @@ img { display: block; max-width: 100%; }
 .browse-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: .4rem;
+  gap: var(--sp-2);
 }
 
 .chip {
-  padding: .35rem .85rem;
+  padding: var(--sp-1) var(--sp-3);
   background: var(--bg-card);
   border: 1px solid var(--border-2);
   border-radius: 99px;
@@ -192,7 +229,9 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-ui);
   font-size: .82rem;
   cursor: pointer;
-  transition: background .15s, border-color .15s, color .15s;
+  transition-property: background, border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   white-space: nowrap;
 }
 .chip:hover {
@@ -216,37 +255,45 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .8rem;
-  padding: 1.6rem 2.8rem;
-  background: linear-gradient(160deg, var(--bg-card) 0%, #f0e8f8 60%, #e8f0fb 100%);
-  border: 2px solid #8a4cb0;
+  gap: var(--sp-3);
+  padding: var(--sp-6) var(--sp-9);
+  /* הכפתור היה סגול־כחול (#8a4cb0, #6a20b0, #f0e8f8, #e8f0fb ורוויית צל
+     סגולה) בתוך עמוד פפירוס חם — חמישה צבעים שלא הופיעו בבלוק הטוקנים
+     כלל, וצבע מותג שני בפועל. הקובייה עצמה כבר זהובה־אדומה־כחולה, ולכן
+     מסגרת בזהב של האתר מיישבת אותה עם העמוד במקום להתחרות בה.
+     שני עוצרי הגרדיאנט נבחרו כך ש---text-3 (של .surprise-sub) עדיין
+     חוצה 4.5:1 מעליהם — 4.89 ו-4.64, מול 4.63 שהוא הגרוע ביותר בקובץ. */
+  background: linear-gradient(160deg, var(--bg-card) 0%, var(--surprise-1) 60%, var(--surprise-2) 100%);
+  border: 2px solid var(--gold);
   border-radius: var(--radius-lg);
   cursor: pointer;
   font-family: var(--font-ui);
   text-align: center;
-  transition: transform .22s, box-shadow .22s, border-color .22s, background .22s;
-  box-shadow: 0 4px 20px rgba(100,50,180,.15), 0 1px 4px rgba(100,50,180,.08);
+  transition-property: transform, box-shadow, border-color, background;
+  transition-duration: var(--dur-base);
+  transition-timing-function: var(--ease);
+  box-shadow: 0 4px 20px var(--surprise-shadow), 0 1px 4px var(--surprise-shadow-2);
   min-width: 260px;
   max-width: 400px;
 }
 
 .surprise-btn:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 12px 36px rgba(100,50,180,.25), 0 3px 10px rgba(100,50,180,.12);
-  border-color: #b060e0;
-  background: linear-gradient(160deg, #fff 0%, #f4e8ff 60%, #e4f0ff 100%);
+  box-shadow: 0 12px 36px var(--surprise-shadow-h), 0 3px 10px var(--surprise-shadow);
+  border-color: var(--gold-dark);
+  background: linear-gradient(160deg, #fff 0%, var(--surprise-1) 55%, var(--surprise-2) 100%);
 }
 
 .surprise-btn:active {
   transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 5px 16px rgba(100,50,180,.18);
+  box-shadow: 0 5px 16px var(--surprise-shadow-h);
 }
 
 .surprise-dice {
   width: 104px;
   height: 104px;
   flex-shrink: 0;
-  transition: transform .45s cubic-bezier(.34,1.56,.64,1);
+  transition: transform var(--dur-slow) var(--ease);
 }
 
 .surprise-btn:hover .surprise-dice {
@@ -257,7 +304,7 @@ img { display: block; max-width: 100%; }
   display: block;
   font-size: 1.55rem;
   font-weight: 700;
-  color: #6a20b0;
+  color: var(--gold-dark);
   font-family: var(--font-ui);
   line-height: 1.2;
   letter-spacing: .02em;
@@ -267,7 +314,7 @@ img { display: block; max-width: 100%; }
   display: block;
   font-size: .8rem;
   color: var(--text-3);
-  margin-top: -.1rem;
+  margin-top: calc(-1 * var(--sp-0));
   font-style: italic;
 }
 
@@ -276,7 +323,7 @@ img { display: block; max-width: 100%; }
     width: 100%;
     max-width: none;
     min-width: 0;
-    padding: 1.3rem 1.5rem;
+    padding: var(--sp-5) var(--sp-6);
   }
   .surprise-dice { width: 86px; height: 86px; }
   .surprise-title { font-size: 1.35rem; }
@@ -297,10 +344,10 @@ img { display: block; max-width: 100%; }
     background: transparent;
     border-color: transparent;
     box-shadow: none;
-    padding: .35rem .6rem;
+    padding: var(--sp-1) var(--sp-2);
     min-width: 0;
     max-width: none;
-    gap: .25rem;
+    gap: var(--sp-1);
   }
   .surprise-wrap .surprise-btn:hover {
     transform: translateY(-3px) scale(1.04);
@@ -312,7 +359,7 @@ img { display: block; max-width: 100%; }
 
 /* Reset button */
 .btn-reset {
-  padding: .45rem .85rem;
+  padding: var(--sp-2) var(--sp-3);
   background: transparent;
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -320,13 +367,15 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-ui);
   font-size: .8rem;
   cursor: pointer;
-  transition: color .15s, border-color .15s;
+  transition-property: color, border-color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .btn-reset:hover { color: var(--text); border-color: var(--text-3); }
 
 .btn-reset-inline {
-  margin-top: 1rem;
-  padding: .55rem 1.2rem;
+  margin-top: var(--sp-4);
+  padding: var(--sp-2) var(--sp-5);
   background: var(--bg-card);
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -334,7 +383,7 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-ui);
   font-size: .88rem;
   cursor: pointer;
-  transition: background .15s;
+  transition: background var(--dur-fast) var(--ease);
 }
 .btn-reset-inline:hover { background: var(--bg-card-h); }
 
@@ -342,7 +391,7 @@ img { display: block; max-width: 100%; }
 .card-geo {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: var(--sp-2);
   align-items: center;
 }
 .card-lib {
@@ -359,16 +408,16 @@ img { display: block; max-width: 100%; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: .85rem 0;
+  padding: var(--sp-3) 0;
 }
 
 .search-bar-inner {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--sp-6);
   display: flex;
   flex-wrap: wrap;
-  gap: .6rem;
+  gap: var(--sp-2);
   align-items: center;
 }
 
@@ -390,7 +439,7 @@ img { display: block; max-width: 100%; }
 
 .search-input {
   width: 100%;
-  padding: .6rem 2.4rem .6rem .85rem;
+  padding: var(--sp-2) var(--sp-8) var(--sp-2) var(--sp-3);
   background: var(--bg-input);
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -398,7 +447,9 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-ui);
   font-size: .95rem;
   direction: rtl;
-  transition: border-color .2s, box-shadow .2s;
+  transition-property: border-color, box-shadow;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .search-input::placeholder { color: var(--text-3); }
 .search-input:focus {
@@ -417,7 +468,7 @@ img { display: block; max-width: 100%; }
   color: var(--text-3);
   cursor: pointer;
   font-size: .8rem;
-  padding: .2rem;
+  padding: var(--sp-1);
   line-height: 1;
 }
 .search-clear:hover { color: var(--text); }
@@ -425,11 +476,11 @@ img { display: block; max-width: 100%; }
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: var(--sp-2);
 }
 
 .filter-select {
-  padding: .55rem .75rem;
+  padding: var(--sp-2) var(--sp-3);
   background: var(--bg-input);
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -438,10 +489,10 @@ img { display: block; max-width: 100%; }
   font-size: .85rem;
   direction: rtl;
   cursor: pointer;
-  transition: border-color .2s;
+  transition: border-color var(--dur-fast) var(--ease);
   appearance: none;
   -webkit-appearance: none;
-  padding-left: 1.8rem;
+  padding-left: var(--sp-7);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6050'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: .6rem center;
@@ -455,13 +506,13 @@ img { display: block; max-width: 100%; }
 .main-content {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem 4rem;
+  padding: var(--sp-6) var(--sp-6) var(--sp-10);
 }
 
 .results-bar {
   font-size: .85rem;
   color: var(--text-3);
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--sp-5);
   min-height: 1.4em;
 }
 .results-bar strong { color: var(--text-2); }
@@ -470,18 +521,20 @@ img { display: block; max-width: 100%; }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: var(--sp-4);
 }
 
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 1.35rem 1.25rem 1.1rem;
+  padding: var(--sp-5) var(--sp-5) var(--sp-4);
   display: flex;
   flex-direction: column;
-  gap: .6rem;
-  transition: border-color .2s, transform .2s, box-shadow .2s;
+  gap: var(--sp-2);
+  transition-property: border-color, transform, box-shadow;
+  transition-duration: var(--dur-base);
+  transition-timing-function: var(--ease);
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -498,7 +551,7 @@ img { display: block; max-width: 100%; }
   height: 100%;
   background: var(--gold);
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity var(--dur-fast) var(--ease);
 }
 
 .card:hover {
@@ -513,7 +566,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: .5rem;
+  gap: var(--sp-2);
 }
 
 .card-shelfmark {
@@ -527,9 +580,9 @@ img { display: block; max-width: 100%; }
 
 .card-icons {
   display: flex;
-  gap: .25rem;
+  gap: var(--sp-1);
   flex-shrink: 0;
-  margin-top: .1rem;
+  margin-top: var(--sp-0);
 }
 
 .card-icon {
@@ -543,8 +596,10 @@ img { display: block; max-width: 100%; }
   height: 160px;
   object-fit: cover;
   border-radius: calc(var(--radius-lg) - 2px) calc(var(--radius-lg) - 2px) 0 0;
-  margin: -1.35rem -1.25rem 0;
-  width: calc(100% + 2.5rem);
+  /* חייב לבטל בדיוק את ה-padding של .card. נגזר ממנו ולא נכתב שוב,
+     כדי ששינוי בסקאלה יזיז את שניהם יחד. */
+  margin: calc(-1 * var(--sp-5)) calc(-1 * var(--sp-5)) 0;
+  width: calc(100% + 2 * var(--sp-5));
   /* The global `img { max-width: 100% }` was clamping that calc back to the
      content box, so the picture came out 42px narrower than the card. With
      symmetric negative margins the leftover showed up as a gap on one side —
@@ -553,7 +608,7 @@ img { display: block; max-width: 100%; }
   max-width: none;
   display: block;
   background: var(--bg-2);
-  transition: opacity .3s;
+  transition: opacity var(--dur-base) var(--ease);
 }
 .card--has-thumb { padding-top: 0; }
 .card--has-thumb .card-top { margin-top: 1rem; }
@@ -562,7 +617,7 @@ img { display: block; max-width: 100%; }
   display: inline-block;
   font-size: .7rem;
   font-weight: 500;
-  padding: .2rem .55rem;
+  padding: var(--sp-1) var(--sp-2);
   border-radius: 99px;
   text-transform: none;
   letter-spacing: 0;
@@ -590,7 +645,7 @@ img { display: block; max-width: 100%; }
 .card-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: .35rem;
+  gap: var(--sp-1);
   align-items: center;
 }
 
@@ -630,12 +685,12 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
   letter-spacing: .05em;
   text-transform: uppercase;
-  margin-bottom: .4rem;
+  margin-bottom: var(--sp-2);
 }
 
 .card-footer {
   margin-top: auto;
-  padding-top: .5rem;
+  padding-top: var(--sp-2);
   border-top: 1px solid var(--border);
   font-size: .75rem;
   color: var(--text-3);
@@ -646,14 +701,14 @@ img { display: block; max-width: 100%; }
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .4rem;
-  padding-top: 2rem;
+  gap: var(--sp-2);
+  padding-top: var(--sp-7);
   flex-wrap: wrap;
 }
 
 .page-gap {
   color: var(--text-3);
-  padding: 0 .15rem;
+  padding: 0 var(--sp-0);
   user-select: none;
 }
 
@@ -663,9 +718,9 @@ img { display: block; max-width: 100%; }
 .page-jump {
   display: flex;
   align-items: center;
-  gap: .45rem;
-  margin-inline-start: .9rem;
-  padding-inline-start: .9rem;
+  gap: var(--sp-2);
+  margin-inline-start: var(--sp-4);
+  padding-inline-start: var(--sp-4);
   border-inline-start: 1px solid var(--border);
 }
 .page-jump label,
@@ -676,7 +731,7 @@ img { display: block; max-width: 100%; }
 }
 .page-jump input {
   width: 4.5rem;
-  padding: .35rem .5rem;
+  padding: var(--sp-1) var(--sp-2);
   font: inherit;
   font-size: .88rem;
   text-align: center;
@@ -697,7 +752,7 @@ img { display: block; max-width: 100%; }
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: .7rem;
+    margin-top: var(--sp-3);
   }
   /* At 320px with the text-size control turned up, "מתוך 4,493" is the piece
      that pushes the row past the viewport. The count is still on the input as
@@ -709,7 +764,7 @@ img { display: block; max-width: 100%; }
 .page-btn {
   min-width: 2.2rem;
   height: 2.2rem;
-  padding: 0 .6rem;
+  padding: 0 var(--sp-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -720,7 +775,9 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-ui);
   font-size: .85rem;
   cursor: pointer;
-  transition: background .15s, border-color .15s, color .15s;
+  transition-property: background, border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .page-btn:hover { background: var(--bg-card-h); border-color: var(--border-2); color: var(--text); }
 .page-btn.active {
@@ -734,12 +791,12 @@ img { display: block; max-width: 100%; }
 /* ── States ──────────────────────────────────────────────────────────────────── */
 .loading-state {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: var(--sp-11) var(--sp-4);
   color: var(--text-3);
 }
 .empty-state {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: var(--sp-10) var(--sp-4);
   color: var(--text-3);
 }
 .empty-icon { font-size: 3rem; margin-bottom: .75rem; }
@@ -751,7 +808,7 @@ img { display: block; max-width: 100%; }
   border-top-color: var(--gold);
   border-radius: 50%;
   animation: spin .8s linear infinite;
-  margin: 0 auto 1rem;
+  margin: 0 auto var(--sp-4);
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -759,13 +816,13 @@ img { display: block; max-width: 100%; }
 .fragment-body { background: var(--bg-2); }
 
 .top-nav {
-  padding: .9rem 1.5rem;
+  padding: var(--sp-4) var(--sp-6);
   background: rgba(250,248,243,.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--sp-4);
   font-size: .9rem;
   position: sticky;
   top: 0;
@@ -790,20 +847,20 @@ img { display: block; max-width: 100%; }
 .fragment-article {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 5rem;
+  padding: var(--sp-7) var(--sp-6) var(--sp-11);
 }
 
 .fragment-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: var(--sp-7);
+  padding-bottom: var(--sp-6);
   border-bottom: 1px solid var(--divider);
 }
 
 .fragment-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: .4rem;
-  margin-bottom: .75rem;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
 }
 
 /* The heading carries the description; the shelfmark sits under it.
@@ -821,7 +878,7 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
   color: var(--text);
   line-height: 1.25;
-  margin-bottom: .4rem;
+  margin-bottom: var(--sp-2);
 }
 
 h1.fragment-shelfmark {
@@ -830,7 +887,7 @@ h1.fragment-shelfmark {
   font-weight: 700;
   color: var(--text);
   line-height: 1.2;
-  margin-bottom: .4rem;
+  margin-bottom: var(--sp-2);
 }
 
 p.fragment-shelfmark {
@@ -838,7 +895,7 @@ p.fragment-shelfmark {
   font-size: 1.05rem;
   color: var(--text-2);
   letter-spacing: .01em;
-  margin-bottom: .3rem;
+  margin-bottom: var(--sp-1);
 }
 
 .fragment-library {
@@ -850,7 +907,7 @@ p.fragment-shelfmark {
 .fragment-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-  gap: 2.5rem;
+  gap: var(--sp-8);
   align-items: start;
 }
 
@@ -872,8 +929,8 @@ p.fragment-shelfmark {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .6rem;
-  padding: 3rem 1.5rem;
+  gap: var(--sp-2);
+  padding: var(--sp-9) var(--sp-6);
   color: var(--text-3);
   font-size: .9rem;
   min-height: 220px;
@@ -889,12 +946,12 @@ p.fragment-shelfmark {
   height: auto;
   display: block;
   cursor: zoom-in;
-  transition: transform .3s;
+  transition: transform var(--dur-base) var(--ease);
 }
 .fragment-img:hover { transform: scale(1.01); }
 
 .image-caption {
-  padding: .65rem 1rem;
+  padding: var(--sp-3) var(--sp-4);
   font-size: .78rem;
   color: var(--text-3);
   background: var(--bg-2);
@@ -905,21 +962,23 @@ p.fragment-shelfmark {
 .image-links {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  margin-top: .75rem;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
 }
 
 .image-link {
   display: flex;
   align-items: center;
-  gap: .5rem;
-  padding: .6rem .85rem;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: var(--text-2);
   font-size: .85rem;
-  transition: border-color .15s, color .15s;
+  transition-property: border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .image-link:hover {
   border-color: var(--gold-dark);
@@ -932,16 +991,16 @@ p.fragment-shelfmark {
 .meta-list {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: .2rem .75rem;
+  gap: var(--sp-1) var(--sp-3);
   align-items: baseline;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--sp-6);
 }
 
 .meta-list dt {
   font-size: .78rem;
   color: var(--text-3);
   white-space: nowrap;
-  padding-top: .35rem;
+  padding-top: var(--sp-1);
   font-weight: 500;
   letter-spacing: .02em;
 }
@@ -949,7 +1008,7 @@ p.fragment-shelfmark {
 .meta-list dd {
   font-size: .92rem;
   color: var(--text-2);
-  padding: .3rem 0;
+  padding: var(--sp-1) 0;
   border-bottom: 1px solid var(--border);
   line-height: 1.4;
 }
@@ -962,12 +1021,12 @@ p.fragment-shelfmark {
   text-transform: uppercase;
   letter-spacing: .12em;
   color: var(--gold-dark);
-  margin-bottom: .6rem;
+  margin-bottom: var(--sp-2);
 }
 
 .description-block {
-  margin-bottom: 1.5rem;
-  padding: 1.1rem 1.25rem;
+  margin-bottom: var(--sp-6);
+  padding: var(--sp-4) var(--sp-5);
   background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -984,8 +1043,8 @@ p.fragment-shelfmark {
 .english-toggle {
   display: inline-flex;
   align-items: center;
-  margin-top: .9rem;
-  padding: .4rem .85rem;
+  margin-top: var(--sp-4);
+  padding: var(--sp-2) var(--sp-3);
   background: var(--bg-card);
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -993,7 +1052,9 @@ p.fragment-shelfmark {
   font: inherit;
   font-size: .82rem;
   cursor: pointer;
-  transition: background .15s, border-color .15s, color .15s;
+  transition-property: background, border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .english-toggle:hover {
   background: var(--bg-card-h);
@@ -1014,18 +1075,20 @@ p.fragment-shelfmark {
 .tags-list {
   display: flex;
   flex-wrap: wrap;
-  gap: .4rem;
+  gap: var(--sp-2);
 }
 
 .tag-pill {
   display: inline-block;
-  padding: .25rem .65rem;
+  padding: var(--sp-1) var(--sp-3);
   background: var(--bg-card);
   border: 1px solid var(--border-2);
   border-radius: 99px;
   font-size: .78rem;
   color: var(--text-3);
-  transition: color .15s, border-color .15s;
+  transition-property: color, border-color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 .tag-pill:hover { color: var(--gold-light); border-color: var(--gold-dark); }
 
@@ -1034,8 +1097,8 @@ p.fragment-shelfmark {
 .btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
-  padding: .75rem 1.4rem;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-6);
   background: transparent;
   border: 1px solid var(--gold-dark);
   border-radius: var(--radius);
@@ -1043,7 +1106,9 @@ p.fragment-shelfmark {
   font-family: var(--font-ui);
   font-size: .9rem;
   font-weight: 500;
-  transition: background .2s, color .2s, border-color .2s;
+  transition-property: background, color, border-color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   cursor: pointer;
   text-decoration: none;
 }
@@ -1055,27 +1120,29 @@ p.fragment-shelfmark {
 
 /* ── Fragment navigation ─────────────────────────────────────────────────────── */
 .fragment-nav {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
+  margin-top: var(--sp-9);
+  padding-top: var(--sp-6);
   border-top: 1px solid var(--divider);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: var(--sp-4);
   flex-wrap: wrap;
 }
 
 .frag-nav-btn {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
-  padding: .55rem 1rem;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: var(--text-2);
   font-size: .85rem;
-  transition: background .15s, border-color .15s, color .15s;
+  transition-property: background, border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   text-decoration: none;
 }
 .frag-nav-btn:hover {
@@ -1094,7 +1161,7 @@ p.fragment-shelfmark {
 /* ── Footer ──────────────────────────────────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 1.5rem;
+  padding: var(--sp-7) var(--sp-6);
   text-align: center;
   font-size: .82rem;
   color: var(--text-3);
@@ -1105,7 +1172,7 @@ p.fragment-shelfmark {
 .footer-build { margin-top: .3rem; }
 .footer-note {
   max-width: 46rem;
-  margin: .5rem auto 0;
+  margin: var(--sp-2) auto 0;
   font-size: .78rem;
   color: var(--text-3);
 }
@@ -1148,14 +1215,14 @@ p.fragment-shelfmark {
 /* ── About link in header ────────────────────────────────────────────────────── */
 .about-link {
   display: inline-block;
-  margin-top: .75rem;
+  margin-top: var(--sp-3);
   font-family: var(--font-ui);
   font-size: .82rem;
   /* --gold-light על רקע הכותרת נתן 2.68:1, ו-opacity .8 הוריד אותו עוד.
      ההדגשה עוברת לקו תחתון במעבר עכבר במקום לשקיפות. */
   color: var(--link);
   text-decoration: none;
-  transition: color .2s;
+  transition: color var(--dur-fast) var(--ease);
 }
 .about-link:hover { color: var(--link-hover); text-decoration: underline; }
 
@@ -1163,16 +1230,16 @@ p.fragment-shelfmark {
 .dashboard-kpi {
   background: var(--bg-2);
   border-bottom: 1px solid var(--border);
-  padding: 1.25rem 0;
+  padding: var(--sp-5) 0;
 }
 .dash-kpi-row--two {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--sp-6);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "docs dyk dyk img";
-  gap: .75rem;
+  gap: var(--sp-3);
 }
 
 .dash-kpi-row--two > :first-child { grid-area: docs; }
@@ -1196,7 +1263,7 @@ p.fragment-shelfmark {
   background: var(--bg-2);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 2rem 1.5rem;
+  padding: var(--sp-7) var(--sp-6);
 }
 
 .dash-inner {
@@ -1204,29 +1271,29 @@ p.fragment-shelfmark {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--sp-4);
 }
 
 /* KPI row (legacy - unused) */
 .dash-kpi-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: .75rem;
+  gap: var(--sp-3);
 }
 
 .kpi-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 1.1rem 1rem;
+  padding: var(--sp-4) var(--sp-4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: .2rem;
+  gap: var(--sp-1);
   box-shadow: var(--shadow);
-  transition: box-shadow .2s;
+  transition: box-shadow var(--dur-base) var(--ease);
 }
 .kpi-card:hover { box-shadow: var(--shadow-lg); }
 
@@ -1246,14 +1313,14 @@ p.fragment-shelfmark {
 .dash-panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: .75rem;
+  gap: var(--sp-3);
 }
 
 .dash-panel {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 1.1rem 1.25rem;
+  padding: var(--sp-4) var(--sp-5);
   box-shadow: var(--shadow);
 }
 
@@ -1276,7 +1343,7 @@ p.fragment-shelfmark {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: .7rem;
+  margin-bottom: var(--sp-3);
 }
 
 .dash-panel-title {
@@ -1285,7 +1352,7 @@ p.fragment-shelfmark {
   text-transform: uppercase;
   letter-spacing: .12em;
   color: var(--text-3);
-  margin-bottom: .7rem;
+  margin-bottom: var(--sp-3);
 }
 .dash-panel-hd .dash-panel-title { margin-bottom: 0; }
 
@@ -1297,7 +1364,7 @@ p.fragment-shelfmark {
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: .25rem .4rem;
+  gap: var(--sp-1) var(--sp-2);
   align-items: baseline;
   line-height: 2;
 }
@@ -1306,12 +1373,14 @@ p.fragment-shelfmark {
   cursor: pointer;
   color: var(--text-2);
   font-weight: 500;
-  padding: .1rem .35rem;
+  padding: var(--sp-0) var(--sp-1);
   border-radius: var(--radius);
   background: none;
   border: none;
   font-family: var(--font-ui);
-  transition: background .12s, color .12s;
+  transition-property: background, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   line-height: 1.3;
 }
 .tag-pill-cloud:hover { background: var(--gold-dark); color: #fff; }
@@ -1323,7 +1392,7 @@ p.fragment-shelfmark {
   display: grid;
   grid-template-columns: 7.5rem 1fr 3.5rem;
   align-items: center;
-  gap: .5rem;
+  gap: var(--sp-2);
   font-size: .8rem;
   /* השורות שמסננות הן <button> (ראו renderDist ב-search.js) כדי שיהיו
      נגישות למקלדת. איפוס עיצוב הכפתור משאיר אותן זהות לשורות התצוגה. */
@@ -1337,10 +1406,12 @@ p.fragment-shelfmark {
 
 .dist-row--clickable {
   cursor: pointer;
-  padding: .15rem .35rem;
-  margin: 0 -.35rem;
+  /* --sp-1 ולא --sp-0 באנכי: היישור לסקאלה הוריד את גובה השורה מ-25px
+     ל-24px בדיוק, שהוא הרצפה של WCAG 2.5.8. השלב הבא מחזיר מרווח. */
+  padding: var(--sp-1);
+  margin: 0 calc(-1 * var(--sp-1));  /* מבטל את ה-padding האופקי שמעל */
   border-radius: 6px;
-  transition: background .15s;
+  transition: background var(--dur-fast) var(--ease);
 }
 .dist-row--clickable:hover { background: var(--bg-card-h); }
 .dist-row--clickable:hover .dist-label { color: var(--gold-light); }
@@ -1369,7 +1440,7 @@ p.fragment-shelfmark {
   height: 100%;
   background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
   border-radius: 3px;
-  transition: width .5s ease;
+  transition: width var(--dur-slow) var(--ease);
 }
 
 .dist-count { color: var(--text-3); font-size: .72rem; white-space: nowrap; }
@@ -1378,7 +1449,7 @@ p.fragment-shelfmark {
 .century-chart {
   display: flex;
   align-items: flex-end;
-  gap: .5rem;
+  gap: var(--sp-2);
   height: 90px;
   /* עם טקסט וריווח מוגדלים שבע העמודות אינן נכנסות ל-320px, והתרשים
      היה מרחיב את הדף כולו. אזור גליל משלו הוא הפתרון שקריטריון 1.4.10
@@ -1391,7 +1462,7 @@ p.fragment-shelfmark {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .25rem;
+  gap: var(--sp-1);
   height: 100%;
   justify-content: flex-end;
   min-width: 2.6rem;
@@ -1421,7 +1492,9 @@ p.fragment-shelfmark {
   background: linear-gradient(180deg, var(--gold-light), var(--gold-dark));
   border-radius: 3px 3px 0 0;
   min-height: 3px;
-  transition: background .15s, box-shadow .15s, filter .15s;
+  transition-property: background, box-shadow, filter;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
 }
 
 .century-label { font-size: .68rem; color: var(--text-3); text-align: center; }
@@ -1435,7 +1508,7 @@ p.fragment-shelfmark {
 
 @media (max-width: 600px) {
   .dash-kpi-row--two {
-    padding: 0 1rem;
+    padding: 0 var(--sp-4);
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "docs img" "dyk dyk";
   }
@@ -1447,7 +1520,7 @@ p.fragment-shelfmark {
 #geniza-map {
   height: 340px;
   border-radius: var(--radius);
-  margin-top: .7rem;
+  margin-top: var(--sp-3);
   background: var(--bg-2);
   z-index: 0;
 }
@@ -1473,7 +1546,9 @@ p.fragment-shelfmark {
   gap: 1px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,.35);
-  transition: background .15s, border-color .15s;
+  transition-property: background, border-color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   position: relative;
 }
 
@@ -1530,7 +1605,7 @@ p.fragment-shelfmark {
   height: 80px;
   overflow: hidden;
   border-radius: var(--radius);
-  margin-bottom: .9rem;
+  margin-bottom: var(--sp-4);
   background: var(--bg-2);
 }
 
@@ -1545,7 +1620,7 @@ p.fragment-shelfmark {
 .spice-buttons {
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 1fr));
-  gap: .5rem;
+  gap: var(--sp-2);
 }
 
 .spice-btn {
@@ -1553,13 +1628,15 @@ p.fragment-shelfmark {
   min-width: 0;
   flex-direction: column;
   align-items: center;
-  gap: .1rem;
-  padding: .45rem .8rem;
+  gap: var(--sp-0);
+  padding: var(--sp-2) var(--sp-3);
   border: 1.5px solid var(--border-2);
   border-radius: var(--radius);
   background: var(--bg-2);
   cursor: pointer;
-  transition: background .12s, border-color .12s, color .12s;
+  transition-property: background, border-color, color;
+  transition-duration: var(--dur-fast);
+  transition-timing-function: var(--ease);
   font-family: var(--font-ui);
 }
 
@@ -1630,14 +1707,14 @@ p.fragment-shelfmark {
   right: 1rem;
   top: -100px;
   z-index: 100;
-  padding: .7rem 1.2rem;
+  padding: var(--sp-3) var(--sp-5);
   background: var(--gold-dark);
   color: #fff;
   font-family: var(--font-ui);
   font-weight: 500;
   border-radius: 0 0 var(--radius) var(--radius);
   text-decoration: none;
-  transition: top .15s ease-out;
+  transition: top var(--dur-fast) var(--ease);
 }
 .skip-link:focus {
   top: 0;
@@ -1665,8 +1742,8 @@ p.fragment-shelfmark {
 }
 
 .noscript-note {
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.2rem;
+  margin-bottom: var(--sp-6);
+  padding: var(--sp-4) var(--sp-5);
   background: var(--bg-2);
   border: 1px solid var(--border-2);
   border-radius: var(--radius);
@@ -1678,31 +1755,31 @@ p.fragment-shelfmark {
 .doc-index {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: var(--sp-8) var(--sp-6) var(--sp-10);
 }
 .doc-index-title {
   font-family: var(--font-ui);
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   font-weight: 700;
   color: var(--gold-dark);
-  margin-bottom: .5rem;
+  margin-bottom: var(--sp-2);
 }
 .doc-index-sub {
   color: var(--text-2);
   font-size: .95rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1.2rem;
+  margin-bottom: var(--sp-7);
+  padding-bottom: var(--sp-5);
   border-bottom: 1px solid var(--border);
 }
 .doc-index-list {
-  margin: 0 1.4rem 2rem 0;
+  margin: 0 var(--sp-6) var(--sp-7) 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: .55rem;
+  gap: var(--sp-2);
 }
 .doc-index-list li {
-  padding-bottom: .55rem;
+  padding-bottom: var(--sp-2);
   border-bottom: 1px solid var(--divider);
   line-height: 1.5;
 }
@@ -1728,7 +1805,7 @@ p.fragment-shelfmark {
 .tag-hub {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: var(--sp-8) var(--sp-6) var(--sp-10);
 }
 .tag-header,
 .tag-intro,
@@ -1739,8 +1816,8 @@ p.fragment-shelfmark {
   margin-inline: auto;
 }
 .tag-header {
-  margin-bottom: 1.6rem;
-  padding-bottom: 1.2rem;
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-5);
   border-bottom: 1px solid var(--border);
 }
 .tag-kicker {
@@ -1749,14 +1826,14 @@ p.fragment-shelfmark {
   text-transform: uppercase;
   letter-spacing: .12em;
   color: var(--gold-dark);
-  margin-bottom: .5rem;
+  margin-bottom: var(--sp-2);
 }
 .tag-title {
   font-family: var(--font-ui);
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   font-weight: 700;
   color: var(--gold-dark);
-  margin-bottom: .5rem;
+  margin-bottom: var(--sp-2);
 }
 .tag-count {
   color: var(--text-2);
@@ -1764,8 +1841,8 @@ p.fragment-shelfmark {
 }
 
 .tag-intro {
-  margin-bottom: 2rem;
-  padding: 1.1rem 1.25rem;
+  margin-bottom: var(--sp-7);
+  padding: var(--sp-4) var(--sp-5);
   background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1780,8 +1857,8 @@ p.fragment-shelfmark {
 .tag-list-label { margin-bottom: 1rem; max-width: 900px; margin-inline: auto; }
 
 .tag-related {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-6);
   border-top: 1px solid var(--border);
   max-width: 900px;
   margin-inline: auto;
@@ -1789,14 +1866,14 @@ p.fragment-shelfmark {
 
 .tag-group { margin-bottom: 2rem; }
 .tag-group-list {
-  margin: 0 1.4rem 0 0;
+  margin: 0 var(--sp-6) 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: var(--sp-2);
 }
 .tag-group-list li {
-  padding-bottom: .5rem;
+  padding-bottom: var(--sp-2);
   border-bottom: 1px solid var(--divider);
   line-height: 1.5;
 }
@@ -1829,7 +1906,7 @@ a.spice-btn:hover { text-decoration: none; }
 .dash-panel-link:hover { text-decoration: underline; }
 
 .tag-more {
-  margin-top: 1.5rem;
+  margin-top: var(--sp-6);
   font-size: .9rem;
   color: var(--text-2);
   line-height: 1.7;
@@ -1837,10 +1914,10 @@ a.spice-btn:hover { text-decoration: none; }
 
 /* ── Related documents, at the foot of every document page ──────────────────── */
 .related-block {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-6);
   border-top: 1px solid var(--border);
 }
 .related-grid {
-  margin-top: .9rem;
+  margin-top: var(--sp-4);
 }
