@@ -209,6 +209,23 @@ def page_heading(doc, limit=HEADING_LIMIT):
     return out if len(out) >= 25 else None
 
 
+def page_heading(doc):
+    """The descriptive clause on its own, for the visible <h1>.
+
+    search_title() appends the shelfmark because a search result is one line
+    and has to carry both. The page does not: it can put the description in
+    the heading and the catalogue label on the line beneath, where a
+    researcher scanning for it still finds it.
+
+    Returns None when the description is too short to yield a clause, and the
+    heading falls back to the shelfmark.
+    """
+    title = search_title(doc)
+    shelfmark = clean(doc.get("shelfmark")) or f"PGPID {doc['id']}"
+    suffix = f" · {shelfmark}"
+    return title[:-len(suffix)] if title.endswith(suffix) else None
+
+
 def doc_description(doc):
     """Best available prose, Hebrew first, English as a fallback."""
     return clean(doc.get("description_he")) or clean(doc.get("description"))
