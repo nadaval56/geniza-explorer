@@ -1,1 +1,47 @@
-{"id":"2035","shelfmark":"T-S 8J19.17","multifragment":"","type_en":"Letter","type_he":"מכתב","lang_en":"Judaeo-Arabic","lang_he":"יהודית-ערבית","lang2_en":"","lang2_he":"","lang_note":"","origin":"Malīj","destination":"","region":"","date":"","date_original":"","date_standard":"","date_inferred":"","date_rationale":"","library":"ספריית קיימברידג'","library_raw":"CUL","collection":"CUL, T-S","description":"Letter of petition, draft, addressed to “our lord” Mevorakh during his first term in office, from the “holy community of Malij and its cantor.” Only the prefaratory laudes and the address on the back have been preserved. (Mark Cohen, Jewish Self-Government in Medieval Egypt, 167; and Marina Rustow, “The Diplomatics of Leadership: Administrative Documents in Hebrew Script from the Geniza,” in Christians and Jews in Muslim Societies: Jews, Christians and Muslims in Medieval and Early Modern Times: A Festschrift in Honor of Mark R. Cohen, ed. A. Franklin, R.E. Margariti, M. Rustow, and U. Simonsohn, 167) EMS Verso: Address, in 2 lines, and 4 lines of Hebrew script in a different hand and ink which have been crossed through. (Information from CUDL)","tags":["11th c, communal, Petition, draft"],"has_transcription":false,"has_translation":false,"iiif_urls":["https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00019-00017"],"fragment_urls":["https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00019-00017/1"],"princeton_url":"https://geniza.princeton.edu/documents/2035/","mentioned":"","description_he":"טיוטה של מכתב בקשה הממוען ל\"אדוננו\" מבורך בתקופת כהונתו הראשונה, מטעם \"הקהילה הקדושה של מליג וחזנה\". מן המכתב שרדו רק שבחי הפתיחה ופרטי הנמען בצדו האחורי. בצד האחורי נכתבת כתובת הנמען בשתי שורות, ולצדה ארבע שורות בכתב עברי שנכתבו ביד אחרת ובדיו אחרת, ואשר נמתח עליהן קו מחיקה.","tags_he":["מכתב","יהודית-ערבית","טיוטה"],"prev":"2034","next":"2036","pos":1275,"total":35937}
+{
+  "collection": "CUL, T-S",
+  "date": "",
+  "date_inferred": "",
+  "date_original": "",
+  "date_rationale": "",
+  "date_standard": "",
+  "description": "Letter of petition, draft, addressed to “our lord” Mevorakh during his first term in office, from the “holy community of Malij and its cantor.” Only the prefaratory laudes and the address on the back have been preserved. (Mark Cohen, Jewish Self-Government in Medieval Egypt, 167; and Marina Rustow, “The Diplomatics of Leadership: Administrative Documents in Hebrew Script from the Geniza,” in Christians and Jews in Muslim Societies: Jews, Christians and Muslims in Medieval and Early Modern Times: A Festschrift in Honor of Mark R. Cohen, ed. A. Franklin, R.E. Margariti, M. Rustow, and U. Simonsohn, 167) EMS Verso: Address, in 2 lines, and 4 lines of Hebrew script in a different hand and ink which have been crossed through. (Information from CUDL)",
+  "description_he": "טיוטת מכתב בקשה הממוען ל\"אדוננו\" מבורך במהלך כהונתו הראשונה, מטעם \"הקהילה הקדושה של מליג' וחזנה\". מהמכתב שרדו רק דברי השבח הפותחים והכתובת שבגב. לפי מרק כהן ומרינה רוסטו, מדובר במסמך מנהלי מדיפלומטיקה של ההנהגה היהודית בתקופה הפאטימית. בגב המסמך: כתובת הנמען בשתי שורות, וכן ארבע שורות נוספות בכתב יד ובדיו שונים, בכתיבה עברית, אשר נמחקו בקווים חוצים.",
+  "destination": "",
+  "fragment_urls": [
+    "https://cudl.lib.cam.ac.uk/view/MS-TS-00008-J-00019-00017/1"
+  ],
+  "has_transcription": false,
+  "has_translation": false,
+  "id": "2035",
+  "iiif_urls": [
+    "https://cudl.lib.cam.ac.uk/iiif/MS-TS-00008-J-00019-00017"
+  ],
+  "lang2_en": "",
+  "lang2_he": "",
+  "lang_en": "Judaeo-Arabic",
+  "lang_he": "יהודית-ערבית",
+  "lang_note": "",
+  "library": "ספריית קיימברידג'",
+  "library_raw": "CUL",
+  "mentioned": "",
+  "multifragment": "",
+  "next": "2036",
+  "origin": "Malīj",
+  "pos": 1275,
+  "prev": "2034",
+  "princeton_url": "https://geniza.princeton.edu/documents/2035/",
+  "region": "",
+  "shelfmark": "T-S 8J19.17",
+  "tags": [
+    "11th c, communal, Petition, draft"
+  ],
+  "tags_he": [
+    "מכתב",
+    "יהודית-ערבית",
+    "טיוטה"
+  ],
+  "total": 35937,
+  "type_en": "Letter",
+  "type_he": "מכתב"
+}

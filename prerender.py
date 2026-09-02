@@ -41,6 +41,7 @@ import tag_pages
 
 ROOT = pathlib.Path(__file__).parent
 DOCS_DIR = ROOT / "data" / "docs"
+EN_DIR   = ROOT / "data" / "en"
 OUT_DIR = ROOT / "d"
 TAG_DIR = ROOT / "t"
 
@@ -147,7 +148,21 @@ def _clause(text, limit):
     boundary and a word boundary beats a character count — and a tail word that
     cannot end a phrase is dropped rather than left hanging.
     """
-    first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0].strip()
+    # Many descriptions open with a bare label — "מסמך משפטי.", "מכתב בעברית." —
+    # and a heading of eleven characters says nothing a shelfmark does not. When
+    # the opening sentence is too thin to stand alone, the next one joins it,
+    # as long as the pair still fits.
+    parts = [x for x in re.split(r"(?<=[.!?])\s", text) if x.strip()]
+    first = parts[0].strip()
+    i = 1
+    while len(first) < 45 and i < len(parts):
+        # Below 25 the label alone is unusable, so the next sentence is taken
+        # even when it overshoots — the clipping below trims it to fit, and a
+        # trimmed clause still tells the reader more than a catalogue number.
+        if len(first) >= 25 and len(first) + 1 + len(parts[i]) > limit:
+            break
+        first = f"{first} {parts[i].strip()}"
+        i += 1
     if len(first) <= limit:
         out = first
     else:
@@ -729,10 +744,11 @@ def render_index_pages(docs, base, out_dir):
 RELATED_BUCKET = 40
 RELATED_DESC = 110
 
-# Six full cards on every one of 35,940 pages put the published site at 1,010 MB
-# against a GitHub Pages ceiling of 1 GB. Four is what the grid shows in a row
-# anyway, and it is the cheap half of the fix: the descriptions are capped too.
-RELATED_MAX = 4
+# Cut to four when the site looked like it was at 1,010 MB against a 1 GB
+# ceiling. That figure came from du, which counts filesystem blocks: 35,940
+# small JSON files under data/docs round up to 4 KB each. Counted in bytes,
+# the way Pages counts, the site was 696 MB. Eight is restored.
+RELATED_MAX = 8
 
 
 def _quality(doc):
@@ -1238,6 +1254,34 @@ def page_fingerprint(payload):
     return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
 
 
+def write_english(docs):
+    """The one field the browser fetches, in a file of its own.
+
+    assets/doc-english.js asks for the English description on click. It used to
+    read data/docs/<id>.json, which carries the whole record — description,
+    tags, library, IIIF links, dates — every one of which is already in the
+    HTML of that same page. Publishing it meant shipping each document twice.
+
+    data/docs stays in the repository: prerender.py builds every page from it,
+    and it is the fallback when the Princeton CSV cannot be fetched. It is the
+    deploy that drops it, and this that takes its place — 57 MB become 11 MB.
+
+    Written here rather than in build.py because build.py --html-only and the
+    degraded CSV-less path both skip the step that writes data/docs, and a
+    missing data/en is a reader clicking a button that answers nothing.
+    """
+    EN_DIR.mkdir(parents=True, exist_ok=True)
+    fresh = 0
+    for doc in docs:
+        target = EN_DIR / f"{doc['id']}.json"
+        body = json.dumps({"description": clean(doc.get("description"))},
+                          ensure_ascii=False)
+        if not target.exists() or target.read_text(encoding="utf-8") != body:
+            target.write_text(body, encoding="utf-8")
+            fresh += 1
+    print(f"  ✓  data/en/  ({len(docs):,} files, {fresh:,} rewritten)")
+
+
 def resolve_lastmod(docs, tag_slugs, buckets):
     """Real <lastmod> dates, by remembering when each page's content last changed.
 
@@ -1374,7 +1418,7 @@ Disallow: /fragment.html
 # data/search.json and data/stats.json stay crawlable on purpose: Googlebot has
 # to fetch them to render the gallery, and blocking them would make the home
 # page look empty to it.
-Disallow: /data/docs/
+Disallow: /data/en/
 
 Sitemap: {base}sitemap.xml
 """
@@ -1449,6 +1493,8 @@ def run(base=None, limit=None, docs=None, verbose=True):
         json.dumps(slugs, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8")
     print(f"  ✓  data/tag_slugs.json  ({len(slugs)} tags)")
+
+    write_english(docs)
 
     total = sum(p.stat().st_size for p in OUT_DIR.glob("*.html"))
     if verbose:
