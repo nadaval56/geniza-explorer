@@ -36,14 +36,14 @@
 
   <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/fonts.css?v=20260902">
-  <link rel="stylesheet" href="assets/style.css?v=20260902">
+  <link rel="stylesheet" href="assets/fonts.css?v=20260903">
+  <link rel="stylesheet" href="assets/style.css?v=20260903">
   <!-- Leaflet is served from this site, not from a CDN: a CDN <script> tag hands
        every visitor's IP address to a third party on page load, which is exactly
        what the privacy notice promises does not happen. Same reasoning as the
        locally hosted fonts. Vendored copy: assets/vendor/leaflet/ (BSD-2-Clause). -->
   <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="assets/a11y.css?v=20260902">
+  <link rel="stylesheet" href="assets/a11y.css?v=20260903">
   <script>
     try {
       var _p = localStorage.getItem('privacy:v1');
@@ -162,6 +162,15 @@
         <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
+        <select id="filter-era" class="filter-select" aria-label="מאה">
+          <option value="">כל המאות</option>
+          <option value="10">המאה ה-10</option>
+          <option value="11">המאה ה-11</option>
+          <option value="12">המאה ה-12</option>
+          <option value="13">המאה ה-13</option>
+          <option value="14">המאה ה-14</option>
+          <option value="15">המאה ה-15</option>
+        </select>
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
           <option value="img">🖼 עם תמונה</option>
@@ -246,9 +255,46 @@
         <div class="dash-panel dash-panel--wide">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <a class="dash-panel-hint dash-panel-link" href="t/">כל 131 הנושאים ←</a>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
           </div>
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--people">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">אישים לאורך הדורות</h2>
+            <span class="dash-panel-hint">מן המאה העשירית ועד השלוש־עשרה</span>
+          </div>
+          <div class="people-timeline">
+          <div class="era-block">
+            <a class="era-rail" href="t/century-10/">המאה ה־10</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/saadia-gaon/"><span class="person-name">רב סעדיה גאון</span><span class="person-years"><bdi>882–942</bdi></span><span class="person-role">ראש ישיבת סורא</span><span class="person-count">66 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-11/">המאה ה־11</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/efraim-ben-shemarya/"><span class="person-name">רבי אפרים בן שמריה</span><span class="person-years">פעל <bdi>1020–1055</bdi></span><span class="person-role">ראש קהילת הירושלמים</span><span class="person-count">221 מסמכים</span></a>
+            <a class="person-chip" href="t/hillel-ben-eli/"><span class="person-name">הלל בן אלי</span><span class="person-years">פעל <bdi>1066–1108</bdi></span><span class="person-role">סופר בית הדין</span><span class="person-count">9 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-12/">המאה ה־12</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/halfon-ben-menashe/"><span class="person-name">חלפון בן מנשה הלוי</span><span class="person-years">פעל <bdi>1100–1138</bdi></span><span class="person-role">סופר בית הדין</span><span class="person-count">554 מסמכים</span></a>
+            <a class="person-chip" href="t/natan-ben-shmuel/"><span class="person-name">נתן בן שמואל החבר</span><span class="person-years">פעל <bdi>1128–1153</bdi></span><span class="person-role">סופר ופקיד בית דין</span><span class="person-count">56 מסמכים</span></a>
+            <a class="person-chip" href="t/maimonides/"><span class="person-name">רמב&quot;ם</span><span class="person-years"><bdi>1138–1204</bdi></span><span class="person-role">פוסק ורופא החצר</span><span class="person-count">241 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-13/">המאה ה־13</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/abraham-maimonides/"><span class="person-name">רבי אברהם בן הרמב&quot;ם</span><span class="person-years"><bdi>1186–1237</bdi></span><span class="person-role">נגיד יהודי מצרים</span><span class="person-count">389 מסמכים</span></a>
+            <a class="person-chip" href="t/shlomo-ben-eliyahu/"><span class="person-name">שלמה בן אליהו</span><span class="person-years">פעל <bdi>1204–1241</bdi></span><span class="person-role">סופר ודיין בפוסטאט</span><span class="person-count">231 מסמכים</span></a>
+            </div>
+          </div>
+          </div>
         </div>
 
         <div class="dash-panel dash-panel--wide dash-panel--map">
@@ -273,9 +319,18 @@
         <div class="dash-panel">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">לפי סוג מסמך</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <span class="dash-panel-hint">לעמוד הנושא</span>
           </div>
-          <div class="dist-list" id="dist-type"></div>
+          <div class="dist-list" id="dist-type">
+        <a class="dist-row dist-row--link" href="t/letters/" aria-label="מכתב — 11,395 מסמכים, לעמוד הנושא"><span class="dist-label" title="מכתב">מכתב</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:100%"></div></div><span class="dist-count">11,395</span></a>
+        <a class="dist-row dist-row--link" href="t/legal-documents/" aria-label="מסמך משפטי — 8,176 מסמכים, לעמוד הנושא"><span class="dist-label" title="מסמך משפטי">מסמך משפטי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:72%"></div></div><span class="dist-count">8,176</span></a>
+        <a class="dist-row dist-row--link" href="t/accounts/" aria-label="רשימה או טבלה — 5,706 מסמכים, לעמוד הנושא"><span class="dist-label" title="רשימה או טבלה">רשימה או טבלה</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:50%"></div></div><span class="dist-count">5,706</span></a>
+        <div class="dist-row"><span class="dist-label" title="לא מסווג">לא מסווג</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:32%"></div></div><span class="dist-count">3,658</span></div>
+        <div class="dist-row"><span class="dist-label" title="טקסט ספרותי">טקסט ספרותי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:24%"></div></div><span class="dist-count">2,719</span></div>
+        <a class="dist-row dist-row--link" href="t/state-documents/" aria-label="מסמך ממלכתי — 2,296 מסמכים, לעמוד הנושא"><span class="dist-label" title="מסמך ממלכתי">מסמך ממלכתי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:20%"></div></div><span class="dist-count">2,296</span></a>
+        <div class="dist-row"><span class="dist-label" title="טקסט פרא-ספרותי">טקסט פרא-ספרותי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:11%"></div></div><span class="dist-count">1,275</span></div>
+        <div class="dist-row"><span class="dist-label" title="שטר אשראי או קבלה">שטר אשראי או קבלה</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:5%"></div></div><span class="dist-count">589</span></div>
+          </div>
         </div>
 
         <div class="dash-panel">
@@ -286,9 +341,16 @@
         <div class="dash-panel dash-panel--century">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">לאורך הדורות</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <span class="dash-panel-hint">לעמוד המאה</span>
           </div>
-          <div class="century-chart" id="dist-century"></div>
+          <div class="century-chart" id="dist-century">
+          <a class="century-col century-col--link" href="t/century-10/" aria-label="מסמכים מהמאה ה-10 — 29 מסמכים, לעמוד המאה"><span class="century-bar" style="height:1%" aria-hidden="true"></span><span class="century-label">מ-10</span><span class="century-count">29</span></a>
+          <a class="century-col century-col--link" href="t/century-11/" aria-label="מסמכים מהמאה ה-11 — 1,315 מסמכים, לעמוד המאה"><span class="century-bar" style="height:50%" aria-hidden="true"></span><span class="century-label">מ-11</span><span class="century-count">1.3k</span></a>
+          <a class="century-col century-col--link" href="t/century-12/" aria-label="מסמכים מהמאה ה-12 — 2,616 מסמכים, לעמוד המאה"><span class="century-bar" style="height:100%" aria-hidden="true"></span><span class="century-label">מ-12</span><span class="century-count">2.6k</span></a>
+          <a class="century-col century-col--link" href="t/century-13/" aria-label="מסמכים מהמאה ה-13 — 690 מסמכים, לעמוד המאה"><span class="century-bar" style="height:26%" aria-hidden="true"></span><span class="century-label">מ-13</span><span class="century-count">690</span></a>
+          <a class="century-col century-col--link" href="t/century-14/" aria-label="מסמכים מהמאה ה-14 — 111 מסמכים, לעמוד המאה"><span class="century-bar" style="height:4%" aria-hidden="true"></span><span class="century-label">מ-14</span><span class="century-count">111</span></a>
+          <a class="century-col century-col--link" href="t/century-15/" aria-label="מסמכים מהמאה ה-15 — 94 מסמכים, לעמוד המאה"><span class="century-bar" style="height:4%" aria-hidden="true"></span><span class="century-label">מ-15</span><span class="century-count">94</span></a>
+          </div>
         </div>
 
       </div>
@@ -313,17 +375,17 @@
       <a href="privacy/">מדיניות פרטיות</a> ·
       <a href="accessibility/">הצהרת נגישות</a>
     </p>
-    <p class="footer-build">עודכן: 2 September 2026</p>
+    <p class="footer-build">עודכן: 3 September 2026</p>
   </footer>
 
   <script>const TOTAL_DOCS = 36239;</script>
   <script src="assets/vendor/leaflet/leaflet.js"></script>
-  <script src="assets/search.js?v=20260902"></script>
+  <script src="assets/search.js?v=20260903"></script>
   <script>
     window.PRIVACY_CONFIG = { appPrefixes: ['a11y:'], privacyUrl: 'privacy/' };
     window.A11Y_CONFIG = { privacyUrl: 'privacy/', accessibilityUrl: 'accessibility/' };
   </script>
-  <script src="assets/privacy.js?v=20260902"></script>
-  <script src="assets/a11y.js?v=20260902"></script>
+  <script src="assets/privacy.js?v=20260903"></script>
+  <script src="assets/a11y.js?v=20260903"></script>
 </body>
 </html>
