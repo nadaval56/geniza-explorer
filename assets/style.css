@@ -1040,7 +1040,8 @@ p.fragment-shelfmark {
 }
 
 /* התיאור המקורי באנגלית — נטען לפי בקשה, ראו assets/doc-english.js */
-.english-toggle {
+.english-toggle,
+.transcription-toggle {
   display: inline-flex;
   align-items: center;
   margin-top: var(--sp-4);
@@ -1056,7 +1057,8 @@ p.fragment-shelfmark {
   transition-duration: var(--dur-fast);
   transition-timing-function: var(--ease);
 }
-.english-toggle:hover {
+.english-toggle:hover,
+.transcription-toggle:hover {
   background: var(--bg-card-h);
   border-color: var(--gold-dark);
   color: var(--gold-light);
@@ -1064,9 +1066,61 @@ p.fragment-shelfmark {
 
 .english-desc { margin-top: .9rem; }
 
-.english-note {
+.english-note,
+.transcription-note {
   font-size: .85rem;
   color: var(--text-2);
+  line-height: 1.7;
+}
+
+/* ── התעתיק ───────────────────────────────────────────────────────────────────
+   הטקסט מגיע מ-PGP עם פסקה לכל שורת כתב יד, ולכן הפסקאות צמודות זו לזו והשורה
+   היא יחידת המשמעות. הרקע נבדל מן העמוד כדי שיהיה ברור היכן נגמר התיאור שלנו
+   ומתחיל המקור. ראו assets/doc-text.js. */
+.transcription-block { margin-bottom: var(--sp-6); }
+
+.transcription-panel { margin-top: var(--sp-4); }
+
+.transcription-item + .transcription-item {
+  margin-top: var(--sp-5);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--border);
+}
+
+.transcription-credit {
+  font-size: .75rem;
+  color: var(--text-3);
+  line-height: 1.6;
+  margin-bottom: var(--sp-3);
+}
+
+.transcription-body {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-4) var(--sp-5);
+  font-family: var(--font-serif);
+  font-size: .95rem;
+  line-height: 1.9;
+  color: var(--text);
+  /* שורה ארוכה של תעתיק אינה נשברת יפה, ולכן היא גוללת באזור משלה במקום
+     להרחיב את העמוד (קריטריון 1.4.10). */
+  overflow-x: auto;
+}
+
+.transcription-body p { margin: 0; }
+
+/* כל צד של הקטע (recto/verso) מגיע כ-section עם data-canvas משלו. */
+.transcription-body section + section {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px dashed var(--border-2);
+}
+
+.transcription-source {
+  margin-top: var(--sp-3);
+  font-size: .72rem;
+  color: var(--text-3);
   line-height: 1.7;
 }
 

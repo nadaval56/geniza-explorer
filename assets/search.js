@@ -109,6 +109,8 @@
       if (fLang && !(d.lh||'').includes(fLang)) return false;
       if (fLib  && !(d.lib||'').includes(fLib))  return false;
       if (fHas === 'img' && !d.img) return false;
+      if (fHas === 'tr'  && !d.tr)  return false;
+      if (fHas === 'tl'  && !d.tl)  return false;
       if (fEra && d.c !== fEra) return false;
       if (fTag && !(d.tgh||[]).includes(fTag)) return false;
       if (fLocation) {

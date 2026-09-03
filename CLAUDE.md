@@ -33,6 +33,9 @@
 | `assets/search.js` | חיפוש, מפה, ענן תגיות — ניתן לעריכה |
 | `assets/doc-image.js` | טעינת תצלום IIIF בעמודי `d/` — ניתן לעריכה |
 | `assets/doc-english.js` | טוען את התיאור המקורי באנגלית מ-`data/docs/<id>.json` בלחיצה. הוא **לא** בתוך ה-HTML בכוונה — ראו ההערה בראש הקובץ |
+| `assets/doc-text.js` | טוען את התעתיק מ-`data/transcriptions/<id>.json` בלחיצה, מאותו טעם |
+| `import_transcriptions.py` | מייבא את תעתיקי PGP מ-`princetongenizalab/pgp-text` אל `data/transcriptions/`. הרץ רק כשמרעננים את התעתיקים — ראו למטה |
+| `data/transcriptions/` | **מחויב לגיט**, ~35MB, תעתיק לכל מסמך שיש לו אחד |
 | `assets/card-thumbs.js` | מרטיב את התצלומים בכרטיסי דפי הנושא, בגלילה. אותה לוגיקה כמו ב-`doc-image.js` |
 | `data/tag_slugs.json` | **נוצר אוטומטית** על ידי `prerender.py` — תגית→סלאג, כדי ש-`search.js` יהפוך תווית בדף הבית לקישור |
 | `assets/fonts.css` + `assets/fonts/` | גופנים מקומיים (SIL OFL). האתר לא פונה ל-Google Fonts |
@@ -176,6 +179,31 @@ Open Graph ו-JSON-LD משלו בתוך ה-HTML. זה מה שמאפשר לזחל
 - **אישי הרצועה מוסתרים מענן התגיות** דרך `TIMELINE_TAGS`, גלובל שנכתב ל-
   `index.html` מ-`PEOPLE_TIMELINE` ונבלע לתוך `CLOUD_SKIP`. אין להוסיף אותם
   ידנית לסט שב-`search.js`
+
+### תעתיקים
+
+7,179 מסמכים באוסף נושאים תעתיק שנערך בידי חוקרי PGP, ו-1,665 גם תרגום
+לאנגלית. הרישיון זהה לזה של המטא־נתונים שהאתר כבר עומד בו: CC BY-NC 4.0.
+
+**רענון החומר:**
+
+```
+git clone --depth 1 https://github.com/princetongenizalab/pgp-text.git /tmp/pgp-text
+python3 import_transcriptions.py --source /tmp/pgp-text
+```
+
+- **הפלט מחויב לגיט ואינו נמשך בבנייה.** `build.py` מסומן `continue-on-error`
+  בדיוק משום שהורדה מפרינסטון עלולה להיכשל, וחבל שתקלת רשת תמחק את התעתיקים
+  מן האתר החי
+- **התעתיק אינו ב-HTML של עמוד המסמך**, מאותו טעם שבגללו התיאור האנגלי אינו
+  שם: הוא העתק מילה במילה מ-`geniza.princeton.edu`, ו-7,179 עמודים שרובם העתק
+  כזה הם בדיוק מה שגוגל מאנדקס במקור ומשמיט כאן. הוא נטען בלחיצה
+- **שם העורך והציטוט נשמרים לצד הטקסט** בקובץ עצמו, כדי שהייחוס שהרישיון דורש
+  לא ייפרד ממנו. 147 עורכים, ובראשם גויטיין וגיל
+- **ה-HTML מסונן בייבוא** — רק תגיות מבנה ומאפייני `dir`/`lang`/`class`/
+  `data-canvas`. שינוי ברשימה ההיא הוא שינוי במה שנשתל לתוך הדף
+- `has_transcription` ו-`has_translation` ב-CSV הם `Y`/`N`, ו-`is_truthy`
+  ב-`build.py` חייב להכיר את `y`. בלעדיו שני השדות `False` בכל האוסף
 
 ### שפות: `LANG_MAP` ממפה את כל הערכים
 
