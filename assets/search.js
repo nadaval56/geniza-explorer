@@ -677,6 +677,16 @@
     fetch('data/search.json')
       .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => {
+        /* סדר התצוגה: תמונה גוברת על הכל, ובתוך התמונה תעתיק גובר. אותו
+           כלל בדיוק כמו doc_rank ב-prerender.py, שמסדר את רכזות הנושא ואת
+           המסמכים הקשורים — רשת כרטיסים אחת באתר, סדר אחד. הסדר המקורי
+           (מקום המסמך באוסף) נשמר כשובר שוויון אחרון, כדי שהוא יהיה יציב. */
+        data.forEach((d, i) => { d._i = i; });
+        data.sort((a, b) =>
+          (a.img ? 0 : 1) - (b.img ? 0 : 1) ||
+          (a.tr  ? 0 : 1) - (b.tr  ? 0 : 1) ||
+          (b.dh || '').length - (a.dh || '').length ||
+          a._i - b._i);
         allDocs = filtered = data;
         loadingEl.hidden = true;
         populateFilters(data);
