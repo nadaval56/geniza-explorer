@@ -134,7 +134,7 @@ def check_people_timeline():
         tag = person["tag"]
         listed.append(tag)
         missing = {"tag", "years", "role", "century"} - set(person)
-        extra = set(person) - {"tag", "years", "role", "century", "active"}
+        extra = set(person) - {"tag", "years", "role", "century", "active", "label"}
         if missing:
             errors.append(f"PEOPLE_TIMELINE: '{tag}' חסרים שדות {sorted(missing)}")
         if extra:
@@ -151,6 +151,15 @@ def check_people_timeline():
     for tag, page in tag_pages.TAG_PAGES.items():
         if page["group"] == "person" and tag not in listed:
             errors.append(f"'{tag}' הוא דף אישים ואינו בציר הזמן שבעמוד הבית")
+
+    # הרצועה בעמוד הבית מרונדרת לפי סדר הרשימה, ולכן הסדר כאן הוא הסדר על
+    # המסך. ערך שנוסף בסוף במקום במקומו הכרונולוגי היה שובר את הציר בשקט.
+    # שנת הפתיחה כמספר ולא כמחרוזת: "939" גדול מ-"1002" בהשוואת מחרוזות,
+    # ורב האי גאון היה נדחק אחרי בני המאה שאחריו.
+    keys = [(p["century"], int(p.get("years", "0").split("–")[0] or 0))
+            for p in tag_pages.PEOPLE_TIMELINE]
+    if keys != sorted(keys):
+        errors.append("PEOPLE_TIMELINE אינו מסודר לפי מאה ואז לפי שנת הפתיחה")
 
 
 def main():

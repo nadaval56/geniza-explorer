@@ -398,7 +398,6 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
-        renderDist('dist-lang', s.by_lang || {});
       })
       .catch(() => {});
   }
@@ -415,7 +414,11 @@
     }
   }
 
+  /* האישים שכבר מוצגים ברצועת "אישים בגניזה לאורך הדורות". הרשימה מגיעה
+     מ-TIMELINE_TAGS שב-index.html, שנכתב מ-PEOPLE_TIMELINE, כדי שהוספת אדם
+     לרצועה תסיר אותו מן הענן בלי עריכה שנייה כאן. */
   const CLOUD_SKIP = new Set([
+    ...(typeof TIMELINE_TAGS !== 'undefined' ? TIMELINE_TAGS : []),
     'יהודית-ערבית','מכתב','מסמך משפטי','ערבית','חשבונות','עברית','מסמך מדינה',
     // location names — shown on the map instead
     'קהיר','פוסטאט','אלכסנדריה','ירושלים','צור','דמשק','עדן','בגדד','טבריה',
@@ -515,23 +518,6 @@
       applyFilters();
       document.getElementById('cards-grid')?.scrollIntoView({behavior:'smooth', block:'start'});
     });
-  }
-
-  /* לפי סוג מסמך ולפי מאה נכתבים אל ה-HTML ב-build.py, משום ששורותיהם הן
-     קישורים אל רכזות תחת t/. השפות נשארות כאן: אין להן רכזת לכל תווית, שכן
-     חלק מן הערכים ב-by_lang הם צירופים ("Arabic, Judaeo-Arabic") שאין להם דף. */
-  function renderDist(id, obj) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const entries = Object.entries(obj);
-    if (!entries.length) return;
-    const maxV = entries[0][1];
-    el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
-      const pct = Math.round(count / maxV * 100);
-      return `<div class="dist-row"><span class="dist-label" title="${esc(label)}">${esc(label)}</span>
-        <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
-        <span class="dist-count">${count.toLocaleString('he-IL')}</span></div>`;
-    }).join('');
   }
 
   // ── Location map ─────────────────────────────────────────────────────────────
