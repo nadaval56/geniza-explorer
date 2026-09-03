@@ -103,6 +103,16 @@ def base_url():
     return DEFAULT_BASE_URL
 
 
+def century_from_date(date_str):
+    """Extract century number (e.g. 11) from a date string like '1025-08/1026-09'."""
+    if not date_str:
+        return None
+    m = re.search(r"\b(9\d\d|1[0-4]\d\d)\b", date_str)
+    if m:
+        return (int(m.group(1)) // 100) + 1  # century CE
+    return None
+
+
 def is_true(value):
     return str(value).strip().lower() in ("true", "1", "yes")
 
@@ -1067,6 +1077,15 @@ def tag_index(docs):
             tag = clean(raw)
             if tag in tag_pages.TAG_PAGES:
                 buckets.setdefault(tag, []).append(doc)
+
+    # המאה אינה תגית שמסמך נושא. היא נגזרת משדה התאריך, ונכנסת לכאן כדי שרכזת
+    # מאה תיבנה, תופיע במפתח הנושאים וב-sitemap ותקבל lastmod אמיתי, בדיוק כמו
+    # כל רכזת אחרת. מסמך שתאריכו אינו נקרא פשוט אינו נספר לאף מאה.
+    for doc in docs:
+        tag = tag_pages.CENTURIES.get(century_from_date(doc.get("date")))
+        if tag:
+            buckets.setdefault(tag, []).append(doc)
+
     for items in buckets.values():
         items.sort(key=lambda d: (
             0 if (d.get("iiif_urls") or []) else 1,          # a photo first
@@ -1082,7 +1101,13 @@ def related_tags(tag, buckets, limit=8):
     group = tag_pages.TAG_PAGES[tag]["group"]
     siblings = [(t, len(d)) for t, d in buckets.items()
                 if t != tag and tag_pages.TAG_PAGES[t]["group"] == group]
-    siblings.sort(key=lambda pair: -pair[1])
+    if group == "century":
+        # שכנותיה של מאה הן המאות שלפניה ואחריה, לא הגדולות ממנה. סדר לפי היקף
+        # היה שולח את הקורא מן המאה העשירית ישר לשתים־עשרה.
+        order = {t: n for n, t in tag_pages.CENTURIES.items()}
+        siblings.sort(key=lambda pair: order.get(pair[0], 0))
+    else:
+        siblings.sort(key=lambda pair: -pair[1])
     return [t for t, _ in siblings[:limit]]
 
 
@@ -1122,9 +1147,13 @@ def render_tag_directory(buckets, base, out_dir):
     it gives the 131 hubs a single parent that the home page can link to."""
     sections = []
     for key, label in tag_pages.GROUPS.items():
-        members = sorted(((t, len(d)) for t, d in buckets.items()
-                          if tag_pages.TAG_PAGES[t]["group"] == key),
-                         key=lambda pair: -pair[1])
+        members = [(t, len(d)) for t, d in buckets.items()
+                   if tag_pages.TAG_PAGES[t]["group"] == key]
+        if key == "century":
+            order = {t: n for n, t in tag_pages.CENTURIES.items()}
+            members.sort(key=lambda pair: order.get(pair[0], 0))
+        else:
+            members.sort(key=lambda pair: -pair[1])
         if not members:
             continue
         links = "".join(

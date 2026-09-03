@@ -17,6 +17,8 @@
   · ערך ב-TAG_PAGES חסר שדה, נושא סלאג לא תקין או סלאג כפול
   · פסקת מבוא חורגת מ-80–200 מילים
   · ערך מפנה לקבוצה שאינה קיימת ב-GROUPS
+  · שם ב-PEOPLE_TIMELINE שאינו דף אישים, או משויך למאה שאין לה דף
+  · דף אישים שאינו מופיע בציר הזמן שבעמוד הבית
 
 תגית עם פחות מ-MIN_DOCS מסמכים מדווחת כהערה ולא ככשל: דף רכזת לשני
 מסמכים הוא בדיוק הדף הדל שהמפרט מזהיר מפניו.
@@ -113,14 +115,48 @@ def check_coverage(counts):
     for tag in thin:
         notes.append(f"'{tag}' נושא פחות מ-{MIN_DOCS} מסמכים — לא ייבנה לו דף")
 
-    unused = sorted(t for t in tag_pages.TAG_PAGES if t not in counts)
+    # תגית של מאה אינה תגית שמסמך נושא: prerender גוזר אותה משדה התאריך.
+    # היעדרה מ-tags_he.json הוא התקין, ולא סימן לערך יתום.
+    unused = sorted(t for t, page in tag_pages.TAG_PAGES.items()
+                    if t not in counts and page["group"] != "century")
     for tag in unused:
         notes.append(f"'{tag}' יש לו ערך אבל אף מסמך לא נושא אותו כרגע")
+
+
+def check_people_timeline():
+    """ציר הזמן בעמוד הבית מול דפי האישים.
+
+    הוא נכתב ביד ב-tag_pages.py, ובלעדי הבדיקה הזאת דף אישים חדש היה נבנה
+    תחת t/ ונשאר בלי קישור מעמוד הבית — בדיוק המצב שהציר בא לתקן.
+    """
+    listed = []
+    for person in tag_pages.PEOPLE_TIMELINE:
+        tag = person["tag"]
+        listed.append(tag)
+        missing = {"tag", "years", "role", "century"} - set(person)
+        extra = set(person) - {"tag", "years", "role", "century", "active"}
+        if missing:
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' חסרים שדות {sorted(missing)}")
+        if extra:
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' שדות לא מוכרים {sorted(extra)}")
+        if not re.fullmatch(r"\d{3,4}–\d{3,4}", person.get("years", "")):
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' — years הוא טווח שנים בלבד")
+        if tag not in tag_pages.TAG_PAGES:
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' אינו ב-TAG_PAGES")
+        elif tag_pages.TAG_PAGES[tag]["group"] != "person":
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' אינו בקבוצת האישים")
+        if person.get("century") not in tag_pages.CENTURIES:
+            errors.append(f"PEOPLE_TIMELINE: '{tag}' משויך למאה שאין לה דף")
+
+    for tag, page in tag_pages.TAG_PAGES.items():
+        if page["group"] == "person" and tag not in listed:
+            errors.append(f"'{tag}' הוא דף אישים ואינו בציר הזמן שבעמוד הבית")
 
 
 def main():
     counts = load_tag_counts()
     check_entries()
+    check_people_timeline()
     if counts:
         check_coverage(counts)
 

@@ -13,7 +13,7 @@
   let fLang     = '';
   let fLib      = '';
   let fHas      = '';
-  let fEra      = 0;   // century number (10-14), 0 = all
+  let fEra      = 0;   // century number (10-15), 0 = all
   let fTag      = '';  // exact Hebrew tag from tag cloud
   let fLocation = '';  // Hebrew location name, e.g. 'קהיר'
 
@@ -32,6 +32,7 @@
   const selLang     = document.getElementById('filter-lang');
   const selLib      = document.getElementById('filter-library');
   const selHas      = document.getElementById('filter-has');
+  const selEra      = document.getElementById('filter-era');
   const btnReset    = document.getElementById('btn-reset');
   const btnResetEmpty = document.getElementById('btn-reset-empty');
   const btnSurprise = document.getElementById('btn-surprise');
@@ -108,10 +109,7 @@
       if (fLang && !(d.lh||'').includes(fLang)) return false;
       if (fLib  && !(d.lib||'').includes(fLib))  return false;
       if (fHas === 'img' && !d.img) return false;
-      if (fEra) {
-        if (!d.c) return false;
-        if (fEra === 14 ? d.c < 14 : d.c !== fEra) return false;
-      }
+      if (fEra && d.c !== fEra) return false;
       if (fTag && !(d.tgh||[]).includes(fTag)) return false;
       if (fLocation) {
         const locSet = locationDocIds[fLocation];
@@ -126,7 +124,6 @@
     page = 1;
     updateResetVisibility();
     render();
-    updateDistActiveStates();
   }
 
   function hasActiveFilter() {
@@ -138,26 +135,12 @@
     searchInput.value = '';
     clearBtn.hidden = true;
     selType.value = ''; selLang.value = ''; selLib.value = ''; selHas.value = '';
+    if (selEra) selEra.value = '';
     if (_activeLocMarker) {
       _activeLocMarker.getElement()?.querySelector('.gmap-pin')?.classList.remove('gmap-pin--active');
       _activeLocMarker = null;
     }
     applyFilters();
-  }
-
-  function updateDistActiveStates() {
-    document.querySelectorAll('#dist-type .dist-row').forEach(r => {
-      const on = !!fType && r.dataset.type === fType;
-      r.classList.toggle('dist-row--active', on);
-      /* המחלקה צובעת; aria-pressed הוא מה שקורא מסך מכריז. בלעדיו
-         המצב הפעיל מועבר בצבע בלבד (קריטריון 1.4.1). */
-      if (r.hasAttribute('aria-pressed')) r.setAttribute('aria-pressed', String(on));
-    });
-    document.querySelectorAll('#dist-century .century-col').forEach(c => {
-      const on = !!fEra && +c.dataset.era === fEra;
-      c.classList.toggle('century-col--active', on);
-      if (c.hasAttribute('aria-pressed')) c.setAttribute('aria-pressed', String(on));
-    });
   }
 
   function updateResetVisibility() {
@@ -338,36 +321,13 @@
     selLang.addEventListener('change', () => { fLang = selLang.value; applyFilters(); });
     selLib.addEventListener('change',  () => { fLib  = selLib.value;  applyFilters(); });
     selHas.addEventListener('change',  () => { fHas  = selHas.value;  applyFilters(); });
+    if (selEra) selEra.addEventListener('change', () => {
+      fEra = +selEra.value || 0;
+      applyFilters();
+    });
 
     if (btnReset)      btnReset.addEventListener('click', resetAll);
     if (btnResetEmpty) btnResetEmpty.addEventListener('click', resetAll);
-
-    // Click-to-filter on document-type distribution
-    const distTypeEl = document.getElementById('dist-type');
-    if (distTypeEl) {
-      distTypeEl.addEventListener('click', e => {
-        const row = e.target.closest('.dist-row[data-type]');
-        if (!row) return;
-        const t = row.dataset.type;
-        fType = (fType === t) ? '' : t;
-        selType.value = fType;
-        applyFilters();
-        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
-
-    // Click-to-filter on century timeline
-    const distCenturyEl = document.getElementById('dist-century');
-    if (distCenturyEl) {
-      distCenturyEl.addEventListener('click', e => {
-        const col = e.target.closest('.century-col[data-era]');
-        if (!col) return;
-        const era = +col.dataset.era;
-        fEra = (fEra === era) ? 0 : era;
-        applyFilters();
-        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
 
     // Surprise button — random Hebrew fragment with an image
     if (btnSurprise) {
@@ -438,9 +398,7 @@
         if (!s) return;
         renderKPI(s);
         renderTagCloud(s.top_tags || []);
-        renderDist('dist-type', s.by_type || {}, { dataAttr: 'type' });
         renderDist('dist-lang', s.by_lang || {});
-        renderCentury(s.by_century || {});
       })
       .catch(() => {});
   }
@@ -559,49 +517,21 @@
     });
   }
 
-  function renderDist(id, obj, opts) {
+  /* לפי סוג מסמך ולפי מאה נכתבים אל ה-HTML ב-build.py, משום ששורותיהם הן
+     קישורים אל רכזות תחת t/. השפות נשארות כאן: אין להן רכזת לכל תווית, שכן
+     חלק מן הערכים ב-by_lang הם צירופים ("Arabic, Judaeo-Arabic") שאין להם דף. */
+  function renderDist(id, obj) {
     const el = document.getElementById(id);
     if (!el) return;
     const entries = Object.entries(obj);
     if (!entries.length) return;
     const maxV = entries[0][1];
-    const attr = opts && opts.dataAttr;
     el.innerHTML = entries.slice(0, 8).map(([label, count]) => {
       const pct = Math.round(count / maxV * 100);
-      const dataAttr = attr ? ` data-${attr}="${esc(label)}"` : '';
-      const inner = `<span class="dist-label" title="${esc(label)}">${esc(label)}</span>
+      return `<div class="dist-row"><span class="dist-label" title="${esc(label)}">${esc(label)}</span>
         <div class="dist-bar-wrap"><div class="dist-bar" style="width:${pct}%"></div></div>
-        <span class="dist-count">${count.toLocaleString('he-IL')}</span>`;
-      /* שורה שמסננת היא פקד, ולכן button ולא div: div עם מאזין לחיצה
-         אינו ניתן להפעלה במקלדת ואין לו תפקיד שקורא מסך יכול להכריז.
-         שורה שאינה מסננת נשארת div — היא באמת רק תצוגה. */
-      if (!attr) return `<div class="dist-row">${inner}</div>`;
-      return `<button type="button" class="dist-row dist-row--clickable"${dataAttr}
-        aria-pressed="false" aria-label="סינון לפי ${esc(label)} — ${count.toLocaleString('he-IL')} מסמכים">${inner}</button>`;
+        <span class="dist-count">${count.toLocaleString('he-IL')}</span></div>`;
     }).join('');
-    updateDistActiveStates();
-  }
-
-  function renderCentury(obj) {
-    const el = document.getElementById('dist-century');
-    if (!el) return;
-    const entries = Object.entries(obj).sort((a, b) => +a[0] - +b[0]);
-    if (!entries.length) return;
-    const maxV = Math.max(...entries.map(([, v]) => v));
-    el.innerHTML = entries.map(([c, count]) => {
-      const h = Math.round(count / maxV * 100);
-      const label = +c >= 14 ? '14+' : `${c}`;
-      const num = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
-      const era = +c >= 14 ? 14 : +c;
-      const full = +c >= 14 ? 'מהמאה ה-14 ואילך' : `מהמאה ה-${c}`;
-      return `<button type="button" class="century-col century-col--clickable" data-era="${era}"
-        aria-pressed="false" aria-label="סינון למסמכים ${full} — ${count.toLocaleString('he-IL')} מסמכים">
-        <span class="century-bar" style="height:${h}%" aria-hidden="true"></span>
-        <span class="century-label">מ-${label}</span>
-        <span class="century-count">${num}</span>
-      </button>`;
-    }).join('');
-    updateDistActiveStates();
   }
 
   // ── Location map ─────────────────────────────────────────────────────────────

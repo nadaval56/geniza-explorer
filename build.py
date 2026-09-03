@@ -26,6 +26,11 @@ from pathlib import Path
 from html import escape
 
 import a11y_snippets
+import tag_pages
+# מקור אמת אחד למאה של מסמך. prerender בונה ממנו את רכזות המאות,
+# ו-build את שדה c במפתח החיפוש ואת הרצועה בעמוד הבית. build מייבא
+# את prerender ולא להפך, ולכן אין כאן מעגל.
+from prerender import century_from_date
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 CSV_URL = (
@@ -161,18 +166,6 @@ def best_date(row):
         if v:
             return v
     return ""
-
-
-def century_from_date(date_str):
-    """Extract century number (e.g. 11) from a date string like '1025-08/1026-09'."""
-    if not date_str:
-        return None
-    import re
-    m = re.search(r'\b(9\d\d|1[0-4]\d\d)\b', date_str)
-    if m:
-        year = int(m.group(1))
-        return (year // 100) + 1  # century CE
-    return None
 
 
 def place_he(name):
@@ -366,6 +359,138 @@ def build_stats(docs, tags_he=None):
     }
 
 
+# ── Dashboard blocks ──────────────────────────────────────────────────────────
+# שלוש הרצועות שבתחתית העמוד נכתבות אל ה-HTML כאן ולא נבנות ב-search.js, משום
+# שכל פריט בהן הוא קישור אל רכזת תחת t/. קישור שנבנה בדפדפן אינו קיים לזוחל,
+# אינו קיים בלי JavaScript, ואינו נפתח בלשונית חדשה. הסינון בתוך העמוד עבר
+# לתיבות הבחירה שמעל הגלריה.
+
+# תווית סטטיסטיקה → התגית שהרכזת שלה מכסה אותה. פרינסטון מסווגת "רשימה או
+# טבלה" ואילו התגית נקראת "חשבונות", וכך גם בשתי השורות האחרות. בלי המיפוי הזה
+# שלוש מן השורות הגדולות בפאנל היו נשארות ללא קישור.
+TYPE_TAG = {
+    "רשימה או טבלה": "חשבונות",
+    "מסמך ממלכתי":   "מסמך מדינה",
+    "שאלה משפטית":   "תשובה הלכתית",
+}
+
+
+def hub_href(tag):
+    """Link to a tag's hub page under t/, or "" if that tag has no page."""
+    page = tag_pages.TAG_PAGES.get(tag)
+    return f"t/{page['slug']}/" if page else ""
+
+
+def render_type_dist(stats):
+    """The document-type bars, each one a link to that type's hub."""
+    entries = list((stats.get("by_type") or {}).items())[:8]
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    rows = []
+    for label, count in entries:
+        pct = round(count / top * 100)
+        inner = (f'<span class="dist-label" title="{escape(label)}">{escape(label)}</span>'
+                 f'<div class="dist-bar-wrap"><div class="dist-bar" style="width:{pct}%"></div></div>'
+                 f'<span class="dist-count">{count:,}</span>')
+        href = hub_href(TYPE_TAG.get(label, label))
+        if href:
+            rows.append(f'        <a class="dist-row dist-row--link" href="{href}" '
+                        f'aria-label="{escape(label)} — {count:,} מסמכים, לעמוד הנושא">'
+                        f'{inner}</a>')
+        else:
+            # אין רכזת ל"לא מסווג" ולא לטקסט הספרותי, והשורה נשארת תצוגה בלבד.
+            rows.append(f'        <div class="dist-row">{inner}</div>')
+    return "\n".join(rows)
+
+
+def render_century_strip(stats):
+    """The centuries chart, each column a link to that century's hub."""
+    entries = sorted((int(c), v) for c, v in (stats.get("by_century") or {}).items())
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    cols = []
+    for century, count in entries:
+        height = round(count / top * 100)
+        short = f"{count / 1000:.1f}k" if count >= 1000 else f"{count}"
+        bars = (f'<span class="century-bar" style="height:{height}%" aria-hidden="true"></span>'
+                f'<span class="century-label">מ-{century}</span>'
+                f'<span class="century-count">{short}</span>')
+        href = hub_href(tag_pages.CENTURIES.get(century, ""))
+        if href:
+            cols.append(f'          <a class="century-col century-col--link" href="{href}" '
+                        f'aria-label="מסמכים מהמאה ה-{century} — {count:,} מסמכים, '
+                        f'לעמוד המאה">{bars}</a>')
+        else:
+            cols.append(f'          <div class="century-col">{bars}</div>')
+    return "\n".join(cols)
+
+
+def render_era_options(stats):
+    """<option> per century for the in-page filter above the gallery."""
+    centuries = sorted(int(c) for c in (stats.get("by_century") or {}))
+    return "\n".join(
+        f'          <option value="{c}">המאה ה-{c}</option>' for c in centuries)
+
+
+def render_people_timeline(stats):
+    """The person hubs on the home page, grouped by the century they worked in.
+
+    Eight hubs sat under t/ with nothing on the home page pointing at them, so
+    the only way to reach רב סעדיה גאון was to already know he was there. The
+    grouping is what carries the chronology: a reader sees the four centuries
+    in order before clicking anything.
+    """
+    counts = {row["t"]: row["c"] for row in (stats.get("top_tags") or [])}
+    eras, order = {}, []
+    for person in tag_pages.PEOPLE_TIMELINE:
+        century = person["century"]
+        if century not in eras:
+            eras[century] = []
+            order.append(century)
+        eras[century].append(person)
+
+    blocks = []
+    for century in order:
+        tag = tag_pages.CENTURIES.get(century, "")
+        href = hub_href(tag)
+        label = escape(tag or f"המאה ה-{century}")
+        rail = (f'<a class="era-rail" href="{href}">{label}</a>' if href
+                else f'<span class="era-rail">{label}</span>')
+        chips = []
+        for person in eras[century]:
+            count = counts.get(person["tag"])
+            meta = (f'<span class="person-count">{count:,} מסמכים</span>'
+                    if count else "")
+            # <bdi> סביב הטווח: בלעדיו אלגוריתם הדו-כיווניות מציג את "1186–1237"
+            # בפסקה עברית כ"1237–1186", כלומר טווח הפוך.
+            years = (("פעל " if person.get("active") else "")
+                     + f'<bdi>{escape(person["years"])}</bdi>')
+            chips.append(
+                f'            <a class="person-chip" href="{hub_href(person["tag"])}">'
+                f'<span class="person-name">{escape(person["tag"])}</span>'
+                f'<span class="person-years">{years}</span>'
+                f'<span class="person-role">{escape(person["role"])}</span>'
+                f'{meta}</a>')
+        blocks.append('          <div class="era-block">\n'
+                      f'            {rail}\n'
+                      '            <div class="era-people">\n'
+                      + "\n".join(chips) + '\n            </div>\n'
+                      '          </div>')
+    return "\n".join(blocks)
+
+
+def dashboard_blocks(stats):
+    """Everything in INDEX_HTML that is computed from data/stats.json."""
+    return {
+        "dist_type":       render_type_dist(stats),
+        "century_strip":   render_century_strip(stats),
+        "era_options":     render_era_options(stats),
+        "people_timeline": render_people_timeline(stats),
+    }
+
+
 # ── HTML pages ────────────────────────────────────────────────────────────────
 INDEX_HTML = """\
 <!DOCTYPE html>
@@ -517,6 +642,10 @@ INDEX_HTML = """\
         <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
+        <select id="filter-era" class="filter-select" aria-label="מאה">
+          <option value="">כל המאות</option>
+{era_options}
+        </select>
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
           <option value="img">🖼 עם תמונה</option>
@@ -601,9 +730,19 @@ INDEX_HTML = """\
         <div class="dash-panel dash-panel--wide">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <a class="dash-panel-hint dash-panel-link" href="t/">כל 131 הנושאים ←</a>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
           </div>
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--people">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">אישים לאורך הדורות</h2>
+            <span class="dash-panel-hint">מן המאה העשירית ועד השלוש־עשרה</span>
+          </div>
+          <div class="people-timeline">
+{people_timeline}
+          </div>
         </div>
 
         <div class="dash-panel dash-panel--wide dash-panel--map">
@@ -628,9 +767,11 @@ INDEX_HTML = """\
         <div class="dash-panel">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">לפי סוג מסמך</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <span class="dash-panel-hint">לעמוד הנושא</span>
           </div>
-          <div class="dist-list" id="dist-type"></div>
+          <div class="dist-list" id="dist-type">
+{dist_type}
+          </div>
         </div>
 
         <div class="dash-panel">
@@ -641,9 +782,11 @@ INDEX_HTML = """\
         <div class="dash-panel dash-panel--century">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">לאורך הדורות</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <span class="dash-panel-hint">לעמוד המאה</span>
           </div>
-          <div class="century-chart" id="dist-century"></div>
+          <div class="century-chart" id="dist-century">
+{century_strip}
+          </div>
         </div>
 
       </div>
@@ -738,7 +881,8 @@ def write_html_only(args):
     import prerender
 
     with open(DATA_DIR / "stats.json", encoding="utf-8") as f:
-        total = json.load(f)["total"]
+        stats = json.load(f)
+    total = stats["total"]
 
     site_url = args.base_url or prerender.base_url()
     if not site_url.endswith("/"):
@@ -752,7 +896,8 @@ def write_html_only(args):
         f.write(INDEX_HTML.format(total_docs=total, build_date=build_date,
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
-                                  a11y_foot=a11y_snippets.foot("", build_ts)))
+                                  a11y_foot=a11y_snippets.foot("", build_ts),
+                                  **dashboard_blocks(stats)))
     print("  ✓  index.html")
     with open("fragment.html", "w", encoding="utf-8") as f:
         f.write(FRAGMENT_HTML.format(build_ts=build_ts))
@@ -886,7 +1031,8 @@ def main():
         f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date,
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
-                                  a11y_foot=a11y_snippets.foot("", build_ts)))
+                                  a11y_foot=a11y_snippets.foot("", build_ts),
+                                  **dashboard_blocks(stats)))
     print("  ✓  index.html")
 
     with open("fragment.html", "w", encoding="utf-8") as f:
