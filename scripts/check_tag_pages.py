@@ -33,6 +33,7 @@ from collections import Counter
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+import honorifics  # noqa: E402
 import tag_pages  # noqa: E402
 
 MIN_DOCS = 3
@@ -164,46 +165,20 @@ def check_people_timeline():
 
 
 # ── תארים ─────────────────────────────────────────────────────────────────────
-# גאון או רב אינו נזכר בשמו הפרטי בלבד, גם לא באזכור השני בפסקה: לא "סעדיה"
-# אלא "רב סעדיה גאון". זו הייתה הערה מפורשת, והבדיקה הזאת שומרת עליה כשנכתב
-# מבוא חדש. הגזע נבדק עם גבולות מילה, ומותר לו לבוא אחרי התואר או אחרי "בן"
-# (מבורך בן סעדיה הוא אדם אחר, ושמו של האב אינו אזכור של הגאון).
-#
-# "האי" אינו ברשימה במכוון: הוא גם מילה עברית, והוא מופיע פעמיים במבוא של
-# סיציליה במשמעות האי שבים. בדיקה שמסמנת אותו הייתה נכשלת על טקסט תקין.
-HEB = "א-ת"
-HONORIFICS = [
-    ("סעדיה",          "רב",  "רב סעדיה גאון"),
-    ("שרירא",          "רב",  "רב שרירא גאון"),
-    ("שלמה בן יהודה",  "רב",  "רב שלמה בן יהודה"),
-    ("דניאל בן עזריה", "רב",  "רב דניאל בן עזריה"),
-    ("נתנאל הלוי",     "רב",  "רב נתנאל הלוי"),
-    ("נהוראי",         "רבי", "רבי נהוראי בן נסים"),
-    ("יהודה הלוי",     "רבי", "רבי יהודה הלוי"),
-    ("אפרים בן שמריה", "רבי", "רבי אפרים בן שמריה"),
-    ("אברהם בן הרמב",  "רבי", "רבי אברהם בן הרמב״ם"),
-    # דיינים, חברים וראשי קהילה. דיינות היא "ידין ידין" שבסנהדרין ה ע"א,
-    # הדרגה שמעל "יורה יורה", ודייני פוסטאט מונו מטעם הגאון או הנגיד.
-    ("שלמה בן אליהו",  "רבי", "רבי שלמה בן אליהו"),
-    ("אליהו בן זכריה", "רבי", "רבי אליהו בן זכריה"),
-    ("עלי בן עמרם",    "רבי", "רבי עלי בן עמרם"),
-    ("סהלאן",          "רבי", "רבי סהלאן בן אברהם"),
-]
-
-
+# אותו נרמול שרץ על 36 אלף התיאורים בבנייה, כאן כטענה: מבוא שאינו שווה לעצמו
+# אחרי honorifics.add_titles מזכיר גאון או רב בלי תוארו. שיתוף המימוש הוא
+# העיקר — טבלה שנייה כאן הייתה נפרדת מזו שרצה על הנתונים תוך חודש.
 def check_honorifics():
-    for stem, title, full in HONORIFICS:
-        pattern = re.compile(
-            rf"(?<![{HEB}])(?<!{title} )(?<!בן )" + re.escape(stem) + rf"(?![{HEB}])"
-        )
-        for tag, page in tag_pages.TAG_PAGES.items():
-            for field in ("h1", "intro"):
-                for m in pattern.finditer(page[field]):
-                    around = page[field][max(0, m.start() - 30):m.end() + 20]
-                    errors.append(
-                        f"'{tag}' ({field}): '{stem}' בלי התואר, צריך '{full}' — …{around}…")
+    for tag, page in tag_pages.TAG_PAGES.items():
+        for field in ("h1", "intro"):
+            fixed = honorifics.add_titles(page[field])
+            if fixed == page[field]:
+                continue
+            i = next(n for n, (a, b) in enumerate(zip(page[field], fixed)) if a != b)
+            errors.append(
+                f"'{tag}' ({field}): חסר תואר — …{page[field][max(0, i-30):i+45]}…")
     # הרמב״ם נזכר תמיד בה"א הידיעה, ולא כ"רמב״ם" חשוף.
-    bare = re.compile(rf"(?<![{HEB}])רמב״ם")
+    bare = re.compile(rf"(?<![{honorifics.HEB}])רמב״ם")
     for tag, page in tag_pages.TAG_PAGES.items():
         for field in ("h1", "intro"):
             for m in bare.finditer(page[field]):

@@ -26,6 +26,7 @@ from pathlib import Path
 from html import escape
 
 import a11y_snippets
+import honorifics
 import tag_pages
 # מקור אמת אחד למאה של מסמך. prerender בונה ממנו את רכזות המאות,
 # ו-build את שדה c במפתח החיפוש ואת הרצועה בעמוד הבית. build מייבא
@@ -383,7 +384,8 @@ def build_search_index(docs, translations_he=None, tags_he=None):
         rich = " ".join(rich_parts)[:400] if rich_parts else ""
         if rich:                    entry["d"]   = rich
         # Hebrew description: prefer real translation, fall back to auto-generated
-        desc_he = translations_he.get(doc["id"]) or doc["description_he"]
+        desc_he = honorifics.add_titles(
+            translations_he.get(doc["id"]) or doc["description_he"])
         if desc_he:                 entry["dh"]  = desc_he
         if doc["iiif_urls"]:
             entry["img"] = 1
@@ -1090,7 +1092,9 @@ def main():
         prev_id = docs[idx - 1]["id"] if idx > 0 else None
         next_id = docs[idx + 1]["id"] if idx < len(docs) - 1 else None
         # Prefer real translation over auto-generated metadata description
-        doc_he = translations_he.get(doc["id"])
+        # התארים נוספים כאן ולא בקובץ התרגומים: תיאור חדש מפרינסטון, או תיאור
+        # שנכתב מחדש, מקבל אותם בבנייה הבאה בלי שאיש יזכור. ראו honorifics.py.
+        doc_he = honorifics.add_titles(translations_he.get(doc["id"]) or "")
         if doc_he:
             doc = {**doc, "description_he": doc_he}
         doc_tags_he = tags_he.get(doc["id"], [])
