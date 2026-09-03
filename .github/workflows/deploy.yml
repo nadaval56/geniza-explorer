@@ -121,6 +121,11 @@ jobs:
             echo "::error::data/en חסר — doc-english.js לא ימצא דבר"
             exit 1
           fi
+          # התעתיקים מחויבים לגיט ואינם נבנים כאן. אם התיקייה נעלמה, כפתור
+          # "הצג את התעתיק" יופיע על אלפי עמודים ולא ימצא דבר.
+          texts=$(find data/transcriptions -name '*.json' 2>/dev/null | wc -l)
+          echo "transcriptions:    $texts"
+          [ "$texts" -gt 1000 ] || { echo "::error::רק $texts תעתיקים ב-data/transcriptions"; exit 1; }
           rm -rf data/docs
           python3 - <<'PY'
           import pathlib

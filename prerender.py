@@ -42,6 +42,8 @@ import tag_pages
 ROOT = pathlib.Path(__file__).parent
 DOCS_DIR = ROOT / "data" / "docs"
 EN_DIR   = ROOT / "data" / "en"
+# תעתיקי PGP, מיובאים ב-import_transcriptions.py ומחויבים לגיט
+TEXT_DIR = ROOT / "data" / "transcriptions"
 OUT_DIR = ROOT / "d"
 TAG_DIR = ROOT / "t"
 
@@ -480,7 +482,7 @@ DOC_PAGE = """<!DOCTYPE html>
         <dl class="meta-list">
 {meta_rows}
         </dl>
-{description_block}{tags}
+{description_block}{transcription_block}{tags}
         <div class="actions-block">
           <a href="{princeton}" target="_blank" rel="noopener" class="btn-primary">
             צפייה ב-Princeton Geniza Project ↗
@@ -515,6 +517,7 @@ DOC_PAGE = """<!DOCTYPE html>
 
   <script src="{root}assets/doc-image.js" defer></script>
   <script src="{root}assets/doc-english.js" defer></script>
+  <script src="{root}assets/doc-text.js" defer></script>
   <script src="{root}assets/card-thumbs.js" defer></script>
 {a11y_foot}
 </body>
@@ -575,6 +578,24 @@ def render_doc(doc, base, related_index=None):
                              + "\n          ".join(paragraphs)
                              + "\n        </div>")
 
+    # התעתיק עצמו, כשיש. הוא נטען בלחיצה מ-data/transcriptions/<id>.json ואינו
+    # יושב ב-HTML, מאותו טעם בדיוק שבגללו התיאור האנגלי אינו כאן: הוא העתק
+    # מילה במילה מ-geniza.princeton.edu, ו-7,179 עמודים שרובם העתק כזה הם
+    # בדיוק מה שגוגל מאנדקס במקור ומשמיט כאן. ראו assets/doc-text.js.
+    transcription_block = ""
+    if (TEXT_DIR / f"{doc_id}.json").exists():
+        transcription_block = (
+            '\n        <div class="transcription-block">\n'
+            '          <h2 class="section-label">תעתיק</h2>\n'
+            f'          <button type="button" class="transcription-toggle" data-doc="{esc(doc_id)}"'
+            ' aria-expanded="false" aria-controls="transcription-panel">'
+            'הצג את התעתיק</button>\n'
+            '          <div class="transcription-panel" id="transcription-panel" hidden></div>\n'
+            '          <p class="transcription-source">התעתיק נערך ופורסם בידי חוקרי '
+            f'<a href="{PGP_URL}" target="_blank" rel="noopener">Princeton Geniza Project</a>'
+            ' ומשתפיו, ומוצג כאן ברישיון CC BY-NC 4.0. שם העורך מופיע מעל הטקסט.</p>\n'
+            '        </div>')
+
     iiif = (doc.get("iiif_urls") or [None])[0]
     rights_label, rights_url = image_rights(doc.get("library") or doc.get("library_raw"))
     rights = (f'<a href="{esc(rights_url)}" target="_blank" rel="noopener license">{esc(rights_label)}</a>'
@@ -621,6 +642,7 @@ def render_doc(doc, base, related_index=None):
         links=render_links(doc),
         meta_rows=render_meta_rows(doc),
         description_block=description_block,
+        transcription_block=transcription_block,
         tags=render_tags(doc),
         princeton=esc(doc.get("princeton_url") or PGP_URL),
         related=render_related(doc, related_index) if related_index else "",

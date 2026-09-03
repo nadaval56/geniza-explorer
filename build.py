@@ -275,7 +275,11 @@ def generate_hebrew_desc(doc):
 
 
 def is_truthy(v):
-    return str(v).strip().lower() in ("true", "1", "yes", "t")
+    # "y" ו-"n": זה מה שעמודות has_transcription ו-has_translation של פרינסטון
+    # כותבות בפועל, ובלעדיהן שני השדות היו False בכל 36 אלף המסמכים — הדגלים
+    # tr/tl במפתח החיפוש היו מתים, has_tr ו-has_tl ב-stats.json היו אפס,
+    # ותגי "תעתיק" ו"תרגום" לא הופיעו על אף עמוד. בפועל יש 7,561 ו-1,981.
+    return str(v).strip().lower() in ("true", "1", "yes", "t", "y")
 
 
 def parse_doc(row):
@@ -752,6 +756,8 @@ INDEX_HTML = """\
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
           <option value="img">🖼 עם תמונה</option>
+          <option value="tr">📝 עם תעתיק</option>
+          <option value="tl">🌐 עם תרגום</option>
         </select>
         <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
