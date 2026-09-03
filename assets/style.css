@@ -1502,30 +1502,27 @@ p.fragment-shelfmark {
 .century-count { font-size: .62rem; color: var(--text-3); }
 
 /* ── People timeline ─────────────────────────────────────────────────────────
-   שמונה רכזות האישים לפי סדר חייהן, מקובצות למאה. הקיבוץ הוא מה שנושא את
-   הכרונולוגיה: הקורא רואה את רצף המאות לפני שהוא לוחץ על משהו. */
+   רכזות האישים לפי סדר חייהן, שורה למאה. הקיבוץ הוא מה שנושא את הכרונולוגיה:
+   הקורא רואה את רצף המאות לפני שהוא לוחץ על משהו. הפריסה היא שורות ולא
+   עמודות משום שהמאות אינן שוות בגודלן — שתיים מהן נושאות תשעה שמות ואחת
+   נושאת שניים — וטור אחד ארוך פי ארבעה מחברו קרא כתקלה. */
 .people-timeline {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: var(--sp-4);
-  /* כמו .century-chart: אזור גליל משלו, כדי שרצועה של ארבע מאות לא תרחיב
-     את הדף ב-320px עם טקסט מוגדל (קריטריון 1.4.10). */
-  overflow-x: auto;
-  padding-bottom: var(--sp-2);
 }
 
 .era-block {
-  flex: 1 1 0;
-  min-width: 10.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: var(--sp-3);
+  align-items: start;
   padding-top: var(--sp-3);
   border-top: 2px solid var(--divider);   /* ציר הזמן עצמו */
 }
 
 .era-rail {
-  align-self: flex-start;
+  justify-self: start;
   font-family: var(--font-ui);
   font-size: .7rem;
   font-weight: 700;
@@ -1534,6 +1531,7 @@ p.fragment-shelfmark {
   background: var(--bg-2);
   padding: var(--sp-1) var(--sp-3);
   border-radius: 999px;
+  white-space: nowrap;
   text-decoration: none;
   transition-property: background, color;
   transition-duration: var(--dur-fast);
@@ -1545,7 +1543,11 @@ a.era-rail:hover {
   text-decoration: none;
 }
 
-.era-people { display: flex; flex-direction: column; gap: var(--sp-2); }
+.era-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: var(--sp-2);
+}
 
 .person-chip {
   display: flex;
@@ -1578,11 +1580,10 @@ a.era-rail:hover {
 .person-role,
 .person-count { font-size: .68rem; color: var(--text-3); }
 
-/* בטלפון ארבע המאות זו לצד זו הופכות לרצועה שצריך לגרור, והשמות בקצה
-   נחתכים מחוץ למסך. הן נערמות זו מתחת לזו, והכרונולוגיה יורדת במקום לרוץ. */
-@media (max-width: 700px) {
-  .people-timeline { flex-direction: column; overflow-x: visible; }
-  .era-block { flex: none; min-width: 0; }
+/* ברוחב טלפון תווית המאה עולה מעל השמות: טור בן 6rem לצד כרטיסים גזל
+   מהם את המקום שהשם הארוך ביותר צריך. */
+@media (max-width: 560px) {
+  .era-block { grid-template-columns: 1fr; gap: var(--sp-2); }
 }
 
 @media (max-width: 700px) {

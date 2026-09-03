@@ -19,6 +19,7 @@
   · ערך מפנה לקבוצה שאינה קיימת ב-GROUPS
   · שם ב-PEOPLE_TIMELINE שאינו דף אישים, או משויך למאה שאין לה דף
   · דף אישים שאינו מופיע בציר הזמן שבעמוד הבית
+  · גאון או רב שנזכר במבוא בשמו הפרטי בלבד, בלי התואר
 
 תגית עם פחות מ-MIN_DOCS מסמכים מדווחת כהערה ולא ככשל: דף רכזת לשני
 מסמכים הוא בדיוק הדף הדל שהמפרט מזהיר מפניו.
@@ -134,7 +135,7 @@ def check_people_timeline():
         tag = person["tag"]
         listed.append(tag)
         missing = {"tag", "years", "role", "century"} - set(person)
-        extra = set(person) - {"tag", "years", "role", "century", "active"}
+        extra = set(person) - {"tag", "years", "role", "century", "active", "label"}
         if missing:
             errors.append(f"PEOPLE_TIMELINE: '{tag}' חסרים שדות {sorted(missing)}")
         if extra:
@@ -152,11 +153,69 @@ def check_people_timeline():
         if page["group"] == "person" and tag not in listed:
             errors.append(f"'{tag}' הוא דף אישים ואינו בציר הזמן שבעמוד הבית")
 
+    # הרצועה בעמוד הבית מרונדרת לפי סדר הרשימה, ולכן הסדר כאן הוא הסדר על
+    # המסך. ערך שנוסף בסוף במקום במקומו הכרונולוגי היה שובר את הציר בשקט.
+    # שנת הפתיחה כמספר ולא כמחרוזת: "939" גדול מ-"1002" בהשוואת מחרוזות,
+    # ורב האי גאון היה נדחק אחרי בני המאה שאחריו.
+    keys = [(p["century"], int(p.get("years", "0").split("–")[0] or 0))
+            for p in tag_pages.PEOPLE_TIMELINE]
+    if keys != sorted(keys):
+        errors.append("PEOPLE_TIMELINE אינו מסודר לפי מאה ואז לפי שנת הפתיחה")
+
+
+# ── תארים ─────────────────────────────────────────────────────────────────────
+# גאון או רב אינו נזכר בשמו הפרטי בלבד, גם לא באזכור השני בפסקה: לא "סעדיה"
+# אלא "רב סעדיה גאון". זו הייתה הערה מפורשת, והבדיקה הזאת שומרת עליה כשנכתב
+# מבוא חדש. הגזע נבדק עם גבולות מילה, ומותר לו לבוא אחרי התואר או אחרי "בן"
+# (מבורך בן סעדיה הוא אדם אחר, ושמו של האב אינו אזכור של הגאון).
+#
+# "האי" אינו ברשימה במכוון: הוא גם מילה עברית, והוא מופיע פעמיים במבוא של
+# סיציליה במשמעות האי שבים. בדיקה שמסמנת אותו הייתה נכשלת על טקסט תקין.
+HEB = "א-ת"
+HONORIFICS = [
+    ("סעדיה",          "רב",  "רב סעדיה גאון"),
+    ("שרירא",          "רב",  "רב שרירא גאון"),
+    ("שלמה בן יהודה",  "רב",  "רב שלמה בן יהודה"),
+    ("דניאל בן עזריה", "רב",  "רב דניאל בן עזריה"),
+    ("נתנאל הלוי",     "רב",  "רב נתנאל הלוי"),
+    ("נהוראי",         "רבי", "רבי נהוראי בן נסים"),
+    ("יהודה הלוי",     "רבי", "רבי יהודה הלוי"),
+    ("אפרים בן שמריה", "רבי", "רבי אפרים בן שמריה"),
+    ("אברהם בן הרמב",  "רבי", "רבי אברהם בן הרמב״ם"),
+    # דיינים, חברים וראשי קהילה. דיינות היא "ידין ידין" שבסנהדרין ה ע"א,
+    # הדרגה שמעל "יורה יורה", ודייני פוסטאט מונו מטעם הגאון או הנגיד.
+    ("שלמה בן אליהו",  "רבי", "רבי שלמה בן אליהו"),
+    ("אליהו בן זכריה", "רבי", "רבי אליהו בן זכריה"),
+    ("עלי בן עמרם",    "רבי", "רבי עלי בן עמרם"),
+    ("סהלאן",          "רבי", "רבי סהלאן בן אברהם"),
+]
+
+
+def check_honorifics():
+    for stem, title, full in HONORIFICS:
+        pattern = re.compile(
+            rf"(?<![{HEB}])(?<!{title} )(?<!בן )" + re.escape(stem) + rf"(?![{HEB}])"
+        )
+        for tag, page in tag_pages.TAG_PAGES.items():
+            for field in ("h1", "intro"):
+                for m in pattern.finditer(page[field]):
+                    around = page[field][max(0, m.start() - 30):m.end() + 20]
+                    errors.append(
+                        f"'{tag}' ({field}): '{stem}' בלי התואר, צריך '{full}' — …{around}…")
+    # הרמב״ם נזכר תמיד בה"א הידיעה, ולא כ"רמב״ם" חשוף.
+    bare = re.compile(rf"(?<![{HEB}])רמב״ם")
+    for tag, page in tag_pages.TAG_PAGES.items():
+        for field in ("h1", "intro"):
+            for m in bare.finditer(page[field]):
+                around = page[field][max(0, m.start() - 30):m.end() + 20]
+                errors.append(f"'{tag}' ({field}): צריך 'הרמב״ם' — …{around}…")
+
 
 def main():
     counts = load_tag_counts()
     check_entries()
     check_people_timeline()
+    check_honorifics()
     if counts:
         check_coverage(counts)
 

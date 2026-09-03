@@ -57,18 +57,76 @@ TYPE_MAP = {
     "Documentary":                          "מסמך",
 }
 
+# כל 55 הערכים שמופיעים בשדות השפה של פרינסטון. הקובץ מיפה קודם אחת עשרה
+# שפות בודדות בלבד, ומסמך ששדה השפה שלו נשא יותר מאחת — 4,800 מסמכים, ובהם
+# הצירוף השני בגודלו באוסף — עבר כמות שהוא ונשאר באנגלית בתיבת הסינון,
+# ברצועת הסטטיסטיקה ובעמוד המסמך. הרשימה כאן ממצה את הערכים בפועל, ולכן
+# ערך חדש מצד פרינסטון עדיין יעבור כמות שהוא ולא ישבור דבר.
 LANG_MAP = {
-    "Judaeo-Arabic": "יהודית-ערבית",
-    "Hebrew": "עברית",
-    "Arabic": "ערבית",
-    "Aramaic": "ארמית",
-    "Judeo-Persian": "פרסית יהודית",
-    "Greek": "יוונית",
-    "Latin": "לטינית",
-    "Coptic": "קופטית",
-    "Persian": "פרסית",
-    "Syriac": "סורית",
-    "Unknown": "לא ידוע",
+    "Judaeo-Arabic":          "יהודית-ערבית",
+    "Hebrew":                 "עברית",
+    "Arabic":                 "ערבית",
+    "Aramaic":                "ארמית",
+    # "פרסית-יהודית" ולא "פרסית יהודית": זה שם התגית שיש לה רכזת, ו-apply_tags
+    # מזהה את השפה לפי תחילית השם.
+    "Judaeo-Persian":         "פרסית-יהודית",
+    "Judeo-Persian":          "פרסית-יהודית",
+    "Persian":                "פרסית",
+    "Greek":                  "יוונית",
+    "Judaeo-Greek":           "יוונית-יהודית",
+    "Latin":                  "לטינית",
+    "Coptic":                 "קופטית",
+    "Syriac":                 "סורית",
+    "Syriac (Serto)":         "סורית (סרטו)",
+    "Syriac (Estrangelo)":    "סורית (אסטרנגלו)",
+    "Syriac (Unspecified)":   "סורית (כתב לא מזוהה)",
+    "Judaeo-Syriac":          "סורית-יהודית",
+    "Garshuni (Serto)":       "גרשוני (סרטו)",
+    "Christian Palestinian Aramaic": "ארמית נוצרית ארץ-ישראלית",
+    "Samaritan":              "שומרונית",
+    "Ladino":                 "לאדינו",
+    "Spanish":                "ספרדית",
+    "Portuguese":             "פורטוגזית",
+    "Judaeo-Portuguese":      "פורטוגזית-יהודית",
+    "Catalan":                "קטלאנית",
+    "Italian":                "איטלקית",
+    "Judaeo-Italian":         "איטלקית-יהודית",
+    "French":                 "צרפתית",
+    "Judaeo-French":          "צרפתית-יהודית",
+    "Romance":                "רומאנית",
+    "Judaeo-Romance":         "רומאנית-יהודית",
+    "Arabo-Romance":          "ערבית-רומאנית",
+    # מונח מחקרי לערבית הנכתבת באותיות עבריות, להבדיל מיהודית-ערבית עצמה.
+    "Arabo-Hebrew":           "ערבית בכתב עברי",
+    "German":                 "גרמנית",
+    "Yiddish":                "יידיש",
+    "English":                "אנגלית",
+    "Polish":                 "פולנית",
+    "Russian":                "רוסית",
+    "Slavonic":               "סלאבית",
+    "Armenian":               "ארמנית",
+    "Judaeo-Armenian":        "ארמנית-יהודית",
+    "Ottoman Turkish":        "טורקית עות׳מאנית",
+    "Modern Turkish":         "טורקית מודרנית",
+    "Turkish (unspecified)":  "טורקית (לא מוגדר)",
+    "Judaeo-Turkish":         "טורקית-יהודית",
+    "Karamanli":              "קרמנלית",
+    "Judaeo-Tatar":           "טטרית-יהודית",
+    "Gujarati":               "גוג׳ראטית",
+    "Chinese":                "סינית",
+    # ספרות אינן שפה, אבל פרינסטון רושמת אותן באותו שדה, והן מה שמאפשר
+    # לזהות פנקס חשבונות שאין בו כמעט טקסט.
+    "Greek/Coptic Numerals":  "ספרות יווניות/קופטיות",
+    "Hebrew numerals":        "ספרות עבריות",
+    "Eastern Arabic Numerals":"ספרות ערביות מזרחיות",
+    "Western Arabic Numerals":"ספרות ערביות מערביות",
+    # שמות מאגיים חסרי משמעות לשונית, בקמעות ובכתבי השבעה.
+    "Nomina barbara":         "שמות מאגיים",
+    "Unidentified (Hebrew script)":        "לא מזוהה (כתב עברי)",
+    "Unidentified (Latin script)":         "לא מזוהה (כתב לטיני)",
+    "Unidentified language and script":    "שפה וכתב לא מזוהים",
+    "Unknown language in Devanāgarī script": "שפה לא ידועה בכתב דוונאגרי",
+    "Unknown":                "לא ידוע",
 }
 
 PLACE_MAP = {
@@ -147,9 +205,19 @@ def translate_type(raw):
 
 
 def translate_langs(raw):
+    """Hebrew for a language field, including the comma-separated lists.
+
+    split_field knows the ";" and "|" separators, and the language fields use
+    neither: they list "Hebrew, Judaeo-Arabic" with a comma. Every such value
+    therefore missed LANG_MAP and reached the page in English.
+    """
     if not raw:
         return ""
-    return "؛ ".join(LANG_MAP.get(l.strip(), l.strip()) for l in split_field(raw))
+    groups = []
+    for group in split_field(raw):
+        parts = [p.strip() for p in group.split(",") if p.strip()]
+        groups.append(", ".join(LANG_MAP.get(p, p) for p in parts))
+    return "؛ ".join(g for g in groups if g)
 
 
 def translate_library(raw):
@@ -427,6 +495,34 @@ def render_century_strip(stats):
     return "\n".join(cols)
 
 
+def render_lang_dist(stats):
+    """The primary-language bars, each one a link to that language's hub.
+
+    A document whose primary-language field lists more than one language ("עברית,
+    יהודית-ערבית") is counted as its own row, exactly as the field records it.
+    The link follows the first language in the list, because that is the same
+    rule apply_tags.py uses to decide which language hub the document lands in.
+    """
+    entries = list((stats.get("by_lang") or {}).items())[:8]
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    rows = []
+    for label, count in entries:
+        pct = round(count / top * 100)
+        inner = (f'<span class="dist-label" title="{escape(label)}">{escape(label)}</span>'
+                 f'<div class="dist-bar-wrap"><div class="dist-bar" style="width:{pct}%"></div></div>'
+                 f'<span class="dist-count">{count:,}</span>')
+        href = hub_href(label.split(",")[0].strip())
+        if href:
+            rows.append(f'        <a class="dist-row dist-row--link" href="{href}" '
+                        f'aria-label="{escape(label)} — {count:,} מסמכים, לעמוד השפה">'
+                        f'{inner}</a>')
+        else:
+            rows.append(f'        <div class="dist-row">{inner}</div>')
+    return "\n".join(rows)
+
+
 def render_era_options(stats):
     """<option> per century for the in-page filter above the gallery."""
     centuries = sorted(int(c) for c in (stats.get("by_century") or {}))
@@ -469,7 +565,7 @@ def render_people_timeline(stats):
                      + f'<bdi>{escape(person["years"])}</bdi>')
             chips.append(
                 f'            <a class="person-chip" href="{hub_href(person["tag"])}">'
-                f'<span class="person-name">{escape(person["tag"])}</span>'
+                f'<span class="person-name">{escape(person.get("label") or person["tag"])}</span>'
                 f'<span class="person-years">{years}</span>'
                 f'<span class="person-role">{escape(person["role"])}</span>'
                 f'{meta}</a>')
@@ -488,6 +584,11 @@ def dashboard_blocks(stats):
         "century_strip":   render_century_strip(stats),
         "era_options":     render_era_options(stats),
         "people_timeline": render_people_timeline(stats),
+        "dist_lang":       render_lang_dist(stats),
+        # ענן התגיות נבנה ב-search.js מתוך top_tags, ואינו יודע מי כבר מוצג
+        # ברצועת האישים. הרשימה נמסרת לו מכאן כדי שהשמות לא יופיעו פעמיים.
+        "timeline_tags":   json.dumps([p["tag"] for p in tag_pages.PEOPLE_TIMELINE],
+                                      ensure_ascii=False),
     }
 
 
@@ -737,7 +838,7 @@ INDEX_HTML = """\
 
         <div class="dash-panel dash-panel--wide dash-panel--people">
           <div class="dash-panel-hd">
-            <h2 class="dash-panel-title">אישים לאורך הדורות</h2>
+            <h2 class="dash-panel-title">אישים בגניזה לאורך הדורות</h2>
             <span class="dash-panel-hint">מן המאה העשירית ועד השלוש־עשרה</span>
           </div>
           <div class="people-timeline">
@@ -775,8 +876,13 @@ INDEX_HTML = """\
         </div>
 
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
-          <div class="dist-list" id="dist-lang"></div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי שפה ראשית</h2>
+            <span class="dash-panel-hint">לעמוד השפה</span>
+          </div>
+          <div class="dist-list" id="dist-lang">
+{dist_lang}
+          </div>
         </div>
 
         <div class="dash-panel dash-panel--century">
@@ -814,7 +920,8 @@ INDEX_HTML = """\
     <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
-  <script>const TOTAL_DOCS = {total_docs};</script>
+  <script>const TOTAL_DOCS = {total_docs};
+  const TIMELINE_TAGS = {timeline_tags};</script>
   <script src="assets/vendor/leaflet/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
 {a11y_foot}
