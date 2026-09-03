@@ -13,7 +13,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  # Renamed from "pages". Runs #2879 and #2880 both sat in `queued` with zero
+  # jobs ever created and could not be cancelled (the cancel API returned 500),
+  # which is the signature of a run blocked on a concurrency group that never
+  # released. A fresh group name sidesteps the wedged one.
+  group: pages-deploy
   cancel-in-progress: false
 
 jobs:
@@ -22,14 +26,114 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Scheduled runs execute on the repository's DEFAULT branch, whatever
+          # that happens to be. While the default branch was still an old
+          # feature branch, the monthly cron rebuilt that months-old snapshot
+          # and published it over the live site (2026-08-01). Pinning the ref
+          # keeps every trigger — push, schedule, manual — building main.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # Refreshes data/ from the Princeton Geniza Project CSV and rewrites the
+      # HTML templates. Allowed to fail: an upstream outage should not take the
+      # published site down with it, because data/docs/*.json is committed and
+      # the prerender step below can work from that alone.
+      # רץ לפני הבנייה ולא אחריה: אם תגית עם 3+ מסמכים איבדה את דף הנושא
+      # שלה, או ש-data/docs נסחף מ-data/tags_he.json, עדיף לעצור מאשר לפרוס
+      # אתר שנראה תקין. זה בדיוק הכשל השקט שהסתיר את משי, זהב וכסף.
+      - name: Check tag pages
+        run: python3 scripts/check_tag_pages.py
+
       - name: Build site
+        id: build
+        continue-on-error: true
         run: python build.py
+
+      - name: Report degraded build
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "::warning::build.py failed — deploying from the committed data snapshot instead."
+
+      # Always runs. Generates the crawlable pages under d/, sitemap.xml and
+      # robots.txt. build.py calls this too; running it again is idempotent and
+      # covers the degraded path.
+      - name: Prerender for crawlers
+        run: python prerender.py
+
+      - name: Verify output
+        run: |
+          set -e
+          for f in index.html about.html fragment.html sitemap.xml robots.txt \
+                   d/index.html site.webmanifest favicon.ico favicon.svg \
+                   assets/og-image.png assets/style.css assets/fonts.css \
+                   privacy/index.html accessibility/index.html \
+                   assets/a11y.css assets/a11y.js assets/privacy.js assets/legal.css \
+                   assets/vendor/leaflet/leaflet.js assets/vendor/leaflet/leaflet.css \
+                   CNAME googlef716f9558cc7d448.html; do
+            [ -s "$f" ] || { echo "::error::missing or empty: $f"; exit 1; }
+          done
+          pages=$(find d -name '*.html' | wc -l)
+          urls=$(grep -c '<loc>' sitemap.xml)
+          echo "prerendered pages: $pages"
+          echo "sitemap URLs:      $urls"
+          [ "$pages" -gt 1000 ] || { echo "::error::only $pages prerendered pages"; exit 1; }
+          # A sitemap file may hold at most 50,000 URLs before it has to be split.
+          [ "$urls" -lt 50000 ] || { echo "::error::sitemap over the 50,000-URL limit"; exit 1; }
+          grep -q 'og:image' index.html || { echo "::error::index.html lost its Open Graph tags"; exit 1; }
+          # תפריט הנגישות והודעת הפרטיות נשתלים מ-a11y_snippets.py. אם התבנית
+          # תשתנה ותאבד אותם, האתר ייפרס בלי הצהרת הנגישות שהוא מבטיח.
+          for f in index.html about.html privacy/index.html accessibility/index.html; do
+            grep -q 'assets/a11y.js' "$f" || { echo "::error::$f lost the accessibility menu"; exit 1; }
+          done
+          sample=$(find d -name '*.html' ! -name 'index*' | head -1)
+          grep -q 'assets/a11y.js' "$sample" || { echo "::error::document pages lost the accessibility menu"; exit 1; }
+          # דפי הנושא הם עמודי הכניסה לשאילתות שאין להן סימן קטלוג. אם prerender.py
+          # יפסיק לבנות אותם, האתר ייפרס בלי גרף הקישורים הפנימי שהם יוצרים.
+          hubs=$(find t -mindepth 2 -name 'index.html' | wc -l)
+          echo "tag hubs:          $hubs"
+          [ "$hubs" -gt 100 ] || { echo "::error::only $hubs tag hub pages"; exit 1; }
+          grep -q 'assets/a11y.js' t/index.html || { echo "::error::t/ lost the accessibility menu"; exit 1; }
+          grep -q 'tag-pill-link' "$sample" || { echo "::error::document pages lost their tag links"; exit 1; }
+          # אף CDN חיצוני: הגופנים ו-Leaflet מוגשים מהאתר, וזו ההבטחה שבמדיניות הפרטיות.
+          if grep -rnE 'https?://(unpkg\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|fonts\.(googleapis|gstatic)\.com)' \
+               index.html about.html privacy/index.html accessibility/index.html assets/*.css assets/*.js; then
+            echo "::error::a third-party CDN reference is back — see privacy/index.html section 2"; exit 1
+          fi
+          # lastmod אמיתי תלוי בכך ש-data/lastmod.json מחויב לגיט. CI בונה
+          # אותו מחדש ולא דוחף בחזרה, ולכן מניפסט חסר פירושו שכל 36,000
+          # הכתובות מדווחות על תאריך היום — בדיוק האות שגוגל לומד להתעלם ממנו.
+          [ -s data/lastmod.json ] || echo "::warning::data/lastmod.json חסר — כל ה-lastmod יהיה של היום"
+          stale=$(grep -c "<lastmod>$(date -u +%Y-%m-%d)</lastmod>" sitemap.xml || true)
+          echo "lastmod of today:  $stale of $urls URLs"
+          echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
+
+      # data/docs נחוץ לבנייה ולגיבוי המקומי, ואינו נחוץ לאתר: הדפדפן קורא
+      # רק את data/en. הוא נגרע מהארטיפקט בלבד ולא מהריפו — 57MB פחות
+      # בפריסה. אם הוא נשאר, כל רשומה מתפרסמת פעמיים.
+      - name: Drop the build-only data from the artifact
+        run: |
+          if [ ! -d data/en ]; then
+            echo "::error::data/en חסר — doc-english.js לא ימצא דבר"
+            exit 1
+          fi
+          # התעתיקים מחויבים לגיט ואינם נבנים כאן. אם התיקייה נעלמה, כפתור
+          # "הצג את התעתיק" יופיע על אלפי עמודים ולא ימצא דבר.
+          texts=$(find data/transcriptions -name '*.json' 2>/dev/null | wc -l)
+          echo "transcriptions:    $texts"
+          [ "$texts" -gt 1000 ] || { echo "::error::רק $texts תעתיקים ב-data/transcriptions"; exit 1; }
+          rm -rf data/docs
+          python3 - <<'PY'
+          import pathlib
+          skip = (".git/", ".github/")
+          n = sum(p.stat().st_size for p in pathlib.Path(".").rglob("*")
+                  if p.is_file() and not str(p).startswith(skip))
+          print(f"published size: {n / 2**20:,.0f} MB of 1024 MB")
+          PY
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

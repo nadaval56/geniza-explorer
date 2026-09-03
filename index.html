@@ -3,14 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="הגניזה הקהירית — 35,924 מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
-  <title>הגניזה הקהירית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20260430">
+  <title>הגניזה הקהירית — 36,273 מסמכים מגניזת קהיר</title>
+  <meta name="description" content="הגניזה הקהירית — 36,273 מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
+  <link rel="canonical" href="https://www.geniza.co.il/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="הגניזה הקהירית">
+  <meta property="og:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta property="og:description" content="36,273 מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה: הלכה, מסחר, משפחה ויומיום.">
+  <meta property="og:url" content="https://www.geniza.co.il/">
+  <meta property="og:image" content="https://www.geniza.co.il/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:description" content="36,273 מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה.">
+  <meta name="twitter:image" content="https://www.geniza.co.il/assets/og-image.png">
+
+  <!-- Real favicon files. The previous emoji-in-SVG data URI relied on the
+       browser rendering <text> inside an SVG favicon, which Chrome and Safari
+       do not do — the tab fell back to a blank page icon. -->
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css?v=20260903">
+  <link rel="stylesheet" href="assets/style.css?v=20260903">
+  <!-- Leaflet is served from this site, not from a CDN: a CDN <script> tag hands
+       every visitor's IP address to a third party on page load, which is exactly
+       what the privacy notice promises does not happen. Same reasoning as the
+       locally hosted fonts. Vendored copy: assets/vendor/leaflet/ (BSD-2-Clause). -->
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/a11y.css?v=20260903">
+  <script>
+    try {
+      var _p = localStorage.getItem('privacy:v1');
+      if (!_p || JSON.parse(_p).local !== false) {
+        var _r = document.documentElement, _a = localStorage.getItem('a11y:v1');
+        if (_a) {
+          _a = JSON.parse(_a);
+          if (_a.fs) _r.setAttribute('data-fs', _a.fs);
+          if (_a.mode) _r.classList.add('a11y-' + _a.mode);
+          ['links', 'readable', 'spacing', 'still', 'cursor', 'focus']
+            .forEach(function (k) { if (_a[k]) _r.classList.add('a11y-' + k); });
+        }
+      }
+    } catch (e) { /* מצב פרטי, או אחסון חסום — הדף פשוט נטען כרגיל */ }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.geniza.co.il/#website",
+        "url": "https://www.geniza.co.il/",
+        "name": "הגניזה הקהירית",
+        "alternateName": "Cairo Geniza — Hebrew Explorer",
+        "description": "חלון אל החיים היהודיים בימי הביניים — 36,273 מסמכים מגניזת קהיר.",
+        "inLanguage": "he",
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {"@type": "EntryPoint", "urlTemplate": "https://www.geniza.co.il/?q={search_term_string}"},
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "DataCatalog",
+        "@id": "https://www.geniza.co.il/#catalog",
+        "name": "הגניזה הקהירית",
+        "url": "https://www.geniza.co.il/",
+        "inLanguage": ["he", "en"],
+        "isAccessibleForFree": true,
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "creditText": "Princeton Geniza Project (CC BY-NC 4.0)",
+        "isBasedOn": "https://github.com/princetongenizalab/pgp-metadata",
+        "provider": {
+          "@type": "Organization",
+          "name": "Princeton Geniza Lab, Princeton University",
+          "url": "https://geniza.princeton.edu"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Cairo Geniza",
+          "sameAs": "https://www.wikidata.org/wiki/Q1044504"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
   <header class="site-header">
     <div class="header-inner">
@@ -18,20 +114,26 @@
       <h1 class="site-title">הגניזה הקהירית</h1>
       <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
       <p class="site-intro">
-        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, 35,924 מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.
+        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, כ - 300,000 מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.  36,273 מהמסמכים האלה מוצגים לפניכם בפרויקט זה.
       </p>
       <a href="about.html" class="about-link">אודות הגניזה הקהירית ←</a>
     </div>
   </header>
 
-  <!-- KPI row (2 cards only) -->
+  <!-- KPI row -->
   <section class="dashboard-kpi" aria-label="סטטיסטיקות">
     <div class="dash-kpi-row dash-kpi-row--two">
       <div class="kpi-card">
         <span class="kpi-icon" aria-hidden="true">📜</span>
-        <span class="kpi-num">35,924</span>
+        <span class="kpi-num">36,273</span>
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
+      <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
+        <span class="kpi-icon" aria-hidden="true">💡</span>
+        <span class="kpi-dyk-label">הידעת?</span>
+        <span class="kpi-dyk-text" id="dyk-text">…</span>
+        <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
+      </a>
       <div class="kpi-card" id="kpi-img">
         <span class="kpi-icon" aria-hidden="true">🖼</span>
         <span class="kpi-num">…</span>
@@ -60,16 +162,37 @@
         <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
+        <select id="filter-era" class="filter-select" aria-label="מאה">
+          <option value="">כל המאות</option>
+          <option value="10">המאה ה-10</option>
+          <option value="11">המאה ה-11</option>
+          <option value="12">המאה ה-12</option>
+          <option value="13">המאה ה-13</option>
+          <option value="14">המאה ה-14</option>
+          <option value="15">המאה ה-15</option>
+        </select>
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
           <option value="img">🖼 עם תמונה</option>
+          <option value="tr">📝 עם תעתיק</option>
+          <option value="tl">🌐 עם תרגום</option>
         </select>
         <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
     </div>
   </div>
 
-  <main class="main-content">
+  <main class="main-content" id="main-content">
+    <noscript>
+      <div class="noscript-note">
+        <p>
+          החיפוש והסינון בעמוד זה פועלים ב-JavaScript. אפשר לעיין בכל
+          36,273 המסמכים גם ללא JavaScript —
+          <a href="d/">מפתח המסמכים המלא</a> מכיל עמוד נפרד לכל מסמך,
+          ו<a href="t/">דפי הנושאים</a> מרכזים אותם לפי סוג, מקום, תקופה ונושא.
+        </p>
+      </div>
+    </noscript>
     <div class="results-bar" id="results-bar" aria-live="polite"></div>
     <div class="cards-grid" id="cards-grid" role="list"></div>
     <div class="pagination" id="pagination" aria-label="דפים"></div>
@@ -84,68 +207,182 @@
     </div>
   </main>
 
-  <!-- Statistics section (below cards) -->
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-      <div class="browse-group browse-group--single">
-        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
-          🎲 הפתע אותי
-        </button>
-      </div>
-
-    </div>
-  </section>
-
   <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
     <div class="dash-inner">
+
+      <div class="surprise-wrap">
+        <button class="surprise-btn" id="btn-surprise" aria-label="בחר קטע אקראי מהגניזה">
+          <div class="surprise-dice">
+            <svg viewBox="0 0 100 98" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="sg-top" x1="20%" y1="0%" x2="80%" y2="100%">
+                  <stop offset="0%" stop-color="#ffe066"/>
+                  <stop offset="100%" stop-color="#f5a623"/>
+                </linearGradient>
+                <linearGradient id="sg-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e0455a"/>
+                  <stop offset="100%" stop-color="#9b1a30"/>
+                </linearGradient>
+                <linearGradient id="sg-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2a72c3"/>
+                  <stop offset="100%" stop-color="#163f7a"/>
+                </linearGradient>
+                <filter id="sg-sh" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1a1040" flood-opacity="0.32"/>
+                </filter>
+              </defs>
+              <ellipse cx="50" cy="93" rx="34" ry="4.5" fill="#1a1040" opacity="0.18"/>
+              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#7a0820" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#0e2a5a" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#c07800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
+              <circle cx="34" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="50" cy="30" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="34" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="28" cy="43" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="38" cy="74" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="78" cy="41" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="68" cy="59" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="57" cy="77" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+            </svg>
+          </div>
+          <span class="surprise-title">הפתע אותי</span>
+          <span class="surprise-sub">בחר קטע אקראי מהגניזה</span>
+        </button>
+      </div>
 
       <div class="dash-panels">
 
         <div class="dash-panel dash-panel--wide">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
           </div>
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
         </div>
 
-        <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
-          <div class="dist-list" id="dist-type"></div>
+        <div class="dash-panel dash-panel--wide dash-panel--people">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">אישים בגניזה לאורך הדורות</h2>
+            <span class="dash-panel-hint">מן המאה העשירית ועד השלוש־עשרה</span>
+          </div>
+          <div class="people-timeline">
+          <div class="era-block">
+            <a class="era-rail" href="t/century-10/">המאה ה־10</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/saadia-gaon/"><span class="person-name">רב סעדיה גאון</span><span class="person-years"><bdi>882–942</bdi></span><span class="person-role">ראש ישיבת סורא</span><span class="person-count">66 מסמכים</span></a>
+            <a class="person-chip" href="t/sherira-gaon/"><span class="person-name">רב שרירא גאון</span><span class="person-years"><bdi>906–1006</bdi></span><span class="person-role">גאון פומבדיתא</span><span class="person-count">47 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-11/">המאה ה־11</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/hai-gaon/"><span class="person-name">רב האי גאון</span><span class="person-years"><bdi>939–1038</bdi></span><span class="person-role">גאון פומבדיתא</span><span class="person-count">63 מסמכים</span></a>
+            <a class="person-chip" href="t/yosef-ibn-awkal/"><span class="person-name">יוסף אבן עוכל</span><span class="person-years">פעל <bdi>1000–1040</bdi></span><span class="person-role">סוחר ונדבן בפוסטאט</span><span class="person-count">15 מסמכים</span></a>
+            <a class="person-chip" href="t/yefet-ben-david/"><span class="person-name">יפת בן דוד</span><span class="person-years">פעל <bdi>1002–1047</bdi></span><span class="person-role">חזן וסופר בית הדין</span><span class="person-count">113 מסמכים</span></a>
+            <a class="person-chip" href="t/efraim-ben-shemarya/"><span class="person-name">רבי אפרים בן שמריה</span><span class="person-years">פעל <bdi>1020–1055</bdi></span><span class="person-role">ראש קהילת הירושלמים</span><span class="person-count">221 מסמכים</span></a>
+            <a class="person-chip" href="t/shlomo-ben-yehuda/"><span class="person-name">רב שלמה בן יהודה</span><span class="person-years">פעל <bdi>1025–1051</bdi></span><span class="person-role">גאון ישיבת ארץ ישראל</span><span class="person-count">172 מסמכים</span></a>
+            <a class="person-chip" href="t/sahlan-ben-avraham/"><span class="person-name">רבי סהלאן בן אברהם</span><span class="person-years">פעל <bdi>1034–1053</bdi></span><span class="person-role">ראש קהילת הבבלים</span><span class="person-count">121 מסמכים</span></a>
+            <a class="person-chip" href="t/nahray-ben-nissim/"><span class="person-name">רבי נהוראי בן נסים</span><span class="person-years">פעל <bdi>1045–1096</bdi></span><span class="person-role">סוחר ותלמיד חכם</span><span class="person-count">14 מסמכים</span></a>
+            <a class="person-chip" href="t/yehuda-hakohen-ben-yosef/"><span class="person-name">רבי יהודה הכהן בן יוסף</span><span class="person-years">פעל <bdi>1050–1075</bdi></span><span class="person-role">ראש הסדר בפוסטאט</span><span class="person-count">17 מסמכים</span></a>
+            <a class="person-chip" href="t/daniel-ben-azarya/"><span class="person-name">רב דניאל בן עזריה</span><span class="person-years">פעל <bdi>1051–1062</bdi></span><span class="person-role">נשיא וגאון ארץ ישראל</span><span class="person-count">103 מסמכים</span></a>
+            <a class="person-chip" href="t/eli-ben-amram/"><span class="person-name">רבי עלי בן עמרם</span><span class="person-years">פעל <bdi>1055–1085</bdi></span><span class="person-role">ראש קהילת הירושלמים</span><span class="person-count">43 מסמכים</span></a>
+            <a class="person-chip" href="t/hillel-ben-eli/"><span class="person-name">הלל בן אלי</span><span class="person-years">פעל <bdi>1066–1108</bdi></span><span class="person-role">סופר בית הדין</span><span class="person-count">9 מסמכים</span></a>
+            <a class="person-chip" href="t/mevorakh-ben-saadya/"><span class="person-name">מבורך בן סעדיה</span><span class="person-years">פעל <bdi>1094–1111</bdi></span><span class="person-role">נגיד ורופא החצר</span><span class="person-count">105 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-12/">המאה ה־12</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/yehuda-halevi/"><span class="person-name">רבי יהודה הלוי</span><span class="person-years"><bdi>1075–1141</bdi></span><span class="person-role">משורר ומחבר הכוזרי</span><span class="person-count">79 מסמכים</span></a>
+            <a class="person-chip" href="t/halfon-ben-menashe/"><span class="person-name">חלפון בן מנשה הלוי</span><span class="person-years">פעל <bdi>1100–1138</bdi></span><span class="person-role">סופר בית הדין</span><span class="person-count">554 מסמכים</span></a>
+            <a class="person-chip" href="t/halfon-ben-netanel/"><span class="person-name">חלפון בן נתנאל הלוי</span><span class="person-years">פעל <bdi>1120–1150</bdi></span><span class="person-role">סוחר בין ספרד להודו</span><span class="person-count">120 מסמכים</span></a>
+            <a class="person-chip" href="t/natan-ben-shmuel/"><span class="person-name">נתן בן שמואל החבר</span><span class="person-years">פעל <bdi>1128–1153</bdi></span><span class="person-role">סופר ופקיד בית דין</span><span class="person-count">56 מסמכים</span></a>
+            <a class="person-chip" href="t/madmun-ben-yefet/"><span class="person-name">מדמון בן יפת</span><span class="person-years">פעל <bdi>1130–1151</bdi></span><span class="person-role">נאמן הסוחרים בעדן</span><span class="person-count">24 מסמכים</span></a>
+            <a class="person-chip" href="t/abraham-ben-yiju/"><span class="person-name">אברהם אבן יג׳ו</span><span class="person-years">פעל <bdi>1132–1156</bdi></span><span class="person-role">סוחר ויצרן במלבאר</span><span class="person-count">78 מסמכים</span></a>
+            <a class="person-chip" href="t/maimonides/"><span class="person-name">הרמב״ם</span><span class="person-years"><bdi>1138–1204</bdi></span><span class="person-role">פוסק ורופא</span><span class="person-count">241 מסמכים</span></a>
+            <a class="person-chip" href="t/shmuel-ben-hananya/"><span class="person-name">שמואל בן חנניה</span><span class="person-years">פעל <bdi>1140–1159</bdi></span><span class="person-role">נגיד ורופא החצר</span><span class="person-count">114 מסמכים</span></a>
+            <a class="person-chip" href="t/netanel-halevi/"><span class="person-name">רב נתנאל הלוי</span><span class="person-years">פעל <bdi>1160–1170</bdi></span><span class="person-role">גאון ישיבת מצרים</span><span class="person-count">38 מסמכים</span></a>
+            </div>
+          </div>
+          <div class="era-block">
+            <a class="era-rail" href="t/century-13/">המאה ה־13</a>
+            <div class="era-people">
+            <a class="person-chip" href="t/abraham-maimonides/"><span class="person-name">רבי אברהם בן הרמב״ם</span><span class="person-years"><bdi>1186–1237</bdi></span><span class="person-role">נגיד יהודי מצרים</span><span class="person-count">389 מסמכים</span></a>
+            <a class="person-chip" href="t/eliyahu-ben-zecharya/"><span class="person-name">רבי אליהו בן זכריה</span><span class="person-years">פעל <bdi>1200–1240</bdi></span><span class="person-role">דיין בפוסטאט</span><span class="person-count">28 מסמכים</span></a>
+            <a class="person-chip" href="t/shlomo-ben-eliyahu/"><span class="person-name">רבי שלמה בן אליהו</span><span class="person-years">פעל <bdi>1204–1241</bdi></span><span class="person-role">סופר ודיין בפוסטאט</span><span class="person-count">231 מסמכים</span></a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--map">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">מפת המקומות שמוזכרים בגניזה</h2>
+            <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
+          </div>
+          <div id="geniza-map"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--spices">
+          <div class="spice-banner-wrap">
+            <img src="assets/spice-market.png" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+          </div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
+          </div>
+          <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
         </div>
 
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
-          <div class="dist-list" id="dist-lang"></div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+            <span class="dash-panel-hint">לעמוד הנושא</span>
+          </div>
+          <div class="dist-list" id="dist-type">
+        <a class="dist-row dist-row--link" href="t/letters/" aria-label="מכתב — 11,402 מסמכים, לעמוד הנושא"><span class="dist-label" title="מכתב">מכתב</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:100%"></div></div><span class="dist-count">11,402</span></a>
+        <a class="dist-row dist-row--link" href="t/legal-documents/" aria-label="מסמך משפטי — 8,176 מסמכים, לעמוד הנושא"><span class="dist-label" title="מסמך משפטי">מסמך משפטי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:72%"></div></div><span class="dist-count">8,176</span></a>
+        <a class="dist-row dist-row--link" href="t/accounts/" aria-label="רשימה או טבלה — 5,719 מסמכים, לעמוד הנושא"><span class="dist-label" title="רשימה או טבלה">רשימה או טבלה</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:50%"></div></div><span class="dist-count">5,719</span></a>
+        <div class="dist-row"><span class="dist-label" title="לא מסווג">לא מסווג</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:32%"></div></div><span class="dist-count">3,665</span></div>
+        <div class="dist-row"><span class="dist-label" title="טקסט ספרותי">טקסט ספרותי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:24%"></div></div><span class="dist-count">2,725</span></div>
+        <a class="dist-row dist-row--link" href="t/state-documents/" aria-label="מסמך ממלכתי — 2,297 מסמכים, לעמוד הנושא"><span class="dist-label" title="מסמך ממלכתי">מסמך ממלכתי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:20%"></div></div><span class="dist-count">2,297</span></a>
+        <div class="dist-row"><span class="dist-label" title="טקסט פרא-ספרותי">טקסט פרא-ספרותי</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:11%"></div></div><span class="dist-count">1,275</span></div>
+        <div class="dist-row"><span class="dist-label" title="שטר אשראי או קבלה">שטר אשראי או קבלה</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:5%"></div></div><span class="dist-count">589</span></div>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי שפה ראשית</h2>
+            <span class="dash-panel-hint">לעמוד השפה</span>
+          </div>
+          <div class="dist-list" id="dist-lang">
+        <a class="dist-row dist-row--link" href="t/judaeo-arabic/" aria-label="יהודית-ערבית — 12,541 מסמכים, לעמוד השפה"><span class="dist-label" title="יהודית-ערבית">יהודית-ערבית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:100%"></div></div><span class="dist-count">12,541</span></a>
+        <a class="dist-row dist-row--link" href="t/arabic/" aria-label="ערבית — 7,513 מסמכים, לעמוד השפה"><span class="dist-label" title="ערבית">ערבית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:60%"></div></div><span class="dist-count">7,513</span></a>
+        <a class="dist-row dist-row--link" href="t/hebrew/" aria-label="עברית — 4,067 מסמכים, לעמוד השפה"><span class="dist-label" title="עברית">עברית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:32%"></div></div><span class="dist-count">4,067</span></a>
+        <a class="dist-row dist-row--link" href="t/hebrew/" aria-label="עברית, יהודית-ערבית — 1,788 מסמכים, לעמוד השפה"><span class="dist-label" title="עברית, יהודית-ערבית">עברית, יהודית-ערבית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:14%"></div></div><span class="dist-count">1,788</span></a>
+        <a class="dist-row dist-row--link" href="t/arabic/" aria-label="ערבית, ספרות יווניות/קופטיות — 718 מסמכים, לעמוד השפה"><span class="dist-label" title="ערבית, ספרות יווניות/קופטיות">ערבית, ספרות יווניות/קופטיות</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:6%"></div></div><span class="dist-count">718</span></a>
+        <a class="dist-row dist-row--link" href="t/arabic/" aria-label="ערבית, יהודית-ערבית — 706 מסמכים, לעמוד השפה"><span class="dist-label" title="ערבית, יהודית-ערבית">ערבית, יהודית-ערבית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:6%"></div></div><span class="dist-count">706</span></a>
+        <a class="dist-row dist-row--link" href="t/aramaic/" aria-label="ארמית — 572 מסמכים, לעמוד השפה"><span class="dist-label" title="ארמית">ארמית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:5%"></div></div><span class="dist-count">572</span></a>
+        <a class="dist-row dist-row--link" href="t/aramaic/" aria-label="ארמית, עברית, יהודית-ערבית — 404 מסמכים, לעמוד השפה"><span class="dist-label" title="ארמית, עברית, יהודית-ערבית">ארמית, עברית, יהודית-ערבית</span><div class="dist-bar-wrap"><div class="dist-bar" style="width:3%"></div></div><span class="dist-count">404</span></a>
+          </div>
         </div>
 
         <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
-          <div class="century-chart" id="dist-century"></div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לאורך הדורות</h2>
+            <span class="dash-panel-hint">לעמוד המאה</span>
+          </div>
+          <div class="century-chart" id="dist-century">
+          <a class="century-col century-col--link" href="t/century-10/" aria-label="מסמכים מהמאה ה-10 — 29 מסמכים, לעמוד המאה"><span class="century-bar" style="height:1%" aria-hidden="true"></span><span class="century-label">מ-10</span><span class="century-count">29</span></a>
+          <a class="century-col century-col--link" href="t/century-11/" aria-label="מסמכים מהמאה ה-11 — 1,315 מסמכים, לעמוד המאה"><span class="century-bar" style="height:50%" aria-hidden="true"></span><span class="century-label">מ-11</span><span class="century-count">1.3k</span></a>
+          <a class="century-col century-col--link" href="t/century-12/" aria-label="מסמכים מהמאה ה-12 — 2,616 מסמכים, לעמוד המאה"><span class="century-bar" style="height:100%" aria-hidden="true"></span><span class="century-label">מ-12</span><span class="century-count">2.6k</span></a>
+          <a class="century-col century-col--link" href="t/century-13/" aria-label="מסמכים מהמאה ה-13 — 690 מסמכים, לעמוד המאה"><span class="century-bar" style="height:26%" aria-hidden="true"></span><span class="century-label">מ-13</span><span class="century-count">690</span></a>
+          <a class="century-col century-col--link" href="t/century-14/" aria-label="מסמכים מהמאה ה-14 — 111 מסמכים, לעמוד המאה"><span class="century-bar" style="height:4%" aria-hidden="true"></span><span class="century-label">מ-14</span><span class="century-count">111</span></a>
+          <a class="century-col century-col--link" href="t/century-15/" aria-label="מסמכים מהמאה ה-15 — 94 מסמכים, לעמוד המאה"><span class="century-bar" style="height:4%" aria-hidden="true"></span><span class="century-label">מ-15</span><span class="century-count">94</span></a>
+          </div>
         </div>
 
       </div>
@@ -156,13 +393,32 @@
   <footer class="site-footer">
     <p>
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+      — רישיון
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
     </p>
-    <p><a href="about.html">אודות הגניזה</a></p>
-    <p class="footer-build">עודכן: 30 April 2026</p>
+    <p class="footer-note">
+      התיאורים בעברית הם תרגום ועיבוד של תיאורי המסמכים המקוריים באנגלית.
+      השימוש בחומרים מותר למטרות לא-מסחריות בלבד, בציון המקור.
+    </p>
+    <p>
+      <a href="about.html">אודות, קרדיטים ותנאי שימוש</a> ·
+      <a href="t/">נושאים</a> ·
+      <a href="d/">מפתח כל המסמכים</a> ·
+      <a href="privacy/">מדיניות פרטיות</a> ·
+      <a href="accessibility/">הצהרת נגישות</a>
+    </p>
+    <p class="footer-build">עודכן: 3 September 2026</p>
   </footer>
 
-  <script>const TOTAL_DOCS = 35924;</script>
-  <script src="assets/search.js?v=20260430"></script>
+  <script>const TOTAL_DOCS = 36273;
+  const TIMELINE_TAGS = ["רב סעדיה גאון", "רב שרירא גאון", "רב האי גאון", "יוסף אבן עוכל", "יפת בן דוד", "רבי אפרים בן שמריה", "רב שלמה בן יהודה", "רבי סהלאן בן אברהם", "רבי נהוראי בן נסים", "רבי יהודה הכהן בן יוסף", "רב דניאל בן עזריה", "רבי עלי בן עמרם", "הלל בן אלי", "מבורך בן סעדיה", "רבי יהודה הלוי", "חלפון בן מנשה הלוי", "חלפון בן נתנאל הלוי", "נתן בן שמואל החבר", "מדמון בן יפת", "אברהם אבן יג'ו", "רמב\"ם", "שמואל בן חנניה", "רב נתנאל הלוי", "רבי אברהם בן הרמב\"ם", "רבי אליהו בן זכריה", "רבי שלמה בן אליהו"];</script>
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
+  <script src="assets/search.js?v=20260903"></script>
+  <script>
+    window.PRIVACY_CONFIG = { appPrefixes: ['a11y:'], privacyUrl: 'privacy/' };
+    window.A11Y_CONFIG = { privacyUrl: 'privacy/', accessibilityUrl: 'accessibility/' };
+  </script>
+  <script src="assets/privacy.js?v=20260903"></script>
+  <script src="assets/a11y.js?v=20260903"></script>
 </body>
 </html>
