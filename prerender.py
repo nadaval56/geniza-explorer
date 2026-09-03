@@ -787,14 +787,28 @@ CARD_DESC = 140
 RELATED_MAX = 8
 
 
-def _quality(doc):
-    """Sort key: a photograph first, then the fuller description.
+def doc_rank(doc):
+    """סדר התצוגה בכל רשת כרטיסים באתר: תמונה גוברת על הכל, ובתוך התמונה
+    תעתיק גובר. אחר כך חסרי תמונה שיש להם תעתיק, ובסוף השאר.
 
-    Computed once per document in build_related_index and cached by id. Calling
-    clean() here for every candidate of every document meant eight hundred
-    thousand regex substitutions and a six-minute build.
+        תמונה + תעתיק        6,630
+        תמונה בלי תעתיק     24,058
+        בלי תמונה + תעתיק      931
+        בלי תמונה בלי תעתיק  4,620
+
+    הכלל אחד ומשותף לדף הבית, לרכזות הנושא ולמסמכים הקשורים, ולכן הוא יושב
+    כאן ולא בשלושה מקומות. מפתח המסמכים ב-d/ נשאר בסדר המקורי במכוון: הוא
+    רשימת קישורים בלי תצלומים, וסדר יציב שם שווה יותר לזוחל מסדר "טוב".
+
+    בתוך כל דלי: התיאור המלא קודם, ואז מקום המסמך באוסף, כדי שהסדר יהיה
+    יציב בין בנייה לבנייה.
+
+    _quality היה השם הקודם. הוא מחושב פעם אחת למסמך ב-build_related_index
+    ונשמר לפי id: קריאה ל-clean כאן עבור כל מועמד של כל מסמך פירושה שמונה
+    מאות אלף החלפות רגקס ובנייה בת שש דקות.
     """
     return (0 if (doc.get("iiif_urls") or []) else 1,
+            0 if is_true(doc.get("has_transcription")) else 1,
             -len(clean(doc.get("description_he"))),
             doc.get("pos") or 0)
 
@@ -819,7 +833,7 @@ def build_related_index(docs):
             if value:
                 buckets[key].setdefault(value, []).append(doc)
 
-    quality = {doc["id"]: _quality(doc) for doc in docs}
+    quality = {doc["id"]: doc_rank(doc) for doc in docs}
     for kind, groups in buckets.items():
         for value, members in groups.items():
             sizes[(kind, value)] = len(members)
@@ -1082,16 +1096,14 @@ TAG_DIRECTORY = """<!DOCTYPE html>
 def tag_index(docs):
     """tag → its documents, the ones worth looking at first.
 
-    Order is photo, then length of the Hebrew description, then position. Only
-    57% of documents have a photograph, and mixing them in at random left every
-    grid row half empty. Sorting them forward also tidies the layout for free:
-    the picture cards sit together and the text-only cards sit together, instead
-    of alternating down the page.
+    הסדר הוא doc_rank: תמונה, ואז תעתיק, ואז אורך התיאור העברי, ואז המקום
+    באוסף. רק 85% מן המסמכים נושאים תצלום, ועירוב שלהם באקראי הותיר כל שורה
+    ברשת חצי ריקה. הקדמתם מסדרת את הפריסה בחינם: כרטיסי התמונה יושבים יחד
+    וכרטיסי הטקסט יושבים יחד, במקום להתחלף לאורך העמוד.
 
-    Within each group the fullest descriptions come first, so page 1 of a hub —
-    the page that has to earn its place in the index — shows the documents with
-    the most to say. It also means the hubs improve on their own as the Hebrew
-    rewrite project fills descriptions in.
+    בתוך כל דלי התיאורים המלאים קודמים, ולכן עמוד 1 של רכזת — העמוד שצריך
+    להצדיק את מקומו באינדקס — מציג את המסמכים שיש להם מה לומר. משמע גם
+    שהרכזות משתפרות מעצמן כשפרויקט הריבריט ממלא תיאורים.
     """
     buckets = {}
     for doc in docs:
@@ -1109,11 +1121,7 @@ def tag_index(docs):
             buckets.setdefault(tag, []).append(doc)
 
     for items in buckets.values():
-        items.sort(key=lambda d: (
-            0 if (d.get("iiif_urls") or []) else 1,          # a photo first
-            -len(clean(d.get("description_he"))),            # then the fullest description
-            d.get("pos") or 0,                               # then stable by position
-        ))
+        items.sort(key=doc_rank)
     return buckets
 
 
