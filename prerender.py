@@ -18,7 +18,9 @@ This script closes both gaps without touching the interactive experience:
                      links that chain every document into one walkable path
     d/index.html     paginated static directory of the whole collection, so a
                      crawler can reach every document from the home page
-    sitemap.xml      every URL on the site
+    sitemap.xml      sitemap index, pointing at the two below
+    sitemap-hubs.xml  home, about and the tag hubs
+    sitemap-docs.xml  the directory and every document page
     robots.txt       crawl directives + sitemap pointer
 
 Run it after build.py (build.py writes data/docs/*.json, which is the input
@@ -1421,43 +1423,87 @@ def resolve_lastmod(docs, tag_slugs, buckets):
     return dates, moved
 
 
+# שני קבצים ולא אחד, ולא מטעמי גודל: 36,590 כתובות נכנסות בנוחות לקובץ אחד.
+# Search Console מדווח "דפים שהתגלו" בנפרד לכל קובץ sitemap, ולכן הפיצול הוא
+# שתי מדידות במקום אחת — כמה מן הרכזות, העמודים שנכתבו להם 80–200 מילים של
+# עברית מקורית, נכנסו לאינדקס, מול כמה מעמודי המסמך שרובם רישום קטלוגי קצר.
+# בקובץ אחד שתי הקבוצות מתמזגות למספר יחיד שאינו מלמד דבר על אף אחת מהן.
+SITEMAP_HUBS = "sitemap-hubs.xml"
+SITEMAP_DOCS = "sitemap-docs.xml"
+
+
+def _urlset(entries):
+    return "\n".join([
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        *entries,
+        "</urlset>",
+    ]) + "\n"
+
+
 def write_sitemap(docs, base, index_pages, tag_slugs=(), dates=None):
+    """Write the two url-sets and the index that points at them.
+
+    Returns (hub URL count, document URL count).
+    """
     dates = dates or {}
     today = date.today().isoformat()
-    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
-             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    hub_urls, hub_dates = [], []
+    doc_urls, doc_dates = [], []
 
-    def add(path, priority, changefreq="monthly"):
-        loc = base + path
+    def add(urls, stamps, path, priority, changefreq="monthly"):
         lastmod = dates.get(path, today)
-        parts.append(
-            f"  <url><loc>{html.escape(loc)}</loc><lastmod>{lastmod}</lastmod>"
+        stamps.append(lastmod)
+        urls.append(
+            f"  <url><loc>{html.escape(base + path)}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>{changefreq}</changefreq>"
             f"<priority>{priority}</priority></url>"
         )
 
-    add("", "1.0", "weekly")
-    add("about.html", "0.8", "yearly")
-    add("privacy/", "0.4", "yearly")
-    add("accessibility/", "0.4", "yearly")
-    add("d/", "0.9", "weekly")
-    for n in range(2, index_pages + 1):
-        # A paginated index page changes whenever the index it slices does.
-        add(f"d/index-{n}.html", "0.5")
+    def hub(path, priority, changefreq="monthly"):
+        add(hub_urls, hub_dates, path, priority, changefreq)
+
+    def page(path, priority, changefreq="monthly"):
+        add(doc_urls, doc_dates, path, priority, changefreq)
+
+    hub("", "1.0", "weekly")
+    hub("about.html", "0.8", "yearly")
+    hub("privacy/", "0.4", "yearly")
+    hub("accessibility/", "0.4", "yearly")
 
     # Tag hubs rank above individual documents: each one is a real page about a
     # subject, and each is the entry point for a query no shelfmark can answer.
     # Only page 1 goes in — the overflow pages are noindex by design.
     if tag_slugs:
-        add("t/", "0.9", "monthly")
-    for slug in tag_slugs:
-        add(f"t/{slug}/", "0.8", "monthly")
-    for doc in docs:
-        add(f"d/{doc['id']}.html", "0.6", "yearly")
+        hub("t/", "0.9", "monthly")
+        for slug in tag_slugs:
+            hub(f"t/{slug}/", "0.8", "monthly")
 
-    parts.append("</urlset>")
-    (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
-    return len(docs) + index_pages + 4 + (len(tag_slugs) + 1 if tag_slugs else 0)
+    page("d/", "0.9", "weekly")
+    for n in range(2, index_pages + 1):
+        # A paginated index page changes whenever the index it slices does.
+        page(f"d/index-{n}.html", "0.5")
+    for item in docs:
+        page(f"d/{item['id']}.html", "0.6", "yearly")
+
+    (ROOT / SITEMAP_HUBS).write_text(_urlset(hub_urls), encoding="utf-8")
+    (ROOT / SITEMAP_DOCS).write_text(_urlset(doc_urls), encoding="utf-8")
+
+    # ה-lastmod של קובץ ב-sitemap index הוא המאוחר שבכתובות שבתוכו. תאריכי
+    # ISO משתווים נכון כמחרוזות, ולכן max() עליהם מספיק.
+    children = [
+        f"  <sitemap><loc>{html.escape(base + name)}</loc>"
+        f"<lastmod>{max(stamps) if stamps else today}</lastmod></sitemap>"
+        for name, stamps in ((SITEMAP_HUBS, hub_dates), (SITEMAP_DOCS, doc_dates))
+    ]
+    (ROOT / "sitemap.xml").write_text("\n".join([
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        *children,
+        "</sitemapindex>",
+    ]) + "\n", encoding="utf-8")
+
+    return len(hub_urls), len(doc_urls)
 
 
 ROBOTS = """# הגניזה הקהירית — Geniza Explorer
@@ -1553,8 +1599,11 @@ def run(base=None, limit=None, docs=None, verbose=True):
                  for t, _ in sorted(buckets.items(), key=lambda kv: -len(kv[1]))]
 
     dates, moved = resolve_lastmod(docs, tag_slugs, buckets)
-    urls = write_sitemap(docs, base, index_pages, tag_slugs, dates)
-    print(f"  ✓  sitemap.xml  ({urls:,} URLs, {moved:,} with a new lastmod)")
+    hub_urls, doc_urls = write_sitemap(docs, base, index_pages, tag_slugs, dates)
+    urls = hub_urls + doc_urls
+    print(f"  ✓  sitemap.xml  (index: {SITEMAP_HUBS} {hub_urls:,} · "
+          f"{SITEMAP_DOCS} {doc_urls:,} — {urls:,} URLs, "
+          f"{moved:,} with a new lastmod)")
 
     write_robots(base)
     print("  ✓  robots.txt")
