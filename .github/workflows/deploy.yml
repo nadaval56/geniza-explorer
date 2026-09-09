@@ -68,7 +68,8 @@ jobs:
       - name: Verify output
         run: |
           set -e
-          for f in index.html about.html fragment.html sitemap.xml robots.txt \
+          for f in index.html about.html fragment.html robots.txt \
+                   sitemap.xml sitemap-hubs.xml sitemap-docs.xml \
                    d/index.html site.webmanifest favicon.ico favicon.svg \
                    assets/og-image.png assets/style.css assets/fonts.css \
                    privacy/index.html accessibility/index.html \
@@ -78,12 +79,25 @@ jobs:
             [ -s "$f" ] || { echo "::error::missing or empty: $f"; exit 1; }
           done
           pages=$(find d -name '*.html' | wc -l)
-          urls=$(grep -c '<loc>' sitemap.xml)
           echo "prerendered pages: $pages"
-          echo "sitemap URLs:      $urls"
           [ "$pages" -gt 1000 ] || { echo "::error::only $pages prerendered pages"; exit 1; }
+          # sitemap.xml הוא index ולא רשימת כתובות. ספירת <loc> בו מחזירה 2,
+          # ולכן הכתובות נספרות בקבצי הבן, וכל אחד מהם נבדק לחוד.
+          grep -q '<sitemapindex' sitemap.xml || { echo "::error::sitemap.xml is no longer a sitemap index"; exit 1; }
+          for child in sitemap-hubs.xml sitemap-docs.xml; do
+            grep -q "$child" sitemap.xml || { echo "::error::sitemap.xml does not reference $child"; exit 1; }
+          done
+          hub_urls=$(grep -c '<loc>' sitemap-hubs.xml)
+          doc_urls=$(grep -c '<loc>' sitemap-docs.xml)
+          urls=$((hub_urls + doc_urls))
+          echo "sitemap URLs:      $urls  (hubs $hub_urls · docs $doc_urls)"
+          # הרכזות הן מחצית הטעם של הפיצול. אם הן ייעלמו, הקובץ עדיין יהיה
+          # תקין ו-Search Console ידווח אפס — כשל שקט בדיוק כמו זה של דפי הנושא.
+          [ "$hub_urls" -gt 100 ] || { echo "::error::only $hub_urls URLs in sitemap-hubs.xml"; exit 1; }
           # A sitemap file may hold at most 50,000 URLs before it has to be split.
-          [ "$urls" -lt 50000 ] || { echo "::error::sitemap over the 50,000-URL limit"; exit 1; }
+          for n in "$hub_urls" "$doc_urls"; do
+            [ "$n" -lt 50000 ] || { echo "::error::a sitemap child is over the 50,000-URL limit"; exit 1; }
+          done
           grep -q 'og:image' index.html || { echo "::error::index.html lost its Open Graph tags"; exit 1; }
           # תפריט הנגישות והודעת הפרטיות נשתלים מ-a11y_snippets.py. אם התבנית
           # תשתנה ותאבד אותם, האתר ייפרס בלי הצהרת הנגישות שהוא מבטיח.
@@ -108,7 +122,7 @@ jobs:
           # אותו מחדש ולא דוחף בחזרה, ולכן מניפסט חסר פירושו שכל 36,000
           # הכתובות מדווחות על תאריך היום — בדיוק האות שגוגל לומד להתעלם ממנו.
           [ -s data/lastmod.json ] || echo "::warning::data/lastmod.json חסר — כל ה-lastmod יהיה של היום"
-          stale=$(grep -c "<lastmod>$(date -u +%Y-%m-%d)</lastmod>" sitemap.xml || true)
+          stale=$(cat sitemap-hubs.xml sitemap-docs.xml | grep -c "<lastmod>$(date -u +%Y-%m-%d)</lastmod>" || true)
           echo "lastmod of today:  $stale of $urls URLs"
           echo "total site size: $(du -sh --exclude=.git --exclude=.github . | cut -f1)"
 

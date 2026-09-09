@@ -8,6 +8,8 @@ __pycache__/
 # build; both are reproducible with `python prerender.py`.
 /d/
 /sitemap.xml
+/sitemap-hubs.xml
+/sitemap-docs.xml
 /robots.txt
 
 # CLAUDE.md מורה להריץ `npm i -D playwright` לפני כל push שנוגע בתבניות או
