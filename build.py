@@ -25,6 +25,14 @@ import urllib.request
 from pathlib import Path
 from html import escape
 
+import a11y_snippets
+import honorifics
+import tag_pages
+# מקור אמת אחד למאה של מסמך. prerender בונה ממנו את רכזות המאות,
+# ו-build את שדה c במפתח החיפוש ואת הרצועה בעמוד הבית. build מייבא
+# את prerender ולא להפך, ולכן אין כאן מעגל.
+from prerender import century_from_date
+
 # ── Configuration ─────────────────────────────────────────────────────────────
 CSV_URL = (
     "https://raw.githubusercontent.com/princetongenizalab/"
@@ -50,18 +58,76 @@ TYPE_MAP = {
     "Documentary":                          "מסמך",
 }
 
+# כל 55 הערכים שמופיעים בשדות השפה של פרינסטון. הקובץ מיפה קודם אחת עשרה
+# שפות בודדות בלבד, ומסמך ששדה השפה שלו נשא יותר מאחת — 4,800 מסמכים, ובהם
+# הצירוף השני בגודלו באוסף — עבר כמות שהוא ונשאר באנגלית בתיבת הסינון,
+# ברצועת הסטטיסטיקה ובעמוד המסמך. הרשימה כאן ממצה את הערכים בפועל, ולכן
+# ערך חדש מצד פרינסטון עדיין יעבור כמות שהוא ולא ישבור דבר.
 LANG_MAP = {
-    "Judaeo-Arabic": "יהודית-ערבית",
-    "Hebrew": "עברית",
-    "Arabic": "ערבית",
-    "Aramaic": "ארמית",
-    "Judeo-Persian": "פרסית יהודית",
-    "Greek": "יוונית",
-    "Latin": "לטינית",
-    "Coptic": "קופטית",
-    "Persian": "פרסית",
-    "Syriac": "סורית",
-    "Unknown": "לא ידוע",
+    "Judaeo-Arabic":          "יהודית-ערבית",
+    "Hebrew":                 "עברית",
+    "Arabic":                 "ערבית",
+    "Aramaic":                "ארמית",
+    # "פרסית-יהודית" ולא "פרסית יהודית": זה שם התגית שיש לה רכזת, ו-apply_tags
+    # מזהה את השפה לפי תחילית השם.
+    "Judaeo-Persian":         "פרסית-יהודית",
+    "Judeo-Persian":          "פרסית-יהודית",
+    "Persian":                "פרסית",
+    "Greek":                  "יוונית",
+    "Judaeo-Greek":           "יוונית-יהודית",
+    "Latin":                  "לטינית",
+    "Coptic":                 "קופטית",
+    "Syriac":                 "סורית",
+    "Syriac (Serto)":         "סורית (סרטו)",
+    "Syriac (Estrangelo)":    "סורית (אסטרנגלו)",
+    "Syriac (Unspecified)":   "סורית (כתב לא מזוהה)",
+    "Judaeo-Syriac":          "סורית-יהודית",
+    "Garshuni (Serto)":       "גרשוני (סרטו)",
+    "Christian Palestinian Aramaic": "ארמית נוצרית ארץ-ישראלית",
+    "Samaritan":              "שומרונית",
+    "Ladino":                 "לאדינו",
+    "Spanish":                "ספרדית",
+    "Portuguese":             "פורטוגזית",
+    "Judaeo-Portuguese":      "פורטוגזית-יהודית",
+    "Catalan":                "קטלאנית",
+    "Italian":                "איטלקית",
+    "Judaeo-Italian":         "איטלקית-יהודית",
+    "French":                 "צרפתית",
+    "Judaeo-French":          "צרפתית-יהודית",
+    "Romance":                "רומאנית",
+    "Judaeo-Romance":         "רומאנית-יהודית",
+    "Arabo-Romance":          "ערבית-רומאנית",
+    # מונח מחקרי לערבית הנכתבת באותיות עבריות, להבדיל מיהודית-ערבית עצמה.
+    "Arabo-Hebrew":           "ערבית בכתב עברי",
+    "German":                 "גרמנית",
+    "Yiddish":                "יידיש",
+    "English":                "אנגלית",
+    "Polish":                 "פולנית",
+    "Russian":                "רוסית",
+    "Slavonic":               "סלאבית",
+    "Armenian":               "ארמנית",
+    "Judaeo-Armenian":        "ארמנית-יהודית",
+    "Ottoman Turkish":        "טורקית עות׳מאנית",
+    "Modern Turkish":         "טורקית מודרנית",
+    "Turkish (unspecified)":  "טורקית (לא מוגדר)",
+    "Judaeo-Turkish":         "טורקית-יהודית",
+    "Karamanli":              "קרמנלית",
+    "Judaeo-Tatar":           "טטרית-יהודית",
+    "Gujarati":               "גוג׳ראטית",
+    "Chinese":                "סינית",
+    # ספרות אינן שפה, אבל פרינסטון רושמת אותן באותו שדה, והן מה שמאפשר
+    # לזהות פנקס חשבונות שאין בו כמעט טקסט.
+    "Greek/Coptic Numerals":  "ספרות יווניות/קופטיות",
+    "Hebrew numerals":        "ספרות עבריות",
+    "Eastern Arabic Numerals":"ספרות ערביות מזרחיות",
+    "Western Arabic Numerals":"ספרות ערביות מערביות",
+    # שמות מאגיים חסרי משמעות לשונית, בקמעות ובכתבי השבעה.
+    "Nomina barbara":         "שמות מאגיים",
+    "Unidentified (Hebrew script)":        "לא מזוהה (כתב עברי)",
+    "Unidentified (Latin script)":         "לא מזוהה (כתב לטיני)",
+    "Unidentified language and script":    "שפה וכתב לא מזוהים",
+    "Unknown language in Devanāgarī script": "שפה לא ידועה בכתב דוונאגרי",
+    "Unknown":                "לא ידוע",
 }
 
 PLACE_MAP = {
@@ -140,9 +206,19 @@ def translate_type(raw):
 
 
 def translate_langs(raw):
+    """Hebrew for a language field, including the comma-separated lists.
+
+    split_field knows the ";" and "|" separators, and the language fields use
+    neither: they list "Hebrew, Judaeo-Arabic" with a comma. Every such value
+    therefore missed LANG_MAP and reached the page in English.
+    """
     if not raw:
         return ""
-    return "؛ ".join(LANG_MAP.get(l.strip(), l.strip()) for l in split_field(raw))
+    groups = []
+    for group in split_field(raw):
+        parts = [p.strip() for p in group.split(",") if p.strip()]
+        groups.append(", ".join(LANG_MAP.get(p, p) for p in parts))
+    return "؛ ".join(g for g in groups if g)
 
 
 def translate_library(raw):
@@ -159,18 +235,6 @@ def best_date(row):
         if v:
             return v
     return ""
-
-
-def century_from_date(date_str):
-    """Extract century number (e.g. 11) from a date string like '1025-08/1026-09'."""
-    if not date_str:
-        return None
-    import re
-    m = re.search(r'\b(9\d\d|1[0-4]\d\d)\b', date_str)
-    if m:
-        year = int(m.group(1))
-        return (year // 100) + 1  # century CE
-    return None
 
 
 def place_he(name):
@@ -211,7 +275,11 @@ def generate_hebrew_desc(doc):
 
 
 def is_truthy(v):
-    return str(v).strip().lower() in ("true", "1", "yes", "t")
+    # "y" ו-"n": זה מה שעמודות has_transcription ו-has_translation של פרינסטון
+    # כותבות בפועל, ובלעדיהן שני השדות היו False בכל 36 אלף המסמכים — הדגלים
+    # tr/tl במפתח החיפוש היו מתים, has_tr ו-has_tl ב-stats.json היו אפס,
+    # ותגי "תעתיק" ו"תרגום" לא הופיעו על אף עמוד. בפועל יש 7,561 ו-1,981.
+    return str(v).strip().lower() in ("true", "1", "yes", "t", "y")
 
 
 def parse_doc(row):
@@ -299,9 +367,10 @@ def write_json(path, obj):
         json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def build_search_index(docs, translations_he=None):
+def build_search_index(docs, translations_he=None, tags_he=None):
     """Compact per-doc record for the search index."""
     translations_he = translations_he or {}
+    tags_he = tags_he or {}
     index = []
     for doc in docs:
         entry = {"id": doc["id"]}
@@ -319,7 +388,8 @@ def build_search_index(docs, translations_he=None):
         rich = " ".join(rich_parts)[:400] if rich_parts else ""
         if rich:                    entry["d"]   = rich
         # Hebrew description: prefer real translation, fall back to auto-generated
-        desc_he = translations_he.get(doc["id"]) or doc["description_he"]
+        desc_he = honorifics.add_titles(
+            translations_he.get(doc["id"]) or doc["description_he"])
         if desc_he:                 entry["dh"]  = desc_he
         if doc["iiif_urls"]:
             entry["img"] = 1
@@ -328,6 +398,8 @@ def build_search_index(docs, translations_he=None):
         if doc["has_translation"]:  entry["tl"]  = 1
         c = century_from_date(doc["date"])
         if c:                       entry["c"]   = c
+        doc_tags = tags_he.get(doc["id"], [])
+        if doc_tags:                entry["tgh"] = doc_tags
         index.append(entry)
     return index
 
@@ -357,7 +429,172 @@ def build_stats(docs, tags_he=None):
         "by_type":    dict(type_c.most_common()),
         "by_lang":    dict(lang_c.most_common(12)),
         "by_century": {str(k): v for k, v in sorted(cent_c.items())},
-        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(80)],
+        "top_tags":   [{"t": t, "c": c} for t, c in tag_c.most_common(200)],
+    }
+
+
+# ── Dashboard blocks ──────────────────────────────────────────────────────────
+# שלוש הרצועות שבתחתית העמוד נכתבות אל ה-HTML כאן ולא נבנות ב-search.js, משום
+# שכל פריט בהן הוא קישור אל רכזת תחת t/. קישור שנבנה בדפדפן אינו קיים לזוחל,
+# אינו קיים בלי JavaScript, ואינו נפתח בלשונית חדשה. הסינון בתוך העמוד עבר
+# לתיבות הבחירה שמעל הגלריה.
+
+# תווית סטטיסטיקה → התגית שהרכזת שלה מכסה אותה. פרינסטון מסווגת "רשימה או
+# טבלה" ואילו התגית נקראת "חשבונות", וכך גם בשתי השורות האחרות. בלי המיפוי הזה
+# שלוש מן השורות הגדולות בפאנל היו נשארות ללא קישור.
+TYPE_TAG = {
+    "רשימה או טבלה": "חשבונות",
+    "מסמך ממלכתי":   "מסמך מדינה",
+    "שאלה משפטית":   "תשובה הלכתית",
+}
+
+
+def hub_href(tag):
+    """Link to a tag's hub page under t/, or "" if that tag has no page."""
+    page = tag_pages.TAG_PAGES.get(tag)
+    return f"t/{page['slug']}/" if page else ""
+
+
+def render_type_dist(stats):
+    """The document-type bars, each one a link to that type's hub."""
+    entries = list((stats.get("by_type") or {}).items())[:8]
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    rows = []
+    for label, count in entries:
+        pct = round(count / top * 100)
+        inner = (f'<span class="dist-label" title="{escape(label)}">{escape(label)}</span>'
+                 f'<div class="dist-bar-wrap"><div class="dist-bar" style="width:{pct}%"></div></div>'
+                 f'<span class="dist-count">{count:,}</span>')
+        href = hub_href(TYPE_TAG.get(label, label))
+        if href:
+            rows.append(f'        <a class="dist-row dist-row--link" href="{href}" '
+                        f'aria-label="{escape(label)} — {count:,} מסמכים, לעמוד הנושא">'
+                        f'{inner}</a>')
+        else:
+            # אין רכזת ל"לא מסווג" ולא לטקסט הספרותי, והשורה נשארת תצוגה בלבד.
+            rows.append(f'        <div class="dist-row">{inner}</div>')
+    return "\n".join(rows)
+
+
+def render_century_strip(stats):
+    """The centuries chart, each column a link to that century's hub."""
+    entries = sorted((int(c), v) for c, v in (stats.get("by_century") or {}).items())
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    cols = []
+    for century, count in entries:
+        height = round(count / top * 100)
+        short = f"{count / 1000:.1f}k" if count >= 1000 else f"{count}"
+        bars = (f'<span class="century-bar" style="height:{height}%" aria-hidden="true"></span>'
+                f'<span class="century-label">מ-{century}</span>'
+                f'<span class="century-count">{short}</span>')
+        href = hub_href(tag_pages.CENTURIES.get(century, ""))
+        if href:
+            cols.append(f'          <a class="century-col century-col--link" href="{href}" '
+                        f'aria-label="מסמכים מהמאה ה-{century} — {count:,} מסמכים, '
+                        f'לעמוד המאה">{bars}</a>')
+        else:
+            cols.append(f'          <div class="century-col">{bars}</div>')
+    return "\n".join(cols)
+
+
+def render_lang_dist(stats):
+    """The primary-language bars, each one a link to that language's hub.
+
+    A document whose primary-language field lists more than one language ("עברית,
+    יהודית-ערבית") is counted as its own row, exactly as the field records it.
+    The link follows the first language in the list, because that is the same
+    rule apply_tags.py uses to decide which language hub the document lands in.
+    """
+    entries = list((stats.get("by_lang") or {}).items())[:8]
+    if not entries:
+        return ""
+    top = max(v for _, v in entries)
+    rows = []
+    for label, count in entries:
+        pct = round(count / top * 100)
+        inner = (f'<span class="dist-label" title="{escape(label)}">{escape(label)}</span>'
+                 f'<div class="dist-bar-wrap"><div class="dist-bar" style="width:{pct}%"></div></div>'
+                 f'<span class="dist-count">{count:,}</span>')
+        href = hub_href(label.split(",")[0].strip())
+        if href:
+            rows.append(f'        <a class="dist-row dist-row--link" href="{href}" '
+                        f'aria-label="{escape(label)} — {count:,} מסמכים, לעמוד השפה">'
+                        f'{inner}</a>')
+        else:
+            rows.append(f'        <div class="dist-row">{inner}</div>')
+    return "\n".join(rows)
+
+
+def render_era_options(stats):
+    """<option> per century for the in-page filter above the gallery."""
+    centuries = sorted(int(c) for c in (stats.get("by_century") or {}))
+    return "\n".join(
+        f'          <option value="{c}">המאה ה-{c}</option>' for c in centuries)
+
+
+def render_people_timeline(stats):
+    """The person hubs on the home page, grouped by the century they worked in.
+
+    Eight hubs sat under t/ with nothing on the home page pointing at them, so
+    the only way to reach רב סעדיה גאון was to already know he was there. The
+    grouping is what carries the chronology: a reader sees the four centuries
+    in order before clicking anything.
+    """
+    counts = {row["t"]: row["c"] for row in (stats.get("top_tags") or [])}
+    eras, order = {}, []
+    for person in tag_pages.PEOPLE_TIMELINE:
+        century = person["century"]
+        if century not in eras:
+            eras[century] = []
+            order.append(century)
+        eras[century].append(person)
+
+    blocks = []
+    for century in order:
+        tag = tag_pages.CENTURIES.get(century, "")
+        href = hub_href(tag)
+        label = escape(tag or f"המאה ה-{century}")
+        rail = (f'<a class="era-rail" href="{href}">{label}</a>' if href
+                else f'<span class="era-rail">{label}</span>')
+        chips = []
+        for person in eras[century]:
+            count = counts.get(person["tag"])
+            meta = (f'<span class="person-count">{count:,} מסמכים</span>'
+                    if count else "")
+            # <bdi> סביב הטווח: בלעדיו אלגוריתם הדו-כיווניות מציג את "1186–1237"
+            # בפסקה עברית כ"1237–1186", כלומר טווח הפוך.
+            years = (("פעל " if person.get("active") else "")
+                     + f'<bdi>{escape(person["years"])}</bdi>')
+            chips.append(
+                f'            <a class="person-chip" href="{hub_href(person["tag"])}">'
+                f'<span class="person-name">{escape(person.get("label") or person["tag"])}</span>'
+                f'<span class="person-years">{years}</span>'
+                f'<span class="person-role">{escape(person["role"])}</span>'
+                f'{meta}</a>')
+        blocks.append('          <div class="era-block">\n'
+                      f'            {rail}\n'
+                      '            <div class="era-people">\n'
+                      + "\n".join(chips) + '\n            </div>\n'
+                      '          </div>')
+    return "\n".join(blocks)
+
+
+def dashboard_blocks(stats):
+    """Everything in INDEX_HTML that is computed from data/stats.json."""
+    return {
+        "dist_type":       render_type_dist(stats),
+        "century_strip":   render_century_strip(stats),
+        "era_options":     render_era_options(stats),
+        "people_timeline": render_people_timeline(stats),
+        "dist_lang":       render_lang_dist(stats),
+        # ענן התגיות נבנה ב-search.js מתוך top_tags, ואינו יודע מי כבר מוצג
+        # ברצועת האישים. הרשימה נמסרת לו מכאן כדי שהשמות לא יופיעו פעמיים.
+        "timeline_tags":   json.dumps([p["tag"] for p in tag_pages.PEOPLE_TIMELINE],
+                                      ensure_ascii=False),
     }
 
 
@@ -368,14 +605,95 @@ INDEX_HTML = """\
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הגניזה הקהירית — {total_docs:,} מסמכים מגניזת קהיר</title>
   <meta name="description" content="הגניזה הקהירית — {total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה. חלון אל החיים היהודיים בימי הביניים: הלכה, מסחר, משפחה ויומיום.">
-  <title>הגניזה הקהירית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="{base_url}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="הגניזה הקהירית">
+  <meta property="og:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta property="og:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה: הלכה, מסחר, משפחה ויומיום.">
+  <meta property="og:url" content="{base_url}">
+  <meta property="og:image" content="{base_url}assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="הגניזה הקהירית — חלון אל החיים היהודיים בימי הביניים">
+  <meta name="twitter:description" content="{total_docs:,} מסמכים יהודיים מבית הכנסת בן עזרא בקהיר העתיקה.">
+  <meta name="twitter:image" content="{base_url}assets/og-image.png">
+
+  <!-- Real favicon files. The previous emoji-in-SVG data URI relied on the
+       browser rendering <text> inside an SVG favicon, which Chrome and Safari
+       do not do — the tab fell back to a blank page icon. -->
+  <meta name="theme-color" content="#b5621e">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/frank-ruhl-libre-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
+  <!-- Leaflet is served from this site, not from a CDN: a CDN <script> tag hands
+       every visitor's IP address to a third party on page load, which is exactly
+       what the privacy notice promises does not happen. Same reasoning as the
+       locally hosted fonts. Vendored copy: assets/vendor/leaflet/ (BSD-2-Clause). -->
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+{a11y_head}
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "WebSite",
+        "@id": "{base_url}#website",
+        "url": "{base_url}",
+        "name": "הגניזה הקהירית",
+        "alternateName": "Cairo Geniza — Hebrew Explorer",
+        "description": "חלון אל החיים היהודיים בימי הביניים — {total_docs:,} מסמכים מגניזת קהיר.",
+        "inLanguage": "he",
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "potentialAction": {{
+          "@type": "SearchAction",
+          "target": {{"@type": "EntryPoint", "urlTemplate": "{base_url}?q={{search_term_string}}"}},
+          "query-input": "required name=search_term_string"
+        }}
+      }},
+      {{
+        "@type": "DataCatalog",
+        "@id": "{base_url}#catalog",
+        "name": "הגניזה הקהירית",
+        "url": "{base_url}",
+        "inLanguage": ["he", "en"],
+        "isAccessibleForFree": true,
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "creditText": "Princeton Geniza Project (CC BY-NC 4.0)",
+        "isBasedOn": "https://github.com/princetongenizalab/pgp-metadata",
+        "provider": {{
+          "@type": "Organization",
+          "name": "Princeton Geniza Lab, Princeton University",
+          "url": "https://geniza.princeton.edu"
+        }},
+        "about": {{
+          "@type": "Thing",
+          "name": "Cairo Geniza",
+          "sameAs": "https://www.wikidata.org/wiki/Q1044504"
+        }}
+      }}
+    ]
+  }}
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
   <header class="site-header">
     <div class="header-inner">
@@ -383,13 +701,13 @@ INDEX_HTML = """\
       <h1 class="site-title">הגניזה הקהירית</h1>
       <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
       <p class="site-intro">
-        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, {total_docs:,} מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.
+        בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, כ - 300,000 מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.  {total_docs:,} מהמסמכים האלה מוצגים לפניכם בפרויקט זה.
       </p>
       <a href="about.html" class="about-link">אודות הגניזה הקהירית ←</a>
     </div>
   </header>
 
-  <!-- KPI row (2 cards only) -->
+  <!-- KPI row -->
   <section class="dashboard-kpi" aria-label="סטטיסטיקות">
     <div class="dash-kpi-row dash-kpi-row--two">
       <div class="kpi-card">
@@ -397,6 +715,12 @@ INDEX_HTML = """\
         <span class="kpi-num">{total_docs:,}</span>
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
+      <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
+        <span class="kpi-icon" aria-hidden="true">💡</span>
+        <span class="kpi-dyk-label">הידעת?</span>
+        <span class="kpi-dyk-text" id="dyk-text">…</span>
+        <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
+      </a>
       <div class="kpi-card" id="kpi-img">
         <span class="kpi-icon" aria-hidden="true">🖼</span>
         <span class="kpi-num">…</span>
@@ -425,16 +749,32 @@ INDEX_HTML = """\
         <select id="filter-library" class="filter-select" aria-label="ספרייה">
           <option value="">כל הספריות</option>
         </select>
+        <select id="filter-era" class="filter-select" aria-label="מאה">
+          <option value="">כל המאות</option>
+{era_options}
+        </select>
         <select id="filter-has" class="filter-select" aria-label="תוכן">
           <option value="">כל המסמכים</option>
           <option value="img">🖼 עם תמונה</option>
+          <option value="tr">📝 עם תעתיק</option>
+          <option value="tl">🌐 עם תרגום</option>
         </select>
         <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>
     </div>
   </div>
 
-  <main class="main-content">
+  <main class="main-content" id="main-content">
+    <noscript>
+      <div class="noscript-note">
+        <p>
+          החיפוש והסינון בעמוד זה פועלים ב-JavaScript. אפשר לעיין בכל
+          {total_docs:,} המסמכים גם ללא JavaScript —
+          <a href="d/">מפתח המסמכים המלא</a> מכיל עמוד נפרד לכל מסמך,
+          ו<a href="t/">דפי הנושאים</a> מרכזים אותם לפי סוג, מקום, תקופה ונושא.
+        </p>
+      </div>
+    </noscript>
     <div class="results-bar" id="results-bar" aria-live="polite"></div>
     <div class="cards-grid" id="cards-grid" role="list"></div>
     <div class="pagination" id="pagination" aria-label="דפים"></div>
@@ -449,68 +789,118 @@ INDEX_HTML = """\
     </div>
   </main>
 
-  <!-- Statistics section (below cards) -->
-  <section class="browse-section" aria-label="עיון מהיר">
-    <div class="browse-inner">
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי תקופה</h2>
-        <div class="browse-chips" id="era-chips">
-          <button class="chip" data-era="10">המאה ה-10</button>
-          <button class="chip" data-era="11">המאה ה-11</button>
-          <button class="chip" data-era="12">המאה ה-12</button>
-          <button class="chip" data-era="13">המאה ה-13</button>
-          <button class="chip" data-era="14">המאה ה-14+</button>
-        </div>
-      </div>
-
-      <div class="browse-group">
-        <h2 class="browse-label">עיון לפי סוג</h2>
-        <div class="browse-chips" id="type-chips">
-          <button class="chip" data-type="מכתב">✉ מכתבים</button>
-          <button class="chip" data-type="מסמך משפטי">⚖ משפטיים</button>
-          <button class="chip" data-type="רשימה או טבלה">📋 רשימות</button>
-          <button class="chip" data-type="מסמך ממלכתי">🏛 ממלכתיים</button>
-          <button class="chip" data-type="טקסט ספרותי">📖 ספרותיים</button>
-          <button class="chip" data-type="טקסט פרא-ספרותי">📃 פרא-ספרותיים</button>
-        </div>
-      </div>
-
-      <div class="browse-group browse-group--single">
-        <button class="chip chip--surprise" id="btn-surprise" aria-label="מסמך מפתיע">
-          🎲 הפתע אותי
-        </button>
-      </div>
-
-    </div>
-  </section>
-
   <section class="dashboard" id="dashboard" aria-label="סטטיסטיקות אוסף">
     <div class="dash-inner">
+
+      <div class="surprise-wrap">
+        <button class="surprise-btn" id="btn-surprise" aria-label="בחר קטע אקראי מהגניזה">
+          <div class="surprise-dice">
+            <svg viewBox="0 0 100 98" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="sg-top" x1="20%" y1="0%" x2="80%" y2="100%">
+                  <stop offset="0%" stop-color="#ffe066"/>
+                  <stop offset="100%" stop-color="#f5a623"/>
+                </linearGradient>
+                <linearGradient id="sg-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e0455a"/>
+                  <stop offset="100%" stop-color="#9b1a30"/>
+                </linearGradient>
+                <linearGradient id="sg-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2a72c3"/>
+                  <stop offset="100%" stop-color="#163f7a"/>
+                </linearGradient>
+                <filter id="sg-sh" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1a1040" flood-opacity="0.32"/>
+                </filter>
+              </defs>
+              <ellipse cx="50" cy="93" rx="34" ry="4.5" fill="#1a1040" opacity="0.18"/>
+              <polygon points="15,30 50,50 50,88 15,68" fill="url(#sg-left)" stroke="#7a0820" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="85,30 50,50 50,88 85,68" fill="url(#sg-right)" stroke="#0e2a5a" stroke-width="1.2" stroke-linejoin="round"/>
+              <polygon points="50,10 85,30 50,50 15,30" fill="url(#sg-top)" stroke="#c07800" stroke-width="1.2" stroke-linejoin="round" filter="url(#sg-sh)"/>
+              <circle cx="34" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="21" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="50" cy="30" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="34" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="66" cy="39" r="3.2" fill="#7a3800" opacity="0.85"/>
+              <circle cx="28" cy="43" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="38" cy="74" r="2.4" fill="#ffb0bb" opacity="0.7"/>
+              <circle cx="78" cy="41" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="68" cy="59" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+              <circle cx="57" cy="77" r="2.4" fill="#a8d4ff" opacity="0.65"/>
+            </svg>
+          </div>
+          <span class="surprise-title">הפתע אותי</span>
+          <span class="surprise-sub">בחר קטע אקראי מהגניזה</span>
+        </button>
+      </div>
 
       <div class="dash-panels">
 
         <div class="dash-panel dash-panel--wide">
           <div class="dash-panel-hd">
             <h2 class="dash-panel-title">נושאים מרכזיים</h2>
-            <span class="dash-panel-hint">לחץ לסינון</span>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
           </div>
           <div class="tag-cloud" id="tag-cloud"><span class="dash-loading">טוען…</span></div>
         </div>
 
-        <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי סוג מסמך</h2>
-          <div class="dist-list" id="dist-type"></div>
+        <div class="dash-panel dash-panel--wide dash-panel--people">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">אישים בגניזה לאורך הדורות</h2>
+            <span class="dash-panel-hint">מן המאה העשירית ועד השלוש־עשרה</span>
+          </div>
+          <div class="people-timeline">
+{people_timeline}
+          </div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--map">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">מפת המקומות שמוזכרים בגניזה</h2>
+            <span class="dash-panel-hint">לחץ על סיכה לסינון לפי מיקום</span>
+          </div>
+          <div id="geniza-map"></div>
+        </div>
+
+        <div class="dash-panel dash-panel--wide dash-panel--spices">
+          <div class="spice-banner-wrap">
+            <img src="assets/spice-market.png" alt="שוק התבלינים" class="spice-banner-img" onerror="this.style.display='none'">
+          </div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">תבלינים וסחורות יקרות</h2>
+            <a class="dash-panel-hint dash-panel-link" href="t/">כל הנושאים ←</a>
+          </div>
+          <div class="spice-buttons" id="spice-buttons"><span class="dash-loading">טוען…</span></div>
         </div>
 
         <div class="dash-panel">
-          <h2 class="dash-panel-title">לפי שפה ראשית</h2>
-          <div class="dist-list" id="dist-lang"></div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי סוג מסמך</h2>
+            <span class="dash-panel-hint">לעמוד הנושא</span>
+          </div>
+          <div class="dist-list" id="dist-type">
+{dist_type}
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לפי שפה ראשית</h2>
+            <span class="dash-panel-hint">לעמוד השפה</span>
+          </div>
+          <div class="dist-list" id="dist-lang">
+{dist_lang}
+          </div>
         </div>
 
         <div class="dash-panel dash-panel--century">
-          <h2 class="dash-panel-title">לאורך הדורות</h2>
-          <div class="century-chart" id="dist-century"></div>
+          <div class="dash-panel-hd">
+            <h2 class="dash-panel-title">לאורך הדורות</h2>
+            <span class="dash-panel-hint">לעמוד המאה</span>
+          </div>
+          <div class="century-chart" id="dist-century">
+{century_strip}
+          </div>
         </div>
 
       </div>
@@ -521,14 +911,28 @@ INDEX_HTML = """\
   <footer class="site-footer">
     <p>
       נתונים: <a href="https://geniza.princeton.edu" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+      — רישיון
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.he" target="_blank" rel="noopener license">CC BY-NC 4.0</a>
     </p>
-    <p><a href="about.html">אודות הגניזה</a></p>
+    <p class="footer-note">
+      התיאורים בעברית הם תרגום ועיבוד של תיאורי המסמכים המקוריים באנגלית.
+      השימוש בחומרים מותר למטרות לא-מסחריות בלבד, בציון המקור.
+    </p>
+    <p>
+      <a href="about.html">אודות, קרדיטים ותנאי שימוש</a> ·
+      <a href="t/">נושאים</a> ·
+      <a href="d/">מפתח כל המסמכים</a> ·
+      <a href="privacy/">מדיניות פרטיות</a> ·
+      <a href="accessibility/">הצהרת נגישות</a>
+    </p>
     <p class="footer-build">עודכן: {build_date}</p>
   </footer>
 
-  <script>const TOTAL_DOCS = {total_docs};</script>
+  <script>const TOTAL_DOCS = {total_docs};
+  const TIMELINE_TAGS = {timeline_tags};</script>
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
+{a11y_foot}
 </body>
 </html>
 """
@@ -539,93 +943,86 @@ FRAGMENT_HTML = """\
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="page-title">מסמך גניזה — הגניזה הקהירית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>מסמך גניזה — הגניזה הקהירית</title>
+  <!-- Every document now has its own prerendered page under /d/, which carries
+       real HTML content plus per-document title, description, Open Graph and
+       schema.org data. This page is kept only so that links and bookmarks of
+       the form fragment.html?id=N — the URL shape the site used before — keep
+       working. It is Disallow-ed in robots.txt so it never competes with the
+       canonical page for indexing. -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="assets/fonts.css?v={build_ts}">
   <link rel="stylesheet" href="assets/style.css?v={build_ts}">
+  <script>
+    (function () {{
+      var id = new URLSearchParams(location.search).get('id');
+      location.replace(id ? 'd/' + encodeURIComponent(id) + '.html' : 'index.html');
+    }})();
+  </script>
 </head>
 <body class="fragment-body">
-
-  <nav class="top-nav" aria-label="ניווט">
-    <a href="index.html" class="nav-home">← חזרה לגלריה</a>
-    <span class="nav-breadcrumb" id="nav-breadcrumb" aria-current="page"></span>
-  </nav>
-
-  <div class="loading-state" id="loading-state">
+  <div class="loading-state">
     <div class="spinner"></div>
-    <p>טוען מסמך…</p>
+    <p>מעביר לעמוד המסמך…</p>
+    <p><a id="manual-link" href="./">המשך לגלריה</a></p>
   </div>
-
-  <article class="fragment-article" id="fragment-article" hidden>
-
-    <header class="fragment-header">
-      <div class="fragment-badges" id="fragment-badges"></div>
-      <h1 class="fragment-shelfmark" id="fragment-shelfmark"></h1>
-      <p class="fragment-library" id="fragment-library"></p>
-    </header>
-
-    <div class="fragment-layout">
-
-      <div class="fragment-image-col">
-        <div class="image-frame" id="image-frame">
-          <div class="image-placeholder" id="image-placeholder">
-            <span class="placeholder-glyph" aria-hidden="true">📜</span>
-            <span>אין תמונה זמינה</span>
-          </div>
-          <img
-            id="fragment-img"
-            class="fragment-img"
-            alt=""
-            hidden
-          >
-          <div class="image-caption" id="image-caption" hidden></div>
-        </div>
-        <div class="image-links" id="image-links"></div>
-      </div>
-
-      <div class="fragment-meta-col">
-        <dl class="meta-list" id="meta-list"></dl>
-
-        <div class="description-block" id="description-block" hidden>
-          <h2 class="section-label">תיאור</h2>
-          <p class="description-text" id="description-text"></p>
-        </div>
-
-        <div class="tags-block" id="tags-block" hidden>
-          <h2 class="section-label">תגיות</h2>
-          <div class="tags-list" id="tags-list"></div>
-        </div>
-
-        <div class="actions-block">
-          <a id="princeton-link" href="#" target="_blank" rel="noopener" class="btn-primary">
-            צפייה ב-Princeton Geniza Project ↗
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <nav class="fragment-nav" id="fragment-nav" aria-label="ניווט בין מסמכים"></nav>
-
-  </article>
-
-  <footer class="site-footer">
-    <p>
-      נתונים ממאגר
-      <a href="https://github.com/princetongenizalab/pgp-metadata" target="_blank" rel="noopener">Princeton Geniza Project</a>
-      — רישיון CC BY-NC 4.0
+  <noscript>
+    <p style="text-align:center;padding:2rem">
+      עמוד זה עבר. <a href="d/">עברו למפתח המסמכים</a> או
+      <a href="./">חזרו לגלריה</a>.
     </p>
-    <p><a href="about.html">אודות הגניזה</a></p>
-  </footer>
-
-  <script src="assets/fragment.js?v={build_ts}"></script>
+  </noscript>
+  <script>
+    (function () {{
+      var id = new URLSearchParams(location.search).get('id');
+      if (id) document.getElementById('manual-link').href = 'd/' + encodeURIComponent(id) + '.html';
+    }})();
+  </script>
 </body>
 </html>
 """
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
+def write_html_only(args):
+    """Regenerate the HTML pages (and d/, sitemap, robots) from committed data.
+
+    Useful when only the templates changed: it skips the CSV fetch and the
+    36k-file data rewrite, and it is the path CI falls back to when the
+    Princeton Geniza Project CSV is unreachable.
+    """
+    from datetime import date
+    import prerender
+
+    with open(DATA_DIR / "stats.json", encoding="utf-8") as f:
+        stats = json.load(f)
+    total = stats["total"]
+
+    site_url = args.base_url or prerender.base_url()
+    if not site_url.endswith("/"):
+        site_url += "/"
+
+    build_date = date.today().strftime("%-d %B %Y")
+    build_ts = date.today().strftime("%Y%m%d")
+
+    print("\n── Geniza Explorer: HTML only ────────────────────────")
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(INDEX_HTML.format(total_docs=total, build_date=build_date,
+                                  build_ts=build_ts, base_url=site_url,
+                                  a11y_head=a11y_snippets.head("", build_ts),
+                                  a11y_foot=a11y_snippets.foot("", build_ts),
+                                  **dashboard_blocks(stats)))
+    print("  ✓  index.html")
+    with open("fragment.html", "w", encoding="utf-8") as f:
+        f.write(FRAGMENT_HTML.format(build_ts=build_ts))
+    print("  ✓  fragment.html (redirect shim → d/<id>.html)")
+
+    if not args.no_prerender:
+        prerender.run(base=site_url)
+    print("── Done ──────────────────────────────────────────────\n")
+
+
 def main():
     import argparse
     from datetime import date
@@ -634,7 +1031,16 @@ def main():
     parser.add_argument("--no-download", action="store_true", help="Use cached CSV only")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of documents")
     parser.add_argument("--force-download", action="store_true", help="Re-download CSV even if cached")
+    parser.add_argument("--no-prerender", action="store_true",
+                        help="Skip generating the crawlable pages under d/")
+    parser.add_argument("--base-url", default=None,
+                        help="Canonical site root; defaults to CNAME, else GitHub Pages")
+    parser.add_argument("--html-only", action="store_true",
+                        help="Rewrite the HTML pages from the committed data, no CSV fetch")
     args = parser.parse_args()
+
+    if args.html_only:
+        return write_html_only(args)
 
     print("\n── Geniza Explorer Build ─────────────────────────────")
 
@@ -644,9 +1050,9 @@ def main():
     if translations_path.exists():
         with open(translations_path, encoding="utf-8") as f:
             translations_he = json.load(f)
-        print(f"\n[0/4] Translations: {len(translations_he):,} cached Hebrew descriptions loaded")
+        print(f"\n[0/5] Translations: {len(translations_he):,} cached Hebrew descriptions loaded")
     else:
-        print("\n[0/4] Translations: none yet (run translate.py to generate)")
+        print("\n[0/5] Translations: none yet (run translate.py to generate)")
 
     tags_he_path = DATA_DIR / "tags_he.json"
     tags_he = {}
@@ -656,14 +1062,14 @@ def main():
         print(f"       Hebrew tags:  {len(tags_he):,} documents tagged")
 
     # 1. Download / load CSV
-    print("\n[1/4] CSV")
+    print("\n[1/5] CSV")
     if args.no_download and not CACHE_FILE.exists():
         print("  ✗  No cached CSV found. Remove --no-download to fetch it.")
         sys.exit(1)
     csv_file = download_csv(force=args.force_download) if not args.no_download else CACHE_FILE
 
     # 2. Parse documents
-    print("\n[2/4] Parsing")
+    print("\n[2/5] Parsing")
     docs = load_docs(csv_file, limit=args.limit)
     print(f"  ✓  {len(docs):,} documents loaded")
 
@@ -671,12 +1077,12 @@ def main():
     id_to_idx = {doc["id"]: i for i, doc in enumerate(docs)}
 
     # 3. Write JSON data files
-    print("\n[3/4] Writing data files")
+    print("\n[3/5] Writing data files")
     DATA_DIR.mkdir(exist_ok=True)
     DOCS_DIR.mkdir(exist_ok=True)
 
     # search index
-    search_index = build_search_index(docs, translations_he)
+    search_index = build_search_index(docs, translations_he, tags_he)
     write_json(DATA_DIR / "search.json", search_index)
     size_kb = (DATA_DIR / "search.json").stat().st_size // 1024
     print(f"  ✓  data/search.json  ({size_kb} KB, {len(search_index):,} entries)")
@@ -692,7 +1098,9 @@ def main():
         prev_id = docs[idx - 1]["id"] if idx > 0 else None
         next_id = docs[idx + 1]["id"] if idx < len(docs) - 1 else None
         # Prefer real translation over auto-generated metadata description
-        doc_he = translations_he.get(doc["id"])
+        # התארים נוספים כאן ולא בקובץ התרגומים: תיאור חדש מפרינסטון, או תיאור
+        # שנכתב מחדש, מקבל אותם בבנייה הבאה בלי שאיש יזכור. ראו honorifics.py.
+        doc_he = honorifics.add_titles(translations_he.get(doc["id"]) or "")
         if doc_he:
             doc = {**doc, "description_he": doc_he}
         doc_tags_he = tags_he.get(doc["id"], [])
@@ -703,18 +1111,60 @@ def main():
 
     print(f"  ✓  {len(docs):,} document JSON files written to data/docs/")
 
+    # מסמך שפרינסטון מחקה או מיזגה נעלם מן ה-CSV, אבל הקובץ שלו נשאר כאן —
+    # prerender בונה לו עמוד, ה-sitemap מכריז עליו, ומספר העמודים בפועל גדל
+    # מעל המספר ש-index.html מצהיר עליו. שלושה כאלה הצטברו עד ספטמבר 2026.
+    # הגיזום מדלג על --limit, שבו הקיצור עצמו הוא שמותיר את השאר "יתומים".
+    if args.limit is None:
+        live = {doc["id"] for doc in docs}
+        stale = [p for p in DOCS_DIR.glob("*.json") if p.stem not in live]
+        # רשת ביטחון: CSV קטוע לא ימחק את האוסף. הסף היה 1%, וזה היה צר מדי:
+        # בין הסנאפשוט של מאי 2026 ל-CSV של ספטמבר פרינסטון הסירה 268 מסמכים
+        # והוסיפה 570 — כלומר מחיקות אמיתיות הגיעו ל-0.74%, במרחק נגיעה מסף
+        # שהיה עוצר את הגיזום ומחזיר בשקט את הפער בין המספרים. 5% עדיין תופס
+        # את המקרה שהסף נועד לו: הורדה שנקטעה מותירה עשרות אחוזים של "מתים".
+        if len(stale) > max(50, len(docs) // 20):
+            print(f"  !  {len(stale):,} stale files — too many to be real deletions, "
+                  f"keeping them. Check the CSV.")
+        else:
+            for p in stale:
+                p.unlink()
+            if stale:
+                print(f"  ✓  {len(stale)} stale document file(s) removed: "
+                      f"{', '.join(sorted(p.stem for p in stale))}")
+
     # 4. Write HTML pages
-    print("\n[4/4] Writing HTML")
+    print("\n[4/5] Writing HTML")
     build_date = date.today().strftime("%-d %B %Y")
     build_ts   = date.today().strftime("%Y%m%d")
 
+    import prerender
+
+    site_url = args.base_url or prerender.base_url()
+    if not site_url.endswith("/"):
+        site_url += "/"
+
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date, build_ts=build_ts))
+        f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date,
+                                  build_ts=build_ts, base_url=site_url,
+                                  a11y_head=a11y_snippets.head("", build_ts),
+                                  a11y_foot=a11y_snippets.foot("", build_ts),
+                                  **dashboard_blocks(stats)))
     print("  ✓  index.html")
 
     with open("fragment.html", "w", encoding="utf-8") as f:
         f.write(FRAGMENT_HTML.format(build_ts=build_ts))
-    print("  ✓  fragment.html")
+    print("  ✓  fragment.html (redirect shim → d/<id>.html)")
+
+    # Prerender for crawlers. index.html and the viewer are client-side
+    # rendered, so without this step nothing that skips JavaScript — the AI
+    # crawlers, the WhatsApp/Telegram/Slack unfurlers, Googlebot's first pass
+    # — can see a single document.
+    if args.no_prerender:
+        print("\n[5/5] Prerender skipped (--no-prerender)")
+    else:
+        print("\n[5/5] Prerender")
+        prerender.run(base=site_url)
 
     print("\n── Done ──────────────────────────────────────────────")
     print(f"   {len(docs):,} documents • index.html • fragment.html")
