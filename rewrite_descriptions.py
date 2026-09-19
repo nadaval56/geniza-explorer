@@ -88,8 +88,18 @@ def save_json(path, obj):
     tmp.replace(path)
 
 
-def select_targets(top_n, min_en, already_done):
-    """Return list of {id, desc, score} for the top-N by gap score."""
+def select_targets(top_n, min_en, already_done, max_ratio=None):
+    """Return list of {id, desc, score} for the top-N by gap score.
+
+    gap_score is an absolute gap weighted by the ratio shortfall, so a long
+    English description with a middling ratio outranks a short one whose
+    Hebrew is a fragment. That is the right objective for "where is the most
+    text missing" and the wrong one for "empty the ratio bucket": 200
+    rewrites chosen this way removed only 49 documents from the 0.25-0.50
+    bucket, because three quarters of each batch landed outside it.
+    max_ratio restricts candidates to those below a given he/en ratio, so a
+    batch can be aimed at one bucket and spend every call inside it.
+    """
     candidates = []
     for path in DOCS_DIR.glob("*.json"):
         try:
@@ -103,6 +113,8 @@ def select_targets(top_n, min_en, already_done):
         if not doc_id or not desc_en or len(desc_en) < min_en:
             continue
         if doc_id in already_done:
+            continue
+        if max_ratio is not None and len(desc_he) / len(desc_en) >= max_ratio:
             continue
         candidates.append({
             "id": doc_id,
@@ -248,6 +260,9 @@ def main():
         description="Rewrite Hebrew descriptions with Opus 4.7 via Claude Code")
     parser.add_argument("--top",        type=int, default=5000,
                         help="How many of the worst-gap docs to rewrite (default 5000)")
+    parser.add_argument("--max-ratio",  type=float, default=None,
+                        help="Only docs whose HE/EN length ratio is below "
+                             "this (e.g. 0.50). Aims a batch at one bucket.")
     parser.add_argument("--min-en",     type=int, default=200,
                         help="Skip docs with EN shorter than this (default 200)")
     parser.add_argument("--workers",    type=int, default=DEFAULT_WORKERS,
@@ -268,7 +283,8 @@ def main():
     print(f"Already rewritten with Opus:  {len(done_set):,}")
 
     print(f"\nSelecting top {args.top:,} by gap score (min EN ≥ {args.min_en} chars)…")
-    targets = select_targets(args.top, args.min_en, done_set)
+    targets = select_targets(args.top, args.min_en, done_set,
+                             args.max_ratio)
     if not targets:
         print("Nothing to do — all top-gap docs have already been rewritten.")
         return
