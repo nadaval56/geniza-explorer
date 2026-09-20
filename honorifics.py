@@ -35,6 +35,7 @@ HEB = "א-ת"
 TITLES = {
     # גאוני בבל, ארץ ישראל ומצרים
     "סעדיה גאון":        "רב",
+    "סעדיה בן יוסף אלפיומי": "רב",
     "שרירא":             "רב",
     "שלמה בן יהודה":     "רב",
     "שלמה גאון":         "רב",
@@ -66,6 +67,23 @@ EXISTING_TITLES = {
     "גאון", "הגאון", "גאונים", "הגאונים", "מרן", "אדוננו", "אדונינו",
 }
 
+# הצורה המקוצרת של שם שכבר נזכר במלואו ובתוארו באותו תיאור. "סעדיה" לבדו אינו
+# נכנס ל-TITLES ולעולם לא ייכנס: באוסף הוא גם חזן בפוסטאט ("סעדיה החזן בן
+# אברהם"), גם אישה ("סעדיה בת יוסף אל-יהודי") וגם כינוי כבוד בערבית שאינו שם
+# כלל ("אלסדידה אלסעדיה") — 261 מופעים שכלל גורף היה הופך ל"רב סעדיה בת יוסף".
+# אבל בתוך תיאור שכבר נקב ב"רב סעדיה גאון", האזכור השני הוא הוא, וכלל CLAUDE.md
+# דורש את התואר גם בו. לכן ההרחבה הזו מותנית בטקסט ולא גלובלית.
+SHORT_FORMS = {
+    "סעדיה גאון": "סעדיה",
+}
+
+# מילה שבאה אחרי הצורה המקוצרת ומסגירה שהיא תחילתו של שם אחר.
+NAME_CONTINUATION = {
+    "הלוי", "הכהן", "החזן", "גאון", "אלפיומי", "הזקן", "הנשיא",
+}
+
+QUOTES = "\"'\u05f4\u05f3\u201c\u201d\u2018\u2019"
+
 # אות יחס נדבקת לשם ("משלמה בן אליהו"), והתואר נכנס בין השתיים.
 PREFIX = "והבלכמש"
 
@@ -90,6 +108,40 @@ def _preceding_word(text, end):
     return word
 
 
+_SHORT_RULES = [
+    (stem, short, re.compile(
+        rf"(?<![{HEB}])(?P<pre>[{PREFIX}]{{0,2}}){re.escape(short)}(?![{HEB}])"))
+    for stem, short in SHORT_FORMS.items()
+]
+
+
+def _promote_short_forms(text):
+    """Title a bare second mention, once the full name stands in the same text."""
+    for stem, short, pattern in _SHORT_RULES:
+        title = TITLES.get(stem)
+        if not title or f"{title} {stem}" not in text:
+            continue
+        full = f"{title} {stem}"
+
+        def repl(m, full=full, short=short):
+            before = _preceding_word(m.string, m.start())
+            if before in EXISTING_TITLES or before in PATRONYMICS:
+                return m.group(0)
+            after = m.string[m.end():].lstrip().split()[:1]
+            if after and (after[0] in NAME_CONTINUATION
+                          or after[0] in PATRONYMICS):
+                return m.group(0)
+            # ציטוט של השם ככתוב על כתב היד: "השם 'סעדיה' כתוב למטה".
+            lhs = m.string[m.start() - 1] if m.start() else ""
+            rhs = m.string[m.end():m.end() + 1]
+            if lhs in QUOTES and rhs in QUOTES:
+                return m.group(0)
+            return f"{m.group('pre')}{full}"
+
+        text = pattern.sub(repl, text)
+    return text
+
+
 def add_titles(text):
     """Insert the honorific before every bare mention of a titled figure."""
     if not text:
@@ -102,4 +154,4 @@ def add_titles(text):
             # התואר נדחק בין אות היחס לשם, ולכן "משלמה" נעשה "מרבי שלמה".
             return f"{m.group('pre')}{title} {stem}"
         text = pattern.sub(repl, text)
-    return text
+    return _promote_short_forms(text)
