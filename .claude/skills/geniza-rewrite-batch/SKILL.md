@@ -92,12 +92,17 @@ def is_corrupted(text):
                                  'thinking', '<think', 'reasoning']): return True
     if 'מאגר ה-' in text or 'מאגר git' in text or 'הודעת ה' in text: return True
     starts = ('I understand', 'I notice', 'I cannot', 'I am ', "I'm ",
-              'הודעה זו', 'ההודעה', 'הודעת', 'השלמתי', 'איני יכול', 'אינני', 'לא אוכל')
+              'הודעה זו', 'ההודעה', 'השלמתי', 'איני יכול', 'אינני', 'לא אוכל')
     return text.strip().startswith(starts)
 bad = [d for d in done if is_corrupted(t.get(d, ''))]
 print(f'Total: {len(done)}  Corrupted: {len(bad)}')
 PY
 ```
+
+**`'הודעת'` הוסר מרשימת הפתיחות שנחסמות.** "הודעת פטירה" ו"הודעת שבועה" הם
+סוגי מסמך רגילים בגניזה, והבודק סימן אותם כזיהום. הכוונה המקורית הייתה לתפוס
+"הודעת ה..." (הודעת ה-commit), וזה כבר נבדק בשורה שמעליו כתת-מחרוזת, ולכן
+החסימה הרחבה הייתה מיותרת מלכתחילה.
 
 If corrupted > 0, alert the user and offer to remove the bad IDs from `rewrites_done.json` so they get redone next run.
 
