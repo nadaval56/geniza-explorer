@@ -45,9 +45,11 @@ def load_translations():
 
 
 def save_translations(translations):
+    """Pretty-print so future git diffs show one line per ID, not a 9MB single-line rewrite."""
     TRANSLATIONS_FILE.parent.mkdir(exist_ok=True)
     with open(TRANSLATIONS_FILE, "w", encoding="utf-8") as f:
-        json.dump(translations, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(translations, f, ensure_ascii=False, indent=2, sort_keys=True)
+        f.write("\n")
 
 
 def load_docs_needing_translation(translations):
