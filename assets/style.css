@@ -48,8 +48,8 @@
   --badge-other:  #f0ede8;
 
   /* Fonts */
-  --font-serif: 'Frank Ruhl Libre', 'David Libre', serif;
-  --font-ui:    'Heebo', 'Arial', sans-serif;
+  --font-serif: 'Frank Ruhl Libre', 'David Libre', 'Noto Sans Coptic', serif;
+  --font-ui:    'Heebo', 'Arial', 'Noto Sans Coptic', sans-serif;
 
   /* Spacing — סקאלה אחת, בקפיצות של .25rem (4px על בסיס 16px).
      לפני כן היו בקובץ 34 ערכי מרווח שונים, ובהם שלישיות כמעט־זהות

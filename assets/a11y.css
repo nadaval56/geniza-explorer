@@ -179,7 +179,7 @@ html.a11y-invert.a11y-links a:focus-visible { background: #4a3d00; color: #fff; 
  * Frank Ruhl Libre הוא בדיוק גופן כזה, ובאתר הזה הוא נושא את רוב הטקסט. */
 html.a11y-readable body,
 html.a11y-readable body * {
-  font-family: Arial, 'Segoe UI', system-ui, sans-serif !important;
+  font-family: Arial, 'Segoe UI', system-ui, 'Noto Sans Coptic', sans-serif !important;
   font-variant-ligatures: none !important;
 }
 
