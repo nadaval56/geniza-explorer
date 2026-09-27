@@ -388,6 +388,10 @@ def main():
                     help="the same, 00:00-07:00 local time (default 0.8)")
     ap.add_argument("--week-limit", type=float, default=0.75,
                     help="stop at this share of the weekly quota (default 0.75)")
+    ap.add_argument("--boost", type=float, default=0.0,
+                    help="a higher 5-hour limit, valid only until --boost-until")
+    ap.add_argument("--boost-until", type=int, default=0,
+                    help="epoch seconds; normally the current window's resetsAt")
     ap.add_argument("--tz-offset", type=int, default=3,
                     help="local time = UTC + this, for the night limit (Israel summer: 3)")
     args = ap.parse_args()
@@ -408,6 +412,10 @@ def main():
     start = time.time()
 
     def limit_now():
+        # --boost: סף גבוה לחלון הנוכחי בלבד. הוא פג ב-resetsAt של החלון, ולכן
+        # ריצה שנמשכת אל החלון הבא חוזרת לבד לסף הרגיל.
+        if args.boost and time.time() < args.boost_until:
+            return args.boost
         # 00:00–07:00 שעון ישראל: המשתמש ישן, ומותר לקחת 80% מחלון 5 השעות.
         hour = (time.gmtime().tm_hour + args.tz_offset) % 24
         return args.night_limit if hour < 7 else args.day_limit
