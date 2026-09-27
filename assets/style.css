@@ -1110,6 +1110,18 @@ p.fragment-shelfmark {
 
 .transcription-body p { margin: 0; }
 
+/* איפוס ה-padding הגלובלי מותיר את מספרי השורות של ה-<ol> מחוץ לתיבה, וה-
+   overflow-x שלה חותך אותם: בתעתיק ובתרגום העברי, מימין לשמאל, "10" הופיע
+   כ-"1(" בקצה הימני. padding-inline-start ולא padding-right, כדי שאותו כלל
+   ישרת גם את התרגום האנגלי משמאל לימין. */
+.transcription-body ol { padding-inline-start: var(--sp-7); }
+
+.transcription-body li::marker {
+  color: var(--text-3);
+  font-size: .75rem;
+  font-family: var(--font-ui);
+}
+
 /* כל צד של הקטע (recto/verso) מגיע כ-section עם data-canvas משלו. */
 .transcription-body section + section {
   margin-top: var(--sp-4);
