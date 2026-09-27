@@ -46,6 +46,8 @@ DOCS_DIR = ROOT / "data" / "docs"
 EN_DIR   = ROOT / "data" / "en"
 # תעתיקי PGP, מיובאים ב-import_transcriptions.py ומחויבים לגיט
 TEXT_DIR = ROOT / "data" / "transcriptions"
+# תרגום עברי של התעתיקים, מ-translate_transcriptions.py
+HE_TEXT_DIR = ROOT / "data" / "transcriptions_he"
 OUT_DIR = ROOT / "d"
 TAG_DIR = ROOT / "t"
 
@@ -484,7 +486,7 @@ DOC_PAGE = """<!DOCTYPE html>
         <dl class="meta-list">
 {meta_rows}
         </dl>
-{description_block}{transcription_block}{tags}
+{description_block}{he_text_block}{transcription_block}{tags}
         <div class="actions-block">
           <a href="{princeton}" target="_blank" rel="noopener" class="btn-primary">
             צפייה ב-Princeton Geniza Project ↗
@@ -525,6 +527,69 @@ DOC_PAGE = """<!DOCTYPE html>
 </body>
 </html>
 """
+
+
+HE_LINE = re.compile(r"^(\d+)\.\s+(.*)$")
+
+
+def render_he_text(doc_id):
+    """The Hebrew translation of the transcription, in the HTML itself.
+
+    Unlike the transcription below it, this is not a copy of anything: it is
+    written here, from the original and the editor's English, and nowhere else
+    has it. That is exactly the content a document page should carry in its
+    markup, so it is prerendered rather than fetched on click.
+
+    Lines keep the numbering of the manuscript, so each side is an <ol> whose
+    `start` continues from the one before it, and a reader can hold a line of
+    the translation against the same line of the transcription.
+    """
+    path = HE_TEXT_DIR / f"{doc_id}.json"
+    if not path.exists():
+        return ""
+    try:
+        rec = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return ""
+    parts, items, start = [], [], None
+
+    def flush():
+        nonlocal items, start
+        if items:
+            parts.append(f'          <ol class="he-text-lines" start="{start}">\n'
+                         + "\n".join(items) + "\n          </ol>")
+        items, start = [], None
+
+    for raw in (rec.get("text") or "").splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        m = HE_LINE.match(line)
+        if m:
+            if start is None:
+                start = int(m.group(1))
+            items.append(f"            <li>{esc(m.group(2))}</li>")
+            continue
+        flush()
+        label = line.lstrip("#").strip().strip("[]").strip()
+        if label:
+            parts.append(f'          <p class="he-text-side">{esc(label)}</p>')
+    flush()
+    if not parts:
+        return ""
+    cite = esc(rec.get("source_citation") or "Princeton Geniza Project")
+    return (
+        '\n        <div class="he-text-block">\n'
+        '          <h2 class="section-label">תרגום לעברית</h2>\n'
+        '          <div class="he-text-body">\n'
+        + "\n".join(parts)
+        + '\n          </div>\n'
+        '          <p class="he-text-source">תרגום מכונה, שורה מול שורה, שלא נבדק בידי חוקר. '
+        'נעשה מן המקור, בהסתמך על התעתיק והתרגום האנגלי של '
+        f'<bdi dir="ltr">{cite}</bdi>, שפורסמו ב-'
+        f'<a href="{PGP_URL}" target="_blank" rel="noopener">Princeton Geniza Project</a>'
+        ' ברישיון CC BY-NC 4.0. בכל שאלה של דיוק — המקור הוא הקובע.</p>\n'
+        '        </div>')
 
 
 def render_doc(doc, base, related_index=None):
@@ -598,6 +663,8 @@ def render_doc(doc, base, related_index=None):
             ' ומשתפיו, ומוצג כאן ברישיון CC BY-NC 4.0. שם העורך מופיע מעל הטקסט.</p>\n'
             '        </div>')
 
+    he_text_block = render_he_text(doc_id)
+
     iiif = (doc.get("iiif_urls") or [None])[0]
     rights_label, rights_url = image_rights(doc.get("library") or doc.get("library_raw"))
     rights = (f'<a href="{esc(rights_url)}" target="_blank" rel="noopener license">{esc(rights_label)}</a>'
@@ -644,6 +711,7 @@ def render_doc(doc, base, related_index=None):
         links=render_links(doc),
         meta_rows=render_meta_rows(doc),
         description_block=description_block,
+        he_text_block=he_text_block,
         transcription_block=transcription_block,
         tags=render_tags(doc),
         princeton=esc(doc.get("princeton_url") or PGP_URL),

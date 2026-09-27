@@ -1124,6 +1124,53 @@ p.fragment-shelfmark {
   line-height: 1.7;
 }
 
+/* ── תרגום התעתיק לעברית ───────────────────────────────────────────────────
+   יושב ב-HTML עצמו, מעל התעתיק, ראו render_he_text ב-prerender.py. המספור
+   הוא מספור שורות כתב היד, ולכן הוא נראה: הקורא משווה שורה לשורה מול
+   התעתיק שמתחת. */
+.he-text-block { margin-bottom: var(--sp-6); }
+
+.he-text-body {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-4) var(--sp-5);
+  font-family: var(--font-serif);
+  font-size: .95rem;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.he-text-lines {
+  margin: 0;
+  padding-inline-start: var(--sp-7);
+}
+
+.he-text-lines li::marker {
+  color: var(--text-3);
+  font-size: .75rem;
+  font-family: var(--font-ui);
+}
+
+.he-text-side {
+  font-size: .75rem;
+  color: var(--text-3);
+  margin: 0 0 var(--sp-1);
+}
+
+.he-text-lines + .he-text-side {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px dashed var(--border-2);
+}
+
+.he-text-source {
+  margin-top: var(--sp-3);
+  font-size: .72rem;
+  color: var(--text-3);
+  line-height: 1.7;
+}
+
 .tags-block { margin-bottom: 1.5rem; }
 
 .tags-list {
