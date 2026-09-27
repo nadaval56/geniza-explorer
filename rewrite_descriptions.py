@@ -34,6 +34,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -43,6 +44,7 @@ DOCS_DIR        = Path("data/docs")
 TRANSLATIONS    = Path("data/translations_he.json")
 REWRITES_DONE   = Path(".cache/rewrites_done.json")
 ERRORS_LOG      = Path(".cache/rewrites_errors.log")
+NEUTRAL_CWD     = tempfile.gettempdir()
 
 MODEL           = "claude-opus-4-7"
 DEFAULT_WORKERS = 3
@@ -158,6 +160,10 @@ def call_claude_once(desc_en, model, timeout):
         ],
         input=desc_en,
         capture_output=True,
+        # מחוץ לריפו: מתוך הריפו `--setting-sources project` טוען את CLAUDE.md
+        # כולו לכל קריאה — כ-15,000 טוקנים שאין להם קשר לתיאור, וזה הכפיל את
+        # מחיר הקריאה פי חמישה ($0.16 מול $0.03).
+        cwd=NEUTRAL_CWD,
         text=True,
         timeout=timeout,
     )
