@@ -59,9 +59,13 @@
       /* ה-HTML כאן עבר סינון ב-import_transcriptions.py: רק תגיות מבנה
          ומאפייני dir/lang/class/data-canvas שרדו, בלי script, style או on*. */
       body.innerHTML = t.html;
+      /* 661 מהתרגומים הם לעברית (רובם של משה גיל), לא לאנגלית. הכיוון נגזר
+         משפת הטקסט עצמו; בלי זה התרגום העברי הוצג משמאל לימין. */
       if (t.kind === 'translation') {
-        body.lang = 'en';
-        body.dir = 'ltr';
+        const m = /lang="([^"]+)"/.exec(t.html);
+        const lang = m ? m[1].toLowerCase() : 'en';
+        body.lang = lang;
+        body.dir = lang === 'he' ? 'rtl' : 'ltr';
       }
       block.appendChild(body);
       parts.push(block);

@@ -124,6 +124,11 @@ def source_lang(fragment):
     return m.group(1).lower() if m else ""
 
 
+def translation_lang(t):
+    m = re.search(r'lang="([^"]+)"', t["html"])
+    return m.group(1).lower() if m else ""
+
+
 def pick_pair(texts):
     """One transcription and the English translation of the same edition.
 
@@ -132,7 +137,7 @@ def pick_pair(texts):
     editor is matched first and position only as a fallback.
     """
     trs = [t for t in texts if t["kind"] == "transcription"]
-    tls = [t for t in texts if t["kind"] == "translation"]
+    tls = [t for t in texts if t["kind"] == "translation" and translation_lang(t) != "he"]
     if not trs or not tls:
         return None, None
     for tr in trs:
@@ -152,7 +157,13 @@ def select(ids=None):
             continue
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        tr, tl = pick_pair(data.get("texts", []))
+        texts = data.get("texts", [])
+        # 660 מסמכים כבר נושאים תרגום עברי של חוקר, רובם של משה גיל. PGP מסמנת
+        # אותו כ-translation כמו את האנגלי, והגרסה הראשונה של הסקריפט תרגמה
+        # אותו שוב במכונה, כאילו היה האנגלית. תרגום מומחה עדיף על כל תרגום שלנו.
+        if any(t["kind"] == "translation" and translation_lang(t) == "he" for t in texts):
+            continue
+        tr, tl = pick_pair(texts)
         if not tr:
             continue
         lang = source_lang(tr["html"])
@@ -334,11 +345,22 @@ def translate_part(t, part, whole):
     return final, ("" if fixes in ("", "אין") else fixes), c1 + c2
 
 
+class BudgetStop(Exception):
+    """Raised between the chunks of a long document once the quota is spent."""
+
+
+BUDGET = None   # set by main(): a callable, True once over budget
+
+
 def translate(t):
     parts = chunks(t["src"])
     whole = len(parts) == 1
     texts, fixes, cost = [], [], 0.0
     for part in parts:
+        # A 90-line letter is four chunks and eight calls. Checked only before
+        # a document, a run of long ones overshot the 50% line to 58%.
+        if BUDGET and BUDGET():
+            raise BudgetStop()
         text, fix, c = translate_part(t, part, whole)
         texts.append(text); cost += c
         if fix:
@@ -411,6 +433,9 @@ def main():
                 break
             try:
                 rec, c = translate(t)
+            except BudgetStop:
+                stop.set()
+                break
             except Exception as e:  # noqa: BLE001 — log and keep going
                 with lock:
                     errs += 1
@@ -428,6 +453,8 @@ def main():
                     print(f"  {done}/{len(targets)}  err={errs}  ${cost:.2f}  {rate*60:.0f}/min  "
                           f"5h={QUOTA['five_hour']:.0%} week={QUOTA['seven_day']:.0%}", flush=True)
 
+    global BUDGET
+    BUDGET = over_budget
     threads = [threading.Thread(target=worker) for _ in range(args.workers)]
     for th in threads:
         th.start()

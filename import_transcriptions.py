@@ -43,7 +43,19 @@ ALLOWED_TAGS = {
 }
 ALLOWED_ATTRS = {"dir", "lang", "data-canvas", "class"}
 
-KIND_HE = {"transcription": "תעתיק", "translation": "תרגום לאנגלית"}
+KIND_HE = {"transcription": "תעתיק", "translation": "תרגום"}
+# 661 מהתרגומים ב-PGP אינם לאנגלית אלא לעברית — רובם של משה גיל, מתוך "בממלכת
+# ישמעאל". כשהתווית הייתה "תרגום לאנגלית" לכולם, התרגום העברי הוצג בכותרת
+# שגויה ומשמאל לימין. התווית נגזרת עכשיו משפת הטקסט עצמו.
+TRANSLATION_LANG_HE = {"he": "תרגום לעברית", "en": "תרגום לאנגלית",
+                       "fr": "תרגום לצרפתית", "de": "תרגום לגרמנית"}
+
+
+def label_for(kind, body):
+    if kind != "translation":
+        return KIND_HE[kind]
+    m = re.search(r'lang="([^"]+)"', body)
+    return TRANSLATION_LANG_HE.get(m.group(1).lower() if m else "", KIND_HE[kind])
 
 
 class Sanitiser(HTMLParser):
@@ -158,7 +170,7 @@ def main():
             continue
         by_doc.setdefault(doc_id, []).append({
             "kind": m.group("kind"),
-            "label": KIND_HE[m.group("kind")],
+            "label": label_for(m.group("kind"), body),
             "editor": m.group("editor"),
             "citation": citation,
             "html": body,
