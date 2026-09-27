@@ -1459,13 +1459,23 @@ def resolve_lastmod(docs, tag_slugs, buckets):
     for doc in docs:
         # Only what a reader sees. prev/next/pos shift whenever a neighbouring
         # document is added, and that is not a change to this page's content.
-        dates[f"d/{doc['id']}.html"] = stamp(f"d/{doc['id']}", {
+        payload = {
             "shelfmark": doc.get("shelfmark"), "type": doc.get("type_he"),
             "lang": doc.get("lang_he"), "date": doc.get("date"),
             "origin": doc.get("origin"), "library": doc.get("library"),
             "he": doc.get("description_he"), "tags": sorted(doc.get("tags_he") or []),
             "iiif": (doc.get("iiif_urls") or [None])[0],
-        })
+        }
+        # The Hebrew translation of the transcription is in the HTML too
+        # (render_he_text). The key is added only where a translation exists,
+        # so the other 35,000 fingerprints — and their dates — stay as they were.
+        he_text = HE_TEXT_DIR / f"{doc['id']}.json"
+        if he_text.exists():
+            try:
+                payload["he_text"] = json.loads(he_text.read_text(encoding="utf-8")).get("text")
+            except (OSError, json.JSONDecodeError):
+                pass
+        dates[f"d/{doc['id']}.html"] = stamp(f"d/{doc['id']}", payload)
 
     for tag in buckets:
         page = tag_pages.TAG_PAGES[tag]

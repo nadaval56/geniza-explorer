@@ -170,7 +170,9 @@ def select(ids=None):
         if lang in SKIP_LANGS:
             continue
         src, en = numbered(dedupe(text_lines(tr["html"]))), numbered(text_lines(tl["html"]))
-        if not src.strip():
+        # PGPID 18637: the transcription is headings only, no numbered line.
+        # Nothing to translate, and "translating" it wrote an empty file.
+        if not line_count(src):
             continue
         targets.append({"id": doc_id, "src": src, "en": en, "lang": lang,
                         "editor": tr.get("editor", ""), "citation": tr.get("citation", "")})
