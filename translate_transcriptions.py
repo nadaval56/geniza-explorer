@@ -39,7 +39,6 @@ import sys
 import tempfile
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 SRC_DIR  = Path("data/transcriptions")
@@ -167,18 +166,40 @@ def select(ids=None):
     return targets
 
 
+QUOTA = {"five_hour": 0.0, "seven_day": 0.0, "resets_at": 0}
+QUOTA_LOCK = threading.Lock()
+
+
 def call(system, stdin):
+    """One Opus call. stream-json rather than json because only the stream
+    carries the rate_limit_event — the account's live 5-hour and weekly
+    utilisation — which is what the budget in main() runs on."""
     proc = subprocess.run(
         ["claude", "--print", "--model", MODEL, "--system-prompt", system,
          "--tools", "", "--disable-slash-commands", "--no-session-persistence",
-         "--setting-sources", "project,local", "--output-format", "json"],
+         "--setting-sources", "project,local",
+         "--output-format", "stream-json", "--verbose"],
         input=stdin, capture_output=True, text=True, timeout=TIMEOUT, cwd=NEUTRAL_CWD)
-    if proc.returncode != 0:
+    result = None
+    for line in proc.stdout.splitlines():
+        try:
+            ev = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if ev.get("type") == "rate_limit_event":
+            win = (ev.get("rate_limit_info") or {}).get("unifiedWindows") or {}
+            with QUOTA_LOCK:
+                for k in ("five_hour", "seven_day"):
+                    if k in win:
+                        QUOTA[k] = win[k].get("utilization", QUOTA[k])
+                QUOTA["resets_at"] = (win.get("five_hour") or {}).get("resetsAt", QUOTA["resets_at"])
+        elif ev.get("type") == "result":
+            result = ev
+    if proc.returncode != 0 and result is None:
         raise RuntimeError(f"claude exit {proc.returncode}: {proc.stderr.strip()[:300]}")
-    j = json.loads(proc.stdout)
-    if j.get("is_error"):
-        raise RuntimeError(f"claude error: {str(j.get('result'))[:300]}")
-    return j["result"].strip(), j.get("total_cost_usd") or 0.0
+    if result is None or result.get("is_error"):
+        raise RuntimeError(f"claude error: {str((result or {}).get('result'))[:300]}")
+    return result["result"].strip(), result.get("total_cost_usd") or 0.0
 
 
 def call_retry(system, stdin, tries=3):
@@ -238,7 +259,7 @@ def align(text, want):
     lost more than a tenth of its lines, or invented numbers, is refused.
     """
     expected = set(want)
-    seen, out, last = {}, [], None
+    seen, out, extra = {}, [], []
     for raw in text.splitlines():
         line = raw.strip()
         if not line:
@@ -249,6 +270,13 @@ def align(text, want):
             continue
         n = int(m.group(1))
         if n not in expected:
+            # A source that ends in an empty "Margin" heading, while the
+            # editor's English does carry that line (PGPID 1384): the model
+            # adds it at the end, correctly. Kept; anything else is refused.
+            if n == max(want) + len(extra) + 1:
+                extra.append(n)
+                out.append(("x", n, m.group(2)))
+                continue
             return None
         if n in seen:
             out[seen[n]] = ("n", n, out[seen[n]][2] + " " + m.group(2))
@@ -263,6 +291,9 @@ def align(text, want):
         if item[0] == "h":
             result.append(item[1])
             continue
+        if item[0] == "x":
+            result.append(f"{item[1]}. {item[2]}")
+            continue
         while idx < len(want) and want[idx] != item[1]:
             if want[idx] in missing:
                 result.append(f"{want[idx]}. {MERGED}")
@@ -276,11 +307,16 @@ def align(text, want):
 
 
 def translate_part(t, part, whole):
-    pair = f"=== תעתיק המקור ===\n{t['src']}\n\n=== תרגום אנגלי ===\n{t['en']}"
-    if not whole:
+    if whole:
+        pair = f"=== תעתיק המקור ===\n{t['src']}\n\n=== תרגום אנגלי ===\n{t['en']}"
+    else:
+        # רק הקטע, לא המקור כולו: שליחת המקור המלא עם כל קטע הכפילה את מחיר
+        # המסמכים הארוכים ($0.40 למסמך בממוצע ב-200 הראשונים). האנגלית נשלחת
+        # כולה, כי המספור שלה אינו תואם את המקור ואי אפשר לחתוך אותה באותו מקום.
         nums = [int(LINE_RE.match(l).group(1)) for l in part.splitlines() if LINE_RE.match(l)]
-        pair += (f"\n\n=== הקטע לתרגום ===\nתרגם אך ורק את שורות {nums[0]}–{nums[-1]} "
-                 f"(ואת כותרות הצד שבתוכן), במספור המקורי. שאר המקור לעיון בלבד.\n{part}")
+        pair = (f"=== קטע מתוך תעתיק המקור (שורות {nums[0]}–{nums[-1]}) ===\n{part}\n\n"
+                f"=== תרגום אנגלי של המסמך כולו (השתמש בחלק המקביל לקטע) ===\n{t['en']}\n\n"
+                f"תרגם אך ורק את שורות {nums[0]}–{nums[-1]}, במספור המקורי.")
     draft, c1 = call_retry(TRANSLATE_PROMPT, pair)
     review, c2 = call_retry(REVIEW_PROMPT, f"{pair}\n\n=== טיוטת תרגום עברי ===\n{draft}")
     fixes, sep, final = review.partition("\n===")
@@ -324,6 +360,14 @@ def main():
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--ids", default="", help="comma-separated PGPIDs")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--day-limit", type=float, default=0.5,
+                    help="stop at this share of the 5-hour window (default 0.5)")
+    ap.add_argument("--night-limit", type=float, default=0.8,
+                    help="the same, 00:00-07:00 local time (default 0.8)")
+    ap.add_argument("--week-limit", type=float, default=0.75,
+                    help="stop at this share of the weekly quota (default 0.75)")
+    ap.add_argument("--tz-offset", type=int, default=3,
+                    help="local time = UTC + this, for the night limit (Israel summer: 3)")
     args = ap.parse_args()
 
     ids = set(args.ids.split(",")) if args.ids else None
@@ -341,22 +385,37 @@ def main():
     cost = 0.0
     start = time.time()
 
-    def work(t):
-        try:
-            return t, translate(t)
-        except Exception as e:  # noqa: BLE001
-            raise RuntimeError(f"{t['id']}\t{e}") from e
+    def limit_now():
+        # 00:00–07:00 שעון ישראל: המשתמש ישן, ומותר לקחת 80% מחלון 5 השעות.
+        hour = (time.gmtime().tm_hour + args.tz_offset) % 24
+        return args.night_limit if hour < 7 else args.day_limit
 
-    with ThreadPoolExecutor(args.workers) as ex:
-        futs = [ex.submit(work, t) for t in targets]
-        for fut in as_completed(futs):
+    stop = threading.Event()
+    queue = iter(targets)
+    qlock = threading.Lock()
+
+    def over_budget():
+        with QUOTA_LOCK:
+            five, week = QUOTA["five_hour"], QUOTA["seven_day"]
+        return five >= limit_now() or week >= args.week_limit
+
+    def worker():
+        nonlocal done, errs, cost
+        while not stop.is_set():
+            if over_budget():
+                stop.set()
+                break
+            with qlock:
+                t = next(queue, None)
+            if t is None:
+                break
             try:
-                t, (rec, c) = fut.result()
+                rec, c = translate(t)
             except Exception as e:  # noqa: BLE001 — log and keep going
                 with lock:
                     errs += 1
                     with open(ERRORS, "a", encoding="utf-8") as f:
-                        f.write(f"{e}\n")
+                        f.write(f"{t['id']}\t{e}\n")
                 continue
             with open(OUT_DIR / f"{rec['id']}.json", "w", encoding="utf-8") as f:
                 json.dump(rec, f, ensure_ascii=False, indent=1)
@@ -366,7 +425,18 @@ def main():
                 cost += c
                 if done % 10 == 0:
                     rate = done / (time.time() - start)
-                    print(f"  {done}/{len(targets)}  err={errs}  ${cost:.2f}  {rate*60:.0f}/min", flush=True)
+                    print(f"  {done}/{len(targets)}  err={errs}  ${cost:.2f}  {rate*60:.0f}/min  "
+                          f"5h={QUOTA['five_hour']:.0%} week={QUOTA['seven_day']:.0%}", flush=True)
+
+    threads = [threading.Thread(target=worker) for _ in range(args.workers)]
+    for th in threads:
+        th.start()
+    for th in threads:
+        th.join()
+    if stop.is_set():
+        print(f"BUDGET STOP: 5h={QUOTA['five_hour']:.0%} (limit {limit_now():.0%}) "
+              f"week={QUOTA['seven_day']:.0%} (limit {args.week_limit:.0%}) "
+              f"resets_at={QUOTA['resets_at']}")
     print(f"Done: {done}  Errors: {errs}  Cost: ${cost:.2f}")
 
 
