@@ -164,3 +164,32 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # IndexNow: Bing, Yandex, Naver and Seznam recrawl on a push rather than
+      # on their own schedule. After the deploy, so only what is live is
+      # announced; scripts/indexnow.py reads the published sitemaps and sends
+      # each (URL, lastmod) pair once, remembering what it sent in a cache that
+      # carries over between runs. Allowed to fail: a search engine being down
+      # is not a failed deploy.
+      - name: Checkout the IndexNow script
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            /scripts/indexnow.py
+            /CNAME
+            /*.txt
+          sparse-checkout-cone-mode: false
+
+      - name: Restore IndexNow state
+        uses: actions/cache@v4
+        with:
+          path: .cache/indexnow-state.json
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+
+      - name: Announce changed pages (IndexNow)
+        continue-on-error: true
+        run: |
+          sleep 60   # let the CDN edge pick up the new sitemaps
+          python3 scripts/indexnow.py

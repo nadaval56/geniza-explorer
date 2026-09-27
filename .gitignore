@@ -11,6 +11,7 @@ __pycache__/
 /sitemap-hubs.xml
 /sitemap-docs.xml
 /robots.txt
+/llms.txt
 
 # CLAUDE.md מורה להריץ `npm i -D playwright` לפני כל push שנוגע בתבניות או
 # ב-CSS, וההתקנה הזאת מייצרת את שלושת אלה בשורש. אין להם מה לחפש בהיסטוריה.

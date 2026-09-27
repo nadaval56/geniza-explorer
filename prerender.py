@@ -1615,6 +1615,54 @@ def write_robots(base):
     (ROOT / "robots.txt").write_text(ROBOTS.format(base=base), encoding="utf-8")
 
 
+LLMS_HEAD = """# הגניזה הקהירית (Geniza Explorer)
+
+> כ-{docs:,} מסמכים מגניזת קהיר — מכתבים, שטרות, חשבונות וספרות מן המאה העשירית
+> ועד המאה התשע־עשרה — בתיאור עברי, עם תצלום כתב היד, תעתיק, ולכ-{he_texts:,} מהם
+> תרגום עברי של התעתיק. מבוסס על Princeton Geniza Project, ברישיון CC BY-NC 4.0.
+
+כל מסמך יושב בכתובת קבועה `{base}d/<PGPID>.html`, כאשר PGPID הוא מזהה המסמך
+ב-Princeton Geniza Project (`https://geniza.princeton.edu/documents/<PGPID>/`).
+התיאורים העבריים נכתבו לאתר הזה; התעתיקים והתרגומים האנגליים הם של חוקרי PGP,
+ושם העורך מופיע ליד כל אחד מהם. תרגום עברי של תעתיק מסומן בעמוד כתרגום מכונה.
+
+שימוש חוזר, כולל בידי מערכות בינה מלאכותית, מותר לשימוש לא־מסחרי בלבד ובציון
+Princeton Geniza Project ואת האתר הזה כמקור.
+
+## עמודים מרכזיים
+
+- [דף הבית]({base}): חיפוש בכל האוסף, מפה, ענן תגיות וסטטיסטיקה
+- [כל המסמכים]({base}d/): מפתח לפי סדר האוסף
+- [מפתח הנושאים]({base}t/): כל דפי הנושא
+- [אודות]({base}about.html): מקורות, שיטה ורישיונות
+"""
+
+
+def write_llms(base, buckets, docs):
+    """llms.txt — a plain map of the site for language-model crawlers.
+
+    It says what robots.txt already says about reuse, in prose, and lists the
+    topic hubs with their headings: 150-odd pages of original Hebrew that are
+    the best entry points into the collection. Only hubs that were actually
+    built (a tag with documents) are listed.
+    """
+    he_texts = sum(1 for d in docs if (HE_TEXT_DIR / f"{d['id']}.json").exists())
+    out = [LLMS_HEAD.format(base=base, docs=len(docs), he_texts=he_texts)]
+    by_group = {}
+    for tag in buckets:
+        page = tag_pages.TAG_PAGES.get(tag)
+        if page:
+            by_group.setdefault(page["group"], []).append(page)
+    for group, label in tag_pages.GROUPS.items():
+        pages = by_group.get(group)
+        if not pages:
+            continue
+        out.append(f"\n## {label}\n")
+        for page in sorted(pages, key=lambda p: p["h1"]):
+            out.append(f"- [{page['h1']}]({base}t/{page['slug']}/)")
+    (ROOT / "llms.txt").write_text("\n".join(out) + "\n", encoding="utf-8")
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 def load_docs(limit=None):
     if not DOCS_DIR.exists():
@@ -1685,6 +1733,8 @@ def run(base=None, limit=None, docs=None, verbose=True):
 
     write_robots(base)
     print("  ✓  robots.txt")
+    write_llms(base, buckets, docs)
+    print("  ✓  llms.txt")
 
     # tag → hub slug, for the chips on the home page. Written here and not in
     # build.py because build.py is continue-on-error in CI: if the Princeton CSV
