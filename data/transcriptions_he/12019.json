@@ -1,0 +1,9 @@
+{
+ "id": "12019",
+ "text": "1. [...] עשיתי כלפיהם על [דניאל בן\n2. עזריה הדאודי ב[...]תו כלפיהם [\n3. ובשאר עסקי המדינה הנבואית, והושלם החסד עלי[הם\n4. במנשור נכבד המכיר בהתמדת חסד קיומו במושבי החסות וה[...]\n5. הטהור [...]הם בחסדה של הוד ה[...]",
+ "fixes": "שורה 3: והושלמה החסד → והושלם החסד (התאמת מין)",
+ "source_editor": "rustow-elbaum-umrethwala",
+ "source_citation": "Marina Rustow, Alan Elbaum and Yusuf Umrethwala, PGP Transcriptions‎ (in Arabic) (n.p., 2023).",
+ "source_lang": "ar",
+ "model": "claude-opus-4-7"
+}
