@@ -39,6 +39,7 @@ import sys
 from datetime import date
 
 import a11y_snippets
+import sister_sites
 import tag_pages
 
 ROOT = pathlib.Path(__file__).parent
@@ -517,6 +518,7 @@ DOC_PAGE = """<!DOCTYPE html>
       <a href="{root}privacy/">מדיניות פרטיות</a> ·
       <a href="{root}accessibility/">הצהרת נגישות</a>
     </p>
+{sister}
   </footer>
 
   <script src="{root}assets/doc-image.js" defer></script>
@@ -774,6 +776,7 @@ def render_doc(doc, base, related_index=None):
     return DOC_PAGE.format(
         a11y_head=a11y_snippets.head("../"),
         a11y_foot=a11y_snippets.foot("../"),
+        sister=sister_sites.nav("../"),
         site=esc(SITE_NAME),
         tagline=esc(SITE_TAGLINE),
         title=esc(title),
@@ -870,6 +873,7 @@ INDEX_PAGE = """<!DOCTYPE html>
       <a href="../privacy/">מדיניות פרטיות</a> ·
       <a href="../accessibility/">הצהרת נגישות</a>
     </p>
+{sister}
   </footer>
 
 {a11y_foot}
@@ -918,6 +922,7 @@ def render_index_pages(docs, base, out_dir):
             INDEX_PAGE.format(
                 a11y_head=a11y_snippets.head("../"),
                 a11y_foot=a11y_snippets.foot("../"),
+                sister=sister_sites.nav("../"),
                 site=esc(SITE_NAME), page=n, pages=pages,
                 total=f"{len(docs):,}", url=esc(url), base=esc(base),
                 prevnext=prevnext, start=(n - 1) * PER_INDEX_PAGE + 1,
@@ -1182,6 +1187,7 @@ TAG_PAGE = """<!DOCTYPE html>
       <a href="../../privacy/">מדיניות פרטיות</a> ·
       <a href="../../accessibility/">הצהרת נגישות</a>
     </p>
+{sister}
   </footer>
 
   <script src="../../assets/card-thumbs.js" defer></script>
@@ -1246,6 +1252,7 @@ TAG_DIRECTORY = """<!DOCTYPE html>
       <a href="../privacy/">מדיניות פרטיות</a> ·
       <a href="../accessibility/">הצהרת נגישות</a>
     </p>
+{sister}
   </footer>
 
 {a11y_foot}
@@ -1378,6 +1385,7 @@ def render_tag_directory(buckets, base, out_dir):
     (out_dir / "index.html").write_text(TAG_DIRECTORY.format(
         a11y_head=a11y_snippets.head("../"),
         a11y_foot=a11y_snippets.foot("../"),
+        sister=sister_sites.nav("../"),
         site=esc(SITE_NAME),
         url=esc(base + "t/"),
         base=esc(base),
@@ -1454,6 +1462,7 @@ def render_tag_pages(docs, base, out_dir):
             (tag_dir / name).write_text(TAG_PAGE.format(
                 a11y_head=a11y_snippets.head("../../"),
                 a11y_foot=a11y_snippets.foot("../../"),
+                sister=sister_sites.nav("../../"),
                 site=esc(SITE_NAME),
                 title=esc(page["h1"] if first else f'{page["h1"]} — עמוד {n} מתוך {pages}'),
                 description=esc(truncate(page["intro"], 155) if first

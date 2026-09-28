@@ -26,6 +26,7 @@ from pathlib import Path
 from html import escape
 
 import a11y_snippets
+import sister_sites
 import honorifics
 import geo_terms
 import tag_pages
@@ -932,6 +933,7 @@ INDEX_HTML = """\
       <a href="accessibility/">הצהרת נגישות</a>
     </p>
     <p class="footer-build">עודכן: {build_date}</p>
+{sister}
   </footer>
 
   <script>const TOTAL_DOCS = {total_docs};
@@ -1018,6 +1020,7 @@ def write_html_only(args):
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   a11y_foot=a11y_snippets.foot("", build_ts),
+                                  sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
     print("  ✓  index.html")
     with open("fragment.html", "w", encoding="utf-8") as f:
@@ -1157,6 +1160,7 @@ def main():
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   a11y_foot=a11y_snippets.foot("", build_ts),
+                                  sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
     print("  ✓  index.html")
 
