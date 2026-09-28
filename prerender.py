@@ -48,6 +48,8 @@ EN_DIR   = ROOT / "data" / "en"
 TEXT_DIR = ROOT / "data" / "transcriptions"
 # תרגום עברי של התעתיקים, מ-translate_transcriptions.py
 HE_TEXT_DIR = ROOT / "data" / "transcriptions_he"
+# PGPID → שירות התמונה (IIIF Image API) של הדף הראשון, מ-scripts/og_images.py
+OG_IMAGES_FILE = ROOT / "data" / "og_images.json"
 OUT_DIR = ROOT / "d"
 TAG_DIR = ROOT / "t"
 
@@ -398,6 +400,9 @@ def render_json_ld(doc, url, base):
         node["holdingArchive"] = {
             "@type": "ArchiveOrganization", "name": clean(doc["library"])
         }
+    service = og_image_service(doc["id"])
+    if service:
+        node["image"] = f"{service}/full/!1200,630/0/default.jpg"
     if clean(doc.get("lang_he")):
         node["material"] = clean(doc["lang_he"])
     if doc.get("princeton_url"):
@@ -433,14 +438,9 @@ DOC_PAGE = """<!DOCTYPE html>
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="{base}assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="{site} — {tagline}">
-  <meta name="twitter:card" content="summary_large_image">
+{og_image}  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
-  <meta name="twitter:image" content="{base}assets/og-image.png">
   <meta name="theme-color" content="#b5621e">
   <link rel="icon" href="{root}favicon.ico" sizes="32x32">
   <link rel="icon" href="{root}favicon.svg" type="image/svg+xml">
@@ -527,6 +527,50 @@ DOC_PAGE = """<!DOCTYPE html>
 </body>
 </html>
 """
+
+
+_OG_IMAGES = None
+
+
+def og_image_service(doc_id):
+    global _OG_IMAGES
+    if _OG_IMAGES is None:
+        try:
+            _OG_IMAGES = json.loads(OG_IMAGES_FILE.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            _OG_IMAGES = {}
+    return _OG_IMAGES.get(str(doc_id))
+
+
+def og_image_tags(doc, base, shelfmark):
+    """The share preview: the manuscript itself where we know its image.
+
+    data/og_images.json maps a document to the IIIF Image API service of its
+    first page, resolved from the library's manifest by scripts/og_images.py
+    (the manifest alone is not an image, and resolving 31,000 of them on every
+    build would put the deploy at the mercy of every library's server). From the
+    service we ask for a version that fits 1200x630, the size WhatsApp, Facebook
+    and Telegram draw a large preview at. The image is fetched by their servers
+    when a link is shared, not by the site's readers.
+
+    No width/height here: "fits in" means the real size depends on the page's
+    proportions, and a wrong declared size is worse than none. A document with
+    no known image keeps the site's own card.
+    """
+    service = og_image_service(doc["id"])
+    if service:
+        img = esc(f"{service}/full/!1200,630/0/default.jpg")
+        alt = esc(f"תצלום כתב היד {shelfmark}")
+        return (f'  <meta property="og:image" content="{img}">\n'
+                f'  <meta property="og:image:alt" content="{alt}">\n'
+                f'  <meta name="twitter:image" content="{img}">\n')
+    default = esc(f"{base}assets/og-image.png")
+    alt = esc(f"{SITE_NAME} — {SITE_TAGLINE}")
+    return (f'  <meta property="og:image" content="{default}">\n'
+            '  <meta property="og:image:width" content="1200">\n'
+            '  <meta property="og:image:height" content="630">\n'
+            f'  <meta property="og:image:alt" content="{alt}">\n'
+            f'  <meta name="twitter:image" content="{default}">\n')
 
 
 _HEBREW_TEXT = None
@@ -748,6 +792,7 @@ def render_doc(doc, base, related_index=None):
             f'<h1 class="fragment-shelfmark">{esc(shelfmark)}</h1>'
         ),
         shelfmark=esc(shelfmark),
+        og_image=og_image_tags(doc, base, shelfmark),
         library=esc(clean(doc.get("library"))),
         image_note=("התצלום זמין בספרייה הדיגיטלית" if iiif else "אין תצלום זמין"),
         ph_hidden="",

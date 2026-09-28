@@ -1,0 +1,63 @@
+name: Resolve share-preview images
+
+# scripts/og_images.py reads each document's IIIF manifest once and records the
+# image service of its first page in data/og_images.json, so the share preview
+# of d/<id>.html is the manuscript itself. Kept out of the deploy on purpose:
+# 31,000 requests to a dozen library servers on every push would tie the site's
+# publication to the slowest of them. Runs on demand and monthly, a day after
+# the monthly data refresh, and only fetches documents it has not seen before.
+
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: 'Re-resolve every document, not only new ones'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '0 4 2 * *'
+
+permissions:
+  contents: write     # commit data/og_images.json
+  actions: write      # start the deploy afterwards
+
+concurrency:
+  group: og-images
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Resolve manifests
+        run: |
+          python3 scripts/og_images.py --workers 16 ${{ inputs.refresh && '--refresh' || '' }}
+
+      # A push made with GITHUB_TOKEN does not start other workflows, so the
+      # deploy is started explicitly — workflow_dispatch is the one event that
+      # token is allowed to trigger.
+      - name: Commit and redeploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/og_images.json && ! git ls-files --others --exclude-standard | grep -q og_images; then
+            echo "No change."; exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/og_images.json
+          git commit -m "תמונות שיתוף: רענון data/og_images.json"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          gh workflow run deploy.yml --ref main
