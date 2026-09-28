@@ -40,9 +40,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      # continue-on-error and a budget below the job timeout: whatever was
+      # resolved is committed even if this step stops early.
       - name: Resolve manifests
+        continue-on-error: true
         run: |
-          python3 scripts/og_images.py --workers 16 ${{ inputs.refresh && '--refresh' || '' }}
+          python3 scripts/og_images.py --workers 32 --max-minutes 60 ${{ inputs.refresh && '--refresh' || '' }}
 
       # A push made with GITHUB_TOKEN does not start other workflows, so the
       # deploy is started explicitly — workflow_dispatch is the one event that

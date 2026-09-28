@@ -104,6 +104,8 @@ def main():
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--refresh", action="store_true", help="re-resolve documents already known")
+    ap.add_argument("--max-minutes", type=float, default=0,
+                    help="stop taking new manifests after this long; what was resolved is kept")
     args = ap.parse_args()
 
     known = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
@@ -129,11 +131,26 @@ def main():
         OUT.write_text(json.dumps(data, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
                        encoding="utf-8")
 
+    # A time budget, so a slow library cannot run the job into the workflow's
+    # timeout — a killed job never reaches the commit step and loses everything.
+    # Work not started when the budget runs out is skipped, and the next run,
+    # which only fetches what the file lacks, picks it up.
+    deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
+
+    def job(url):
+        if deadline and time.time() > deadline:
+            return None, True
+        return resolve(url), False
+
+    skipped = 0
     with ThreadPoolExecutor(args.workers) as ex:
-        futs = {ex.submit(resolve, url): doc_id for doc_id, url in todo}
+        futs = {ex.submit(job, url): doc_id for doc_id, url in todo}
         for fut in as_completed(futs):
             doc_id = futs[fut]
-            sid = fut.result()
+            sid, late = fut.result()
+            if late:
+                skipped += 1
+                continue
             with lock:
                 done += 1
                 if sid:
@@ -145,7 +162,9 @@ def main():
                     save()
                     print(f"  {done:,}/{len(todo):,}  resolved {found:,}", flush=True)
     save()
-    print(f"resolved {found:,} of {len(todo):,}; {len({k for k in known if k in live}):,} in the file")
+    print(f"resolved {found:,} of {len(todo) - skipped:,} tried"
+          + (f", {skipped:,} left for the next run (time budget)" if skipped else "")
+          + f"; {len({k for k in known if k in live}):,} in the file")
     return 0
 
 
