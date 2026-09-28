@@ -1304,6 +1304,60 @@ p.fragment-shelfmark {
   color: var(--text-3);
 }
 
+/* ── עוד אתרים שלי ─────────────────────────────────────────────────────────────
+   פס דק בתחתית כל footer, מ-sister_sites.py. אזור גלילה רגיל (אפשר להחליק
+   באצבע), ש-sister.js מזיז לאט כשלא נוגעים בו. ברשימה שני עותקים כדי
+   שהתנועה תהיה רציפה; במצב "בלי תנועה" ההעתק מוסתר והפס נשאר לגלילה ביד.
+   קישורים בלבד: שום דבר לא נטען מהאתרים האלה. */
+.sister {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  max-width: 46rem;
+  margin: var(--sp-4) auto 0;
+  min-width: 0;
+  line-height: 1.6;
+}
+.sister-lbl { flex: none; font-size: .72rem; color: var(--text-3); white-space: nowrap; }
+.sister-view {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 1.25rem, #000 calc(100% - 1.25rem), transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0, #000 1.25rem, #000 calc(100% - 1.25rem), transparent 100%);
+}
+.sister-view::-webkit-scrollbar { display: none; }
+.sister-track { display: flex; width: max-content; }
+.sister-set { display: flex; gap: var(--sp-2); padding-inline-end: var(--sp-2); }
+.site-footer .sister a,
+.site-footer .sister .sister-item {
+  flex: none;
+  white-space: nowrap;
+  font-size: .72rem;
+  color: var(--text-3);
+  text-decoration: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: var(--sp-0) var(--sp-3);
+}
+.site-footer .sister a:hover { color: var(--link-hover); border-color: var(--border-2); }
+/* פריט שרק חלק ממנו קישור (מייקינג · יצירה טכנולוגית): השבב הוא ה-span,
+   והקישור בתוכו הוא מילה עם קו תחתון */
+.site-footer .sister .sister-item a {
+  border: 0; padding: 0; border-radius: 0; background: none;
+  font-size: inherit; color: inherit;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.site-footer .sister .sister-item a:hover { color: var(--link-hover); }
+@media (prefers-reduced-motion: reduce) { .sister-clone { display: none; } }
+html.a11y-still .sister-clone { display: none; }
+@media print { .sister { display: none; } }
+
 /* ── Scrollbar ───────────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }

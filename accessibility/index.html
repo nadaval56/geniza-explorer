@@ -166,7 +166,11 @@
       <ul>
         <li>האתר מכבד את הגדרת "צמצום תנועה" של מערכת ההפעלה
             (<span class="mono">prefers-reduced-motion</span>).</li>
-        <li>אין תוכן שמהבהב, נע מעצמו או מתנגן אוטומטית.</li>
+        <li>אין תוכן שמהבהב או מתנגן אוטומטית. הדבר היחיד שנע מעצמו הוא פס
+            הקישורים "עוד אתרים שלי" בתחתית הדף: הוא זז לאט, נעצר כל עוד
+            העכבר, האצבע או מיקוד המקלדת נמצאים עליו, ואפשר לגלול אותו ביד.
+            ב"צמצום תנועה" של המערכת או ב"עצירת אנימציות" בתפריט הנגישות הוא
+            אינו זז כלל (קריטריון 2.2.2).</li>
         <li>אין הגבלת זמן על שום פעולה.</li>
       </ul>
     </section>
@@ -289,6 +293,30 @@
   <footer class="site-footer">
     <p><a href="../">הגניזה הקהירית</a> — חלון אל החיים היהודיים בימי הביניים</p>
     <p><a href="../privacy/">מדיניות פרטיות</a> · <a href="../accessibility/">הצהרת נגישות</a> · <a href="../about.html">אודות</a></p>
+    <nav class="sister" aria-label="האתרים הנוספים שלי">
+      <span class="sister-lbl">עוד אתרים שלי</span>
+      <div class="sister-view">
+        <div class="sister-track">
+      <div class="sister-set">
+        <span class="sister-item"><span aria-hidden="true">🛠️</span> <a href="https://making-il.co.il/" rel="noopener">מייקינג</a> · יצירה טכנולוגית</span>
+        <a href="https://banknote.co.il/" rel="noopener"><span aria-hidden="true">💶</span> Banknote · שטרות ומטבעות</a>
+        <a href="https://dronexam.co.il/" rel="noopener"><span aria-hidden="true">🛩️</span> לעוף לשמיים · מבחן רת&quot;א לרחפנים</a>
+        <a href="https://holisticcenter.co.il/" rel="noopener"><span aria-hidden="true">🌱</span> מעט צרי · רפואה משלימה</a>
+        <a href="https://pursue.co.il/" rel="noopener"><span aria-hidden="true">🛸</span> PURSUE · ארכיון עב&quot;מים</a>
+        <a href="https://heb-cal.co.il/" rel="noopener"><span aria-hidden="true">📅</span> לוח עברי</a>
+      </div>
+      <div class="sister-set sister-clone" aria-hidden="true">
+        <span class="sister-item"><span aria-hidden="true">🛠️</span> <a href="https://making-il.co.il/" rel="noopener" tabindex="-1">מייקינג</a> · יצירה טכנולוגית</span>
+        <a href="https://banknote.co.il/" rel="noopener" tabindex="-1"><span aria-hidden="true">💶</span> Banknote · שטרות ומטבעות</a>
+        <a href="https://dronexam.co.il/" rel="noopener" tabindex="-1"><span aria-hidden="true">🛩️</span> לעוף לשמיים · מבחן רת&quot;א לרחפנים</a>
+        <a href="https://holisticcenter.co.il/" rel="noopener" tabindex="-1"><span aria-hidden="true">🌱</span> מעט צרי · רפואה משלימה</a>
+        <a href="https://pursue.co.il/" rel="noopener" tabindex="-1"><span aria-hidden="true">🛸</span> PURSUE · ארכיון עב&quot;מים</a>
+        <a href="https://heb-cal.co.il/" rel="noopener" tabindex="-1"><span aria-hidden="true">📅</span> לוח עברי</a>
+      </div>
+        </div>
+      </div>
+    </nav>
+    <script src="../assets/sister.js" defer></script>
   </footer>
 
   <script>
