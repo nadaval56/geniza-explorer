@@ -31,6 +31,8 @@ import re
 import sys
 import threading
 import time
+import urllib.error
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -41,6 +43,15 @@ UA = "geniza-explorer-og-images (+https://geniza.co.il/)"
 # An image URL given instead of a manifest (the National Library of Israel does
 # this for one document): the service is everything before /full/…
 IMAGE_URL = re.compile(r"^(https?://.+?)/full/[^/]+/[^/]+/default\.(?:jpg|png)$")
+# Cambridge (two thirds of the collection) names its page images after the
+# manuscript: MS-TS-00013-J-00002-00014 → …/MS-TS-00013-J-00002-00014-000-00001.jp2
+# for the first page. Its manifest server throttled the first full run from
+# GitHub's runners to one answer in three, at 90 s per failure, and the job ran
+# out of time at 11,000 of 31,000. The pattern needs no manifest at all — but it
+# is only trusted after a sample of the derived services answers (verify_cudl).
+CUDL = re.compile(r"^https://cudl\.lib\.cam\.ac\.uk/iiif/(MS-[A-Z0-9-]+)$")
+CUDL_IMAGE = "https://images.lib.cam.ac.uk/iiif/{}-000-00001.jp2"
+FAILS = {}
 
 
 def first(x):
@@ -81,22 +92,58 @@ def first_page_service(manifest):
     return None
 
 
-def resolve(url, timeout=30):
+def fail(url, reason):
+    key = (urllib.parse.urlparse(url).netloc, reason)
+    FAILS[key] = FAILS.get(key, 0) + 1
+
+
+def resolve(url, timeout=15, cudl=False):
     m = IMAGE_URL.match(url)
     if m:
         return m.group(1)
+    if cudl:
+        c = CUDL.match(url)
+        if c:
+            return CUDL_IMAGE.format(c.group(1))
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 manifest = json.loads(r.read().decode("utf-8", "replace"))
             sid = first_page_service(manifest)
+            if not sid:
+                fail(url, "no image service in manifest")
             return sid.rstrip("/") if sid else None
         except (json.JSONDecodeError, ValueError):
+            fail(url, "not JSON")
             return None          # not a manifest (a viewer page, for one)
-        except Exception:        # noqa: BLE001 — network: retry, then give up
-            time.sleep(2 * (attempt + 1))
+        except urllib.error.HTTPError as e:
+            if attempt:
+                fail(url, f"HTTP {e.code}")
+            time.sleep(3)
+        except Exception as e:   # noqa: BLE001 — network: retry once, then give up
+            if attempt:
+                fail(url, type(e).__name__)
+            time.sleep(3)
     return None
+
+
+def verify_cudl(urls, sample=20):
+    """Does the Cambridge naming pattern hold? Ask a sample of derived services
+    for their info.json. Trusted only if nearly all of them answer."""
+    import random
+    picks = random.Random(0).sample(urls, min(sample, len(urls)))
+    ok = 0
+    for url in picks:
+        svc = CUDL_IMAGE.format(CUDL.match(url).group(1))
+        try:
+            req = urllib.request.Request(svc + "/info.json", headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                ok += bool(json.loads(r.read()).get("@id") or True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  cudl check: {svc} → {type(e).__name__}: {e}")
+    print(f"Cambridge pattern: {ok}/{len(picks)} derived services answer")
+    return ok >= 0.8 * len(picks)
 
 
 def main():
@@ -137,10 +184,13 @@ def main():
     # which only fetches what the file lacks, picks it up.
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
 
+    cudl_urls = [u for _, u in todo if CUDL.match(u)]
+    use_cudl = bool(cudl_urls) and verify_cudl(cudl_urls)
+
     def job(url):
         if deadline and time.time() > deadline:
             return None, True
-        return resolve(url), False
+        return resolve(url, cudl=use_cudl), False
 
     skipped = 0
     with ThreadPoolExecutor(args.workers) as ex:
@@ -162,6 +212,8 @@ def main():
                     save()
                     print(f"  {done:,}/{len(todo):,}  resolved {found:,}", flush=True)
     save()
+    for (host, reason), n in sorted(FAILS.items(), key=lambda kv: -kv[1]):
+        print(f"  failed: {n:>6,}  {host}  {reason}")
     print(f"resolved {found:,} of {len(todo) - skipped:,} tried"
           + (f", {skipped:,} left for the next run (time budget)" if skipped else "")
           + f"; {len({k for k in known if k in live}):,} in the file")
