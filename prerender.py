@@ -529,6 +529,51 @@ DOC_PAGE = """<!DOCTYPE html>
 """
 
 
+_HEBREW_TEXT = None
+
+
+def hebrew_text_source(doc_id):
+    """Whether the document's text can be read in Hebrew, and by whose hand.
+
+    "scholar" — PGP carries a Hebrew translation, most of them Moshe Gil's
+                (a `translation` whose HTML is lang="he").
+    "machine" — ours, in data/transcriptions_he/ (translate_transcriptions.py).
+    None      — neither.
+
+    A scholar's translation wins where both could exist; the translation script
+    skips such documents anyway. Read once for the whole build: the cards, the
+    hub and data/search.json all ask, 36,000 times each.
+    """
+    global _HEBREW_TEXT
+    if _HEBREW_TEXT is None:
+        found = {}
+        if HE_TEXT_DIR.exists():
+            for path in HE_TEXT_DIR.glob("*.json"):
+                found[path.stem] = "machine"
+        if TEXT_DIR.exists():
+            for path in TEXT_DIR.glob("*.json"):
+                try:
+                    texts = json.loads(path.read_text(encoding="utf-8")).get("texts", [])
+                except (OSError, json.JSONDecodeError):
+                    continue
+                if any(t.get("kind") == "translation" and 'lang="he"' in (t.get("html") or "")
+                       for t in texts):
+                    found[path.stem] = "scholar"
+        _HEBREW_TEXT = found
+    return _HEBREW_TEXT.get(str(doc_id))
+
+
+# הכרטיס מסמן מסמך שאפשר לקרוא את הטקסט שלו בעברית. אותו סימון בדיוק ב-cardHTML
+# שב-assets/search.js, מן הדגל "he" שב-data/search.json.
+HE_ICON_TITLE = {"scholar": "תרגום לעברית של חוקר", "machine": "תרגום מכונה לעברית"}
+
+
+def he_icon(source):
+    if not source:
+        return ""
+    return f'<span class="card-icon card-icon-he" title="{HE_ICON_TITLE[source]}">עב</span>'
+
+
 HE_LINE = re.compile(r"^(\d+)\.\s+(.*)$")
 
 
@@ -974,6 +1019,7 @@ def render_doc_card(doc, root="../../", desc_limit=None):
         icons += '<span class="card-icon" title="תמלול">📝</span>'
     if is_true(doc.get("has_translation")):
         icons += '<span class="card-icon" title="תרגום">🌐</span>'
+    icons += he_icon(hebrew_text_source(doc["id"]))
 
     date = clean(doc.get("date"))
     origin = clean(doc.get("origin"))
@@ -1070,7 +1116,7 @@ TAG_PAGE = """<!DOCTYPE html>
     <header class="tag-header">
       <p class="tag-kicker">{group_label}</p>
       <h1 class="tag-title">{h1}</h1>
-      <p class="tag-count">{count} מסמכים באוסף נושאים את התגית הזו.</p>
+      <p class="tag-count">{count_line}</p>
     </header>
 {intro}
     <h2 class="section-label tag-list-label">{list_label}</h2>
@@ -1190,9 +1236,26 @@ def tag_index(docs):
         if tag:
             buckets.setdefault(tag, []).append(doc)
 
+    # רכזת התרגומים לעברית נגזרת כמו המאות: לא מתגית, אלא מקיומו של תרגום עברי,
+    # של חוקר או שלנו (hebrew_text_source).
+    if tag_pages.HEBREW_TEXT_TAG in tag_pages.TAG_PAGES:
+        for doc in docs:
+            if hebrew_text_source(doc["id"]):
+                buckets.setdefault(tag_pages.HEBREW_TEXT_TAG, []).append(doc)
+
     for items in buckets.values():
         items.sort(key=doc_rank)
     return buckets
+
+
+def tag_count_line(group, n):
+    """The line under a hub's heading. Only a real tag is something documents
+    "carry"; the century hubs and the Hebrew-translation hub are derived."""
+    if group == "collection":
+        return f"את הטקסט של {n:,} מסמכים באוסף אפשר לקרוא בעברית."
+    if group == "century":
+        return f"{n:,} מסמכים באוסף מתוארכים למאה הזו."
+    return f"{n:,} מסמכים באוסף נושאים את התגית הזו."
 
 
 def related_tags(tag, buckets, limit=8):
@@ -1359,7 +1422,7 @@ def render_tag_pages(docs, base, out_dir):
                 crumb=esc(page["h1"] if first else f'{page["h1"]} · עמוד {n}'),
                 group_label=esc(tag_pages.GROUPS[page["group"]]),
                 h1=esc(page["h1"] if first else f'{page["h1"]} — עמוד {n}'),
-                count=f"{len(items):,}",
+                count_line=tag_count_line(page["group"], len(items)),
                 intro=(f'\n    <div class="tag-intro">\n      <p>{esc(page["intro"])}</p>\n    </div>\n'
                        if first else ""),
                 list_label=("המסמכים" if pages == 1 else

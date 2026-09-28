@@ -591,6 +591,20 @@ img { display: block; max-width: 100%; }
   line-height: 1;
 }
 
+/* "עב": לטקסט של המסמך יש תרגום לעברית (prerender.he_icon / cardHTML). אות ולא
+   אימוג'י, כי אין אימוג'י שאומר "עברית", ובלי השקיפות של שכניו: אלה אותיות,
+   ו-.55 מעל --text-3 יורד מתחת ל-4.5:1. */
+.card-icon-he {
+  opacity: 1;
+  font-family: var(--font-ui);
+  font-size: .62rem;
+  font-weight: 700;
+  color: var(--text-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  padding: var(--sp-0) var(--sp-1);
+}
+
 .card-thumb {
   width: 100%;
   height: 160px;

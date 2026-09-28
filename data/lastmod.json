@@ -1,7 +1,7 @@
 {
   "": {
-    "date": "2026-09-27",
-    "sha": "9c922dbe58026669"
+    "date": "2026-09-28",
+    "sha": "fd506f46e1be61b6"
   },
   "about.html": {
     "date": "2026-09-27",
@@ -145228,8 +145228,8 @@
     "sha": "bc3c1d5326e90b0c"
   },
   "t/": {
-    "date": "2026-09-27",
-    "sha": "e2732e1f145f9f2d"
+    "date": "2026-09-28",
+    "sha": "bc19d4a1a8038ce8"
   },
   "t/abraham-ben-yiju": {
     "date": "2026-09-27",
@@ -145522,6 +145522,10 @@
   "t/hebrew": {
     "date": "2026-09-22",
     "sha": "536268a4cca22c4d"
+  },
+  "t/hebrew-translation": {
+    "date": "2026-09-28",
+    "sha": "5c1c346f3fd85332"
   },
   "t/hillel-ben-eli": {
     "date": "2026-09-27",

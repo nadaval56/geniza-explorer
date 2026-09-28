@@ -32,7 +32,7 @@ import tag_pages
 # מקור אמת אחד למאה של מסמך. prerender בונה ממנו את רכזות המאות,
 # ו-build את שדה c במפתח החיפוש ואת הרצועה בעמוד הבית. build מייבא
 # את prerender ולא להפך, ולכן אין כאן מעגל.
-from prerender import century_from_date
+from prerender import century_from_date, hebrew_text_source
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 CSV_URL = (
@@ -397,6 +397,9 @@ def build_search_index(docs, translations_he=None, tags_he=None):
             entry["iu"]  = doc["iiif_urls"][0]
         if doc["has_transcription"]:entry["tr"]  = 1
         if doc["has_translation"]:  entry["tl"]  = 1
+        # "s" לתרגום של חוקר, "m" לתרגום מכונה — אותה הבחנה שהכרטיס מציג
+        he_src = hebrew_text_source(doc["id"])
+        if he_src:                  entry["he"]  = he_src[0]
         c = century_from_date(doc["date"])
         if c:                       entry["c"]   = c
         doc_tags = tags_he.get(doc["id"], [])
@@ -705,6 +708,7 @@ INDEX_HTML = """\
         בבית הכנסת הקטן של בן עזרא בקהיר העתיקה נשמרו, כמעט בנס, כ - 300,000 מסמכים יהודיים — אוצרות שלא נועדו לעיני זרים. במשך למעלה מתשע מאות שנה הצטברו בה דפים נושאי שם ה׳ שאסור היה להשליכם לאשפה: פסקי הלכה ותפילות, שטרי מסחר ומכתבים אישיים, פנקסי קהילה ומכתבי יתומים. מתוך אבק הדורות עולים קולותיהם של חיים יהודיים שלמים, וקודש וחול משמשים בעירבוביה.  {total_docs:,} מהמסמכים האלה מוצגים לפניכם בפרויקט זה.
       </p>
       <a href="about.html" class="about-link">אודות הגניזה הקהירית ←</a>
+      <a href="t/hebrew-translation/" class="about-link">מכתבי הגניזה בתרגום לעברית ←</a>
     </div>
   </header>
 
@@ -759,6 +763,7 @@ INDEX_HTML = """\
           <option value="img">🖼 עם תמונה</option>
           <option value="tr">📝 עם תעתיק</option>
           <option value="tl">🌐 עם תרגום</option>
+          <option value="he">עב · תרגום לעברית</option>
         </select>
         <button class="btn-reset" id="btn-reset" hidden aria-label="אפס סינון">✕ נקה</button>
       </div>

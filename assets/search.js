@@ -111,6 +111,7 @@
       if (fHas === 'img' && !d.img) return false;
       if (fHas === 'tr'  && !d.tr)  return false;
       if (fHas === 'tl'  && !d.tl)  return false;
+      if (fHas === 'he'  && !d.he)  return false;
       if (fEra && d.c !== fEra) return false;
       if (fTag && !(d.tgh||[]).includes(fTag)) return false;
       if (fLocation) {
@@ -207,6 +208,8 @@
     const icons = [
       doc.tr  ? '<span class="card-icon" title="תמלול">📝</span>' : '',
       doc.tl  ? '<span class="card-icon" title="תרגום">🌐</span>'  : '',
+      // אותו סימון כמו he_icon ב-prerender.py: "s" חוקר, "m" מכונה
+      doc.he  ? `<span class="card-icon card-icon-he" title="${doc.he === 's' ? 'תרגום לעברית של חוקר' : 'תרגום מכונה לעברית'}">עב</span>` : '',
     ].join('');
 
     const langBadge = doc.lh

@@ -117,10 +117,10 @@ def check_coverage(counts):
     for tag in thin:
         notes.append(f"'{tag}' נושא פחות מ-{MIN_DOCS} מסמכים — לא ייבנה לו דף")
 
-    # תגית של מאה אינה תגית שמסמך נושא: prerender גוזר אותה משדה התאריך.
-    # היעדרה מ-tags_he.json הוא התקין, ולא סימן לערך יתום.
+    # תגית של מאה אינה תגית שמסמך נושא: prerender גוזר אותה משדה התאריך, ואת
+    # רכזת התרגומים מקיומו של תרגום עברי. היעדרן מ-tags_he.json הוא התקין.
     unused = sorted(t for t, page in tag_pages.TAG_PAGES.items()
-                    if t not in counts and page["group"] != "century")
+                    if t not in counts and page["group"] not in ("century", "collection"))
     for tag in unused:
         notes.append(f"'{tag}' יש לו ערך אבל אף מסמך לא נושא אותו כרגע")
 
