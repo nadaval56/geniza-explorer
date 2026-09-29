@@ -1,4 +1,6 @@
 /* ================= הנפשת הסמלים: ניגון חוזר =================
+   נטען בכל דף: בדף הבית לקשת ולשלושת אייקוני המונים, ובכל דף פנימי לקשת
+   שבבאנר העליון.
    ההנפשות עצמן יושבות ב-style.css ("הנפשת הסמלים") ורצות פעם אחת בטעינה
    בלי שום JavaScript. הקובץ הזה רק מנגן אותן שוב, בשני מקרים:
      - כשסמל נחשף מחדש אחרי שיצא לגמרי מהמסך (גלילה למטה וחזרה);
@@ -12,7 +14,7 @@
    של רוחב שמכריחה את הדפדפן להחיל את זה, והחזרה. האנימציה מתחילה אז מאפס,
    כולל ההשהיה שלה, כך שהסדר הפנימי (קשת ואז פתח, דף אחרי דף) נשמר. */
 (function () {
-  var marks = document.querySelectorAll('.header-ornament .brand-mark, .kpi-svg');
+  var marks = document.querySelectorAll('.header-ornament .brand-mark, .kpi-svg, .nav-brand .brand-mark');
   if (!marks.length || !('IntersectionObserver' in window)) return;
 
   var EVERY_MS = 15000;
