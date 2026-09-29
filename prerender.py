@@ -39,6 +39,7 @@ import sys
 from datetime import date
 
 import a11y_snippets
+import brand_mark
 import sister_sites
 import tag_pages
 
@@ -458,6 +459,7 @@ DOC_PAGE = """<!DOCTYPE html>
 
   <nav class="top-nav" aria-label="ניווט">
     <a href="{root}" class="nav-brand">
+      {brand_mark}
       <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
     </a>
     <span class="nav-breadcrumb" aria-current="page">{breadcrumb}</span>
@@ -777,6 +779,7 @@ def render_doc(doc, base, related_index=None):
 
     return DOC_PAGE.format(
         a11y_head=a11y_snippets.head("../"),
+        brand_mark=brand_mark.SVG,
         a11y_foot=a11y_snippets.foot("../"),
         sister=sister_sites.nav("../"),
         site=esc(SITE_NAME),
@@ -850,6 +853,7 @@ INDEX_PAGE = """<!DOCTYPE html>
 
   <nav class="top-nav" aria-label="ניווט">
     <a href="../" class="nav-brand">
+      {brand_mark}
       <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
     </a>
     <span class="nav-breadcrumb" aria-current="page">כל המסמכים · עמוד {page}</span>
@@ -925,6 +929,7 @@ def render_index_pages(docs, base, out_dir):
         (out_dir / name).write_text(
             INDEX_PAGE.format(
                 a11y_head=a11y_snippets.head("../"),
+                brand_mark=brand_mark.SVG,
                 a11y_foot=a11y_snippets.foot("../"),
                 sister=sister_sites.nav("../"),
                 site=esc(SITE_NAME), page=n, pages=pages,
@@ -1162,6 +1167,7 @@ TAG_PAGE = """<!DOCTYPE html>
 
   <nav class="top-nav" aria-label="ניווט">
     <a href="../../" class="nav-brand">
+      {brand_mark}
       <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
     </a>
     <span class="nav-breadcrumb" aria-current="page">{crumb}</span>
@@ -1234,6 +1240,7 @@ TAG_DIRECTORY = """<!DOCTYPE html>
 
   <nav class="top-nav" aria-label="ניווט">
     <a href="../" class="nav-brand">
+      {brand_mark}
       <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
     </a>
     <span class="nav-breadcrumb" aria-current="page">נושאים</span>
@@ -1392,6 +1399,7 @@ def render_tag_directory(buckets, base, out_dir):
     out_dir.mkdir(exist_ok=True)
     (out_dir / "index.html").write_text(TAG_DIRECTORY.format(
         a11y_head=a11y_snippets.head("../"),
+        brand_mark=brand_mark.SVG,
         a11y_foot=a11y_snippets.foot("../"),
         sister=sister_sites.nav("../"),
         site=esc(SITE_NAME),
@@ -1469,6 +1477,7 @@ def render_tag_pages(docs, base, out_dir):
 
             (tag_dir / name).write_text(TAG_PAGE.format(
                 a11y_head=a11y_snippets.head("../../"),
+                brand_mark=brand_mark.SVG,
                 a11y_foot=a11y_snippets.foot("../../"),
                 sister=sister_sites.nav("../../"),
                 site=esc(SITE_NAME),

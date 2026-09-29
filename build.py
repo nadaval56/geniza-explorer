@@ -26,6 +26,7 @@ from pathlib import Path
 from html import escape
 
 import a11y_snippets
+import brand_mark
 import sister_sites
 import honorifics
 import geo_terms
@@ -702,7 +703,7 @@ INDEX_HTML = """\
 
   <header class="site-header">
     <div class="header-inner">
-      <div class="header-ornament" aria-hidden="true">✦</div>
+      <div class="header-ornament">{brand_mark}</div>
       <h1 class="site-title">הגניזה הקהירית</h1>
       <p class="site-subtitle">חלון אל החיים היהודיים בימי הביניים</p>
       <p class="site-intro">
@@ -1019,6 +1020,7 @@ def write_html_only(args):
         f.write(INDEX_HTML.format(total_docs=total, build_date=build_date,
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
+                                  brand_mark=brand_mark.SVG,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
@@ -1159,6 +1161,7 @@ def main():
         f.write(INDEX_HTML.format(total_docs=len(docs), build_date=build_date,
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
+                                  brand_mark=brand_mark.SVG,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
