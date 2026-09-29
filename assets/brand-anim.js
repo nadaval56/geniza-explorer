@@ -2,7 +2,9 @@
    ההנפשות עצמן יושבות ב-style.css ("הנפשת הסמלים") ורצות פעם אחת בטעינה
    בלי שום JavaScript. הקובץ הזה רק מנגן אותן שוב, בשני מקרים:
      - כשסמל נחשף מחדש אחרי שיצא לגמרי מהמסך (גלילה למטה וחזרה);
-     - כל 15 שניות, לסמלים שנמצאים כרגע על המסך.
+     - כשעברו 15 שניות מהניגון האחרון של סמל שנמצא על המסך.
+   השעון הוא של כל סמל בנפרד, ומתאפס בכל ניגון: סמל שנוגן בגלילה לא יתנגן
+   שוב כעבור שנייה רק משום שהגיע תורו של שעון כללי.
    לא מנגנים כשהלשונית ברקע, וכש"צמצום תנועה" או "עצירת אנימציות" פעילים.
    גם בלי הבדיקה הזו ה-CSS מבטל שם כל אנימציה, והניגון היה נופל על ריק.
 
@@ -15,13 +17,16 @@
 
   var EVERY_MS = 15000;
   var reduce = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
-  var state = new Map();   // svg → { visible, left }: left = יצא מהמסך מאז הניגון האחרון
+  /* svg → { visible, left, last }
+     left: יצא מהמסך מאז הניגון האחרון; last: מתי נוגן לאחרונה */
+  var state = new Map();
 
   function still() {
     return (reduce && reduce.matches) || document.documentElement.classList.contains('a11y-still');
   }
 
   function replay(svg) {
+    state.get(svg).last = performance.now();
     if (still()) return;
     var parts = svg.querySelectorAll('*');
     parts.forEach(function (el) { el.style.animation = 'none'; });
@@ -43,13 +48,25 @@
   });
 
   marks.forEach(function (svg) {
-    /* left: false — הניגון הראשון כבר רץ מה-CSS בטעינה */
-    state.set(svg, { visible: false, left: false });
+    /* הניגון הראשון כבר רץ מה-CSS בטעינה, ומשם נספרות 15 השניות.
+       סמל שמחוץ למסך בטעינה יסומן left בקריאה הראשונה של ה-observer,
+       ויתנגן כשיגיע אליו הקורא. */
+    state.set(svg, { visible: false, left: false, last: performance.now() });
     io.observe(svg);
   });
 
   setInterval(function () {
     if (document.hidden) return;
-    state.forEach(function (s, svg) { if (s.visible) replay(svg); });
-  }, EVERY_MS);
+    var now = performance.now();
+    state.forEach(function (s, svg) {
+      if (s.visible && now - s.last >= EVERY_MS) replay(svg);
+    });
+  }, 1000);
+
+  /* חזרה ללשונית אחרי זמן ברקע: לא לנגן מיד את כל מה שכבר "הגיע זמנו" */
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) return;
+    var now = performance.now();
+    state.forEach(function (s) { s.last = Math.max(s.last, now - EVERY_MS + 3000); });
+  });
 })();
