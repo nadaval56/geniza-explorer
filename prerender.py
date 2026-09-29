@@ -40,6 +40,7 @@ from datetime import date
 
 import a11y_snippets
 import brand_mark
+import hebrew_marks
 import sister_sites
 import tag_pages
 
@@ -92,8 +93,12 @@ def esc(value):
 
 
 def clean(text):
-    """Collapse whitespace — descriptions carry newlines from the source CSV."""
-    return re.sub(r"\s+", " ", (text or "")).strip()
+    """Collapse whitespace — descriptions carry newlines from the source CSV.
+
+    Also turns Arabic vowel signs on Hebrew letters into Hebrew points
+    (hebrew_marks.py), which build.py does too: data/docs from a build
+    before that fix would otherwise still reach the page with empty boxes."""
+    return hebrew_marks.hebraize(re.sub(r"\s+", " ", (text or "")).strip())
 
 
 def truncate(text, limit=155):
@@ -664,10 +669,10 @@ def render_he_text(doc_id):
         if m:
             if start is None:
                 start = int(m.group(1))
-            items.append(f"            <li>{esc(m.group(2))}</li>")
+            items.append(f"            <li>{esc(hebrew_marks.hebraize(m.group(2)))}</li>")
             continue
         flush()
-        label = line.lstrip("#").strip().strip("[]").strip()
+        label = hebrew_marks.hebraize(line.lstrip("#").strip().strip("[]").strip())
         if label:
             parts.append(f'          <p class="he-text-side">{esc(label)}</p>')
     flush()
@@ -1601,7 +1606,7 @@ def resolve_lastmod(docs, tag_slugs, buckets):
             "shelfmark": doc.get("shelfmark"), "type": doc.get("type_he"),
             "lang": doc.get("lang_he"), "date": doc.get("date"),
             "origin": doc.get("origin"), "library": doc.get("library"),
-            "he": doc.get("description_he"), "tags": sorted(doc.get("tags_he") or []),
+            "he": hebrew_marks.hebraize(doc.get("description_he")), "tags": sorted(doc.get("tags_he") or []),
             "iiif": (doc.get("iiif_urls") or [None])[0],
         }
         # The Hebrew translation of the transcription is in the HTML too

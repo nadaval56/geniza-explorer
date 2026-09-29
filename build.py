@@ -27,6 +27,7 @@ from html import escape
 
 import a11y_snippets
 import brand_mark
+import hebrew_marks
 import sister_sites
 import honorifics
 import geo_terms
@@ -391,8 +392,8 @@ def build_search_index(docs, translations_he=None, tags_he=None):
         rich = " ".join(rich_parts)[:400] if rich_parts else ""
         if rich:                    entry["d"]   = rich
         # Hebrew description: prefer real translation, fall back to auto-generated
-        desc_he = geo_terms.fix_terms(honorifics.add_titles(
-            translations_he.get(doc["id"]) or doc["description_he"]), doc["id"])
+        desc_he = hebrew_marks.hebraize(geo_terms.fix_terms(honorifics.add_titles(
+            translations_he.get(doc["id"]) or doc["description_he"]), doc["id"]))
         if desc_he:                 entry["dh"]  = desc_he
         if doc["iiif_urls"]:
             entry["img"] = 1
@@ -1117,9 +1118,10 @@ def main():
         # Prefer real translation over auto-generated metadata description
         # התארים והמונחים הגיאוגרפיים נוספים כאן ולא בקובץ התרגומים: תיאור חדש
         # מפרינסטון, או תיאור שנכתב מחדש, מקבל אותם בבנייה הבאה בלי שאיש יזכור.
-        # ראו honorifics.py ו-geo_terms.py.
-        doc_he = geo_terms.fix_terms(
-            honorifics.add_titles(translations_he.get(doc["id"]) or ""), doc["id"])
+        # ראו honorifics.py ו-geo_terms.py. hebrew_marks: סימני ניקוד ערביים על
+        # אותיות עבריות, שאין גופן שמציג אותם — ראו שם.
+        doc_he = hebrew_marks.hebraize(geo_terms.fix_terms(
+            honorifics.add_titles(translations_he.get(doc["id"]) or ""), doc["id"]))
         if doc_he:
             doc = {**doc, "description_he": doc_he}
         doc_tags_he = tags_he.get(doc["id"], [])
