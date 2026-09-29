@@ -1432,6 +1432,18 @@ html.a11y-still .sister-clone { display: none; }
   transition: color var(--dur-fast) var(--ease);
 }
 .about-link:hover { color: var(--link-hover); text-decoration: underline; }
+/* שני הקישורים שמתחת לפסקת המבוא, ויהלום זעיר ביניהם. בטלפון צר הם
+   נשברים לשתי שורות, וה-gap שומר מרווח גם בין השורות. */
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: var(--sp-3);
+  margin-top: var(--sp-3);
+}
+.header-links .about-link { margin-top: 0; }
+.header-links-sep { color: var(--gold); opacity: .6; font-size: .5rem; }
 
 /* ── KPI section (2-card version) ────────────────────────────────────────────── */
 .dashboard-kpi {
