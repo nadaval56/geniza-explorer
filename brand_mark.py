@@ -70,5 +70,26 @@ SVG = (
     + "</svg>"
 )
 
+# ── Two KPI icons on the home page, in the mark's line style ─────────────────
+# Same stroke classes as SVG, so they follow the display modes too; the one
+# filled surface uses --bg-2, which a11y.css redefines for each mode.
+#   ICON_DOCS    three stacked leaves: the documents, piled up over centuries
+#   ICON_IMAGES  a frame with a hill and a sun: the documents with a photograph
+def _icon(body):
+    return f'<svg class="brand-mark kpi-svg" viewBox="0 0 32 32" focusable="false">{body}</svg>'
+
+
+ICON_DOCS = _icon(
+    '<path class="brand-mark-line" d="M6 21l10 5 10-5"/>'
+    '<path class="brand-mark-line" d="M6 16l10 5 10-5" opacity=".7"/>'
+    '<path class="brand-mark-line brand-mark-fill" d="M6 11l10-5 10 5-10 5z"/>'
+)
+ICON_IMAGES = _icon(
+    '<rect class="brand-mark-line brand-mark-fill" x="5" y="7" width="22" height="18" rx="2"/>'
+    '<path class="brand-mark-ink" d="M8.5 21.5l5.5-6.5 4 4.5 2.5-2.5 3 4.5"/>'
+    '<circle class="brand-mark-line" cx="21" cy="12.2" r="1.8"/>'
+)
+
+
 if __name__ == "__main__":
     print(SVG)

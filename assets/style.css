@@ -856,6 +856,7 @@ img { display: block; max-width: 100%; }
 .brand-mark { display: block; flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .brand-mark-line { stroke: var(--gold); stroke-width: 1.6; }
 .brand-mark-ink  { stroke: var(--text-2); stroke-width: 1.3; }
+.brand-mark-fill { fill: var(--bg-2); }
 .nav-brand .brand-mark { width: 1.9rem; height: 1.9rem; }
 .nav-brand-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
 .nav-brand-name { font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em; white-space: nowrap; }
@@ -1517,7 +1518,10 @@ html.a11y-still .sister-clone { display: none; }
 }
 .kpi-card:hover { box-shadow: var(--shadow-lg); }
 
-.kpi-icon { font-size: 1.4rem; line-height: 1; opacity: .75; }
+.kpi-icon { font-size: 1.4rem; line-height: 1; }
+.kpi-icon .kpi-svg { width: 2.2rem; height: 2.2rem; }
+/* 💡 של "הידעת?" נשאר אמוג'י, ושם השקיפות הרכה עדיין במקומה */
+.kpi-card--dyk .kpi-icon { opacity: .75; }
 
 .kpi-num {
   font-family: var(--font-serif);
