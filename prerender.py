@@ -457,7 +457,9 @@ DOC_PAGE = """<!DOCTYPE html>
   <a href="#doc-main" class="skip-link">דלג לתוכן המסמך</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="{root}" class="nav-home">← חזרה לדף הבית של הגניזה</a>
+    <a href="{root}" class="nav-brand">
+      <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
+    </a>
     <span class="nav-breadcrumb" aria-current="page">{breadcrumb}</span>
   </nav>
 
@@ -847,7 +849,9 @@ INDEX_PAGE = """<!DOCTYPE html>
   <a href="#doc-index" class="skip-link">דלג לרשימת המסמכים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
+    <a href="../" class="nav-brand">
+      <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
+    </a>
     <span class="nav-breadcrumb" aria-current="page">כל המסמכים · עמוד {page}</span>
   </nav>
 
@@ -1157,7 +1161,9 @@ TAG_PAGE = """<!DOCTYPE html>
   <a href="#tag-main" class="skip-link">דלג לרשימת המסמכים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
+    <a href="../../" class="nav-brand">
+      <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
+    </a>
     <span class="nav-breadcrumb" aria-current="page">{crumb}</span>
   </nav>
 
@@ -1227,7 +1233,9 @@ TAG_DIRECTORY = """<!DOCTYPE html>
   <a href="#tag-dir" class="skip-link">דלג לרשימת הנושאים</a>
 
   <nav class="top-nav" aria-label="ניווט">
-    <a href="../" class="nav-home">← חזרה לדף הבית של הגניזה</a>
+    <a href="../" class="nav-brand">
+      <span class="nav-brand-text"><span class="nav-brand-name">הגניזה הקהירית</span><span class="nav-brand-sub">חלון אל החיים היהודיים בימי הביניים</span></span>
+    </a>
     <span class="nav-breadcrumb" aria-current="page">נושאים</span>
   </nav>
 

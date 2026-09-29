@@ -830,7 +830,7 @@ img { display: block; max-width: 100%; }
 .fragment-body { background: var(--bg-2); }
 
 .top-nav {
-  padding: var(--sp-4) var(--sp-6);
+  padding: var(--sp-3) var(--sp-6);
   background: rgba(250,248,243,.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
@@ -843,12 +843,46 @@ img { display: block; max-width: 100%; }
   z-index: 100;
 }
 
-.nav-home {
-  /* --gold is a fill colour (3:1 rule). As text it measured 4.18:1 on --bg
-     and 3.81:1 on --bg-2 — below the 4.5:1 floor. --link is the same family
-     at 5.24:1. Same substitution in .btn-primary and .btn-reset-inline. */
-  color: var(--link);
+/* The masthead in miniature: the same ✦, name and subtitle as the home
+   page's .site-header, as one link back to it. It replaced a plain
+   "← חזרה לדף הבית" link, so it keeps that link's job on every inner page.
+   The name is --text and the subtitle --text-3, not --gold: --gold is a fill
+   colour (3:1 rule) and fails 4.5:1 as text on --bg-2. */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+}
+/* ה-✦ הוא קישוט בלבד, ולכן יושב ב-CSS ולא בטקסט: "/ ''" משתיק אותו לקורא
+   המסך, ובגודל הזה הוא לא עומד ב-4.5:1 שנדרש מטקסט אמיתי. */
+.nav-brand::before {
+  content: '✦';
+  content: '✦' / '';
+  color: var(--gold);
+  opacity: .6;
+  font-size: 1rem;
+  flex: none;
+}
+.nav-brand-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.nav-brand-name { font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em; white-space: nowrap; }
+.nav-brand-sub {
+  font-size: .72rem;
+  color: var(--text-3);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-brand:hover .nav-brand-name { color: var(--link-hover); }
+.nav-brand:focus-visible { outline: 2px solid var(--link); outline-offset: var(--sp-1); border-radius: var(--radius); }
+.top-nav .nav-breadcrumb { margin-inline-start: auto; font-size: .82rem; min-width: 0; }
+/* בטלפון הפס כולו לשם האתר. הפירור חוזר על מה שכתוב ממילא בכותרת הדף
+   (מספר המדף, שם הנושא), ובצמוד לשם הוא נחתך לשלוש אותיות. */
+@media (max-width: 600px) {
+  .top-nav { padding-inline: var(--sp-4); }
+  .top-nav .nav-breadcrumb { display: none; }
 }
 
 .nav-breadcrumb {
