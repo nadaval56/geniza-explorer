@@ -529,6 +529,7 @@ DOC_PAGE = """<!DOCTYPE html>
   <script src="{root}assets/doc-english.js" defer></script>
   <script src="{root}assets/doc-text.js" defer></script>
   <script src="{root}assets/card-thumbs.js" defer></script>
+  <script src="{root}assets/brand-anim.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -884,6 +885,7 @@ INDEX_PAGE = """<!DOCTYPE html>
 {sister}
   </footer>
 
+  <script src="../assets/brand-anim.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -1203,6 +1205,7 @@ TAG_PAGE = """<!DOCTYPE html>
   </footer>
 
   <script src="../../assets/card-thumbs.js" defer></script>
+  <script src="../../assets/brand-anim.js" defer></script>
 {a11y_foot}
 </body>
 </html>
@@ -1270,6 +1273,7 @@ TAG_DIRECTORY = """<!DOCTYPE html>
 {sister}
   </footer>
 
+  <script src="../assets/brand-anim.js" defer></script>
 {a11y_foot}
 </body>
 </html>
