@@ -59,6 +59,10 @@
       /* ה-HTML כאן עבר סינון ב-import_transcriptions.py: רק תגיות מבנה
          ומאפייני dir/lang/class/data-canvas שרדו, בלי script, style או on*. */
       body.innerHTML = t.html;
+      /* כותרות הקטעים של PGP ("Verso.", "Right margin, perpendicular lines.")
+         כתובות כמעט תמיד באנגלית, ובתוך תעתיק מימין לשמאל הנקודה שבסופן
+         קפצה להתחלה. dir=auto נותן לכל כותרת את הכיוון של הטקסט שבה. */
+      body.querySelectorAll('h2, h3').forEach((h) => { h.dir = 'auto'; });
       /* 661 מהתרגומים הם לעברית (רובם של משה גיל), לא לאנגלית. הכיוון נגזר
          משפת הטקסט עצמו; בלי זה התרגום העברי הוצג משמאל לימין. */
       if (t.kind === 'translation') {

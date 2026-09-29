@@ -1207,6 +1207,22 @@ p.fragment-shelfmark {
 
 .transcription-body p { margin: 0; }
 
+/* כותרות הקטעים של PGP (h3, ולעתים h2), כ-16 אלף באוסף: "Verso.", "Right
+   margin, perpendicular lines.", "Arabic:". אלה תוויות, לא כותרות: בלי הכלל
+   הזה הן יצאו בגופן הסריף, מודגשות ובגודל של כותרת, באמצע הטקסט. עכשיו הן
+   נראות כמו .he-text-side של התרגום העברי. הכיוון נקבע ב-doc-text.js. */
+.transcription-body h2,
+.transcription-body h3 {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-3);
+  margin: var(--sp-3) 0 var(--sp-1);
+}
+.transcription-body section > h2:first-child,
+.transcription-body section > h3:first-child { margin-top: 0; }
+
 /* איפוס ה-padding הגלובלי מותיר את מספרי השורות של ה-<ol> מחוץ לתיבה, וה-
    overflow-x שלה חותך אותם: בתעתיק ובתרגום העברי, מימין לשמאל, "10" הופיע
    כ-"1(" בקצה הימני. padding-inline-start ולא padding-right, כדי שאותו כלל
