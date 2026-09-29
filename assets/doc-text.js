@@ -19,6 +19,25 @@
 (function () {
   'use strict';
 
+  /* סימני ניקוד ערביים (שדה, פתחה, תנוין) על אותיות עבריות: אין גופן שמכסה
+     את הצירוף, והטלפון מצייר ריבועים ריקים. כל סימן הופך לנקודה העברית שעושה
+     את אותה עבודה — שדה לדגש — ותנוין, שאין לו מקבילה, יורד. אותו כלל בדיוק
+     כמו hebrew_marks.py בבנייה; שינוי כאן מחייב שינוי שם. */
+  const HEB_MAP = { '\u0651': '\u05BC', '\u064E': '\u05B7', '\u0650': '\u05B4',
+    '\u064F': '\u05BB', '\u0652': '\u05B0', '\u064B': '', '\u064C': '', '\u064D': '' };
+  function hebraize(s) {
+    if (!/[\u064B-\u0652]/.test(s)) return s;
+    return s.replace(/[\u05D0-\u05EA][\u0591-\u05C7\u064B-\u0652]+/g, (c) => {
+      if (!/[\u064B-\u0652]/.test(c)) return c;
+      const out = [];
+      for (const ch of c.slice(1)) {
+        const m = ch in HEB_MAP ? HEB_MAP[ch] : ch;
+        if (m && !out.includes(m)) out.push(m);
+      }
+      return c[0] + out.join('');
+    });
+  }
+
   const btn = document.querySelector('.transcription-toggle');
   if (!btn) return;
   const panel = document.getElementById(btn.getAttribute('aria-controls'));
@@ -58,7 +77,7 @@
       body.className = 'transcription-body';
       /* ה-HTML כאן עבר סינון ב-import_transcriptions.py: רק תגיות מבנה
          ומאפייני dir/lang/class/data-canvas שרדו, בלי script, style או on*. */
-      body.innerHTML = t.html;
+      body.innerHTML = hebraize(t.html);
       /* כותרות הקטעים של PGP ("Verso.", "Right margin, perpendicular lines.")
          כתובות כמעט תמיד באנגלית, ובתוך תעתיק מימין לשמאל הנקודה שבסופן
          קפצה להתחלה. dir=auto נותן לכל כותרת את הכיוון של הטקסט שבה. */
