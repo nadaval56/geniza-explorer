@@ -857,6 +857,62 @@ img { display: block; max-width: 100%; }
 .brand-mark-line { stroke: var(--gold); stroke-width: 1.6; }
 .brand-mark-ink  { stroke: var(--text-2); stroke-width: 1.3; }
 .brand-mark-fill { fill: var(--bg-2); }
+
+/* ── הנפשת הסמלים ─────────────────────────────────────────────────────────────
+   כל סמל מונפש פעם אחת בטעינת הדף, בפחות משתי שניות, ושוב בריחוף. אין
+   לולאה. המצב הבסיסי של כל אלמנט הוא המצב הסופי, והאנימציה מתחילה ממצב
+   ההתחלה (fill-mode backwards). כך "צמצום תנועה" של המערכת ו"עצירת אנימציות"
+   בתפריט הנגישות, שמבטלים כל אנימציה בכל האתר, משאירים סמל שלם ודומם.
+   הקווים מצוירים בעזרת pathLength="1" שב-brand_mark.py: מקף באורך 1, שקיים
+   רק בזמן האנימציה. */
+/* opacity בפריים הראשון: קצה מעוגל של מקף באורך אפס הוא עדיין נקודה */
+@keyframes mark-draw   { from { stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; }
+                         4% { opacity: 1; } to { stroke-dasharray: 1; stroke-dashoffset: 0; } }
+@keyframes mark-draw-2 { from { stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; }
+                         4% { opacity: 1; } to { stroke-dasharray: 1; stroke-dashoffset: 0; } }
+@keyframes layer-in    { from { transform: translateY(-6px); opacity: 0; } }
+@keyframes layer-lift  { 50% { transform: translateY(-2.5px); } }
+@keyframes sun-rise    { from { transform: translateY(6px); opacity: 0; } }
+@keyframes sun-rise-2  { from { transform: translateY(6px); opacity: 0; } }
+@keyframes ray-in      { from { transform: scale(.5); opacity: 0; } }
+@keyframes ray-in-2    { from { transform: scale(.5); opacity: 0; } }
+@keyframes bulb-glow   { 45% { fill: var(--gold-light); fill-opacity: .45; } }
+@keyframes bulb-glow-2 { 45% { fill: var(--gold-light); fill-opacity: .45; } }
+
+.brand-mark .layer-1, .brand-mark .layer-2, .brand-mark .layer-3,
+.brand-mark .sun { transform-box: fill-box; }
+.brand-mark .ray { transform-box: view-box; transform-origin: 16px 12px; }
+
+/* הקשת בדף הבית: הקשת נמתחת, ואחריה הפתח */
+.header-ornament .brand-mark-line { animation: mark-draw 1.1s var(--ease) .15s backwards; }
+.header-ornament .brand-mark-ink  { animation: mark-draw .8s var(--ease) .9s backwards; }
+/* המסמכים: שלושת הדפים נוחתים זה על זה, מלמטה למעלה */
+.kpi-svg .layer-1 { animation: layer-in var(--dur-slow) var(--ease) .2s backwards; }
+.kpi-svg .layer-2 { animation: layer-in var(--dur-slow) var(--ease) .4s backwards; }
+.kpi-svg .layer-3 { animation: layer-in var(--dur-slow) var(--ease) .6s backwards; }
+/* התמונה: קו הגבעה נמשך, והשמש עולה מאחוריו */
+.kpi-svg .hill { animation: mark-draw .9s var(--ease) .3s backwards; }
+.kpi-svg .sun  { animation: sun-rise .7s var(--ease) 1s backwards; }
+/* הנורה: הזכוכית מתחממת, והקרניים יוצאות ממנה */
+.kpi-svg .glass { animation: bulb-glow 1.4s var(--ease) .4s backwards; }
+.kpi-svg .ray   { animation: ray-in var(--dur-slow) var(--ease) .9s backwards; }
+.kpi-svg .ray + .ray { animation-delay: 1s; }
+.kpi-svg .ray + .ray + .ray { animation-delay: 1.1s; }
+
+/* ריחוף מנגן שוב. שם אחר לאותה תנועה, כי הדפדפן לא מתחיל מחדש אנימציה
+   ששמה לא השתנה. רק במכשיר שיש בו ריחוף אמיתי: בטלפון :hover נתקע. */
+/* הכלל הכללי של "צמצום תנועה" בסוף הקובץ מקצר משך אבל משאיר את ההשהיה,
+   וסמל היה נעלם לשנייה לפני שהוא מופיע. כאן אין מה לקצר: פשוט אין תנועה. */
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark, .brand-mark * { animation: none !important; }
+}
+@media (hover: hover) {
+  .nav-brand:hover .brand-mark-ink  { animation: mark-draw-2 .7s var(--ease); }
+  .kpi-card:hover .layer-3 { animation: layer-lift .6s var(--ease); }
+  .kpi-card:hover .sun     { animation: sun-rise-2 .7s var(--ease); }
+  .kpi-card:hover .glass   { animation: bulb-glow-2 1.2s var(--ease); }
+  .kpi-card:hover .ray     { animation: ray-in-2 var(--dur-slow) var(--ease); }
+}
 .nav-brand .brand-mark { width: 1.9rem; height: 1.9rem; }
 .nav-brand-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
 .nav-brand-name { font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em; white-space: nowrap; }
@@ -1520,8 +1576,6 @@ html.a11y-still .sister-clone { display: none; }
 
 .kpi-icon { font-size: 1.4rem; line-height: 1; }
 .kpi-icon .kpi-svg { width: 2.2rem; height: 2.2rem; }
-/* 💡 של "הידעת?" נשאר אמוג'י, ושם השקיפות הרכה עדיין במקומה */
-.kpi-card--dyk .kpi-icon { opacity: .75; }
 
 .kpi-num {
   font-family: var(--font-serif);
