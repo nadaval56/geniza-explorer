@@ -831,16 +831,13 @@ img { display: block; max-width: 100%; }
 
 .top-nav {
   padding: var(--sp-3) var(--sp-6);
-  background: rgba(250,248,243,.95);
-  backdrop-filter: blur(10px);
+  /* נגלל עם הדף, כמו כותרת: הבאנר הוא שם האתר, לא סרגל כלים */
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   gap: var(--sp-4);
   font-size: .9rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 /* The masthead in miniature: the same ✦, name and subtitle as the home
