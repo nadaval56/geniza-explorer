@@ -76,7 +76,7 @@ SVG = (
 # Same stroke classes as SVG, so they follow the display modes too; the one
 # filled surface uses --bg-2, which a11y.css redefines for each mode. The
 # extra classes (layer-*, hill, sun, ray, glass) are only hooks for the
-# one-time animations in style.css.
+# animations in style.css (replayed by assets/brand-anim.js).
 #   ICON_DOCS    three stacked leaves: the documents, piled up over centuries
 #   ICON_IMAGES  a frame with a hill and a sun: the documents with a photograph
 #   ICON_DYK     a bulb with its filament and rays: "הידעת?"
