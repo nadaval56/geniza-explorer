@@ -11,7 +11,7 @@ so the output carries no third-party image rights.
 
 Outputs:
     favicon.ico                 16/32/48 multi-size
-    favicon.svg                 vector, from the Frank Ruhl Libre gimel outline
+    favicon.svg                 vector, the arch from brand_mark.py
     assets/icon-192.png         PWA / Android
     assets/icon-512.png         PWA / Android
     assets/apple-touch-icon.png 180x180, square (iOS masks it itself)
@@ -24,9 +24,9 @@ import tempfile
 from fontTools.merge import Merger
 from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
-from fontTools.pens.svgPathPen import SVGPathPen
-from fontTools.pens.boundsPen import BoundsPen
 from PIL import Image, ImageDraw, ImageFont
+
+import brand_mark
 
 ROOT = pathlib.Path(__file__).parent
 FONTS = ROOT / "assets" / "fonts"
@@ -75,39 +75,52 @@ def _static_merged(slug, weight):
 
 
 # ── Favicon ───────────────────────────────────────────────────────────────────
-def build_favicon_svg(frl_woff2="frank-ruhl-libre-hebrew.woff2"):
-    """Trace the gimel (ג) outline into a dependency-free vector favicon."""
-    font = instancer.instantiateVariableFont(TTFont(FONTS / frl_woff2), {"wght": 900})
-    glyphs = font.getGlyphSet()
-    name = font.getBestCmap()[ord("ג")]
+# The arch from brand_mark.py, in cream on the gold tile. Its 32-unit box is
+# scaled into the 64-unit tile around the arch's centre (16, 15.5); the strokes
+# are heavier than on the page, so the mark survives being shrunk to 16px.
+TILE_SCALE = 1.65
+TILE_SHIFT = (32 - 16 * TILE_SCALE, 32 - 15.5 * TILE_SCALE)
+TILE_STROKE = {"outer": 2.4, "inner": 2.0}   # in brand_mark's 32-unit box
 
-    bounds = BoundsPen(glyphs)
-    glyphs[name].draw(bounds)
-    x0, y0, x1, y1 = bounds.bounds
 
-    pen = SVGPathPen(glyphs)
-    glyphs[name].draw(pen)
+def _hex(rgb):
+    return "#%02x%02x%02x" % rgb
 
-    target_h = 42.0
-    scale = target_h / (y1 - y0)
-    width = (x1 - x0) * scale
-    tx = (64 - width) / 2 - x0 * scale
-    ty = 32 + target_h / 2 - y0 * scale
 
+def build_favicon_svg():
+    paths = "".join(
+        f'\n  <path d="{brand_mark.path_d(p)}" stroke-width="{TILE_STROKE[k]}"/>'
+        for k, group in (("outer", brand_mark.OUTER), ("inner", brand_mark.INNER))
+        for p in group
+    )
     svg = (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" '
         'role="img" aria-label="הגניזה הקהירית">\n'
         "  <title>הגניזה הקהירית</title>\n"
-        f'  <rect width="64" height="64" rx="13" fill="#{GOLD[0]:02x}{GOLD[1]:02x}{GOLD[2]:02x}"/>\n'
-        f'  <path transform="translate({tx:.3f} {ty:.3f}) scale({scale:.5f} -{scale:.5f})"'
-        f' fill="#{CREAM[0]:02x}{CREAM[1]:02x}{CREAM[2]:02x}" d="{pen.getCommands()}"/>\n'
+        f'  <rect width="64" height="64" rx="13" fill="{_hex(GOLD)}"/>\n'
+        f'  <g transform="translate({TILE_SHIFT[0]:g} {TILE_SHIFT[1]:g}) scale({TILE_SCALE:g})" '
+        f'fill="none" stroke="{_hex(CREAM)}" stroke-linecap="round" stroke-linejoin="round">'
+        f"{paths}\n  </g>\n"
         "</svg>\n"
     )
     (ROOT / "favicon.svg").write_text(svg, encoding="utf-8")
     print("  ✓  favicon.svg")
 
 
-def build_favicon_pngs(ttf, supersample=10, glyph_frac=0.66):
+def draw_mark(draw, origin, scale, colours, widths):
+    """Draw the arch with Pillow: each path flattened to a polyline, with
+    round joints and a disc on each end for the round caps."""
+    ox, oy = origin
+    for key, group in (("outer", brand_mark.OUTER), ("inner", brand_mark.INNER)):
+        w = widths[key] * scale
+        for path in group:
+            pts = [(ox + x * scale, oy + y * scale) for x, y in brand_mark.polyline(path)]
+            draw.line(pts, fill=colours[key], width=max(1, round(w)), joint="curve")
+            for x, y in (pts[0], pts[-1]):
+                draw.ellipse([x - w / 2, y - w / 2, x + w / 2, y + w / 2], fill=colours[key])
+
+
+def build_favicon_pngs(supersample=10):
     """Render the same mark as bitmaps, each at its native size."""
 
     def tile(size, rounded=True):
@@ -118,19 +131,9 @@ def build_favicon_pngs(ttf, supersample=10, glyph_frac=0.66):
             draw.rounded_rectangle([0, 0, n - 1, n - 1], radius=int(n * 13 / 64), fill=GOLD)
         else:
             draw.rectangle([0, 0, n - 1, n - 1], fill=GOLD)
-
-        target = n * glyph_frac
-        size_px = int(target * 1.7)
-        while size_px > 8:
-            font = ImageFont.truetype(str(ttf), size_px)
-            box = draw.textbbox((0, 0), "ג", font=font)
-            if box[3] - box[1] <= target:
-                break
-            size_px = int(size_px * 0.95)
-
-        box = draw.textbbox((0, 0), "ג", font=font)
-        w, h = box[2] - box[0], box[3] - box[1]
-        draw.text(((n - w) / 2 - box[0], (n - h) / 2 - box[1]), "ג", font=font, fill=CREAM)
+        unit = n / 64
+        draw_mark(draw, (TILE_SHIFT[0] * unit, TILE_SHIFT[1] * unit), TILE_SCALE * unit,
+                  {"outer": CREAM, "inner": CREAM}, TILE_STROKE)
         return img.resize((size, size), Image.LANCZOS)
 
     tile(512).save(ROOT / "assets" / "icon-512.png")
@@ -172,15 +175,14 @@ def build_og_image(heebo_bold, heebo_reg, heebo_med, width=1200, height=630):
     right = width - 96          # text baseline edge (RTL: text grows leftwards)
     kw = dict(anchor="ra", direction="rtl", language="he")
 
-    # Four-pointed star, echoing the ✦ in the site header (drawn, not typeset —
-    # neither webfont carries U+2726).
-    cx, cy, arm, waist = right - 13, 112, 26, 6
-    draw.polygon(
-        [(cx, cy - arm), (cx + waist, cy - waist), (cx + arm, cy),
-         (cx + waist, cy + waist), (cx, cy + arm), (cx - waist, cy + waist),
-         (cx - arm, cy), (cx - waist, cy - waist)],
-        fill=GOLD + (205,),
-    )
+    # The site mark (brand_mark.py), as over the title on the home page.
+    # Drawn at 4x and scaled down, since Pillow does not antialias lines.
+    ss, scale = 4, 2.7
+    mark = Image.new("RGBA", (int(32 * scale * ss),) * 2, (0, 0, 0, 0))
+    draw_mark(ImageDraw.Draw(mark), (0, 0), scale * ss,
+              {"outer": GOLD, "inner": INK_2}, {"outer": 1.6, "inner": 1.3})
+    mark = mark.resize((int(32 * scale),) * 2, Image.LANCZOS)
+    img.paste(mark, (round(right - 16 * scale - 13), round(112 - 15.5 * scale)), mark)
 
     # Heebo, not Frank Ruhl Libre: .site-title and .site-subtitle both use
     # --font-ui, so the card has to match the page it represents.
@@ -207,7 +209,7 @@ def build_og_image(heebo_bold, heebo_reg, heebo_med, width=1200, height=630):
 def main():
     print("\n── Brand assets ──────────────────────────────────────")
     build_favicon_svg()
-    build_favicon_pngs(_static("frank-ruhl-libre-hebrew.woff2", 900))
+    build_favicon_pngs()
     build_og_image(
         _static_merged("heebo", 700),
         _static_merged("heebo", 400),

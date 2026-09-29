@@ -1,35 +1,73 @@
 #!/usr/bin/env python3
 """
-Geniza Explorer — the site mark: a torn fragment with its left side missing.
+Geniza Explorer — the site mark: a pointed arch standing on a threshold.
 
-A piece of parchment with a triangle torn out of its left edge, and the lines
-of writing stopping at the tear — the text ran on into the part that was lost,
-which is what nearly every document in the Geniza looks like.
+The arch is the Ben Ezra synagogue, where the Geniza was kept, and it is also
+the "חלון" of the subtitle. A smaller arch inside it is the doorway. Two
+strokes and a line, no fill: it has to read at 16px in a browser tab.
 
-It replaced the ✦ ornament in two places: over the title on the home page
-(build.py, .header-ornament) and in the small masthead at the top of every
-inner page (prerender.py and the three hand-written pages, .nav-brand). The
-hand-written pages carry a pasted copy of SVG — after changing it, paste
-`python3 brand_mark.py` into about.html, privacy/ and accessibility/.
+The geometry lives here once, and everything else is drawn from it:
 
-The colours are CSS variables, not fixed values, so the mark follows the
-accessibility menu's display modes: a11y.css redefines --parchment, --gold and
---text-2 for high contrast and inverted contrast.
+    SVG                  the inline mark, over the home-page title (build.py)
+                         and in the masthead of every inner page (prerender.py)
+    make_brand_assets.py the favicon set and the arch on assets/og-image.png
 
+The three hand-written pages (about.html, privacy/, accessibility/) carry a
+pasted copy of SVG — after changing the geometry, paste `python3 brand_mark.py`
+into them and re-run make_brand_assets.py.
+
+The inline colours are CSS variables (--gold for the arch, --text-2 for the
+doorway), so the accessibility menu's display modes apply to the mark too.
 It is decorative — the site name sits right beside it — so it is aria-hidden.
 """
 
-# ה-path מקיף את הקלף עם כיס משולש בצד שמאל, שקודקודו כמעט במרכז (16,15.4).
-# השורות מיושרות לימין (x=22.5) ונעצרות בקו הקרע.
+# Paths in a 32×32 box. Each is a start point followed by segments:
+# ("L", end) or ("C", ctrl1, ctrl2, end).
+ARCH = [(9, 27), ("L", (9, 15.5)),
+        ("C", (9, 10), (12.5, 6), (16, 4)),
+        ("C", (19.5, 6), (23, 10), (23, 15.5)),
+        ("L", (23, 27))]
+THRESHOLD = [(6, 27), ("L", (26, 27))]
+DOORWAY = [(13, 27), ("L", (13, 18.5)),
+           ("C", (13, 16.5), (14.3, 14.9), (16, 14)),
+           ("C", (17.7, 14.9), (19, 16.5), (19, 18.5)),
+           ("L", (19, 27))]
+
+OUTER = (ARCH, THRESHOLD)   # drawn in the accent colour
+INNER = (DOORWAY,)          # drawn in the ink colour
+
+
+def path_d(path):
+    """SVG path data for one of the paths above."""
+    fmt = lambda p: f"{p[0]:g} {p[1]:g}"
+    out = [f"M{fmt(path[0])}"]
+    for seg in path[1:]:
+        out.append(seg[0] + " ".join(fmt(p) for p in seg[1:]))
+    return "".join(out)
+
+
+def polyline(path, steps=24):
+    """The same path flattened into points, for raster drawing (Pillow has
+    no Bézier curves)."""
+    pts = [path[0]]
+    for seg in path[1:]:
+        if seg[0] == "L":
+            pts.append(seg[1])
+            continue
+        p0, (c1, c2, p3) = pts[-1], seg[1:]
+        for i in range(1, steps + 1):
+            t = i / steps
+            u = 1 - t
+            pts.append(tuple(u**3 * a + 3 * u * u * t * b + 3 * u * t * t * c + t**3 * d
+                             for a, b, c, d in zip(p0, c1, c2, p3)))
+    return pts
+
+
 SVG = (
     '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">'
-    '<path class="brand-mark-leaf" d="M6 4.5L10 5L13 3.5L17 4.5L20 3.5L24 4L25.5 7L24.5 10'
-    'L26 13L24.8 16L26 19.5L25.2 22.5L26.2 27L22.2 27.8L19.2 26.8L16.2 28L12.7 27.2L9.7 28'
-    'L6.7 27.5L6.2 24L6.6 21L8.5 20.2L10 19.4L11.4 18.4L12.6 17.6L14 16.4L16 15.4L14 14.4'
-    'L12.8 13.3L11.2 12.6L9.8 11.4L8 10.6L6 9.8L5 7z"/>'
-    '<path class="brand-mark-ink" d="M22.5 8.5H10M22.5 12H13.2M22.5 15.5H17.6M22.5 19H13.6'
-    'M22.5 22.5H10M22.5 25.5H12"/>'
-    '</svg>'
+    + "".join(f'<path class="brand-mark-line" d="{path_d(p)}"/>' for p in OUTER)
+    + "".join(f'<path class="brand-mark-ink" d="{path_d(p)}"/>' for p in INNER)
+    + "</svg>"
 )
 
 if __name__ == "__main__":
