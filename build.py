@@ -726,7 +726,7 @@ INDEX_HTML = """\
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
       <a class="kpi-card kpi-card--dyk" id="kpi-dyk" href="#" aria-label="הידעת?">
-        <span class="kpi-icon" aria-hidden="true">💡</span>
+        <span class="kpi-icon" aria-hidden="true">{icon_dyk}</span>
         <span class="kpi-dyk-label">הידעת?</span>
         <span class="kpi-dyk-text" id="dyk-text">…</span>
         <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
@@ -1025,6 +1025,7 @@ def write_html_only(args):
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   brand_mark=brand_mark.SVG,
                                   icon_docs=brand_mark.ICON_DOCS, icon_images=brand_mark.ICON_IMAGES,
+                                  icon_dyk=brand_mark.ICON_DYK,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
@@ -1167,6 +1168,7 @@ def main():
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   brand_mark=brand_mark.SVG,
                                   icon_docs=brand_mark.ICON_DOCS, icon_images=brand_mark.ICON_IMAGES,
+                                  icon_dyk=brand_mark.ICON_DYK,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))

@@ -63,33 +63,46 @@ def polyline(path, steps=24):
     return pts
 
 
+# pathLength="1" lets the CSS draw each stroke in with a dash of length 1,
+# whatever its real length (style.css, "הנפשת הסמלים").
 SVG = (
     '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">'
-    + "".join(f'<path class="brand-mark-line" d="{path_d(p)}"/>' for p in OUTER)
-    + "".join(f'<path class="brand-mark-ink" d="{path_d(p)}"/>' for p in INNER)
+    + "".join(f'<path class="brand-mark-line" pathLength="1" d="{path_d(p)}"/>' for p in OUTER)
+    + "".join(f'<path class="brand-mark-ink" pathLength="1" d="{path_d(p)}"/>' for p in INNER)
     + "</svg>"
 )
 
-# ── Two KPI icons on the home page, in the mark's line style ─────────────────
+# ── The KPI icons on the home page, in the mark's line style ─────────────────
 # Same stroke classes as SVG, so they follow the display modes too; the one
-# filled surface uses --bg-2, which a11y.css redefines for each mode.
+# filled surface uses --bg-2, which a11y.css redefines for each mode. The
+# extra classes (layer-*, hill, sun, ray, glass) are only hooks for the
+# one-time animations in style.css.
 #   ICON_DOCS    three stacked leaves: the documents, piled up over centuries
 #   ICON_IMAGES  a frame with a hill and a sun: the documents with a photograph
+#   ICON_DYK     a bulb with its filament and rays: "הידעת?"
 def _icon(body):
     return f'<svg class="brand-mark kpi-svg" viewBox="0 0 32 32" focusable="false">{body}</svg>'
 
 
 ICON_DOCS = _icon(
-    '<path class="brand-mark-line" d="M6 21l10 5 10-5"/>'
-    '<path class="brand-mark-line" d="M6 16l10 5 10-5" opacity=".7"/>'
-    '<path class="brand-mark-line brand-mark-fill" d="M6 11l10-5 10 5-10 5z"/>'
+    '<path class="brand-mark-line layer-1" d="M6 21l10 5 10-5"/>'
+    '<path class="brand-mark-line layer-2" d="M6 16l10 5 10-5" opacity=".7"/>'
+    '<path class="brand-mark-line brand-mark-fill layer-3" d="M6 11l10-5 10 5-10 5z"/>'
 )
 ICON_IMAGES = _icon(
     '<rect class="brand-mark-line brand-mark-fill" x="5" y="7" width="22" height="18" rx="2"/>'
-    '<path class="brand-mark-ink" d="M8.5 21.5l5.5-6.5 4 4.5 2.5-2.5 3 4.5"/>'
-    '<circle class="brand-mark-line" cx="21" cy="12.2" r="1.8"/>'
+    '<path class="brand-mark-ink hill" pathLength="1" d="M8.5 21.5l5.5-6.5 4 4.5 2.5-2.5 3 4.5"/>'
+    '<circle class="brand-mark-line sun" cx="21" cy="12.2" r="1.8"/>'
 )
-
+ICON_DYK = _icon(
+    '<path class="brand-mark-line brand-mark-fill glass" d="M12 21v-2.6C9.6 16.8 8.2 14.6 8.2 12'
+    'a7.8 7.8 0 0 1 15.6 0c0 2.6-1.4 4.8-3.8 6.4V21z"/>'
+    '<path class="brand-mark-ink" d="M14 18.5v-2.8l2-2.4 2 2.4v2.8"/>'
+    '<path class="brand-mark-line" d="M12.5 24h7M14 27h4"/>'
+    '<path class="brand-mark-line ray" d="M16 .9v1.6"/>'
+    '<path class="brand-mark-line ray" d="M6.3 4.3l1.2 1.2M25.7 4.3l-1.2 1.2"/>'
+    '<path class="brand-mark-line ray" d="M2.4 12h1.7M29.6 12h-1.7"/>'
+)
 
 if __name__ == "__main__":
     print(SVG)
