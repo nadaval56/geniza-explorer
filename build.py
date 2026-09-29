@@ -721,7 +721,7 @@ INDEX_HTML = """\
   <section class="dashboard-kpi" aria-label="סטטיסטיקות">
     <div class="dash-kpi-row dash-kpi-row--two">
       <div class="kpi-card">
-        <span class="kpi-icon" aria-hidden="true">📜</span>
+        <span class="kpi-icon" aria-hidden="true">{icon_docs}</span>
         <span class="kpi-num">{total_docs:,}</span>
         <span class="kpi-label">מסמכים באוסף</span>
       </div>
@@ -732,7 +732,7 @@ INDEX_HTML = """\
         <span class="kpi-dyk-shelfmark" id="dyk-shelfmark"></span>
       </a>
       <div class="kpi-card" id="kpi-img">
-        <span class="kpi-icon" aria-hidden="true">🖼</span>
+        <span class="kpi-icon" aria-hidden="true">{icon_images}</span>
         <span class="kpi-num">…</span>
         <span class="kpi-label">עם תמונה</span>
       </div>
@@ -1024,6 +1024,7 @@ def write_html_only(args):
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   brand_mark=brand_mark.SVG,
+                                  icon_docs=brand_mark.ICON_DOCS, icon_images=brand_mark.ICON_IMAGES,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
@@ -1165,6 +1166,7 @@ def main():
                                   build_ts=build_ts, base_url=site_url,
                                   a11y_head=a11y_snippets.head("", build_ts),
                                   brand_mark=brand_mark.SVG,
+                                  icon_docs=brand_mark.ICON_DOCS, icon_images=brand_mark.ICON_IMAGES,
                                   a11y_foot=a11y_snippets.foot("", build_ts),
                                   sister=sister_sites.nav("", build_ts),
                                   **dashboard_blocks(stats)))
