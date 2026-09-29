@@ -15,7 +15,7 @@
 |------|--------|
 | `build.py` | בונה את `index.html`, `fragment.html`, `data/search.json` ו-`data/docs/*.json` מ-CSV של Princeton Geniza Project. בסוף קורא ל-`prerender.py`. **גם גוזם** קובץ ב-`data/docs` שאינו ב-CSV עוד — ראו למטה |
 | `prerender.py` | בונה עמוד HTML סטטי לכל מסמך תחת `d/`, מפתח סטטי, דפי הנושא תחת `t/`, שלושת קובצי ה-sitemap ו-`robots.txt` |
-| `make_brand_assets.py` | מייצר את ה-favicon ואת `assets/og-image.png` מהגופנים והפלטה של האתר. הרץ רק אם משנים לוגו/צבעים |
+| `make_brand_assets.py` | מייצר את ה-favicon (הקשת מ-`brand_mark.py` על אריח זהב) ואת `assets/og-image.png` מהגופנים והפלטה של האתר. הרץ רק אם משנים לוגו/צבעים. דורש `pip install pillow fonttools brotli` |
 | `index.html` | **נוצר אוטומטית** — אל תערוך |
 | `fragment.html` | **נוצר אוטומטית** — דף הפניה בלבד (ראו למטה) |
 | `d/` | **נוצר אוטומטית, gitignored** — ~36K עמודי מסמך |
@@ -29,7 +29,7 @@
 | `accessibility/index.html` | הצהרת נגישות — נכתב ביד, ניתן לעריכה |
 | `honorifics.py` | טבלת התארים של חכמי הגניזה ו-`add_titles`, שמוסיף אותם לכל תיאור עברי בבנייה. `build.py` קורא לו, ו-`check_tag_pages.py` מאמת בעזרתו את המבואות — ראו למטה |
 | `sister_sites.py` + `assets/sister.js` | פס "עוד אתרים שלי" בתחתית כל footer — אותו פס כמו ב-dronexam.co.il (ריפו RATA), כשהגניזה מוחלפת בקישור אליו. `build.py` ו-`prerender.py` שותלים את `nav(root)`; בשלושת הדפים שנכתבו ביד יש עותק מודבק, ובשינוי `SITES` מדביקים מחדש את הפלט של `python3 sister_sites.py` (`../` בתיקיות). הפס נע מעצמו, ולכן הוא נזכר בהצהרת הנגישות תחת "תנועה וזמן" |
-| `brand_mark.py` | סימן האתר: קרע קלף שחסר בו משולש משמאל. SVG אחד, מעל הכותרת בדף הבית (`build.py`) ובבאנר שבראש כל דף פנימי (`prerender.py`). הצבעים הם משתני CSS (`--parchment`, `--gold`, `--text-2`) ולכן מצבי הניגודיות חלים עליו. בשלושת הדפים שנכתבו ביד יש עותק מודבק — בשינוי מדביקים מחדש את `python3 brand_mark.py` |
+| `brand_mark.py` | סימן האתר: קשת מחודדת על סף, ובתוכה פתח — בית הכנסת בן עזרא, וה"חלון" שבכותרת. הגאומטריה כתובה כאן פעם אחת: ה-SVG שמעל הכותרת בדף הבית (`build.py`) ובבאנר של כל דף פנימי (`prerender.py`), וגם ה-favicon ותמונת השיתוף (`make_brand_assets.py`). הצבעים ב-SVG הם משתני CSS (`--gold`, `--text-2`) ולכן מצבי הניגודיות חלים עליו. בשלושת הדפים שנכתבו ביד יש עותק מודבק — בשינוי מדביקים מחדש את `python3 brand_mark.py` ומריצים את `make_brand_assets.py` |
 | `a11y_snippets.py` | שני בלוקי ה-HTML של הנגישות והפרטיות שכל דף נושא. `build.py` ו-`prerender.py` מייבאים ממנו |
 | `CNAME` | הדומיין המותאם. `prerender.py` גוזר ממנו את כל הכתובות המוחלטות — **אל תמחק** |
 | `googlef716f9558cc7d448.html` | אימות Google Search Console. תוכן מדויק שגוגל משווה — **אל תערוך ואל תמחק** |

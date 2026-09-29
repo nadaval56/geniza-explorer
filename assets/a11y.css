@@ -28,7 +28,6 @@ html[data-fs="l"] { font-size: 125%; }
 html.a11y-contrast {
   --bg:           #ffffff;
   --bg-2:         #ffffff;
-  --parchment:    #ffffff;
   --bg-card:      #ffffff;
   --bg-card-h:    #f0f0f0;
   --bg-input:     #ffffff;
@@ -61,7 +60,6 @@ html.a11y-invert {
      המסמכים המשפטיים נושאים body.fragment-body, שרקעו --bg-2 ולא --bg.
      בגוון כמעט-שחור הם היו הדפים היחידים באתר שלא הופכים באמת. */
   --bg-2:         #000000;
-  --parchment:    #121212;
   --bg-card:      #121212;
   --bg-card-h:    #1e1e1e;
   --bg-input:     #121212;

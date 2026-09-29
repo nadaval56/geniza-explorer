@@ -711,7 +711,7 @@ INDEX_HTML = """\
       </p>
       <p class="header-links">
         <a href="about.html" class="about-link">אודות הגניזה הקהירית</a>
-        <span class="header-links-sep" aria-hidden="true">◆</span>
+        <span class="header-links-sep" aria-hidden="true"></span>
         <a href="t/hebrew-translation/" class="about-link">מכתבי הגניזה בתרגום לעברית</a>
       </p>
     </div>

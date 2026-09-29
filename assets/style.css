@@ -31,7 +31,6 @@
   --border:       #e6ddd2;
   --border-2:     #d4c6b8;
   --divider:      rgba(181,98,30,.15);
-  --parchment:    #f5ead9;   /* the torn leaf of the site mark (brand_mark.py) */
 
   /* Surprise panel — גוונים חמים ולא משפחת צבע שנייה. ראו ההערה ב-.surprise-btn */
   --surprise-1:        #f9f0e4;
@@ -852,11 +851,11 @@ img { display: block; max-width: 100%; }
   color: var(--text);
   text-decoration: none;
 }
-/* סימן האתר, קרע קלף (brand_mark.py). הצבעים משתנים, כדי שמצבי התצוגה של
-   תפריט הנגישות יחולו גם עליו. */
-.brand-mark { display: block; flex: none; }
-.brand-mark-leaf { fill: var(--parchment); stroke: var(--gold); stroke-width: 1.4; stroke-linejoin: round; }
-.brand-mark-ink  { fill: none; stroke: var(--text-2); stroke-width: 1.1; stroke-linecap: round; }
+/* סימן האתר, קשת בית הכנסת (brand_mark.py). בלי מילוי, והצבעים משתנים,
+   כדי שמצבי התצוגה של תפריט הנגישות יחולו גם עליו. */
+.brand-mark { display: block; flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.brand-mark-line { stroke: var(--gold); stroke-width: 1.6; }
+.brand-mark-ink  { stroke: var(--text-2); stroke-width: 1.3; }
 .nav-brand .brand-mark { width: 1.9rem; height: 1.9rem; }
 .nav-brand-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
 .nav-brand-name { font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em; white-space: nowrap; }
@@ -1443,7 +1442,9 @@ html.a11y-still .sister-clone { display: none; }
   margin-top: var(--sp-3);
 }
 .header-links .about-link { margin-top: 0; }
-.header-links-sep { color: var(--gold); opacity: .6; font-size: .5rem; }
+/* ה-◆ יושב ב-CSS ולא בטקסט: הוא קישוט, ובגודל הזה לא היה עומד ב-4.5:1
+   שהביקורת דורשת מטקסט. "/ ''" משתיק אותו לקורא המסך. */
+.header-links-sep::before { content: '◆'; content: '◆' / ''; color: var(--gold); opacity: .6; font-size: .5rem; }
 
 /* ── KPI section (2-card version) ────────────────────────────────────────────── */
 .dashboard-kpi {
