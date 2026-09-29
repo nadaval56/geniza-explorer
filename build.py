@@ -944,6 +944,7 @@ INDEX_HTML = """\
   const TIMELINE_TAGS = {timeline_tags};</script>
   <script src="assets/vendor/leaflet/leaflet.js"></script>
   <script src="assets/search.js?v={build_ts}"></script>
+  <script src="assets/brand-anim.js?v={build_ts}" defer></script>
 {a11y_foot}
 </body>
 </html>
