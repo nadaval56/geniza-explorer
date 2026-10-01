@@ -33,6 +33,7 @@ SITES = [
     ("🛩️", "https://dronexam.co.il/", 'לעוף לשמיים · מבחן רת"א לרחפנים', ""),
     ("🌱", "https://holisticcenter.co.il/", "מעט צרי · רפואה משלימה", ""),
     ("🛸", "https://pursue.co.il/", 'PURSUE · ארכיון עב"מים', ""),
+    ("🌍", "https://quake.co.il/", "רעידת אדמה · רעידות היסטוריות", ""),
     ("📅", "https://heb-cal.co.il/", "לוח עברי", ""),
 ]
 
