@@ -2305,3 +2305,11 @@ a.spice-btn:hover { text-decoration: none; }
 .related-grid {
   margin-top: var(--sp-4);
 }
+
+/* לקריאה נוספת: קישורים שנכתבו ביד (data/external_links.json) */
+.further-block { margin-bottom: var(--sp-6); }
+.further-list { list-style: none; margin: 0; padding: 0; }
+.further-list li { margin-bottom: var(--sp-3); line-height: 1.6; }
+.further-list a { font-weight: 600; }
+.further-site { color: var(--text-3); font-size: .85rem; }
+.further-note { display: block; color: var(--text-2); font-size: .88rem; }
