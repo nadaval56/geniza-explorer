@@ -496,7 +496,7 @@ DOC_PAGE = """<!DOCTYPE html>
         <dl class="meta-list">
 {meta_rows}
         </dl>
-{description_block}{he_text_block}{transcription_block}{tags}
+{description_block}{he_text_block}{transcription_block}{further_block}{tags}
         <div class="actions-block">
           <a href="{princeton}" target="_blank" rel="noopener" class="btn-primary">
             צפייה ב-Princeton Geniza Project ↗
@@ -693,6 +693,31 @@ def render_he_text(doc_id):
         '        </div>')
 
 
+# קישורים לקריאה נוספת, שנכתבים ביד ב-data/external_links.json: דף באתר אחר שעוסק
+# במסמך עצמו או באירוע שהוא מתעד (למשל מכתב הגניזה על רעידת 1033, שעליו נשען דף
+# הרעידה ב-quake.co.il). מפתח שמתחיל ב-"_" הוא הערה.
+_EXTERNAL_LINKS = None
+
+
+def render_further_reading(doc_id):
+    global _EXTERNAL_LINKS
+    if _EXTERNAL_LINKS is None:
+        path = ROOT / "data" / "external_links.json"
+        _EXTERNAL_LINKS = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    items = _EXTERNAL_LINKS.get(str(doc_id))
+    if not items:
+        return ""
+    rows = []
+    for it in items:
+        note = f'<span class="further-note">{esc(it["note"])}</span>' if it.get("note") else ""
+        rows.append(f'<li><a href="{esc(it["url"])}" target="_blank" rel="noopener">{esc(it["title"])}</a>'
+                    f' <span class="further-site">· {esc(it["site"])}</span>{note}</li>')
+    return ('\n        <div class="further-block">\n'
+            '          <h2 class="section-label">לקריאה נוספת</h2>\n'
+            '          <ul class="further-list">' + "".join(rows) + '</ul>\n'
+            '        </div>')
+
+
 def render_doc(doc, base, related_index=None):
     doc_id = doc["id"]
     url = f"{base}d/{doc_id}.html"
@@ -765,6 +790,7 @@ def render_doc(doc, base, related_index=None):
             '        </div>')
 
     he_text_block = render_he_text(doc_id)
+    further_block = render_further_reading(doc_id)
 
     iiif = (doc.get("iiif_urls") or [None])[0]
     rights_label, rights_url = image_rights(doc.get("library") or doc.get("library_raw"))
@@ -815,6 +841,7 @@ def render_doc(doc, base, related_index=None):
         links=render_links(doc),
         meta_rows=render_meta_rows(doc),
         description_block=description_block,
+        further_block=further_block,
         he_text_block=he_text_block,
         transcription_block=transcription_block,
         tags=render_tags(doc),
