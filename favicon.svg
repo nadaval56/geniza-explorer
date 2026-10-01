@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="הגניזה הקהירית">
+  <title>הגניזה הקהירית</title>
+  <rect width="64" height="64" rx="13" fill="#b5621e"/>
+  <g transform="translate(5.6 6.425) scale(1.65)" fill="none" stroke="#faf8f3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M9 27L9 15.5C9 10 12.5 6 16 4C19.5 6 23 10 23 15.5L23 27" stroke-width="2.4"/>
+  <path d="M6 27L26 27" stroke-width="2.4"/>
+  <path d="M13 27L13 18.5C13 16.5 14.3 14.9 16 14C17.7 14.9 19 16.5 19 18.5L19 27" stroke-width="2.0"/>
+  </g>
+</svg>

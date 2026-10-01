@@ -1,0 +1,9 @@
+{
+ "id": "37693",
+ "text": "[צד ב]\n1. [[העבדים, הצבעים בקליוב, מנשקים את האדמה\n2. ומודיעים כי הם אובדים בשל יוקר החיטה\n3. ומיעוט הפרנסה, ה\"צ'מאן\" הכבד (דמי הרישיון), ועליית\n4. שער החליפין, וכבר]]",
+ "fixes": "שורה 1: הממלוכים [העבדים] → העבדים (אלממאליך כאן במובן \"משרתים/עבדים\" כפי שתרגם החוקר, ולא ממלוכים)\nשורה 2: אלבצא[יע → החיטה (המקור הוא \"אלבצאיע\" — סחורות; אך החוקר תרגם wheat. משאירים לפי החוקר, אך המקור אינו \"חיטה\". הערה בלבד — אין תיקון)",
+ "source_editor": "aodeh",
+ "source_citation": "Sabih Aodeh, \"Eleventh Century Arabic Letters of Jewish Merchants from the Cairo Geniza‎\" (in Hebrew) (PhD diss., PhD diss. Tel Aviv University, 1992).",
+ "source_lang": "jrb",
+ "model": "claude-opus-4-7"
+}
