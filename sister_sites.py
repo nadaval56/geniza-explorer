@@ -27,7 +27,11 @@ from html import escape
 # (emoji, url, linked text, trailing unlinked text)
 # "מייקינג · יצירה טכנולוגית" is the one entry where only the name is a link —
 # the same split as on the other sites.
+# The first entry is an invite to the owner's WhatsApp group, not a site; it is
+# highlighted (class "sister-invite" in assets/style.css).
+INVITE = "https://chat.whatsapp.com/JPkp1hyk4J938apVTFu6J1"
 SITES = [
+    ("🔭", INVITE, "קבוצת ווטסאפ · עדכוני אסטרונומיה יומיים (קבוצה שקטה)", ""),
     ("🛠️", "https://making-il.co.il/", "מייקינג", " · יצירה טכנולוגית"),
     ("💶", "https://banknote.co.il/", "Banknote · שטרות ומטבעות", ""),
     ("🛩️", "https://dronexam.co.il/", 'לעוף לשמיים · מבחן רת"א לרחפנים', ""),
@@ -48,7 +52,8 @@ def _items(clone: bool) -> str:
                        f'<a href="{escape(url)}" rel="noopener"{tab}>{escape(text)}</a>'
                        f'{escape(tail)}</span>')
         else:
-            out.append(f'        <a href="{escape(url)}" rel="noopener"{tab}>'
+            cls = ' class="sister-invite"' if url == INVITE else ""
+            out.append(f'        <a href="{escape(url)}" rel="noopener"{cls}{tab}>'
                        f'{icon} {escape(text)}</a>')
     return "\n".join(out)
 

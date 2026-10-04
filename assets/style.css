@@ -1448,6 +1448,7 @@ p.fragment-shelfmark {
   padding: var(--sp-0) var(--sp-3);
 }
 .site-footer .sister a:hover { color: var(--link-hover); border-color: var(--border-2); }
+.site-footer .sister a.sister-invite { color: var(--link); border-color: var(--link); }
 /* פריט שרק חלק ממנו קישור (מייקינג · יצירה טכנולוגית): השבב הוא ה-span,
    והקישור בתוכו הוא מילה עם קו תחתון */
 .site-footer .sister .sister-item a {
