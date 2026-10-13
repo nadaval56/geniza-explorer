@@ -32,6 +32,7 @@ from html import escape
 INVITE = "https://chat.whatsapp.com/JPkp1hyk4J938apVTFu6J1"
 SITES = [
     ("🔭", INVITE, "קבוצת ווטסאפ · עדכוני אסטרונומיה יומיים (קבוצה שקטה)", ""),
+    ("🩻", "https://roentgen.co.il/", "רנטגן · לראות מבפנים", ""),
     ("🛠️", "https://making-il.co.il/", "מייקינג", " · יצירה טכנולוגית"),
     ("💶", "https://banknote.co.il/", "Banknote · שטרות ומטבעות", ""),
     ("🛩️", "https://dronexam.co.il/", 'לעוף לשמיים · מבחן רת"א לרחפנים', ""),
