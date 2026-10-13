@@ -1,0 +1,9 @@
+{
+ "id": "771",
+ "text": "[צד ב]\n1. ישלמו גובי הקדש המקדשים לילדים\n2. של הבה, אחיו של אבו אסחאק אלמכארי, תשעה דרהם\n3. וחצי מחלקם בהקדש המקדשים\n4. שנת אתע\"ד ושלום\n5. שמואל בר סעדיה הלוי ז\"ל",
+ "fixes": "שורה 1: לילדי[ם] → לילדים (הסוגריים המרובעים אינם נחוצים; במקור אולא[ד] הסוגריים מציינים השלמת המילה כולה)",
+ "source_editor": "gil",
+ "source_citation": "Moshe Gil, Documents of the Jewish Pious Foundations from the Cairo Geniza (Leiden: Brill, 1976).",
+ "source_lang": "jrb",
+ "model": "claude-opus-4-7"
+}

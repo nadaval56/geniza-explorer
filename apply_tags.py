@@ -6,13 +6,41 @@ Sources:
   1. doc type_he field  → TYPE_MAP tags
   2. doc lang_he field  → LANG_MAP tags
   3. Hebrew translation text → TEXT_TAGS substring search
+  4. English description field → EN_TEXT_TAGS regex search
 """
 import json
+import re
 import glob
 from pathlib import Path
 from collections import Counter
 
-from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP
+from tags_config import TEXT_TAGS, TYPE_MAP, LANG_MAP, TAG_REMOVE, EN_TEXT_TAGS
+
+# Pre-compile Hebrew patterns: strings starting with "(?", "[", or "^" are regex; others literals.
+_COMPILED: dict[str, list] = {}
+for _tag, _pats in TEXT_TAGS.items():
+    compiled_pats = []
+    for p in _pats:
+        if p and p[0] in ('(', '[', '^', '\\'):
+            compiled_pats.append(re.compile(p))
+        else:
+            compiled_pats.append(p)   # plain string → substring search
+    _COMPILED[_tag] = compiled_pats
+
+# Pre-compile English patterns (always regex, case-insensitive)
+_EN_COMPILED: dict[str, list] = {}
+for _tag, _pats in EN_TEXT_TAGS.items():
+    _EN_COMPILED[_tag] = [re.compile(p, re.IGNORECASE) for p in _pats]
+
+def _matches(text: str, patterns: list) -> bool:
+    for p in patterns:
+        if isinstance(p, str):
+            if p in text:
+                return True
+        else:
+            if p.search(text):
+                return True
+    return False
 
 DOCS_DIR     = Path("data/docs")
 TRANS_FILE   = Path("data/translations_he.json")
@@ -45,15 +73,25 @@ for doc_path in sorted(DOCS_DIR.glob("*.json")):
     # 3. Text-search tags from Hebrew translation
     text = translations.get(pgpid, "")
     if text:
-        for tag, patterns in TEXT_TAGS.items():
-            if any(p in text for p in patterns):
+        for tag, patterns in _COMPILED.items():
+            if _matches(text, patterns):
                 tags.append(tag)
+
+    # 4. English description search
+    desc_en = (doc.get("description") or "").strip()
+    if desc_en:
+        for tag, patterns in _EN_COMPILED.items():
+            if tag not in tags and _matches(desc_en, patterns):
+                tags.append(tag)
+
+    # Apply manual overrides
+    skip = TAG_REMOVE.get(pgpid, set())
 
     # Deduplicate while preserving order
     seen = set()
     deduped = []
     for t in tags:
-        if t not in seen:
+        if t not in seen and t not in skip:
             seen.add(t)
             deduped.append(t)
 
